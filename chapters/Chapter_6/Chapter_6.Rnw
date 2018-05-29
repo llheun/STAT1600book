@@ -1,0 +1,423 @@
+%!Rnw root = ../../Master.Rnw
+
+\chapter{The Normal Distribution}
+\label{chap:ch6}
+
+\section{Objective}
+
+After completing this part, students should be able to:
+
+\fbox{\parbox{14cm}{
+
+\begin{itemize}
+\item Define and explain the concept of the {\textbf{Normal Curve}}.
+\item Convert empirical scores to z-scores and use z-scores and the Normal Distribution curve table to find areas above, below and between points of the curve and  express them regarding their probabilities.
+\item Utilize the standard normal distribution to solve probability (chance) problems.
+\end{itemize}
+}}
+
+\section{Using the normal curve} \index{Normal Curve}
+
+Best Buy wants to know how many smart fitness and GPS watches (like Fitbit, Garmin, and Apple) to order for their Kalamazoo location. Past data show that this time of year, they sell an average of 36 fitness watches per month, with a standard deviation of 8.
+
+\subsubsection{Problem 1.}  If they order 40 watches, what is the probability that they will run out of stock?
+
+\subsubsection{Problem 2.}  Given the cost of running out of stock and the storage cost of keeping too many, the manager decides to order enough smart watches to cover customer demands 90\% of the time, i.e there should be 10\% or less likelihood that they run out of stock. How many should they order?
+
+Knowing the average and SD of a process $(36 \pm 8)$ gives us some understanding of what to expect.  However, the sales situation above requires the computation of probabilities, or chances, as in the ``chance of demand exceeding 40.''   This desired probability is the shaded area to the right of 40 under the histogram of demand (see the first graph in Figure 4.1).  Does this look like 0.20 of the total area?  0.30?  0.40?
+
+\begin{figure}[ht]
+\caption{Probability of Demand exceeding 40}
+<<label=LBL4a, results="asis", echo=FALSE, out.width="8cm" >>=
+  dt1 <- rnorm(n=1000, mean=36, sd=8)
+  hist(dt1, freq = FALSE, main="Probability of Demand > 40", xlab="X")
+  xv <- seq(2, 68, by=0.1)
+  yv <- dnorm(xv, mean=36, sd=8)
+  lines(xv, yv)
+  polygon(c(xv[xv>40], 40), c(dnorm(c(xv[xv>40], 1e-4), mean=36,sd=8)),col="yellow")
+@
+\end{figure}
+
+The normal curve (or bell curve) is useful in helping us calculate probabilities like these.  If we smooth out the top of the histogram in Figure 4.1, it will look like a normal curve.  More precisely, it will look like a normal curve with a mean of 36 and an SD of 8, denoted as $N(36, 8)$.  So the shaded area on the left will be approximated by the shaded area under the $N(36, 8)$ curve on the right.  Do the two shaded areas look about the same?
+
+Of course, the areas look similar because in our example, the histogram on the left
+looks like a normal curve.  It does not have to.  If it does not, then the approximation of areas using the normal curve will be bad.  The normal curve approximation should be used with caution.
+
+\subsubsection{The Standard Normal or Z Curve}
+
+The standard normal curve (or Z-curve) looks like Figure 4.2, and has the following properties:
+
+\begin{center}
+\fbox{\parbox{10cm}{
+  \begin{enumerate}
+  \item center is at zero
+  \item The area under the curve satisfies the following: \\
+  The area between -1 and +1 is 0.68 \\
+  The area between -2 and +2 is 0.95 \\
+  The area between -3 and +3 is 0.997 \\
+  The area between $- \infty$ and $+ \infty$is 1.00
+  \end{enumerate}
+}}
+\end{center}
+
+\begin{figure}[ht]
+\caption{Normal Z-curve}
+
+<<label=LBL4b, results="asis", echo=FALSE, out.width="8cm" >>=
+  xv <- seq(-4, 4, by=.01)
+  yv <- dnorm(xv, mean=0, sd=1)
+  plot(xv, yv, main="The Z-Curve", xlab="Z-Score", type="l", ylab="Density")
+@
+\end{figure}
+
+In general, any area under the curve can be found using the Z-table on page 46 at the end of this chapter.
+
+\begin{minipage}[ht]{3cm}
+
+\textbf{For practice}
+\end{minipage}
+\begin{minipage}[ht]{6cm}
+
+\parbox{6cm}{
+  Using the Z-table, find $\dots$
+
+  \begin{enumerate}
+  \item the area to the left of 1.2
+  \item the area to the left of 1.25
+  \item the area to the right of 1.25
+  \item the area to the left of -1.25
+  \item the area between 1.25 and 2.50
+  \end{enumerate}
+}
+\end{minipage}
+
+Are we ready to find the area under the normal curve in Figure 4.1?  Not yet.  The horizontal axis in Figure 4.1 is wrong for the Z-table, it does not have a mean of 0 and an SD of 1. Instead, it has a mean of 36 and an SD of 8.  The trick is to replace the $N(36, 8)$ horizontal axis with a $N(0, 1)$ axis, labeled Z.  See Figure 4.3.  Note that $Z = 1$ whenever X is one SD above the mean.  Similarly, $Z = -1$ whenever $X$ is one SD below the mean.  In general, Z is related to $X$ as follows:
+
+  \begin{equation} Z = \frac{X - mean}{SD} \end{equation}
+
+\begin{figure}[ht]
+
+\caption{Areas within one and two SD's of the Mean \textit{N(36, 8)}}
+
+\begin{minipage}[ht]{7cm}
+
+<<label=LBL4c1, results="asis", echo=FALSE, out.width="4cm">>=
+  xr <- seq(-3, 3, by=0.01)
+  yr <- dnorm(xr, mean=0, sd=1)
+  plot(xr, yr, type="l", xlab="Z", ylab="Density")
+  polygon(c(xr[xr > -1 & xr < 1], 1, -1), c(dnorm(xr[xr > -1 & xr < 1], mean=0, sd=1), 1e-4, 1e-4), col="yellow")
+  text(2, .352, "0.6827")
+  arrows(2, .33, 0.9, .242)
+@
+\end{minipage}
+\begin{minipage}[ht]{7cm}
+<<label=LBL4c2, results="asis", echo=FALSE, out.width="4cm">>=
+  xs <- seq(-3, 3, by=0.01)
+  ys <- dnorm(xs, mean=0, sd=1)
+  plot(xs, ys, type="l", xlab="Z", ylab="Density")
+  polygon(c(xs[xs > -2 & xs < 2], 2, -2), c(dnorm(xs[xs > -2 & xs < 2], mean=0, sd=1), 1e-4, 1e-4), col="yellow")
+  text(2, .352, "0.9545")
+  arrows(2, .33, 1.5, .13)
+@
+\end{minipage}
+\end{figure}
+
+What is the probability of demand exceeding 40?  This is the area under the curve to the right of $X = 40$ or $Z = 0.5$ (see Figure 4.4).  Using the $Z$-table, this area is $1 -  0.6915 = 0.3085$.
+
+\begin{figure}[ht]
+
+\caption{$P[ X \ge 40 ]$ }
+
+\begin{minipage}[ht]{7cm}
+
+<<label=LBL4d1, results="asis", echo=FALSE, out.width="4cm">>=
+  xt <- seq(2, 68, by=1)
+  yt <- dnorm(xt, mean=36, sd=8)
+  plot(xt, yt, xlab="X", type="l")
+  polygon(c(xt[xt > 40], 40), c(dnorm(c(xt[xt > 40]), mean=36,sd=8), 1e-4), col="yellow")
+@
+\end{minipage}
+\begin{minipage}[ht]{7cm}
+<<label=LBL4d2, results="asis", echo=FALSE, out.width="4cm">>=
+  xu <- seq(-4, 4, by=0.01)
+  yu <- dnorm(xu, mean=0, sd=1)
+  plot(xu, yu, type="l", xlab="Z")
+  polygon(c(xu[xu > 0.5], 0.5), c(dnorm(c(xu[xu > 0.5]), mean=0, sd=1), 1e-4), col="yellow")
+@
+
+\end{minipage}
+\end{figure}
+
+\section{Calculating percentiles}
+
+We restate Problem 2 given at the start of the chapter.
+
+\textbf{Problem 2.} Given the cost of running out of stock and the cost of having too many, the manager decides to order enough smart watches to cover customer demands 90\% of the time, i.e there should be 10\% or less likelihood that they run out of stock.  How many should they order?
+
+We want to estimate the number of smart watches so that there is only a 10\% chance of running out.  Note that this is the 90th percentile of demand.
+
+Looking at Figure 4.5, we see that we need to shade the upper 10\% of the area under the histogram.  What X value corresponds to the boundary?  Using the normal table, the Z value 90th percentile is 1.28.  What X value corresponds to Z = 1.28?  We solve equation 4.1 backwards.
+
+\begin{eqnarray*}
+1.28 & = & \frac{X - 36}{8}  \\
+36 + 1.28(8) & = & X-36 + 36 \\
+36 + 1.28(8) & = & X \\
+X & = & 46.24
+\end{eqnarray*}
+
+The manager should have at least 46 smart watches in the store.
+
+\begin{figure}[ht]
+\caption{The 90th Percentile: $P[X \ge a] = 0.10$ }
+<<label=LBL4e, results="asis", echo=FALSE, out.width="8cm" >>=
+  dt2 <- rnorm(n=1000, mean=36, sd=8)
+  hist(dt2, freq = FALSE, main="Probability of Demand > 46", xlab="X" )
+  xu <- seq(2, 68, by=0.1)
+  yu <- dnorm(x=xu, mean=36, sd=8)
+  lines(xu, yu)
+  polygon(c(xu[xu > 46], 46), c(dnorm(c(xu[xu > 46], 1e-4), mean=36,sd=8)),col="yellow")
+  text(54, .04, "10%")
+  arrows(54, .037, 48, .014)
+@
+\end{figure}
+
+\section{Calculating symmetric tail areas}
+
+In later sections, we will need to calculate tail areas (or $P$-values).  For example, how frequently does a normal variable fall outside of 2.25 SD from the center?  We know a random variable following a normal distribution falls within 1 SD from the center 68\% of the time, and hence outside of 1 SD from the center only 32\% of the time.  What about 2.25 SD?
+
+The area outside of 2.25 SD from the center is the combined area left of -2.25 and right of 2.25.  From the $Z$-table, the area to the right of 2.25 is 1 - 0.9878 = 0.0122.  Therefore, the combined tail areas is 0.0122 + 0.0122 = 0.0244.  A random variable following a normal distribution falls outside of 2.25 SD from the center only 2\% of the time.
+
+\begin{minipage}[ht]{3cm}
+
+\textbf{For practice}
+\end{minipage}
+\begin{minipage}[ht]{6cm}
+
+\parbox{6cm}{
+  What percentage of time does \\ a normal variable fall outside:
+
+  \begin{enumerate}
+  \item 0.4 of the mean
+  \item 1.4 SD of the mean
+  \item 2.4 SD of the mean
+  \item 3.4 SD of the mean
+  \end{enumerate}
+}
+\end{minipage}
+
+\section{The Empirical Rule}
+
+Figure 4.3 provides a useful interpretation of the SD.  It is stated as follows:
+
+\fbox{\parbox{12cm}{
+\textbf{Empirical Rule:} \\
+If the data histogram is approximately bell-shaped, expect around \\
+68\% of the observations will fall within \textbf{one} SD of the mean  \\
+95\% of the observations will fall within \textbf{two} SD of the mean  \\
+99.7\% of the observations will fall within \textbf{three} SD of the mean
+}}
+
+
+\twocolumn
+
+\section{Exercises}
+
+\begin{exercises}
+
+  \begin{exercise} % 1
+
+A study was conducted in order to determine if any link existed between cellular phone usage and the development of brain cancer (don't worry, no connection was found).  Data from this study indicate that the daily cell phone usage for all users is approximately normally distributed with mean 2.4 hours and standard deviation 1.1 hours.
+
+	\begin{enumerate}
+	\item What proportion of cell phone users are on their phones between 1 hour
+and 3 hours per day?
+  \item Just to be safe, suppose you decide to be in the 5th percentile of
+cell phone users in terms of monthly usage.  How much time can you spend on your phone per day?
+	\end{enumerate}
+
+   % \framebox[5cm][l]{ Answer: }
+	\end{exercise}
+	\begin{solution}  % 1
+<<label=LBL4-1, results='asis', echo=FALSE>>=
+  MN1 <- 2.4
+  SD1 <- 1.1
+  LBND1 <- pnorm(q=1, mean=2.4, sd=1.1)
+  UBND1 <- pnorm(q=3, mean=2.4, sd=1.1)
+  PROP1 <- UBND1 - LBND1
+  pctl1 <- qnorm(p=.05, mean=0, sd=1)
+  x1 <- ( 2.4 + pctl1 * 1.1 ) * 60
+@
+
+\begin{enumerate}
+	\item The proportion of cell phone users are on their phones between 1 hour
+and 3 hours per day is \Sexpr{PROP1}
+  \item Just to be safe, suppose you decide to be in the 5th percentile of
+cell phone users in terms of monthly usage.  How much time can you spend on your phone per day? You decide to spend no more than \Sexpr{x1} minutes on your phone per day.
+	\end{enumerate}
+	\end{solution}
+
+  \begin{exercise} % 2
+
+On the average, a watch battery is known to last for 2 years (24-months), with a standard deviation of 9 months.  \\ Assuming that the population is normally distributed,
+
+ \begin{enumerate}
+	\item What percentage of watch  batteries  last \\ more than 6 months?
+	\item What is the life span of a watch battery which lasts longer than 60\% of all batteries?
+	\item What proportion of watch batteries last \\ shorter than 2 years or longer
+than 3 1/2 years (42 months)?
+ \end{enumerate}
+
+	\end{exercise}
+	\begin{solution}  % 2
+
+<<label=LBL4-2, results='asis', echo=FALSE>>=
+  MN1 <- 24
+  SD1 <- 9
+  z1  <- (6 - 24) / 9
+  PROB1 <- 1 - pnorm( q=z1 , mean= MN1, sd=SD1)
+  pctl1 <- qnorm(p=.4, mean=0, sd=1)
+  x1 <- ( 24 + pctl1 * SD1 )
+  PROB2 <- 1 - pnorm( q=42, mean=MN1, sd=SD1)
+  PROB3 <- .5 + PROB2
+@
+
+\begin{enumerate}
+	\item The percentage of watch batteries last more than 6 months is $P[ X > 6] = \Sexpr{PROB1}$.
+	\item What is the life span of a watch battery which lasts longer than 60\% of all batteries?  $P[X > a] = .60$. Now solve for a = \Sexpr{x1}.
+	\item What proportion of watch batteries last shorter than 2 years or longer
+than 3 1/2 years (42 months)?
+$P[X < 24] + P[X > 42] = .5 + \Sexpr{PROB2} = \Sexpr{PROB3}$
+ \end{enumerate}
+
+	\end{solution}
+
+  \begin{exercise} % 3
+
+Suppose 95\% of data coming from a normally distributed population falls between 4 and 35.  Based on the empirical rule, what is the standard deviation of this sample of data?
+
+  \end{exercise}
+  \begin{solution}   % 3
+
+<<label=LBL4-3, result="asis", echo=FALSE>>=
+  sd2 <- (35 - 4)/4
+@
+
+    The standard deviation is $SD = \frac{35 - 4}{4} = \Sexpr{sd2}$
+  \end{solution}
+
+	\begin{exercise}  % 4
+
+A random variable is normally distributed with mean of 10 and standard deviation of 2.
+
+\begin{enumerate}
+\item What is the probability the value is \\ greater than 6?
+\item What is the probability the value is less than 12?
+\item What is the probability the value is between 6 and 12?
+\item 33\% is above what value?
+\item 33\% is below what value?
+\end{enumerate}
+
+	\end{exercise}
+	\begin{solution}  % 4
+<<label=LBL4-4, results="asis", echo=FALSE>>=
+  mn4 <- 10
+  sd4 <- 2
+  q1 <- (6 - 10)/2
+  prob4a <- 1 - pnorm(q=q1, mean=mn4, sd=sd4)
+  q2 <- (12 - 10)/2
+  prob4b <- pnorm(q2, mean=mn4, sd=sd4)
+  prob4c <- prob4a - prob4b
+  z1 <- qnorm(p=.33, mean=0, sd=1)
+  x41 <- mn4 - z1 * sd4
+  x42 <- mn4 + z1 * sd4
+@
+
+\begin{enumerate}
+\item The probability the value is greater than 6 is $P[X > 6] = \Sexpr{prob4a}$
+\item The probability the value is less than 12 is $P[X < 12] = \Sexpr{prob4b}$
+\item The probability the value is between 6 and 12 is $P[ 6 < X < 12] = \Sexpr{prob4c}$
+\item 33\% is above a, i.e., $P[X > a] = .33; a = \Sexpr{x41}$
+\item 33\% is below b, i.e., $P[X < b] = .33; b = \Sexpr{x42}$
+\end{enumerate}
+	\end{solution}
+
+  \begin{exercise}	% 5
+
+The stock price for \\ Coca-Cola (KO) is normally distributed with a mean of 42.14 and standard deviation of 1.43.
+
+\begin{enumerate}
+\item What is the probability that the stock price is between 39.88 and 46.01?
+\item What is the probability that the stock price is above 40?
+\item What is the probability that the stock price is below 40?
+\end{enumerate}
+
+  \end{exercise}
+\begin{solution}  % 5
+<<label=LBL4-5, results="asis", echo=FALSE>>=
+  mn5 <- 42.14
+  sd5 <- 1.43
+  prob1 <- pnorm(q=46.01, mean=mn5, sd=sd5)
+  prob2 <- pnorm(q=39.88, mean=mn5, sd=sd5)
+  prob3 <- prob1 - prob2
+  prob4 <- 1 - pnorm(q=40, mean=mn5, sd=sd5)
+  prob5 <- pnorm(q=40, mean=mn5, sd=sd5)
+@
+
+\begin{enumerate}
+\item The probability that the stock price is between 39.88 and 46.01 is $P[39.88 < X < 46.01] = \Sexpr{prob3}$.
+\item The probability that the stock price is above 40 is $P[X > 40] = \Sexpr{prob4}$.
+\item The probability that the stock price is below 40 si $P[ x < 40] = \Sexpr{prob5}$.
+\end{enumerate}
+\end{solution}
+
+\begin{exercise}  % 6
+
+The average adult female \\ height is 63.8 inches with a standard deviation of 2.40. Assume the distribution is approximately normal.
+
+\begin{enumerate}
+\item What proportion of adult female heights is below 72?
+\item 25\% of adult females are greater than what height?
+\end{enumerate}
+
+  \end{exercise}
+\begin{solution}  % 6
+<<label=LBL4-6, results="asis", echo=FALSE>>=
+  mn6 <- 63.8
+  sd6 <- 2.4
+  prob6 <- pnorm(q=72, mean=mn6, sd=sd6)
+  z6  <- qnorm(p=(1-.25), mean=0, sd=1)
+  x6  <- mn6 + z6*sd6
+@
+
+\begin{enumerate}
+\item The proportion of adult female heights is below 72 is $P[ X < 72] = \Sexpr{prob6}$.
+\item 25\% of adult females are greater than $P[ X > a] = .25$ where a = \Sexpr{x6}
+\end{enumerate}
+\end{solution}
+
+\begin{exercise} % 7
+
+Values in the table give the area under the curve to the left of the z-values on the margins.  The upper margin gives the hundredth digit of z.  For example:
+
+\begin{enumerate}
+\item The area to the left of 0.0 is ?
+\item The area to the left of 0.2 is ?
+\item The area to the left of 0.25 is ?
+\item The area to the left of 2.25 is ?
+\end{enumerate}
+
+	\end{exercise}
+\begin{solution}  % 7
+
+\begin{enumerate}
+\item The area to the left of 0.0 is.5000
+\item The area to the left of 0.2 is.5793
+\item The area to the left of 0.25 is.5987
+\item The area to the left of 2.25 is.9878
+\end{enumerate}
+\end{solution}
+
+\end{exercises}
+
+ \onecolumn
+

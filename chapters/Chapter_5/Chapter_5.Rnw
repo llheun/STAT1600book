@@ -1,0 +1,276 @@
+%!Rnw root = ../../Master.Rnw
+
+\chapter{Study Designs}
+\label{chap:ch5}
+
+\section{Objective}
+
+After completing this part, students should be able to:
+
+\colorbox{lyellow}{\parbox{14cm}{
+
+\begin{itemize}
+\item Identify and cite examples of when a two-sample test is appropriate.
+\item Explain an independent random sample.
+\item Perform a test of hypothesis for two-sample means or two-sample
+proportions following the 5-step process and interpret the results.
+\item Effect Size
+\end{itemize}
+}}
+
+\section{Randomized trials}
+
+In the previous chapter, we covered hidden confounders, one of the most important threats to valid comparisons in statistics. In this chapter we will explore elements of study design that help statisticians deal with the threat of bias posed by hidden confounders. One of the most important elements of many study designs is appropriate randomization in the selection of subjects for the study, and to different groups within the study. Without such randomization, results of data analyses can be biased. Let's see by way of example how randomization can help us address the threat of results biased by hidden confounders.
+
+Recall the diet study discussed previously: ``Comparison of the Atkins, Zone, Ornish, and LEARN Diets for Change in Weight and Related Risk Factors Among Overweight Premenopausal Women The A TO Z Weight Loss Study: A Randomized Trial'' by C.D. Gardner, et al. (JAMA, Vol. 297, pp. 969-77, March 2007)
+
+\begin{quotation}
+ \textbf{Objective:} \\ To compare 4 weight-loss diets representing a spectrum of low to high carbohydrate intake for effects on weight loss and related metabolic variables. Design, Setting, and Participants Twelve-month randomized trial conducted in the United States from February 2003 to October 2005 among 311 free-living, overweight/obese (body mass index, 27-40) nondiabetic, premenopausal women.  Intervention participants were randomly assigned to follow the Atkins (n=77), Zone ($n = 79$), LEARN ($n = 79$), or Ornish ($n = 76$) diets and received weekly instruction for 2 months, then an additional 10-month follow-up.
+\end{quotation}
+
+This is an example of a randomized trial or randomized experiment.   Subjects entering the trial are randomized, using a virtual roll of a die, into one of several treatment groups.
+
+The randomization into groups eliminates the main threat to valid comparisons: confounders.  How?  By making the comparison groups similar to each other in all aspects, except for the treatment.  Think about it.  If you ask for volunteers to each treatment group, then most of the meat-eaters would go to the Atkins group, and most of the vegetarians would go to the Ornish group.   Would it then surprise you if one group had, say, more Asians than another group?  Or more smokers?  Or less physical activity?  Randomized assignments, instead of volunteering, is the best way to get balanced groups in the factors that we think might matter, and achieves balance in all other factors we have not even considered.
+
+Table 9.1 presents the characteristics of the subjects after randomization, but before treatment has started.  Observe how randomization has achieved good balance between groups in demographic and anthropometric variables, and known health risk factors.  All other variables, important or not, like IQ, shoe size, and preference for country music would also tend to be balanced, thus providing a level of protection against unknown confounders.
+
+\fbox{\parbox{14cm}{
+To safeguard against potential \textbf{confounders}, comparison groups should be \textbf{similar} in all factors except for treatment itself.  \textbf{Randomization} is the best way to achieve the goal.
+}}
+
+\begin{table}[ht]
+\caption{Baseline Participant Characteristics}
+\begin{tabular}{@{} lrrrr @{}} \hline
+         & Atkins & Zone & LEARN & Ornish \\ \hline
+n        & 77     & 79   &    79 &  76 \\
+\textbf{Demographics} &  &  &  &  \\
+Age, y       & 42(5) & 40(6) & 40(7) & 42(6) \\
+Education, y & 16(2) & 16(2) & 16(2) & 16(2) \\
+Race/ethnicity, No.(\%) &  &  &  &  \\
+Asian/Pacific Islander & 7(9) & 9(11) & 6(8) & 8(10) \\
+Black                  & 2(3) & 7(9)  & 6(7) & 4(5) \\
+Hispanic               & 7(9) & 8(10) & 7(9) & 11(14) \\
+White                  & 59(76) & 52(66) & 59(75) & 52(69) \\
+Other                  & 2(3)   & 3(4)   & 1(1)   & 1(1) \\
+Smokers, No.(\%)       & 2(3)   & 4(5)   & 4(5)   & 3(4) \\
+Physical activity      & 34(6)  & 34(6)  & 34(5)  & 35(7) \\
+(kcal/kg per day)  &  &  &  &  \\
+\textbf{Anthropometrics}    &  &  &  & \\
+Weight, kg             & 86(13) & 84(12) & 85(14) & 86(10) \\
+Body fat, \%           & 41(6)  & 40(6)  & 38(6)  & 40(6) \\
+Body mass index        & 32(4)  & 31(3)  & 31(4)  & 32(3) \\
+Waist-hip ratio        & .843(.067) & .841(.068) & .839(.066) & .840(.060) \\
+\textbf{Cardio. disease risk factors} & & & & \\
+LDL-C, mg/dL           & 109(29) & 114(32) & 104(29) & 111(27) \\
+HDL-C, mg/dL           & 53(14)  & 52(11)  & 51(11) & 50(11) \\
+Triglycerides, mg/dL   & 125(78) & 123(98) & 119(73) & 118(62) \\
+Non-HDL-C, mg/dL       & 134(33) & 139(39) & 127(34) & 135(33) \\
+Ratio of total cholestrol to HDL-C & 3.7(1.0) & 3.8(1.1) & 3.6(1.0) & 3.8(1.0) \\
+Fasting insulin, U/mL & 10(7) & 10(7) & 10(8) & 10(5) \\
+Fasting glucose, mg/dL & 92(9) & 94(20) & 96(17) & 93(13) \\
+\textbf{Blood pressure, mmHg} & & & & \\
+Systolic & 118(11) & 115(13) & 116(12) & 116(10) \\
+Diastolic & 75(8) & 74(9) & 75(9) & 75(8) \\
+Metabolic syndrome, No. (\%) & 22(29) & 20(25) & 29(37) & 27(36) \\ \hline
+\end{tabular}
+\end{table}
+
+\subsection{Double-blind randomized controlled trials (RCT)}
+
+Scientific studies should be randomized as described above whenever possible. But it might surprise you to learn that randomization is just one way to address hidden confounders and bias in clinical trials. The present section will cover \textit{controls and blinding}, two important elements in study design that address confounders and bias.
+
+Thus far, we’ve discussed how helpful randomly assigning subjects in a study to groups within that study is to overcoming bias, but study designers should be aware that there is some luck involved in randomization. It is not always likely, but it is possible, that even the best randomization techniques leave hidden confounders present across all \textit{subjects} within the study. We may be selecting subjects for the study from a population that all have a confounding characteristic in common. In such a case, it would not help us much to randomly assign subjects to different groups of the study since all the groups would end up exhibiting the same bias regardless as to how we assigned the subjects. Imagine attempting to draw a conclusion about whether a medication is effective in treating the common cold by studying only subjects who have some special resistance to the cold. No patients would get severe colds, or if they did, they would not manifest many cold symptoms like coughing, sneezing, or a runny nose. Sounds hard to study such subjects, right? Yes, the immune response confounder makes these subjects hard to study, but this problem is solvable. Scientists just need more \textit{control} in assessing such subjects and their hidden confounders, so control \textit{groups} are added to scientific studies to correct for this problem.
+
+Control groups are groups of subjects within the study that are not expected to exhibit the special associations being studied. For instance, control groups in medical studies are often groups of patients given inert placebos or “sugar pills” instead of active medications. Since these groups are not given medications, such groups are not expected to exhibit effects as strong as the treatment effects of those that do receive medications; we wouldn’t expect patients who receive sugar pills to miraculously feel relief from their cold symptoms in the way patients who receive a new alternative to pseudoephedrine might. Even when such placebo groups do exhibit effects like the expected treatment effects, which can be due to the placebos themselves (placebo effect) or other hidden confounders (special resistance to the cold), the presence of these control groups within the study gives researchers a valid point of comparison. It is true that both the placebo and medicated groups selected from our cold-resistant population of patients would be asymptomatic. However, even though nobody is sneezing too much, comparing the medicated and unmedicated groups allows scientists to determine if it’s all just the patients’ especially strong immune responses, if the psychological impact of taking a pill is responsible, or if the medication is truly effective at treating the cold.
+
+
+\begin{figure}[ht]
+   \centering
+   \includegraphics[width=6.5cm]{chapters/Chapter_9/ext_figure/timeVsRx.png} % requires the graphicx package
+   % \caption{example caption}
+   % \label{fig:example}
+\end{figure}
+
+When one of the comparison groups in a study is a control group or placebo, randomized trials are sometimes called randomized controlled trials, or randomized controlled experiments. As much as possible, researchers try to conduct double-blind randomized controlled trials, where neither doctor nor patient knows what treatment the patient is receiving. In the common cold example, some patients get a sugar pill or placebo while others get a new alternative medication thought to treat cold symptoms.  The important point to remember here is that in a double-blind controlled experiment both the patients and doctors have no idea if a patient is receiving the sugar pill/placebo or the cold medicine. This is achieved by giving each patient a pill that looks identical regardless as to whether it’s the inert placebo or the active medicine.
+
+% \begin{minipage}[ht]{5cm}
+
+\begin{figure}[ht]
+   \centering
+
+   \includegraphics[width=3cm]{chapters/Chapter_9/ext_figure/placebo.png}
+   \includegraphics[width=3cm]{chapters/Chapter_9/ext_figure/medicine.png}
+   % requires the graphicx package
+    \caption{\textbf{Placebo} or \textbf{Medicine}.  Can you spot the difference? -- Single Blinding.
+Can your doctor? -- Double Blinding. }
+   % \label{fig:example}
+\end{figure}
+% \end{minipage}
+
+This double-blinding is important because it offers additional protection against bias. In such studies, all groups have the same frame of mind (as opposed to knowing you are not really getting the new drug). Similarly, the experimenter has the same frame of mind evaluating patients from each group. You might wonder, isn't it enough to single-blind the study, to make sure that just the patients are unaware whether they received the placebo or medicinal pill? No, it is not. Imagine an experimenter who administers both the placebos and medications but does so knowing which is which. That researcher might unintentionally treat these two groups differently, perhaps just by spending an extra minute with patients from the medicated treatment group or by approaching them with a little more enthusiasm. It's this sort of unwitting behavior that can invite bias into the study.
+
+\section{Observational studies}
+
+In many cases, the treatments being compared cannot be assigned, and hence cannot be randomized.  The study involving women and leg fractures is an example.  We were comparing leg fracture rates of two comparison groups, men and women.  Whenever a new subject enters the study (by having a car accident), we observe what gender they belong to, instead of randomly assigning it.  Studies like these are called observational studies, as opposed to randomized experiments. In the hierarchy of scientific evidence, observational studies are not as strong as randomized trials, which is the gold standard. Since the subjects of observational studies assign themselves to their group, there may be selection bias that leads to confounders (like the women in the leg-fracture study being shorter).  Effects of known confounders can be controlled in analysis.  For example, we can compare leg fracture rates of men and women with the same heights. Investigators will need to anticipate potential confounders and control for them. We enumerate typical reasons for nonrandomized studies:
+
+\begin{enumerate}
+\item Assigning treatment is impossible (e.g., to compare fracture rates between men and women, we cannot randomize subjects into the comparison groups).
+
+\item Assigning treatment is unethical (e.g. to compare cancer rates of smokers and nonsmokers, we do not want to randomize subjects into smoker-nonsmoker     comparison groups)
+
+\item Assigning treatment is impractical (e.g. the outcome is a rare event like cancer or stroke, and a randomized trial would need too many subjects and too much time).  In cases like these, a case-control study is generally the way to go.
+\end{enumerate}
+
+\fbox{\parbox{14cm}{
+\textbf{Observational} studies are conducted when randomization to treatment groups  \\ is impossible, unethical, or impractical.
+}}
+
+Returning to the leg-fracture example, we stick to observational studies in such a case for two reasons. As described above, it's impossible to perform the study any other way with the data collected. But we also should not elect to change the study, to collect the data in a different and randomized manner.  In other words, we should not even try to get the bias-reducing benefits of randomization because of ethical constraints. To perform randomized clinical trials in this study of leg fractures we would need to randomly select subjects whose legs would be broken for the sake of the study. Causing suffering like this is prohibited by several codes of ethics like the Nuremberg Code, a code of research ethics drafted after the Nuremberg trials of Nazi war criminals.  These criminals included scientists who designed and performed inhumane experiments. Beyond the official ban, though, such research is wrong in its causing excessive suffering and its infringement upon basic human rights.
+
+Another reason we may conduct an observational study is that they can be more practical compared to randomized controlled trials. This can be due to the constraints of a rare disease, or the cost a randomized study would entail.  A researcher might want to study whether regular exercise can prevent a rare form of cancer.  Randomization and control here would require that we randomly select patients first, group them along exercise programs (say regular, irregular, and no exercise), and wait to see how the different groups respond (do the exercise groups have significantly fewer cases of cancer?).  This study might not work out at all because, since the cancer is rare, it's possible that no or very few of our subjects will get the cancer.  It also may take many years before cancer would appear.
+
+This study would be quite time-consuming and labor-intensive. Imagine all the financial resources that would be required to do all that exercise-monitoring over all the patients and years! This brings us to our second point, that observational studies are practical because they tend to be less costly than randomized controlled trials. Companies often use statistics to generate revenue, but they tend to do this not by randomized experiments, but by analyses of marketing data they collect through sales or surveys. Nonrandom observational studies like analyses of sales data are an easy approach in that all they require are a data collection apparatus and a statistician. For instance, clothing designers want to keep up with trends in consumer spending, but might sell hundreds of different garments to thousands of outlets across the world. When sales of one item begin to slip, it might be difficult to notice amidst all the chaos of such a business enterprise. A statistician can help here by analyzing the proportions of revenue generated by each garment from month to month, and making recommendations about which products to push when. The statistician might even find style or color-based patterns that repeat themselves seasonally, allowing the company to adjust before their sales ever begin slipping.
+
+\subsection{Case-control studies}
+
+Instead of randomizing subjects into diet groups and then comparing the weight loss outcome, a case-control study would look for people in the population who lost weight, and then ask them what diet they used.  Thus, you start with the outcome, and then work back to the type of treatment.  These are also classified as retrospective studies, because they look back and compare weight loss or disease rates of various treatments.  Randomized experiments are necessarily prospective, in the sense that you randomize treatment and then later see which groups lost more weight or had more disease.
+
+Case-control studies are frequently used because they are cheaper and easier to conduct, since it generally requires a survey of a database, instead of an expensive and time-consuming recruitment and handling of subjects.  There are plenty of successful case-control success stories in the scientific literature.
+The first study formally linking lung cancer to smoking was a 1950 case-control study ``Smoking and Carcinoma of the Lung'' by Richard Doll and A. Bradford Hill
+(British Medical Journal, 1950 September 30; 2(4682): page 739--748).  Using patients in 20 hospitals in London, they found that lung-cancer patients had higher rates of smokers than a comparable control group of patients.   For example, among district hospitals, 48 out of 98 lung cancer patients smoked 15 or more cigarettes daily.  In contrast, only 30 out of 98 non-cancer patients smoked 15 or more cigarettes daily.
+
+In general, case-control studies are able to conclude a link or `association,' but are not able to prove `causation.'   However, case-control studies provide initial evidence that can generate resources for more rigorous studies like double-blind randomized controlled trials.  In the case of smoking and lung cancer, randomized trials are unethical, but given the eventual results of multiple studies, it is now accepted by the scientific community that smoking causes lung cancer.
+
+\subsection{Case-crossover studies}
+
+Sometimes, each subject can be their own control.  This is called a case-crossover study, because subjects in the treatment group ``crossover'' to the control group.
+An example is a 1997 study linking cell phone use to car accidents: ``Association between cellular-telephone calls and motor vehicle collisions'' by D.A. Redelmeier and R.J. Tibshirani (The New England Journal of Medicine, 1997 Feb 13; vol 336, pp. 453-8).  The subjects were people who reported a collision to the North York Collision Reporting Centre between July 1, 1994, and August 31, 1995, Among these, 742 had cell phones and consented to participate in the study.  Instead of asking each person whether they were using their cell phone during the time of the collision (an unreliable method), the investigators examined their detailed phone billing records.  Their results are quoted below:
+
+\begin{quotation}
+Overall, 170 subjects (24 percent) had used a cellular telephone during the 10-minute period immediately before the collision, 37 (5 percent) had used the telephone during the same period on the day before the collision, and 13 (2 percent) had used the telephone during both periods. The crude analysis indicated that cellular-telephone activity was associated with a relative risk of a motor vehicle collision of 6.5 (95 percent confidence interval, 4.5 to 9.9).  The primary analysis, adjusted for intermittent driving, indicated that cellular-telephone activity was associated with a quadrupling of the risk of a motor vehicle collision (relative risk, 4.3; 95 percent confidence interval, 3.0 to 6.5).
+\end{quotation}
+
+
+
+
+
+
+
+
+
+
+\section{Key Words}
+
+% \colorbox{lgray}{\parbox{15cm}{
+% \begin{minipage}[ht]{6cm}
+% \begin{itemize}
+% \item Independent random samples
+% \item Pooled estimate
+% %\item $\sigma_{p-p^*}$
+% %\item $\sigma_{\bar{x} - \bar{x}^*}$
+% \end{itemize}
+% \end{minipage} \hfill
+% \begin{minipage}[ht]{6cm}
+% \begin{itemize}
+% %\item Independent random samples
+% %\item Pooled estimate
+% \item $\sigma_{p-p^*}$
+% \item $\sigma_{\bar{x} - \bar{x}^*}$
+% \end{itemize}
+% \end{minipage}
+% }}
+
+% \newpage
+\twocolumn
+\section{Exercises}
+
+\begin{exercises}
+
+  \begin{exercise} %1
+
+Give some examples of \\ studies where:
+
+\begin{enumerate}
+\item a randomized trial is impossible
+\item a randomized trial is impractical \\ because of length of time the study      \\ would require
+\item a randomized trial is impractical \\ because of the number of subjects \\ the study would require
+\end{enumerate}
+
+
+	\end{exercise}
+	\begin{solution}  % 1
+
+	  $H_0: \mu_1 = \mu_2$ vs. $H_0: \mu_1 \neq \mu_2$
+	\end{solution}
+
+  \begin{exercise} % 2
+
+Suppose a doctor is interested in investigating the causes of an \\ extremely rare disorder that occurs in only 0.00001\% of men.  What type of study would be necessary to firmly establish the causes of the disease?  Is this type of study an appropriate choice for such a disease?  Why or why not?
+
+	\end{exercise}
+% 	\begin{solution}  % 2
+% <<label=lbl9-2, results='asis', echo=FALSE>>=
+%   cv1 <- sprintf('%.4f', (qt(p=0.95, df=10)))
+% @
+%
+% 	  From the t-distribution table, choose df row 10 and column significance level 0.05. \\
+% 	  Student's $t$ distribution, $CV = \Sexpr{cv1}$
+% 	\end{solution}
+
+  \begin{exercise} % 3
+
+What is a double-blind \\ study?  Give an example where double- \\ blinding is not possible.
+
+    \end{exercise}
+    \begin{solution}  % 3
+
+The test statistics is $|-1.66|$ and significance level is 1.8125.  Since the test statistic is less than the significance level, fail to reject $H_0$.
+    \end{solution}
+
+  \begin{exercise} % 4
+
+Some recent research has \\ shown that patients who know they have \\ taken nothing more than an inert sugar pill still experience the placebo effect. Briefly describe a study design that might replicate \\ these results. What type of study would you choose? What different groups would be \\ needed?
+
+
+
+  \end{exercise}
+  % \begin{solution}  % 4
+  %
+  %   $H_0: P_1 = P_2$ vs. $H_A: P_1 \neq P_2$
+  % \end{solution}
+
+  \begin{exercise} % 5
+
+What is the advantage of case-control studies over clinical trials?
+
+  \end{exercise}
+  \begin{solution}  % 5
+<<label=lbl8-5, results='asis', echo=FALSE>>=
+  cv1 <- sprintf('%.2f', (qnorm(p=0.975)))
+@
+
+    Standard Normal (z) distribution, $Z = \pm \Sexpr{cv1}$.
+  \end{solution}
+
+  \begin{exercise} % 6
+
+A football organization is \\ concerned about the number of injuries to its athletes during games. The organization designs an observational study to help decide on rule changes that will reduce the risk of injury to players. They collect data and observe that a very high proportion of injuries are incurred during the first moments of the game during kickoff. The organization thus entertains the idea of changing the rules governing kickoffs. Are there any hidden confounders that the organization should address before making changes to kickoff rules? What are they, and how might they be addressed?
+
+	\end{exercise}
+	% \begin{solution}  % 6
+	%
+	%   Conclude that there is a difference, since the test statistic (z = 2.04) is greater than the critical value (z = 1.96).  Therefore, reject $H_0$
+	% \end{solution}
+
+	  \begin{exercise} % 7
+
+What is the advantage of clinical trials over case-control studies?
+
+  \end{exercise}
+  \begin{solution}  % 7
+
+    $H_0: P_1 = P_2$ vs. $H_A: P_1 > P_2$
+  \end{solution}
+
+\end{exercises}
+\onecolumn

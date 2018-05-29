@@ -1,0 +1,40 @@
+\documentclass[11pt]{article}   	% use "amsart" instead of "article" for AMSLaTeX format
+\usepackage{geometry}                		% See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   		% ... or a4paper or a5paper or ... 
+%\geometry{landscape}                		% Activate for rotated page geometry
+%\usepackage[parfill]{parskip}    		% Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}				% Use pdf, png, jpg, or eps§ with pdflatex; use eps in DVI mode
+								% TeX will automatically convert eps --> pdf in pdflatex		
+\usepackage{amssymb}
+
+%SetFonts
+
+%SetFonts
+
+
+\title{Brief Article}
+\author{The Author}
+%\date{}							% Activate to display a given date or no date
+
+\begin{document}
+\maketitle
+%\section{}
+%\subsection{}
+
+<<label=lbl1, results="asis", echo=FALSE>>=
+
+##dat1<- read.csv("data/GSS2014.csv", header=TRUE)
+dat1 <- read.csv("~/github/STAT1600book/chapters/Chapter_2/data/GSS2014.csv", header=TRUE)
+x1_1 <- cbind( dat1$sex, dat1$voteelec )  ## select only the respondent's height and income
+x1_2 <- x1_1[ (dat1$voteelec > 0 & dat1$voteelec < 8 ), ]    ## select only valid data
+
+write.csv( x1_2, "~/github/STAT1600book/chapters/Chapter_2/data/vote.csv" )
+
+x2_1 <- cbind( dat1$sex, dat1$educ )  
+x2_3 <- x2_1[ (dat1$educ < 25), ] ## select only valid data
+write.csv( x2_3, "~/github/STAT1600book/chapters/Chapter_3/data/educ.csv" )
+@
+
+done!
+
+\end{document}  

@@ -1,0 +1,17 @@
+\begin{thebibliography}{2}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Naranjo()]{naranjo2018}
+Joshua Naranjo.
+\newblock Knowledge building/research 1 knowledge and data.
+
+\bibitem[Wallace(1971)]{Wallace1971}
+Walter Wallace.
+\newblock \emph{The Logic of Science in Sociology}.
+\newblock Aldine-Atherton, Chicago, 2nd edition, 1971.
+
+\end{thebibliography}

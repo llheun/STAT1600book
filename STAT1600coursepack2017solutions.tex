@@ -1,0 +1,48 @@
+%<*examplesol>
+\documentclass[letter,10pt, twocolumn]{article}
+%% \usepackage{a4wide}
+\usepackage[english]{babel}
+\usepackage{exsol}
+\setlength{\parindent}{0em}
+\title{Solutions to the exercises, specified in the Stat 1600 ed. 2017-2018}
+\author{Loren L. Heun}
+\begin{document}
+\maketitle
+\input{Master.sol.tex}
+\end{document}
+\begin{figure}[htbp]
+   \centering
+   \includegraphics{example.jpg} % requires the graphicx package
+   \caption{example caption}
+   \label{fig:example}
+\end{figure}
+
+
+\begin{figure}[htbp]
+   \centering
+   \includegraphics{example.jpg} % requires the graphicx package
+   \caption{example caption}
+   \label{fig:example}
+\end{figure}
+
+
+% Requires the booktabs if the memoir class is not being used
+\begin{table}[htbp]
+   \centering
+   %\topcaption{Table captions are better up top} % requires the topcapt package
+   \begin{tabular}{@{} lcr @{}} % Column formatting, @{} suppresses leading/trailing space
+      \toprule
+      \multicolumn{2}{c}{Item} \\
+      \cmidrule(r){1-2} % Partial rule. (r) trims the line a little bit on the right; (l) & (lr) also possible
+      Animal    & Description & Price (\$)\\
+      \midrule
+      Gnat      & per gram & 13.65 \\
+                & each     &  0.01 \\
+      Gnu       & stuffed  & 92.50 \\
+      Emu       & stuffed  & 33.33 \\
+      Armadillo & frozen   &  8.99 \\
+      \bottomrule
+   \end{tabular}
+   \caption{Remember, \emph{never} use vertical lines in tables.}
+   \label{tab:booktabs}
+\end{table}

@@ -1,0 +1,757 @@
+%!Rnw root = ../../Master.Rnw
+
+\chapter{Categorical Variables: Association or Independence}
+\label{chap:ch12}
+
+\section{Objective}
+
+After completing this part, students should be able to:
+
+\fbox{\parbox{14cm}{
+\begin{itemize}
+
+\item Interpret  a scatter plot.
+\item Interpret the correlation coefficient $r$ \index{coefficient coefficient}  and the coefficient of determination $r^2$. \index{coefficient of determination}
+\item Find and elucidate the regression line and use it to predict values of the response variable.
+\item Put into words the concepts of the total, unexplained, and explained variation.  \index{unexplain variation} \index{explained variation}  \index{total variation}
+\item Use correlation and regression techniques to evaluate two-variable relationships.
+
+\end{itemize}
+
+}}
+
+\section{Association versus independence in an r x c table}  \index{association}
+
+Is there an association between gender and height?  Yes, males tend to be taller than females.  A more formal way of saying this is `height distribution for males tends to be different from females.'   Is there an association between shoe size and height?  Yes,  `height distribution for men who wear size 12 is different from those who wear size 8.'    Is there an association between GPA and height?  No, `height distribution tends to be the same for 3.0 students as well as 3.5 students.'
+
+\fbox{\parbox{14cm}{
+Two variables A and B are said to be \textbf{associated} if the distribution of B tends to change with the level of the A variable.  Otherwise, they are said to be \textbf{independent} variables. 
+}}
+
+Therefore, height is associated with gender and shoe size, but independent of GPA.  
+
+Now consider the following 3 by 4 table.  189 students entering a business school program were followed as part of an attrition (i.e. drop out, transfer) study.  The students were cross classified according to 4 categories of high school GPA $(2.0-2.5, 2.5-3.0, 3.0-3.5, 3.5-4.0)$ and 3 categories of attrition outcomes (`did not return for 2nd year,' `returned for 2nd but not for 3rd year,' `returned for 3rd year').  Is there an association between HS GPA and college attrition?
+
+\begin{table}[ht]
+\centering
+\caption{Retention versus HS GPA}
+\begin{tabular}{@{} lcccc @{}} \hline
+& \multicolumn{4}{c}{GPA} \\
+Returned & $2.0-2.5$ & $2.5-3.0$ & $3.0-3.5$ & $3.5-4.0$ \\ \hline
+No --2nd yr & 25 & 3 & 4 & 6 \\
+No -- 3rd yr & 14 & 7 & 4 & 6 \\
+Yes -- 3rd yr & 41 & 7 & 28 & 44 \\ \hline
+\end{tabular}
+\end{table}
+
+To analyze whether attrition and GPA are independent, we will analyze whether 
+attrition distribution remains the same regardless of GPA level.  Let us start by looking at the 1st column (worst HS grades) and 4th column (best HS grades).  Do the distributions look the same?   The answer seems to be `no' - a bigger proportion of the 1st column never returned for their second year.  In other words, the value `25' in the very first cell is too large, implying that 'poor grades seems to be associated with first year attrition.'  If grades and attrition were independent, Table 12.1 should have looked more like Table 12.2.
+
+\begin{table}[ht]
+\centering
+\caption{Expected counts (if independent)}
+\begin{tabular}{@{} lcccc @{}} \hline
+& \multicolumn{4}{c}{GPA} \\
+Returned & $2.0-2.5$ & $2.5-3.0$ & $3.0-3.5$ & $3.5-4.0$ \\ \hline
+No --2nd yr & 16 & 3 & 7 & 11 \\
+No -- 3rd yr & 13 & 3 & 6 & 9 \\
+Yes -- 3rd yr & 51 & 11 & 23 & 36 \\ \hline
+\end{tabular}
+\end{table}
+
+This is called the table of expected counts under independence.  Observe that the row and column totals of the two tables are the same
+
+\begin{table}[ht]
+\centering
+\caption{Expected counts (if independent)}
+\begin{tabular}{@{} lcccccc @{}} \hline
+& \multicolumn{4}{c}{GPA} \\
+Returned & $2.0-2.5$ & $2.5-3.0$ & $3.0-3.5$ & $3.5-4.0$ & Total & Percent \\ \hline
+No -- 2nd yr &  &  &  &  & 38 & (20.1\%) \\
+No -- 3rd yr &  &  &  &  & 31 & (16.4\%)\\
+Yes -- 3rd yr &  &  &  &  & 120 & (63.5\%) \\ \hline
+Total        & 80 & 17 & 36 & 56 & 189 & (100\%) \\
+\end{tabular}
+\end{table}
+
+Furthermore, note that 20.1\% of the data is in the first row, 16.4\% in the second row, and 65.5\% in the third row.  If we apply the same percentage breakdown to each column, we get
+
+\begin{table}
+\centering
+\begin{tabular}{@{} llll @{}} \hline
+$80 \times .201 = 16.08$ & $17 \times .201 = 3.42$ & $56 \times .201 = 7.24$ & $56 \times .201 = 11.26$  \\
+$80 \times .164 = 13.12$ & $17 \times .164 = 2.79$ & $56 \times .164 = 5.90$ & $56 \times .164 = 9.18$  \\
+$80 \times .635 = 50.80$ & $17 \times .635 = 10.80$ & $56 \times .635 = 22.86$ & $56 \times .635 = 35.56$  \\ \hline
+\end{tabular}
+\end{table}
+
+Rounding off gives us the expected frequencies in Table 12.2.
+
+\subsection{Testing for statistical association}
+
+Statisticians will conclude `independence' if Tables 12.1 and 12.2 are close, and conclude `association' if they are far from each other.   Closeness is and farness is measured by subtraction and squaring, as follows:
+
+<<label=LBL12a, results="asis", echo=FALSE>>=
+  DT1 <- c(25,14,41,3,7,7,4,4,28,6,6,44)
+  MX1 <- matrix(DT1, nrow=3, ncol=4, byrow=FALSE)
+  ## x2tst <- chisq.test(MX1, correct=FALSE)
+@
+
+\begin{equation*}
+\chi^2 = \frac{(25-16.08)^2}{16.08} + \frac{(3-3.42)^2}{3.42} + \cdots + \frac{(44-35.56)^2}{35.56} = 23.42  
+\end{equation*}
+
+Note that if Tables 12.1 and 12.2 are the same, then the $\chi^2$ statistic (pronounced `chi square') in (12.1) will be 0.  If the two tables are far apart, the $\chi^2$ statistic will be large.  Statisticians use the following rule. 
+
+\begin{center}
+\fbox{\parbox{8cm}{
+If the $\chi^2 > b$, then conclude statistic association
+}}
+\end{center}
+
+Otherwise, conclude independence.  The number $b$ is called a critical value and depends on the dimensions of the table.  Let $r$ be the number of rows, and $c$ be the number of columns.  Let
+
+\begin{equation*}
+df = (r - 1) \times (c - 1)
+\end{equation*}
+
+be a parameter called the degrees of freedom.  Then $b$ is given by the following table.
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{@{} lllllllllll @{}} \hline
+df & 1&2&3&4&5&6&7&8&9&10 \\
+b  & 3.84&5.99&7.81&9.49&11.07&12.59&14.07&15.51&16.92&18.31 \\ \hline
+\end{tabular}
+\end{table}
+
+In our example on grades and attrition, we have r=3 rows and c=4 columns, so that
+
+\begin{equation*}
+df = (3 - 1) \times (4 - 1) = 6
+\end{equation*}
+
+so the line between statistical association and independence is drawn at b=12.59.  
+Since $\chi^2 = 23.42$ from (12.1), then $\chi^2 > 12.59$.   We conclude that there is significant association between high school GPA and college attrition rate.
+
+
+
+
+
+% The correlation is a common and useful statistics.  It is a single number from $-1$ to $+1$ that indicates the strength of the relationship between the two variables.  If the number is between $-0.3$ and $+0.3 $, then we will say that the relationship is weak or non-existent. Otherwise, we will say that the relationship is either moderate or strong.  By the way, the closer we are to a $-1$ or a $+1$ the stronger the relationship.   The following example shows us how to interpret the results.
+% 
+% \subsection{Example 1}
+% 
+% Let's hypothesize that height of a male  affects the male's self-esteem.  We probably don't need to be concerned about the direction of causality; it is  unlikely that self-esteem causes a person's height.  We select a random sample of twenty males because we know that male heights are different from female heights.  By not using females heights  will simplify  the analysis.
+% 
+% \begin{minipage}[ht]{5cm}
+% 
+% {\small{
+%  \begin{tabular}{@{} ccc @{}} \hline % Column formatting, @{} suppresses leading/trailing space
+%      %  & \multicolumn{3}{c}{Category } \\ \hline
+%      % \cmidrule(r){1-2} % Partial rule. (r) trims the line a little bit on the right; (l) & (lr) also possible
+% Person & Height & Self.esteem \\ \hline
+% 1 & 1.73 & 4.11 \\
+% 2 & 1.81 & 4.62 \\
+% 3 & 1.57 & 3.83 \\
+% 4 & 1.91 & 4.44 \\
+% 5	& 1.47 & 3.25 \\
+% 6	& 1.52 & 3.16 \\
+% 7	& 1.71 & 3.87 \\
+% 8	& 1.73 & 4.18 \\
+% 9	& 1.81 & 4.39 \\
+% 10 & 1.75 & 3.70 \\
+% 11 & 1.73 & 3.51 \\
+% 12 & 1.71 & 3.22 \\
+% 13 & 1.61 & 3.73 \\
+% 14 & 1.57 & 3.34 \\
+% 15 & 1.52 & 3.45 \\
+% 16 & 1.61 & 4.06 \\
+% 17 & 1.65 & 4.17 \\
+% 18 & 1.71 & 3.89 \\
+% 19 & 1.61 & 3.40 \\
+% 20 & 1.55 &3.61 \\ \hline
+% \end{tabular} }}
+% 
+% \end{minipage} \hfill
+% \begin{minipage}[ht]{11cm}
+% 
+% \centering
+% 
+% Self Esteem by Height
+% 
+% <<f12_1, echo=FALSE, fig.pos="ht", fig.align="center", fig.width=3.5, fig.height=3.5, fig.path="chapters/Chapter_12/figure/">>=
+%   dt12_1 <- read.csv("data/esteem.csv",header=TRUE)
+%   plot( dt12_1$Self.esteem ~ dt12_1$Height.m, xlab="Height", ylab="Self Esteem")
+%   lm_1 <- lm( dt12_1$Self.esteem ~ dt12_1$Height.m )
+%   abline(lm_1)
+% @
+% 
+% \end{minipage}
+% 
+% % \subsubsection{Scatter plot}
+% 
+% 
+% As we review the scatter plot, we see that the direction of the relationship is positive, (i.e., as height increases, self-esteem increases).
+% 
+% Based on the above graphic, there appears to be a relationship between the two variables -- height and self-esteem.  But is this relationship real?  We will use the five-step model to confirm our initial assumption.
+% 
+% %\begin{itemize}
+% %\item
+% {\textbf{Step 1.}}  Making Assumptions and Meeting Test Requirements.
+% 
+% % Requires the booktabs if the memoir class is not being used
+% \begin{table}[htbp]
+%    \centering
+%     \caption{Model Assumptions }
+%    %\topcaption{Table captions are better up top} % requires the topcapt package
+%    \begin{tabular}{@{} rl @{}} \hline % Column formatting, @{} suppresses leading/trailing space
+%       % \multicolumn{2}{c}{Item} \\
+%       % \cmidrule(r){1-2} % Partial rule. (r) trims the line a little bit on the right; (l) & (lr) also possible
+%       1& Random sampling  \\
+%       2      & Levels of Measurement are interval-ratio \\
+%       3     & Bivariate normal distribution \\
+%       4    & Linear relationship \\  \index{linear relationship}
+%       5   & The variance of $Y$ scores is uniform for all $X$ values. \\
+%       6  & Normality of residuals \\ \hline
+%    \end{tabular}
+%    \label{tab:t12_1}
+% \end{table}
+% 
+% %\item
+% {\textbf{Step 2.}}  State the Hypotheses. \\
+%  $H_0: \rho = 0$ (there is no relationship between height and self-esteem) \\
+%  $H_a: \rho \neq 0$  ($\rho$ represents the population \textbf{correlation coefficient}.)
+% 
+% % \item
+%  {\textbf{Step 3.}}  Selecting the Sampling Distribution and Establishing the Critical Region.
+% 
+% 
+%  % Requires the booktabs if the memoir class is not being used
+% \begin{table}[htbp]
+%    \centering
+%    \caption{Components of correlation }
+%    %\topcaption{Table captions are better up top} % requires the topcapt package
+%    \begin{tabular}{@{} rcl @{}} \hline % Column formatting, @{} suppresses leading/trailing space
+%       % \multicolumn{2}{c}{Item} \\
+%       % \cmidrule(r){1-2} % Partial rule. (r) trims the line a little bit on the right; (l) & (lr) also possible
+%       Sampling Distribution & = & t-distribution \\
+%       Alpha $(\alpha)$ & = & 0.05 (two-tailed) \\
+%       Degrees of Freedom  & = & $ n - 2 = 20 - 2 = 18 $  \\
+%       $t_{critical}$ & = & 2.10 \\ \hline
+%    \end{tabular}
+%    \label{tab:t12_2}
+% \end{table}
+% 
+% %\item
+% {\textbf{Step 4.}}  Computing the Test Statistic.
+% 
+% The test statistic is computed by the following equation:
+% 
+% \begin{align*}
+% t_{obtained} &= r \sqrt{ \frac{n - 2}{1 - r^2}} \\
+%               &= 0.721 \sqrt{ \frac{20 - 2}{1 - 0.721^2}} \\
+%               &= 4.4145 \\
+% \end{align*}
+% 
+% From figure \ref{fig:f12_2} on page \pageref{fig:f12_2} (MINITAB printout), we find Pearson Correlation coefficient, $r = 0.721$.  In step 4, we see the test statistic ($t_{obtained}$) is equal to 4.41.
+% 
+%   \begin{figure}[ht]
+%     \centering
+%     \caption{MINITAB Correlation Analysis}
+%     \includegraphics[width=10cm]{chapters/Chapter_12/ext_figure/zCorrA.png} % requires the graphicx package
+%     \label{fig:f12_2}
+%  \end{figure}
+% 
+% %\item
+% {\textbf{Step 5:}} Deciding and Interpreting the Results of the Test
+% 
+% Since the $t_{obtained}$ (test statistic) is greater than the $t_{critical}$ value ($ 4.41 > 2.10 $), we reject the null hypothesis.  Thus, we can say that there is a strong, positive relationship  between male height and male self-esteem.
+% %\end{itemize}
+% 
+% % \pagebreak
+% \section{What is Linear Regression?}  \index{linear regression}
+% 
+% Regression analysis is a method that we use when the explanatory and response variables are both numeric, i.e., interval-ratio variables, for example, weights, heights, volumes, and temperature.  The easiest way of knowing if the regression is the appropriate method is to see a scatter plot of the data.  The researcher will choose the linear regression model if there is an apparent (linear) relationship.  Let's examine an example that will help explain the process.
+% 
+% Let's consider the relationship between the percent change of city population growth  from 2000 and 2008 and the number of annual car thefts.  As a researcher, we review the level of measurement and find that both variables are interval-ratio.  So we consider using the scatter plot.  It has two dimensions, the x-axis which is the explanatory (X) variable and the y-axis which is the response (Y) variable that we want to predict.
+% 
+% \begin{minipage}[ht]{5cm}
+% 
+% \centering
+% {\small{
+%    \begin{tabular}{@{} cc @{}} \hline % Column formatting, @{} suppresses leading/trailing space
+%      %  & \multicolumn{3}{c}{Category } \\ \hline
+%      % \cmidrule(r){1-2} % Partial rule. (r) trims the line a little bit on the right; (l) & (lr) also possible
+%      Growth & Car.theft \\ \hline
+%      9.8 & 118 \\
+%      5.7 & 204 \\
+%      1.3 & 294 \\
+%      2.7 & 163 \\
+%      26.8 & 764 \\
+%      3.4 & 95 \\
+%      16.8 & 392 \\
+%      11.2 & 581 \\
+%      8.6 & 601 \\
+%      2.8 & 144 \\ \hline
+%    \end{tabular}
+% }}
+% 
+%   \end{minipage} \hfill
+% \begin{minipage}[ht]{10cm}
+% 
+% \centering
+% 
+% Figure: 12.3, Car Theft by Growth
+% 
+% <<label=f12_3, echo=FALSE, fig.pos="ht", fig.align="center", fig.width=3.6, fig.height=3.6, fig.path="chapters/Chapter_12/figure/">>=
+%   dt12_2 <- read.csv("data/EX12A.csv",header=TRUE)
+%   plot( dt12_2$Car.theft ~ dt12_2$Growth, xlab="Growth", ylab="Car Theft")
+%   lm_2 <- lm( dt12_2$Car.theft ~ dt12_2$Growth )
+%   abline( lm_2 )
+%   b_1 <- lm_2$coefficient[2]
+%   b_0 <- lm_2$coefficient[1]
+% 
+%   xx_11 <- 20
+%   xy_11 <- 0
+% 
+%   xy_22 <- b_0 + b_1 * 20
+%   lines(c(xx_11,xy_11), c(xy_22, xy_22), col="red")
+%   lines(c(xx_11, xx_11), c(xy_11, xy_22), col="red")
+% @
+% 
+% \end{minipage}
+% 
+% \subsubsection{Interpreting Scatter Plot}
+% 
+% The pattern of points on the graph seems to indicate that  city growth (percent change from 2000 to 2008)  increases so does the number of auto thefts increase.  To demonstrate this pattern, we can draw a straight line that approximates the best fit for the points (See Figure 12.3).
+% 
+% \subsubsection{Does a Relationship Exist?}
+% 
+% The definition of an association states that the relationship between two variables will vary in the same direction either positive or negative.  As the \emph{X}-variable increases, the \emph{Y}-variable will increase (decrease if the direction is negative).  If a linear relationship exists between these two variables, then the best-fitted line through the points will not be parallel with the x-axis.
+% % In other words, the \emph{X-Y} pair represents a point on the scatter plot.
+% In a subsequent section, we will use a statistical method to test this hypothesis.
+% 
+% \subsubsection{How Strong is the association?}
+% 
+% The density around the fitted regression line assesses the strength of this relationship.  If the relationship is perfect, then the points of \emph{X - Y} will lie  on the fitted regression line.  Otherwise, the relationship becomes weaker when the data points are away from the fitted regression line.  What we are talking about here is the correlation coefficient.
+% 
+% From Figure \ref{fig:f12_4} on page \pageref{fig:f12_4} (MINITAB printout), we find Pearson Correlation coefficient, $r = 0.773$ indicating that we have a high correlation between city growth and car theft.  Note the arrow is pointing to the correlation coefficient.
+% 
+%   \begin{figure}[ht]
+%     \centering
+%     \caption{MINITAB Correlation Analysis}
+%     \includegraphics[width=11cm]{chapters/Chapter_12/ext_figure/zEX12corr.png} % requires the graphicx package
+%     \label{fig:f12_4}
+%  \end{figure}
+% 
+% \subsubsection{Predicting response variable using the scatter plot}
+% 
+% We can use the scatter plot for prediction.  To show this procedure, let's look at the relationship between city growth and annual car thefts illustrated in Figure 12.3.  Let's say that we want to predict the number of car thefts in a city that has grown by 20 percent from 2000 to 2008.  The predicted score on \emph{Y} (indicated by $\hat{Y}$) to discriminate between the predictions of \emph{Y} from the actual \emph{Y} scores.  First, we should locate 20 on the x-axis and then draw a straight line parallel with the y-axis and to the regression line.  From the regression line, draw another line that is parallel to the x-axis to the y-axis.  The predicted \emph{Y} ($\hat{Y}$) is found at the point where the line crosses the y-axis.  We predict that cities that have grown by 20 percent from 2000 to 2008, the number of car thefts would be around 600 per year.  Later, we will develop a model for making this prediction.
+% 
+% \subsubsection{The Regression Line}
+% 
+% Using the above method is crude because trying to fit a line through a cloud of points by using a free hand.  A mathematical method has been developed and implemented in many statistical programs, such as SPSS, MINITAB, SAS, R, etc., to solve this fundamental equation:
+% 
+% \begin{equation}
+% Y = a + bX
+% \end{equation}
+% 
+% \begin{align*}
+% Y &= Dependent \hspace{1mm} Variable \\
+% a &= Y \hspace{1mm} intercept \\  \index{intercept}
+% b &= Slope \\  \index{slope}
+% X &= Independent \hspace{1mm} Variable
+% \end{align*}
+% 
+% \subsubsection{Determining the y-intercept (a)}
+% 
+% From the MINITAB output Figure \ref{fig:f12_5}, let's determine the y-intercept of this  problem.
+% 
+%   \begin{figure}[ht]
+%     \centering
+%     \caption{MINITAB Regression Analysis}
+%     \includegraphics[width=11cm]{chapters/Chapter_12/ext_figure/zRegD.png} % requires the graphicx package
+%     \label{fig:f12_5}
+%  \end{figure}
+% 
+%  After reviewing Figure \ref{fig:f12_5}, we find column B and row (Constant) (a) is 139.954.  Our interpretation of the y-intercept is 139.954 when \emph{X} = 0.  Now keep this number in mind as we determine the slope because we will use these two numbers to predict the annual car theft based on the percent change that a city experienced from 2000 to 2008.
+% 
+% \subsubsection{Determine the slope (b) }
+% 
+% From the MINITAB output Figure \ref{fig:f12_5}, let's identify the slope of this  problem.
+% 
+% After reviewing Figure \ref{fig:f12_5}, we find column B and row Growth that the slope (b) is 22.665.  Our interpretation of the slope is that as the percentage change of the cities growth increases by 1 percent, the number of car thefts increases by 22.665 per year.  Let's evaluate the slope with the five step model.
+% 
+% \begin{itemize}
+% \item {\textbf{Step 1.}}  Making Assumptions and Meeting Test Requirements.
+% 
+% % Requires the booktabs if the memoir class is not being used
+% \begin{table}[htbp]
+%    \centering
+%     \caption{Model Assumptions}
+%    %\topcaption{Table captions are better up top} % requires the topcapt package
+%    \begin{tabular}{@{} rl @{}} \hline % Column formatting, @{} suppresses leading/trailing space
+%       % \multicolumn{2}{c}{Item} \\
+%       % \cmidrule(r){1-2} % Partial rule. (r) trims the line a little bit on the right; (l) & (lr) also possible
+%       1 & Random sampling  \\
+%       2       & Levels of Measurement are interval-ratio \\
+%       3       & Bivariate normal distribution \\
+%       4       & Linear relationship \\
+%       5       & Variance of $Y$ scores is uniform for all $X$ values. \\
+%       6       & Normality of residuals. \\ \hline
+%    \end{tabular}
+%    \label{tab:t12_3}
+% \end{table}
+% 
+% \item {\textbf{Step 2.}}  State the Hypotheses. \\
+%  $H_0: \beta = 0$ (there is no relationship between percent change of a city and car theft) \\
+%  $H_a: \beta \neq 0$ (where $\beta$ represents the population \textbf{slope}.)
+%  \item {\textbf{Step 3.}}  Selecting the Sampling Distribution and Establishing the Critical Region.
+% 
+% 
+%  % Requires the booktabs if the memoir class is not being used
+% \begin{table}[htbp]
+%    \centering
+%     \caption{Components of correlation}
+%    %\topcaption{Table captions are better up top} % requires the topcapt package
+%    \begin{tabular}{@{} rcl @{}} \hline % Column formatting, @{} suppresses leading/trailing space
+%       % \multicolumn{2}{c}{Item} \\
+%       % \cmidrule(r){1-2} % Partial rule. (r) trims the line a little bit on the right; (l) & (lr) also possible
+%       Sampling Distribution & = & t-distribution \\
+%       Alpha $(\alpha)$ & = & 0.05 (two-tailed) \\
+%       Degrees of Freedom  & = & $ n - 2 = 10 - 2 = 8 $  \\
+%       $t_{critical}$ & = & 2.3060 \\ \hline
+%    \end{tabular}
+%    \label{tab:t12_4}
+% \end{table}
+% 
+% \item {\textbf{Step 4.}}  Determine the Test Statistic.
+% 
+% The test statistic is determined from  the following table.
+% 
+% From Figure \ref{fig:f12_6}, (MINITAB printout), we find the slope (b) = 22.665.  The test statistic $t$ is 3.443, from row Growth and column $t$.
+% 
+%   \begin{figure}[ht]
+%     \centering
+%     \caption{MINITAB Regression Analysis}
+%     \includegraphics[width=11cm]{chapters/Chapter_12/ext_figure/zRegD.png} % requires the graphicx package
+%     \label{fig:f12_6}
+%  \end{figure}
+% 
+% \item {\textbf{Step 5:}} Making a Decision and Interpreting the Results of the Test
+% 
+% Since the $t_{obtained}$ (test statistic) is greater than the $t_{critical}$ value ($ 3.443 > 2.2060 $), we reject the null hypothesis. Thus we can interpret the slope by saying as the percent change in  city increases by one, the number of annual car thefts increases by 22.7.
+% 
+% \end{itemize}
+% 
+% \subsubsection{Prediction}
+% 
+% Now let's put it all together.  We have an equation.  We will use the same \emph{X}-value = 20 that we used when we used a graphical solution for this problem.
+% 
+% \begin{align*}
+% \hat{Y} &= a + b(X) \\
+% CarThefts &= 139.954 + 22.665(Growth) \\
+%           &= 139.954 + 22.665(20) \\
+%           &= 593.3
+% \end{align*}
+% 
+% We can now say that a city that had percent change growth of 20 percent will have an estimated 593 automobiles stolen in one year.
+% 
+% \subsubsection{Interpreting the Regression}
+% 
+% What variables can she collect to predict the final exam score of an Introductory Statistics course?  Statistics instructors have been asking this question for a long time.  An instructor gathered,  (four explanatory variables (MT1, MT2, Proj, HW)), data from 64 of her statistics class students and did the following analysis.
+% 
+% \subsubsection{Descriptive Statistics}
+% 
+% Table \ref{tab:t12_5} reports the basic descriptive statistics for the variables.  The average final exam score is 156.1 with a score ranging  from 75 to 191.  The mean mid-term  test one score is 86.1 with a score ranging from 50 to 99.  As consultants, we should ask ourselves, what explanatory variables should we use to predict the final exam score.
+% 
+%  % Requires the booktabs if the memoir class is not being used
+% \begin{table}[htbp]
+%    \centering
+%     \caption{Descriptive Statistics }
+%    %\topcaption{Table captions are better up top} % requires the topcapt package
+%    \begin{tabular}{@{} lccccc @{}} \hline % Column formatting, @{} suppresses leading/trailing space
+%        &  \multicolumn{5}{c}{Descriptive Statistics} \\
+%       % \cmidrule(r){1-2} % Partial rule. (r) trims the line a little bit on the right; (l) & (lr) also possible
+%       Statistics & Final & MT1 & MT2 & Proj & HW \\ \hline
+%       Mean & 156.1 & 86.1 & 74.2 & 10.1 & 72.3 \\
+%       Standard deviation & 24.47 & 11.51 & 18.59 & 1.16 & 11.69 \\
+%       N & 64 & 64 & 64 & 64 & 64 \\ \hline
+%    \end{tabular}
+%    \label{tab:t12_5}
+% \end{table}
+% 
+% \begin{itemize}
+% \item Where
+%   \begin{itemize}
+%   \samepage
+%   \item Final --  Exam score
+%   \samepage
+%   \item MT1 -- Midterm exam one score
+%   \samepage
+%   \item MT2 -- Midterm exam two score
+%   \samepage
+%   \item Proj -- Project score
+%   \samepage
+%   \item HW -- Homework score
+%   \samepage
+%   \end{itemize}
+% \end{itemize}
+% 
+% 
+% \subsubsection{Correlation matrix}
+% 
+%  % Requires the booktabs if the memoir class is not being used
+% \begin{table}[htbp]
+%    \centering
+%     \caption{Pearson Correlation Coefficient}
+%    \begin{tabular}{@{} lccccc @{}} \hline % Column formatting, @{} suppresses leading/trailing space
+%       % &  \multicolumn{5}{c}{Pearson Correlation} \\
+%       % \cmidrule(r){1-2} % Partial rule. (r) trims the line a little bit on the right; (l) & (lr) also possible
+%       Statistics & Final & MT1 & MT2 & Project & HW \\ \hline
+%       Final & 1  \\
+%       MT1   & \fbox{0.751} & 1 \\
+%       MT2   & 0.543 & 0.454 & 1 \\
+%       Proj & 0.087 & 0.101 & -0.032 & 1 \\
+%       HW      & 0.273 & 0.301 & 0.218 & 0.093 & 1 \\ \hline
+%    \end{tabular}
+%    \label{tab:t12_6}
+% \end{table}
+% 
+% After reviewing the correlation matrix (Table \ref{tab:t12_6}), we see that at the intersection of Final and MT1 has a correlation coefficient ($r = 0.751$) which is the largest number in the matrix.  This number tells us that we have a strong positive relationship between the mean final exam score and the mean mid-term exam one score.  The coefficient of determination ($r^2 = 0.564$) which tells us that the mid-term one score explains 56.4 percent of the variance in the final exam score.
+% 
+% \subsubsection{Scatter plot}  \index{scatter plot}
+% 
+% The next step in assessing an association between two interval-ratio variables is the scatter plot.  Figure \ref{fig:f12_7} displays the final exam scores on the vertical, \emph{Y}, axis, and the mid-term evaluation one score on the horizontal, \emph{X}, axis.
+% 
+% <<label=f12_7, echo=FALSE, fig.pos="ht", fig.align="center", fig.width=8, fig.height=8, fig.cap="Mid-term 1 Exam", out.width="6cm", fig.path="chapters/Chapter_12/figure/">>=
+%   dt12_3 <- read.csv("data/grades.csv",header=TRUE)
+%   plot( dt12_3$Final ~ dt12_3$MT1, xlab="Mid-Term 1 ", ylab="Final")
+%   lm_3 <- lm( dt12_3$Final ~ dt12_3$MT1 )
+%   abline( lm_3 )
+%   b_1 <- lm_3$coefficient[2]
+%   b_0 <- lm_3$coefficient[1]
+% @
+% 
+% What can we say about the relationship?  The regression line is \emph{not} horizontal, so there is an association between these two variables.  The graph shows points scattered around the regression line, and we can see that we have a strong positive relationship.
+% 
+% \subsubsection{Regression Equation}  \index{regression equation}
+% 
+% The next step is to determine the regression equation.
+% 
+%   \begin{figure}[ht]
+%     \centering
+%     \includegraphics[width=12cm]{chapters/Chapter_12/ext_figure/zRegE.png} % requires the graphicx package
+%     \caption{MINITAB Regression Analysis }
+%     \label{fig:f12_8}
+%  \end{figure}
+% 
+% After reviewing Figure \ref{fig:f12_8}, we find the \emph{Y}-intercept (\emph{a}) is 18.586, row (constant) and column B.  The slope (\emph{b}) is 1.597, row MT1 and column B.
+% 
+% \begin{align*}
+%     Y &= a + bX \\
+% Final &= 18.586 + 1.597(MT1)
+% \end{align*}
+% 
+% The interpretation of the slope is as mid-term one exam scores increase by one unit, the final exam score increase by 1.597 points.
+% 
+% \subsubsection{Diagnostics}
+% 
+% \begin{itemize}
+% \item Coefficient of determination:  \index{coefficient determination}
+%   \begin{itemize}
+%   \item $r^2 = \frac{explained Variation}{total Variation}$
+%   \item We measure the explained variation from the average of the \emph{Y}-variable to the predicted \emph{Y}-variable.
+%   \item We compute the unexplained variation from the observed \emph{Y}-variable to the predicted \emph{Y}-variable.
+%   \item We determine the total change from the observed \emph{Y}-variable to the average of the \emph{Y}-variable.
+%   \end{itemize}
+% 
+% \item There is one other thing that we should look at --  residuals.
+%   \begin{itemize}
+%   \item For each data point, we should compute the difference:
+% 
+%   \begin{equation}
+%   Residual_i =  observedValue_i - predictedValue_i
+%   \end{equation}
+% 
+% 
+%   \item The histogram of the residuals should be  bell-shaped as in Figure \ref{fig:f12_9}.
+% 
+% 
+% %\begin{minipage}[ht]{6.5cm}
+% 
+%   <<label=f12_9,  echo=FALSE, fig.pos="ht", fig.align="center", fig.width=8, fig.height=8, fig.cap="Histogram of Residuals", out.width="6cm", fig.path="chapters/Chapter_12/figure/">>=
+%   hist(lm_3$residuals)
+%   @
+% 
+% %\end{minipage} \hfill
+% %\begin{minipage}[ht]{6.5cm}
+% 
+%   <<label=f12_10, echo=FALSE, fig.pos="ht", fig.align="center", fig.width=8, fig.height=8, fig.cap="Residual Plot", out.width="6cm", fig.path="chapters/Chapter_12/figure/">>=
+% 
+%   plot( lm_3$residuals ~ lm_3$fitted.values, xlab="Final -- fitted values ", ylab="Residuals")
+%   abline( 0,0 )
+% @
+% 
+% %\end{minipage}
+% 
+%   \item Let's look at Figure \ref{fig:f12_9}.  Here we can draw a nearly normal-shaped curve over the histogram.
+%   \end{itemize}
+% 
+% \item Another assumption that we need to consider is homoscedasticity, i.e.,  \index{homoscedasticity} is the variance of \emph{Y} scores uniform across all values of \emph{X}.
+% 
+%   \begin{itemize}
+% 
+%   \item Figure \ref{fig:f12_10} shows a pattern of points that is uniform.
+% 
+%   \end{itemize}
+% 
+% \end{itemize}
+% 
+% \subsubsection{Summary}
+% 
+% To conclude this analysis, the linear regression equation, the correlation coefficient, and coefficient of determination suggest that there exist a positive and strong relationship between the first mid-term exam score  and the final exam score.  The amount of unexplained variation (total variation - explained variation, i.e., 100 - 55 = 45) suggests that there may be other variables besides first mid-term exam that have a significant influence on the final exam score.
+% 
+% We should note one limitation of the simple linear regression.  First correlation is not the same as causation.  In other words, two variables that are highly correlated does not necessarily suggest that there is a causal relationship.  We could take these results to support the proposition that higher mid-term exam scores lead to higher final exam scores, the mere existence of a relationship -- even a strong connection in the direction predicted by the theory -- does not prove that one variable causes the other.
+% 
+% \section{Key Words}
+% 
+% \colorbox{lgray}{\parbox{15cm}{
+% \begin{minipage}[ht]{6cm}
+% \begin{itemize}
+% \item Bivariate normal distribution
+% \item Coefficient of discrimination
+% \item Correlation matrix
+% \item Explained variation
+% \item Homoscedasticity
+% \item Linear relationship
+% \item Pearson's r
+% \end{itemize}
+% 
+% \end{minipage} \hfill
+% \begin{minipage}[ht]{6cm}
+% \begin{itemize}
+% \item Regression line
+% \item Scatter plot
+% \item Slope
+% \item Total variation
+% \item Unexplained variation
+% \item \emph{Y}-intercept
+% \item $\hat{Y}$
+% \end{itemize}
+% \end{minipage}
+% }}
+
+\twocolumn
+\section{Exercises}
+ 
+\begin{exercises}
+
+\begin{exercise} % 1
+
+In a study of drug usage by students at a large university, data was obtained regarding hard liquor experience of smokers and nonsmokers.
+
+\begin{tabular}{@{} lll @{}} \hline
+Hard-Liquor Use & Nonsmokers & Smokers \\ \hline
+Once or more & 15 & 23 \\
+Never        & 56 & 18 \\ \hline
+\end{tabular}
+
+Is liquor use associated with smoking?  Conduct a chi-square test to assess significance of association.
+
+\end{exercise}
+\begin{solution} % 1
+
+\end{solution}
+
+\begin{exercise} % 2
+
+2.	During the filming of an original comedy special, Netflix monitored whether audience members who received free tickets laughed during the show (LDS). The results follow:
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{@{} llll @{}} \hline
+& \multicolumn{2}{c}{LDS} \\
+Free Tickets & Yes & No & Total \\ \hline
+Yes & 17 & 1  & 18 \\
+No  & 28 & 43 & 71  \\ \hline
+Total & 45 & 44 & 89 \\ \hline
+\end{tabular}
+% \caption{LDS -- Laughed During Show}
+\end{table}
+
+\begin{enumerate}
+  \item Calculate the expected count for audience members who did not receive a free ticket and did not laugh during the \\ show.
+  \item Calculate the expected count for audience members who did not receive a free ticket and did laugh during the show.
+  \item Calculate the expected count for audience members who did receive a free \\ ticket and did laugh during the show.
+  \item Calculate the expected count for audience members who did receive a free \\ ticket and did not laugh during the \\ show.
+  \item Calculate the chi-square test statistic.
+  \item What do you conclude?
+\end{enumerate}
+
+\end{exercise}
+\begin{solution}  % 2
+
+\end{solution}
+
+\begin{exercise} % 3
+
+A study investigating the association between size of cars and country found the following frequency counts:
+
+\begin{table}[ht]
+\centering 
+\begin{tabular}{@{} lrrrr @{}} \hline
+         & US & Japan & UK & France \\ \hline
+Economy & 21 & 24 & 33 & 55 \\
+Compact & 27 & 35 & 37 & 40 \\
+Full size & 36 & 11 & 12 & 4 \\
+Luxury  & 15 & 3 & 7 & 8 \\ \hline
+\end{tabular}
+\end{table}
+
+Is there evidence of a significant relationship between size of car and country, or are the two variables independent?
+\end{exercise}
+\begin{solution} % 3
+
+\end{solution}
+
+\begin{exercise} % 4
+
+Suppose Netflix held another special, collected data, and had a statistician calculate and interpret the chi square test statistic. However, this time, the statistician found insignificant differences between observed and expected counts for all those who did and did not laugh with and without free tickets. What is the appropriate conclusion in this case?
+\end{exercise}
+\begin{solution} % 4
+
+\end{solution}
+
+\begin{exercise} % 5
+
+Computer-controlled cameras are being used to ticket automobile \\ drivers for speeding and running red lights.  These devices are operated by private firms and have an incentive to pull in as many \\ drivers as they can.  Although approximately 70\% of the motorists stoically accept and pay these tickets, others resent this procedure and fight the ticket.  A frequency table with \\ marginal totals is given below. 
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{@{} llll @{}} \hline
+& \multicolumn{2}{c}{Volation} \\
+Ticket & Run Red Light & Speeding & Total \\ \hline
+Pay  &  &   & 140 \\
+Fight   &  &  & 60  \\ \hline
+Total & 60 & 140 & 200 \\ \hline
+\end{tabular}
+% \caption{LDS -- Laughed During Show}
+\end{table}
+
+\begin{enumerate}
+  \item Compute the table of expected frequencies.
+  \item Suppose we know that 1/3 of those who were ticketed for running a red light \\ fought the ticket.  Is this enough information to conduct a test of association or independence between the two variables?
+  \item Using the information in (b), compute the chi-square statistic for testing independence or association between the two variables.
+  \item What is the correct degrees of freedom to use?
+  \item What is the conclusion of your test?
+\end{enumerate}
+
+\end{exercise}
+\begin{solution} % 5
+
+\end{solution}
+\end{exercises}
+
+\onecolumn

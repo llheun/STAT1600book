@@ -1,0 +1,762 @@
+%!Rnw root = ../../Master.Rnw
+
+\chapter{Data Presentation}
+\label{chap:ch2}
+
+\section{Objectives}
+
+After completing this part, students should be able to:
+
+\fbox{\parbox{14cm}{
+\begin{itemize}
+  \item Use descriptive statistics to make data understandable.
+  \item Summarize and analyze data using graphical methods.
+  \item Compute and interpret percentages, proportions, ratios, rates, and percentage change.
+  \item Construct and analyze frequency distributions for variables at each of the three levels of measurement.
+\end{itemize}
+}}
+
+\section{Statistics and Data}
+
+\textbf{Statistics} refers to a collection of techniques and procedures for analyzing data.  In this context, statistics may be considered a synonym of data analysis.  In a narrower context, `statistics' is sometimes used as a synonym for the numbers themselves, as in `demographic statistics' or `baseball statistics.'
+`Data' refers to any collection of measurements that are made on some number of subjects.  These measurements are often stored in a row-and-column display called a spreadsheet.  An example is given below of a spreadsheet containing data taken on ten students in a class.
+
+  \begin{table}[htbp]
+   \centering
+  \begin{tabular}{@{} p{14mm} p{7mm} p{20mm} p{9mm} p{32mm} p{18mm} p{21mm} @{}} \hline % Column formatting, @{} suppresses leading/trailing space
+   \multicolumn{7}{c}{CLASS DATA} \\
+   \multicolumn{7}{c}{Class Hours} \\
+   Student & Sex & Level & GPA & Credit Hrs Taken & Transport & Hrs Slept \\ \hline
+   1 & M & Sophomore & 3.10 & 32 & Car & 7 \\
+   2 & M & Junior & 3.20 & 66 & Car & 8 \\
+   3 & F & Senior & 3.49 & 94 & Bus & 8 \\
+   4 & M & Senior & 2.68 & 89 & Walk & 10 \\
+   5 & F & Junior & 3.73 & 69 & Bicycle & 8 \\
+   6 & F & Junior & 3.39 & 59 & Car & 8 \\
+   7 & F & Senior & 3.80 & 86 & Walk & 8 \\
+   8 & M & Junior & 3.11 & 75 & Car & 8 \\
+   9 & F & Sophomore & 3.10 & 27 & Car & 7 \\
+   10 & M & Senior & 3.10 & 96 & Walk & 3 \\ \hline
+   \end{tabular}
+   \end{table}
+
+Each row represents a subject (or student, in this case), and each column represents a measurement.  The measurement columns are also called variables, because the values vary from one subject to another.
+
+\section{Classification of variables}
+
+\subsection{Levels of Measurement}
+
+It is useful to distinguish between \textbf{four levels of measurements} for variables, from weakest to strongest: Nominal (no ordering), Ordinal (ordering exists, but not distance), Interval (distance exists, but not ratios), and Ratio (ratios exist).
+
+\begin{enumerate}
+\item \textbf{Nominal Variables}
+
+Nominal variables are categorical variables that that have two or more categories without having any kind of logical sequence or order. For example, Sex is a nominal variable, since `Male' and `Female' are just names of categories.  Additional nominal variable examples include: religious affiliation, language spoken, nationality, and blood type.   There is no intrinsic ordering between these.  We often use bar charts and pie charts to represent these data.
+
+\fbox{\parbox{14cm}{
+\begin{itemize}
+\item You cannot perform arithmetic operations like addition, subtraction, \\ multiplication, etc.
+\item No order or logical sequence is present
+\item Only Names
+\item	Mean and median cannot be used for nominal variables.
+\end{itemize}
+}}
+
+\item \textbf{Ordinal Variables}
+
+Ordinal variables are categorical variables with a clear ordering or rank.  A student's level of standing (freshman, sophomore, junior, or senior) is ordinal; they are also names of categories but, unlike sex, they are rank-ordered.   However, subtraction cannot be done and distances do not make sense.  Other examples of ordinal variables include Likert scale items in which we rank items.  Completing surveys or even end of semester evaluations we can rank on a scale of 1-5 (often from strongly disagree to strongly agree).
+
+\fbox{\parbox{14cm}{
+\begin{itemize}
+\item Be careful about the size of the difference between categories may not be equally spaced.
+\item Only order matters not the difference between categories
+\item The mean cannot be used for ordinal variables.
+\end{itemize}
+}}
+
+\item \textbf{Interval Variables}
+
+Interval variables are numerical variables where difference between two values is meaningful.  GPA is an interval measurement; subtraction can be done and distances make sense.  For example, the distance from 2.3-2.4 is the same distance as 3.7-3.8.  However, ratios do not make sense; is 4.0 `twice as high' as 2.0?  The answer is no.  The grading system would work just as well on the scale (A, B, C)=(5.0, 4.0, 3.0) instead of (4.0, 3.0, 2.0).
+
+\item \textbf{Ratio Variables}
+
+Ratio variables are numerical variables with a true 0.  Number of credit hours is a ratio measurement.  A student who has completed 90 credit hours has twice as many as 45 credit hours, and 3 times as many as 30 credit hours.  Another example is temperature on the Kelvin scale, which has a true 0.  A Kelvin temperature of 400 is twice as high as 200 Kelvin.
+
+It is useful to recognize a hierarchy of information in the sense that a measurement level contains an amount of information greater than or equal to the level below it.  At lower levels of measurement, data analyses tend to be less sensitive and sophisticated.  A statistical study should aim for the highest levels of measurement possible or affordable.
+\end{enumerate}
+
+\subsection{Numerical versus categorical variables}
+
+Interval and ratio variables together are often called \textbf{numerical} variables or \textbf{quantitative} because they provide a number which measures `quantity' (how much, how many) of something.
+
+Nominal and ordinal variables together are often called \textit{categorical} variables because they classify into categories rather than count or measure.  It is tempting to think of categorical variables as `non-numerical' but sometimes they do consist of numbers.  For example, `Social Security number' consists of numbers, but are used more as labels rather than quantities.  Hence, SS number is categorical.
+
+\begin{figure}[htbp]
+   \centering
+   \includegraphics[width=10cm, height=5cm]
+   {chapters/Chapter_2/ext_figure/varType.png} % requires the graphicx package
+
+\end{figure}
+
+
+\subsection{Dependent versus independent variables}
+
+Another classification for variables is dependent and independent. This distinction is relevant in studies that investigate cause and effect.  The independent variable is the probable cause.  We also refer to this as the predictor or explanatory variable.  The dependent variable is the outcome variable that is affected by the independent variable.
+
+\fbox{\parbox{14cm}{
+In cause-and-effect studies, the \textbf{independent} variable is the probable cause.
+
+The \textbf{dependent} variable is the outcome being caused/affected. }}
+
+The following is a description of a clinical study on the possible link between vaccines and autism.   In particular, the study tries to find an association between the amount of a mercury-containing preservative in vaccines and measures of brain function in children.   It has one independent variable (amount of mercury in vaccines) and 42 dependent variables (measures of brain function).  Similar to two previous published studies, it found no evidence of neurologic problems in children exposed to mercury-containing vaccines. The paper is titled ``Early Thimerosal Exposure and Neuropsychological Outcomes at 7 to 10 Years'' by William W. Thompson, et al. (New England Journal of Medicine, 2007 Sept; Vol. 357, pp.1281-92).
+
+\subsubsection{Background}
+
+It has been hypothesized that early exposure to thimerosal, a mercury-containing
+preservative used in vaccines and immune globulin preparations, is associated with
+neuropsychological deficits in children.
+
+\subsubsection{Methods}
+
+We enrolled 1047 children between the ages of 7 and 10 years and administered standardized tests assessing 42 neuropsychological outcomes. We did not assess autism-spectrum disorders. Exposure to mercury from thimerosal was determined from computerized immunization records, medical records, personal immunization records, and parent interviews. Information on potential confounding factors was obtained from the interviews and medical charts. We assessed the association between current neuropsychological performance and exposure to mercury during the prenatal period, the neonatal period (birth to 28 days), and the first 7 months of
+life.
+
+\subsubsection{Conclusion}
+
+Our study does not support a causal association between early exposure to mercury from thimerosal-containing vaccines and immune globulins and deficits in neuropsychological functioning at the age of 7 to 10 years.
+
+Among the 42 variables used to measure brain function are tests on speech and language (comprehension of instructions, recalling sentences, stuttering), tests on verbal memory (no delay, short delay, long delay), tests on motor coordination (grooved pegboard, finger tapping), tests on behavior regulation (hyperactivity, inattentiveness), presence of tics (motor and phonic) and tests on intelligence (verbal IQ, full-scale IQ).  Most of these are numerical test scores.  Others are categorical, like the presence of stuttering (Yes-No) and tics (Yes-No).
+
+Note that the researcher has a choice of whether to use numerical or categorical measures of brain function.  Even for categorical outcomes, there is a choice between nominal (i.e. Yes-No), or ordinal (Frequently-Sometimes-Never). Many surveys like to use the ordinal five-point scale:
+
+\begin{enumerate}
+\item Strongly agree
+\item Agree
+\item Neither agree nor disagree
+\item Disagree
+\item Strongly disagree
+\end{enumerate}
+
+This is called a \textit{Likert item}.  The scores from adding up several Likert items is said to be on a \textit{Likert scale}.  Western Michigan University's course evaluations use a Likert scale.
+
+\section{Summarizing Categorical Data}
+
+The Census Bureau conducts a separate nationwide survey on population and housing information.  Called the American Community Survey (ACS), it is ``designed to provide communities a fresh look at how they are changing.'' The ACS collects population and housing information every year instead of every ten years.  The following data is a sample of the actual responses to the ACS from the state of Michigan and Indiana in 2008.
+
+The variables `State' and `Type of Payment' are categorical.  The variables `No. of bedrooms,' `Monthly Payment' and `12-month Household Income' are numerical.
+
+% Requires the booktabs if the memoir class is not being used
+\begin{table}[htbp]
+   \centering
+   %\topcaption{Table captions are better up top} % requires the topcapt package
+   \begin{tabular}{@{} llllll @{}} \hline % Column formatting, @{} suppresses leading/trailing space
+      % \toprule
+      \multicolumn{6}{c}{Michigan and Indiana ACS Data} \\
+      \multicolumn{6}{c}{A Partial List} \\
+Household &	State	& Bedrooms	& Monthly	& Type	& Income \\ \hline
+1	& Michigan	& 2	& 880	& Rent	& 11200 \\
+2	& Michigan	& 3	& 990	& Mortgage	& 80800 \\
+3	& Michigan	& 4	& 750	& Mortgage	& 87600 \\
+4	& Michigan	& 3	& 1400 &	Mortgage &	94000 \\
+5	& Michigan	& 4	& 1400 &	Mortgage &	97000 \\
+6	& Michigan	& 1	& 560	& Rent	& 6000 \\
+7	& Michigan	& 4	& 900	& Mortgage &	95000 \\
+8	& Michigan	& 2	& 0	& None	& 39000 \\
+9	& Michigan	& 1	& 380	& Rent	& 24370 \\
+10	& Michigan & 2 &	910	& Rent &	54500 \\
+$\vdots$ & & & $\vdots$ & &  $\vdots$ \\ \hline
+   \end{tabular}
+   \caption{The full list is found in eLearning web-site.}
+   \label{tab:booktabs}
+\end{table}
+
+\subsection{Relative Frequency Table}
+
+A \textit{relative frequency table} gives the count for each category and the relative frequency or percentage of time in which each category occurs.  Here is a relative frequency table for Monthly Payment type.
+
+<<label=LBL2a, results="asis", echo=FALSE>>=
+  ## DT1 <- read.csv("data/ACSdata.csv", header=TRUE)
+  DT1 <- read.csv("~/Desktop/ACSdatacopy.csv", header=TRUE)
+  attach(DT1)
+  ## names(DT1)
+  v1 <- table(Type.of.Payment)
+  v2 <- v1 * 100 / sum(v1)
+  t1 <- cbind(v1, v2)
+  colnames(t1) <- c( "Frequency", "Relative Frequency(%)")
+  xtable(t1, caption="Relative Frequency Table for Type of Monthly Payment", digits=0)
+@
+
+To compute Relative Frequency, divide Frequency by the total and multiply by 100\%.  For example,
+
+\begin{equation}
+RF = \frac{44}{76} \times 100 = 57.9 \nonumber
+\end{equation}
+
+\subsection{Bar Chart}
+
+A \textit{bar chart} is a plot of the relative frequency table.  We use bar charts for categorical data.  The order by which the categories are presented in the bar chart is arbitrary.  Sometimes they are presented in order of decreasing frequency for aesthetic purposes.  Some computing packages present the categories alphabetically, unless otherwise specified.
+
+<<label=LBL2b, results="asis", echo=FALSE>>=
+  barplot(v2, main="Bar Plot for Type of Payment", xlab="Type of Monthly Payment", ylab="Relative Frequency")
+@
+
+\subsection{Pie Chart}
+
+A pie chart gives the same information as a bar chart, except in a circular shape.  We also use pie charts for categorical data.   Some people prefer the look of pie charts over bar charts.  However, studies have shown that people have difficulty comparing relative size of wedges.  Look at the pie chart below.  Is Rent less than half or more than half of Mortgage?
+
+<<label=LBL2c, results="asis", echo=FALSE>>=
+
+  pie(v2, main="Bar Plot for Type of Payment")
+
+@
+
+\section{Summarizing numerical data}
+
+Consider the variable Monthly Payment in the ACS housing data on page 11.  What do the numbers look like?  How large are they? How variable is the data?  Are there any extreme values? These questions are attempts at getting to know the data.  In this section, we discuss tools for getting to know numerical data better.  We have n = 64 observations available, since 12 households (out of 76) do not have monthly payments.  Here is a list of the monthly payments:
+
+{\small{
+880  990  750 1400 1400  560  900  380  910 1200 1200  450 1200 1300  550 340  770  700  700  140  220  650 5200  970  740  500  700 1800  800 1200  1000 1200  200  710 1100  400  370  670  350  510  900  340  440 1500  420    490 2400  500  200  670  760  720  500  280  190 1000  250  700  380  740  850  530  290  230 }}
+
+
+Now, we sort the observations from smallest to largest:
+
+{\small{
+140  190  200  200  220  230  250  280  290  340  340  350  370  380  380  400  420  440  450  490  500  500  500  510  530  550  560  650  670  670  700  700  700  700  710  720  740  740  750  760  770  800  850  880  900   900  910  970  990 1000 1000 1100 1200 1200 1200 1200 1200 1300 1400 1400  1500 1800 2400 5200 }}
+
+The smallest observation is \$140.  The largest is \$5200, which is an \textbf{outlier}.
+
+\fbox{\parbox{14cm}{In data analysis, an \textbf{outlier} is an observation that falls far from the rest of the data.  It may need to be checked for correctness if there is any possiability of clerical error.}}
+
+Can this be a typographical error that we need to correct?  Looking closely at the data, we see it belongs to observation 28, which is a mortgage for a household with \$358,000 annual income.  We infer that it is probably correct, so we leave it alone. The simple act of sorting the data already gives us more information about monthly payment.  For example, we can now see that the typical monthly payment falls around \$700.  We also see the extent to which the \$5200 value is outlying. We now turn to better ways to visualize the \textbf{spread} of this data.
+
+\subsection{Stem-and-Leaf Plot}
+
+Graphs are helpful in summarizing information in the data, especially for large data sets.  Below, we summarize monthly payment in a graph called a stem-and-leaf plot.  The numbers on the left are called stems, while the numbers on the right are called leaves.
+
+There is one leaf for each observation, so there are 63 leaves in all (we left out the \$5200 outlier, for now).  Our smallest observation is \$140.  It is written on the stem `1' as a leaf of `4'.  We can infer that that the stems represent \$100's, and the leaves represent \$10's.  The next largest value \$190 is written on stem `1' as a `9'.   \$200 is written on stem `2' as `0', etc.
+
+\begin{minipage}[ht]{7.5cm}
+
+Stem and Leaf Display of Monthly Payment (stem width \$100)
+
+\begin{tabular}{@{} r|l @{}} \hline
+1 & 49 \\
+2 & 0023589 \\
+3 & 445788 \\
+4 & 02459 \\
+5 & 0001356 \\
+6 & 577 \\
+7 & 00001244567 \\
+8 & 058 \\
+9 & 00179 \\
+10& 00 \\
+11& 0 \\
+12& 00000 \\
+13& 0 \\
+14& 00 \\
+15& 0 \\
+16& \\ \hline
+\end{tabular}
+
+\end{minipage}
+\begin{minipage}[ht]{7.5cm}
+
+Stem-and-Leaf Display of Monthly Payment (stem width=\$200)
+
+\begin{tabular}{@{} r|l @{}} \hline
+0 & 49 \\
+2 & 0023589445788 \\
+4 & 024590001356 \\
+6 & 57700001244567 \\
+8 & 05800179 \\
+10 & 000 \\
+12 & 000000 \\
+14 & 000 \\
+16 &  \\
+18& 0 \\
+20&  \\
+22&  \\
+24& 0 \\
+26&  \\
+28&  \\
+30& \\ \hline
+\end{tabular}
+\end{minipage}
+
+You see why we left out \$1800, \$2400, and \$5200. It would have made the graph extend beyond the page!  We can make the graph more compact by merging stems. The plot below is about half the length because the intervals for each stem are twice as wide.
+
+The stem `8' now contains both `8' and `9', so that the leaves are read as 800, 850, 880, 900, 900, 910, 970, 990.  Which stem-and-leaf plot is better?  The answer depends on the viewers' taste, and is not a matter of right or wrong.  In both cases, we see that monthly payments seem to spread out from around a center of \$700.
+
+Suppose we want to compare mortgage and rent.  Do mortgage payments tend to be greater or less than rent?  We can present stem-and-leaf for mortgage and rent side by side.
+
+\newpage
+
+Stem and Leaf Display of Monthly Payment (stem width \$100)
+
+\begin{minipage}[ht]{3cm}
+
+Mortgage
+
+\begin{tabular}{@{} r|l @{}} \hline
+1 & 9 \\
+2 & 0039 \\
+3 & 478 \\
+4 & 245 \\
+5 & 00135 \\
+6 & 7 \\
+7 & 0012457 \\
+8 & 05 \\
+9 & 007 \\
+10& 00 \\
+11& 0 \\
+12& 0000 \\
+13& 0 \\
+14& 00 \\
+15& 0 \\
+16& \\ \hline
+\end{tabular}
+\end{minipage}
+\begin{minipage}[ht]{4cm}
+
+Rent
+
+\begin{tabular}{@{} r|l @{}} \hline
+1 & 4 \\
+2 & 258 \\
+3 & 458 \\
+4 & 09 \\
+5 & 06 \\
+6 & 57 \\
+7 & 0046 \\
+8 & 8 \\
+9 & 1 \\
+10&  \\
+11&  \\
+12& 0 \\
+13&  \\
+14&  \\
+15&  \\
+16& \\ \hline
+\end{tabular}
+\end{minipage}
+
+In general, rent is smaller than mortgages, and less variable.  While mortgages seem centered around \$700, rent is centered around \$500.  Furthermore, mortgages have a longer right tail, with a significant percentage over \$1000.  Plus, remember that we have removed a \$1800 - \$5200 mortgage from these plots.
+
+\subsection{Relative Frequency Table and Histogram}
+
+Earlier in this chapter, we presented a relative frequency table for categorical data.  Relative frequency tables may also be used for numerical data.  A relative frequency table for monthly payment is presented below.  The class width is chosen so as to achieve a moderate number of class intervals.
+
+{\small{
+<<label=LBL2d, results="asis", echo=FALSE>>=
+  tmp0 <- sort(Monthly.Payment)
+  ## tmp0[13:76]
+  tmp1 <- as.integer(tmp0[13:76] / 200)
+  tmp2 <- as.factor(tmp1)
+  tmp3 <- table(tmp2)
+  tmp4 <- tmp3*100/sum(tmp3)   ## compute percentage
+  tmp5 <- cbind(tmp3, tmp4)
+  colnames(tmp5) <- c( "Frequency", "Relative Frequency(%)")
+  rownames(tmp5) <- c("0-200", "200-400", "400-600", "600-800", "800-1000", "1000-1200","1200-1400", "1400-1600", "1600-1800","2400-2600", "5200-5400")
+
+  xtable(tmp5, caption="RF Table of Monthly Payment for ACS Housing Data", digits=0)
+@
+}}
+
+There are three things to keep in mind when constructing a frequency table. First, decide how many classes (i.e. intervals) you want.  This also determines the \textit{class width}.  Try to have 5 to 15 intervals, depending on how many observations you have. Second, decide where the first interval starts.  Third, decide how to avoid boundary disputes.
+
+The last item requires you to choose a \textbf{boundary convention}.  For instance, the intervals in the frequency table above could have been written as follows:
+
+\begin{tabular}{@{} l @{}} \hline
+0-199 \\
+200-399 \\
+400-599 \\
+600-799 \\
+etc. \\ \hline
+\end{tabular}
+
+This way, it is easier to tell that \$200 belongs to the second interval, not the first.  However, the table looks more complicated, harder to read.  To keep the intervals simple but avoid boundary disputes, include a footnote to the table that describes the boundary convention, i.e. ``Intervals contain the left endpoint but not the right.''  Then, we know that \$200 belongs to the second interval, not the first.  Or, square braces and parenthesis may be used.
+
+\begin{tabular}{@{} l @{}} \hline
+$ [0-200)$ \\
+$ [200-400)$ \\
+$ [400-600)$ \\
+$ [600-800)$ \\
+ etc. \\ \hline
+\end{tabular}
+
+This also means that the class intervals contain the left endpoint but not the right.  Which method do you prefer?
+
+The relative frequency table is a compact numerical way to present how the data is distributed.  If the frequencies are plotted as columns, the resulting plot is called a \textit{histogram}.
+
+The histogram and stem-and-leaf plots look alike, except that the stem-and-leaf plot has columns that go sideways instead of upwards.  Stem-and-leafs are better if you want the data values themselves available from the plot.  However, the histogram can handle large sample sizes easily, and is more flexible in choosing class widths.  For example, you may choose class widths of \$500, as follows: $[0,500), [500,1000), [1000,1500), \dots, [5000,5500)$, which stem plots cannot do.
+
+\subsection{Dot Plot}
+
+For moderately large samples, a \textit{dotplot} diagram is a quick way to see what the data looks like.  We present dotplots of monthly payment for rent and mortgages below.  As we observed using side-by-side stem plots, rent is smaller than mortgages, and less variable.
+
+\begin{figure}[htbp]
+   \centering
+   \includegraphics[width=11cm]{chapters/Chapter_2/ext_figure/dotchart.pdf} % requires the graphicx package
+   %\caption{example caption}
+   %\label{fig:example}
+\end{figure}
+
+\subsection{Box-and-Whisker Plot}
+
+A box-and-whisker or boxplot shows useful information about the data including the measures the central tendency and the variability of the distribution.  First, order the data from smallest to largest.  What is the range of the first (or smaller) half of the data?  The smallest quarter of the data?  The next quarter?  The box-and-whisker plot or boxplot is a graphical picture of the distribution of quarters of the data.  Consider once again the monthly payments from the ACS housing data.  We list them here sorted from smallest to largest (minus the \$5200 outlier).
+      {\small{
+      140  190  200  200  220  230  250  280  290  340  340  350  370  380  380
+      400  420  440  450  490  500  500  500  510  530  550  560  650  670  670
+      700  700  700  700  710  720  740  740  750  760  770  800  850  880  900
+      900  910  970  990 1000 1000 1100 1200 1200 1200 1200 1200 1300 1400 1400
+     1500 1800 2400
+      }}
+
+There are $n = 63$ observations.  One quarter of the data is 63/4=15.75, or approximately 16 observations.  The boxplot below gives the range of each of the four quarters of the data: the range of the first quarter (i.e. the lowest 16 monthly payments) is given by the left whisker.  The range of the 2nd quarter is the left part of the box, the 3rd quarter the right part of the box, and the range of the last quarter is the right whisker.
+
+<<label=LBL2g, results="asis", echo=FALSE, out.width='8cm'>>=
+  boxplot(tmp0[13:75], horizontal=TRUE, xlab="Dollars", main="Box of Monthly Payments")
+@
+
+More precisely, the vertical lines are drawn at (140, 400, 700, 970, 2400).  Hence, the lowest 16 monthly payments lie within (\$140, \$400).  The next set of 16 observations lie within (\$400, \$700).  The third set lie within (\$700, \$970).  Finally, the last 16 observations lie within (\$970, \$2400).  The five values (140, 400, 700, 970, 2400) that divide the data into quarters and form the fences and whiskers of the boxplot are collectively called the five-number-summary of the data.  They are often denoted as MIN, Q1, MED, Q3, and MAX respectively.
+
+\begin{enumerate}
+\item	\textbf{MIN} is called the \textbf{minimum} and is the smallest of the ordered observations.
+\item	\textbf{$Q_1$} is the upper boundary of the first quarter and is called the \textbf{first quartile}.
+\item	\textbf{MED} is the upper boundary of the second quarter and is called the \textbf{second quartile}.  However, it also divides the data into lower and upper halves and is more often called the median.
+\item	\textbf{$Q_3$} is the upper boundary of the third quarter and is called the \textbf{third quartile}.
+\item	\textbf{MAX} is the largest of the ordered observations and is called the \textbf{maximum}.
+\end{enumerate}
+
+Boxplots are particularly useful for comparing two distributions side-by-side.  Below are boxplots of mortgage and rent drawn parallel to each other on the same scale.  It shows that mortgages tend to be larger than rent, since the median and quartiles are larger.  There is also a very big difference in spread, with mortgage having a long right tail, evidence that mortgages have a higher ceiling than rent.
+
+<<label=LBL2h, results="asis", echo=FALSE, out.width="9cm">>=
+  boxplot(Monthly.Payment ~ Type.of.Payment, horizontal=TRUE, xlab="Dollars", main="boxplot of Monthly Payments", ylab="Type")
+@
+
+Different statistical computing packages have different ways of computing the quartiles, but the differences are minimal.  In this class, we compute the quartiles as follows.  First, arrange the observations from smallest (1st ordered observation) to largest ($n^{th}$ ordered observation).  Then
+
+\fbox{\parbox{9cm}{
+$Q_1$ is the .25(n+1)st ordered observation. \newline
+MED is the .50(n+1)st ordered observation. \newline
+$Q_3$ is the .75(n+1)st ordered observation.
+}}
+
+If .25(n+1) is not an integer, take the average of the two adjacent ordered observations.  Similarly, for MED and $Q_3$.  Here again are the $n = 63$ ordered observations of monthly payments.
+
+{\small{
+140  190  200  200  220  230  250  280  290  340  340  350  370  380  380
+      400  420  440  450  490  500  500  500  510  530  550  560  650  670  670
+      700  700  700  700  710  720  740  740  750  760  770  800  850  880  900
+      900  910  970  990 1000 1000 1100 1200 1200 1200 1200 1200 1300 1400 1400
+     1500 1800 2400
+}}
+
+
+Since .25(63+1)=16, then $Q_1$ is the $16^{th}$ ordered observation.  Hence $Q_1 = 400$.  Similarly, \\ 0.50(63+1)=32 so MED=700.  Finally, .75(63+1)=48, so $Q_3 = 970$.
+
+If $n = 64$, then .25(64+1) = 16.25, so that $Q_1$ would be the average of the $16^{th}$ and $17^{th}$ ordered observations.  Therefore, if we return the \$5200 outlier we removed, then the five-number-summary would be (140, 410, 700, 980, 5200).
+
+\subsection{Symmetry and Skewness}
+
+The shape of the data is often described by its symmetry or non-symmetry (also called skewness).  Here are stem-and-leaf plots for \textit{symmetric}, \textit{right skewed}, and \textit{left-skewed} data.
+
+\vspace{3mm}
+
+\begin{minipage}[ht]{5cm}
+
+Symmetric Data
+
+<<label=LBL2i, results="asis", echo=FALSE>>=
+  SDat1 <- c(47,53,55,61,61,65,71,71,72,71,71,88,84,86,87,89,89,91,91,99,99,104,101,111)
+
+##   stem(SDat1, scale=2)
+@
+
+\begin{tabular}{@{} r|l @{}} \hline
+4 & 7 \\
+5 & 35 \\
+6 & 115 \\
+7 & 11112 \\
+8 & 467899 \\
+9 & 1199 \\
+10 & 14 \\
+11 & 1 \\ \hline
+\end{tabular}
+\end{minipage}
+\begin{minipage}[ht]{5cm}
+
+Right-Skewed Data
+
+<<label=LBL2j, results="asis", echo=FALSE>>=
+ SDat2 <- c(45,48,53,51,51,52,54,55,55,56,59,62,64,64,65,71,77,92,105,112)
+
+##   stem(SDat2, scale=2)
+@
+
+\begin{tabular}{@{} r|l @{}} \hline
+4 & 58 \\
+5 & 112345569 \\
+6 & 2445 \\
+7 & 17 \\
+8 & \\
+9 & 2 \\
+10 & 5 \\
+11 & 2 \\ \hline
+\end{tabular}
+\end{minipage}
+\begin{minipage}[ht]{5cm}
+
+Left-Skewed Data
+
+
+<<label=LBL2k, results="asis", echo=FALSE>>=
+   SDat3 <- c(40,55,62,81,87,92,94,94,95,101,101,101,102,104,105,105,106,109,115,118)
+##   stem(SDat3, scale=2)
+@
+
+\begin{tabular}{@{} r|l} \hline
+4 & 0 \\
+5 & 5 \\
+6 & 2 \\
+7 & \\
+8 & 17 \\
+9 & 2445 \\
+10 & 111245569 \\
+11 & 58 \\ \hline
+\end{tabular}
+\end{minipage}
+
+The term `skew' refers to the direction of the longer tail if you flip the stem-and-leaf sideways or draw a histogram.  Here is the histogram of the left-skewed plot below.
+
+<<label=LBL2l, results="asis", echo=FALSE, out.width="4cm">>=
+  SDat4 <- c(401,501,601,801,802,901,902,903,904,905,1001,1002,1003,1004,1005,1006,1007,1008,1101,1102)
+  hist(SDat4, xlab="values")
+
+@
+
+The long tail denotes outlying observations or extreme observations.  The left-skewed histogram above contains outlying small observations, while a right-skewed histogram would have outlying large observations.  A left skew also indicates that the smallest quarter of observations will be more spread out. For some further examples of histograms depicting both symmetry and skewness, see below.
+
+\vspace{3mm}
+
+\begin{minipage}[ht]{5cm}
+
+<<label=LBL2m, results="asis", echo=FALSE, out.width="5cm">>=
+  hist(SDat1, xlab="values", main="Symmetric")
+@
+\end{minipage}
+\begin{minipage}[ht]{5cm}
+
+<<label=LBL2n, results="asis", echo=FALSE, out.width="5cm">>=
+  hist(SDat2, xlab="values", main="Right-Skewed")
+@
+\end{minipage}
+\begin{minipage}[ht]{5cm}
+
+<<label=LBL2o, results="asis", echo=FALSE, out.width="5cm">>=
+  hist(SDat3, xlab="values", main="Left-Skewed")
+@
+\end{minipage}
+
+\newpage
+
+\section{Exercise}
+
+\begin{exercises}    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+  \begin{exercise}  % 1
+
+Identify the following types of data as numerical or categorical.  If numerical, further classify into interval or ratio.
+
+	  \begin{enumerate}
+	  \item The scores on exam one for Stat 1600.
+    \item Marital status
+    \item Annual income
+    \item Social Security Number
+    \item Cumulative GPA
+    \item Academic level (freshman, sophomore, junior, senior, other)
+    \item Quality (poor, fair, good, excellent)
+    \item Height (short, average, tall)
+    \item Age (years)
+    \item Grade $(A, B, C, \dots)$
+    \item Color
+    \item Rating of eight local plays (poor, fair, good, excellent).
+    \item Times required for mechanics to do a tune-up.
+  	\end{enumerate}
+
+    % \framebox[5cm][l]{ Answer: }
+
+  \end{exercise}
+  \begin{solution}  % 1
+
+    \begin{enumerate}
+	  \item The scores on exam one for Stat 1600:  numeric, ratio
+    \item Marital status: categorical, nominal
+    \item Annual income: numeric, ratio
+    \item Social Security Number: categorical, nominal
+    \item Cumulative GPA: numeric, interval
+    \item Academic level (freshman, sophomore, junior, senior, other): categorical, ordinal
+    \item Quality (poor, fair, good, excellent): categorical, ordinal
+    \item Height (short, average, tall): categorical, ordinal
+    \item Age (years): numeric: ratio
+    \item Grade $(A, B, C, \dots)$: categorical, ordinal
+    \item Color: categorical, nominal
+    \item Rating of eight local plays (poor, fair, good, excellent): categorical, ordinal
+    \item Times required for mechanics to do a tune-up: numeric, interval
+  	\end{enumerate}
+  \end{solution}
+
+  \begin{exercise} % 2
+
+
+% \begin{minipage}[ht]{7cm}
+
+The 6-year graduation rate for a random sample of 30 colleges and universities
+in the U.S. is displayed in the following stem-and-leaf plot.  Note that the stem unit is 10\%, and the leaf unit is 1\%.  For example, the maximum value is 92\%.
+% \end{minipage}
+% \begin{minipage}[ht]{7cm}
+
+\begin{tabular}{@{} r|l @{}} \hline
+2 & \\
+3 & 4 \\
+4 & 56889 \\
+5 & 01112345567889 \\
+6 & 0124457 \\
+7 & 17 \\
+8 & \\
+9 & 2 \\ \hline
+\end{tabular}
+% \end{minipage}
+
+	  \begin{enumerate}
+	  \item Obtain the five-number summary.
+    \item Obtain a boxplot and histogram for 6-year graduation rate.
+    \item In your opinion, which of the three plots (stem-and-leaf, boxplot, histogram) best illustrates the data? Why?
+	  \end{enumerate}
+
+ %   \framebox[5cm][l]{ Answer: }
+	\end{exercise}
+% 	\begin{solution}  % 2
+%
+%
+%   \end{solution}
+
+\begin{exercise}  % 3
+
+The following plots represent five different samples of data. For each, describe the shape.
+
+\begin{figure}[ht]
+  \caption{Describe Shapes}
+
+\begin{minipage}[ht]{3cm}
+
+  a)
+
+  \includegraphics[width=83pt]{chapters/Chapter_2/ext_figure/boxq7.png}
+  \end{minipage} \hfill
+  \begin{minipage}[ht]{3cm}
+
+  b)
+
+  \includegraphics[width=83pt]{chapters/Chapter_2/ext_figure/boxq7b.png}
+  \end{minipage} \hfill
+  \begin{minipage}[ht]{3cm}
+
+  c)
+
+  \includegraphics[width=83pt]{chapters/Chapter_2/ext_figure/boxq7c.png}
+  \end{minipage} \hfill
+  \begin{minipage}[ht]{3cm}
+
+  d)
+
+    \begin{tabular}{@{} r|l @{}} \hline
+  4 & 58 \\
+  5 & 011245569 \\
+  6 & 2445 \\
+  7 & 17 \\
+  8 &  \\
+  9 & 2 \\
+  10 & 5 \\
+  11 & 0
+    \end{tabular}
+  \end{minipage} \hfill
+  \begin{minipage}[ht]{3cm}
+  e)
+
+  \begin{tabular}{@{} r | l @{}} \hline
+  0 & 4 \\
+  1 & 889 \\
+  2 & 11467 \\
+  3 & 457 \\
+  4 & 7
+  \end{tabular}
+  \end{minipage}
+
+\end{figure}
+\end{exercise}
+\begin{solution}  % 3
+
+2.5-7.1: Left-skewed
+
+2.5-7.2: Symmetric
+
+2.5-7.3: Left-skewed
+
+2.5-7.4: Right-skewed
+
+2.5-7.5: Symmetric
+
+\end{solution}
+
+
+  \begin{exercise} % 4
+
+A manager of a car rental company took a random sample of 100 business days over the last fiscal year and recorded the number of cars rented per day.  The frequency distribution for the data is given below.
+
+\begin{tabular}{@{} lcc @{}} \hline
+Interval  &  Frequency &	Relative Frequency \\
+$(20, 25]$ 	&      4 \\
+$(25, 30]$ 	&    11  \\
+$(30, 35]$ 	&    23 \\
+$(35, 40]$ 	&    31 \\
+$(40, 45]$ 	&    15 \\
+$(45, 50]$ 	&    10 \\
+$(50, 55]$ 	&      6 \\ \hline
+\end{tabular}
+
+\begin{enumerate}
+\item Fill in the Relative Frequencies above.
+\item	Draw a histogram by hand, with either the frequencies or relative frequencies as the vertical axis.
+\item	What interval does the median number of car rentals per day fall into?
+\item What percentage of business days had 30 or less car rentals?
+\item	How many business days had more than 45 car rentals?
+\end{enumerate}
+
+   % \framebox[5cm][l]{ Answer: }
+
+	\end{exercise}
+	\begin{solution}  % 4
+<<label=LBL2p, results="asis", echo=FALSE>>=
+  ex4dat <- c(4,11,23,31,15,10,6)
+  rf4dat <- ex4dat*100/sum(ex4dat)
+@
+
+Compute relative frequencies:
+
+\begin{tabular}{@{} lcc @{}} \hline
+Interval  &  Frequency &	Relative Frequency \\
+$(20, 25]$ 	&     4 & \Sexpr{rf4dat[1]}  \\
+$(25, 30]$ 	&    11 & \Sexpr{rf4dat[2]} \\
+$(30, 35]$ 	&    23 & \Sexpr{rf4dat[3]} \\
+$(35, 40]$ 	&    31 & \Sexpr{rf4dat[4]} \\
+$(40, 45]$ 	&    15 & \Sexpr{rf4dat[5]} \\
+$(45, 50]$ 	&    10 & \Sexpr{rf4dat[6]} \\
+$(50, 55]$ 	&     6 & \Sexpr{rf4dat[7]} \\ \hline
+\end{tabular}
+
+
+	\end{solution}
+
+\end{exercises}
+

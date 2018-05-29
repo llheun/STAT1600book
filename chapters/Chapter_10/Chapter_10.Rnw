@@ -1,0 +1,249 @@
+%!Rnw root = ../../Master.Rnw
+
+\chapter{Sampling Distribution of the Mean}
+\label{chap:ch10}
+
+\section{Objectives}
+
+After completing this part, students should be able to:
+
+\fbox{\parbox{14cm}{
+
+\begin{itemize}
+\item Define and explain the concept of the {\textbf{distribution of the sample mean}}.
+\item Convert empirical scores to z-scores and use z-scores and the Normal Distribution curve
+table to find areas above, below and between points of the curve and  express them regarding their probabilities.
+\item Utilize the standard normal distribution to solve probability (chance) problems.
+\end{itemize}
+}}
+
+\section{Behavioral Properties of the Sample Average}
+
+What percentage of adult men are between 5'6'' and 6' tall?  Population surveys have shown that men's heights are approximately normally distributed with mean 5'9'' and SD 3''.  Thus the percentage of men between 5'6'' and 6' is estimated as 68\%, the percentage within 1 SD of the mean.  See Figure 10.1 below.
+
+\begin{figure}[ht]
+\caption{The Percentage of Men's Heights between 66 and 72 inches}
+
+<<label=LBL10, results="asis", echo=FALSE, out.width="6cm">>=
+  xr <- seq(57, 81, by=.5)
+  yr <- dnorm(xr, mean=69, sd=3)
+  plot(xr, yr, type="l", xlab="Height (inches)", ylab="Density")
+  polygon(c(xr[xr > 66 & xr < 72], 72, 66), c(dnorm(xr[xr > 66 & xr < 72], mean=69, sd=3), 1e-4, 1e-4), col="yellow")
+  text(78, .1, "0.6827")
+  arrows(75, .1, 71, .1)
+@
+
+\end{figure}
+
+If the population of men are randomly assigned into groups of 9, and the average heights are computed for each group, what percentage of groups average between 5'6'' and 6' in height?    Is the answer approximately 68\%?  No.  In fact, more than 99\% of the groups will average between 5'6'' and 6', even though only 68\% of individuals do.  Why?  Because averages tend to include tall, short and medium heights -- therefore averages tend to fall closer to middle than individuals.   (Think about this:  We put in a hat the names of all the men in class.  You will win \$20 if the names you draw average over 6 feet tall.  Would you rather draw 1 or 2 names?  What are your chances of winning if you draw 9 names?)  
+
+The following is a small simulation study of the behavior of the sample mean.  Fifty samples are drawn (each containing $n = 9$ individuals) from a population with mean 69 inches and SD 3 inches.  For each sample, we calculate the average.  Observe that none of the samples average over 71 inches, even though many individuals do.
+
+\begin{table}[ht]
+\caption{Heights of 50 samples of Nine Men}
+\begin{tabular}{@{} ccccccccccc @{}} \hline
+Sample & (1)&(2)&(3)&(4)&(5)&(6)&(7)&(8)&(9)& Ave \\ \hline
+1: &65.5&66.8&68.9&67.8&71.9&66.8&71.0&73.1&62.6&68.27 \\
+2: &68.6&71.2&72.6&64.3&70.9&70.0&69.0&69.8&62.4&68.75 \\
+3: &67.4&67.9&67.1&68.2&70.7&68.3&67.2&68.7&67.0&68.04 \\
+$\vdots$ & $\vdots$ & $\vdots$ & $\vdots$ & $\vdots$ & $\vdots$ & $\vdots$ & $\vdots$ & $\vdots$ & $\vdots$ & $\vdots$ \\ \hline
+SD: &3.17&2.56&2.66&3.25&2.94&2.56&3.10&3.33&3.62 & 0.92 \\
+Mean: &68.53&68.18&68.92&68.51&69.26&68.72&68.66&68.86&68.11& 68.64 \\ \hline
+\end{tabular}
+\end{table}
+
+The first lesson of this chapter says:
+
+\fbox{\parbox{14cm}{Averages are less variable than individuals}}
+
+Do you see this in the simulation study?  To make it easier to see, look at the SD of each column.  The SD of individuals tend to be around 3.0 (the true value), but the SD of averages is much smaller.  How much smaller?  We now state the main lesson of the chapter.
+
+\fbox{\parbox{14cm}{SD of $\bar{X} = \frac{\texttt{SD of individuals}}{\sqrt{n} }$ }}
+
+Since the individuals in the simulation study have SD of 3 inches, the SD of 9-member averages is:
+
+\fbox{\parbox{14cm}{SD of $\bar{X}_{n=9} = \frac{\texttt{SD of individuals}}{\sqrt{n} } = \frac{3}{\sqrt{9}} = 1.0$ }}
+
+Therefore, the true value for the SD of the last column is 1.0.  The simulated SD is 0.92, which is close.
+
+\subsubsection{Example 1}
+
+Suppose that men's heights are normally distributed with a mean 5'9'' and a SD 3''.
+  
+  \begin{enumerate}
+  \item What percentage of men are over 5'11'' tall?
+  \item Select a man at random.  What is the probability that he is over 5'11'' tall?
+  \item If the average height were calculated for all possible samples of size 9 that can be taken, what percentage of averages will exceed 5'11''?
+  \item Given one randomly selected sample of size 9, what is the probability that the average height will exceed 5'11''?
+  \item Given a sample of size 25, what is the probability that the average height will exceed 5'11''?
+  \item Given a sample of size 9, the average height of the sample will exceed \underline{\phantom{xxxxxxxx}} with probability 0.90
+  \item 90\% of samples of size 9 will have average height exceeding \underline{\phantom{xxxxxxxx}}.
+  \end{enumerate}
+
+\section{Estimating the Population Mean}
+
+Consider estimating the average GPA (call this $\mu$) of the approximately 23,000 WMU undergraduates.  In the absence of the complete database, we may wish to estimate $\mu$ by taking a random sample of, say, $n = 25$ students and computing the sample average (call this $\bar{X}$).  Suppose $\bar{X} = 3.05$.  Now, unless we got very lucky with the random sample, chances are the 3.05 estimate missed the true value $\mu$.  By how much?
+
+On the average, a random variable misses its expected value by one standard deviation.  We expect $\bar{X}$ to miss by how much?  By one SD of $\bar{X}$.  Using the equation above, we can estimate this by $\frac{S}{\sqrt{n}}$, since the sample standard deviation $S$ estimates the SD of individuals.
+
+\fbox{\parbox{14cm}{
+The population mean ($\mu$) is estimated using the sample mean ($\bar{X}$).  The estimate tends to miss the $\mu$ by an amount called the \textit{standard error (SE)} of the mean which is calculated as $\frac{S}{\sqrt{n}}$:
+$$ SE_{\bar{x}} = \frac{S}{\sqrt{n}} $$
+}}
+
+Returning to the GPA example, suppose that the sample of $n = 25$ students yielded an average GPA of 3.05 and a standard deviation of 0.40.  Then the WMU population average GPA is estimated as 3.05 with a standard error of $\frac{S}{\sqrt{n}} = \frac{0.40}{\sqrt{25}} = 0.08$.
+
+\subsubsection{Example 2}
+
+What is the average length of stay for undergraduate students at WMU?
+
+\begin{enumerate}
+  \item Suppose 25 graduating students were randomly selected and asked about their length of stay.  Suppose that the sample averaged 5.3 years, with an SD of 1.5 years.  Then the WMU average stay is estimated as \underline{\phantom{xxxxxxxx}}  years give or take \underline{\phantom{xxxxxxxx}} years or so. 
+
+  \item A second sample of 100 students were interviewed.   The mean and SD for the second sample were also 5.3 years and 1.5 years, respectively. Calculate an estimate for the WMU average stay and provide a standard error for your estimate.
+\end{enumerate}
+
+Similar to the SE for proportions, the formula for the SE of the mean has the sample size (i) in the denominator, and (ii) inside the square root sign.  Therefore, increasing the sample size by a factor of 4 makes the standard error decrease by a factor of $\sqrt{4}$. 
+
+\fbox{\parbox{14cm}{
+The standard error of the mean decreases like the square root of the sample size (n).
+}}
+
+\section{Estimating the Population Mean Using Intervals}
+
+Variables tend to miss their expected value, but should be within 1 SD 68\% of the time, and within 1.96 SD's 95\% of the time. Changing notation for SD to SE, we get
+
+\begin{equation*}
+| \bar{X} - \mu | \le 1.96 (SE) 
+\end{equation*}
+
+95\% of the time, where the SE is given in equation ??? 11.1.  As a consequence,
+
+\begin{equation*}
+\mu \texttt{ is inside the interval } \bar{X} \pm 1.96 (SE) 
+\end{equation*}
+
+95\% of the time.  This gives an interval estimate for $\mu$. 
+
+\fbox{\parbox{14cm}{
+\textbf{95\% Confidence Interval for $\mu$} \\
+A 95\% Confidence Interval estimate for the population mean $\mu$ is given by 
+
+\begin{equation*}
+ \bar{X} \pm 1.96 \frac{S}{\sqrt{n}}
+\end{equation*}
+}}
+
+The term $1.96 \frac{S}{\sqrt{n}}$ is called the 95\% margin of error.
+
+\section{Sample Size for Estimating the Population Mean}
+
+If we wanted to reduce the margin of error to some value M, then we set the formula for margin of error equal to $M$, i.e., $M = 1.96 \frac{S}{\sqrt{n}}$.  Solving for $n$ gives the result we need.  
+
+\fbox{\parbox{14cm}{
+In order to be 95\% confident that the sample mean is within a distance $M$ of the true population $\mu$, choose a sample size equal to 
+\begin{equation*}
+ n = \frac{1.96^2 S^2}{M^2}
+\end{equation*}
+where $S$ is the standard deviation based on historical data or a pilot sample.  The quantity $M$ is called the 95\% margin of error for $\mu$.
+}}
+
+\twocolumn
+
+\section{Exercises}
+
+\begin{exercises}
+
+\begin{exercise}  % 1
+
+The national average on a science test for tenth graders has a mean of 210 and a standard deviation of 28.
+
+\begin{enumerate}
+  \item What percentage scored over 220?  (You may assume that the histogram of scores looks approximately like the normal \\ curve.)
+  \item One tenth grader is randomly selected.  What is the chance that he/she scored over 220?
+  \item A random sample of 40 tenth graders are selected.  What is the chance that this group will average over 220? (Should this be smaller, larger, or approximately equal to (2)?)
+  \item A larger sample of 100 tenth graders is selected.  What is the probability that this group will average over 220?  \\ (Should this be smaller, larger, or approximately equal to (3)?
+\end{enumerate}
+
+\end{exercise}
+\begin{solution}  % 1
+
+\end{solution}
+
+\begin{exercise}  % 2
+
+A sample of 16 observations is taken from a distribution with mean of 10 and standard deviation 2.
+
+\begin{enumerate}
+  \item Suppose the sample mean is 10.5. What is the standard error of this estimate?
+  \item What is the 95\% margin of error?
+  \item What is the 95\% confidence interval?
+  \item What is the probability the sample \\ mean is greater than 9?
+  \item What is the probability the sample \\ mean is less than 9? 
+  \item What is the probability the sample \\ mean is between 8 and 10? 
+  \item 33\% of sample means are above what value? 
+  \item 33\% of sample means are below what value?
+\end{enumerate}
+\end{exercise}
+\begin{solution}  % 2
+
+\end{solution}
+
+\begin{exercise}  % 3
+
+Safe Skies Airline took a random sample of 25 flights to estimate the average time that arriving passengers wait for luggage at the carousel.  The sample average was found to be 16.2 minutes with a standard deviation of 4 minutes.  The population \\ average waiting time is estimated as \underline{\phantom{xxxxxxxx}} minutes give or take \underline{\phantom{xxxxxxxx}} minutes or \\ so.
+
+\end{exercise}
+\begin{solution}  % 3
+
+\end{solution}
+
+\begin{exercise}  % 4
+
+The normal human body temperature is on average $98.6^o F$ with a standard deviation of $1.0^o F$. A random sample of 35 is taken. 
+
+\begin{enumerate}
+\item What is the distribution of the sample mean?
+\item What is the mean of this estimate? 
+\item What is the standard error of this estimate?
+\end{enumerate}
+
+\end{exercise}
+\begin{solution}  % 4
+
+\end{solution}
+
+\begin{exercise}  % 5
+
+A manufacturing \\ company's profits depend on the cost of materials.  One material of interest is carbon fiber, which is used to make golf shafts and fishing rods.  The cost per pound (in dollars) was recorded for ten randomly selected days from the first six months of 2002. The data follow:
+            $$7.6, 7.8, 8.8, 7.3, 6.6, 7.5, 6.7, 8.6, 7.4, 7.7$$
+            
+\begin{enumerate}            
+  \item Calculate an estimate for the average cost per pound during the first six \\ months of 2002.
+  \item Calculate a standard error for your estimate in (1).
+\end{enumerate}  
+
+\end{exercise}
+\begin{solution}  % 5
+
+\end{solution}
+
+\begin{exercise}  % 6
+
+The average annual rainfall in Mawsynram, India (the wettest place on Earth) is 467.35 inches with a standard deviation of 5.12 inches. A random sample of 100 is taken.
+
+\begin{enumerate}
+  \item What happens to the distribution of \\ sample means as the sample size \\ increases?
+  \item What is the mean of this distribution? 
+  \item What is the standard error of this distribution?
+\end{enumerate}
+
+\end{exercise}
+\begin{solution}  % 6
+
+\end{solution}
+
+\end{exercises}
+
+
+\onecolumn

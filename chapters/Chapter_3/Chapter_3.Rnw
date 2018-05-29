@@ -1,0 +1,370 @@
+%!Rnw root = ../../Master.Rnw
+
+\chapter{Location and Spread}
+\label{chap:ch3}
+
+\section{Objective}
+
+After completing this part, students should be able to:
+
+\fbox{\parbox{14cm}{
+\begin{itemize}
+\item Explain the concept of measures of central tendency and interpret the
+information they provide.
+\item Calculate, describe and compare the three most commonly used measures of central tendency: means, medians, and modes.
+\item Understand other measures of central tendency
+\item Select appropriate measure of central tendency based on the
+level of measurement and characteristics of the data (distribution).
+
+\item Explain the concept of measures of dispersion and the information they convey.
+\item Compute and explain the following:
+	\begin{itemize}
+	\item The range ({\textbf{R}}).
+	\item The interquartile range ({\textbf{IQR}})
+	\item The sample variance (denoted as {\textbf{$s^2$}}).
+	\item The population variance  (denoted as {\textbf{$\sigma^2$}}).
+	\item The sample standard deviation  (denoted as {\textbf{$s$}}).
+	\item The population standard deviation  (denoted as {\textbf{$\sigma$}}).
+	\end{itemize}
+\item Select the  measure of dispersion appropriate for our current problem.
+\end{itemize}
+}}
+
+
+\section{Estimates of Center}
+
+Suppose that a random sample of two-bedroom apartments in the Kalamazoo area yields the following data on monthly rent:
+
+\$635, \$525, \$500, \$800, \$650, \$750, \$555, \$500, \$670, \$675
+
+How much would you say is the average rental for two-bedroom apartments in Kalamazoo?  In this chapter, we will discuss the sample average and several alternatives to the average when estimating `average value' in a population.
+
+\subsection{The Sample Mean}
+
+The sample mean is the statistical term for `average of the sample.'  For the example above, the sample mean (denoted $\bar{X}$) is: The sample mean is the statistical term for `average of the sample.'  For the example above, the sample mean (denoted $\bar{X}$) is:
+
+$$ \bar{X} = \frac{635+525+500+800+650+750+555+500+670+675}{10} = \$626 $$
+
+so that the average rent in Kalamazoo may be estimated as \$626.  Note that this is an \textit{estimate} based on a \textit{sample}.  Therefore, it is subject to \textit{sampling error}.   Sampling error simply means that due to luck of the draw, the sample average likely missed the true population average.  More precisely, the two-word term `sampling error' refers to $| \bar{X} = \mu |$,  the distance by which the \textit{sample} average $\bar{X}$  misses the population average  $\mu$.
+
+Advantages of the mean:
+
+\begin{itemize}
+\item It is easy to understand and simple calculate.
+\item It is based on all the values.
+\item It is not based on the position in the series.
+\end{itemize}
+
+Disadvantage of the mean:
+
+\begin{itemize}
+\item It is always affected by small and large values.
+\end{itemize}
+
+\subsection{The Sample Median}
+
+There are alternative ways to estimate average rent.  We can compute the sample
+median, instead of the sample mean.  We have discussed the sample median (denoted MED) earlier in Chapter 1.  It is computed as follows.
+
+\begin{enumerate}
+\item Let $n$ represent the total number of observations.
+\item Order the $n$ observations from smallest to largest.
+\item Then calculate $0.50(n + 1)$.
+\item If $0.50(n + 1)$. is an integer, then MED is the $0.50(n + 1)st$ ordered observation.
+\item If $0.50(n + 1)$ is not an integer, then MED is the average of the two adjacent ordered observations.
+\item There are $n = 10$ observations in our rental data.  We first order them from smallest to largest.
+\end{enumerate}
+
+$$ 500, 500, 525, 555, 635, 650, 670, 675, 750, 800 $$
+
+Now, $0.50(n + 1) = 0.50(10 + 1) = 5.5$.  Since this is not an integer, we average the $5^{th}$ and $6^{th}$ largest observations:
+
+$$MED = \frac{(635 + 650)}{2} = \$642.50$$
+
+The advantage of the median is that it is more robust than the mean, i.e., the median is not as affected by extreme values (outliers).
+
+\subsection{The Trimmed Mean}
+
+Since the mean uses all observations in the calculation, it can be strongly affected by outlying small and large values.  What happens to the mean when the smallest value \$500 is replaced by \$400?  It will become smaller.  What happens to the median?  It remains unchanged.
+
+The trimmed mean is a compromise estimator that looks a lot like a mean but is less sensitive to extreme values.  The 10\%-trimmed mean removes the lowest 10\% and highest 10\% of the data, then takes the sample mean of the remaining data.  In the rental example, 10\% of the data is one observation. We remove the lowest
+observation (\$500) and the largest observation (\$800), and take the mean of the remaining 8 observations:
+
+$$\bar{X} = \frac{635+525+650+750+555+500+670+675}{10} = \$620$$
+
+What if 10\% of the data is not an integer?  For example, if $n = 23$, then 10\% of n is 2.3.  Since we cannot remove 2.3 observations, we will remove 3 observations from each end (to ensure at least 10\% protection) and take the average of the middle 17 observations.
+
+\subsection{The Median of Pairwise Averages}
+
+The median of pairwise averages is another compromise between the mean and median.  As the name implies, we replace the observations by pairwise averages, then take the median of those.  Here again are the 10 ordered observations:
+
+$$ 500, 500, 525, 555, 635, 650, 670, 675, 750, 800 $$
+
+The first observation (\$500) is paired with all 10 observations (including itself).  The second observation (also \$500) has already been paired with the first observation, so it paired with only 9 observations (including itself).  The third observation (\$525) has already been paired with the first two observations, so it is paired with only 8 observations (including itself).  Proceeding in this pattern, we get the following pairwise averages:
+
+Picture of
+
+There will be 55 pairwise averages in all.  Notice that the sample size, $n$, went from 10 observations to 55 observations after we do this.  We now need to figure the median and remember, the MED is the $0.50(n + 1)st$ ordered observation.  So we need to use 55 now as our $n$.  This gives us a value of 28.  We need order the pairwise averages we have calculated above and the median will be the 28th observation.  The median of these averages is thus \$625.
+
+\section{Estimate of Spread (or Uncertainty or Variation)}
+
+Recall the data on monthly rent of two bedroom apartments in the Kalamazoo area:
+
+$$ 500, 500, 525, 555, 635, 650, 670, 675, 750, 800 $$
+
+If a future student asked you ``What do you think a two-bedroom apartment would cost me in rent?'', how would you reply? Knowing that the data averages \$626, you might say something like ``Around \$626, give or take $\dots$(?).''   This second number, the give or take, is important because it says how much uncertainty there is in your guess.  In other words, the student's rental will probably miss \$626, but by how much?  For a second example, if you were going to San Francisco for a couple of days in August, and you want to know what clothes to bring, it is not enough to know that the average temperature is 68 degrees.  If it was 68 degrees, give or take 15 degrees, then you will need a sweater.  If it is 68 degrees, give or take 30 degrees, you might need a winter coat.
+
+Variation presents itself everywhere.  Consider weight loss.  The 77 subjects in the Atkins group lost an average of 10.5 pounds give or take 15 pounds.  Compare this to an average of 3.5 pounds for the Zone diet give or take 14 pounds. How about in bowling?  In his first 7 games in a tournament in Indiana, Walter Ray Williams Jr. averaged 228, give or take 34.   Notice how the give or take number seems to complete the description.
+
+In this chapter, we will discuss the sample standard deviation, which is typically used as the ‘give or take’ number to describe spread in a group of numbers.
+
+\subsection{The Sample Standard Deviation}
+
+The standard deviation (or SD) for the monthly rent data is computed using a series of steps.  Notice in the last row we have the average, the sum of the deviations from the mean, which will always be 0, and the Sum of Squares (SS) which is the sum of the squared deviations.
+
+
+<<label=LBL3a, results="asis", echo=FALSE>>=
+  rent31 <- c(635,525,500,800,650,750,555,500,670,675)
+  mn31   <- mean(rent31)
+  diff31 <- rent31 - mn31
+  SS31   <- diff31^2
+  sum31  <- numeric(3)
+  sum31[1] <- sum(rent31)
+  sum31[2] <- sum(diff31)
+  sum31[3] <- sum(SS31)
+  tbl31 <- cbind(rent31, diff31, SS31)
+  tbl32 <- rbind(tbl31, sum31)
+  colnames(tbl32) <- c( "Rent", "Deviations", "SS")
+  rownames(tbl32) <- c('1','2','3','4','5','6','7','8','9','10','Sum')
+  xtable(tbl32, digits=0)
+  tmp31 <- sprintf("%.1f", sqrt(sum31[3]/9))
+  tmp32 <- sum31[3]
+@
+
+$$ SD = \sqrt{ \frac{ SS}{n - 1}} = \sqrt{ \frac{ \Sexpr{tmp32}}{9}} \approx \Sexpr{tmp31} $$
+
+It is helpful to get a feel for the numbers in the second column.  The first value 9 says that `635 is 9 above average'.  The next number -101 says that `525 is 101 below average.'  Ignoring signs, the numbers in the second column represent the `give or take' from the average.  To get the actual SD, we take the Sum of Squares and divide by $(n - 1)$, and last of all take the square root of that answer.  This gives us a final SD of 104.158.  We say that monthly rent averages \$626, give or take \$104.
+
+Look at the second column again.  Ignoring signs, these are the distances from the average.  Which rental is closest to the average? The answer is \$635, which missed by 9. Which rental is farthest from the average?  \$800, which missed by 174.
+What is the average `size of the miss?'  This should be somewhere between the smallest and largest, right?  This is how you interpret the SD: ``On the average, the monthly rentals miss the mean by \$104.''
+
+Taken together, the mean and SD allow comparison of both relative size and spread of two groups of numbers.  In the professional bowling tournament in Indiana that he won in November of 2008, here are Walter Ray Williams Jr.'s first seven  games and last seven games (including the final):
+
+% Requires the booktabs if the memoir class is not being used
+\begin{table}[htbp]
+   \centering
+   %\topcaption{Table captions are better up top} % requires the topcapt package
+
+   \begin{tabular}{@{} | lccc | @{}} \hline
+      Games &  & Mean & SD \\ \hline
+      First seven & 163,231,224,238,279,239,226 & 228.6 & 34.3 \\
+      Last seven  & 246,244,247,248,237,258,246 & 246.6 & 6.2 \\ \hline
+   \end{tabular}
+
+   % \caption{Remember, \emph{never} use vertical lines in tables.}
+   % \label{tab:booktabs}
+\end{table}
+
+What do the mean and SD tell us?  He averaged higher in the end but was also more consistent with a give-or-take of only 6 points!  His earlier games had bigger swings: from a low of 163 to a high of 279, resulting in a SD of 34.
+
+\subsection{Effect of Multiplication and Addition by a Constant}
+
+Recall that monthly rent for apartments average \$626 with an SD of \$104.  If the student plans to get a roommate and pay only half the rent, how much does he expect to pay?  If you are thinking of halving both numbers, i.e. \$313 give or take \$52, this is correct.
+
+\begin{center}
+Original rent: $ 626 \pm 104 $ \hspace{2cm}	Half the rent: $ 313 \pm 52 $
+\end{center}
+
+Now suppose that the student does not plan to get a roommate, but his parents have agreed to contribute \$100 to rent each month.  How much does the student expect to pay after the \$100 subsidy? If you are thinking of subtracting \$100 from both numbers, i.e. \$426 give or take \$4, this is wrong.  The SD should remain the same, i.e.,
+
+\begin{center}
+Original rent: $ 626 \pm 104 $ \hspace{2cm} Subsidized rent: $ 526 \pm 104 $
+\end{center}
+If you are not convinced, consider the data itself on the following table.
+
+<<label=LBL3b, results="asis", echo=FALSE>>=
+  tmp33 <- c(635,525,500,800,650,750,555,500,670,675)
+  rent31 <- tmp33 / 2
+  mn31   <- mean(rent31)
+  diff31 <- rent31 - mn31
+  SS31   <- diff31^2
+  sum31  <- numeric(3)
+  sum31[1] <- sum(rent31)
+  sum31[2] <- sum(diff31)
+  sum31[3] <- sum(SS31)
+  tbl31 <- cbind(rent31, diff31, SS31)
+  tbl32 <- rbind(tbl31, sum31)
+  colnames(tbl32) <- c( "Rent", "Deviations", "SS")
+  rownames(tbl32) <- c('1','2','3','4','5','6','7','8','9','10','Sum')
+  xtable(tbl32, digits=1, caption="Calculating the SD when rent is halved")
+  tmp31 <- sprintf("%.2f", sqrt(sum31[3]/9))
+  tmp32 <- sum31[3]
+@
+
+$$ SD = \sqrt{ \frac{ SS}{n - 1}} = \sqrt{ \frac{ \Sexpr{tmp32}}{9}} \approx \Sexpr{tmp31} $$
+
+\fbox{\parbox{14cm}{In general, when the data is \textbf{multiplied or divided by a positive constant}, the \textbf{same thing happens} to both the average and the SD}}
+
+<<label=LBL3c, results="asis", echo=FALSE>>=
+  tmp34 <- c(635,525,500,800,650,750,555,500,670,675)
+  rent31 <- tmp34 - 100
+  mn31   <- mean(rent31)
+  diff31 <- rent31 - mn31
+  SS31   <- diff31^2
+  sum31  <- numeric(3)
+  sum31[1] <- sum(rent31)
+  sum31[2] <- sum(diff31)
+  sum31[3] <- sum(SS31)
+  tbl31 <- cbind(rent31, diff31, SS31)
+  tbl32 <- rbind(tbl31, sum31)
+  colnames(tbl32) <- c( "Rent", "Deviations", "SS")
+  rownames(tbl32) <- c('1','2','3','4','5','6','7','8','9','10','Sum')
+  xtable(tbl32, digits=1, caption="Calculating the SD when rent is reduced by 100 dollars")
+  tmp31 <- sprintf("%.2f", sqrt(sum31[3]/9))
+  tmp32 <- sum31[3]
+@
+
+$$ SD = \sqrt{ \frac{ SS}{n - 1}} = \sqrt{ \frac{ \Sexpr{tmp32}}{9}} \approx \Sexpr{tmp31} $$
+
+\fbox{\parbox{14cm}{ In general, when a \textbf{constant is added or subtracted} to the data, the same thing happens to both the average,  but the \textbf{SD remains unchanged.}}}
+
+\newpage
+\twocolumn
+\section{Exercises}
+\begin{exercises}
+
+  \begin{exercise} % 1
+
+The carbon monoxide measures (in mgs) are given on 25 brands of \\ cigarettes.
+
+13.6    16.6    23.5    10.2     5.4     15.0     9.0    12.3    16.3   15.4
+13.0    14.4    10.0    10.2     9.5      1.5    18.5    12.6    17.5    4.9
+15.9     8.5    10.6    13.9    14.9
+
+Calculate the
+
+\begin{enumerate}
+\item Mean
+\item median
+\item 10\% trimmed-mean
+\item standard deviation
+\item mean and standard deviation (in grams)
+\end{enumerate}
+
+	\end{exercise}
+	\begin{solution}  % 1
+<<label=LBL3-1, results='asis', echo=FALSE>>=
+  DT1 <- c(13.6,16.6,23.5,10.2,5.4,15.0,9.0,12.3,16.3,15.4,
+13.0,14.4,10.0,10.2,9.5,1.5,18.5,12.6,17.5,4.9,
+15.9,8.5,10.6,13.9,14.9)
+  tmp3a <- sort(DT1)
+
+  mn1 <- sprintf('%.1f', mean(DT1))
+  md1 <- sprintf('%.1f', median(DT1))
+  tr1 <- sprintf('%.1f', mean(tmp3a[4:22]))
+  sd1 <- sprintf('%.2f', sd(DT1))
+  mn2 <- sprintf('%.4f',mean(DT1)/1000)
+  sd2 <- sprintf('%.5f',sd(DT1)/1000)
+  mod1 <- 35
+@
+
+	Compute the mean, median, $\dots$ for carbon monoxide:
+  \begin{enumerate}
+  \item mean = \Sexpr{mn1}
+  \item median = \Sexpr{md1}
+  \item Trimmed mean = \Sexpr{tr1}
+  \item SD = \Sexpr{sd1}
+  \item Mean = \Sexpr{mn2} and standard deviation \Sexpr{sd2} (in grams)
+	\end{solution}
+
+  \begin{exercise} % 2
+
+  Calculate the median of \\ pairwise average for the first 6 observations which are listed below:
+
+13.6    16.6    23.5    10.2     5.4     15.0
+
+ 	\end{exercise}
+ 	% \begin{solution}  % 2
+ 	%
+ 	%
+ 	% The third value must be 22 so that the average is 20 for all three quizzes.
+ 	% \end{solution}
+
+  \begin{exercise} % 3
+
+  Daily high temperature for a given day are provided for the past 10 years
+
+\begin{tabular}{@{} ccccc @{}} \hline
+2007&2008&2009&2010&2011 \\
+59&50&49&13&41 \\ \hline
+2012&2013&2014&2015&2016 \\
+46&51&53&58&47 \\ \hline
+\end{tabular}
+
+Find the following statistics for \\ temperature:
+
+\begin{enumerate}
+\item Range
+\item Mean
+\item Median
+\item Mode
+\item Remove the temperature of the year \\ 2010 from the data set and re-calculate the Mean and compare it with part c? Is the mean closer to the median and why?
+\end{enumerate}
+
+
+   \end{exercise}
+   \begin{solution} % 3
+
+<<label=LBL3-3, result="asis", echo=FALSE>>=
+  xdt1 <- c(59,50,49,13,41,46,51,53,58,47)
+  tmp3b <- sort(xdt1)
+  rng1  <- tmp3b[1]
+  rng2  <- tmp3b[10]
+  mn33  <- mean(tmp3b)
+  md33  <- median(tmp3b)
+  mod33 <- NA
+  mn34  <- sprintf('%.1f', mean(tmp3b[2:10]) )
+@
+
+\begin{enumerate}
+\item The range is from \Sexpr{rng1} to \Sexpr{rng2}
+\item the mean is \Sexpr{mn33}
+\item The median is \Sexpr{md33}
+\item There is no mode since there are no duplicates.
+\item Removing the smallest value changes the mean to \Sexpr{mn34}.  The new value is closer to median because 13 is an outlier.
+\end{enumerate}
+  \end{solution}
+
+   \begin{exercise} % 4
+
+Joshua has been working on \\ programming  and updating a Website for his \\ company for the past 12 months. The following numbers represent the number of hours Joshua  has worked on this Website for each of the past 12 months:
+
+24, 25, 31, 40, 48, 40, 36, 50, 38, 35 ,42, 112
+
+\begin{enumerate}
+\item Calculate the mean
+\item Calculate the median
+\item Decide if its symmetric, skewed to the right or to the left
+\item Decide which measure of center provides the most relevant information about the distribution? Why?
+\end{enumerate}
+
+\end{exercise}
+\begin{solution}
+<<label=LBL3-4, results="asis", echo=FALSE>>=
+  dt3 <- c(24, 25, 31, 40, 48, 40, 36, 50, 38, 35 ,42, 112)
+  mn1 <- mean(dt3)
+  md1 <- median(dt3)
+@
+
+\begin{enumerate}
+\item the mean is \Sexpr{mn1}
+\item the median is \Sexpr{md1}
+\item Decide if its symmetric, skewed to the right or to the left: the data is right skewed
+\item Decide which measure of center provides the most relevant information about the distribution? Why?  The median is the most relevant information because the data is right skewed.
+\end{enumerate}
+
+\end{solution}
+
+\end{exercises}
+
+\onecolumn

@@ -1,0 +1,662 @@
+%!Rnw root = ../../Master.Rnw
+
+\chapter{Comparing Two Proportions }
+\label{chap:ch9}
+
+\section{Objective}
+
+After completing this part, students should be able to:
+
+\fbox{\parbox{14cm}{
+\begin{itemize}
+\item Explain the logic of estimation and the role of the sample, sampling
+distribution and the population.
+\item Make and interpret intervals for sample means and sample proportions.
+\item Describe the relationships between trust levels, sample size, and the width
+of the confidence interval.  \index{confidence interval}
+\end{itemize}
+
+}}
+
+\section{Estimating the difference between independent proportions}
+
+Has retention rate at WMU changed over time?  Suppose that a random sample of 200 entering students in 1989 showed 74\% were still enrolled 3 years later.  Another random sample of 200 entering students in 1999 showed that 66\% were still enrolled 3 years later.  This constitutes an 8\% change in 3-year retention rate.  However, the 8\% difference is based on random sampling, and is only an estimate of the true difference.  What is the likely size of the error of estimation?
+
+Changing notation from percentage to proportions and taking the difference of
+0.74 - 0.66, we get 0.08 to compare retention rates.  The proportions of 0.74 and 0.66 are \textit{independent} proportions, in the sense that they are based on separate and independent groups of students.  The SE of the difference is
+
+\begin{equation*}
+  SE_{(\hat{p}_1 - \hat{p}_2)} = \sqrt{ SE_{\hat{p}_1}^2 + SE_{\hat{p}_2}^2}
+\end{equation*}
+
+Whenever the two proportions are independent.  Applying equation SE of $\hat{p} = \sqrt{ \frac{ \hat{p} \hat{q} }{n}}$ twice, we have $SE_{\hat{p}_1} = \sqrt{ \frac{ \hat{p}_1 \hat{q}_1 }{n_1}}$ and $SE_{\hat{p}_2} = \sqrt{ \frac{ \hat{p}_2 \hat{q}_2 }{n_2}}$.  Substituting into the formula above, $SE_{(\hat{p}_1 - \hat{p}_2)} = \sqrt{ SE_{\hat{p}_1}^2 + SE_{\hat{p}_2}^2}$, we get:
+
+\fbox{\parbox{14cm}{
+\textbf{Standard Error of the Difference between two independent Proportions}
+
+\begin{equation*}
+  SE_{( \hat{p}_1 - \hat{p}_2)} = \sqrt{ \frac{ \hat{p}_1 \hat{q}_1}{n_1} + \frac{ \hat{p}_2 \hat{q}_2}{n_2}}
+\end{equation*}
+}}
+
+Continuing with the retention rate example, we let $\hat{p}_1 = 0.74$, $\hat{p}_2 = 0.66$, $n_1 = 200$, $n_2 = 200$ so that
+
+$$ SE_{( \hat{p}_1 - \hat{p}_2)} = \sqrt{ \frac{ 0.74 (0.26)}{200} + \frac{ 0.66 (0.34) }{200}} = 0.045 $$
+
+Thus, the difference in retention rate is estimated by $0.74 - 0.66 = 0.08$ with a standard error of 0.045.  Changing notation back to a percentage and with less technical language, the drop-in retention rate is estimated to be 8\%, give or take 4.5\% or so. We also could have computed $ SE_{( \hat{p}_1 - \hat{p}_2)}$  in three steps.  First by using $SE_{\hat{p}}$ twice,
+
+\begin{equation*}
+  SE_{\hat{p}_1} = \sqrt{ \frac{\hat{p}_1 \hat{q}_1}{n_1}} = \sqrt{ \frac{0.74  (0.26)}{200}} = 0.031
+\end{equation*}
+
+\begin{equation*}
+  SE_{\hat{p}_2} = \sqrt{ \frac{\hat{p}_2 \hat{q}_2}{n_2}} = \sqrt{ \frac{0.66  (0.34)}{200}} = 0.033
+\end{equation*}
+
+Then using $ SE_{( \hat{p}_1 - \hat{p}_2)} = \sqrt{ SE_{\hat{p}_1}^2 + SE_{\hat{p}_1}^2} = \sqrt{ (0.031)^2 + (0.033)^2} = 0.045 $
+
+\subsection{Using a confidence interval}
+
+The difference of two proportions is a random variable with expected value and spread.  The 68\% and 95\% rules apply, i.e.  the estimated difference $\hat{p}_1 - \hat{p}_2$ should be close to the true value -- within \textit{one} SE 68\% of the time, and within 1.96 SE's 95\% of the time.  Following the same reasoning as before,
+
+\begin{equation*}
+  (\hat{p}_1 - \hat{p}_2) \pm 1.96 (SE_{(\hat{p}_1 - \hat{p}_2)})
+\end{equation*}
+
+should contain the true difference $p_1 - p_2$ with 95\% level of confidence.  Substituting
+$$ SE_{( \hat{p}_1 - \hat{p}_2)} = \sqrt{ \frac{ \hat{p}_1 \hat{q}_1}{n_1} + \frac{ \hat{p}_2 \hat{q}_2}{n_2}} $$,
+we get the following formula:
+
+\begin{center}
+\fbox{\parbox{14cm}{
+\textbf{95\% Confidence Interval for $p_1 - p_2$}
+
+\begin{equation*}
+  ( \hat{p}_1 - \hat{p}_2) \pm 1.96 \sqrt{ \frac{ \hat{p}_1 \hat{q}_1}{n_1} + \frac{ \hat{p}_2 \hat{q}_2}{n_2}}
+\end{equation*}
+}}
+\end{center}
+
+For retention rate, the difference between 1989 and 1999 was estimated as 0.08 with SE = 0.045.  Therefore, a 95\% confidence interval for the change is
+
+\begin{equation*}
+0.08 \pm 1.96 (0.045)
+\end{equation*}
+
+or $0.08 \pm 0.088 = (-0.008, 0.168)$.  Rounding off to $(-0.01, 0.17)$, we say that the drop-in retention rate from 1989 to 1999 is between $-0.01 \texttt{ and } 0.17$ with 95\% confidence. Note that \textbf{zero} is contained or is not been excluded from the interval, making it still a possibility that there is no real change in retention rate, just chance variability.
+
+\section{Statistical significance}
+
+Let $\hat{p}_1$ be the proportion of heads in 50 tosses of a coin.  Let $\hat{p}_2$  be the proportion of heads in the next 50 tosses of the same coin.  Will $\hat{p}_1$  and $\hat{p}_1$ be equal?  Not likely.  They will tend to differ, due to ``luck of the draw'' or chance variability.
+
+The table below shows partial data from an occupation survey by the Census Bureau. In this 2009 survey, regular `cooks' were a separate classification from `chefs or head cooks.'  Note that even though 37\% of cooks were women, only 16\% of chefs or head cooks were women.  Is the difference just luck of the draw, or due to something else besides chance?
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{@{} cccc @{}} \hline
+       & Women & Men & Total \\ \hline
+Cooks & 441 & 762 & 1203 \\
+Chefs or Head Cooks & 45 & 245 & 290 \\ \hline
+\end{tabular}
+\end{table}
+
+Statistics helps decision-making in cases like these by assessing how much chance variability to expect between two proportions.  Following the calculations of section above, we have
+
+\begin{equation*}
+  \hat{p}_1 - \hat{p}_2 = \frac{441}{1203} - \frac{45}{290} = 0.37 - 0.16 = 0.21
+\end{equation*}
+
+with a standard error
+
+\begin{equation*}
+  SE_{(\hat{p}_1 - \hat{p}_2)} = \sqrt{ \frac{0.37(0.63)}{1203} + \frac{0.16(0.84}{290}} = 0.026
+\end{equation*}
+
+The 95\% confidence interval for $p_1 - p_2$ is
+
+\begin{equation*}
+0.21 \pm 1.96 (0.026) = (0.16, 0.26)
+\end{equation*}
+
+Thus, even allowing for 1.96 SE's of chance variability, the true difference between proportions is at least 0.16 (and could be as large as 0.26).  This means that the interval does not contain or it excluded 0 from the range of possible values.  When this happens, statisticians say that the differences are \textit{statistically significant}.
+
+\fbox{\parbox{14cm}{
+If the confidence interval for $\hat{p}_1 - \hat{p}_2$ excludes \textbf{zero}, then the difference is \textbf{statistically significant.}
+
+}}
+
+\subsection{The P-value}
+
+For convenience, let us continue the example of the previous section.
+
+\begin{minipage}[ht]{3cm}
+
+\vspace{-4mm}
+
+\textbf{Question}
+\end{minipage}
+\begin{minipage}[ht]{12cm}
+
+\parbox{12cm}{
+If chance alone was at work, how likely will we get a difference of 0.21 between two proportions?
+}
+\end{minipage}
+
+\begin{minipage}[ht]{3cm}
+
+\vspace{-3mm}
+
+\textbf{Answer}
+\end{minipage}
+\begin{minipage}[ht]{12cm}
+
+\parbox{12cm}{
+Very small, less than 0.0001 (or 1 in 10,000).
+}
+\end{minipage}
+
+The `likelihood of getting 0.21 by chance' is called a P-value. The fact that it is very small means we should exclude the option that `chance alone is at work.'
+
+The actual probability calculation is beyond the scope of this class.  Let's just say that random variables very rarely go past 4 SE's from their expected values (less than 1 in 10,000 times).  Since the SE for the difference is 0.026, the observed difference $\hat{p}_1 - \hat{p}_2 = 0.21$  is not just 1, nor 2, but 8 SE's from 0.  This cannot be just chance alone.   Something else is at work.
+
+\begin{center}
+\fbox{\parbox{12cm}{
+\textbf{The Rule for $p$-value:} \\
+If the $p$-value $\le 0.05$, the difference is \textit{statistically significant.} \\
+If the $p$-value $\le 0.01$, the difference is called \textit{highly significant.}
+}}
+\end{center}
+
+In the occupation example, we can say that the percentage of women head chefs
+is lower than that of regular cooks.  Furthermore, the difference is highly significant.
+
+\subsection{Risk ratio and odds ratio}   %%%%%%%%%%%%%%
+
+ In clinical studies, statisticians frequently take ratios of proportions or probabilities (instead of differences).  There are several reasons for this idea.  Sometimes, the disease or medical event of interest is quite rare, i.e., $p_1 = 0.0008$.  If a new treatment reduces the probability of getting the disease to 0.0006, the difference in probabilities is quite small and hard to assess $((p_1 - p_2) = 0.0002)$.  In the meantime, the ratio $ \frac{p_2}{p_1} = \frac{0.0006}{0.0008} = 0.75 $ means that the risk of getting the disease under the new treatment has been reduced by 25\%.
+
+A second reason for taking ratios is more technical.  The ratio can more easily be adjusted to control for other variables like age and race.
+
+ \subsection{Risk ratio}
+
+Following is the abstract of the study ``Safety and Efficacy of a Recombinant Hepatitis E Vaccine.''  % \citep{shrestha2007}
+
+\subsubsection{Background}
+
+Hepatitis E virus (HEV) is an important cause of viral hepatitis.  We evaluated
+the safety and efficacy of an HEV recombinant protein (rHEV) vaccine in a phase
+2, randomized, double-blind, placebo-controlled trial.
+
+\subsubsection{Methods}
+
+In Nepal, we studied 2000 healthy adults susceptible to HEV infection who were randomly assigned to receive three doses of either the rHEV vaccine or placebo at months 0, 1, and 6. Active (including hospital) surveillance was used to identify acute hepatitis and adverse events. The primary end point was the development of hepatitis E after three vaccine doses.
+
+\subsubsection{Results}
+
+A total of 1794 subjects (898 in the vaccine group and 896 in the placebo group) received three vaccine doses; the total vaccinated cohort was followed for a median of 804 days.  After three vaccine doses, hepatitis E developed in 69 subjects, of whom 66 were in the placebo group.  The vaccine efficacy was 95.5\% (95\% confidence interval [CI], 85.6 to 98.6).  In an intention-to-treat analysis that included all 87 subjects in whom hepatitis E developed after the first vaccine dose, 9 subjects were in the vaccine group, with a vaccine efficacy of 88.5\% (95\% CI, 77.1 to 94.2).  Among subjects in a sub-group randomly selected for analysis of injection-site findings and general symptoms (reactogenicity sub-group) during the 8-day period after the administration of any dose, the proportion of subjects with adverse events was similar in the two study groups, except that injection-site pain was increased in the vaccine group ($p = 0.03$).
+
+\subsubsection{Conclusion}
+
+In a high-risk population, the rHEV vaccine was effective in the prevention of
+hepatitis E.
+
+The data given in the `Results' part of the abstract may be summarized as follows.
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{@{} cccc @{}} \hline
+ & \multicolumn{2}{c}{hepatitis E} \\
+ & Yes & No & Total \\ \hline
+ Vaccine & 3 & 895 & 898 \\
+ Placbo  & 66 & 830 & 896 \\ \hline
+ \end{tabular}
+ \end{table}
+
+We may present data for comparing proportions in a 2 by 2 table.
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{@{} cccc @{}} \hline
+ & \multicolumn{2}{c}{Disease} \\
+ & Yes & No & Total \\ \hline
+ Exposure & a & b & $a + b$ \\
+ No Exposure  & c & d & $c + d$ \\ \hline
+ \end{tabular}
+ \end{table}
+
+The risk ratio, also called the relative risk is the ratio of probabilities
+
+\begin{equation*}
+  RR = \frac{ \frac{P(Disease)}{Exposure}}{ \frac{P(Disease)}{No Exposure} } = \frac{ \frac{a}{a + b}}{ \frac{c}{c + d} } = \frac{p_1}{p_2}
+\end{equation*}
+
+For our example, we can define and calculate the risk ratio as
+
+\begin{equation*}
+  RR = \frac{ \frac{P(Disease)}{Exposure}}{ \frac{P(Disease)}{No Exposure} } = \frac{ \frac{3}{898}}{ \frac{66}{896} } = \frac{0.00334}{0.07366} = 0.045
+\end{equation*}
+
+This means that getting the vaccine reduces your risk to only 4.5\% of the original, or has 95.5\% efficacy.
+
+\subsection{A 95\% confidence interval for risk ratio}
+
+Confidence interval formulas are generally written for the natural logarithm of RR.  Consider a 2 by 2 table as before.
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{@{} cccc @{}} \hline
+ & \multicolumn{2}{c}{Disease} \\
+ & Yes & No & Total \\ \hline
+ Exposure & a & b & $a + b$ \\
+ No Exposure  & c & d & $c + d$ \\ \hline
+ \end{tabular}
+ \end{table}
+
+We will calculate the confidence interval for RR in 4 steps.
+
+\begin{enumerate}
+\item Calculate the \textbf{natural log (ln)} of the risk ratio:
+$$ ln(RR) = ln \left( \frac{ \frac{a}{a + b}}{ \frac{c}{c + d} } \right) $$
+
+\item Calculate the standard error of ln(RR) as follows:
+
+\begin{equation*}
+   SE_{ln(RR)} = \sqrt{ \frac{1}{a} + \frac{1}{c} - \frac{1}{a + b} - \frac{1}{c + d}}
+\end{equation*}
+
+\item A 95\% confidence interval for ln(RR) is given by
+
+\begin{equation*}
+  [ ln(RR) - 1.96 (SE), ln(RR) + 1.96 (SE) ]
+\end{equation*}
+
+\item Finally, a 95\% confidence interval for RR is given by
+
+\begin{equation*}
+  \Big[ e^{ln(RR) - 1.96 (SE)}, e^{ln(RR) + 1.96 (SE)} \Big]
+\end{equation*}
+
+\end{enumerate}
+
+Returning to our example,
+
+\begin{enumerate}
+\item
+\begin{equation*}
+ln(RR) = ln(0.045) = -3.101
+\end{equation*}
+
+\item
+\begin{equation*}
+SE = \sqrt{ \frac{1}{3} + \frac{1}{66} - \frac{1}{898} - \frac{1}{896}} = \sqrt{0.3462} = 0.5884
+\end{equation*}
+
+\item
+\begin{equation*}
+ [ -3.101 - 1.96(0.5884), -3.101 + 1.96(0.5884) ] = [ -4.254, 1.948]
+\end{equation*}
+
+\item
+\begin{equation*}
+  \Big[ e^{-4.254}, e^{-1.948} \Big] = [ 0.014, 0.143 ]
+\end{equation*}
+
+\end{enumerate}
+
+With 95\% confidence, the risk of getting hepatitis with the vaccine is only 1.4\% to 14.3\% of placebo.  This means that the vaccine reduces your risk by as low as 85.7\% or as high as 98.6\%.  Now read the Results section of the abstract again.  They say ``The vaccine efficacy was 95.5\% (95\% confidence interval [CI], 85.6 to 98.6).''  The two sets of numbers match, (slight discrepancy due to rounding error.)
+
+\subsection{Odds ratio}
+
+The odds of an event occurring is
+
+\begin{equation*}
+  Odds = \frac{ \texttt{Probability that event occurs}}{\texttt{Probability that event doesn't occur}} = \frac{p}{q}
+\end{equation*}
+
+For example, if you win a game a 20\% of the time ($p = 0.20$), then your odds of winning is $( \frac{0.20}{0.80}) = \frac{1}{4}$.  We say that you have a \textit{1-in-4} odds of winning, or you win once for every 4 times you lose.  If you win 80\% of the time, the odds are $\frac{0.80}{0.20} = 4$. This means you have \textit{4-in-1} odds of winning, or you win 4 times for every one time you lose.  Here is a table of odds corresponding to various probabilities.
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{@{} cc @{}} \hline
+Probability & Odds \\ \hline
+0.10 & 1/9 = 0.11 \\
+0.20 & 1/4 = 0.25 \\
+0.50 & 1/1 = 1.00 \\
+0.80 & 4/1 = 4.00 \\
+0.90 & 9/1 = 9.00 \\ \hline
+\end{tabular}
+\end{table}
+
+Unlike probabilities, odds can be bigger than 1.  The odds ratio is simply the ratio of two odds (usually for comparing two groups).
+
+\begin{equation*}
+  Odds Ratio = \frac{ \texttt{Odds of Group 1}}{\texttt{Odds of Group 2}} = \frac{ \frac{p_1}{q_1}}{ \frac{p_2}{q_2}}
+\end{equation*}
+
+Returning to the hepatitis E study, recall the disease occurrence data:
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{@{} cccc @{}} \hline
+ & \multicolumn{2}{c}{hepatitis E} \\
+ & Yes & No & Total \\ \hline
+ Vaccine & 3 & 895 & 898 \\
+ Placbo  & 66 & 830 & 896 \\ \hline
+ \end{tabular}
+ \end{table}
+
+The disease rate for each group is
+
+\begin{equation*}
+  \texttt{Odds(Hepatitis|Placebo)} = \frac{0.07366}{(1-0.07366)} = 0.07952
+\end{equation*}
+
+\begin{equation*}
+  \texttt{Odds(Hepatitis|Vaccine)} = \frac{0.00334}{(1-0.00334)} = 0.00335
+\end{equation*}
+
+\begin{equation*}
+  \texttt{Odds Ratio} = \frac{\texttt{Odds(Hepatitis|Placebo)}}{\texttt{Odds(Hepatitis|Vaccine)}} = \frac{0.07952}{0.00335} = 23.7
+\end{equation*}
+
+We say that ``the odds of getting hepatitis is 24 times greater if you remain unvaccinated.''
+
+Odds ratios are generally easier to interpret if they are larger than one.  We can always ensure this by choosing which group to put in the numerator, i.e., the one with larger odds.
+
+It is important to understand that the odds ratio is not a ratio of likelihood or probabilities.  If the disease rates for men and women are 0.80 and 0.40, respectively, then the odds ratio is
+
+\begin{equation*}
+   \frac{ \frac{0.80}{0.20}}{ \frac{0.40}{0.60}} = 6.00
+\end{equation*}
+
+In this example, men are twice as likely to get the disease, but have 6 times the odds.
+
+\subsection{A 95\% confidence interval for odds ratio}
+
+Confidence interval formulas for odds ratios (OR) are generally written for the natural logarithm, similarly to risk ratios.  Consider a 2 by 2 table as before.
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{@{} cccc @{}} \hline
+ & \multicolumn{2}{c}{Disease} \\
+ & Yes & No & Total \\ \hline
+ Exposure & a & b & $a + b$ \\
+ No Exposure  & c & d & $c + d$ \\ \hline
+ \end{tabular}
+ \end{table}
+
+The odds of disease occurrence in the exposed group is $\Big[ \frac{ \frac{a}{a + b}}{ \frac{b}{a + b}} \Big] = \frac{a}{b} $.  Similarly, the odds in the unexposed group is $\frac{c}{d}$.  Hence, the odds ratio of disease occurrence is
+
+\begin{equation*}
+  \texttt{OR} = \frac{\texttt{Odds(Disease|Exposed)}}{\texttt{Odds(Disease|Not Exposed)}} = \frac{a/b}{c/d} = \frac{p_1 / q_1}{p_2 / q_2} = \frac{ p_1 \times (1- p_2)}{ p_2 \times (1 - p_1)}
+\end{equation*}
+
+If $OR < 1$, we can put the `not exposed' group in the numerator, so that $OR > 1$  (the resulting odds ratio should, of course, be interpreted accordingly).  In our hepatitis example, we can use the following table:
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{@{} cccc @{}} \hline
+ & \multicolumn{2}{c}{hepatitis E} \\
+ & Yes & No & Total \\ \hline
+ Placbo  & 66 & 830 & 896 \\
+ Vaccine & 3 & 895 & 898 \\
+  \hline
+ \end{tabular}
+ \end{table}
+
+and get $OR = (66)(895)/(830)(3) = 23.7$ (``Placebo group has 24 times the odds of getting hepatitis''). If we use
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{@{} cccc @{}} \hline
+ & \multicolumn{2}{c}{hepatitis E} \\
+ & Yes & No & Total \\ \hline
+ Vaccine & 3 & 895 & 898 \\
+ Placbo  & 66 & 830 & 896 \\
+  \hline
+ \end{tabular}
+ \end{table}
+
+then $OR = (3)(830)/(66)(895) = 0.04$ (``Vaccine group has 0.04 times the odds of getting hepatitis'').
+
+In either case, we will calculate the confidence interval for odds ratio in 4 steps.
+
+\begin{enumerate}
+\item Calculate the natural log of the odds ratio:
+\begin{equation*}
+  ln(OR) = ln \Big( \frac{a \times d}{b \times c} \Big)
+\end{equation*}
+
+\item	Calculate the standard error of ln(OR) as follows:
+\begin{equation*}
+  SE_{ln(OR)} = \sqrt{ \Big( \frac{1}{a} + \frac{1}{b} + \frac{1}{c} + \frac{1}{d} \Big)}
+\end{equation*}
+
+\item A 95\% confidence interval for ln(OR) is given by
+\begin{equation*}
+  [ ln(OR) - 1.96(SE), ln(OR) + 1.96(SE)]
+\end{equation*}
+
+\item Finally, a 95\% confidence interval for OR is given by
+\begin{equation*}
+   e^{ln(OR) - 1.96(SE)}, e^{ln(OR) + 1.96(SE)}
+\end{equation*}
+
+\end{enumerate}
+
+Returning to the hepatitis E study, recall the disease occurrence data:
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{@{} cccc @{}} \hline
+ & \multicolumn{2}{c}{hepatitis E} \\
+ & Yes & No & Total \\ \hline
+ Placbo  & 66 & 830 & 896 \\
+ Vaccine & 3 & 895 & 898 \\
+  \hline
+ \end{tabular}
+ \end{table}
+
+The odds ratio of getting hepatitis is
+
+\begin{equation*}
+  \texttt{Odds Ratio} = \frac{\texttt{Odds(Hepatitis|Placebo)}}{\texttt{Odds(Hepatitis|Vaccine)}} = \frac{66 \times 895}{3 \times 830} = 23.7
+\end{equation*}
+
+so that
+
+\begin{enumerate}
+\item
+\begin{equation*}
+  ln(OR) = ln(23.7) = 3.165
+\end{equation*}
+
+\item
+\begin{equation*}
+  SE_{ln(OR)} = \sqrt{ \frac{1}{66} + \frac{1}{830} + \frac{1}{3} + \frac{1}{895}   } = \sqrt{0.3508} = 0.5923
+\end{equation*}
+
+\item
+\begin{equation*}
+ [3.165-1.96 (0.5923), 3.165+1.96 (.5923)] = [2.004, 4.326]
+\end{equation*}
+
+\item
+\begin{equation*}
+  [ e^{2.004}, e^{4.326} ]
+\end{equation*}
+\end{enumerate}
+
+With 95\% confidence, the odds of unvaccinated subjects getting hepatitis is between 7 and 76 times greater than vaccinated subjects.
+
+\section{Key Words}
+
+\colorbox{lgray}{\parbox{14cm}{
+\begin{minipage}[ht]{6cm}
+
+\begin{itemize}
+\item $\alpha$ (Alpha)
+\item Bias
+\item Confidence interval
+\end{itemize}
+\end{minipage} \hfill
+\begin{minipage}[ht]{6cm}
+
+\begin{itemize}
+\item Confidence level
+\item Efficiency
+\item margin of error
+\end{itemize}
+\end{minipage}
+}}
+
+
+\twocolumn
+\section{Exercises}
+\begin{exercises}
+
+  \begin{exercise}  % 1
+
+In a study of drug usage by students at a large university, data was obtained regarding hard liquor experience of \\ smokers and  nonsmokers.
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{@{} cccc @{}} \hline
+ & \multicolumn{2}{c}{Drug Use} \\
+ & Once or more & Never & Total \\ \hline
+Smokers & 23 & 18 & 41 \\
+Nonsmokers & 15 & 56 & 71 \\ \hline
+\end{tabular}
+\end{table}
+
+\begin{enumerate}
+\item Estimate the difference in percentage of \\ drug use between smokers and nonsmokers.
+\item Calculate a standard error for your estimate in (1).
+\item Calculate a 95\% confidence interval for the difference in percentage of drug use \\ between smokers and nonsmokers.
+\item Estimate the risk ratio of drug use \\ between smokers and nonsmokers.
+\item Calculate a standard error for the natural log of your estimate in 4.
+\item Calculate a 95\% confidence interval for the risk ratio of drug use between smokers
+\item Estimate the odds ratio of drug use \\ between smokers and nonsmokers.
+\item Calculate a standard error for the natural log of your estimate in 7.
+\item Calculate a 95\% confidence interval for the odds ratio of drug use  between \\ smokers and nonsmokers.
+\item Interpret the above confidence intervals in parts 3, 6, and 9. Which are significant, and which are not? Why or why not?
+\end{enumerate}
+  \end{exercise}
+  \begin{solution}  % 1
+
+<<label=LBL7-1, results="asis", echo=FALSE>>=
+  # P1 - P2
+  p1   <- 23/41
+  p2   <- 15/71
+  p1p2 <- p1 - p2
+  Sp1p2 <- sprintf("%.1f", p1p2 * 100)
+  sep1  <- sqrt( p1* (1 - p1)/ 41)
+  sep2  <- sqrt( p2* (1 - p2)/ 71)
+  sep1p2  <- sqrt( sep1^2 + sep2^2)
+  Ssep1p2 <- sprintf("%.2f", sep1p2)
+  lbnd1   <- sprintf("%.2f", (p1p2 - 1.96 * sep1p2)*100)
+  ubnd1   <- sprintf("%.2f", (p1p2 + 1.96 * sep1p2)*100)
+
+@
+
+\begin{enumerate}
+\item The difference in percentage of  drug  use \\ between smokers and nonsmokers is \Sexpr{Sp1p2}.
+\item Calculate a standard error for your estimate in (1).
+\item Calculate a 95\% confidence interval for the difference in percentage of drug use \\ between smokers and nonsmokers.
+\item Estimate the risk ratio of drug use \\ between smokers and nonsmokers.
+\item Calculate a standard error for the natural log of your estimate in 4.
+\item Calculate a 95\% confidence interval for the risk ratio of drug use between smokers
+\item Estimate the odds ratio of drug use \\ between smokers and nonsmokers.
+\item Calculate a standard error for the natural log of your estimate in 7.
+\item Calculate a 95\% confidence interval for the odds ratio of drug use between smokers and nonsmokers.
+\item Interpret the above confidence intervals in parts 3, 6, and 9. Which are significant, and which are not? Why or why not?
+\end{enumerate}
+
+  \end{solution}
+
+  \begin{exercise} % 2
+
+Time magazine reported the result of a telephone poll of 800 adult Americans. The question posed of the Americans who were surveyed was: ``Should the federal tax on cigarettes be raised to pay for health care reform?''
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{@{} lcc @{}} \hline
+ & \multicolumn{2}{c}{Federal Tax} \\
+  & \multicolumn{2}{c}{on Cigarettes} \\
+Status & Yes & No \\ \hline
+Smoker & 41 & 154 \\
+Nonsmoker & 351 & 254 \\ \hline
+\end{tabular}
+\end{table}
+
+	  \begin{enumerate}
+	  \item Estimate the difference in percentage of Americans who supported the federal \\ tax on cigarettes between smokers and non-smokers.
+    \item Calculate a standard error for your estimate in (1).
+    \item Calculate a 95\% confidence interval for the difference in percentage of Americans who supported the federal tax on cigarettes between smokers and non- \\ smokers.
+    \item Estimate the risk ratio of Americans \\ who supported the federal tax on \\ cigarettes between smokers and non- \\ smokers.
+    \item Estimate the odds ratio of Americans who supported the federal tax on \\ cigarettes between smokers and non- \\ smokers.
+	  \end{enumerate}
+
+	\end{exercise}
+	\begin{solution}  % 2
+
+		  \begin{enumerate}
+	  \item Estimate the difference in percentage of Americans who supported the federal tax on cigarettes between smokers and non-smokers.
+    \item Calculate a standard error for your estimate in (1).
+    \item Calculate a 95\% confidence interval for the difference in percentage of Americans who supported the federal tax on cigarettes between smokers and non-smokers.
+    \item Estimate the risk ratio of Americans who supported the federal tax on cigarettes between smokers and non-smokers.
+    \item Estimate the odds ratio of Americans who supported the federal tax on cigarettes between smokers and non-smokers.
+	  \end{enumerate}
+
+   	\end{solution}
+
+  \begin{exercise} % 3
+
+The age at which a woman gives birth to her first child may be an \\ important factor in the risk of later \\ developing breast cancer.  An international study conducted by WHO selected women \\ with at least one birth and recorded if they had breast cancer or not and whether they had their first child before their $30^{th}$ birthday or after. In a sample of 3220 women who had their first child after their $30^{th}$ birthday, 683 developed breast cancer.  Whereas, in a sample of 10245 women who had their first child before their $30^{th}$ birthday, 1483 developed breast cancer.
+
+	  \begin{enumerate}
+	  \item Estimate the difference in percentage \\ of developing breast cancer between \\ women who had their first child after their $30^{th}$ birthday and before their $30^{th}$ birthday.
+    \item Calculate a standard error for your \\ estimate in (1).
+    \item Calculate a 95\% confidence interval for the difference in percentage developing breast cancer between women who had their first child after their $30^{th}$ birthday and before their $30^{th}$ birthday.
+    \item Estimate the risk ratio of developing \\ breast cancer between women who had their first child after their $30^{th}$ birthday and before their $30^{th}$ birthday.
+    \item Estimate the odds ratio of developing \\ breast cancer between women who had their first child after their $30^{th}$ \\ birthday and before their $30^{th}$ \\ birthday.
+	  \end{enumerate}
+  \end{exercise}
+  \begin{solution}  % 3
+
+   The critical value is
+   <<results="asis", echo=FALSE>>=
+    CV1 <- qt(0.975,df=99)
+    CV1
+  @
+  \end{solution}
+
+  \begin{exercise} % 4
+
+In a sample of 200 surgeons, 15\% thought the government should control health care.  Whereas, in a sample of 200 gen- \\ eral practitioners, 21\% thought the same.
+
+\begin{enumerate}
+\item Estimate the difference in percentage of those who think the government should control health care between surgeons \\ and general practitioners.
+\item Calculate a standard error for your \\ estimate in (1).
+\item Calculate a 95\% confidence interval for the difference in percentage of those who \\ think the government should control \\ health care between surgeons and \\ general practitioners.
+\item Estimate the risk ratio of those who \\ think the government should control \\ health care between surgeons and \\ general practitioners.
+\item Estimate the odds ratio of those who \\ think the government should control \\ health care between surgeons and \\ general practitioners.
+\end{enumerate}
+  \end{exercise}
+  % \begin{solution}  % 4
+  %
+  %     SE =
+  %     <<results="asis", echo=FALSE>>=
+  %       SE1 <- 0.3/sqrt(100)
+  %       SE1
+  %     @
+  %
+  %     ME =
+  %     <<results="asis", echo=FALSE>>=
+  %       ME1 <- CV1 * SE1
+  %       ME1
+  %     @
+  % \end{solution}
+
+
+\end{exercises}
+\onecolumn

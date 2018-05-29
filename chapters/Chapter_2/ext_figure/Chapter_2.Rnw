@@ -1,0 +1,657 @@
+%!Rnw root = ../../Master.Rnw
+
+\chapter{Dataset Descriptive Information}
+\label{chap:ch2}
+
+By the end of this chapter, you will be able to:
+
+\begin{itemize}
+\item Explain the purpose of descriptive statistics in making data comprehensible.
+%\item Compute and interpret percentages, proportions, ratios, rates, and percentage change.
+%\item Construct and analyze frequency distributions for variables at each of the three levels of measurement.
+\item Summarize and analyze data using graphical methods.
+\end{itemize}
+
+The data from a research project cannot articulate by itself.  As social scientists, we must compute  descriptive statistics so that we can quickly understand the results of the project.  We as researchers use data science (statistics) to elucidate the results.  In this chapter, we will consider graphics, percentages, rates, and tables.  While these single value descriptive statistics are not rigorous, but are very useful for giving project results without doubt. 
+
+
+\section{Descriptive Statistics for Categorical Data}
+
+{\bf{Percents, proportions, rates, and ratio}} are the primary statistics for categorical data and are used for either nominal or ordinal data.
+
+ \begin{figure}[ht]
+    \centering
+    \includegraphics[width=5.7cm]{chapters/Chapter_2/ext_figure/zRV2.png} % requires the graphicx package
+    \caption{Categorical Random Variable}
+    \label{fig:RV2}
+ \end{figure}
+
+\subsection{Percentages and Proportions}
+
+A sample of various court sentencing results were collected and the results are displayed in the summary table below.  Compute the proportion and percent of sentenced acquitted.
+
+ % latex table generated in R 3.2.0 by xtable 1.7-4 package
+ % Fri Jul 17 08:00:24 2015
+ \begin{table}[ht]
+ \centering
+ \begin{tabular}{lrrr}  \hline
+    &  \multicolumn{3}{c}{Statistic}  \\
+Disposition  & Frequency & Proportion & Percent \\ \hline
+ Acquitted (A) & 10.00 & 0.04 & 3.72 \\ 
+   Suspended (S) & 20.00 & 0.07 & 7.43 \\ 
+   Less than 5 yrs sentence & 72.00 & 0.27 & 26.77 \\ 
+   More than 5 yrs sentence & 167.00 & 0.62 & 62.08 \\ 
+    \hline
+ \end{tabular}
+   \caption{Frequency Distribution of Dsiposition of Criminal Cases}
+   \label{tab:t2_1}
+ \end{table}
+
+%\begin{comment}
+% <<t2_1, echo=FALSE>>=
+%  dt2_1 <- read.csv("data/sentence.csv",header=TRUE)
+%  t2_1 <- table(dt2_1$Sentence)
+%  Frequency <- sort(t2_1)
+%  tot2_1 <- sum(t2_1)
+%  Proportion <- Frequency / tot2_1 
+%  Percent    <- Proportion * 100
+%  t2_2       <- cbind( Frequency, Proportion, Percent )
+%  xtable(t2_2)
+%  rm(t2_1)
+%  rm(dt2_1)
+%  rm(Frequency)
+%  rm(t2_2)
+% @
+% \end{comment}
+
+
+\begin{align*}
+	proportion_A &= \frac{10}{269} = 0.0372   \\
+	percent_A    &= \frac{10}{269} \times 100 = 3.72\%   \\
+\end{align*}
+
+The following describe the general form of the equation for proportions and percentages.
+
+\begin{eqnarray}
+	proportion   &=& \frac{f}{n}   \\ 
+	percent  &=& \frac{f}{n} \times 100\%  
+\end{eqnarray}
+
+\begin{itemize}
+\item where \emph{f} is the number of cases in a category
+and \emph{n} is the number of cases in all categories.
+\end{itemize}
+
+To summarize:
+
+\begin{itemize} 
+\item Proportions are numbers that are always between zero and one.
+\item To convert  a proportion to a percent,  multiply it  by 100.
+\item To convert a percent to a proportion, divide it by 100.
+\end{itemize}
+
+\subsubsection{GSS Example}
+The General Social Survey (GSS), conducted by the National Opinion Research Center at the University of Chicago, is a major source of data on social attitudes in the U.S.  Once each year, 1500 adults are interviewed in their homes all across the country.  The subjects are  asked their opinions about sex and marriage, attitudes toward women, welfare, foreign policy, and many other issues.  After reviewing this data from the GSS (See Table: 2.2), compute the proportion and percent of persons who indicate that voting is a very important responsibility of being a female citizen.
+
+% Requires the booktabs if the memoir class is not being used
+\begin{table}[htbp]
+   \centering
+   %\topcaption{Table captions are better up top} % requires the topcapt package
+   \begin{tabular}{@{} | lcc | @{}} \hline % Column formatting, @{} suppresses leading/trailing space
+     % \toprule
+     &  \multicolumn{2}{c}{Gender}  \\ 
+     % \cmidrule(r){1-2} % Partial rule. (r) trims the line a little bit on the right; (l) & (lr) also possible
+        Voting  &  Male & Female \\ \hline
+          Not important  & 68 & 48 \\
+          Somewhat important  & 160 & 134 \\
+          Very important  & 437 & \fbox{366} \\ 
+          Can't choose & 21 & 26 \\ \hline
+          Total & 686  & \fbox{574} \\ \hline
+          
+   \end{tabular}
+   \caption{Frequency Distribution of Voting}
+   \label{tab:t2_2}
+\end{table} 
+
+\begin{align*} 
+	proportion_F &= \frac{366}{574} = 0.6376  \\
+	percent_F    &= \frac{366}{574} \times 100 = 63.76\% 
+\end{align*}	
+
+
+\subsubsection{Interpretation}
+ The percent  of women who indicate that voting is a very important responsibility of a citizen is 63.76 percent.
+ 
+ 
+\subsection{Ratio}
+
+The \emph{ratio} is relation between two similar magnitudes in respect to the number of times the first contains the second.
+
+Let's consider a STAT 2830  class of 25 females and 20 males, compute the following: 
+
+\begin{enumerate}
+\item  The ratio of females to males: 
+
+\begin{equation}
+Ratio = \frac{f_1}{f_2} = \frac{f_{females}}{f_{males}} = \frac{25}{20} = \frac{5}{4}
+\end{equation}
+  \begin{itemize}
+  \item This means that there are five females for every four  males in the class.
+  \end{itemize}
+
+\item   The ratio of male to females:
+
+\begin{equation}
+Ratio = \frac{f_1}{f_2} = \frac{f_{males}}{f_{females}} = \frac{20}{25} = \frac{4}{5}
+\end{equation}
+
+  \begin{itemize}
+  \item This means that there are four males for every five females in the class.
+  \end{itemize}
+\end{enumerate}
+
+
+{\bf{Why  social scientists use ratios?}}
+
+\begin{itemize}
+\item Ratios are useful for comparing the relative size of different categories of a variable.
+
+\begin{equation}
+Ratio = \frac{f_1}{f_2}, 
+\end{equation}
+  \begin{itemize}
+  \item where $f_1$ is the number of cases in the first category and $f_2$ is the number of cases in the second category.
+  \end{itemize}
+\end{itemize}
+
+\subsubsection{GSS Example}
+
+After reviewing the data from the GSS (See Table 2.2), compute the ratio  of males to females who indicate that voting is a very important responsibility of being a citizen.
+
+\begin{equation}
+Ratio = \frac{f_1}{f_2} = \frac{f_{males}}{f_{females}} = \frac{437}{366}
+\end{equation}
+
+\subsubsection{Interpretation}
+
+This means that there are 437 males for every 366 females who indicated that voting is a very important responsibility of being a citizen.
+
+\subsection{Rates}
+
+Suppose a town of 85,000 residents  had 10 homicides last year, what is the homicide rate per (100,000) in this town.
+
+\begin{itemize}
+\item Homicide rate is the number of deaths divided by the population size.
+
+\begin{equation}
+homicideRate = \frac{f}{n} = \frac{10}{85000} = 0.0001176
+\end{equation}
+  \begin{itemize}
+  \item Because this is such a small fraction, it is reported as the homicide rate per 100,000 individuals, or 
+  \end{itemize}
+
+\begin{equation}
+homicideRatePer100000  = \frac{10}{85000} \times 100,000 = 11.76,
+\end{equation}
+  \begin{itemize}
+  \item which is read as 11.76 homicides per 100.000 population.  This is a convenient comparison statistic between groups of widely differing populations.
+  \end{itemize}
+
+\item Rates are used when the proportion of occurrences are small to obtain a measure that can be used to compare measures with different population sizes.
+
+\item Rates are usually multiplied by some power of 10 to eliminate decimal points.
+
+\begin{equation}
+Rate = \frac{f}{n} \times (per) , 
+\end{equation}
+
+  \begin{itemize}
+  \item where \emph{f} is the number of occurrences, \emph{n} is the total possible occurences, and \emph{per} is the multiplier for the rate.
+  \end{itemize}
+
+\end{itemize}
+
+
+
+\subsection{Percent Change}
+
+Suppose in just a year 2000, a ??? state had a homicide rate of 6.5 and in 2010 had a homicide rate of 9.2 (reported as homicides per 100,000 population).  
+
+\begin{itemize}
+\item What is the percentage change?
+\begin{eqnarray}
+PercentChange & = & \frac{f_2 - f_1}{f_1} \times 100\%  \nonumber \\
+                          & = & \frac{9.2 - 6.5}{6.5} \times 100\%  \nonumber \\
+                          & = & \frac{2.7}{6.5} \times 100\%  = 41.5\%  \nonumber 
+\end{eqnarray}
+                          
+  \begin{itemize}
+  \item Notice that 6.5 is used as $f_1$ since this the the earlier time (2000 versus 2010).  This results in a 41.5 percent increase in the homicide rate.  This is consistent with the reported rates since 9.2 is an increase over 6.5.
+  \end{itemize}
+  
+
+\item The percent change measures social change.  It is telling us
+ how a variable has increased (positive rate) or decreased (negative rate) over a certain span of time.
+
+\begin{equation}
+PercentChange = \frac{f_2 - f_1}{f_1} \times 100\% ,
+\end{equation}
+  \begin{itemize}
+  \item where $f_1$ is the first frequency (starting point) and $f_2$ is the second frequency (ending point).  The results express the size (and direction) of the change in scores $(f_2 - f_1)$ as a percentage to the score at the earlier time $(f_1)$.
+  
+  \end{itemize}
+
+\end{itemize}
+
+
+\section{Summarizing Categorical Data}
+
+Since categorical data only has labels, there are few options for summarizing such data.
+
+\begin{itemize}
+\samepage
+\item Frequency Distribution Tables
+\samepage
+\item Bar Chart
+\samepage
+\item Pie Chart
+\end{itemize}
+
+\subsection{Frequency Distribution Table}
+
+Let's look at the frequency distribution tables for categorical data.
+
+\begin{itemize}
+\item Frequency distribution are tables that report the number of cases in each category of a variable.
+
+\item This data (Table 2.3) was collected from a counseling center as reported below.  
+
+% Requires the booktabs if the memoir class is not being used
+\begin{table}[htbp]
+   \centering
+   %\topcaption{Table captions are better up top} % requires the topcapt package
+   \begin{tabular}{@{} p{1.2cm} p{1.3cm} p{1.5cm} p{2cm} p{1cm} @{}} \hline % Column formatting, @{} suppresses leading/trailing space
+      % \multicolumn{2}{c}{Item} \\
+      % \cmidrule(r){1-2} % Partial rule. (r) trims the line a little bit on the right; (l) & (lr) also possible
+      Student & Gender & Marital Status & Satisfaction w/ Services & Age \\ \hline 
+      A & Male & Single & 4 & 18 \\
+      C & Female & Single & 4 & 18 \\
+      E & Male & Married & 1 & 20 \\
+      H & Female & Single & 3 & 20 \\
+      L & Male & Married & 3 & 18 \\
+      N & Female & Married & 1 & 22 \\ \hline      
+   \end{tabular}
+   \caption{Raw data from xxxx Counseling Center.}
+   \label{tab:t2_3}
+\end{table}
+
+\item Construct a frequency distribution Table for gender of individuals.	
+
+% Requires the booktabs if the memoir class is not being used
+\begin{table}[htbp]
+   \centering
+   \caption{Frequency Distribution for Gender }
+   %\topcaption{Table captions are better up top} % requires the topcapt package
+   \begin{tabular}{@{} lcccc @{}} \hline % Column formatting, @{} suppresses leading/trailing space
+      % \multicolumn{2}{c}{Item} \\
+      % \cmidrule(r){1-2} % Partial rule. (r) trims the line a little bit on the right; (l) & (lr) also possible
+      Gender & Tally & Frequency(f) & Percent(\%) & Accumulative Percent \\ \hline
+      Female & III & 3 & 50\% & 50\%  \\
+      Male & III & 3 & 50\% & 100\% \\ \hline 
+  %    Total & & 6 & 100\% & \\ \hline     
+   \end{tabular}
+   
+   \label{tab:t2_4}
+\end{table}
+
+\item Construct a frequency distribution table for satisfaction level of individuals. 
+
+% Requires the booktabs if the memoir class is not being used
+\begin{table}[htbp]
+   \centering
+   \caption{Frequency Distribution for Satisfaction }
+   %\topcaption{Table captions are better up top} % requires the topcapt package
+   \begin{tabular}{@{} lcccc @{}} \hline % Column formatting, @{} suppresses leading/trailing space
+      % \multicolumn{2}{c}{Item} \\
+      % \cmidrule(r){1-2} % Partial rule. (r) trims the line a little bit on the right; (l) & (lr) also possible
+      Satisfaction Level & Tally & Frequency(f) & Percent(\%) & Accumulative Percent(\%) \\ \hline
+      (4) Very Satisfied & II & 2 & 33.3\% & 33.3\% \\
+      (3) Satisfied & II & 2 & 33.3\% & 66.6\% \\
+      (2) Dissatisfied & & 0 & 0.0 & 66.6\% \\
+      (1) Very dissatisfied & II & 2 & 33.3\% & 100.0\% \\ \hline
+      Total & & 6 & 100.0\% & \\ \hline      
+   \end{tabular}
+   
+   \label{tab:t2_5}
+\end{table}
+\end{itemize}
+
+\subsubsection{Construct a frequency distribution table for 2014  GSS survey}
+
+
+% Requires the booktabs if the memoir class is not being used
+\begin{table}[htbp]
+   \centering
+   %\topcaption{Table captions are better up top} % requires the topcapt package
+   \begin{tabular}{@{} lccccc @{}} \hline % Column formatting, @{} suppresses leading/trailing space
+      % \multicolumn{2}{c}{Item} \\
+      % \cmidrule(r){1-2} % Partial rule. (r) trims the line a little bit on the right; (l) & (lr) also possible
+      Statistic & Married & Widowed & Divorced & Separated & Never Married \\ \hline 
+      Frequency & 1158 & 209 & 411 & 81 & 675 \\
+      Percent     & 45.7\% & 8.2\% & 16.2 & 3.2\% & 26.6\% \\ \hline
+      
+   \end{tabular}
+   \caption{Frequency Distribution for Marital Status  }
+   \label{tab:t2_6}
+\end{table}
+
+% \pagebreak
+\subsection{Bar Chart}
+
+Looking at the marital status from the GSS survey.
+
+<<msbar, echo=FALSE, fig.pos="ht", fig.align="center", fig.width=4.3, fig.height=4.1, fig.cap="Marital Status Barchart from GSS 2014 Survey">>=
+## f2_1 <- read.spss("data/GSS2014.sav")
+f2_1 <- read.csv("data/GSS2014.csv",header=TRUE)
+tmp1 <- f2_1$marital
+tmp2 <- tmp1[tmp1 != "NA"]
+tmp3 <- table(tmp2)
+tmp4 <- sort(tmp3, decreasing = TRUE)
+tmp5 <- tmp4 * 100 / sum(tmp4)
+Percent <- tmp5[1:5]
+## Percent
+barplot( Percent, ylab="Percent", xlab="Marital Status",  legend.text=c("1-Married","2-Widowed","3-Divorced","4-Separated","5-Never Married") )
+
+rm(tmp1)
+rm(tmp2)
+rm(tmp3)
+rm(tmp4)
+rm(tmp5)
+
+
+@
+
+\begin{itemize}
+\item The bars represent the categories and the heights of the bars correspond to the percent or number of cases in each category.
+
+\item The bar chart always has gaps between the bars to indicate categorical type of data.
+\end{itemize}
+
+\pagebreak
+\subsection{Pie Chart}
+
+<<mspie, echo=FALSE, fig.pos="ht", fig.align="center", fig.width=4, fig.height=4, fig.cap="Marital Status Pie Chart from GSS 2014 Survey">>=
+
+lbls <- c("Married", "Never Married", "Divorced", "Widowed", "Separated")
+pie( Percent, labels= lbls )
+
+@
+
+The slices represent the categories and the size of the slice corresponds to the percent of cases in each category.
+
+\newpage 
+\section{Summarizing Numerical Data}
+
+ \begin{figure}[ht]
+    \centering
+    \includegraphics[width=5.7cm]{chapters/Chapter_2/ext_figure/zRV3.png} % requires the graphicx package
+    \caption{Categorical Random Variable}
+    \label{fig:RV3}
+ \end{figure}
+
+\begin{itemize}
+\item Frequency Distribution Table
+\item Histogram
+\item Line Chart
+\item Box Plot
+\end{itemize}
+ 
+\subsection{Frequency Distribution Table}
+
+The GSS 2014 is a sociological survey used to collect data on demographic characteristics and attitudes of residents of the United States. The survey is conducted face-to-face with an in-person interview by the National Opinion Research Center at the University of Chicago, of adults (18+) in randomly selected households.  An example of a survey question is about the years of educaton of the household.  The data, from this survey, show the number of years of education of the households.  A frequency distribution will provide an accurate picture of the overall years structure.
+
+\begin{itemize}
+\item Determine number of classes, minimum, maximum, range and interval size.
+\item \# of classes: generally, we take the square root of the sample size $\sqrt{2538}$, but in this case, this value exceeds 10 which is the maximum number of suggested bars.
+\item $minimum = 0$
+\item $maximum = 20$
+\item $range = 20 - 0 $
+\item $intervalSize = \frac{range}{\# of Classes} = \frac{20}{10} = 2 $
+\end{itemize}
+  
+ % Requires the booktabs if the memoir class is not being used
+ \begin{table}[htbp]
+    \centering
+    %\topcaption{Table captions are better up top} % requires the topcapt package
+    \begin{tabular}{@{} cccc @{}} \hline % Column formatting, @{} suppresses leading/trailing space
+    
+     %  \multicolumn{2}{c}{Item} \\
+    %   \cmidrule(r){1-2} % Partial rule. (r) trims the line a little bit on the right; (l) & (lr) also possible
+     Year of Education & Frequency(f) & Percent(\%) & Accumulative Percent(\%) \\ \hline
+     0 - 2 &  12 & 0.5\% & 0.5\% \\
+     2 - 4 &  9   & 0.4\% & 0.9\% \\
+     4 - 6 & 34 & 1.3\% & 2.2\% \\
+     6 - 8 & 51 & 2.0\% & 4.2\% \\
+     8 - 10 & 143 & 5.6\% & 9.8\% \\
+     10 - 12 & 823 & 32.4\% & 42.2\% \\
+     12 - 14 & 511 & 20.1\% & 62.3\% \\
+     14 - 16 & 585 & 23.1\% & 85.4\% \\
+     16 - 18 & 217 & 8.6\% & 94.0\% \\
+     18 - 20 & 152 & 6.0\% & 100.\% \\ \hline 
+     
+    \end{tabular}
+    \caption{Frequency Distribution of Years of Education from GSS 2014 Survey.}
+    \label{tab:t2_7}
+ \end{table}
+
+\subsubsection{Histogram}
+
+<<mshist, echo=FALSE, fig.pos="ht", fig.align="center",  fig.width=3, fig.height=3>>=
+
+YearsOfEducation <- f2_1$educ[ f2_1$educ < 89]
+
+hist(YearsOfEducation, ylab="Frequency", xlab="Years of Education")
+
+@
+
+
+\pagebreak
+
+\begin{itemize}
+\item The bars represent the categories and the heights of the bars correspond to the percentage or number of cases in each category.
+\item Histograms do not have gaps between the bars.
+\item Histograms sometimes use percentages instead of counts to make it possible to compare distributions of differing sample sizes.
+\item Histograms are very useful in examing the ``shape'' of the distribution, for example,: Bell-shaped and symmetrical.  Skewed (left or right),   Multi-modal.
+
+  \begin{itemize}
+  \item Bell-shiped and symmetrical (Figure 2.5)
+
+<<f2_5, echo=FALSE, fig.pos="ht", fig.align="center", fig.width=3, fig.height=3, fig.cap="Example of Symmetrical Histogram">>=
+ 
+dt2_2 <- rnorm(n=150,mean=65,sd=4)
+hist(dt2_2,xlab="Grades", ylab="Frequency", main="Histogram of Stat 2830 Exam 1")
+rm(dt2_2)
+@
+
+  \item Right Skewed (Figure 2.6)
+  
+<<f2_6, echo=FALSE, fig.pos="ht", fig.align="center", fig.width=3, fig.height=3, fig.cap="Example of Right Skewed Histogram">>=
+ 
+dt2_2 <- rbinom(n=150, size=20, p=0.15)
+hist(dt2_2,xlab="Grades", ylab="Frequency", main="Histogram of Stat 2830 Exam 2")
+rm(dt2_2)
+@  
+  
+  \item Left Skewed (Figure 2.7)
+  
+<<f2_7, echo=FALSE, fig.pos="ht", fig.align="center", fig.width=3, fig.height=3, fig.cap="Example of Left Skewed Histogram">>=
+ 
+dt2_2 <- rbinom(n=150, size=20, p=0.95)
+hist(dt2_2,xlab="Grades", ylab="Frequency", main="Histogram of Stat 2830 Exam 3")
+rm(dt2_2)
+@    
+  \item Multi-modal
+
+<<f2_8, echo=FALSE, fig.pos="ht", fig.align="center", fig.width=3, fig.height=4, fig.cap="Example of Multi-modal Histogram">>=
+
+dt2_2 <- numeric(150) 
+vx1 <- rnorm(n=75, mean=60, sd=5)
+vx2 <- rnorm(n=75, mean=80, sd=5)
+dt2_2[1:75] <- vx1 
+dt2_2[76:150] <- vx2
+
+hist(dt2_2,xlab="Grades", ylab="Frequency", main="Histogram of Stat 2830 Exam 4")
+rm(dt2_2)
+rm(vx1, vx2)
+
+@      
+  
+  \end{itemize}
+\end{itemize}
+  
+
+
+\subsubsection{Boxplot}
+
+<<msboxplot, echo=FALSE, fig.pos="ht", fig.align="center",  fig.width=3, fig.height=3, fig.cap="Year of Education">>=
+
+boxplot(YearsOfEducation, xlab="Years of Education", horizontal=TRUE)
+
+@
+
+
+\begin{itemize}
+\item It is a graphical summary of the distribution of the middle 50 percent of the data.
+\item It is useful for comparing distributions of two or more variables.
+\item It is built on  the five number summary.
+	\begin{itemize}
+	\samepage
+	\item Minimum = 6
+	\samepage
+	\item $Q_1$  = 12 (first quartile) -- the upper boundary of the first quarter.
+	\samepage
+	\item Median ($Q_2$) = 14 -- divides the data into lower and upper halves.
+	\samepage
+	\item $Q_3$ = 16  (third quartile) -- the upper boundary of the third quarter.
+	\samepage
+	\item Maximum = 20
+	\end{itemize}
+\end{itemize}
+	
+\pagebreak
+\section{Key Words}
+\begin{itemize}
+\item Bar chart
+\item Class interval
+\item Cumulative percent
+\item Frequency distribution
+\item Histogram
+\item Percent change
+\item Pie chart
+\item Proportion
+\item Rate
+\item Ratio
+\item Stated class limits
+\end{itemize}
+
+\newpage
+\section{Exercise}
+\begin{enumerate}
+	\item 250 individuals were randomly selected and 195 of them do not smoke. What proportion of individuals are smokers?
+	\begin{enumerate}
+	\samepage
+	\item 78
+	\samepage
+	\item 0.22
+	\samepage
+	\item 78\%
+	\samepage
+	\item 22\%
+	\end{enumerate}
+\item 250 individuals were randomly selected and 195 of them do not smoke.  What is the ratio of nonsmokers to smokers?
+	\begin{enumerate}
+	\item 0.78
+	\item 0.28
+	\item 3.56
+	\item 55
+	\end{enumerate}
+
+\item In a city of a population 25,000, there were 13 murders reported in the prior year.  What is the rate of murder in this city per 100,000?
+	\begin{enumerate}
+	\samepage
+	\item 5.2
+	\samepage
+	\item 52
+	\samepage
+	\item 5.24
+	\samepage
+	\item 0.00052
+	\end{enumerate}
+
+\item In 1995 the percentage of individuals graduating from the Portage high school was 89 percent, in 2005, the percentage was 83 percent.  What is the percent change?
+	\begin{enumerate}
+	\samepage
+	\item $-6.7\%$
+	\samepage
+	\item $6.7\%$
+	\samepage
+	\item $7.2\%$
+	\samepage
+	\item $-7.2\%$
+	\end{enumerate}
+	
+\newpage	
+\item In a 2013 random sample of employees at Saint Mary's Hospital in Grand Rapids, a hospital administrator collected data about gender and various job categories.
+
+ % Requires the booktabs if the memoir class is not being used
+ \begin{table}[ht]
+    \centering
+    %\topcaption{Table captions are better up top} % requires the topcapt package
+    \begin{tabular}{@{} lcc @{}} \hline % Column formatting, @{} suppresses leading/trailing space
+    
+     &  \multicolumn{2}{c}{Gender} \\
+    %   \cmidrule(r){1-2} % Partial rule. (r) trims the line a little bit on the right; (l) & (lr) also possible
+     Job & Males & Females \\ \hline
+     Administrator & 12 & 1 \\
+     Clerk & 72 & 141 \\
+     Doctor & 83 & 15 \\
+     Lab Tech & 32 & 30 \\
+     Nurse & 62 & 116 \\
+     Orderly & 151 & 12 \\ \hline
+    \end{tabular}
+    \caption{Frequency Distribution of Gender and Job categories.}
+    \label{tab:t2_8}
+ \end{table}
+ 
+  \begin{enumerate}
+  \item What percentage of nurses are females?
+  \item What proportion of orderlies are males?
+  \item For doctors, what is the ratio of females to males?
+  \item What percentage of the tatal staff are females?
+  \end{enumerate}
+  
+\item You have gathered annual person-hours of time lost due to traffic congestion for a randomly selected group of cities for 2014.  What is the  measure of traffic congestion?
+
+% Requires the booktabs if the memoir class is not being used
+\begin{table}[htbp]
+   
+   %\topcaption{Table captions are better up top} % requires the topcapt package
+  % \multicolumn{9}{c}{Time Lost due to Traffic Congestion}
+   \begin{tabular}{@{} ccccccccc @{}} \hline  % Column formatting, @{} suppresses leading/trailing space
+      25 & 22 & 5 & 22 & 7 & 32 & 29 & 32 & 8  \\ 
+      38 & 27 & 22 & 10 & 21 & 21 & 8 & 23 & 21 \\ \hline
+   \end{tabular}
+   % \caption{Remember, \emph{never} use vertical lines in tables.}
+   \label{tab:t2_9}
+\end{table}
+
+  \begin{enumerate}
+  \item Interval-Ratio
+  \item Mode
+  \item Nominal
+  \item Normal
+  \item Ordinal
+  \end{enumerate}  
+	
+\end{enumerate}
+

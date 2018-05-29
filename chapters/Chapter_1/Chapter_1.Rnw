@@ -1,0 +1,239 @@
+%!Rnw root = ../../Master.Rnw
+
+
+\chapter{Knowledge and Data}
+\label{chap:ch1}
+
+\section{Objectives}
+
+After completing this subsection, students should be able to:
+
+\fbox{\parbox{14cm}{
+\begin{itemize}
+\item Discern the difference between knowledge and data.
+\item Understand the process of acquiring knowledge from the data.
+\item Perceive the fallacies of design.
+\item Comprehend the meaning of the Type-I and Type-II errors.
+\end{itemize}
+}}
+
+\section{Knowledge and Data}
+
+There is a difference between what we know, and what we think know.  Are vaccines safe?  Will the new tax rules bring more or less revenue?  Do mandatory seat belt laws save lives?   Will legalizing drugs lead to more addiction?  Do alternative therapies work as effectively as traditional treatments?  Does exercise help prevent illness and are people who generally exercise healthier? Do taller people make more money than shorter people?  \citep{naranjo2018}
+
+Most of these issues can only be settled by looking at data.  What do the data tell us?  Even then, some issues can only be partially answered by at best incomplete data.  In this course, we will discuss some fundamentals of good scientific studies
+and data analysis.  In the process, we hope to become better consumers of
+information, and better judges of what is true or not true, and what remains to be proven.
+
+\subsection{Building Knowledge Step-by-step}
+
+Scientific studies often go through the following steps.  It might help to read the example in the next section, then read this again.
+
+\subsubsection{1. Conceptualize the problem} \index{Concept}
+
+Suppose that you wish to study and the problem of interest.  The wording is usually broad. The idea at first may be too complex to understand so we look for ways to explain and describe it.
+
+For example, perhaps we are interested in a problem of interest within education.  We will want to clarify and define education.  Are we interested in investigating particular schools or grade levels? Perhaps we want to look at a specific component of education, like science or look at different methods of instruction.   Clarifying specific concepts which we want to investigate and putting this into words helps bring focus to our study.
+
+\subsubsection{2. Operationalize the problem}
+
+As a researcher for your study you also need to come up with ways to narrow in on your problem of interest.  What specifically do you want to measure?  Here we are formulating the specific question we want to answer.  We are also beginning to define our variables.  We will need to know what we can measure to help answer our problem of interest.
+
+Perhaps we are interested in looking at how well students are doing with several different methods of teaching science.  We may look at measures of assessment like how well they did on an exam or overall in a class given the different teaching methodologies.
+
+\subsubsection{3. Design the study}
+
+Here we need to address all the components of how our study will be performed.  We will likely need to identify the population of interest and to obtain a good representative sample of that population.  We will need to figure out how we will select the sample and how many groups we may be comparing.
+
+In our study of science education will we sample from several schools or several districts?  If we take a sample of students from several schools, but from only one state, for example, our population would be students within that state.  If we wanted to define our population as education within the continental U.S., we might need to pull randomly from schools across the U.S.
+
+\subsubsection{4. Collect the data}
+
+In the data collection stage, we must decide what instrument we are using (questionnaire, interview, observation).  Once we have designed our study, we should be able to identify the main variables of interest.  As we collect the data, we are gathering information to help us answer the question we have proposed.
+
+In our example of science education, perhaps we are collecting scores on a particular assessment (exam) to see how well students are learning the material.
+
+\subsubsection{5. Analyze the data}
+
+Using the proper statistical methods and procedures for the data is an important step in the data analysis stage.  Also, checking the assumptions behind these statistical methods is critical.  Are we comparing means?  Proportions?  Are the differences in means/proportions statistically significant?  How do we know if there is a significant difference (if the differences we find are not likely due  to chance)?
+
+In our exploration of teaching science perhaps we are comparing two different methodologies of teaching.  We may then compare the overall means of the two groups.
+
+\subsubsection{6. Conclusions}
+
+Do your results generalize to a larger population?  Check back to see how you defined the population so that you can generalize the results.  Are you concluding cause-and-effect relationship, did you perform an experiment, or did you observe   associations?  In your conclusions, you will also want to identify limits to your study and perhaps suggest further research that may be done in your area.
+
+As we conclude science teaching, perhaps we could only afford to do a smaller study within a particular district.  We could then relate the results of our study, based on our sample of schools, to the population of the entire school district.  We may not be able to make conclusions to the whole state or the U.S. since our sample was not representative of the whole state or the U.S.  Depending on how the study was defined we may have only made observations of the teachers.  If we were investigating two distinct types of instruction, then this falls more within the realm of an experiment.  We, of course, would still need to identify and try to control for confounding variables, which might be difficult.
+
+\subsubsection{7. Disseminate results}
+
+How are we sharing our results?  We need to find the best approach to sharing the results of our study.
+
+Is this information going to be made available to the schools for future educational Improvement?  Are we going to try to publish in a scientific or educational journal?
+
+\subsubsection{The Science Wheel Summarizes the above Steps}
+
+The Wheel of Science  \citep{Wallace1971}
+gives us a process to refine our thinking about the nature of social interactions.  See Figure 1.1.  We will define the four parts of the wheel below:  Theory, Hypotheses, Observations, and Empirical Generalizations.
+
+\begin{figure}[htbp]
+   \centering
+
+\includegraphics[width=0.5\linewidth]{chapters/Chapter_1/ext_figure/zWheel_Science.png} % requires the graphicx package
+
+   \caption{The Wheel of Science}
+   \label{fig:WS}
+\end{figure}
+
+\subsection{Example}
+
+Let's look at another example.  Suppose we are interested in comparing the following four popular weight loss diets: Zone (balance between carbohydrates, protein and fat), Atkins (low carbohydrate, high fat, unrestricted calories), LEARN (low fat, based on national guidelines), and Ornish (low fat, high carbohydrate, unrestricted calories).   How would we design a comparison study?
+
+\subsubsection{1.	Conceptualize the problem}
+
+Which weight loss program is most effective?   Which one is the \textit{most healthy}?   Can \\ unrestricted-calorie diets make you lose weight?
+
+\subsubsection{2.	Operationalize the problem}
+
+How would we measure `effective' and `healthy'?  Do we look at weight \textit{loss} after two weeks? Two months?  Two years?  Do we compare the average weight \textit{loss} or percentage of people who lost 15 pounds or more?  How do we measure health?  By cholesterol reduction?  LDL cholesterol reduction?  Blood pressure reduction?  Glucose levels?  Percentage who feel better?
+
+\subsubsection{3.	Design the study}
+
+Where do we recruit our subjects for the study? How long will the study last?  Will we include only overweight subjects?  Do they choose which diet, or do we randomize the selection procedure?  How do we ensure that they stay on the diet?  Do we drop the cheaters from the study?
+
+\subsubsection{4.	Collect the data}
+
+How many times will we measure their weights?  How many times will we take blood samples?  Urine samples?  Do we send all samples to the same lab?  Do we measure how strictly each subject adheres to their diet?
+
+\subsubsection{5.	Analyze the data}
+
+Are there significant differences in average weight loss between diet groups?  Are there significant differences in the percentage who lost weight?  Are there differences in cholesterol changes, blood pressure changes, glucose level changes?  Are there differences in long-term adherence rates to each diet?
+
+\subsubsection{6.	Conclusions}
+
+Which diet would we recommend?  Under what conditions? Are our subjects sufficiently representative to allow generalization?  Are we sure the observed weight loss can be attributed to the diet?
+
+\subsubsection{7.	Disseminate results}
+
+How would we present the results of the study?  What tables and graphs would make the study easy to read and understand?
+
+\subsection{A final product}
+
+The following is a summary of a study reported in the Journal of the American Medical Association (JAMA), Vol. 297, No. 9 in March 2007.  The paper is titled ``Comparison of the Atkins, Zone, Ornish,and LEARN Diets for Change in Weight and Related Risk Factors Among Overweight Premenopausal WomenThe A TO Z Weight Loss Study: A Randomized Trial,'' by Christopher D. Gardner, PhD, Alexandre Kiazand, MD, Sofiya Alhassan, PhD, Soowon Kim, PhD, Randall S. Stafford, MD, PhD, Raymond R. Balise, PhD, Helena C. Kraemer, PhD, and Abby C. King, PhD.  All authors were affiliated with the Stanford Prevention Research Center and the Department of Medicine, Stanford University Medical School.
+
+\subsubsection{Context}
+
+\textit{Popular diets, particularly those low in carbohydrates, have challenged current recommendations advising a low-fat, high-carbohydrate diet for weight loss. Potential benefits and risks have not been tested adequately.}
+
+\subsubsection{Objective}
+
+\textit{To compare four weight-loss diets representing a spectrum of low to high carbohydrate intake for effects on weight loss and related metabolic variables.  Design, Setting, and Participants Twelve-month randomized trial conducted in the United States from February 2003 to October 2005 among 311 free-living, overweight/obese (body mass index, 27-40) nondiabetic, premenopausal women.  Intervention Participants were randomly assigned to follow the Atkins (n=77), Zone (n = 79), LEARN (n=79), or Ornish (n=76) diets and received weekly instruction for two months, then an additional 10-month follow-up.}
+
+\subsubsection{Main Outcome Measures}
+
+\textit{Weight loss at 12 months was the primary outcome.  Secondary outcomes included lipid profile (low-density lipoprotein, high-density lipoprotein, and non-high-density lipoprotein cholesterol, and triglyceride levels), the percentage of body fat, waist-hip ratio, fasting insulin and glucose levels, and blood pressure. Outcomes were assessed at months 0, 2, 6, and 12. The Tukey studentized range test was used to adjust for multiple testing.}
+
+\subsubsection{Results}
+
+\textit{Weight loss was greater for women in the Atkins diet group compared with the other diet groups at 12 months, and mean 12-month weight loss was significantly different between the Atkins and Zone diets $(P<.05)$. Mean 12-month weight loss was as follows: Atkins, -4.7 kg (95\% confidence interval [CI], -6.3 to -3.1 kg), Zone, -1.6 kg (95\% CI, -2.8 to -0.4 kg), LEARN, -2.6 kg (-3.8 to -1.3 kg), and Ornish, -2.2 kg (-3.6 to -0.8 kg). Weight loss was not statistically different among the Zone, LEARN, and Ornish groups. At 12 months, secondary outcomes for the Atkins group were comparable with or more favorable than the other diet groups.}
+
+\subsubsection{Conclusions}
+
+\textit{In this study, premenopausal overweight and obese women assigned to follow the Atkins diet, which had the lowest carbohydrate intake, lost more weight and experienced more favorable overall metabolic effects at 12 months than women assigned to follow the Zone, Ornish, or LEARN diets. While questions remain about long-term effects and mechanisms, a low-carbohydrate, high-protein, high-fat diet may be considered a feasible alternative recommendation for weight loss.}
+
+The study tells us that all three groups lost weight.  Over 12 months, the Atkins group lost the most weight without increasing cholesterol, blood pressure, the percentage of body fat, or fasting glucose levels.
+
+The study does not tell us that if one stays on the Atkins diet long term (say, two years, or five years, or 10 years) their cholesterol, blood pressure, the percentage of body fat, or fasting glucose levels will remain favorable.  If one ‘cheats’ on the Atkins diet periodically, what will be the effect on weight and metabolic profile?  Will the same results be observed for men?  For non-obese women?
+
+Some studies are well designed; others are not.  It is often up to us to make our judgments about what is true, instead of leaving this responsibility to journalists or bloggers.  Whenever you hear a claim on television or in a magazine, ask yourself ``What is the evidence?''
+
+\section{Common Fallacies}
+
+A fallacy is sometimes defined as a mistake in basic reasoning. The following are examples of fallacies:
+
+\begin{enumerate}
+\item \textbf{Lack of evidence fallacy}
+
+``There is no proof that the drug is unsafe.''  It allows claims to be made without providing any evidence, simply by shifting the burden of proof.  The fallacy lies in the reasoning that lack of evidence means the contrary is true.
+
+\item \textbf{Anecdotal evidence fallacy}
+
+``We give you testimonies of real people who \dots improved their golf game, or improved their sex life, or lost weight, or got rid of acne or achieved financial success.  They make claims without comparison studies.  Take a golf infomercial with testimonies from five golfers that a new driver improved their distance and accuracy.  Did it?  These are five golfers out of how many that they approached?  These are televised shots out of how many that each took?  The fallacy lies in the reasoning that existence means prevalence.
+
+\item \textbf{Correlation equals causation fallacy}
+
+For example, ``Married people are happier than singles'', may be wrongly interpreted as ``Want to be happy? Get married.''  It may be that happy people are the ones who tend to get married, or that high earners tend to be both happy and married.  The fallacy lies in the reasoning that ``two things happening together'' must mean one causes the other.
+\end{enumerate}
+
+\subsection{Some fallacies in interpreting evidence} \index{descriptive statistics}
+
+In medical studies, we use clinical trials to see if a difference exists between treatments.  We use statistical analysis to determine if there is a significant difference between the treatment types.  Perhaps there is very little difference, and that difference can be explained as being due to chance.  It could be there is no actual difference between treatment groups.  It leads us to a Type I error which can commonly occur.
+
+A \textbf{Type I error} occurs when the researcher falsely finds a difference between treatments where no actual difference exists.  Often, we use 95\% confidence intervals when analyzing for statistical significance.  It means that 5\% of the time we may conclude a significant difference, when in fact one doesn’t exist!  The researcher is thus willing to accept a 5\% chance that the study conclusions could be wrong.  Notice, however, 5\% is very small compared to the 95\% assurance we have that there is a significant difference.
+
+Another type of error that may be made is a \textbf{Type II error}.  Here the researcher fails to find a difference between the treatment groups when a true difference does exist!  Perhaps we did a study with only a small sample, and we didn't see a difference between our treatment and control group.  We would conclude there is no difference, which the treatment was not effective.  Another lab might perform the same type of study but have a much large sample size, and once they analyze their data find that there is a true difference.  If we fail to find a statistical difference when there is a difference, we have committed a Type II error.  It also relates to the power of a study.  The power of a study is related to the strength of the study.  Can we detect an effect when there is an effect?  How well was the study conducted?  It also relates to our sample size.  When we have a larger sample size, we will reduce the likelihood of committing a Type II error.
+
+
+\twocolumn
+
+\section{Exercises}    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%.
+
+\begin{exercises}
+
+  \begin{exercise}  % 1
+
+  What might be wrong about these headlines?
+
+  \begin{enumerate}
+  \item A study proclaims: ``Slightly overweight people live longer than thin people.''
+  \item A study states, ``People who consider  themselves depressed eat more chocolate  than people who consider  \\ themselves  otherwise.''
+  \item A U.S. Census reported ``More American women are living without a husband than with one.''  Additionally, women rated  themselves happier when \\ compared to the previous year's census.  Can we then infer that living single is leading to greater happiness in women?  What flaw is present here?
+  \end{enumerate}
+
+	  % \framebox[5cm][l]{ Answer: }
+  \end{exercise}
+  \begin{solution}  % 1
+
+  What might be wrong about these headlines?
+  a.	A study proclaims: ``Slightly overweight people live longer than thin people.'' ``Slightly overweight people live longer than thin people.''  It is a fallacy of correlation equals causation.  It statement implies that being slightly overweight causes people to live longer when compared to thin people.  We would want to dig deeper into the study to see what confounding variables may be present: did we take into account health of the individuals?  Perhaps we have some individuals in poor health leading them to be thin and shortening their lives.
+
+  \end{solution}
+
+   \begin{exercise}  % 2
+
+A handful of people were recently polled on their preference of soda at a local shopping mall in the U.S. and the study indicated more people preferred Mountain \\ Dew over Cola.  It indicates Mountain Dew is exceeding Cola as the beverage of choice in mainstream America.  What is wrong with this assertion?
+
+  % \framebox[5cm][l]{ Answer: }
+
+  \end{exercise}
+  \begin{solution}  % 2
+
+  A study proclaims: ``Mountain Dew is the beverage of choice in mainstream America.''  This sample was taken at a local shopping mall in the U.S.
+  \end{solution}
+
+\begin{exercise}  % 3
+
+A new anti-wrinkle cream was given to several people who frequently purchase make-up products from a specific \\ company.  In a follow-up with these individuals, all of them assert the new product was highly effective.  What fallacy is present here?  Should the company mass produce this new product? If not, what else needs to be studied here?
+
+% \framebox[5cm][l]{ Answer: }
+\end{exercise}
+\begin{solution}  % 3
+
+xxx
+
+\end{solution}
+
+\begin{exercise}  % 4
+
+All the members (sample \\ size, n=30) of a high school tennis team were given a new racket and were asked to report back on how the racket affected their performance during practices for the week.  All the members of the tennis team then completed a survey, and everyone minus one individual reported that the new racket impacted their performance in a positive manner.  Since we have a large enough sample size can we now conclude the new racket causes tennis players to perform better?  Why or why not?  Is there a fallacy here?
+
+	 % \framebox[5cm][l]{ Answer: }
+	\end{exercise}
+	 \begin{solution}  % 4
+
+	   YYYY
+	 \end{solution}
+
+\end{exercises}
+
+\onecolumn

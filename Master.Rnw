@@ -1,0 +1,145 @@
+\documentclass[11pt, chapterprefix=true]{scrbook}
+\usepackage[colorlinks=true]{hyperref}
+%\usepackage[lmargin=3cm, rmargin=2cm, showframe]{geometry}    % See geometry.pdf to learn the layout options. There are lots.
+% \usepackage[lmargin=3cm, rmargin=2cm]{geometry}
+\usepackage[lmargin=4cm, rmargin=2cm]{geometry}
+\usepackage{pict2e}
+\usepackage[english]{babel}
+\definecolor{lred}{rgb}{1,0.5,0}
+\definecolor{lyellow}{rgb}{.94, .9, .55}
+\definecolor{lgray}{rgb}{.83, .83, .83}
+% \usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+
+\geometry{letterpaper}    % ... or a4paper or a5paper or ...
+%\geometry{landscape}     % Activate for for rotated page geometry
+\usepackage{graphicx}
+\setkeys{Gin}{width=\linewidth}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{epstopdf}
+\usepackage{exsol, fancyvrb}                % Provides exercises and solutions.  See https://ctan.org/pkg/exsol.
+\usepackage{color}
+\usepackage{verbatim}
+\usepackage{changepage}
+\usepackage{url}
+\usepackage[authoryear]{natbib}
+\usepackage{makeidx}
+
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+
+\title{{\Huge{STAT 1600 \\ Statistics and Data Analysis }}}
+\subtitle{{\huge{Course Pack}}}
+\author{Statistics Computational Lab (SCL)}
+\date{2018 - 2019 Edition}  % Activate to display a given date or no date
+
+%\title{STAT 1600 \\ Statistics and Data Analysis }
+%\author{Department of Statistics \\ Western Michigan University}
+%\date{}% Activate to display a given date or no date
+\KOMAoptions{parskip=half}
+\makeindex
+
+\begin{document}
+
+\maketitle
+
+%\section{}
+%\subsection{}
+
+\begin{center} \textbf{Acknowledgements:}
+\end{center}
+
+Carrie McKean, Srikanthmadhavan Aravamuthan, Cody Weiss, Carson Miller,  Rudie \\ Desravines, Eunice Ampah, Joseph Billian,  Ian Kapenga, and Mr. Loren L. Heun assisted with  this material.
+
+\vspace{11cm}
+
+Copyright 2017 by The Department of Statistics at Western Michigan University.
+
+All rights reserved.
+
+Reproductions or translation of any part of this work beyond that permitted by Sections 107 and 108 of the 1976 United States Copyright Act without permission of the copyright owner is unlawful.
+
+A general introduction to statistics with an emphasis on data analysis and graphical presentation. Extensive use will be made of the computer to prepare results. Topics may include: data collection, sampling and experimentation, measurement issues, descriptive statistics, statistical graphics, normal distribution, cross-classified data, correlation and association, formal statistical inferences, and resampling methods.
+
+<<label=setup, echo=FALSE>>=
+#
+# Put all R "require" statements here (for the whole book)
+#
+library(knitr)
+library(foreign)
+library(xtable)
+lineWidth <- 6.1
+# ltwidth  <- 8.5
+# ltheight <- 11
+# These options apply to all R chunks in the entire book.
+opts_chunk$set(
+  # ***************************************
+  echo=FALSE, eval=TRUE, fig.align='center', fig.show='hold',size='footnotesize', fig.width=4.1, fig.height=4.2, out.width='8cm', par=FALSE
+  # ***************************************
+)
+@
+
+\overfullrule=1cm
+
+\tableofcontents
+
+
+<<Ch1, child="chapters/Chapter_1/Chapter_1.Rnw",eval=TRUE>>=
+@
+
+
+<<Ch2, child="chapters/Chapter_2/Chapter_2.Rnw",eval=TRUE>>=
+@
+
+<<Ch3, child="chapters/Chapter_3/Chapter_3.Rnw",eval=TRUE>>=
+@
+
+<<Ch4, child="chapters/Chapter_4/Chapter_4.Rnw",eval=TRUE>>=
+@
+
+<<Ch5, child="chapters/Chapter_5/Chapter_5.Rnw",eval=TRUE>>=
+@
+
+<<Ch6, child="chapters/Chapter_6/Chapter_6.Rnw",eval=TRUE>>=
+@
+
+<<Ch7, child="chapters/Chapter_7/Chapter_7.Rnw",eval=TRUE>>=
+@
+
+<<Ch8, child="chapters/Chapter_8/Chapter_8.Rnw",eval=TRUE>>=
+@
+
+<<Ch9, child="chapters/Chapter_9/Chapter_9.Rnw",eval=TRUE>>=
+@
+
+<<Ch10, child="chapters/Chapter_10/Chapter_10.Rnw",eval=TRUE>>=
+@
+
+<<Ch11, child="chapters/Chapter_11/Chapter_11.Rnw",eval=TRUE>>=
+@
+
+<<Ch12, child="chapters/Chapter_12/Chapter_12.Rnw",eval=TRUE>>=
+@
+
+<<Ch13, child="chapters/Chapter_13/Chapter_13.Rnw",eval=TRUE>>=
+@
+
+<<Ch14, child="chapters/Chapter_14/Chapter_14.Rnw",eval=TRUE>>=
+@
+
+<<Ch14, child="chapters/Workshops/Workshops.Rnw",eval=FALSE>>=
+@
+
+<<Ch14, child="chapters/Workshops/Workshops.Rnw",eval=FALSE>>=
+@
+
+
+% \printbibliography
+\bibliographystyle{plainnat}
+\bibliography{chapters/mybibliography}   % name your BibTeX data base
+
+% \newpage
+%\section{Index}
+
+\printindex
+
+\end{document}

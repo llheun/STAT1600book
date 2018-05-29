@@ -1,0 +1,2214 @@
+%!Rnw root = ../../Master.Rnw
+
+\chapter{Workshops}
+\label{chap:ch13}
+
+\section{Workshop 1}         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{center}
+\begin{flushleft}\textbf{ \large \hfill Workshop 1 Fall 2016 }\end{flushleft}
+
+\vspace{4mm}
+\makebox[\textwidth]{Name:\enspace\hrulefill}
+\vspace{4mm}
+\makebox[\textwidth]{Instructor's name:\enspace\hrulefill}
+\vspace{4mm}
+\makebox[\textwidth]{(Week 1: Due date: \underline{\phantom{xxxxxxxxxxxx}}) }
+\end{center}
+
+\begin{exercises}
+
+    \begin{exercise}  % 1-1
+
+A psychologist wants to know the following: Can certain optical illusions fool adults with normal vision?  She randomly selected 50 students from her PSY 120 class and found that the illusion fooled 42 of them.  The population in this study is
+
+%       \begin{enumerate}
+%       \item all adults with normal vision.
+%       \item the 42 students who were fooled.
+%       \item the 50 students who served as subjects.
+%       \item all students in the PSY 120 class.
+%       \end{enumerate}
+      \vspace{6mm}
+      \framebox[6cm][l]{ Answer: }
+
+    \end{exercise}
+    \begin{solution}
+      The population in this study is all adults with normal vision.
+    \end{solution}
+
+    \begin{exercise}  % 1-2
+
+As a researcher, you are interested in the impact of a national test for high school graduation.  So you acquired a list of National Education Association (NEA) members and randomly selected and sent a survey to 2,500 high school teachers.  Of 2,500 surveys, only 1,347 teachers sent back the questionnaire.   The sample is
+
+%       \begin{enumerate}
+%       \item all members of the National Education Association.
+%       \item all American school teachers.
+%       \item the 1,347 teachers who mail back the questionnaire.
+%       \item the 2,500 teachers to whom you mailed the questionnaire.
+%       \end{enumerate}
+
+      \framebox[6cm][l]{ Answer: }
+
+    \end{exercise}
+
+    \begin{solution}
+
+      the 1,347 teachers who mail back the questionnaire.
+    \end{solution}
+
+      \begin{exercise}  % 1-3
+
+Your researcher team measured the age (years),  marital status (single, married, divorced, or widowed), and weight (pounds), of 1,400 women. How many variables did you measure?
+
+%       \begin{enumerate}
+%       \item one
+%       \item two
+%       \item three
+%       \item 1,400
+%       \end{enumerate}
+
+      \framebox[6cm][l]{ Answer: }
+
+    \end{exercise}
+    \begin{solution}
+
+      three
+    \end{solution}
+
+      \begin{exercise}  % 1-4
+
+Following are data on the populations and numbers of death row prisoners for several states.
+
+% Requires the booktabs if the memoir class is not being used
+\begin{table}[htbp]
+   \centering
+   %\topcaption{Table captions are better up top} % requires the topcapt package
+   \begin{tabular}{@{} lrr @{}} \hline % Column formatting, @{} suppresses leading/trailing space
+    State & Population (thousands) & Death Row Prisoners \\ \hline
+    California & 28,168 & 247 \\
+    Florida & 12,377 & 294 \\
+    Illinois & 11,544 & 120 \\
+    Nevada & 1,060 & 45 \\ \hline
+   \end{tabular}
+\end{table}
+
+      Which state has the highest number of death row prisoners about the size of its population?
+
+%       Question options:
+%
+%       \begin{enumerate}
+%       \item California
+%       \item Florida
+%       \item Illinois
+%       \item Nevada
+%       \end{enumerate}
+
+      \framebox[6cm][l]{ Answer: }
+    \end{exercise}
+    \begin{solution}
+
+      Rate of California is
+<<results="asis", echo=FALSE>>=
+        rate <- 247/28168*1000; print(rate)
+        rm(rate)
+@
+
+      Rate of Florida is
+<<results="asis", echo=FALSE>>=
+        rate <- 294/12377*1000; print(rate)
+        rm(rate)
+@
+
+      Rate of Illinois is
+<<results="asis", echo=FALSE>>=
+        rate <- 120/11544*1000; print(rate)
+        rm(rate)
+@
+
+      Rate of Nevada is
+<<results="asis", echo=FALSE>>=
+        rate <- 45/1060*1000; print(rate)
+        rm(rate)
+@
+
+        Therefore, Nevada has the highest number of death row prisoners.
+    \end{solution}
+
+      \begin{exercise}  % 1-5
+
+Michelle's income two years ago was \$420,000.  Last year her income was only \$100,000.  The percent change in Michelle's income was
+
+%       Question options:
+%
+%       \begin{enumerate}
+%       \item 76.2\% decrease
+%       \item 23.8\% decrease
+%       \item 320\% decrease
+%       \item 31.3\% decrease
+%       \end{enumerate}
+
+      \framebox[6cm][l]{ Answer: }
+
+    \end{exercise}
+    \begin{solution}
+
+      Rate of Michelle's income is
+<<results="asis", echo=FALSE>>=
+        pc <- (100000 - 420000) / 420000 *100; print(pc)
+        rm(pc)
+@
+
+    \end{solution}
+
+      \begin{exercise}  % 1-6
+
+A student reports that of a sample of 200 college undergraduates, 37\% were female, and 41\% were male.  How do we know that the student made a mistake?
+
+%       Question options:
+%
+%       \begin{enumerate}
+%       \item 37% plus 41% is not 100%.
+%       \item the percentages of males and females would be closer together in a true sample.
+%       \item of the possibility of response error.
+%       \item it is highly unlikely that a sample of 200 undergraduates would have as few as 37% females.
+%       \end{enumerate}
+
+      \framebox[6cm][l]{ Answer: }
+
+    \end{exercise}
+    \begin{solution}
+
+<<results="asis", echo=FALSE>>=
+        37 + 41
+@
+        is not equal to 100\%.
+    \end{solution}
+
+      \begin{exercise}  % 1-7
+
+You are writing an article for the college newspaper about the cost of attending college.  You want to make a graph compare prices at your school and three similar schools.  A good choice of a graphic would be a
+
+%       Question options:
+%
+%       \begin{enumerate}
+%       \item histogram
+%       \item box plot
+%       \item bar chart
+%       \item pie chart
+%       \end{enumerate}
+
+      \framebox[6cm][l]{ Answer: }
+
+    \end{exercise}
+    \begin{solution}
+
+    A good choice of a graph would be a bar chart.
+    \end{solution}
+
+      \begin{exercise}  % 1-8
+
+When tackling with financial data (such as salaries or lawsuit settlements), we usually find that the distribution appearance is  \underline{\phantom{xxxxxxxxxx}}.  When the frequency distribution has this shape, the \underline{\phantom{xxxxxxxxxx}} is pulled toward the long tail of the distribution, but the \underline{\phantom{xxxxxxxxxx}} is less affected.  The words that correctly complete this statement are:
+
+%       Question options:
+%
+%       \begin{enumerate}
+%       \item right-skewed, mean, standard deviation.
+%       \item right-skewed, median, mean.
+%       \item right skewed, mean, median.
+%       \item left-skewed, mean, median.
+%       \end{enumerate}
+
+      \framebox[6cm][l]{ Answer: }
+    \end{exercise}
+    \begin{solution}
+
+      right skewed, mean, median.
+    \end{solution}
+
+%       \begin{exercise}  % 1-9
+%
+% For categorical variables (like a person's occupation or sex) it only makes sense to speak of \underline{\phantom{xxxxxxxxxx}}.
+% It makes no sense to speak of the \underline{\phantom{xxxxxxxxxx}} or the \underline{\phantom{xxxxxxxxxx}} sex.  The sequence of words to correctly complete this statement is
+%
+% %       Question options:
+% %
+% %       \begin{enumerate}
+% %       \item counts or percents, mean, median.
+% %       \item mode, mean, median.
+% %       \item median, mean, mode.
+% %       \item quartiles, mean, median.
+% %       \end{enumerate}
+%
+%       \framebox[6cm][l]{ Answer: }
+%
+%     \end{exercise}
+%     \begin{solution}
+%
+%       counts or percents, mean, median.
+%     \end{solution}
+%
+%       \begin{exercise}  % 1-10
+%
+% Of the observations in the following table, what is the first quartile?
+%
+%       \begin{table}[htbp]
+%    \centering
+%    %\topcaption{Table captions are better up top} % requires the topcapt package
+%    \begin{tabular}{@{} ccccccccccc @{}} \hline % Column formatting, @{} suppresses leading/trailing space
+%    2 & -2 & 1 & -1 & 1 & 0 & 0 & 3 & 0 & 2 & 3  \\ \hline
+%    \end{tabular}
+% \end{table}
+%
+% %       Question options:
+% %
+% %       \begin{enumerate}
+% %       \item -1
+% %       \item 0
+% %       \item 1
+% %       \item 2
+% %       \end{enumerate}
+%
+%       \framebox[6cm][l]{ Answer: }
+%     \end{exercise}
+%     \begin{solution}
+%
+% <<results="asis", echo=FALSE>>=
+%       dat1<- c(2, -2, 1, -1, 1, 0, 0, 3, 0, 2, 3)
+%       summary(dat1)
+%       rm(dat1)
+% @
+%
+%       $Q_1 = 0$
+%     \end{solution}
+\end{exercises}
+
+\pagebreak
+
+\section{Workshop 2} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{center}
+\begin{flushleft}\textbf{ \large \hfill Workshop 2 Fall 2016 }\end{flushleft}
+
+\vspace{4mm}
+\makebox[\textwidth]{Name:\enspace\hrulefill}
+\vspace{4mm}
+\makebox[\textwidth]{Instructor's name:\enspace\hrulefill}
+\vspace{4mm}
+\makebox[\textwidth]{(Week 2: Due date: \underline{\phantom{xxxxxxxxxxxx}}) }
+\end{center}
+
+\begin{exercises}
+
+    \begin{exercise}  % 2-1
+
+Here are the number of hours that each of a group of students studied for this exam:
+
+\begin{table}[htbp]
+   \centering
+   %\topcaption{Table captions are better up top} % requires the topcapt package
+   \begin{tabular}{@{} cccccccccc @{}} \hline % Column formatting, @{} suppresses leading/trailing space
+    2  & 4  & 22  & 2 &  1  & 4 &  1  & 5 &  5  & 4 \\ \hline
+   \end{tabular}
+\end{table}
+
+What is the third quartile of the number of study hours? (Use the method used in Chapter 4 slides)
+
+%       Question options:
+%       \begin{enumerate}
+%       \item 1.5
+%       \item 5.5
+%       \item 5.0
+%       \item 2
+%       \end{enumerate}
+
+      \framebox[6cm][l]{ Answer: }
+
+    \end{exercise}
+    \begin{solution}
+
+<<results="asis", echo=FALSE>>=
+      dat1 <- c(2  , 4  , 22  , 2 ,  1  , 4 ,  1  , 5 ,  5  , 4)
+      summary(dat1)
+      rm(dat1)
+@
+
+      Therefore, $Q_3 = 5$
+
+    \end{solution}
+
+%'     \begin{exercise}  % 2-2
+%'
+%'       Using the scenario from Exercise 2-1, what is the standard deviation of the number of study hours?
+%'
+%' %       Question options:
+%' %       \begin{enumerate}
+%' %       \item 5.8
+%' %       \item 38
+%' %       \item 6.2
+%' %       \item 34.2
+%' %       \end{enumerate}
+%'       \vspace{1cm}
+%'       \framebox[6cm][l]{ Answer: }
+%'
+%'     \end{exercise}
+%'     \vspace{1mm}
+%'     \begin{solution}
+%'
+%'     Therefore, s =
+%'     <<results="asis", echo=FALSE>>=
+%'       dat1 <- c(2  , 4  , 22  , 2 ,  1  , 4 ,  1  , 5 ,  5  , 4)
+%'       sd(dat1)
+%'       rm(dat1)
+%'     @
+%'
+%'     \end{solution}
+
+    \begin{exercise}  % 2-3
+
+From exercise 2-1, what is the interquartile range of the number of study hours?
+
+%       Question options:
+%       \begin{enumerate}
+%       \item 3
+%       \item 5
+%       \item 2
+%       \item 4
+%       \end{enumerate}
+
+      \framebox[6cm][l]{ Answer: }
+    \end{exercise}
+    \begin{solution}
+
+    Therefore, IQR =
+<<results="asis", echo=FALSE>>=
+      dat1 <- c(2  , 4  , 22  , 2 ,  1  , 4 ,  1  , 5 ,  5  , 4)
+      IQR(dat1)
+      rm(dat1)
+@
+    \end{solution}
+
+    \begin{exercise}  % 2-4
+
+Using the data from exercise 2-1, the data contain one high outlier (22 hours).  Which of your results (third quartile, standard deviation, interquartile range) for the three previous exercises would change if this were five (5) hours instead of 22 hours?  (You do not need to calculate new values.)
+
+%       Question options:
+%       \begin{enumerate}
+%       \item only the standard deviation would change.
+%       \item the third quartile and the standard deviation would change.
+%       \item all three would change.
+%       \item the interquartile range and the standard deviation would change.
+%       \end{enumerate}
+
+      \framebox[6cm][l]{ Answer: }
+    \end{exercise}
+    \begin{solution}
+
+        Standard deviation would change.
+    \end{solution}
+
+    \begin{exercise}  % 2-5
+
+(For this exercise, consider the five central tendency variables).  For a distribution that is skewed to the left, usually,
+
+%       Question options:
+%       \begin{enumerate}
+%       \item the median will be larger than the mean.
+%       \item the first quartile will be larger than the third quartile.
+%       \item the mean will be larger than the median.
+%       \item the standard deviation will be negative.
+%       \end{enumerate}
+
+      \framebox[6cm][l]{ Answer: }
+    \end{exercise}
+    \begin{solution}
+
+      The median will be larger than the mean if the distribution is left-skewed.
+    \end{solution}
+
+    \begin{exercise}  % 2-6
+
+You have calculated the value, of the standard deviation for a set of data, is -2.5.  You can conclude that
+
+%       Question options:
+%       \begin{enumerate}
+%       \item you made an error in your calculations.
+%       \item all of the observations in the dataset are negative.
+%       \item there is very little variation in the dataset.
+%       \item the data are skewed to the left.
+%       \end{enumerate}
+
+      \framebox[6cm][l]{ Answer: }
+    \end{exercise}
+    \begin{solution}
+
+      You made an error in your calculations.
+    \end{solution}
+
+      \begin{exercise}  % 2-7
+
+You calculate that the standard deviation of a set of observations is zero (0).  This tells you that
+
+%       Question options:
+%       \begin{enumerate}
+%       \item all the observations have the same value.
+%       \item the mean must also be zero (0).
+%       \item all the observations must be zero (0).
+%       \item you made an error.
+%       \end{enumerate}
+
+      \framebox[6cm][l]{ Answer: }
+    \end{exercise}
+    \begin{solution}
+
+        all the observations have the same value.
+    \end{solution}
+
+%'     \begin{exercise}  % 2-8
+%'
+%'       <<f13_2_1, echo=FALSE, fig.pos="ht", fig.align="center",  fig.width=3.3, fig.height=3.3, fig.cap="Comparing Calories">>=
+%'         poul1 <- runif(17,min=85,max=170)
+%'         meat1 <- runif(17,min=105,max=195)
+%'         beef1 <- runif(20,min=110,max=190)
+%'         calories <- numeric(54)
+%'         calories[1:17] <- poul1[1:17]
+%'         calories[18:34] <- meat1[1:17]
+%'         calories[35:54] <- beef1[1:20]
+%'         type1 <- c(rep("Poul",17),rep("Meat",17),rep("Beef",20))
+%'         boxplot(calories ~ type1, xlab="Protein Type", ylab="Calories")
+%'         rm( poul1, meat1, beef1, calories, type1)
+%'      @
+%'
+%' Above are box plots of the number of calories in 20 brands of beef hotddogs, 17 brands of meat hotdogs, and 17 brands of poultry
+%' hotdogs.  The plot shows that
+%'
+%'
+%' %       \begin{enumerate}
+%' %       \item most poultry hotdogs brands have fewer calories that most beef and meat hotdogs, but a few poultry hotdogs have more calories that the median beef and meat hotdogs.
+%' %       \item about half of poultry hotdogs brands have fewer calories than the median for beef and meat hotdogs brands.
+%' %       \item all poultry hotdog brands have fewer calories than the median for beef and meat hotdog brands.
+%' %       \item hotdog type is not helpful in predicting calories, because some hotdog brands of each type are high and some of each type are low.
+%' %       \end{enumerate}
+%'       \vspace{1cm}
+%'       \framebox[6cm][l]{ Answer: }
+%'
+%'     \end{exercise}
+%'     \vspace{1mm}
+%'     \begin{solution}
+%'
+%'     The plot shows that most poultry hotdogs brands have fewer calories that most beef and meat hotdogs, but a few poultry hotdogs have more calories that the median beef and meat hotdogs.
+%'
+%'     \end{solution}
+
+    \begin{exercise}  % 2-9
+
+The box in each box plot marks
+
+%       Question options:
+%       \begin{enumerate}
+%       \item the span one standard deviation on each side of the mean.
+%       \item the range covered by the middle half of the data.
+%       \item the span two standard deviations on each side of the mean.
+%       \item the range covered by the middle three-quarters of the data.
+%       \end{enumerate}
+
+      \framebox[6cm][l]{ Answer: }
+    \end{exercise}
+    \begin{solution}
+
+The box in each box plot marks the range covered by the middle half of the data.
+    \end{solution}
+
+    \begin{exercise}  % 2-10
+
+<<f13_2_2, echo=FALSE, fig.pos="ht", fig.align="center", fig.width=3.1, fig.height=3.1, fig.cap="Mean Comparison", fig.path="chapters/Workshops/figure/">>=
+
+  x10<-seq(10,35,.1)
+  y10<-dnorm(x10,mean=19.2,sd=1.52)
+  plot(x10,y10, type="l")
+  y11<-dnorm(x10,mean=23.8,sd=3.68)
+  lines(x10,y11)
+  text(25,.2,"A")
+  lines(c(21,25),c(.15,.18))
+  text(30,.12,"B")
+  lines(c(27,30),c(.08,.10))
+
+  rm(x10,y10,y11)
+@
+
+The above graphs of two bell-shaped/symmetric distributions, curve A and curve B.  What are the best description of the relationship between curve A and curve B.
+
+%       Question options:
+%       \begin{enumerate}
+%       \item mean of curve A is less than mean of curve B and standard deviation of curve A is less than the standard deviation of curve B.
+%       \item mean of curve A is less than mean of curve B and standard deviation of curve A is greater than the standard deviation of curve B.
+%       \item mean of curve A is greater than mean of curve B and standard deviation of curve A is less than the standard deviation of curve B.
+%       \item mean of curve A is greater than mean of curve B and standard deviation of curve A is greater than the standard deviation of curve B.
+%       \end{enumerate}
+
+      \framebox[6cm][l]{ Answer: }
+    \end{exercise}
+    \begin{solution}
+
+Mean of curve A is less than mean of curve B and the standard deviation of curve A is less than the standard deviation of curve B.
+    \end{solution}
+
+
+\end{exercises}
+
+\pagebreak
+
+\section{Workshop 3} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{center}
+\begin{flushleft}\textbf{ \large \hfill Workshop 3 Fall 2016 }\end{flushleft}
+
+\vspace{4mm}
+\makebox[\textwidth]{Name:\enspace\hrulefill}
+\vspace{4mm}
+\makebox[\textwidth]{Instructor's name:\enspace\hrulefill}
+\vspace{4mm}
+\makebox[\textwidth]{(Week 3: Due date: \underline{\phantom{xxxxxxxxxxxx}}) }
+\end{center}
+
+\begin{exercises}
+
+    \begin{exercise}  % 3-1
+
+<<f13_3_1, echo=FALSE, fig.pos="ht", fig.align="center", fig.width=3.3, fig.height=3.3, fig.cap="Mean Comparison", fig.path="chapters/Workshops/figure/">>=
+
+  x10<-seq(10,85,.1)
+  y10<-dnorm(x10,mean=50,sd=10)
+  plot(x10,y10, type="l")
+  lines(c(30,30),c(0,0.005))
+  lines(c(70,70),c(0,0.005))
+  lines(c(50,50),c(0,0.04))
+@
+
+Using figure 13.3 the mean of the normal distribution is
+
+%       Question options:
+%       \begin{enumerate}
+%       \item 10
+%       \item 50
+%       \item 60
+%       \item 70
+%       \end{enumerate}
+
+      \framebox[6cm][l]{ Answer: }
+
+    \end{exercise}
+    \begin{solution}
+
+The mean of the normal distribution is 50.
+    \end{solution}
+
+    \begin{exercise}  % 3-2
+
+%' <<f13_3_2, echo=FALSE, fig.pos="ht", fig.align="center", fig.width=3, fig.height=3, fig.cap="Mean Comparison", fig.path="chapters/Workshops/figure/">>=
+%'
+%'   plot(x10,y10, type="l")
+%'
+%' @
+
+Using Figure 13.3, the standard deviation of the normal distribution is (Hint: use the empirical rule.)
+
+%       Question options:
+%       \begin{enumerate}
+%       \item 100
+%       \item 70
+%       \item 20
+%       \item 10
+%       \end{enumerate}
+
+      \framebox[6cm][l]{ Answer: }
+    \end{exercise}
+    \begin{solution}
+
+The standard deviation of the normal distribution is 10.
+    \end{solution}
+
+    \begin{exercise}  % 3-3
+
+A number with 60 percent of the data above it is
+
+%       Question options:
+%       \begin{enumerate}
+%       \item the $60^{th}$ percentile.
+%       \item the $40^{th}$ percentile.
+%       \item always smaller than the mean.
+%       \item always larger than the mean.
+%       \end{enumerate}
+
+      \framebox[6cm][l]{ Answer: }
+    \end{exercise}
+    \begin{solution}
+
+A number with 60 percent of the data above it is the $40^{th}$ percentile.
+    \end{solution}
+
+    \begin{exercise}  % 3-4
+
+Scores of adults on the Wechsler Adults Intelligence Scale (a common IQ test) follow a normal distribution.  The middle 99.7\% of scores on this test range from 55 to 145.  What is the standard deviation of the test scores?
+
+%       Question options:
+%       \begin{enumerate}
+%       \item 7.5 points
+%       \item 10 points
+%       \item 15 points
+%       \item 20 points
+%       \end{enumerate}
+
+      \framebox[6cm][l]{ Answer: }
+    \end{exercise}
+    \begin{solution}
+
+the standard deviation of the test scores is
+
+<<results="asis", echo=FALSE>>=
+        sd1 <- (145 - 55) / 6; sd1
+@
+\end{solution}
+
+    \begin{exercise}  % 3-5
+
+What percent of the observations from a normal distribution lies between the standard scores $z = -1$ and $z = 2$?
+
+%       Question options:
+%       \begin{enumerate}
+%       \item 16\%
+%       \item 47.5\%
+%       \item 61\%
+%       \item 81.9\%
+%       \end{enumerate}
+
+      \framebox[6cm][l]{ Answer: }
+    \end{exercise}
+    \begin{solution}
+
+$P[ -1 < z < 2 ] = P[z < 2] - P[ z < -1 ] = $
+
+<<results="asis", echo=FALSE>>=
+        pnorm(2)- pnorm(-1)
+@
+    \end{solution}
+
+    \begin{exercise}  % 3-6
+
+Entomologist Heinz Kiefer has a colony of bongo spiders in his lab.  There are 1,000 adult spiders in the colony, and their weights are typically distributed with mean 11 grams and standard deviation 2 grams.  About how many spiders in the colony weigh more than 12 grams?
+
+%       Question options:
+%       \begin{enumerate}
+%       \item 160
+%       \item 310
+%       \item 690
+%       \item 840
+%       \end{enumerate}
+
+      \framebox[6cm][l]{ Answer: }
+    \end{exercise}
+    \begin{solution}
+
+$P[ \bar{x} > 12 ] \times 1000 = (1 - P[\bar{x} < 12]) \times 1000 =  (1 - P[z < .5]) \times 1000 =$
+<<results="asis", echo=FALSE>>=
+        (1 - pnorm(.5)) * 1000
+@
+    \end{solution}
+
+    \begin{exercise}  % 3-7
+
+The distribution of scores on the SAT exam is normal, with mean 500 and standard deviation 100.  So the median score on the exam
+
+%       Question options:
+%       \begin{enumerate}
+%       \item is less than 500.
+%       \item is equal to 500.
+%       \item is greater than 500.
+%       \item could be anywhere between 400 and 600.
+%       \end{enumerate}
+
+      \framebox[6cm][l]{ Answer: }
+    \end{exercise}
+    \begin{solution}
+
+So the median score on the exam is equal to 500.
+    \end{solution}
+
+    \begin{exercise}  % 3-8
+
+Scores on the Graduate Record Examination (GRE) follow a normal distribution.  Jennifer's score is two standard deviations above the mean.  About what percent of scores are higher than Jennifer's?
+
+%       Question options:
+%       \begin{enumerate}
+%       \item 2.5\%
+%       \item 5\%
+%       \item 16\%
+%       \item 50\%
+%       \end{enumerate}
+
+      \framebox[6cm][l]{ Answer: }
+    \end{exercise}
+    \begin{solution}
+
+The percent of scores are higher is
+<<results="asis", echo=FALSE>>=
+        1 - pnorm(1.96)
+@
+    \end{solution}
+
+%     \begin{exercise}  % 3-9
+%
+% Suppose that the distribution of Writing SAT scores from your state this year is normally distributed with mean 480 and standard deviation 110 for males.
+%
+% If someone who scores 700 or higher on the Writing SAT can be considered exceptional, the proportion of exceptional students among male SAT takers is about
+%
+% %       Question options:
+% %       \begin{enumerate}
+% %       \item 1.5\%
+% %       \item 2.28\%
+% %       \item 5\%
+% %       \item 47.72\%
+% %       \end{enumerate}
+%
+%       \framebox[6cm][l]{ Answer: }
+%     \end{exercise}
+%     \begin{solution}
+%
+% the proportion of exceptional students among male SAT takers is about
+% <<results="asis", echo=FALSE>>=
+%         z1 <- (700 - 480)/110
+%         1 - pnorm(z1)
+%         rm(z1)
+% @
+%     \end{solution}
+
+%'     \begin{exercise}  % 3-10
+%'
+%'       Suppose that the distribution of Writing SAT scores from your state this year is normally distributed with mean 480 and standard deviation 110 for males.
+%'
+%'       Mike took the Writing SAT and scored 670.  He did better than approximately \underline{\phantom{xxxxxxxx}} \% of male students taking the test.
+%'
+%'
+%' %       Question options:
+%' %       \begin{enumerate}
+%' %       \item 4.2
+%' %       \item 45.8
+%' %       \item 95.8
+%' %       \item 99.9
+%' %       \end{enumerate}
+%'       \vspace{1cm}
+%'       \framebox[6cm][l]{ Answer: }
+%'
+%'     \end{exercise}
+%'     \begin{solution}
+%'
+%'     Mike did better than
+%'     <<results="asis", echo=FALSE>>=
+%'         z1 <- (670 - 480)/110
+%'         (pnorm(z1))*100
+%'     @
+%'     \% of his male peers.
+%'
+%'     \end{solution}
+\end{exercises}
+
+\pagebreak
+
+\section{Workshop 4} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{center}
+\begin{flushleft}\textbf{ \large \hfill Workshop 4 Fall 2016 }\end{flushleft}
+
+\vspace{4mm}
+\makebox[\textwidth]{Name:\enspace\hrulefill}
+\vspace{4mm}
+\makebox[\textwidth]{Instructor's name:\enspace\hrulefill}
+\vspace{4mm}
+\makebox[\textwidth]{(Week 4: Due date: \underline{\phantom{xxxxxxxxxxxx}}) }
+\end{center}
+
+\begin{exercises}
+
+  \begin{exercise}  %4-1
+
+An October 2004 Gallup Poll asked a sample of 1012 adults whether they thought that having a gun in the house makes it a safer place to be or a more dangerous place to be. The number who thought having a gun in the house makes it a safer place was 425. Find a 90\% confidence interval for the proportion of all adults who feel this way.
+
+Calculate the point estimate.
+
+%       Question options:
+%       \begin{enumerate}
+%       \item -0.38
+%       \item 0.38
+%       \item -0.42
+%       \item 0.42
+%       \end{enumerate}
+
+      \framebox[6cm][l]{ Answer: }
+    \end{exercise}
+    \begin{solution}
+
+The point estimate is
+<<results="asis", echo=FALSE>>=
+        p1 <- 425/1012; p1
+@
+    \end{solution}
+
+  \begin{exercise}   % 4-2
+
+    % An October 2004 Gallup Poll asked a sample of 1012 adults whether they thought that having a gun in the house makes it a safer place to be or a more dangerous place to be. The number who thought having a gun in the house makes it a safer place was 425. Find a 90\% confidence interval for the proportion of all adults who feel this way.
+
+Using the scenario of exercise 13.4.1, calculate the standard error of your estimate.
+
+%       Question options:
+%       \begin{enumerate}
+%       \item 0.0355
+%       \item 0.0897
+%       \item 0.0155
+%       \item 0.2318
+%       \end{enumerate}
+
+      \framebox[6cm][l]{ Answer: }
+    \end{exercise}
+    \begin{solution}
+
+The standard error of your estimate is
+<<results="asis", echo=FALSE>>=
+        se1 <- sqrt(p1*(1-p1)/1012); se1
+@
+    \end{solution}
+
+  \begin{exercise}   % 4-3
+
+    % An October 2004 Gallup Poll asked a sample of 1012 adults whether they thought that having a gun in the house makes it a safer place to be or a more dangerous place to be. The number who thought having a gun in the house makes it a safer place was 425. Find a 90\% confidence interval for the proportion of all adults who feel this way.
+
+Using the scenario of exercise 13.4.1, determine the critical value.
+
+%       Question options:
+%       \begin{enumerate}
+%       \item 1.282
+%       \item 1.645
+%       \item 2.58
+%       \item 1.96
+%       \end{enumerate}
+
+      \framebox[6cm][l]{ Answer: }
+    \end{exercise}
+    \begin{solution}
+
+The critical value  is
+<<results="asis", echo=FALSE>>=
+        cv1 <- qnorm(.95); cv1
+@
+    \end{solution}
+
+  \begin{exercise}   % 4-4
+
+    % An October 2004 Gallup Poll asked a sample of 1012 adults whether they thought that having a gun in the house makes it a safer place to be or a more dangerous place to be. The number who thought having a gun in the house makes it a safer place was 425. Find a 90\% confidence interval for the proportion of all adults who feel this way.
+
+Using the scenario of exercise 13.4.1, calculate the margin of error.
+
+%       Question options:
+%       \begin{enumerate}
+%       \item 0.0199
+%       \item 0.4543
+%       \item 0.2314
+%       \item 0.0255
+%       \end{enumerate}
+
+      \framebox[6cm][l]{ Answer: }
+    \end{exercise}
+    \begin{solution}
+
+The margin error of your estimate is
+<<results="asis", echo=FALSE>>=
+        me1 <- cv1 * se1; me1
+@
+    \end{solution}
+
+  \begin{exercise}   % 4-5
+
+    % An October 2004 Gallup Poll asked a sample of 1012 adults whether they thought that having a gun in the house makes it a safer place to be or a more dangerous place to be. The number who thought having a gun in the house makes it a safer place was 425. Find a 90\% confidence interval for the proportion of all adults who feel this way.
+
+Using the scenario of exercise 13.4.1, calculate the confidence interval.
+
+%       Question options:
+%       \begin{enumerate}
+%       \item (0.4001, 0.4399)
+%       \item (0.3545, 0.4055)
+%       \item (0.1886, 0.6514)
+%       \item (0.3945, 0.4455)
+%       \end{enumerate}
+
+      \framebox[6cm][l]{ Answer: }
+    \end{exercise}
+    \begin{solution}
+
+The  confidence interval is
+<<results="asis", echo=FALSE>>=
+        lb <- p1 - me1; lb
+        ub <- p1 + me1; ub
+        rm(p1, se1, cv1, me1, lb, ub)
+@
+    \end{solution}
+
+  \begin{exercise}   % 4-6
+
+A randomized comparative experiment studied the effect of diet on blood pressure. Researchers divided 54 healthy white males at random into two groups. One group received a calcium supplement; the other, a placebo. At the beginning of the study, the researchers measured many variables on the subjects. The paper reporting the study gives mean=114.9 and s=9.3 for the seated systolic blood pressure of the 27 members of the placebo group. Give a 95\% confidence interval for the mean blood pressure of the population from which the subjects were recruited.
+
+What is the point estimate?
+
+%       Question options:
+%       \begin{enumerate}
+%       \item 9.3
+%       \item 2.13
+%       \item 4.26
+%       \item 114.9
+%       \end{enumerate}
+
+      \framebox[6cm][l]{ Answer: }
+    \end{exercise}
+    \begin{solution}
+
+The  point estimate is
+<<results="asis", echo=FALSE>>=
+        xbar1 <- 114.9; xbar1
+        se1 <- 9.3 / sqrt(27)
+        cv1 <- qt(0.975, df=26)
+        me1 <- cv1 * se1
+@
+    \end{solution}
+
+  \begin{exercise}   % 4-7
+
+    % A randomized comparative experiment studied the effect of diet on blood pressure. Researchers divided 54 healthy white males at random into two groups. One group received a calcium supplement; the other, a placebo. At the beginning of the study, the researchers measured many variables on the subjects. The paper reporting the study gives mean=114.9 and s=9.3 for the seated systolic blood pressure of the 27 members of the placebo group. Give a 95\% confidence interval for the mean blood pressure of the population from which the subjects were recruited.
+
+Using the scenario of exercise 13.4.6, calculate the standard error of your estimate.
+
+%       Question options:
+%       \begin{enumerate}
+%       \item 0.3444
+%       \item 1.7898
+%       \item 0.1722
+%       \item 1.2656
+%       \end{enumerate}
+
+      \framebox[6cm][l]{ Answer: }
+    \end{exercise}
+    \begin{solution}
+
+The  standard error of your estimate is
+<<results="asis", echo=FALSE>>=
+         se1
+@
+    \end{solution}
+
+  \begin{exercise}   % 4-8
+
+    % A randomized comparative experiment studied the effect of diet on blood pressure. Researchers divided 54 healthy white males at random into two groups. One group received a calcium supplement; the other, a placebo. At the beginning of the study, the researchers measured many variables on the subjects. The paper reporting the study gives mean=114.9 and s=9.3 for the seated systolic blood pressure of the 27 members of the placebo group. Give a 95\% confidence interval for the mean blood pressure of the population from which the subjects were recruited.
+
+Using the scenario of exercise 13.4.6, determine the critical value.
+
+%       Question options:
+%       \begin{enumerate}
+%       \item 1.052
+%       \item 2.056
+%       \item 2.703
+%       \item 1.706
+%       \end{enumerate}
+
+      \framebox[6cm][l]{ Answer: }
+    \end{exercise}
+    \begin{solution}
+
+The   critical value is
+<<results="asis", echo=FALSE>>=
+        cv1
+@
+    \end{solution}
+
+  \begin{exercise}   % 4-9
+
+    % A randomized comparative experiment studied the effect of diet on blood pressure. Researchers divided 54 healthy white males at random into two groups. One group received a calcium supplement; the other, a placebo. At the beginning of the study, the researchers measured many variables on the subjects. The paper reporting the study gives mean=114.9 and s=9.3 for the seated systolic blood pressure of the 27 members of the placebo group. Give a 95\% confidence interval for the mean blood pressure of the population from which the subjects were recruited.
+
+Using the scenario of exercise 13.4.6, calculate the margin of error.
+
+%       Question options:
+%       \begin{enumerate}
+%       \item 3.0534
+%       \item 4.8378
+%       \item 3.6798
+%       \item 2.6020
+%       \end{enumerate}
+
+      \framebox[6cm][l]{ Answer: }
+    \end{exercise}
+    \begin{solution}
+
+The   margin of error is
+<<results="asis", echo=FALSE>>=
+        me1
+@
+    \end{solution}
+
+  \begin{exercise}   % 4-10
+
+    % A randomized comparative experiment studied the effect of diet on blood pressure. Researchers divided 54 healthy white males at random into two groups. One group received a calcium supplement; the other, a placebo. At the beginning of the study, the researchers measured many variables on the subjects. The paper reporting the study gives mean=114.9 and s=9.3 for the seated systolic blood pressure of the 27 members of the placebo group. Give a 95\% confidence interval for the mean blood pressure of the population from which the subjects were recruited.
+
+Using the scenario of exercise 13.4.6, calculate the 95\% confidence interval.
+
+%       Question options:
+%       \begin{enumerate}
+%       \item (110.06, 119.74)
+%       \item (111.22, 118.58)
+%       \item (11.750, 112.30)
+%       \item (110.85, 117.95)
+%       \end{enumerate}
+
+      \framebox[6cm][l]{ Answer: }
+    \end{exercise}
+    \begin{solution}
+
+The  95\% CI is
+<<results="asis", echo=FALSE>>=
+        lb <- xbar1 - me1; lb
+        ub <- xbar1 + me1; ub
+@
+    \end{solution}
+\end{exercises}
+
+\pagebreak
+\section{Workshop 5} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{center}
+\begin{flushleft}\textbf{ \large \hfill Workshop 5 Fall 2016 }\end{flushleft}
+
+\vspace{4mm}
+\makebox[\textwidth]{Name:\enspace\hrulefill}
+\vspace{4mm}
+\makebox[\textwidth]{Instructor's name:\enspace\hrulefill}
+\vspace{4mm}
+\makebox[\textwidth]{(Week 5: Due date: \underline{\phantom{xxxxxxxxxxxx}}) }
+\end{center}
+
+\begin{exercises}
+
+  \begin{exercise}  %5-1
+
+Last year the employees of the city sanitation department donated an average of \$8.00 to the volunteer rescue squad.  Test the hypothesis at the 0.05 level of significance that the average contribution this year is still \$8.00 if a random sample of 12 employees showed an average donation of \$8.90 with a standard deviation of \$1.75.
+
+Identify the population parameter of interest.
+
+%       Question options:
+%       \begin{enumerate}
+%       \item Population proportion.
+%       \item Population mean.
+%       \item \$8.00
+%       \item \$8.90
+%       \end{enumerate}
+
+      \framebox[6cm][l]{ Answer: }
+
+    \end{exercise}
+    \begin{solution}
+
+      The population parameter of interest is \$
+<<results="asis", echo=FALSE>>=
+        mu1 <- 8.00
+        mu1
+@
+    \end{solution}
+
+  \begin{exercise}  %5-2
+
+    % Last year the employees of the city sanitation department donated an average of \$8.00 to the volunteer rescue squad.  Test the hypothesis at the 0.05 level of significance that the average contribution this year is still \$8.00 if a random sample of 12 employees showed an average donation of \$8.90 with a standard deviation of \$1.75.
+
+Using the scenario of exercise 13.5.1, state the appropriate hypotheses.
+
+%       Question options:
+%       \begin{enumerate}
+%       \item The hypotheses are $H_0: \mu = 8.9$ vs. $H_a: \mu \ne 8.9$
+%       \item The hypotheses are $H_0: \mu = 8$ vs. $H_a: \mu \ne 8$
+%       \item The hypotheses are $H_0: \mu = 8$ vs. $H_a: \mu < 8$
+%       \item The hypotheses are $H_0: \mu = 8$ vs. $H_a: \mu > 8$
+%       \end{enumerate}
+
+      \framebox[6cm][l]{ Answer: }
+    \end{exercise}
+    \begin{solution}
+
+The appropriate hypotheses  are $H_0: \mu = 8$ vs. $H_a: \mu \ne 8$
+    \end{solution}
+
+  \begin{exercise}  %5-3
+
+    % Last year the employees of the city sanitation department donated an average of \$8.00 to the volunteer rescue squad.  Test the hypothesis at the 0.05 level of significance that the average contribution this year is still \$8.00 if a random sample of 12 employees showed an average donation of \$8.90 with a standard deviation of \$1.75.
+
+Using the scenario of exercise 13.5.1, calculate the test statistic.
+
+%       Question options:
+%       \begin{enumerate}
+%       \item 1.5192
+%       \item 0.1485
+%       \item 1.7815
+%       \item 6.1714
+%       \end{enumerate}
+
+      \framebox[6cm][l]{ Answer: }
+    \end{exercise}
+    \begin{solution}
+
+The  test statistic is
+<<results="asis", echo=FALSE>>=
+        sd1 <- 1.75
+        se1 <- sd1/sqrt(12)
+        t1  <- (8.9 - 8)/se1; t1
+@
+    \end{solution}
+
+  \begin{exercise}  %5-4
+
+    % Last year the employees of the city sanitation department donated an average of \$8.00 to the volunteer rescue squad.  Test the hypothesis at the 0.05 level of significance that the average contribution this year is still \$8.00 if a random sample of 12 employees showed an average donation of \$8.90 with a standard deviation of \$1.75.
+
+Using the scenario of exercise 13.5.1, determine the critical value.
+
+%       Question options:
+%       \begin{enumerate}
+%       \item 1.782
+%       \item 1.796
+%       \item 2.201
+%       \item 2.179
+%       \end{enumerate}
+
+      \framebox[6cm][l]{ Answer: }
+    \end{exercise}
+    \begin{solution}
+
+The critical value is
+<<results="asis", echo=FALSE>>=
+        cv1 <- qt(0.025,df=11); cv1
+@
+    \end{solution}
+
+  \begin{exercise}  %5-5
+
+    % Last year the employees of the city sanitation department donated an average of \$8.00 to the volunteer rescue squad.  Test the hypothesis at the 0.05 level of significance that the average contribution this year is still \$8.00 if a random sample of 12 employees showed an average donation of \$8.90 with a standard deviation of \$1.75.
+
+Using the scenario of exercise 13.5.1, what is your conclusion?
+
+%       Question options:
+%       \begin{enumerate}
+%       \item Reject $H_a$ in favor of $H_0$
+%       \item Accept $H_0$
+%       \item Reject $H_0$ in favor of $H_a$
+%       \item Fail to reject $H_0$
+%       \end{enumerate}
+
+      \framebox[6cm][l]{ Answer: }
+    \end{exercise}
+    \begin{solution}
+
+Your conclusion is to fail to reject $H_0$.
+    \end{solution}
+
+  \begin{exercise}  %5-6
+
+Sherwin-Williams fills cans of paint using a machine that has been calibrated to fill the receptacles to contain an average of 129 ounces each.  The Qualify Control (QC) division wants to test whether their machine meets this specification, the manufacturer takes a random sample of 25 cans and finds that they average 129.3 ounces with a standard deviation of 2.8 ounces.  Is there strong evidence that the filling machine is set too high and thus is no longer calibrated correctly? (Use significance level 0.05)
+
+Identify the population parameter of interest.
+
+%       Question options:
+%       \begin{enumerate}
+%       \item Population proportion.
+%       \item Population mean.
+%       \item 128
+%       \item 129.3
+%       \end{enumerate}
+
+      \framebox[6cm][l]{ Answer: }
+    \end{exercise}
+    \begin{solution}
+
+Population parameter of interest is 128.
+    \end{solution}
+
+  \begin{exercise}  %5-7
+
+    % A paint manufacturer fills cans of paint using a machine that has been calibrated to fill the cans to contain an average of 128 ounces each.  To test whether their machine has come out of calibration, the manufacturer takes a random sample of 25 cans and finds that they average 129.3 ounces with a standard deviation of 2.8 ounces.  Is this strong evidence that the filling machine is set too high and thus is no longer calibrated properly? (Use significance level 0.05)
+
+Using the scenario in exercise 13.5.6, state the appropriate hypotheses.
+
+%       Question options:
+%       \begin{enumerate}
+%       \item The hypotheses are $H_0: \mu = 128$ vs. $H_a: \mu < 128$
+%       \item The hypotheses are $H_0: \mu = 129.3$ vs. $H_a: \mu ne 129.3$
+%       \item The hypotheses are $H_0: \mu = 128$ vs. $H_a: \mu \ne 128$
+%       \item The hypotheses are $H_0: \mu = 128$ vs. $H_a: \mu > 128$
+%       \end{enumerate}
+
+      \framebox[6cm][l]{ Answer: }
+    \end{exercise}
+    \begin{solution}
+
+The appropriate hypotheses are $H_0: \mu = 128$ vs. $H_a: \mu > 128$
+    \end{solution}
+
+  \begin{exercise}  %5-8
+
+    % A paint manufacturer fills cans of paint using a machine that has been calibrated to fill the cans to contain an average of 128 ounces each.  To test whether their machine has come out of calibration, the manufacturer takes a random sample of 25 cans and finds that they average 129.3 ounces with a standard deviation of 2.8 ounces.  Is this strong evidence that the filling machine is set too high and thus is no longer calibrated properly? (Use significance level 0.05)
+
+Using the scenario in exercise 13.5.6, calculate the test statistic.
+
+%       Question options:
+%       \begin{enumerate}
+%       \item 3.1533
+%       \item 2.6781
+%       \item 2.3214
+%       \item 1.9165
+%       \end{enumerate}
+
+      \framebox[6cm][l]{ Answer: }
+    \end{exercise}
+    \begin{solution}
+
+The  test statistic is
+<<results="asis", echo=FALSE>>=
+        xbar1 <- 129.3
+        sd1 <- 2.8
+        se1 <- sd1 / sqrt(25)
+        cv1 <- qt(0.90,df=24)
+        t1  <- (129.3 - 128)/se1; t1
+@
+    \end{solution}
+
+  \begin{exercise}  %5-9
+
+    % A paint manufacturer fills cans of paint using a machine that has been calibrated to fill the cans to contain an average of 128 ounces each.  To test whether their machine has come out of calibration, the manufacturer takes a random sample of 25 cans and finds that they average 129.3 ounces with a standard deviation of 2.8 ounces.  Is this strong evidence that the filling machine is set too high and thus is no longer calibrated properly? (Use significance level 0.05)
+
+Using the scenario in exercise 13.5.6, determine the critical value.
+
+%       Question options:
+%       \begin{enumerate}
+%       \item 2.060
+%       \item 2.064
+%       \item 1.711
+%       \item 1.708
+%       \end{enumerate}
+
+      \framebox[6cm][l]{ Answer: }
+    \end{exercise}
+    \begin{solution}
+
+The critical value is
+<<results="asis", echo=FALSE>>=
+        cv1
+@
+    \end{solution}
+
+  \begin{exercise}  %5-10
+
+    % A paint manufacturer fills cans of paint using a machine that has been calibrated to fill the cans to contain an average of 128 ounces each.  To test whether their machine has come out of calibration, the manufacturer takes a random sample of 25 cans and finds that they average 129.3 ounces with a standard deviation of 2.8 ounces.  Is this strong evidence that the filling machine is set too high and thus is no longer calibrated properly? (Use significance level 0.05)
+
+Using the scenario in exercise 13.5.6, what is your conclusion?
+
+%       Question options:
+%       \begin{enumerate}
+%       \item Reject $H_0$ in favor $H_a$
+%       \item Fail to reject $H_0$.
+%       \item Accept $H_0$.
+%       \item Reject $H_a$ in favor $H_0$
+%       \end{enumerate}
+
+      \framebox[6cm][l]{ Answer: }
+    \end{exercise}
+    \begin{solution}
+
+Your conclusion is reject $H_0$ in favor $H_a$
+    \end{solution}
+
+\end{exercises}
+
+
+\pagebreak
+\section{Workshop 6} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{center}
+\begin{flushleft}\textbf{ \large \hfill Workshop 6 Fall 2016 }\end{flushleft}
+
+\vspace{4mm}
+\makebox[\textwidth]{Name:\enspace\hrulefill}
+\vspace{4mm}
+\makebox[\textwidth]{Instructor's name:\enspace\hrulefill}
+\vspace{4mm}
+\makebox[\textwidth]{(Week 6: Due date: \underline{\phantom{xxxxxxxxxxxx}}) }
+\end{center}
+
+\begin{exercises}
+
+  \begin{exercise}  %6-1
+
+A statistics instructor designed an experiment where one section was taught to 12 students (Group A) using the conventional procedure. The second section of 10 students (Group B) was prepared the same course using programmed materials. When the semester ended, the instructor administered the same examination to each group. Group A with 12 students had a mean grade of 85 with a standard deviation of 4, while Group B with ten students using programmed materials had a mean grade of 81 with a standard deviation of 5. The statistics instructor tested the hypothesis that the two methods of learning are the same using a 0.10 level of significance.
+
+State the appropriate hypothesis.
+
+%       Question options:
+%       \begin{enumerate}
+%       \item The hypotheses are $H_0: \mu_1 = \mu_2$ vs. $H_a: \mu_1 \ne \mu_2$
+%       \item The hypotheses are $H_0: \mu_1 = \mu_2$ vs. $H_a: \mu_1 < \mu_2$
+%       \item The hypotheses are $H_0: \mu_1 = \mu_2$ vs. $H_a: \mu_1 > \mu_2$
+%       \item The hypotheses are $H_0: \mu_1 > \mu_2$ vs. $H_a: \mu_1 \ne \mu_2$
+%       \end{enumerate}
+
+      \framebox[6cm][l]{ Answer: }
+    \end{exercise}
+    \begin{solution}
+
+The appropriate hypotheses are  $H_0: \mu_1 = \mu_2$ vs. $H_a: \mu_1 \ne \mu_2$
+    \end{solution}
+
+  \begin{exercise}  %6-2
+
+%       A course in statistics is taught to 12 students by the conventional classroom procedure. The second group of 10 students was given the same course using programmed materials. At the end of the semester, the same examination was given to each group. The 12 students meeting in the classroom made an average grade of 85 with a standard deviation of 4, while the ten students using programmed materials made an average of 81 with a standard deviation of 5. Test the hypothesis that the two methods of learning are equal using a 0.10 level of significance.
+
+Using the scenario in exercise 13.6.1, calculate the test statistic ($S_{pooled} = 4.4777$)
+
+%       Question options:
+%       \begin{enumerate}
+%       \item 2.0863
+%       \item 3.2011
+%       \item 1.363
+%       \item 4.108
+%       \end{enumerate}
+
+      \framebox[6cm][l]{ Answer: }
+    \end{exercise}
+    \begin{solution}
+
+The test statistic is
+<<results="asis", echo=FALSE>>=
+        se1 <- sqrt(4^2/12 + 5^2/10)
+        t1 <- (85 - 81)/se1
+        t1
+@
+    \end{solution}
+
+      \begin{exercise}  %6-3
+
+%       A course in statistics is taught to 12 students by the conventional classroom procedure. The second group of 10 students was given the same course using programmed materials. At the end of the semester, the same examination was given to each group. The 12 students meeting in the classroom made an average grade of 85 with a standard deviation of 4, while the ten students using programmed materials made an average of 81 with a standard deviation of 5. Test the hypothesis that the two methods of learning are equal using a 0.10 level of significance.
+
+Using the scenario in exercise 13.6.1, Find the critical value.
+
+%       Question options:
+%       \begin{enumerate}
+%       \item 1.325
+%       \item 2.086
+%       \item 1.725
+%       \item 2.528
+%       \end{enumerate}
+
+      \framebox[6cm][l]{ Answer: }
+    \end{exercise}
+    \begin{solution}
+
+The critical value is
+<<results="asis", echo=FALSE>>=
+        df1 <- 12 + 10 - 2
+        cv1 <- qt(.95,df=df1); cv1
+@
+    \end{solution}
+
+          \begin{exercise}  %6-4
+
+%       A course in statistics is taught to 12 students by the conventional classroom procedure. The second group of 10 students was given the same course using programmed materials. At the end of the semester, the same examination was given to each group. The 12 students meeting in the classroom made an average grade of 85 with a standard deviation of 4, while the ten students using programmed materials made an average of 81 with a standard deviation of 5. Test the hypothesis that the two methods of learning are equal using a 0.10 level of significance.
+
+Using the scenario in exercise 13.6.1, choose the correct conclusion.
+
+%       Question options:
+%       \begin{enumerate}
+%       \item accept $H_0$.
+%       \item reject to reject $H_0$.
+%       \item reject $H_0$ in favor of $H_a$.
+%       \item reject $H_a$ in favor of $H_0$.
+%       \end{enumerate}
+
+      \framebox[6cm][l]{ Answer: }
+    \end{exercise}
+    \begin{solution}
+
+The correct conclusion is reject $H_0$ in favor $H_a$.
+    \end{solution}
+
+\pagebreak
+    \begin{exercise}  %6-5
+
+            % A course in statistics is taught to 12 students by the conventional classroom procedure. The second group of 10 students was given the same course using programmed materials. At the end of the semester, the same examination was given to each group. The 12 students meeting in the classroom made an average grade of 85 with a standard deviation of 4, while the ten students using programmed materials made an average of 81 with a standard deviation of 5. Test the hypothesis that the two methods of learning are equal using a 0.10 level of significance.
+
+Using the scenario in exercise 13.6.1, what will happen if a Type I error was committed?
+
+%       Question options:
+%       \begin{enumerate}
+%       \item It will be concluded that the two methods of learning are equal which is the correct decision.
+%       \item It will be concluded that the two methods of learning are equal when they are not.
+%       \item It will be concluded that the two methods of learning are not equal when they are.
+%       \item It will be concluded that the two methods of learning are not equal which is the correct decision.
+%       \end{enumerate}
+
+      \framebox[6cm][l]{ Answer: }
+    \end{exercise}
+    \begin{solution}
+
+It will be concluded that the two methods of learning are not equal when they are.
+    \end{solution}
+
+        \begin{exercise}  %6-6
+
+          A cigarette-manufacturing firm distributes two brands of cigarettes. It found that 56 of 200 smokers prefer brand A and that 29 of 150 smokers prefer brand B, can the marketing division conclude at the 0.05 level of significance that brand A outsells brand B?
+
+State the appropriate hypothesis.
+
+%       Question options:
+%       \begin{enumerate}
+%       \item The hypotheses are $H_0: p_A > p_B$ vs. $H_0: p_A = p_B$
+%       \item The hypotheses are $H_0: p_A = p_B$ vs. $H_0: p_A < p_B$
+%       \item The hypotheses are $H_0: p_A < p_B$ vs. $H_0: p_A > p_B$
+%       \item The hypotheses are $H_0: p_A = p_B$ vs. $H_0: p_A > p_B$
+%       \end{enumerate}
+
+      \framebox[6cm][l]{ Answer: }
+    \end{exercise}
+    \begin{solution}
+
+The hypotheses are $H_0: p_A = p_B$ vs. $H_0: p_A > p_B$
+    \end{solution}
+
+    \begin{exercise}  %6-7
+
+%           A cigarette-manufacturing firm distributes two brands of cigarettes. If it is found that 56 of 200 smokers prefer brand A and that 29 of 150 smokers prefer brand B, can we conclude at the 0.05 level of significance that brand A outsells brand B?
+
+Using the scenario of exercise 13.6.6, calculate the test statistic ($P_{pooled} = 0.2429$).
+
+%       Question options:
+%       \begin{enumerate}
+%       \item 1.8712
+%       \item 23.08
+%       \item 1.511
+%       \item 3.917
+%       \end{enumerate}
+
+      \framebox[6cm][l]{ Answer: }
+    \end{exercise}
+    \begin{solution}
+
+The test statistic is
+<<results="asis", echo=FALSE>>=
+        p1 <- 56/200
+        p2 <- 29/150
+        se1 <- sqrt( 0.2429 *(1 - 0.2429)/200)
+        se2 <- sqrt( 0.2429 *(1 - 0.2429)/150)
+        se3 <- sqrt( se1^2 + se2^2)
+        z1 <- (p1 - p2)/se3; z1
+@
+    \end{solution}
+
+    \begin{exercise}  %6-8
+
+%           A cigarette-manufacturing firm distributes two brands of cigarettes. If it is found that 56 of 200 smokers prefer brand A and that 29 of 150 smokers prefer brand B, can we conclude at the 0.05 level of significance that brand A outsells brand B?
+
+Using the scenario of exercise 13.6.6, find the critical value.
+
+%       Question options:
+%       \begin{enumerate}
+%       \item 1.282
+%       \item 1.645
+%       \item 1.96
+%       \item 2.326
+%       \end{enumerate}
+
+      \framebox[6cm][l]{ Answer: }
+    \end{exercise}
+    \begin{solution}
+
+The critical value is
+<<results="asis", echo=FALSE>>=
+        cv1 <- qnorm(.95)
+@
+    \end{solution}
+
+    \begin{exercise}  %6-9
+
+%           A cigarette-manufacturing firm distributes two brands of cigarettes. If it is found that 56 of 200 smokers prefer brand A and that 29 of 150 smokers prefer brand B, can we conclude at the 0.05 level of significance that brand A outsells brand B?
+
+Using the scenario of exercise 13.6.6, choose the correct conclusion.
+
+%       Question options:
+%       \begin{enumerate}
+%       \item Reject $H_0$ in favor of $H_a$
+%       \item Fail to reject $H_0$
+%       \item Accept $H_0$
+%       \item Reject $H_a$ in favor of $H_0$.
+%       \end{enumerate}
+
+      \framebox[6cm][l]{ Answer: }
+    \end{exercise}
+    \begin{solution}
+
+The correct conclusion is to reject $H_0$ in favor of $H_a$ since the test statistic (1.87) is greater than the critical value 1.645.
+    \end{solution}
+
+    \begin{exercise}  %6-10
+
+%           A cigarette-manufacturing firm distributes two brands of cigarettes. If it is found that 56 of 200 smokers prefer brand A and that 29 of 150 smokers prefer brand B, can we conclude at the 0.05 level of significance that brand A outsells brand B?
+
+Using the scenario of exercise 13.6.6, what will happen if we commit a Type II error?
+
+%       Question options:
+%       \begin{enumerate}
+%       \item It will be concluded that brand A does not outsell brand B which would be the correct decision.
+%       \item It will be concluded that brand A outsells brand B which would be the correct decision.
+%       \item It will be concluded that brand A does not outsell brand B when it does.
+%       \item It will be concluded that brand A outsells brand B when it does not.
+%       \end{enumerate}
+
+      \framebox[6cm][l]{ Answer: }
+    \end{exercise}
+    \begin{solution}
+
+It will be concluded that brand A outsells brand B when it does not.
+    \end{solution}
+
+\end{exercises}
+
+\pagebreak
+\section{Workshop 7} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{center}
+\begin{flushleft}\textbf{ \large \hfill Workshop 7 Fall 2016 }\end{flushleft}
+
+\vspace{4mm}
+\makebox[\textwidth]{Name:\enspace\hrulefill}
+\vspace{4mm}
+\makebox[\textwidth]{Instructor's name:\enspace\hrulefill}
+\vspace{4mm}
+\makebox[\textwidth]{(Week 7: Due date: \underline{\phantom{xxxxxxxxxxxx}}) }
+\end{center}
+
+\begin{exercises}
+
+  \begin{exercise}  %7-1
+
+% Requires the booktabs if the memoir class is not being used
+\begin{table}[htbp]
+   \centering
+   %\topcaption{Table captions are better up top} % requires the topcapt package
+   \caption{Chi-sq = 20.937, DF = 3, p-Value = 0.0000}
+   \begin{tabular}{@{} lrrr @{}} \hline % Column formatting, @{} suppresses leading/trailing space
+      %\toprule
+      & \multicolumn{2}{c}{Pharmacies} \\ \hline
+      Wait times (min.) & HMO  & Drugstores & Total \\ \hline
+      $\le 15$ & 75 & 119 & 194 \\
+      16-20 & 44 & 21 & 65 \\
+      $>20$ & 21 & 37 & 58 \\
+      Don't know & 10 & 23 & 33 \\
+      Total & 150 & 200 & 350 \\ \hline
+   \end{tabular}
+   \label{tab:t13_1}
+\end{table}
+
+According to the XYZ News, ``about 3 in 10 Americans wait more than 20 minutes to have a prescription filled.'' Suppose a comparison of times waiting for service at HMOs and pharmacies in drugstores produced the following results.
+
+Is there sufficient evidence to indicate that a difference in the time that customer waits for service at pharmacies in HMOs and pharmacies in drugstores at the five percent level of significances?
+
+State the null and alternate hypotheses.
+
+%       Question options:
+%       \begin{enumerate}
+%       \item $H_0:$ the type of pharmacies and waiting time are independent vs. $H_a:$ the type of pharmacies and waiting time are dependent
+%       \item $H_0:$ the type of pharmacies and waiting time are not correlated vs. $H_a:$ the type of pharmacies and waiting time are correlated
+%       \item $H_0:$ the type of pharmacies and waiting time have a  negative relationship vs. $H_a:$ the type of pharmacies and waiting time have a positive relationship
+%       \item  $H_0:$ the type of pharmacies and waiting time are dependent vs. $H_a:$ the type of pharmacies and waiting time are independent
+%       \end{enumerate}
+
+      \framebox[6cm][l]{ Answer: }
+    \end{exercise}
+    \begin{solution}
+
+$H_0:$ the type of pharmacies and waiting time are independent vs. $H_a:$ the type of pharmacies and waiting time are dependent.
+    \end{solution}
+
+    \begin{exercise}  %7-2
+
+Using the scenario in exercise 13.7.1, determine the chi-square test statistic for this data.
+
+%       Question options:
+%       \begin{enumerate}
+%       \item 7.016
+%       \item 0
+%       \item 20.937
+%       \item 9.355
+%       \end{enumerate}
+
+      \framebox[6cm][l]{ Answer: }
+    \end{exercise}
+    \begin{solution}
+
+The chi-square test statistic for this data is 20.937.
+    \end{solution}
+
+\newpage
+    \begin{exercise}  %7-3
+
+Using the scenario in exercise 13.7.1, the critical value for the Chi-square test 5 percent level of significance is
+
+%       Question options:
+%       \begin{enumerate}
+%       \item 7.016
+%       \item 0
+%       \item 20.937
+%       \item 9.355
+%       \end{enumerate}
+
+      \framebox[6cm][l]{ Answer: }
+    \end{exercise}
+    \begin{solution}
+
+The critical value for chi-square  is
+<<results="asis", echo=FALSE>>=
+        qchisq(0.05,3)
+@
+    \end{solution}
+
+    \begin{exercise}  %7-4
+
+Using the scenario in exercise 13.7.1, the conclusion for this chi-square test is
+
+%       Question options:
+%       \begin{enumerate}
+%       \item type of pharmacies and waiting time has a strong positive relationship.
+%       \item type of pharmacies and waiting time are correlated.
+%       \item type of pharmacies and waiting time are independent.
+%       \item type of pharmacies and waiting time are dependent.
+%       \end{enumerate}
+
+      \framebox[6cm][l]{ Answer: }
+    \end{exercise}
+    \begin{solution}
+
+The type of pharmacies and waiting time are dependent.
+
+    \end{solution}
+
+    \begin{exercise}  %7-5
+
+% Requires the booktabs if the memoir class is not being used
+\begin{table}[htbp]
+   \centering
+   \caption{Questions 5 - 10 refer to the following scenario:}
+   %\topcaption{Table captions are better up top} % requires the topcapt package
+   \begin{tabular}{@{} cccccc @{}} \hline % Column formatting, @{} suppresses leading/trailing space
+      %\toprule
+   Training Prog. & \multicolumn{5}{c}{Average assembly time (min)} \\ \hline
+       A & 59 & 64 & 57 & 52 & \\
+       B & 52 & 58 & 54 & 60 & \\
+       C & 58 & 65 & 71 & 63 & 64 \\
+       D & 63 & 62 & 59 & 61 & 62 \\ \hline
+   \end{tabular}
+   \label{tab:t13_2}
+\end{table}
+
+An experiment was conducted to compare the effectiveness of four training programs, A, B, C, and D in training assemblers of a piece of equipment.  Researchers assigned twenty (20) employees randomly, five each, to the four programs.  After completing the courses, each person assembled four pieces of equipment, and the researchers recorded the mean the to complete the assembly.  Two of the employees resigned during the program; the remainder were evaluated, producing the data shown in the Table 13.4.
+
+Do the data provide significant evidence to indicate a difference in mean assembly times for people trained by the four programs?
+
+Determine the null and alternate hypotheses.
+
+%       Question options:
+%       \begin{enumerate}
+%       \item The hypotheses are $H_0: \mu_A = \mu_B = \mu_C = \mu_D$ vs. $H_a: \mu_A > \mu_B > \mu_C > \mu_D$
+%       \item The hypotheses are $H_0: \mu_A = \mu_B = \mu_C = \mu_D$ vs. $H_a:$ all of the population means are different.
+%       \item The hypotheses are $H_0:$ at least one of the population means is different vs. $H_a: \mu_A = \mu_B = \mu_C = \mu_D$
+%       \item The hypotheses are $H_0: \mu_A = \mu_B = \mu_C = \mu_D$ vs. $H_a:$ at least one of the population means is different
+%       \end{enumerate}
+
+      \framebox[6cm][l]{ Answer: }
+    \end{exercise}
+    \begin{solution}
+
+The hypotheses are $H_0: \mu_A = \mu_B = \mu_C = \mu_D$ vs. $H_a:$ at least one of the population means is different.
+
+    \end{solution}
+
+    \begin{exercise}  %7-6
+
+<<results="asis", echo=FALSE>>=
+        ## library(xtable)
+        dt1 <- c(59,64,57,62,52,58,54,60,58,65,71,63,64,63,62,59,61,62)
+        typ1 <- c(rep("A",4),rep("B",4),rep("C",5),rep("D",5))
+        anova1 <- aov(dt1 ~ typ1)
+        summ1 <- summary(anova1)
+        xtable(summ1)
+@
+
+Using the above table, what is the test statistic?
+
+%       Question options:
+%       \begin{enumerate}
+%       \item 0.024
+%       \item 3.433
+%       \item 4.30
+%       \item 11.8
+%       \end{enumerate}
+
+      \framebox[6cm][l]{ Answer: }
+    \end{exercise}
+    \begin{solution}
+
+the test statistic  4.302
+    \end{solution}
+
+    \begin{exercise}  %7-7
+
+Using the above table, find the critical value at 5 percent level of significance from the F-distribution table?
+
+%       Question options:
+%       \begin{enumerate}
+%       \item 3.11
+%       \item 3.34
+%       \item 3.63
+%       \item 3.81
+%       \end{enumerate}
+
+      \framebox[6cm][l]{ Answer: }
+    \end{exercise}
+    \begin{solution}
+
+The critical value at 5 percent level of significance is
+<<results="asis", echo=FALSE>>=
+        qf(0.95,3,14)
+@
+    \end{solution}
+
+    \begin{exercise}  %7-8
+
+Using the above table, what is your conclusion at the 5 percent level of significance?
+
+%       Question options:
+%       \begin{enumerate}
+%       \item Accept $H_0$.
+%       \item Fail to reject $H_0$.
+%       \item Reject $H_0$ in favor of $H_a$.
+%       \item Inconclusive
+%       \end{enumerate}
+
+      \framebox[6cm][l]{ Answer: }
+    \end{exercise}
+    \begin{solution}
+
+Your conclusion at the 5 percent level of significance is to reject $H_0$ in favor of $H_a$ since the test statistic (4.302) is greater than the critical value (3.3439).
+    \end{solution}
+
+    \begin{exercise}  %7-9
+
+<<f13_7_1, echo=FALSE, fig.pos="ht", fig.align="center", fig.width=3, fig.height=3, fig.cap="Comparison Training Methods", fig.path="chapters/Workshops/figure/">>=
+      boxplot(dt1~typ1,xlab="Training Types", fig.path="chapters/Workshops/figure/")
+@
+
+What can you conclude from the above boxplot?
+
+%       Question options:
+%       \begin{enumerate}
+%       \item The median assembly time for the group who attended training program C is the highest, followed by training program A, then D and B is the lowest.
+%       \item The standard deviation of assembly time for the group who attended training program C is the highest, followed by training program D, then A and D is the lowest.
+%       \item The median assembly time for the group who attended training program C is the highest, followed by training program D, then A and B is the lowest.
+%       \item The mean assembly time for the group who attended training program C is the highest, followed by training program D, then A and B is the lowest.
+%       \end{enumerate}
+
+      \framebox[6cm][l]{ Answer: }
+    \end{exercise}
+    \begin{solution}
+
+The median assembly time for the group who attended training program C is the highest, followed by training program D, then A and B is the lowest.
+
+    \end{solution}
+
+% \pagebreak
+%     \begin{exercise}  %7-10
+%
+% <<results="asis", echo=FALSE>>=
+%         ## dt1 <- c(59,64,57,62,52,58,54,60,58,65,71,63,64,63,62,59,61,62)
+%         mtx7_10 <- matrix(c(rep("",12)),nrow=3)
+%         tt71 <- t.test(dt1[1:4],dt1[5:8])
+%         if(tt71$p.value > 0.05){sl1 <- " "} else{sl1 <- "*"}; diff1 <- tt71$estimate[1] - tt71$estimate[2];
+%         mtx7_10[1,2] <- sprintf('%.2f %s', diff1, sl1 )
+%         tt72 <- t.test(dt1[1:4],dt1[9:13])
+%         if(tt72$p.value > 0.05){sl1 <- " "} else{sl1 <- "*"}; diff1 <- tt72$estimate[1] - tt72$estimate[2];
+%         mtx7_10[1,3] <- sprintf('%.2f %s', diff1, sl1)
+%         tt73 <- t.test(dt1[1:4],dt1[14:18])
+%         if(tt73$p.value > 0.05){sl1 <- " "} else{sl1 <- "*"}; diff1 <- tt73$estimate[1] - tt73$estimate[2];
+%         mtx7_10[1,4] <- sprintf('%.2f %s', diff1, sl1)
+%         tt74 <- t.test(dt1[5:8],dt1[9:13])
+%         if(tt74$p.value > 0.05){sl1 <- " "} else{sl1 <- "*"}; diff1 <- tt74$estimate[1] - tt74$estimate[2];
+%         mtx7_10[2,3] <- sprintf('%.2f %s', diff1, sl1)
+%         tt75 <- t.test(dt1[5:8],dt1[14:18])
+%         if(tt75$p.value > 0.05){sl1 <- " "} else{sl1 <- "*"}; diff1 <- tt75$estimate[1] - tt75$estimate[2];
+%         mtx7_10[2,4] <- sprintf('%.2f %s', diff1, sl1)
+%         tt76 <- t.test(dt1[9:13],dt1[14:18])
+%         if(tt76$p.value > 0.05){sl1 <- " "} else{sl1 <- "*"}; diff1 <- tt76$estimate[1] - tt76$estimate[2];
+%         mtx7_10[3,4] <- sprintf('%.2f %s', diff1, sl1)
+%
+%         xtable(mtx7_10)
+%         ## mtx7_10
+% @
+%
+% Using the above table for a post hoc analysis (column 1 (row 1) refers to training method A, column 2 (row 2) relates to training method B, etc.).  What can we conclude from this table of  differences between the times to assemble a part using the four different training methods?
+%
+% %       Question options:
+% %       \begin{enumerate}
+% %       \item The differences for the mean assembly time for employees who attended training programs A and B do not differ as well as the mean assembly time for those who attended training programs A, C, and D.  But the difference for the mean assembly time for employees who attended B and C appear to be different.
+%
+% %       \item The differences for the mean assembly time for employees who attended training programs A and B do not differ.  But the difference for the mean assembly time for employees who attended B and C appear to be different as well as the mean assembly time for those who attended training programs A, C, and D.
+%
+% %       \item The information provided is insufficient.
+%
+% %       \item The differences for the mean assembly time for employees who attended training programs A and B differ as well as the mean assembly time for those who attended training programs A, C, and D.  But the difference for the mean assembly time for employees who attended B and C do not differ.
+% %       \end{enumerate}
+%
+%       \framebox[6cm][l]{ Answer: }
+%     \end{exercise}
+%     \begin{solution}
+%
+% The differences for the mean assembly time for employees who attended training programs A and B do not differ as well as the mean assembly time for those who attended training programs A, C, and D.  But the difference for the mean assembly time for employees who attended B and C appear to be different.
+%     \end{solution}
+
+\end{exercises}
+
+\pagebreak
+\section{Workshop 8} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{center}
+\begin{flushleft}\textbf{ \large \hfill Workshop 8 Fall 2016 }\end{flushleft}
+\vspace{4mm}
+\makebox[\textwidth]{Name:\enspace\hrulefill}
+\vspace{4mm}
+\makebox[\textwidth]{Instructor's name:\enspace\hrulefill}
+\vspace{4mm}
+\makebox[\textwidth]{(Week 8: Due date: \underline{\phantom{xxxxxxxxxxxx}}) }
+\end{center}
+
+\begin{exercises}
+
+  \begin{exercise}  %8-1
+
+A researcher collected data on two variables from 15 nations. The variables are fertility rate (average number of children born to each woman), and female education level (expressed as a percentage of all students at the secondary school who are not male).
+
+<<f13_8_3, echo=FALSE, fig.pos="ht", fig.align="center", fig.width=3.5, fig.height=3.5, fig.cap="Comparison Training Methods", fig.path="chapters/Workshops/figure/">>=
+        dt8_3 <- read.csv("data/fertility.csv",header=TRUE)
+        plot(dt8_3$EducationOfFemale,dt8_3$FertilityRate, ylab="Rate", xlab="Percentage")
+        lm8_3 <- lm(dt8_3$FertilityRate ~ dt8_3$EducationOfFemale)
+        abline(lm8_3)
+@
+
+Using Figure 13.3, what is the fertility rate of the nation who has the lowest percentage of women at the secondary level?
+
+%       Question options:
+%       \begin{enumerate}
+%       \item
+%       \item
+%       \item
+%       \item
+%       \end{enumerate}
+
+      \framebox[6cm][l]{ Answer: }
+    \end{exercise}
+    \begin{solution}
+
+      7.3
+    \end{solution}
+
+% \pagebreak
+
+  \begin{exercise}  %8-2
+
+Using the above scenario, what does the graph show
+
+%       Question options:
+%       \begin{enumerate}
+%       \item a clear negative association
+%       \item very little association
+%       \item a clear positive association
+%       \item a skewed distribution
+%       \end{enumerate}
+
+      \framebox[6cm][l]{ Answer: }
+    \end{exercise}
+    \begin{solution}
+
+The graph shows a clear negative association
+    \end{solution}
+
+  \begin{exercise}  %8-3
+
+Using the above graph, what is the level of the correlation coefficient, $r$, between the fertility rate and percentage of women at the secondary school (weak, moderate, and strong)?
+
+%       Question options:
+%       \begin{enumerate}
+%       \item moderately negative.
+%       \item strongly negative.
+%       \item weakly negative.
+%       \item moderately positive.
+%       \end{enumerate}
+
+      \framebox[6cm][l]{ Answer: }
+    \end{exercise}
+    \begin{solution}
+
+The correlation coefficient is moderately negative.
+    \end{solution}
+
+  \begin{exercise}  %8-4
+
+A study of the effects of TV measured how many hours of TV each of 125-grade school children watched per weeks during a school year and their reading scores.  Which variable should we put on the horizontal axis of the scatterplot of the data?
+
+%       Question options:
+%       \begin{enumerate}
+%       \item hour of TV, because it is the explanatory (independent) variable.
+%       \item reading score, because it is the response  (dependent) variable.
+%       \item hour of TV, because it is the response (dependent) variable.
+%       \item reading score, because it is the explanatory  (independent) variable.
+%       \end{enumerate}
+
+      \framebox[6cm][l]{ Answer: }
+    \end{exercise}
+    \begin{solution}
+
+We should put hours of TV on the horizontal axis of the scatterplot of the data because it is the explanatory (independent) variable.
+    \end{solution}
+
+  \begin{exercise}  %8-5
+
+A study found a correlation coefficient $r = -0.43$ between how many cigarettes a person smokes and how overweight the person is.  You conclude that
+
+%       Question options:
+%       \begin{enumerate}
+%       \item people who smoke more tend to be more overweight
+%       \item an arithmetic mistake was made because this is not a possible value of $r$.
+%       \item people who smoke more tend to be less overweight.
+%       \item this is nonsense because correlation makes no sense here.
+%       \end{enumerate}
+
+      \framebox[6cm][l]{ Answer: }
+    \end{exercise}
+    \begin{solution}
+
+You conclude that people who smoke more tend to be less overweight.
+    \end{solution}
+
+    \begin{exercise}  %8-6
+
+The correlation coefficient between the heights of fathers and the heights of their (adult) sons is $r = 0.52$.  It tells us that
+
+%       Question options:
+%       \begin{enumerate}
+%       \item taller than average fathers tend to have shorter than average sons.
+%       \item 52\% of all sons are taller that their fathers.
+%       \item taller that average fathers tend to have taller than average sons.
+%       \item sons are on the average, taller than their fathers.
+%       \end{enumerate}
+
+      \framebox[6cm][l]{ Answer: }
+    \end{exercise}
+    \begin{solution}
+
+The correlation coefficient tells us that taller than average fathers tend to have taller than average sons.
+    \end{solution}
+
+    \begin{exercise}  %8-7
+
+The relationship between the heights of fathers and the heights of their (adult) sons is $r = 0.52$.
+
+The researcher measured the father's heights in feet (one foot equals 12 inches), and they measured boys' heights in furlongs (one furlong equals 7,920 inches), the correlation coefficient between heights of fathers and heights of boys would be
+
+%       Question options:
+%       \begin{enumerate}
+%       \item slightly larger than 0.52.
+%       \item unchanged: equal to  0.52.
+%       \item slightly smaller than 0.52.
+%       \item much smaller than 0.52.
+%       \end{enumerate}
+
+      \framebox[6cm][l]{ Answer: }
+    \end{exercise}
+    \begin{solution}
+
+The correlation coefficient between heights of fathers and heights of sons would be unchanged: equal to 0.52.
+    \end{solution}
+
+\pagebreak
+    \begin{exercise}  %8-8
+
+An educator says that the correlation between students's grades and the type of music (rock, jazz, classical, etc.) they prefer is $r = -0.7$.   This means that
+
+%       Question options:
+%       \begin{enumerate}
+%       \item students who prefer classical music tend to have higher grades.
+%       \item the educator is confused because correlation makes no sense in this situation.
+%       \item there is almost no relation between grades and tastes in music.
+%       \item students who prefer classical music tend to have lower grades.
+%       \end{enumerate}
+
+      \framebox[6cm][l]{ Answer: }
+    \end{exercise}
+    \begin{solution}
+
+This means that the educator is confused  because correlation makes no sense in this situation.
+    \end{solution}
+
+    \begin{exercise}  %8-9
+
+A researcher of child development measures the age (months) when a toddler starts to speak and the toddler's score on an ability test several years later.  The researcher  asks whether the age at which a child talks helps that later test score.  The least-squares regression line of the test score $y$ on age $x$ is $y = 110 - 1.3x$.  According to this regression line equation, what happens (on the average) when a child starts talking one month later?
+
+%       Question options:
+%       \begin{enumerate}
+%       \item The test score goes up 1.3 points.
+%       \item The test score goes up 110 points.
+%       \item The test score goes down 1.3 points.
+%       \item The test score goes down 110 points.
+%       \end{enumerate}
+
+      \framebox[6cm][l]{ Answer: }
+    \end{exercise}
+    \begin{solution}
+
+The test score goes down 1.3 points.
+    \end{solution}
+
+    \begin{exercise}  %8-10
+
+A study showed that students who study more hours tend to do better on statistics exams.  In fact, some hours studied explained 81\% of the variation in exam scores among the students who participated in the study.  What is the correlation coefficient between hours studied and exam scores?
+
+%       Question options:
+%       \begin{enumerate}
+%       \item $r = 0.9$
+%       \item $r = 0.656$
+%       \item $r  = 0.81$
+%       \item $r = -0.656$
+%       \end{enumerate}
+
+      \framebox[6cm][l]{ Answer: }
+    \end{exercise}
+    \begin{solution}
+
+The correlation coefficient between hours studied and exam scores is
+<<results="asis", echo=FALSE>>=
+        sqrt(.81)
+@
+    \end{solution}
+
+    \begin{exercise}  %8-11
+
+Lean body mass (LBM)  (a person's weight leaving out fat) assists the researcher to predict metabolic rate (MR) (how many calories of energy that a person burn in an hour).  The relationship between body mass and metabolic rate approximates a straight line.  The least-squares regression equation for predicting MR ($y$ in calories) from LBM ($x$ in kilograms) is $y = 113.2 + 26.9x$.
+
+Predict metabolic rate (calories) of a person who has a lean body mass 50 KG?
+
+%       Question options:
+%       \begin{enumerate}
+%       \item 1.345
+%       \item 140
+%       \item 1,232
+%       \item 1,458
+%       \end{enumerate}
+
+      \framebox[6cm][l]{ Answer: }
+    \end{exercise}
+    \begin{solution}
+
+You predict that a person with lean body mass 50 kilograms will have metabolic rate equal to
+<<results="asis", echo=FALSE>>=
+        113.2 + 26.9*50
+@
+    \end{solution}
+
+    \begin{exercise}  %8-12
+
+Using the scenario from Exercise 13.8.11, the slope of the regression line is
+
+%       Question options:
+%       \begin{enumerate}
+%       \item 113.2 -- that is, when x = 0, y = 113.2
+%       \item 26.9 -- that is, when lean body mass goes up by 1 kg, metabolic rate goes up by 26.9 calories.
+%       \item 26.9 -- that is, the mean metabolic rate is 26.9 calories per hour.
+%       \item 113.2 --- that is, the mean metabolic rate is 113.2 calories per hour.
+%       \end{enumerate}
+
+      \framebox[6cm][l]{ Answer: }
+    \end{exercise}
+    \begin{solution}
+
+The slope of the regression line is
+<<results="asis", echo=FALSE>>=
+        26.9
+@
+    \end{solution}
+
+\newpage
+    \begin{exercise}  %8-13
+
+The least-squares regression line for predicting 1998 percent obese from 1991 percent overweight is $y = 7.4 + 0.86x$.  In 1991, 14.8\% of Indiana adults were obese.  Based on this information, what percent would you predict to be obese in 1998?
+
+%       Question options:
+%       \begin{enumerate}
+%       \item 5.3\%
+%       \item 12.7\%
+%       \item 20.1\%
+%       \item 7.5%
+%       \end{enumerate}
+
+      \framebox[6cm][l]{ Answer: }
+    \end{exercise}
+    \begin{solution}
+
+The percent prediction to be obese in 1998 is
+<<results="asis", echo=FALSE>>=
+        7.4 + 0.86*14.8
+@
+    \end{solution}
+
+    \begin{exercise}  %8-14
+
+Investment advisors  often report correlation coefficients.  For example, the correlation coefficient between gains and losses in large-cap stocks and gains and losses in municipal bonds is $r = 0.45$.  What is the coefficient of determination?
+
+%       Question options:
+%       \begin{enumerate}
+%       \item 90\%
+%       \item 20\%
+%       \item 45\%
+%       \item 67\%
+%       \end{enumerate}
+
+      \framebox[6cm][l]{ Answer: }
+    \end{exercise}
+    \begin{solution}
+
+The percent of changes in municipal bonds performance that can be explained by the straight line relationship between municipal bonds and large cap stocks is
+<<results="asis", echo=FALSE>>=
+        0.45^2
+@
+    \end{solution}
+
+    \begin{exercise}  %8-15
+
+NFL quarterbacks earn more (on the average) than running backs, who in turn earn more than linemen.  The correlation coefficient $r$ between a player's salary and his position.
+%       Question options:
+%       \begin{enumerate}
+%       \item is near zero
+%       \item makes no sense.
+%       \item is positive.
+%       \item is negative.
+%       \end{enumerate}
+
+      \framebox[6cm][l]{ Answer: }
+    \end{exercise}
+
+    \begin{solution}
+
+The correlation coefficient $r$ between a player's salary and his position makes no sense.
+    \end{solution}
+
+\end{exercises}
