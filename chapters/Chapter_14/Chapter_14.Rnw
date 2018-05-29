@@ -235,6 +235,46 @@ Is there a linear relationship between X and Y?  It seems obvious that selling p
 
 We start by stating the formula for standard error:
 
+\fbox{\parbox{14cm}{
+The slope estimate $b$ tends to miss the true value $\beta$ by an amount called the \textit{standard error} of the slope, denoted SE of $b$, and calculated as:
+
+\begin{equation}
+  SE_b = \sqrt{ \frac{(1 - r^2) S_y^2}{(n - 2) S_x^2}} 
+\end{equation}  
+}}
+
+The interval estimate is the familiar $b \pm 1.96(SE)$.  It is formally calculated as follows.
+
+\fbox{\parbox{14cm}{
+A 95\% confidence interval estimate for the slope of the regression line is given by: 
+
+The slope estimate $b$ tends to miss the true value $\beta$ by 
+an amount called the \textit{standard error} of the slope, 
+denoted SE of $b$, and calculated as:
+
+\begin{equation}
+  b \pm 1.96 \sqrt{ \frac{(1 - r^2) S_y^2}{(n - 2) S_x^2}} 
+\end{equation}  
+}}
+
+If this interval excludes 0, then the likelihood of zero slope is ruled out, and we conclude that there is a significant linear relationship between $X$ and $Y$.
+
+Returning to our Saturn car price example, recall that $b = -0.05127$.  The standard error of this estimate is
+
+\begin{equation*}
+  SE_b = \sqrt{ \frac{(1 - (-0.641)^2) (4079)^2}{(12 - 2) (50989)^2}} = 0.01942 
+\end{equation*}  
+
+The 95\% confidence interval is 
+
+\begin{equation*}
+  -.05127 \pm 1.96 (0.01942) 
+\end{equation*}  
+\begin{equation*}
+  (-.09,  -.01) 
+\end{equation*}
+
+Since this interval excludes 0, we conclude a significant relationship between car mileage and selling price.
 
 
 
