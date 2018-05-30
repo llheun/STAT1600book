@@ -250,3 +250,9 @@
 \contentsline {subparagraph}{\nonumberline Exercise{}~14.7-1:}{146}{section*.126}
 \contentsline {subparagraph}{\nonumberline Exercise{}~14.7-2:}{146}{section*.127}
 \contentsline {subparagraph}{\nonumberline Exercise{}~14.7-3:}{146}{section*.128}
+\contentsline {chapter}{\numberline {15}Workshops}{149}{chapter.15}
+\contentsline {paragraph}{\nonumberline Exercises}{149}{section*.129}
+\contentsline {subparagraph}{\nonumberline Exercise{}~15.-1:}{150}{section*.130}
+\contentsline {subparagraph}{\nonumberline Exercise{}~15.-2:}{152}{section*.131}
+\contentsline {subparagraph}{\nonumberline Exercise{}~15.-3:}{154}{section*.132}
+\contentsline {subparagraph}{\nonumberline Exercise{}~15.-4:}{155}{section*.133}
