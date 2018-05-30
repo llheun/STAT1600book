@@ -244,3 +244,6 @@
 \contentsline {section}{\numberline {14.3}Calculating the Least Squares Regression Line}{141}{section.14.3}
 \contentsline {section}{\numberline {14.4}More on Simple Regression}{143}{section.14.4}
 \contentsline {section}{\numberline {14.5}A 95\% Confidence Interval for Slope}{144}{section.14.5}
+\contentsline {section}{\numberline {14.6}Key Words}{145}{section.14.6}
+\contentsline {section}{\numberline {14.7}exercises}{146}{section.14.7}
+\contentsline {subparagraph}{\nonumberline Exercise{}~14.7-1:}{146}{section*.125}

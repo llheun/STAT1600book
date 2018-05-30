@@ -276,7 +276,37 @@ The 95\% confidence interval is
 
 Since this interval excludes 0, we conclude a significant relationship between car mileage and selling price.
 
+\section{Key Words}
 
+\twocolumn
+
+\section{exercises}
+
+\begin{exercies}
+
+\begin{exercise}  % 1
+
+1.	Consider the following data:
+
+\begin{tabular}{@{} cc @{}} \hline
+X & Y \\ \hline
+-2 & 0 \\
+
+
+\end{tabular}
+
+\end{exercise}
+\begin{solution}
+
+\end{solution}
+
+
+
+
+\end{exercises}
+
+
+\onecolumn
 
 % The correlation is a common and useful statistics.  It is a single number from $-1$ to $+1$ that indicates the strength of the relationship between the two variables.  If the number is between $-0.3$ and $+0.3 $, then we will say that the relationship is weak or non-existent. Otherwise, we will say that the relationship is either moderate or strong.  By the way, the closer we are to a $-1$ or a $+1$ the stronger the relationship.   The following example shows us how to interpret the results.
 % 
