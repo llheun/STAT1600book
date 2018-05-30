@@ -246,4 +246,7 @@
 \contentsline {section}{\numberline {14.5}A 95\% Confidence Interval for Slope}{144}{section.14.5}
 \contentsline {section}{\numberline {14.6}Key Words}{145}{section.14.6}
 \contentsline {section}{\numberline {14.7}exercises}{146}{section.14.7}
-\contentsline {subparagraph}{\nonumberline Exercise{}~14.7-1:}{146}{section*.125}
+\contentsline {paragraph}{\nonumberline Exercises}{146}{section*.125}
+\contentsline {subparagraph}{\nonumberline Exercise{}~14.7-1:}{146}{section*.126}
+\contentsline {subparagraph}{\nonumberline Exercise{}~14.7-2:}{146}{section*.127}
+\contentsline {subparagraph}{\nonumberline Exercise{}~14.7-3:}{146}{section*.128}

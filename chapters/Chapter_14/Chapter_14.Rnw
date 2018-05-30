@@ -282,25 +282,79 @@ Since this interval excludes 0, we conclude a significant relationship between c
 
 \section{exercises}
 
-\begin{exercies}
+\begin{exercises}
 
 \begin{exercise}  % 1
 
-1.	Consider the following data:
+Consider the following \\ data:
 
 \begin{tabular}{@{} cc @{}} \hline
 X & Y \\ \hline
 -2 & 0 \\
-
-
+2 & 3 \\
+5 & 10 \\
+-1 & 1 \\
+9 & 5 \\ \hline
 \end{tabular}
+
+\begin{enumerate}
+  \item Calculate the regression line for predicting Y from X.
+  \item Draw the scatterplot with an overlaid regression line.
+  \item Add 5 to Y, so the new values are 5, 8, 15, 6, 20.  Calculate the new regression line.                                         
+  \item Multiply Y by 5, so the new values are 0, 15, 50, 5, 75.  Calculate the new regression line.                                         
+\end{enumerate}
+
+
+\end{exercise}
+\begin{solution} % 1
+
+\begin{enumerate}
+  \item Calculate the regression line for predicting Y from X.
+  \item Draw the scatterplot with an overlaid regression line.
+  \item Add 5 to Y, so the new values are 5, 8, 15, 6, 20.  Calculate the new regression line.                                         
+  \item Multiply Y by 5, so the new values are 0, 15, 50, 5, 75.  Calculate the new regression line.                                         
+\end{enumerate}
+
+\end{solution}
+
+\begin{exercise} % 2 
+
+Several children are \\ observed, and their ages (in years) and vocabularies (the estimated number of words that each child knows) are recorded. A child psychologist wants to create a model that relates these two variables.
+
+\begin{enumerate}
+  \item Which variable should be explanatory, and which response?
+  \item A regression equation is calculated as Y = 836X + 451. What is the slope of this regression equation?
+  \item A regression equation is calculated as Y = 836X + 451. What is the intercept of this regression equation?
+  \item	If a 12-year-old child knows 8,000 words, then what is the residual for this child based on the above regression equation?
+  \item	If a child has a negative residual, then do they fall above or below the predicted number of words known for average children their age (above of below the regression line)?
+  \item	If a 14-year-old child knows 14,000 \\ words, then what is the residual for this child based on the above regression \\ equation?
+  \item	If a child has a positive residual, then do they fall above or below the predicted number of words known for average children their age (above or below the regression line)?
+\end{enumerate}
+
+\end{exercise}
+\begin{solution} % 2
+
+\end{solution}
+
+\begin{exercise} % 3
+
+Moviegoers are monitored for their level of anxiety while watching a new horror movie billed to be the “scariest movie of all time.” The intensity of a scene in the movie and anxiety are both measured on numerical scales of 0 to 100. A producer for the movie finds that the correlation coefficient between intensity and anxiety is 0.63, the standard deviation of intensity is 30, and the standard deviation of anxiety is 35.
+
+\begin{enumerate}
+  \item What is the slope of the regression equation that predicts anxiety based on intensity?
+  \item	How do you properly interpret the slope calculated in part a?
+  \item	If the intercept is 15, then what is the regression equation?
+  \item	What is the predicted value of anxiety for a scene measured at 90 intensity \\ units?
+  \item	If a moviegoer experiences anxiety measured at 82 units during a scene measured at 90 intensity units, then what is the residual for that moviegoer?
+  \item	How do you properly interpret the residual in part 5?
+\end{enumerate}
+
+
 
 \end{exercise}
 \begin{solution}
 
 \end{solution}
-
-
 
 
 \end{exercises}
