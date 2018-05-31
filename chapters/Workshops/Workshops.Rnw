@@ -710,9 +710,463 @@ Weekly costs of lattes for 5 WMU graduate students are provided below.
 
 \end{solution}
 
+\clearpage
 
+    \begin{exercise}  % 5A         %%%%%%%%%%%%%%%%%
+
+    \begin{center}
+\begin{flushleft}\textbf{\large \hfill Workshop 5A, Submitted by: }\end{flushleft}
+
+\fbox{\parbox{14cm}{
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+ }}
+\end{center}
+
+The average MCAT scores for Michigan medical schools are provided below.
+
+504, 507, 507, 516, 508, 514
+
+\begin{enumerate}
+  \item Calculate the overall mean
+  \item Calculate the SD
+  \item How does Michigan's mean and SD compare to the national average of matriculants (those enrolled in medical schools) 508.7 and SD of 6.9?  Which has greater variability?
+\end{enumerate}
+
+http://www.mcattestscores.com/usmedicalschoolsmcatscoresGPA.html
+
+https://www.aamc.org/download/321494/data/factstablea16.pdf
+
+\end{exercise} 
+\begin{solution}  % 5a
+
+\end{solution}
+
+\clearpage
+
+    \begin{exercise}  % 5B         %%%%%%%%%%%%%%%%%
+
+    \begin{center}
+\begin{flushleft}\textbf{\large \hfill Workshop 5B, Submitted by: }\end{flushleft}
+
+\fbox{\parbox{14cm}{
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+ }}
+\end{center}
+
+Hourly wage of personnel within a small company are as follows:
+
+\begin{tabular}{@{} ll @{}} \hline
+Staff	&	Salary (dollars) \\ \hline
+Owner		& 30 \\
+Manager	& 21 \\
+Worker	& 12 \\
+Worker	& 11 \\
+Worker	& 9 \\ \hline
+\end{tabular}
+
+\begin{enumerate}
+  \item Calculate the average hourly wage of the staff.
+  \item Calculate the SD
+  \item A similar company has a mean hourly wage of \$17 per hour with a SD of 9.75.  Which has greater variability?  How does that relate to the spread of the data?
+\end{enumerate}
+
+\end{exercise} 
+\begin{solution}  % 5b
+
+\end{solution}
+
+\clearpage
+
+    \begin{exercise}  % 5c         %%%%%%%%%%%%%%%%%
+
+    \begin{center}
+\begin{flushleft}\textbf{\large \hfill Workshop 5C, Submitted by: }\end{flushleft}
+
+\fbox{\parbox{14cm}{
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+ }}
+\end{center}
+
+The data below are the weights of six (6) randomly selected kids in a daycare measured in pounds 
+
+ 13.6, 16.6, 23.5, 10.2, 5.4, 15.0
+
+\begin{enumerate}
+  \item What is the average weight of the six kids in pounds?
+  \item Suppose the weights of the six kids are measured in kilograms instead. Calculate the average weight of the kids in kilograms (Hint: 1 pound = 0.453592 kilograms).
+  \item What is the standard deviation of the weight of the kids in pounds?
+\end{enumerate}
+
+
+\end{exercise} 
+\begin{solution}  % 5c
+
+\end{solution}
+
+\clearpage
+
+    \begin{exercise}  % 6a         %%%%%%%%%%%%%%%%%
+
+    \begin{center}
+\begin{flushleft}\textbf{\large \hfill Workshop 6A, Submitted by: }\end{flushleft}
+
+\fbox{\parbox{14cm}{
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+ }}
+\end{center}
+
+Debt Poet's Society
+
+According to a Sallie Mae survey and credit bureau data, in 2008, college students carried an average of \$3,173 debt on their credit cards (USA TODAY, April 13, 2009). Suppose that current credit card debts for all college students have a normal distribution with a mean of \$3,173 and a standard deviation of \$800. 
+
+\begin{enumerate}
+  \item Find the probability that credit card debt for a randomly selected college student below \$2,109.
+  \item Find the probability that credit card debt for a randomly selected college student is above \$3,605.
+  \item Find the probability that credit card debt for a randomly selected college student is between \$2,109 and \$3,605.
+\end{enumerate}
+
+\end{exercise} 
+\begin{solution}  % 6a
+
+\end{solution}
+
+\clearpage
+
+    \begin{exercise}  % 6b         %%%%%%%%%%%%%%%%%
+
+    \begin{center}
+\begin{flushleft}\textbf{\large \hfill Workshop 6B, Submitted by: }\end{flushleft}
+
+\fbox{\parbox{14cm}{
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+ }}
+\end{center}
+
+The Social Network
+
+According to an article published on the Web site www.PCMag.com, Facebook users spend an average of 190 minutes per month checking and updating their Facebook pages (Source: http://www.pcmag.com/article2/0,2817,2342757,00.asp). Suppose that the current distribution of time spent per month checking and updating a member's Facebook page is normally distributed with a mean of 190 minutes and a standard deviation of 53.4 minutes. For a randomly selected Facebook member, determine the probability that the amount of time that he or she spends per month checking and updating his or her Facebook page is…
+
+\begin{enumerate}
+  \item More than 180 minutes
+  \item Less than 120 minutes
+  \item Between 120 and 180 minutes
+\end{enumerate}
+
+\end{exercise} 
+\begin{solution}  % 6b
+
+\end{solution}
+
+\clearpage
+
+    \begin{exercise}  % 6c         %%%%%%%%%%%%%%%%%
+
+    \begin{center}
+\begin{flushleft}\textbf{\large \hfill Workshop 6C, Submitted by: }\end{flushleft}
+
+\fbox{\parbox{14cm}{
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+ }}
+\end{center}
+
+The amount paid out by Ajax Insurance Company in a year is normally distributed with mean 3 billion dollars and standard deviation 0.5 billion dollars. The company’s executives consider it a bad year if they must pay out more than 4.25 billion dollars. 
+
+\begin{enumerate}
+  \item Determine the probability of a bad year.
+  \item What is the probability that the company will have a good year?
+  \item What is the probability that the company paid out between 2 billion dollars and 3.5 billion dollars?
+\end{enumerate}
+
+\end{exercise} 
+\begin{solution}  % 6c
+
+\end{solution}
+
+\clearpage
+
+    \begin{exercise}  % 7a         %%%%%%%%%%%%%%%%%
+
+    \begin{center}
+\begin{flushleft}\textbf{\large \hfill Workshop 7A, Submitted by: }\end{flushleft}
+
+\fbox{\parbox{14cm}{
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+ }}
+\end{center}
+
+Debt Poet’s Society
+
+According to a Sallie Mae survey and credit bureau data, in 2008, college students carried an average of \$3,173 debt on their credit cards (USA TODAY, April 13, 2009). Suppose that current credit card debts for all college students have a normal distribution with a mean of \$3,173 and a standard deviation of \$800. 
+
+\begin{enumerate}
+  \item 10\% of the credit card debt for college students is above what value?
+  \item 10\% of the credit card debt for college students is below what value?
+  \item The middle 80\% of the credit card debt for college students is between what two values?
+  \item How likely would it be for a college students to have credit card debt of \$4,500 or more?
+\end{enumerate}
+
+\end{exercise} 
+\begin{solution}  % 7a
+
+\end{solution} 
+
+\clearpage
+
+    \begin{exercise}  % 7b         %%%%%%%%%%%%%%%%%
+
+    \begin{center}
+\begin{flushleft}\textbf{\large \hfill Workshop 7B, Submitted by: }\end{flushleft}
+
+\fbox{\parbox{14cm}{
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+ }}
+\end{center}
+
+Tommy Wait, a minor-league baseball pitcher, is notorious for taking an excessive amount of time between pitches. In fact, his times between pitches are normally distributed with a mean of 36 seconds and a standard deviation of 2.5 seconds.
+
+\begin{enumerate}
+  \item 10\% of the time between pitches is above what value?
+  \item 10\% of the time between pitches is below what value?
+  \item The middle 80\% of the time between pitches is between what two values?
+  \item How likely would it be for the time between pitches of 40 seconds or more? \end{enumerate}
+
+\end{exercise} 
+\begin{solution}  % 7b
+
+\end{solution} 
     
-    
+\clearpage
+
+    \begin{exercise}  % 7c         %%%%%%%%%%%%%%%%%
+
+    \begin{center}
+\begin{flushleft}\textbf{\large \hfill Workshop 7C, Submitted by: }\end{flushleft}
+
+\fbox{\parbox{14cm}{
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+ }}
+\end{center}
+
+The amount paid out by Ajax Insurance Company in a year is normally distributed with mean 3 billion dollars and standard deviation 0.5 billion dollars. The company’s executives consider it a bad year if they must pay out more than 4.25 billion dollars. 
+
+\begin{enumerate}
+  \item 18\% of the amount paid out by Ajax Insurance Company is below what amount?
+  \item There is a 5\% chance that the company will have to pay more than an amount $x$ (in billions of dollars). What is the value of $x$?
+  \item The middle 60\% of the amount paid out by the company is between what two values (in billions of dollars)? 
+\end{enumerate}
+
+\end{exercise} 
+\begin{solution}  % 7c
+
+\end{solution}
+
+\clearpage
+
+    \begin{exercise}  % 8a         %%%%%%%%%%%%%%%%%
+
+    \begin{center}
+\begin{flushleft}\textbf{\large \hfill Workshop 8A, Submitted by: }\end{flushleft}
+
+\fbox{\parbox{14cm}{
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+ }}
+\end{center}
+
+Workshop 8: Drugstore Cowboy 
+
+According to an October 27, 2006 article in Newsweek, 60\% of Americans said that they take expired medicines. Suppose that this result is true of the current population of Americans. 
+
+\begin{enumerate}
+  \item Let $x$ be a binomial random variable that denotes the number of American in a random sample of 4 who have taken expired medicines. What are the possible values that $x$ can assume?
+  \item Find the probability that exactly 2 Americans in a sample of 4 have taken expired medicines.
+  \item Find the probability that at least 3 Americans in a sample of 4 have taken expired medicines.
+  \item Find the probability that at most 1 American in a sample of 4 have taken expired medicines.
+  
+\end{enumerate}
+
+\end{exercise} 
+\begin{solution}  % 8a
+
+\end{solution}
+
+\clearpage
+
+    \begin{exercise}  % 8b         %%%%%%%%%%%%%%%%%
+
+    \begin{center}
+\begin{flushleft}\textbf{\large \hfill Workshop 8B, Submitted by: }\end{flushleft}
+
+\fbox{\parbox{14cm}{
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+ }}
+\end{center}
+
+The Social Network
+
+According to a Harris Interactive poll, 50\% of American college graduates have Facebook accounts. Suppose that this result is true for the current population of American college graduates.
+
+\begin{verbatim}
+http://www.harrisinteractive.com/harris_poll/pubs/Harris_Poll_2009_04_16.pdf
+\end{verbatim}
+
+\begin{enumerate}
+  \item Let $x$ be a binomial random variable that denotes the number of American college graduates in a random sample of 5 who have Facebook accounts. What are the possible values that $x$ can assume?
+  \item Find the probability that exactly 3 American college graduates in a sample of 5 have Facebook accounts.
+  \item Find the probability that at least 3. American college graduates in a sample of 5 have Facebook accounts.
+  \item Find the probability that at most 1 American college graduate in a sample of 5 have Facebook accounts.
+\end{enumerate}
+
+\end{exercise} 
+\begin{solution}  % 8b
+
+\end{solution}
+
+\clearpage
+
+    \begin{exercise}  % 8c        %%%%%%%%%%%%%%%%%
+
+    \begin{center}
+\begin{flushleft}\textbf{\large \hfill Workshop 8C, Submitted by: }\end{flushleft}
+
+\fbox{\parbox{14cm}{
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+ }}
+\end{center}
+
+The Bureau of Labor Statistics reports that in May 2016 that 10.5\% of people who work in the Kalamazoo metropolitan area are employed in production occupations (i.e., making things). Suppose that a random sample of 5 Kalamazoo workers is taken. Let $X$ be a random variable which denotes the number of workers in the sample who are employed in production occupations.
+
+\begin{enumerate}
+  \item What are the possible values which X can take? 
+  \item Find the probability that exactly 2 of the 5 workers in the sample will be employed in production occupations.
+  \item Find the probability that at least 3 of the 5 workers in the sample will be employed in production occupations.
+  \item Find the probability that at most 1 of the 5 workers in the sample will be employed in production occupations.
+\end{enumerate}
+
+\end{exercise} 
+\begin{solution}  % 8c
+
+\end{solution}
+
 
 
 

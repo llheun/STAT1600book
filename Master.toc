@@ -264,3 +264,15 @@
 \contentsline {subparagraph}{\nonumberline Exercise{}~15.-10:}{162}{section*.139}
 \contentsline {subparagraph}{\nonumberline Exercise{}~15.-11:}{163}{section*.140}
 \contentsline {subparagraph}{\nonumberline Exercise{}~15.-12:}{164}{section*.141}
+\contentsline {subparagraph}{\nonumberline Exercise{}~15.-13:}{165}{section*.142}
+\contentsline {subparagraph}{\nonumberline Exercise{}~15.-14:}{166}{section*.143}
+\contentsline {subparagraph}{\nonumberline Exercise{}~15.-15:}{167}{section*.144}
+\contentsline {subparagraph}{\nonumberline Exercise{}~15.-16:}{168}{section*.145}
+\contentsline {subparagraph}{\nonumberline Exercise{}~15.-17:}{169}{section*.146}
+\contentsline {subparagraph}{\nonumberline Exercise{}~15.-18:}{170}{section*.147}
+\contentsline {subparagraph}{\nonumberline Exercise{}~15.-19:}{171}{section*.148}
+\contentsline {subparagraph}{\nonumberline Exercise{}~15.-20:}{172}{section*.149}
+\contentsline {subparagraph}{\nonumberline Exercise{}~15.-21:}{173}{section*.150}
+\contentsline {subparagraph}{\nonumberline Exercise{}~15.-22:}{174}{section*.151}
+\contentsline {subparagraph}{\nonumberline Exercise{}~15.-23:}{175}{section*.152}
+\contentsline {subparagraph}{\nonumberline Exercise{}~15.-24:}{176}{section*.153}
