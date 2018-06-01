@@ -1167,6 +1167,7 @@ The Bureau of Labor Statistics reports that in May 2016 that 10.5\% of people wh
 
 \end{solution}
 
+<<<<<<< HEAD
 \clearpage
 
     \begin{exercise}  % 9a        %%%%%%%%%%%%%%%%%
@@ -1774,6 +1775,8 @@ Total &	60 &	140 &	200 \\ \hline
 
 
 
+=======
+>>>>>>> 3d6c258c135c5baf35b6b4ed045ea5ef439c4c51
 
 
 
