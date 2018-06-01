@@ -532,245 +532,1001 @@ Mixed results were reported.  The authors summarized that violent video game pla
 
 \end{solution}
 
-% \clearpage
-% 
-%     \begin{exercise}  % 16a         %%%%%%%%%%%%%%%%%
-%     
-%     \begin{center}
-% \begin{flushleft}\textbf{\large \hfill Workshop 16A, Submitted by: }\end{flushleft}
-% 
-% \fbox{\parbox{14cm}{
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-%  }}
-% \end{center}
-% 
-% Jet design researchers have come up with two new designs for the wings of a rocket plane. They think both designs are an improvement over the old design, but want to know which of their new designs performs better at high altitudes. Specifically, they want to know which new design results in more maneuverability at or above 100,000 feet above sea level. They decide to design a randomized trial to study this.
-% 
-% 
-% \begin{enumerate}
-%   \item The researchers include a control group in their design plan. Describe a possible control group. Why did they add it to the study?
-%   \item Several pilots and planes are lined up for this study. How could the researchers randomize their experiment to avoid confounders?
-%   \item One way to measure maneuverability is by surveying pilots about how they thought the jets handled. Could a design that asks pilots this question be blinded? If so, how?
-%   \item Could the design from (2) be double-blinded? If so, how?
-%   \item What makes single and double blinding important?
-% \end{enumerate}
-% \end{exercise}
-% \begin{solution}  % 16a
-% 
-% \end{solution}
-% 
-% \clearpage
-% 
-%     \begin{exercise}  % 16b         %%%%%%%%%%%%%%%%%
-%     
-%     \begin{center}
-% \begin{flushleft}\textbf{\large \hfill Workshop 16B, Submitted by: }\end{flushleft}
-% 
-% \fbox{\parbox{14cm}{
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-%  }}
-% \end{center}
-% 
-% Some students at WMU were curious about whether partying influences GPA. To find out, they surveyed 100 of their WMU peers, asking each peer only two questions: 1) How many hours a week do you party? 2) What is your GPA? The students then compiled their data and performed an appropriate statistical analysis. They concluded that partying does influence GPA, i.e., the more you party, the lower your GPA.
-% 
-% \begin{enumerate}
-%   \item What kind of study design is this?
-%   \item What are advantages of this study design?
-%   \item What are disadvantages of this study design?
-%   \item Did the students overlook anything that might have biased or confounded their results?
-%   \item Suppose the students wanted to correct for something they overlooked. How could they improve their study design?
-% \end{enumerate}
-% 
-% \end{exercise}
-% \begin{solution}  % 16b
-% 
-% \end{solution}
-% 
-% \clearpage
-% 
-%     \begin{exercise}  % 16c         %%%%%%%%%%%%%%%%%
-%     
-%     \begin{center}
-% \begin{flushleft}\textbf{\large \hfill Workshop 16C, Submitted by: }\end{flushleft}
-% 
-% \fbox{\parbox{14cm}{
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-%  }}
-% \end{center}
-% 
-% Yogurt is known to contain `friendly bacteria' known generally as probiotics which can benefit the gastrointestinal system.  Many strains of bacteria can be found in yogurt, with some of the most common being, \textit{Lactobacillus bulgaricus}, \textit{Streptococcus thermophilus}, and \textit{Lactobacillus acidophilus}.  Further research has been done suggesting probiotics boost the immune system and may even help in weight management and reduction of disease such as cancer.  A group of researchers decided to investigate this using a questionnaire assessing yogurt consumption (yes/no) and asking questions pertaining to the health of the individuals.  
-% 
-% \begin{enumerate}
-%   \item First of all, what kind of study design is this?
-%   \item What are advantages of this type of study design?
-%   \item What are disadvantages of this study design?
-%   \item	The researchers then separated the results of the surveys for those who said `yes' they consume yogurt to those who said `no' they do not consume yogurt.  They compared the two groups using these as a treatment and control group.  What is wrong with this assumption?
-%   \item	Suppose the researchers found that those consuming yogurt had better health and concluded that \textit{Lactobacillus bulgaricus} caused a reduction of weight, improved GI and Immune systems.  What are two major problems in this?
-%   \item	What may be a bias or lead to confounding in this study?
-%   \item	How could the researchers improve their study design in order to make a conclusion about the effectiveness of \textit{Lactobacillus bulgaricus} and immune system function?
-% \end{enumerate}
-% 
-% \end{exercise}
-% \begin{solution}  % 16c
-% 
-% \end{solution}
-% 
-% \clearpage
-% 
-%     \begin{exercise}  % 17A         %%%%%%%%%%%%%%%%%
-%     
-%     \begin{center}
-% \begin{flushleft}\textbf{\large \hfill Workshop 17A, Submitted by: }\end{flushleft}
-% 
-% \fbox{\parbox{14cm}{
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-%  }}
-% \end{center}
-% 
-% Historically throughout the United States, families of four spend about \$239 a week on groceries and food with a standard deviation of 50. Assume a random sample of 250 households is taken in the United States.
-% 
-% \begin{enumerate}
-%   \item What is the expected value of the sample mean.
-%   \item	What is the Standard error of this estimate?
-%   \item	What is the probability that the mean weekly household spending is more than \$242?
-%   \item	What is the probability that the mean weekly household spending less than \$235?
-%   \item	What is the probability that the mean weekly household spending is between \$235 and \$242? 
-%   \item	If an even larger sample of 2500 households was taken and the SD remains the same, what is the new Standard Error of the estimate? Why did this occur?
-% \end{enumerate}
-% 
-% \end{exercise}
-% \begin{solution}  % 17a
-% 
-% \end{solution}
-% 
-% \clearpage
-% 
-%     \begin{exercise}  % 17B         %%%%%%%%%%%%%%%%%
-%     
-%     \begin{center}
-% \begin{flushleft}\textbf{\large \hfill Workshop 17B, Submitted by: }\end{flushleft}
-% 
-% \fbox{\parbox{14cm}{
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-%  }}
-% \end{center}
-% 
-% \begin{minipage}[ht]{7cm}
-% 
-% Too Fast, Not Enough Furious
-% 
-% The above chart shows the average cost of annual auto insurance premiums in 2008 for drivers with no accidents, one accident, two accidents, and so on. According to this chart, the average annual auto insurance premium for drivers with no accidents was \$1,387 in 2008.
-% 
-% \end{minipage}
-% \begin{minipage}[ht]{7cm}
-% 
-% %\begin{figure}[ht]
-% \centering
-%   \includegraphics[width=4cm]{chapters/Workshops/ext_figure/UsaToday.png}
-% %\end{figure}
-% \end{minipage}
-% 
-% \begin{enumerate}
-%   \item What is the estimated mean annual auto insurance premium for drivers with no accidents?
-%   \item	What is the standard error of the estimate assuming this is based on a random sample of 400 drivers? Assume that the standard deviation of auto insurance premiums for all current drivers with no accidents is \$180.
-%   \item Assuming the estimate in part a. is the mean for all drivers with no accidents, what is the probability that the mean annual auto insurance premium for drivers with no accidents is greater than \$1,395?
-%   \item If a larger random sample of 1600 such drivers was taken and the SD remains the same, what is the new standard error of the estimate?
-%   \item Assuming the estimate in part a. is the mean for all drivers with no accidents, what is the probability that the mean annual auto insurance premium for drivers with no accidents is greater than \$1,395 using the new standard error?
-% \end{enumerate}
-% 
-% \end{exercise}
-% \begin{solution}  % 17b
-% 
-% \end{solution}
-% 
-% \clearpage
-% 
-%     \begin{exercise}  % 17C         %%%%%%%%%%%%%%%%%
-%     
-%     \begin{center}
-% \begin{flushleft}\textbf{\large \hfill Workshop 17C, Submitted by: }\end{flushleft}
-% 
-% \fbox{\parbox{14cm}{
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-%  }}
-% \end{center}
-% 
-% Historically throughout the United States college students watch about 35 hours a month of television with a standard deviation of 5 hours. Assume a random sample of 25 college students is taken in West Michigan.
-% 
-% \begin{enumerate}
-%   \item What is the expected value of the sample mean.
-%   \item What is the Standard error of this estimate?
-%   \item What is the probability that the mean monthly hours spent watching tv for the college students is more than 36.5?
-%   \item What is the probability that the mean monthly hours spent watching tv is less than 34?
-%   \item What is the probability that the mean monthly hours watching tv is between 34.5 and 36? 
-%   \item If an even larger sample of 250 students was taken and the SD remains the same, what is the new Standard Error of the estimate? Why did this occur?
-% \end{enumerate}
-% \end{exercise}
-% \begin{solution}  % 17c
-% 
-% \end{solution}
-% %  >>>>>>> f92a3e0e6f8050737817729f8e5730b4f6dc1e14
-% 
+\clearpage
+
+    \begin{exercise}  % 16a         %%%%%%%%%%%%%%%%%
+
+    \begin{center}
+\begin{flushleft}\textbf{\large \hfill Workshop 16A, Submitted by: }\end{flushleft}
+
+\fbox{\parbox{14cm}{
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+ }}
+\end{center}
+
+Jet design researchers have come up with two new designs for the wings of a rocket plane. They think both designs are an improvement over the old design, but want to know which of their new designs performs better at high altitudes. Specifically, they want to know which new design results in more maneuverability at or above 100,000 feet above sea level. They decide to design a randomized trial to study this.
+
+
+\begin{enumerate}
+  \item The researchers include a control group in their design plan. Describe a possible control group. Why did they add it to the study?
+  \item Several pilots and planes are lined up for this study. How could the researchers randomize their experiment to avoid confounders?
+  \item One way to measure maneuverability is by surveying pilots about how they thought the jets handled. Could a design that asks pilots this question be blinded? If so, how?
+  \item Could the design from (2) be double-blinded? If so, how?
+  \item What makes single and double blinding important?
+\end{enumerate}
+\end{exercise}
+\begin{solution}  % 16a
+
+\end{solution}
+
+\clearpage
+
+    \begin{exercise}  % 16b         %%%%%%%%%%%%%%%%%
+
+    \begin{center}
+\begin{flushleft}\textbf{\large \hfill Workshop 16B, Submitted by: }\end{flushleft}
+
+\fbox{\parbox{14cm}{
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+ }}
+\end{center}
+
+Some students at WMU were curious about whether partying influences GPA. To find out, they surveyed 100 of their WMU peers, asking each peer only two questions: 1) How many hours a week do you party? 2) What is your GPA? The students then compiled their data and performed an appropriate statistical analysis. They concluded that partying does influence GPA, i.e., the more you party, the lower your GPA.
+
+\begin{enumerate}
+  \item What kind of study design is this?
+  \item What are advantages of this study design?
+  \item What are disadvantages of this study design?
+  \item Did the students overlook anything that might have biased or confounded their results?
+  \item Suppose the students wanted to correct for something they overlooked. How could they improve their study design?
+\end{enumerate}
+
+\end{exercise}
+\begin{solution}  % 16b
+
+\end{solution}
+
+\clearpage
+
+    \begin{exercise}  % 16c         %%%%%%%%%%%%%%%%%
+
+    \begin{center}
+\begin{flushleft}\textbf{\large \hfill Workshop 16C, Submitted by: }\end{flushleft}
+
+\fbox{\parbox{14cm}{
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+ }}
+\end{center}
+
+Yogurt is known to contain `friendly bacteria' known generally as probiotics which can benefit the gastrointestinal system.  Many strains of bacteria can be found in yogurt, with some of the most common being, \textit{Lactobacillus bulgaricus}, \textit{Streptococcus thermophilus}, and \textit{Lactobacillus acidophilus}.  Further research has been done suggesting probiotics boost the immune system and may even help in weight management and reduction of disease such as cancer.  A group of researchers decided to investigate this using a questionnaire assessing yogurt consumption (yes/no) and asking questions pertaining to the health of the individuals.
+
+\begin{enumerate}
+  \item First of all, what kind of study design is this?
+  \item What are advantages of this type of study design?
+  \item What are disadvantages of this study design?
+  \item	The researchers then separated the results of the surveys for those who said `yes' they consume yogurt to those who said `no' they do not consume yogurt.  They compared the two groups using these as a treatment and control group.  What is wrong with this assumption?
+  \item	Suppose the researchers found that those consuming yogurt had better health and concluded that \textit{Lactobacillus bulgaricus} caused a reduction of weight, improved GI and Immune systems.  What are two major problems in this?
+  \item	What may be a bias or lead to confounding in this study?
+  \item	How could the researchers improve their study design in order to make a conclusion about the effectiveness of \textit{Lactobacillus bulgaricus} and immune system function?
+\end{enumerate}
+
+\end{exercise}
+\begin{solution}  % 16c
+
+\end{solution}
+
+\clearpage
+
+    \begin{exercise}  % 17A         %%%%%%%%%%%%%%%%%
+
+    \begin{center}
+\begin{flushleft}\textbf{\large \hfill Workshop 17A, Submitted by: }\end{flushleft}
+
+\fbox{\parbox{14cm}{
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+ }}
+\end{center}
+
+Historically throughout the United States, families of four spend about \$239 a week on groceries and food with a standard deviation of 50. Assume a random sample of 250 households is taken in the United States.
+
+\begin{enumerate}
+  \item What is the expected value of the sample mean.
+  \item	What is the Standard error of this estimate?
+  \item	What is the probability that the mean weekly household spending is more than \$242?
+  \item	What is the probability that the mean weekly household spending less than \$235?
+  \item	What is the probability that the mean weekly household spending is between \$235 and \$242?
+  \item	If an even larger sample of 2500 households was taken and the SD remains the same, what is the new Standard Error of the estimate? Why did this occur?
+\end{enumerate}
+
+\end{exercise}
+\begin{solution}  % 17a
+
+\end{solution}
+
+\clearpage
+
+    \begin{exercise}  % 17B         %%%%%%%%%%%%%%%%%
+
+    \begin{center}
+\begin{flushleft}\textbf{\large \hfill Workshop 17B, Submitted by: }\end{flushleft}
+
+\fbox{\parbox{14cm}{
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+ }}
+\end{center}
+
+\begin{minipage}[ht]{7cm}
+
+Too Fast, Not Enough Furious
+
+The above chart shows the average cost of annual auto insurance premiums in 2008 for drivers with no accidents, one accident, two accidents, and so on. According to this chart, the average annual auto insurance premium for drivers with no accidents was \$1,387 in 2008.
+
+\end{minipage}
+\begin{minipage}[ht]{7cm}
+
+%\begin{figure}[ht]
+\centering
+  \includegraphics[width=4cm]{chapters/Workshops/ext_figure/UsaToday.png}
+%\end{figure}
+\end{minipage}
+
+\begin{enumerate}
+  \item What is the estimated mean annual auto insurance premium for drivers with no accidents?
+  \item	What is the standard error of the estimate assuming this is based on a random sample of 400 drivers? Assume that the standard deviation of auto insurance premiums for all current drivers with no accidents is \$180.
+  \item Assuming the estimate in part a. is the mean for all drivers with no accidents, what is the probability that the mean annual auto insurance premium for drivers with no accidents is greater than \$1,395?
+  \item If a larger random sample of 1600 such drivers was taken and the SD remains the same, what is the new standard error of the estimate?
+  \item Assuming the estimate in part a. is the mean for all drivers with no accidents, what is the probability that the mean annual auto insurance premium for drivers with no accidents is greater than \$1,395 using the new standard error?
+\end{enumerate}
+
+\end{exercise}
+\begin{solution}  % 17b
+
+\end{solution}
+
+\clearpage
+
+    \begin{exercise}  % 17C         %%%%%%%%%%%%%%%%%
+
+    \begin{center}
+\begin{flushleft}\textbf{\large \hfill Workshop 17C, Submitted by: }\end{flushleft}
+
+\fbox{\parbox{14cm}{
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+ }}
+\end{center}
+
+Historically throughout the United States college students watch about 35 hours a month of television with a standard deviation of 5 hours. Assume a random sample of 25 college students is taken in West Michigan.
+
+\begin{enumerate}
+  \item What is the expected value of the sample mean.
+  \item What is the Standard error of this estimate?
+  \item What is the probability that the mean monthly hours spent watching tv for the college students is more than 36.5?
+  \item What is the probability that the mean monthly hours spent watching tv is less than 34?
+  \item What is the probability that the mean monthly hours watching tv is between 34.5 and 36?
+  \item If an even larger sample of 250 students was taken and the SD remains the same, what is the new Standard Error of the estimate? Why did this occur?
+\end{enumerate}
+\end{exercise}
+\begin{solution}  % 17c
+
+\end{solution}
+
+\clearpage
+
+    \begin{exercise}  % 18A         %%%%%%%%%%%%%%%%%
+
+    \begin{center}
+\begin{flushleft}\textbf{\large \hfill Workshop 18A, Submitted by: }\end{flushleft}
+
+\fbox{\parbox{14cm}{
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+ }}
+\end{center}
+
+Historically throughout the United States families of four spend on the average of \$239 a week on groceries and food with a standard deviation of \$50. Families of 3, however, spend on average \$220 with a standard deviation of \$45 Assume these statistics are based on a random sample of 250 households with four members, and on a random sample of 285 households with three members.
+
+\begin{enumerate}
+  \item Estimate the difference in the average spending of a family of four and a family of three. (Use the family of four first in your equation).
+  \item	What is the Standard error of this estimate?
+  \item	What is the Margin of Error for your estimate?
+  \item	What is the 95\% Confidence Interval for your estimate?  Is it significant?
+\end{enumerate}
+
+\end{exercise}
+\begin{solution}  % 18A
+
+\end{solution}
+
+\clearpage
+
+    \begin{exercise}  % 18B         %%%%%%%%%%%%%%%%%
+
+    \begin{center}
+\begin{flushleft}\textbf{\large \hfill Workshop 18B, Submitted by: }\end{flushleft}
+
+\fbox{\parbox{14cm}{
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+ }}
+\end{center}
+
+\begin{minipage}[ht]{7cm}
+
+The adjacent chart shows the average cost of annual auto insurance premiums in 2008 for drivers with no accidents, one accident, two accidents, and so on. According to this chart, the 2008 average annual auto insurance premium for drivers with no accidents was \$1,387, and the premium for drivers with one accident is \$1,689. Assume that this dataset is partly based on a random sample of 60 drivers with no accidents, and a random sample of 56 drivers with one accident. Assume also that the standard deviations of the samples with no accidents and one accident are \$150 and \$178, respectively. Finally, assume the samples are independent.
+\end{minipage}
+\begin{minipage}[ht]{7cm}
+
+%\begin{figure}[ht]
+\centering
+  \includegraphics[width=4cm]{chapters/Workshops/ext_figure/UsaToday.png}
+%\end{figure}
+\end{minipage}
+
+\begin{enumerate}
+  \item What is the difference in means between average premiums for drivers with no accidents and drivers with one accident?
+  \item	What is the standard error of the above estimate?
+  \item	What is the Z critical value for a 95\% confidence interval?
+  \item	The upper bound of this confidence interval is how far from the central point estimate?
+  \item	What are the lower and upper bounds of this confidence interval?
+  \item	What can be concluded about the significance of the difference?
+\end{enumerate}
+
+\end{exercise}
+\begin{solution}  % 18B
+
+\end{solution}
+
+\clearpage
+
+    \begin{exercise}  % 18C         %%%%%%%%%%%%%%%%%
+
+    \begin{center}
+\begin{flushleft}\textbf{\large \hfill Workshop 18C, Submitted by: }\end{flushleft}
+
+\fbox{\parbox{14cm}{
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+ }}
+\end{center}
+
+The summary statistics for Verbal SAT are provided below:
+
+\begin{tabular}{@{} lrrr @{}} \hline
+Graduate&	n&	Mean&	SD \\ \hline
+No&	13&	466.9&	89.94 \\
+Yes&	28&	480&	67.33 \\ \hline
+\end{tabular}
+
+\begin{enumerate}
+  \item Estimate the difference in average Verbal SAT scores between the two groups.
+  \item	Calculate a standard error for your estimate in (a).
+  \item	Calculate a 95\% confidence interval for the difference between the two means. Does your interval exclude 0?  Is your difference statistically significant?
+\end{enumerate}
+
+\end{exercise}
+\begin{solution}  % 18C
+
+\end{solution}
+
+\clearpage
+
+    \begin{exercise}  % 19A         %%%%%%%%%%%%%%%%%
+
+    \begin{center}
+\begin{flushleft}\textbf{\large \hfill Workshop 19A, Submitted by: }\end{flushleft}
+
+\fbox{\parbox{14cm}{
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+ }}
+\end{center}
+
+A special vitamin concoction which claims to increase muscle strength is tested on 5 weight lifters.  Athletes are selected and the weight they can bench press is recorded before and then after two weeks of taking the vitamin regimen. 
+
+\begin{tabular}{@{} lcc @{}} \hline
+Athlete&	Before&	After \\ \hline
+1&	220&	206 \\
+2&	181&	179 \\
+3&	210&	218 \\
+4&	231&	235 \\
+5&	201&	203 \\ \hline
+\end{tabular}
+
+\begin{enumerate}
+  \item Estimate the mean difference in weight lifted before and after the vitamin regimen.
+  \item	Calculate a standard error for your estimate in (a).
+  \item	Calculate a 95\% confidence interval for the difference.  Does your interval exclude 0?  Is your difference statistically significant?
+\end{enumerate}
+
+\end{exercise}
+\begin{solution}  % 19A
+
+\end{solution}
+
+\clearpage
+
+    \begin{exercise}  % 19B         %%%%%%%%%%%%%%%%%
+
+    \begin{center}
+\begin{flushleft}\textbf{\large \hfill Workshop 19B, Submitted by: }\end{flushleft}
+
+\fbox{\parbox{14cm}{
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+ }}
+\end{center}
+
+In 1968, the Labor Force Participation rate of women was measured in 5 different cities.  The rates in those same cities were measured again in 1972.
+
+\begin{tabular}{@{} lcc @{}} \hline
+City&	1972&	1968 \\ \hline
+N.Y.&	0.45&	0.42 \\
+L.A.&	0.50&	0.50 \\
+Chicago&	0.52&	0.52 \\
+Philadelphia&	0.45&	0.45 \\
+Detroit&	0.46&	0.43 \\ \hline
+\end{tabular}
+
+\begin{enumerate}
+  \item Estimate the mean difference in participation of women between 1968 and 1972.  
+  \item	Calculate a standard error for your estimate in (a).
+  \item	Calculate a 95\% confidence interval for the difference.  Does your interval exclude 0?  Is your difference statistically significant?
+\end{enumerate}
+
+\end{exercise}
+\begin{solution}  % 19B
+
+\end{solution}
+
+\clearpage
+
+    \begin{exercise}  % 19c         %%%%%%%%%%%%%%%%%
+
+    \begin{center}
+\begin{flushleft}\textbf{\large \hfill Workshop 19C, Submitted by: }\end{flushleft}
+
+\fbox{\parbox{14cm}{
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+ }}
+\end{center}
+
+A certain local grocery chain known for great prices is testing the effectiveness of a new product placement locations in volume of sales for their flagship household cleaning product UltraClean Spray. The grocery chain uses 5 different stores and records a week worth of sales with the old lay out and a week with the new layout. The results are recorded below.
+
+\begin{tabular}{@{} lcc @{}} \hline
+Store &	Old Layout \# sold &	New Layout \# sold \\ \hline
+1&	10&	14 \\
+2&	23&	30 \\
+3&	9&	5 \\
+4&	13&	24 \\
+5&	18&	19 \\ \hline
+\end{tabular}
+
+\begin{enumerate}
+  \item Estimate the mean difference in items sold before the new layout and after the new layout.
+  \item	Calculate the Standard Error for your estimate in (a), use a standard deviation of 5.718.
+  \item	Calculate a 95\% confidence interval for the difference. Is your difference statistically significant?
+  \item	Interpret your results, did the new layout significantly decrease, significantly increase sales or neither?
+\end{enumerate}
+
+\end{exercise}
+\begin{solution}  % 19C
+
+\end{solution}
+
+
+\clearpage
+
+    \begin{exercise}  % 20a         %%%%%%%%%%%%%%%%%
+
+    \begin{center}
+\begin{flushleft}\textbf{\large \hfill Workshop 20A, Submitted by: }\end{flushleft}
+
+\fbox{\parbox{14cm}{
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+ }}
+\end{center}
+
+In an experimental study, 44 rats were exposed to high dose of red dye and 44 rats were exposed to low dose of red dye and then it was observed how many in each group developed cancer. 
+			
+\begin{table}[ht]
+\centering				
+\begin{tabular}{@{} l rrr @{}} \hline				
+ & \multicolumn{2}{c}{Dose Level of Red Dye} \\	
+Cancer&	High&	Low&	Total \\ \hline
+Yes&	14&	4&	18 \\
+No&	30&	40&	70 \\ \hline
+Total&	44&	44&	88 \\ \hline
+\end{tabular}
+\end{table}
+
+\begin{enumerate}
+  \item Fill in the table of expected counts:
+  
+\begin{tabular}{@{} l rrr @{}} \hline				
+ & \multicolumn{2}{c}{Dose Level of Red Dye} \\	
+Cancer&	High&	Low&	Total \\ \hline
+Yes&	&	&	18 \\
+No&	&	&	70 \\ \hline
+Total&	44&	44&	88 \\ \hline
+\end{tabular}
+  
+  \item	Calculate the chi-square test statistic.
+  \item	What is the correct degrees of freedom?
+  \item	Based on the degrees of freedom, what is the critical value?
+  \item	What can we conclude from this test? Is the dose level of red dye related to cancer occurrence? 
+\end{enumerate}
+
+\end{exercise}
+\begin{solution}  % 20A
+
+\end{solution}
+
+
+\clearpage
+
+    \begin{exercise}  % 20b         %%%%%%%%%%%%%%%%%
+
+    \begin{center}
+\begin{flushleft}\textbf{\large \hfill Workshop 20B, Submitted by: }\end{flushleft}
+
+\fbox{\parbox{14cm}{
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+ }}
+\end{center}
+
+Consider the following data from the Chicago Western Electric Study (Shekelle et al., 1981). In the following table 466 men were classified based on death from coronary heart disease (CHD) and fish consumption.
+			
+\begin{table}[ht]
+\centering
+\begin{tabular}{@{} l rrr @{}} \hline				
+ & \multicolumn{2}{c}{35 gm of Daily Fish Consumption} \\		
+Death from CHD &	No &	Yes &	Total \\ \hline
+Yes &	42 &	34 &	76 \\
+No &	163 &	227 &	390 \\ \hline
+Total &	205 &	261 &	466 \\ \hline
+\end{tabular}
+\end{table}
+
+\begin{enumerate}
+  \item Fill in the table of expected counts:
+
+\begin{tabular}{@{} lrrr @{}} \hline				
+ & \multicolumn{2}{c}{35 gm of Daily Fish Consumption} \\		
+Death from CHD &	No &	Yes &	Total \\ \hline
+Yes &	&	&	76 \\
+No &	&	&	390 \\ \hline
+Total &	205&	261&	466 \\ \hline
+\end{tabular}
+
+  \item	Calculate the chi-square test statistic.
+  \item	What are the degrees of freedom for the critical value?
+  \item	What is the critical value?
+  \item	What is the correct conclusion?  Are daily fish consumption and death from CHD related?
+\end{enumerate}
+
+\end{exercise}
+\begin{solution}  % 20B
+
+\end{solution}
+
+
+\clearpage
+
+    \begin{exercise}  % 20c         %%%%%%%%%%%%%%%%%
+
+    \begin{center}
+\begin{flushleft}\textbf{\large \hfill Workshop 20C, Submitted by: }\end{flushleft}
+
+\fbox{\parbox{14cm}{
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+ }}
+\end{center}
+
+Officer Smiley collects data on her department's ticketing patterns. She includes variables like gender of ticketing officers (Male or Female) and the type of offense for which the ticket is written (civil infraction, misdemeanor, felony, etc.). She wonders if there is any association between the gender of a ticketing officer and the type of offense. She generates the following data summary to conduct a test at the 5\% significance level:
+
+\begin{tabular}{@{} lrrrr @{}} \hline
+Actual&	Civil Infraction&	Felony&	Misdemeanor&	Total  \\ \hline
+Female&	6&	9&	11&	26 \\
+Male&	12&	8&	8&	28 \\ \hline
+Total&	18&	17&	19&	54 \\ \hline
+\end{tabular}
+
+\begin{tabular}{@{} lrrrr @{}} \hline
+Expected&	Civil Infraction&	Felony&	Misdemeanor&	Total \\ \hline
+Female&	8.666&	8.185&	9.148&	26 \\ \hline
+Male&	9.333&	8.815&	9.852&	28 \\ \hline
+Total&	18&	17&	19&	54 \\ \hline
+\end{tabular}
+
+\begin{enumerate}
+  \item What is the value of the chi-square test statistic?
+  \item	What are the degrees of freedom for the critical value?
+  \item	What is the critical value for her test?
+  \item	What is the correct conclusion of this test? Are the gender of a ticketing officer and the type of offense on a ticket related?
+\end{enumerate}
+
+\end{exercise}
+\begin{solution}  % 20C
+
+\end{solution}
+
+
+\clearpage
+
+    \begin{exercise}  % 21a         %%%%%%%%%%%%%%%%%
+
+    \begin{center}
+\begin{flushleft}\textbf{\large \hfill Workshop 21A, Submitted by: }\end{flushleft}
+
+\fbox{\parbox{14cm}{
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+ }}
+\end{center}
+
+An intern at a courthouse is curious about whether there is any association between two numerical variables: the age of defendants in years, and the sentence that they receive in years. The courthouse collects data on both variables for five cases:
+
+\begin{tabular}{@{} ccc @{}} \hline
+  &	Age &	Sentence \\ \hline
+1&	18&	2 \\
+2&	21&	4 \\
+3&	35&	8 \\
+4&	26&	8 \\
+5&	40&	9 \\ \hline
+\end{tabular}
+
+\begin{enumerate}
+  \item Calculate the means of Age and Sentence.
+  \item	Given that the standard deviations of Age and Sentence are respectively 9.301 and 3.033, finish the following table of the $Z$-scores for Age and Sentence:
+
+\begin{tabular}{@{} ccc @{}} \hline
+ &	$Z_{Age}$ &	$Z_{Sentence}$ \\ \hline
+1&	-1.075&	-1.385 \\
+2& & \\		
+3& & \\		
+4& & \\		
+5& & \\ \hline
+\end{tabular}
+
+  \item	Finish the following table of products of Z scores for Age and Sentence:
+
+{\small{
+\begin{tabular}{@{} cc @{}} \hline
+ &	$Z_{Age} \times Z_{Sentence}$ \\ \hline
+1	& 1.489 \\
+2	& \\
+3	& \\
+4	& \\
+5	& \\ \hline
+\end{tabular}
+}}
+
+  \item	Calculate Pearson’s Correlation Coefficient $r$:
+\end{enumerate}
+
+\end{exercise}
+\begin{solution}  % 21a
+
+\end{solution}
+
+
+\clearpage
+
+    \begin{exercise}  % 21b         %%%%%%%%%%%%%%%%%
+
+    \begin{center}
+\begin{flushleft}\textbf{\large \hfill Workshop 21B, Submitted by: }\end{flushleft}
+
+\fbox{\parbox{14cm}{
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+ }}
+\end{center}
+
+Session musicians in a studio are worried about their tuning. To get just the right mix, they decide to measure the frequency of the notes they play while recording. They begin by measuring frequency in Hertz at the note ``middle C'' (0 in the table), and work their way up by regular intervals (whole steps) from there.  From ``middle C'' through the first four intervals, they produce the following data:
+
+\begin{tabular}{@{} rr @{}} \hline
+Intervals	& Frequency (Hz) \\ \hline
+0 &	261.626 \\
+1 &	293.665 \\
+2 &	329.628 \\
+3	& 369.994 \\
+4	& 415.305 \\ \hline
+\end{tabular}
+
+\begin{enumerate}
+  \item Calculate the means for Intervals and Frequency.
+  \item	Given that the standard deviations for Intervals and Frequency are respectively 1.581 and 60.807, finish the following table of products of Z-scores:
+
+{\small{
+\begin{tabular}{@{} rc @{}} \hline
+	& $Z_{Interval} \times Z_{frequency}$ \\ \hline
+0& 	1.507 \\
+1&	0.420  \\
+2	& \\
+3	& \\
+4	& \\ \hline
+\end{tabular}
+}}
+
+  \item	Calculate Pearson's Correlation Coefficient $r$.
+  \item Interpret the correlation coefficient $r$ within the context of this dataset.  What is the relationship between intervals and frequencies?
+  \item If the musicians' frequency measurements are all off by 50 hertz, such that every frequency measurement is a uniform 50 hertz greater than its actual value, what would happen to the correlation coefficient $r$?
+\end{enumerate}
+
+\end{exercise}
+\begin{solution}  % 21b
+
+\end{solution}
+
+
+\clearpage
+
+    \begin{exercise}  % 21c         %%%%%%%%%%%%%%%%%
+
+    \begin{center}
+\begin{flushleft}\textbf{\large \hfill Workshop 21C, Submitted by: }\end{flushleft}
+
+\fbox{\parbox{14cm}{
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+ }}
+\end{center}
+
+Here we present numerical data on the first five households from the Rent/Mortgage dataset in chapter 2 of this coursepack:
+
+\begin{tabular}{@{} cccc @{}} \hline
+	& No. of Bedrooms	& Monthly Payment &	12-month HH Income \\ \hline
+1 &	2 &	880 &	11200 \\
+2 &	3	& 990 &	80800 \\
+3 &	4 &	750 &	87600 \\
+4 &	3	& 1400 & 94000 \\
+5 &	4	& 1400 & 97000 \\ \hline
+$\bar{x}$ & 3.2  & 1084   & 74120 \\
+$s$       & 0.84 & 300.72 & 35,721.03 \\ \hline
+\end{tabular}
+
+Using the above information…
+
+\begin{enumerate}
+  \item Calculate the correlation coefficient $r$ between No. of Bedrooms and Monthly Payment.
+	\item Calculate the correlation coefficient $r$ between Monthly Payment and 12-Month HH Income.
+  \item Which set of two variables exhibits the strongest relationship: Monthly Payment \& No. of Bedrooms, or Monthly Payment \& 12-month HH Income? Why?
+\end{enumerate}
+
+\end{exercise}
+\begin{solution}  % 21c
+
+\end{solution}
+
+
+\clearpage
+
+    \begin{exercise}  % 22a         %%%%%%%%%%%%%%%%%
+
+    \begin{center}
+\begin{flushleft}\textbf{\large \hfill Workshop 22A, Submitted by: }\end{flushleft}
+
+\fbox{\parbox{14cm}{
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+ }}
+\end{center}
+
+Data on the numbers of absences and final grades are shown below for 10 randomly selected students in a statistics class.
+
+\begin{tabular}{@{} ccc @{}} \hline
+Student &	Number of absences &	Final Grade (\%) \\ \hline
+1&	7&	82 \\
+2&	2&	87 \\
+3&	13&	43 \\
+4&	9&	62 \\
+5&	4&	77 \\
+6&	3&	93 \\
+7&	1&	95 \\
+8&	15&	33 \\
+9&	8&	55 \\
+10&	6&	60 \\ \hline
+$\bar{x}$ & 6.8 & 68.7 \\
+$s$ & 4.613988 & 21.35962 \\ \hline
+\end{tabular}
+
+\begin{enumerate}
+  \item Calculate the regression line for predicting final grade based on number of absences.
+	\item Draw the scatterplot with an overlaid regression line.
+	\item Using your regression line for predicting final grade from number of absences, what is the estimated final grade of a student who has been absent 5 times?
+  \item Calculate a 95\% confidence interval for the slope of the line.  Is the slope statistically significant?
+\end{enumerate}
+
+\end{exercise}
+\begin{solution}  % 22a
+
+\end{solution}
+
+
+\clearpage
+
+    \begin{exercise}  % 22b         %%%%%%%%%%%%%%%%%
+
+    \begin{center}
+\begin{flushleft}\textbf{\large \hfill Workshop 22B, Submitted by: }\end{flushleft}
+
+\fbox{\parbox{14cm}{
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+ }}
+\end{center}
+
+Data obtained are found below for the age of 8 randomly selected patients and their systolic blood pressure.
+
+\begin{tabular}{@{} ccc @{}} \hline
+Patient &	Age (x)	& Blood Pressure (y) \\ \hline
+A&	22&	120 \\
+B&	31&	121 \\
+C&	43&	127 \\
+D&	48&	125 \\
+E&	57&	130 \\
+F&	62&	144 \\
+G&	67&	152 \\
+H&	73&	149 \\ \hline
+$\bar{x}$ & 50.375 & 133.5 \\
+$s$ & 17.75981 & 12.8619 \\ \hline
+\end{tabular}
+
+\begin{enumerate}
+  \item Calculate the regression line for predicting systolic blood pressure based on age. 
+	\item Draw the scatterplot with an overlaid regression line.
+	\item Using your regression line for predicting blood pressure from age, what is the estimated blood pressure of a person of 53 years of age?
+  \item Calculate a 95\% confidence interval for the slope of the line.  Is the slope statistically significant?
+\end{enumerate}
+
+\end{exercise}
+\begin{solution}  % 22b
+
+\end{solution}
+
+
+\clearpage
+
+    \begin{exercise}  % 22c         %%%%%%%%%%%%%%%%%
+
+    \begin{center}
+\begin{flushleft}\textbf{\large \hfill Workshop 22C, Submitted by: }\end{flushleft}
+
+\fbox{\parbox{14cm}{
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+ }}
+\end{center}
+
+Session musicians in a studio are worried about their tuning. To get just the right mix, they decide to measure the frequency of the notes they play while recording. They begin by measuring frequency in Hertz at the note ``middle C'' (0 in the table), and work their way up by regular intervals (whole steps) from there. From ``middle C'' through the first four whole step intervals, they produce the following data:
+
+\begin{tabular}{@{} ccc @{}} \hline
+Intervals &	Frequency (Hz) \\ \hline
+0&	261.626 \\
+1&	293.665 \\
+2&	329.628 \\
+3&	369.994 \\
+4&	415.305 \\ \hline
+\end{tabular}
+
+\begin{enumerate}
+  \item Write the full regression equation, using Intervals as explanatory and Frequency as response. The standard deviations of Intervals and Frequency are, respectively, 1.581 and 60.807. The correlation coefficient is 0.998
+  \item	Interpret the slope of this regression line in context.
+  \item	The session musicians take another measurement and find that the fifth whole step interval up from middle C, the A sharp, has an actual frequency of 466.164 Hz. Using your line from part a, calculate the residual for the predicted fifth interval from middle C.
+  \item	Calculate a 95\% confidence interval for the slope of the line. Is the slope statistically significant?
+
+\end{enumerate}
+
+\end{exercise}
+\begin{solution}  % 22c
+
+\end{solution}
+
+
+
+
+
+
 % The study, in the February issue of The Archives of General Psychiatry, published by the American Medical Association, found a rising risk of depressive symptoms with increasing hours spent watching television.
 % 
 % Researchers used data from a larger analysis of 4,142 adolescents who were not depressed at the start of the study. After seven years of follow-up, more than 7 percent had symptoms of depression.
