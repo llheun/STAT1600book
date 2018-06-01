@@ -303,6 +303,9 @@
 \contentsline {subparagraph}{\nonumberline Exercise{}~15.-49:}{201}{section*.178}
 \contentsline {subparagraph}{\nonumberline Exercise{}~15.-50:}{202}{section*.179}
 \contentsline {subparagraph}{\nonumberline Exercise{}~15.-51:}{203}{section*.180}
+<<<<<<< HEAD
 \contentsline {subparagraph}{\nonumberline Exercise{}~15.-52:}{204}{section*.181}
 \contentsline {subparagraph}{\nonumberline Exercise{}~15.-53:}{205}{section*.182}
 \contentsline {subparagraph}{\nonumberline Exercise{}~15.-54:}{206}{section*.183}
+=======
+>>>>>>> f92a3e0e6f8050737817729f8e5730b4f6dc1e14

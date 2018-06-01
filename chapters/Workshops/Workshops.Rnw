@@ -1927,6 +1927,343 @@ Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phan
 The following is an excerpt from a New York Times article by Nicholas Bakalar (Feb. 10, 2009).          
 
 Lengthy television viewing in adolescence may raise the risk for depression in young adulthood, according to a new report.
+<<<<<<< HEAD
+=======
+
+The study, in the February issue of The Archives of General Psychiatry, published by the American Medical Association, found a rising risk of depressive symptoms with increasing hours spent watching television.
+
+Researchers used data from a larger analysis of 4,142 adolescents who were not depressed at the start of the study. After seven years of follow-up, more than 7 percent had symptoms of depression.
+
+But while about 6 percent of those who watched less than three hours a day were depressed, more than 17 percent of those who watched more than nine hours a day had depressive symptoms.
+
+\begin{enumerate}
+  \item The word `raise' in the title implies cause-and-effect, not just association.  When comparing lengthy viewers with those who watch less, what possible    confounders can you think of?
+  \item Using one confounder from your answer(s) in (1), draw a pathway graph depicting the possible relationship between confounder, possible cause and outcome.
+\end{enumerate}
+\end{exercise}
+\begin{solution}  % 15a
+
+\end{solution}
+
+\clearpage
+
+    \begin{exercise}  % 15b         %%%%%%%%%%%%%%%%%
+    
+    \begin{center}
+\begin{flushleft}\textbf{\large \hfill Workshop 15B, Submitted by: }\end{flushleft}
+
+\fbox{\parbox{14cm}{
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+ }}
+\end{center}
+
+The following is an excerpt from a Reuters article by Amy Norton (July 2011).          
+\begin{quote}
+
+Are kids safer with grandparents driving?
+
+When children are involved in a car accident, they are less likely to be injured if grandma or grandpa are driving rather than mom or dad, a new study suggests.
+
+The study, published in the journal Pediatrics, looked at five years' worth of data on U.S. car crashes involving children younger than 16.
+
+It found that when grandparents were at the wheel, 0.7 percent of children were injured in the crash. That compared with 1 percent when parents were driving.
+
+When the researchers considered other factors -- such as the circumstances and severity of the crash -- kids riding with grandparents were half as likely to be injured, versus those riding with their parents.
+
+\end{quote}
+
+\begin{enumerate}
+  \item The title implies cause-and-effect, not just association.  When comparing injury rates between parents driving and grandparents driving, what possible    confounders can you think of?
+  \item Using one confounder from your answer(s) in (1), draw a pathway graph depicting the possible relationship between confounder, possible cause and outcome.
+\end{enumerate}
+\end{exercise}
+\begin{solution}  % 15b
+
+\end{solution}
+
+\clearpage
+
+    \begin{exercise}  % 15c         %%%%%%%%%%%%%%%%%
+    
+    \begin{center}
+\begin{flushleft}\textbf{\large \hfill Workshop 15C, Submitted by: }\end{flushleft}
+
+\fbox{\parbox{14cm}{
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+ }}
+\end{center}
+
+Frequency of playing violent video games has at times been linked with and seen as a possible cause for those committing violent acts.  Much debate still looms over whether playing violent video games can lead to a desensitization of violence and a lack of compassion for others.  
+One article that explores these ideas is titled, The Impact of Degree of Exposure to Violent Video Games, Family Background, and Other Factors on Youth Violence, by the authors Whitney Decamp and Christopher Ferguson.  The authors respond to the concern that violence in video games might contribute to youth violence.  There is still no consensus on whether violent video games may be contributing to violence in youth.  The authors sought to study this issue in an ethnically diverse sample of youth in eighth (n=5133) and eleventh grade (n=3886).  Questionnaire surveys were given to the youth to assess a link.  Independent or predictor variables included the playing of violent video games, and an inclination towards violent video games.  Dependent variables included questions pertaining to hitting with the intention to hurt another and taking part in a fight. 
+Mixed results were reported.  The authors summarized that violent video game play was not significant in 5 of the models used.  There was, however, a positive correlation between games and violent behavior for the models without controls.   When the authors controlled for the propensity and context, however, this suggested the association to be more spurious (not being what it claims to be).  What other factors may be impacting this outcome?  
+
+\begin{enumerate}
+  \item What possible confounders can you think of for a study of this nature?
+  \item Using one confounder from your answer(s) in (1), draw a pathway graph depicting the possible relationships between confounder, possible cause and outcome.
+\end{enumerate}
+\end{exercise}
+\begin{solution}  % 15c
+
+\end{solution}
+
+\clearpage
+
+    \begin{exercise}  % 16a         %%%%%%%%%%%%%%%%%
+    
+    \begin{center}
+\begin{flushleft}\textbf{\large \hfill Workshop 16A, Submitted by: }\end{flushleft}
+
+\fbox{\parbox{14cm}{
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+ }}
+\end{center}
+
+Jet design researchers have come up with two new designs for the wings of a rocket plane. They think both designs are an improvement over the old design, but want to know which of their new designs performs better at high altitudes. Specifically, they want to know which new design results in more maneuverability at or above 100,000 feet above sea level. They decide to design a randomized trial to study this.
+
+
+\begin{enumerate}
+  \item The researchers include a control group in their design plan. Describe a possible control group. Why did they add it to the study?
+  \item Several pilots and planes are lined up for this study. How could the researchers randomize their experiment to avoid confounders?
+  \item One way to measure maneuverability is by surveying pilots about how they thought the jets handled. Could a design that asks pilots this question be blinded? If so, how?
+  \item Could the design from (2) be double-blinded? If so, how?
+  \item What makes single and double blinding important?
+\end{enumerate}
+\end{exercise}
+\begin{solution}  % 16a
+
+\end{solution}
+
+\clearpage
+
+    \begin{exercise}  % 16b         %%%%%%%%%%%%%%%%%
+    
+    \begin{center}
+\begin{flushleft}\textbf{\large \hfill Workshop 16B, Submitted by: }\end{flushleft}
+
+\fbox{\parbox{14cm}{
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+ }}
+\end{center}
+
+Some students at WMU were curious about whether partying influences GPA. To find out, they surveyed 100 of their WMU peers, asking each peer only two questions: 1) How many hours a week do you party? 2) What is your GPA? The students then compiled their data and performed an appropriate statistical analysis. They concluded that partying does influence GPA, i.e., the more you party, the lower your GPA.
+
+\begin{enumerate}
+  \item What kind of study design is this?
+  \item What are advantages of this study design?
+  \item What are disadvantages of this study design?
+  \item Did the students overlook anything that might have biased or confounded their results?
+  \item Suppose the students wanted to correct for something they overlooked. How could they improve their study design?
+\end{enumerate}
+
+\end{exercise}
+\begin{solution}  % 16b
+
+\end{solution}
+
+\clearpage
+
+    \begin{exercise}  % 16c         %%%%%%%%%%%%%%%%%
+    
+    \begin{center}
+\begin{flushleft}\textbf{\large \hfill Workshop 16C, Submitted by: }\end{flushleft}
+
+\fbox{\parbox{14cm}{
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+ }}
+\end{center}
+
+Yogurt is known to contain `friendly bacteria' known generally as probiotics which can benefit the gastrointestinal system.  Many strains of bacteria can be found in yogurt, with some of the most common being, \textit{Lactobacillus bulgaricus}, \textit{Streptococcus thermophilus}, and \textit{Lactobacillus acidophilus}.  Further research has been done suggesting probiotics boost the immune system and may even help in weight management and reduction of disease such as cancer.  A group of researchers decided to investigate this using a questionnaire assessing yogurt consumption (yes/no) and asking questions pertaining to the health of the individuals.  
+
+\begin{enumerate}
+  \item First of all, what kind of study design is this?
+  \item What are advantages of this type of study design?
+  \item What are disadvantages of this study design?
+  \item	The researchers then separated the results of the surveys for those who said `yes' they consume yogurt to those who said `no' they do not consume yogurt.  They compared the two groups using these as a treatment and control group.  What is wrong with this assumption?
+  \item	Suppose the researchers found that those consuming yogurt had better health and concluded that \textit{Lactobacillus bulgaricus} caused a reduction of weight, improved GI and Immune systems.  What are two major problems in this?
+  \item	What may be a bias or lead to confounding in this study?
+  \item	How could the researchers improve their study design in order to make a conclusion about the effectiveness of \textit{Lactobacillus bulgaricus} and immune system function?
+\end{enumerate}
+
+\end{exercise}
+\begin{solution}  % 16c
+
+\end{solution}
+
+\clearpage
+
+    \begin{exercise}  % 17A         %%%%%%%%%%%%%%%%%
+    
+    \begin{center}
+\begin{flushleft}\textbf{\large \hfill Workshop 17A, Submitted by: }\end{flushleft}
+
+\fbox{\parbox{14cm}{
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+ }}
+\end{center}
+
+Historically throughout the United States, families of four spend about \$239 a week on groceries and food with a standard deviation of 50. Assume a random sample of 250 households is taken in the United States.
+
+\begin{enumerate}
+  \item What is the expected value of the sample mean.
+  \item	What is the Standard error of this estimate?
+  \item	What is the probability that the mean weekly household spending is more than \$242?
+  \item	What is the probability that the mean weekly household spending less than \$235?
+  \item	What is the probability that the mean weekly household spending is between \$235 and \$242? 
+  \item	If an even larger sample of 2500 households was taken and the SD remains the same, what is the new Standard Error of the estimate? Why did this occur?
+\end{enumerate}
+
+\end{exercise}
+\begin{solution}  % 17a
+
+\end{solution}
+
+\clearpage
+
+    \begin{exercise}  % 17B         %%%%%%%%%%%%%%%%%
+    
+    \begin{center}
+\begin{flushleft}\textbf{\large \hfill Workshop 17B, Submitted by: }\end{flushleft}
+
+\fbox{\parbox{14cm}{
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+ }}
+\end{center}
+
+\begin{minipage}[ht]{7cm}
+
+Too Fast, Not Enough Furious
+
+The above chart shows the average cost of annual auto insurance premiums in 2008 for drivers with no accidents, one accident, two accidents, and so on. According to this chart, the average annual auto insurance premium for drivers with no accidents was \$1,387 in 2008.
+
+\end{minipage}
+\begin{minipage}[ht]{7cm}
+
+%\begin{figure}[ht]
+\centering
+  \includegraphics[width=4cm]{chapters/Workshops/ext_figure/UsaToday.png}
+%\end{figure}
+\end{minipage}
+
+\begin{enumerate}
+  \item What is the estimated mean annual auto insurance premium for drivers with no accidents?
+  \item	What is the standard error of the estimate assuming this is based on a random sample of 400 drivers? Assume that the standard deviation of auto insurance premiums for all current drivers with no accidents is \$180.
+  \item Assuming the estimate in part a. is the mean for all drivers with no accidents, what is the probability that the mean annual auto insurance premium for drivers with no accidents is greater than \$1,395?
+  \item If a larger random sample of 1600 such drivers was taken and the SD remains the same, what is the new standard error of the estimate?
+  \item Assuming the estimate in part a. is the mean for all drivers with no accidents, what is the probability that the mean annual auto insurance premium for drivers with no accidents is greater than \$1,395 using the new standard error?
+\end{enumerate}
+
+\end{exercise}
+\begin{solution}  % 17b
+
+\end{solution}
+
+\clearpage
+
+    \begin{exercise}  % 17C         %%%%%%%%%%%%%%%%%
+    
+    \begin{center}
+\begin{flushleft}\textbf{\large \hfill Workshop 17C, Submitted by: }\end{flushleft}
+
+\fbox{\parbox{14cm}{
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+ }}
+\end{center}
+
+Historically throughout the United States college students watch about 35 hours a month of television with a standard deviation of 5 hours. Assume a random sample of 25 college students is taken in West Michigan.
+
+\begin{enumerate}
+  \item What is the expected value of the sample mean.
+  \item What is the Standard error of this estimate?
+  \item What is the probability that the mean monthly hours spent watching tv for the college students is more than 36.5?
+  \item What is the probability that the mean monthly hours spent watching tv is less than 34?
+  \item What is the probability that the mean monthly hours watching tv is between 34.5 and 36? 
+  \item If an even larger sample of 250 students was taken and the SD remains the same, what is the new Standard Error of the estimate? Why did this occur?
+\end{enumerate}
+\end{exercise}
+\begin{solution}  % 17c
+
+\end{solution}
+>>>>>>> f92a3e0e6f8050737817729f8e5730b4f6dc1e14
 
 The study, in the February issue of The Archives of General Psychiatry, published by the American Medical Association, found a rising risk of depressive symptoms with increasing hours spent watching television.
 
