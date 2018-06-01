@@ -29,9 +29,14 @@ Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phan
  }}
  \end{center}
 
-\begin{table}[ht]
+\begin{minipage}[ht]{9cm}
+
+{\small{
+Table 15.1: A partial list of students registered for Stat 1600 during Fall 2016 of their Major course of study.
+
+%\begin{table}[ht]
 \centering
-\caption{A partial list of students registered for Stat 1600 during Fall 2016 of their Major course of study.}
+%\caption{A partial list of students registered for Stat 1600 during Fall 2016 of their Major course of study.}
 \begin{tabular}{@{} l | cccccc | c @{}} \hline
 & \multicolumn{5}{c}{Class } \\ \hline
 Major & A & B & C & D & Web & Total & RF \\ \hline
@@ -59,17 +64,21 @@ Social Work   & 6 & 6 & 6 & 5 & 3 & 26 & \\
 Sociology      &   & 1 &   & 1 &   & 2 & \\ \hline
 Total         &32 &40 &36 &26 &22 &156 &   \\ \hline
 \end{tabular}
-\end{table}
+%\end{table}
+}}
+\end{minipage}
+\begin{minipage}[ht]{6cm}
     
     Using the data from Table 15.1,
 
 \begin{enumerate}
   \item Construct a relative frequency table for total student majors (column above).
-  \item	The highest percentage of students fall under what major?
+  \item	The highest percentage of \\ students fall under what major?
   \item	What percentage of students are Art majors?
-  \item	What percentage of students’ majors fall in both Sociology and Psychology?
+  \item	What percentage of students' \\ majors fall in both Sociology and Psychology?
   \item	How does the percentage of students who are communications majors in Class A compare to the percentage of communication majors overall for total students? 
 \end{enumerate}
+\end{minipage}
     \end{exercise}
     \begin{solution}
       
@@ -104,9 +113,14 @@ Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phan
  }}
 \end{center}
 
-\begin{table}[ht]
+\begin{minipage}[ht]{9cm}
+
+{\small{
+Table 15.2: A partial list of students registered for Stat 1600 during Fall 2016 of their Major course of study.
+
+%\begin{table}[ht]
 \centering
-\caption{A partial list of students registered for Stat 1600 during Fall 2016 of their Major course of study.}
+% \caption{A partial list of students registered for Stat 1600 during Fall 2016 of their Major course of study.}
 \begin{tabular}{@{} l | cccccc | c @{}} \hline
 & \multicolumn{5}{c}{Class } \\ \hline
 Major & A & B & C & D & Web & Total & RF \\ \hline
@@ -134,8 +148,10 @@ Social Work   & 6 & 6 & 6 & 5 & 3 & 26 & \\
 Sociology      &   & 1 &   & 1 &   & 2 & \\ \hline
 Total         &32 &40 &36 &26 &22 &156 &   \\ \hline
 \end{tabular}
-\end{table}
-    
+%\end{table}
+}}
+\end{minipage}
+\begin{minipage}[ht]{6cm}
     Using the data from Table 15.2,
 
 \begin{enumerate}
@@ -143,8 +159,9 @@ Total         &32 &40 &36 &26 &22 &156 &   \\ \hline
   \item	The highest percentage of students fall under what major?
   \item	What percentage of students are Music majors?
   \item	What percentage of students are found in the majors of Psychology, Social Work and Sociology (combined)?
-  \item	How does the percentage of students who are education majors in the Web class compare to the percentage of education majors overall for total students?  Which is higher? 
+  \item	How does the percentage of students who are education \\ majors in the Web class compare to the percentage of education majors overall for total students?  Which is higher? 
 \end{enumerate}
+\end{minipage}
     \end{exercise}
     \begin{solution} % 1B
       
@@ -421,10 +438,12 @@ Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phan
 
 The number of ice cream cones sold during a single day in the middle of August was tracked for surrounding stores.  Consider the following stem and leaf and answer the  questions below. The stem represents `10's' and the leaves represent `1's'.  For instance, the first number represented is 14 (14 ice cream cones were sold at one store). 
 
+% 14,16,22,23,25,28,30,34,34,36,37,37,39,41,43,45,49,54,56
+
 \begin{verbatim}
 <<label=LBL15a, results="asis", echo=FALSE>>=
-  dt15 <- c(14,16,22,23,25,28,30,34,34,36,37,37,39,41,43,45,49,54,56)
-  stem(dt15, scale = 1)
+  DT1 <- c(14,16,22,23,25,28,30,34,34,36,37,37,39,41,43,45,49,54,56)
+  stem(DT1, scale=1)
 @
 \end{verbatim}
 
@@ -1505,1228 +1524,1270 @@ J. S. Carlton et al. conducted a survey of 698 biological scientists from Big 10
 
 \end{solution}
 
-\clearpage
-
-    \begin{exercise}  % 12a         %%%%%%%%%%%%%%%%%
-
-    \begin{center}
-\begin{flushleft}\textbf{\large \hfill Workshop 12A, Submitted by: }\end{flushleft}
-
-\fbox{\parbox{14cm}{
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
- }}
-\end{center}
-
-Live and Let Dye
-
-In an experimental study, 44 rats were exposed to a high dose of red dye, 44 rats were exposed to a low dose of red dye, and it was then observed how many in each group developed cancer. 
-				
-\begin{tabular}{@{} lccc @{}} \hline				
-   & \multicolumn{2}{c}{Cancer} \\ 
-Dose Level of Red Dye &	Yes	 & No &	Total \\ \hline
-High &	14	& 30 &	44 \\ 
-Low &	4 &	40 &	44  \\ \hline
-Total &	18 &	70 & 88 \\ \hline
-\end{tabular}
-				
-\begin{enumerate}
-  \item Estimate the difference in percentage of developing cancer between high dose level of red dye and low dose level of red dye.
-  \item Calculate a standard error for your estimate in (1).
-  \item Calculate a 95\% confidence interval for the difference in percentage of developing cancer between high dose level of red dye and low dose level of red dye.
-\end{enumerate}
-
-\end{exercise} 
-\begin{solution}  % 12a
-
-\end{solution}
-
-\clearpage
-
-    \begin{exercise}  % 12b         %%%%%%%%%%%%%%%%%
-
-    \begin{center}
-\begin{flushleft}\textbf{\large \hfill Workshop 12B, Submitted by: }\end{flushleft}
-
-\fbox{\parbox{14cm}{
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
- }}
-\end{center}
-
-Gone Fishin'
-
-Consider the following data from the Chicago Western Electric Study (Shekelle et al., 1981). In the following table 466 men were classified based on death from coronary heart disease (CHD) and fish consumption.
-				
-\begin{tabular}{@{} lccc @{}} \hline
-& \multicolumn{2}{c}{Death from CHD} \\ 	 		 
-Daily Fish Consumption &	Yes &	No &	Total \\ \hline
-High &	34 &	227 &	261 \\
-Low	& 42 &	163 &	205 \\ \hline
-Total &	76 &	390 &	466 \\ \hline
-\end{tabular}
-			
-\begin{enumerate}
-  \item Estimate the difference in percentage of death from CHD between high daily fish consumption and low daily fish consumption.
-  \item Calculate a standard error for your estimate in (1).
-  \item Calculate a 95\% confidence interval for the difference in percentage of death from CHD between high daily fish consumption and low daily fish consumption.
-\end{enumerate}
-			
-			
-\end{exercise} 
-\begin{solution}  % 12b
-
-\end{solution}
-
-\clearpage
-
-    \begin{exercise}  % 12c         %%%%%%%%%%%%%%%%%
-
-    \begin{center}
-\begin{flushleft}\textbf{\large \hfill Workshop 12C, Submitted by: }\end{flushleft}
-
-\fbox{\parbox{14cm}{
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
- }}
-\end{center}
-
-Making the Cut
-
-The following table shows how many prospective students of a sample of 200 students were admitted to WMU last year, and if the student's GPA was below 2.8 or not.  Out of the sample, 60 applicants were rejected and 140 were accepted. 
-				
-\begin{tabular}{@{} lccc @{}} \hline				
- 	& \multicolumn{2}{c}{Rejected from WMU} \\   		 
-GPA Below 2.8 &	Yes &	No & Total \\ \hline
-Yes	& 45 &	20 &	65 \\
-No &	15 &	120 &	135 \\ \hline
-Total &	60 &	140 &	200 \\ \hline
-\end{tabular}\begin{enumerate}
-  \item Estimate the difference in proportion of being rejected from WMU between having below a 2.8 GPA and not having below a 2.8 GPA.
-  \item Calculate a standard error for your estimate in (a).  
-  \item Calculate a 95\% confidence interval for the difference in proportion of being rejected from WMU between having below a 2.8 GPA and not having below a 2.8 GPA.
-\end{enumerate}
-
-\end{exercise} 
-\begin{solution}  % 12c
-
-\end{solution}
-
-\clearpage
-
-    \begin{exercise}  % 13a         %%%%%%%%%%%%%%%%%
-
-    \begin{center}
-\begin{flushleft}\textbf{\large \hfill Workshop 13A, Submitted by: }\end{flushleft}
-
-\fbox{\parbox{14cm}{
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
- }}
-\end{center}
-
-Live and Let Dye
-
-In an experimental study, 44 rats were exposed to a high dose of red dye, 44 rats were exposed to a low dose of red dye, and it was then observed how many in each group developed cancer. 
-				
-\begin{tabular}{@{} lccc @{}} \hline				
- 	& \multicolumn{2}{c}{Cancer} \\ 			
-Dose Level of Red Dye &	Yes &	No &	Total \\ \hline
-High &	14 &	30 &	44 \\
-Low &	4 &	40 & 44 \\ \hline
-Total &	18 &	70 &	88 \\ \hline
-\end{tabular}
-				
-\begin{enumerate}
-  \item Estimate the risk ratio of developing cancer between high dose level of red dye and low dose level of red dye.
-  \item Calculate a 95\% confidence interval for the risk ratio of developing cancer between high dose level of red dye and low dose level of red dye.
-\end{enumerate}
-
-\end{exercise} 
-\begin{solution}  % 13a
-
-\end{solution}
-
-\clearpage
-
-    \begin{exercise}  % 13b         %%%%%%%%%%%%%%%%%
-
-    \begin{center}
-\begin{flushleft}\textbf{\large \hfill Workshop 13B, Submitted by: }\end{flushleft}
-
-\fbox{\parbox{14cm}{
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
- }}
-\end{center}
-
-Gone Fishin'
-
-Consider the following data from the Chicago Western Electric Study (Shekelle et al., 1981). In the following table 466 men were classified based on death from coronary heart disease (CHD) and fish consumption.
-				
-\begin{tabular}{@{} lccc @{}} \hline				
- 	& \multicolumn{2}{c}{Death from CHD} \\ 				
-Daily Fish Consumption &	Yes &	No &	Total \\ \hline
-High &	34 &	227 &	261 \\
-Low &	42 &	163 &	205 \\ \hline
-Total &	76 &	390 &	466 \\ \hline
-\end{tabular}
-				
-\begin{enumerate}
-  \item Estimate the risk ratio of death from CHD between high daily fish consumption and low daily fish consumption.
-  \item Calculate a 95\% confidence interval for the risk ratio of death from CHD between high daily fish consumption and low daily fish consumption.
-\end{enumerate}
-
-\end{exercise} 
-\begin{solution}  % 13b
-
-\end{solution}
-
-\clearpage
-
-    \begin{exercise}  % 13c         %%%%%%%%%%%%%%%%%
-
-    \begin{center}
-\begin{flushleft}\textbf{\large \hfill Workshop 13C, Submitted by: }\end{flushleft}
-
-\fbox{\parbox{14cm}{
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
- }}
-\end{center}
-
-Making the Cut
-
-The following table shows how many prospective students of a sample of 200 students were admitted to WMU last year, and if the student's GPA was below 2.8 or not. Out of the sample, 60 applicants were rejected and 140 were accepted. 
-			
-\begin{tabular}{@{} lccc @{}} \hline				
- 	& \multicolumn{2}{c}{Rejected from WMU} \\ 		
-GPA Below 2.8 &	Yes &	No &	Total  \\ \hline
-Yes &	45 &	20 &	65 \\
-No &	15 &	120 &	135 \\ \hline
-Total &	60 &	140 &	200 \\ \hline
-\end{tabular}
-				
-\begin{enumerate}
-  \item Estimate the risk ratio of being rejected from WMU between having below a 2.8 GPA and not having below a 2.8 GPA.
-  \item Calculate a 95\% confidence interval for the risk ratio of being rejected from WMU between having below a 2.8 GPA and not having below a 2.8 GPA.
-\end{enumerate}
-
-\end{exercise} 
-\begin{solution}  % 13c
-
-\end{solution}
-
-\clearpage
-
-    \begin{exercise}  % 14A         %%%%%%%%%%%%%%%%%
-
-    \begin{center}
-\begin{flushleft}\textbf{\large \hfill Workshop 14A, Submitted by: }\end{flushleft}
-
-\fbox{\parbox{14cm}{
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
- }}
-\end{center}
-
-Live and Let Dye
-
-In an experimental study, 44 rats were exposed to high dose of red dye and 44 rats were exposed to low dose of red dye and then it was observed how many in each group developed cancer.
-
-\begin{tabular}{@{} lccc @{}} \hline
- 	& \multicolumn{2}{c}{Cancer} \\
-Dose Level of Red Dye &	Yes &	No &	Total \\ \hline
-High &	14 &	30 &	44 \\
-Low	& 4	& 40 &	44 \\ \hline
-Total &	18 &	70 &	88 \\ \hline
-\end{tabular}
-
-\begin{enumerate}
-  \item Estimate the odds ratio of developing cancer between high dose level of red dye and low dose level of red dye.
-  \item Calculate a 95\% confidence interval for the odds ratio of developing cancer between high dose level of red dye and low dose level of red dye.
-\end{enumerate}
-
-\end{exercise}
-\begin{solution}  % 14a
-
-\end{solution}
-
-\clearpage
-
-    \begin{exercise}  % 14B         %%%%%%%%%%%%%%%%%
-
-    \begin{center}
-\begin{flushleft}\textbf{\large \hfill Workshop 14B, Submitted by: }\end{flushleft}
-
-\fbox{\parbox{14cm}{
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
- }}
-\end{center}
-
-Gone Fishin'
-
-Consider the following data from the Chicago Western Electric Study (Shekelle et al., 1981). In the following table 466 men were classified based on death from coronary heart disease (CHD) and fish consumption.
-
-\begin{tabular}{@{} lccc @{}} \hline
- 	& \multicolumn{2}{c}{Death from CHD} \\
-Daily Fish Consumption &	Yes &	No & Total \\ \hline
-Low &	42 &	163 &	205 \\
-High &	34 &	227 &	261 \\ \hline
-Total &	76 &	390 &	466 \\ \hline
-\end{tabular}
-
-\begin{enumerate}
-  \item Estimate the odds ratio of death from CHD between low daily fish consumption and high daily fish consumption.
-  \item Calculate a 95\% confidence interval for the odds ratio of death from CHD between low daily fish consumption and high daily fish consumption.
-\end{enumerate}
-
-\end{exercise}
-\begin{solution}  % 14b
-
-\end{solution}
-
-\clearpage
-
-    \begin{exercise}  % 14C         %%%%%%%%%%%%%%%%%
-    
-    \begin{center}
-\begin{flushleft}\textbf{\large \hfill Workshop 14C, Submitted by: }\end{flushleft}
-
-\fbox{\parbox{14cm}{
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
- }}
-\end{center}
-
-Making the Cut
-
-The following table shows how many prospective students of a sample of 200 students were admitted to WMU last year, and if the student's GPA was below 2.8 or not. Out of the sample, 60 applicants were rejected and 140 were accepted.
-
-\begin{tabular}{@{} lccc @{}} \hline
- 	& \multicolumn{2}{c}{Rejected from WMU} \\
-GPA Below 2.8 & 	Yes &	No &	Total \\ \hline
-Yes &	45 &	20 &	65 \\
-No &	15 &	120 &	135 \\ \hline
-Total &	60 &	140 &	200 \\ \hline
-\end{tabular}
-
-\begin{enumerate}
-  \item Estimate the odds ratio of being rejected from WMU between having below a 2.8 GPA and not having below a 2.8 GPA.
-  \item Calculate a 95\% confidence interval for the odds ratio of being rejected from WMU between having below a 2.8 GPA and not having below a 2.8 GPA.
-\end{enumerate}
-\end{exercise}
-\begin{solution}  % 14c
-
-\end{solution}
-
-\clearpage
-
-    \begin{exercise}  % 15a         %%%%%%%%%%%%%%%%%
-    
-    \begin{center}
-\begin{flushleft}\textbf{\large \hfill Workshop 15A, Submitted by: }\end{flushleft}
-
-\fbox{\parbox{14cm}{
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
- }}
-\end{center}
-
-The following is an excerpt from a New York Times article by Nicholas Bakalar (Feb. 10, 2009).          
-
-Lengthy television viewing in adolescence may raise the risk for depression in young adulthood, according to a new report.
-<<<<<<< HEAD
-=======
-
-The study, in the February issue of The Archives of General Psychiatry, published by the American Medical Association, found a rising risk of depressive symptoms with increasing hours spent watching television.
-
-Researchers used data from a larger analysis of 4,142 adolescents who were not depressed at the start of the study. After seven years of follow-up, more than 7 percent had symptoms of depression.
-
-But while about 6 percent of those who watched less than three hours a day were depressed, more than 17 percent of those who watched more than nine hours a day had depressive symptoms.
-
-\begin{enumerate}
-  \item The word `raise' in the title implies cause-and-effect, not just association.  When comparing lengthy viewers with those who watch less, what possible    confounders can you think of?
-  \item Using one confounder from your answer(s) in (1), draw a pathway graph depicting the possible relationship between confounder, possible cause and outcome.
-\end{enumerate}
-\end{exercise}
-\begin{solution}  % 15a
-
-\end{solution}
-
-\clearpage
-
-    \begin{exercise}  % 15b         %%%%%%%%%%%%%%%%%
-    
-    \begin{center}
-\begin{flushleft}\textbf{\large \hfill Workshop 15B, Submitted by: }\end{flushleft}
-
-\fbox{\parbox{14cm}{
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
- }}
-\end{center}
-
-The following is an excerpt from a Reuters article by Amy Norton (July 2011).          
-\begin{quote}
-
-Are kids safer with grandparents driving?
-
-When children are involved in a car accident, they are less likely to be injured if grandma or grandpa are driving rather than mom or dad, a new study suggests.
-
-The study, published in the journal Pediatrics, looked at five years' worth of data on U.S. car crashes involving children younger than 16.
-
-It found that when grandparents were at the wheel, 0.7 percent of children were injured in the crash. That compared with 1 percent when parents were driving.
-
-When the researchers considered other factors -- such as the circumstances and severity of the crash -- kids riding with grandparents were half as likely to be injured, versus those riding with their parents.
-
-\end{quote}
-
-\begin{enumerate}
-  \item The title implies cause-and-effect, not just association.  When comparing injury rates between parents driving and grandparents driving, what possible    confounders can you think of?
-  \item Using one confounder from your answer(s) in (1), draw a pathway graph depicting the possible relationship between confounder, possible cause and outcome.
-\end{enumerate}
-\end{exercise}
-\begin{solution}  % 15b
-
-\end{solution}
-
-\clearpage
-
-    \begin{exercise}  % 15c         %%%%%%%%%%%%%%%%%
-    
-    \begin{center}
-\begin{flushleft}\textbf{\large \hfill Workshop 15C, Submitted by: }\end{flushleft}
-
-\fbox{\parbox{14cm}{
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
- }}
-\end{center}
-
-Frequency of playing violent video games has at times been linked with and seen as a possible cause for those committing violent acts.  Much debate still looms over whether playing violent video games can lead to a desensitization of violence and a lack of compassion for others.  
-One article that explores these ideas is titled, The Impact of Degree of Exposure to Violent Video Games, Family Background, and Other Factors on Youth Violence, by the authors Whitney Decamp and Christopher Ferguson.  The authors respond to the concern that violence in video games might contribute to youth violence.  There is still no consensus on whether violent video games may be contributing to violence in youth.  The authors sought to study this issue in an ethnically diverse sample of youth in eighth (n=5133) and eleventh grade (n=3886).  Questionnaire surveys were given to the youth to assess a link.  Independent or predictor variables included the playing of violent video games, and an inclination towards violent video games.  Dependent variables included questions pertaining to hitting with the intention to hurt another and taking part in a fight. 
-Mixed results were reported.  The authors summarized that violent video game play was not significant in 5 of the models used.  There was, however, a positive correlation between games and violent behavior for the models without controls.   When the authors controlled for the propensity and context, however, this suggested the association to be more spurious (not being what it claims to be).  What other factors may be impacting this outcome?  
-
-\begin{enumerate}
-  \item What possible confounders can you think of for a study of this nature?
-  \item Using one confounder from your answer(s) in (1), draw a pathway graph depicting the possible relationships between confounder, possible cause and outcome.
-\end{enumerate}
-\end{exercise}
-\begin{solution}  % 15c
-
-\end{solution}
-
-\clearpage
-
-    \begin{exercise}  % 16a         %%%%%%%%%%%%%%%%%
-    
-    \begin{center}
-\begin{flushleft}\textbf{\large \hfill Workshop 16A, Submitted by: }\end{flushleft}
-
-\fbox{\parbox{14cm}{
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
- }}
-\end{center}
-
-Jet design researchers have come up with two new designs for the wings of a rocket plane. They think both designs are an improvement over the old design, but want to know which of their new designs performs better at high altitudes. Specifically, they want to know which new design results in more maneuverability at or above 100,000 feet above sea level. They decide to design a randomized trial to study this.
-
-
-\begin{enumerate}
-  \item The researchers include a control group in their design plan. Describe a possible control group. Why did they add it to the study?
-  \item Several pilots and planes are lined up for this study. How could the researchers randomize their experiment to avoid confounders?
-  \item One way to measure maneuverability is by surveying pilots about how they thought the jets handled. Could a design that asks pilots this question be blinded? If so, how?
-  \item Could the design from (2) be double-blinded? If so, how?
-  \item What makes single and double blinding important?
-\end{enumerate}
-\end{exercise}
-\begin{solution}  % 16a
-
-\end{solution}
-
-\clearpage
-
-    \begin{exercise}  % 16b         %%%%%%%%%%%%%%%%%
-    
-    \begin{center}
-\begin{flushleft}\textbf{\large \hfill Workshop 16B, Submitted by: }\end{flushleft}
-
-\fbox{\parbox{14cm}{
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
- }}
-\end{center}
-
-Some students at WMU were curious about whether partying influences GPA. To find out, they surveyed 100 of their WMU peers, asking each peer only two questions: 1) How many hours a week do you party? 2) What is your GPA? The students then compiled their data and performed an appropriate statistical analysis. They concluded that partying does influence GPA, i.e., the more you party, the lower your GPA.
-
-\begin{enumerate}
-  \item What kind of study design is this?
-  \item What are advantages of this study design?
-  \item What are disadvantages of this study design?
-  \item Did the students overlook anything that might have biased or confounded their results?
-  \item Suppose the students wanted to correct for something they overlooked. How could they improve their study design?
-\end{enumerate}
-
-\end{exercise}
-\begin{solution}  % 16b
-
-\end{solution}
-
-\clearpage
-
-    \begin{exercise}  % 16c         %%%%%%%%%%%%%%%%%
-    
-    \begin{center}
-\begin{flushleft}\textbf{\large \hfill Workshop 16C, Submitted by: }\end{flushleft}
-
-\fbox{\parbox{14cm}{
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
- }}
-\end{center}
-
-Yogurt is known to contain `friendly bacteria' known generally as probiotics which can benefit the gastrointestinal system.  Many strains of bacteria can be found in yogurt, with some of the most common being, \textit{Lactobacillus bulgaricus}, \textit{Streptococcus thermophilus}, and \textit{Lactobacillus acidophilus}.  Further research has been done suggesting probiotics boost the immune system and may even help in weight management and reduction of disease such as cancer.  A group of researchers decided to investigate this using a questionnaire assessing yogurt consumption (yes/no) and asking questions pertaining to the health of the individuals.  
-
-\begin{enumerate}
-  \item First of all, what kind of study design is this?
-  \item What are advantages of this type of study design?
-  \item What are disadvantages of this study design?
-  \item	The researchers then separated the results of the surveys for those who said `yes' they consume yogurt to those who said `no' they do not consume yogurt.  They compared the two groups using these as a treatment and control group.  What is wrong with this assumption?
-  \item	Suppose the researchers found that those consuming yogurt had better health and concluded that \textit{Lactobacillus bulgaricus} caused a reduction of weight, improved GI and Immune systems.  What are two major problems in this?
-  \item	What may be a bias or lead to confounding in this study?
-  \item	How could the researchers improve their study design in order to make a conclusion about the effectiveness of \textit{Lactobacillus bulgaricus} and immune system function?
-\end{enumerate}
-
-\end{exercise}
-\begin{solution}  % 16c
-
-\end{solution}
-
-\clearpage
-
-    \begin{exercise}  % 17A         %%%%%%%%%%%%%%%%%
-    
-    \begin{center}
-\begin{flushleft}\textbf{\large \hfill Workshop 17A, Submitted by: }\end{flushleft}
-
-\fbox{\parbox{14cm}{
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
- }}
-\end{center}
-
-Historically throughout the United States, families of four spend about \$239 a week on groceries and food with a standard deviation of 50. Assume a random sample of 250 households is taken in the United States.
-
-\begin{enumerate}
-  \item What is the expected value of the sample mean.
-  \item	What is the Standard error of this estimate?
-  \item	What is the probability that the mean weekly household spending is more than \$242?
-  \item	What is the probability that the mean weekly household spending less than \$235?
-  \item	What is the probability that the mean weekly household spending is between \$235 and \$242? 
-  \item	If an even larger sample of 2500 households was taken and the SD remains the same, what is the new Standard Error of the estimate? Why did this occur?
-\end{enumerate}
-
-\end{exercise}
-\begin{solution}  % 17a
-
-\end{solution}
-
-\clearpage
-
-    \begin{exercise}  % 17B         %%%%%%%%%%%%%%%%%
-    
-    \begin{center}
-\begin{flushleft}\textbf{\large \hfill Workshop 17B, Submitted by: }\end{flushleft}
-
-\fbox{\parbox{14cm}{
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
- }}
-\end{center}
-
-\begin{minipage}[ht]{7cm}
-
-Too Fast, Not Enough Furious
-
-The above chart shows the average cost of annual auto insurance premiums in 2008 for drivers with no accidents, one accident, two accidents, and so on. According to this chart, the average annual auto insurance premium for drivers with no accidents was \$1,387 in 2008.
-
-\end{minipage}
-\begin{minipage}[ht]{7cm}
-
-%\begin{figure}[ht]
-\centering
-  \includegraphics[width=4cm]{chapters/Workshops/ext_figure/UsaToday.png}
-%\end{figure}
-\end{minipage}
-
-\begin{enumerate}
-  \item What is the estimated mean annual auto insurance premium for drivers with no accidents?
-  \item	What is the standard error of the estimate assuming this is based on a random sample of 400 drivers? Assume that the standard deviation of auto insurance premiums for all current drivers with no accidents is \$180.
-  \item Assuming the estimate in part a. is the mean for all drivers with no accidents, what is the probability that the mean annual auto insurance premium for drivers with no accidents is greater than \$1,395?
-  \item If a larger random sample of 1600 such drivers was taken and the SD remains the same, what is the new standard error of the estimate?
-  \item Assuming the estimate in part a. is the mean for all drivers with no accidents, what is the probability that the mean annual auto insurance premium for drivers with no accidents is greater than \$1,395 using the new standard error?
-\end{enumerate}
-
-\end{exercise}
-\begin{solution}  % 17b
-
-\end{solution}
-
-\clearpage
-
-    \begin{exercise}  % 17C         %%%%%%%%%%%%%%%%%
-    
-    \begin{center}
-\begin{flushleft}\textbf{\large \hfill Workshop 17C, Submitted by: }\end{flushleft}
-
-\fbox{\parbox{14cm}{
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
- }}
-\end{center}
-
-Historically throughout the United States college students watch about 35 hours a month of television with a standard deviation of 5 hours. Assume a random sample of 25 college students is taken in West Michigan.
-
-\begin{enumerate}
-  \item What is the expected value of the sample mean.
-  \item What is the Standard error of this estimate?
-  \item What is the probability that the mean monthly hours spent watching tv for the college students is more than 36.5?
-  \item What is the probability that the mean monthly hours spent watching tv is less than 34?
-  \item What is the probability that the mean monthly hours watching tv is between 34.5 and 36? 
-  \item If an even larger sample of 250 students was taken and the SD remains the same, what is the new Standard Error of the estimate? Why did this occur?
-\end{enumerate}
-\end{exercise}
-\begin{solution}  % 17c
-
-\end{solution}
->>>>>>> f92a3e0e6f8050737817729f8e5730b4f6dc1e14
-
-The study, in the February issue of The Archives of General Psychiatry, published by the American Medical Association, found a rising risk of depressive symptoms with increasing hours spent watching television.
-
-Researchers used data from a larger analysis of 4,142 adolescents who were not depressed at the start of the study. After seven years of follow-up, more than 7 percent had symptoms of depression.
-
-But while about 6 percent of those who watched less than three hours a day were depressed, more than 17 percent of those who watched more than nine hours a day had depressive symptoms.
-
-\begin{enumerate}
-  \item The word `raise' in the title implies cause-and-effect, not just association.  When comparing lengthy viewers with those who watch less, what possible    confounders can you think of?
-  \item Using one confounder from your answer(s) in (1), draw a pathway graph depicting the possible relationship between confounder, possible cause and outcome.
-\end{enumerate}
-\end{exercise}
-\begin{solution}  % 15a
-
-\end{solution}
-
-\clearpage
-
-    \begin{exercise}  % 15b         %%%%%%%%%%%%%%%%%
-    
-    \begin{center}
-\begin{flushleft}\textbf{\large \hfill Workshop 15B, Submitted by: }\end{flushleft}
-
-\fbox{\parbox{14cm}{
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
- }}
-\end{center}
-
-The following is an excerpt from a Reuters article by Amy Norton (July 2011).          
-\begin{quote}
-
-Are kids safer with grandparents driving?
-
-When children are involved in a car accident, they are less likely to be injured if grandma or grandpa are driving rather than mom or dad, a new study suggests.
-
-The study, published in the journal Pediatrics, looked at five years' worth of data on U.S. car crashes involving children younger than 16.
-
-It found that when grandparents were at the wheel, 0.7 percent of children were injured in the crash. That compared with 1 percent when parents were driving.
-
-When the researchers considered other factors -- such as the circumstances and severity of the crash -- kids riding with grandparents were half as likely to be injured, versus those riding with their parents.
-
-\end{quote}
-
-\begin{enumerate}
-  \item The title implies cause-and-effect, not just association.  When comparing injury rates between parents driving and grandparents driving, what possible    confounders can you think of?
-  \item Using one confounder from your answer(s) in (1), draw a pathway graph depicting the possible relationship between confounder, possible cause and outcome.
-\end{enumerate}
-\end{exercise}
-\begin{solution}  % 15b
-
-\end{solution}
-
-\clearpage
-
-    \begin{exercise}  % 15c         %%%%%%%%%%%%%%%%%
-    
-    \begin{center}
-\begin{flushleft}\textbf{\large \hfill Workshop 15C, Submitted by: }\end{flushleft}
-
-\fbox{\parbox{14cm}{
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
- }}
-\end{center}
-
-Frequency of playing violent video games has at times been linked with and seen as a possible cause for those committing violent acts.  Much debate still looms over whether playing violent video games can lead to a desensitization of violence and a lack of compassion for others.  
-One article that explores these ideas is titled, The Impact of Degree of Exposure to Violent Video Games, Family Background, and Other Factors on Youth Violence, by the authors Whitney Decamp and Christopher Ferguson.  The authors respond to the concern that violence in video games might contribute to youth violence.  There is still no consensus on whether violent video games may be contributing to violence in youth.  The authors sought to study this issue in an ethnically diverse sample of youth in eighth (n=5133) and eleventh grade (n=3886).  Questionnaire surveys were given to the youth to assess a link.  Independent or predictor variables included the playing of violent video games, and an inclination towards violent video games.  Dependent variables included questions pertaining to hitting with the intention to hurt another and taking part in a fight. 
-Mixed results were reported.  The authors summarized that violent video game play was not significant in 5 of the models used.  There was, however, a positive correlation between games and violent behavior for the models without controls.   When the authors controlled for the propensity and context, however, this suggested the association to be more spurious (not being what it claims to be).  What other factors may be impacting this outcome?  
-
-\begin{enumerate}
-  \item What possible confounders can you think of for a study of this nature?
-  \item Using one confounder from your answer(s) in (1), draw a pathway graph depicting the possible relationships between confounder, possible cause and outcome.
-\end{enumerate}
-\end{exercise}
-\begin{solution}  % 15c
-
-\end{solution}
-
-\clearpage
-
-    \begin{exercise}  % 16a         %%%%%%%%%%%%%%%%%
-    
-    \begin{center}
-\begin{flushleft}\textbf{\large \hfill Workshop 16A, Submitted by: }\end{flushleft}
-
-\fbox{\parbox{14cm}{
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
- }}
-\end{center}
-
-Jet design researchers have come up with two new designs for the wings of a rocket plane. They think both designs are an improvement over the old design, but want to know which of their new designs performs better at high altitudes. Specifically, they want to know which new design results in more maneuverability at or above 100,000 feet above sea level. They decide to design a randomized trial to study this.
-
-
-\begin{enumerate}
-  \item The researchers include a control group in their design plan. Describe a possible control group. Why did they add it to the study?
-  \item Several pilots and planes are lined up for this study. How could the researchers randomize their experiment to avoid confounders?
-  \item One way to measure maneuverability is by surveying pilots about how they thought the jets handled. Could a design that asks pilots this question be blinded? If so, how?
-  \item Could the design from (2) be double-blinded? If so, how?
-  \item What makes single and double blinding important?
-\end{enumerate}
-\end{exercise}
-\begin{solution}  % 16a
-
-\end{solution}
-
-\clearpage
-
-    \begin{exercise}  % 16b         %%%%%%%%%%%%%%%%%
-    
-    \begin{center}
-\begin{flushleft}\textbf{\large \hfill Workshop 16B, Submitted by: }\end{flushleft}
-
-\fbox{\parbox{14cm}{
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
- }}
-\end{center}
-
-Some students at WMU were curious about whether partying influences GPA. To find out, they surveyed 100 of their WMU peers, asking each peer only two questions: 1) How many hours a week do you party? 2) What is your GPA? The students then compiled their data and performed an appropriate statistical analysis. They concluded that partying does influence GPA, i.e., the more you party, the lower your GPA.
-
-\begin{enumerate}
-  \item What kind of study design is this?
-  \item What are advantages of this study design?
-  \item What are disadvantages of this study design?
-  \item Did the students overlook anything that might have biased or confounded their results?
-  \item Suppose the students wanted to correct for something they overlooked. How could they improve their study design?
-\end{enumerate}
-
-\end{exercise}
-\begin{solution}  % 16b
-
-\end{solution}
-
-\clearpage
-
-    \begin{exercise}  % 16c         %%%%%%%%%%%%%%%%%
-    
-    \begin{center}
-\begin{flushleft}\textbf{\large \hfill Workshop 16C, Submitted by: }\end{flushleft}
-
-\fbox{\parbox{14cm}{
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
- }}
-\end{center}
-
-Yogurt is known to contain `friendly bacteria' known generally as probiotics which can benefit the gastrointestinal system.  Many strains of bacteria can be found in yogurt, with some of the most common being, \textit{Lactobacillus bulgaricus}, \textit{Streptococcus thermophilus}, and \textit{Lactobacillus acidophilus}.  Further research has been done suggesting probiotics boost the immune system and may even help in weight management and reduction of disease such as cancer.  A group of researchers decided to investigate this using a questionnaire assessing yogurt consumption (yes/no) and asking questions pertaining to the health of the individuals.  
-
-\begin{enumerate}
-  \item First of all, what kind of study design is this?
-  \item What are advantages of this type of study design?
-  \item What are disadvantages of this study design?
-  \item	The researchers then separated the results of the surveys for those who said `yes' they consume yogurt to those who said `no' they do not consume yogurt.  They compared the two groups using these as a treatment and control group.  What is wrong with this assumption?
-  \item	Suppose the researchers found that those consuming yogurt had better health and concluded that \textit{Lactobacillus bulgaricus} caused a reduction of weight, improved GI and Immune systems.  What are two major problems in this?
-  \item	What may be a bias or lead to confounding in this study?
-  \item	How could the researchers improve their study design in order to make a conclusion about the effectiveness of \textit{Lactobacillus bulgaricus} and immune system function?
-\end{enumerate}
-
-\end{exercise}
-\begin{solution}  % 16c
-
-\end{solution}
-
-\clearpage
-
-    \begin{exercise}  % 17A         %%%%%%%%%%%%%%%%%
-    
-    \begin{center}
-\begin{flushleft}\textbf{\large \hfill Workshop 17A, Submitted by: }\end{flushleft}
-
-\fbox{\parbox{14cm}{
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
- }}
-\end{center}
-
-Historically throughout the United States, families of four spend about \$239 a week on groceries and food with a standard deviation of 50. Assume a random sample of 250 households is taken in the United States.
-
-\begin{enumerate}
-  \item What is the expected value of the sample mean.
-  \item	What is the Standard error of this estimate?
-  \item	What is the probability that the mean weekly household spending is more than \$242?
-  \item	What is the probability that the mean weekly household spending less than \$235?
-  \item	What is the probability that the mean weekly household spending is between \$235 and \$242? 
-  \item	If an even larger sample of 2500 households was taken and the SD remains the same, what is the new Standard Error of the estimate? Why did this occur?
-\end{enumerate}
-
-\end{exercise}
-\begin{solution}  % 17a
-
-\end{solution}
-
-\clearpage
-
-    \begin{exercise}  % 17B         %%%%%%%%%%%%%%%%%
-    
-    \begin{center}
-\begin{flushleft}\textbf{\large \hfill Workshop 17B, Submitted by: }\end{flushleft}
-
-\fbox{\parbox{14cm}{
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
- }}
-\end{center}
-
-\begin{minipage}[ht]{7cm}
-
-Too Fast, Not Enough Furious
-
-The above chart shows the average cost of annual auto insurance premiums in 2008 for drivers with no accidents, one accident, two accidents, and so on. According to this chart, the average annual auto insurance premium for drivers with no accidents was \$1,387 in 2008.
-
-\end{minipage}
-\begin{minipage}[ht]{7cm}
-
-%\begin{figure}[ht]
-\centering
-  \includegraphics[width=5cm]{chapters/Workshops/ext_figure/UsaToday.png}
-%\end{figure}
-\end{minipage}
-
-\begin{enumerate}
-  \item What is the estimated mean annual auto insurance premium for drivers with no accidents?
-  \item	What is the standard error of the estimate assuming this is based on a random sample of 400 drivers? Assume that the standard deviation of auto insurance premiums for all current drivers with no accidents is \$180.
-  \item Assuming the estimate in part a. is the mean for all drivers with no accidents, what is the probability that the mean annual auto insurance premium for drivers with no accidents is greater than \$1,395?
-  \item If a larger random sample of 1600 such drivers was taken and the SD remains the same, what is the new standard error of the estimate?
-  \item Assuming the estimate in part a. is the mean for all drivers with no accidents, what is the probability that the mean annual auto insurance premium for drivers with no accidents is greater than \$1,395 using the new standard error?
-\end{enumerate}
-
-\end{exercise}
-\begin{solution}  % 17b
-
-\end{solution}
-
-\clearpage
-
-    \begin{exercise}  % 17C         %%%%%%%%%%%%%%%%%
-    
-    \begin{center}
-\begin{flushleft}\textbf{\large \hfill Workshop 17C, Submitted by: }\end{flushleft}
-
-\fbox{\parbox{14cm}{
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
- }}
-\end{center}
-
-Historically throughout the United States college students watch about 35 hours a month of television with a standard deviation of 5 hours. Assume a random sample of 25 college students is taken in West Michigan.
-
-\begin{enumerate}
-  \item What is the expected value of the sample mean.
-  \item What is the Standard error of this estimate?
-  \item What is the probability that the mean monthly hours spent watching tv for the college students is more than 36.5?
-  \item What is the probability that the mean monthly hours spent watching tv is less than 34?
-  \item What is the probability that the mean monthly hours watching tv is between 34.5 and 36? 
-  \item If an even larger sample of 250 students was taken and the SD remains the same, what is the new Standard Error of the estimate? Why did this occur?
-\end{enumerate}
-\end{exercise}
-\begin{solution}  % 17c
-
-\end{solution}
-
-\clearpage
-
-    \begin{exercise}  % 18A         %%%%%%%%%%%%%%%%%
-    
-    \begin{center}
-\begin{flushleft}\textbf{\large \hfill Workshop 18A, Submitted by: }\end{flushleft}
-
-\fbox{\parbox{14cm}{
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
- }}
-\end{center}
-
-Historically throughout the United States families of four spend on the average of \$239 a week on groceries and food with a standard deviation of \$50. Families of 3, however, spend on average \$220 with a standard deviation of \$45 Assume these statistics are based on a random sample of 250 households with four members, and on a random sample of 285 households with three members.
-
-\begin{enumerate}
-  \item Estimate the difference in the average spending of a family of four and a family of three. (Use the family of four first in your equation).
-  \item What is the Standard error of this estimate?
-  \item What is the Margin of Error for your estimate?
-  \item What is the 95\% Confidence Interval for your estimate? Is it significant?
-\end{enumerate}
-
-\end{exercise}
-\begin{solution}  % 18A
-
-\end{solution}
-
-\clearpage
-
-    \begin{exercise}  % 18B         %%%%%%%%%%%%%%%%%
-    
-    \begin{center}
-\begin{flushleft}\textbf{\large \hfill Workshop 18B, Submitted by: }\end{flushleft}
-
-\fbox{\parbox{14cm}{
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
- }}
-\end{center}
-
-\begin{minipage}[ht]{7cm}
-
-The above chart shows the average cost of annual auto insurance premiums in 2008 for drivers with no accidents, one accident, two accidents, and so on. According to this chart, the 2008 average annual auto insurance premium for drivers with no accidents was \$1,387, and the premium for drivers with one accident is \$1,689. Assume that this dataset is partly based on a random sample of 60 drivers with no accidents, and a random sample of 56 drivers with one accident. Assume also that the standard deviations of the samples with no accidents and one accident are \$150 and \$178, respectively. Finally, assume the samples are independent.
-
-\end{minipage}
-\begin{minipage}[ht]{7cm}
-
-%\begin{figure}[ht]
-\centering
-  \includegraphics[width=5cm]{chapters/Workshops/ext_figure/UsaToday.png}
-%\end{figure}
-\end{minipage}
-
-\begin{enumerate}
-  \item What is the difference in means between average premiums for drivers with no accidents and drivers with one accident?
-  \item What is the standard error of the above estimate?
-  \item	What is the Z critical value for a 95\% confidence interval?
-  \item	The upper bound of this confidence interval is how far from the central point estimate?
-  \item	What are the lower and upper bounds of this confidence interval?
-  \item	What can be concluded about the significance of the difference?
-\end{enumerate}
-
-\end{exercise}
-\begin{solution}  % 18b
-
-\end{solution}
-
-\clearpage
-
-    \begin{exercise}  % 18C         %%%%%%%%%%%%%%%%%
-    
-    \begin{center}
-\begin{flushleft}\textbf{\large \hfill Workshop 18C, Submitted by: }\end{flushleft}
-
-\fbox{\parbox{14cm}{
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
- }}
-\end{center}
-
-The summary statistics for Verbal SAT are provided below:
-
-\begin{tabular}{@{} l rrr @{}} \hline
-Graduate &	n &	Mean &	SD \\ \hline
-No &	13 &	466.9 &	89.94 \\
-Yes &	28 &	480 &	67.33 \\ \hline
-\end{tabular}
-
-\begin{enumerate}
-  \item Estimate the difference in average Verbal SAT scores between the two groups.
-  \item	Calculate a standard error for your estimate in (1).
-  \item	Calculate a 95\% confidence interval for the difference between the two means. Does your interval exclude 0?  Is your difference statistically significant?
-\end{enumerate}
-
-\end{exercise}
-\begin{solution}  % 18c
-
-\end{solution}
-
-
-
+\end{exercises}
+
+% \clearpage
+% 
+%     \begin{exercise}  % 12a         %%%%%%%%%%%%%%%%%
+% 
+%     \begin{center}
+% \begin{flushleft}\textbf{\large \hfill Workshop 12A, Submitted by: }\end{flushleft}
+% 
+% \fbox{\parbox{14cm}{
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+%  }}
+% \end{center}
+% 
+% Live and Let Dye
+% 
+% In an experimental study, 44 rats were exposed to a high dose of red dye, 44 rats were exposed to a low dose of red dye, and it was then observed how many in each group developed cancer. 
+% 				
+% \begin{tabular}{@{} lccc @{}} \hline				
+%    & \multicolumn{2}{c}{Cancer} \\ 
+% Dose Level of Red Dye &	Yes	 & No &	Total \\ \hline
+% High &	14	& 30 &	44 \\ 
+% Low &	4 &	40 &	44  \\ \hline
+% Total &	18 &	70 & 88 \\ \hline
+% \end{tabular}
+% 				
+% \begin{enumerate}
+%   \item Estimate the difference in percentage of developing cancer between high dose level of red dye and low dose level of red dye.
+%   \item Calculate a standard error for your estimate in (1).
+%   \item Calculate a 95\% confidence interval for the difference in percentage of developing cancer between high dose level of red dye and low dose level of red dye.
+% \end{enumerate}
+% 
+% \end{exercise} 
+% \begin{solution}  % 12a
+% 
+% \end{solution}
+% 
+% \clearpage
+% 
+%     \begin{exercise}  % 12b         %%%%%%%%%%%%%%%%%
+% 
+%     \begin{center}
+% \begin{flushleft}\textbf{\large \hfill Workshop 12B, Submitted by: }\end{flushleft}
+% 
+% \fbox{\parbox{14cm}{
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+%  }}
+% \end{center}
+% 
+% Gone Fishin'
+% 
+% Consider the following data from the Chicago Western Electric Study (Shekelle et al., 1981). In the following table 466 men were classified based on death from coronary heart disease (CHD) and fish consumption.
+% 				
+% \begin{tabular}{@{} lccc @{}} \hline
+% & \multicolumn{2}{c}{Death from CHD} \\ 	 		 
+% Daily Fish Consumption &	Yes &	No &	Total \\ \hline
+% High &	34 &	227 &	261 \\
+% Low	& 42 &	163 &	205 \\ \hline
+% Total &	76 &	390 &	466 \\ \hline
+% \end{tabular}
+% 			
+% \begin{enumerate}
+%   \item Estimate the difference in percentage of death from CHD between high daily fish consumption and low daily fish consumption.
+%   \item Calculate a standard error for your estimate in (1).
+%   \item Calculate a 95\% confidence interval for the difference in percentage of death from CHD between high daily fish consumption and low daily fish consumption.
+% \end{enumerate}
+% 			
+% 			
+% \end{exercise} 
+% \begin{solution}  % 12b
+% 
+% \end{solution}
+% 
+% \clearpage
+% 
+%     \begin{exercise}  % 12c         %%%%%%%%%%%%%%%%%
+% 
+%     \begin{center}
+% \begin{flushleft}\textbf{\large \hfill Workshop 12C, Submitted by: }\end{flushleft}
+% 
+% \fbox{\parbox{14cm}{
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+%  }}
+% \end{center}
+% 
+% Making the Cut
+% 
+% The following table shows how many prospective students of a sample of 200 students were admitted to WMU last year, and if the student's GPA was below 2.8 or not.  Out of the sample, 60 applicants were rejected and 140 were accepted. 
+% 				
+% \begin{tabular}{@{} lccc @{}} \hline				
+%  	& \multicolumn{2}{c}{Rejected from WMU} \\   		 
+% GPA Below 2.8 &	Yes &	No & Total \\ \hline
+% Yes	& 45 &	20 &	65 \\
+% No &	15 &	120 &	135 \\ \hline
+% Total &	60 &	140 &	200 \\ \hline
+% \end{tabular}\begin{enumerate}
+%   \item Estimate the difference in proportion of being rejected from WMU between having below a 2.8 GPA and not having below a 2.8 GPA.
+%   \item Calculate a standard error for your estimate in (a).  
+%   \item Calculate a 95\% confidence interval for the difference in proportion of being rejected from WMU between having below a 2.8 GPA and not having below a 2.8 GPA.
+% \end{enumerate}
+% 
+% \end{exercise} 
+% \begin{solution}  % 12c
+% 
+% \end{solution}
+% 
+% \clearpage
+% 
+%     \begin{exercise}  % 13a         %%%%%%%%%%%%%%%%%
+% 
+%     \begin{center}
+% \begin{flushleft}\textbf{\large \hfill Workshop 13A, Submitted by: }\end{flushleft}
+% 
+% \fbox{\parbox{14cm}{
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+%  }}
+% \end{center}
+% 
+% Live and Let Dye
+% 
+% In an experimental study, 44 rats were exposed to a high dose of red dye, 44 rats were exposed to a low dose of red dye, and it was then observed how many in each group developed cancer. 
+% 				
+% \begin{tabular}{@{} lccc @{}} \hline				
+%  	& \multicolumn{2}{c}{Cancer} \\ 			
+% Dose Level of Red Dye &	Yes &	No &	Total \\ \hline
+% High &	14 &	30 &	44 \\
+% Low &	4 &	40 & 44 \\ \hline
+% Total &	18 &	70 &	88 \\ \hline
+% \end{tabular}
+% 				
+% \begin{enumerate}
+%   \item Estimate the risk ratio of developing cancer between high dose level of red dye and low dose level of red dye.
+%   \item Calculate a 95\% confidence interval for the risk ratio of developing cancer between high dose level of red dye and low dose level of red dye.
+% \end{enumerate}
+% 
+% \end{exercise} 
+% \begin{solution}  % 13a
+% 
+% \end{solution}
+% 
+% \clearpage
+% 
+%     \begin{exercise}  % 13b         %%%%%%%%%%%%%%%%%
+% 
+%     \begin{center}
+% \begin{flushleft}\textbf{\large \hfill Workshop 13B, Submitted by: }\end{flushleft}
+% 
+% \fbox{\parbox{14cm}{
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+%  }}
+% \end{center}
+% 
+% Gone Fishin'
+% 
+% Consider the following data from the Chicago Western Electric Study (Shekelle et al., 1981). In the following table 466 men were classified based on death from coronary heart disease (CHD) and fish consumption.
+% 				
+% \begin{tabular}{@{} lccc @{}} \hline				
+%  	& \multicolumn{2}{c}{Death from CHD} \\ 				
+% Daily Fish Consumption &	Yes &	No &	Total \\ \hline
+% High &	34 &	227 &	261 \\
+% Low &	42 &	163 &	205 \\ \hline
+% Total &	76 &	390 &	466 \\ \hline
+% \end{tabular}
+% 				
+% \begin{enumerate}
+%   \item Estimate the risk ratio of death from CHD between high daily fish consumption and low daily fish consumption.
+%   \item Calculate a 95\% confidence interval for the risk ratio of death from CHD between high daily fish consumption and low daily fish consumption.
+% \end{enumerate}
+% 
+% \end{exercise} 
+% \begin{solution}  % 13b
+% 
+% \end{solution}
+% 
+% \clearpage
+% 
+%     \begin{exercise}  % 13c         %%%%%%%%%%%%%%%%%
+% 
+%     \begin{center}
+% \begin{flushleft}\textbf{\large \hfill Workshop 13C, Submitted by: }\end{flushleft}
+% 
+% \fbox{\parbox{14cm}{
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+%  }}
+% \end{center}
+% 
+% Making the Cut
+% 
+% The following table shows how many prospective students of a sample of 200 students were admitted to WMU last year, and if the student's GPA was below 2.8 or not. Out of the sample, 60 applicants were rejected and 140 were accepted. 
+% 			
+% \begin{tabular}{@{} lccc @{}} \hline				
+%  	& \multicolumn{2}{c}{Rejected from WMU} \\ 		
+% GPA Below 2.8 &	Yes &	No &	Total  \\ \hline
+% Yes &	45 &	20 &	65 \\
+% No &	15 &	120 &	135 \\ \hline
+% Total &	60 &	140 &	200 \\ \hline
+% \end{tabular}
+% 				
+% \begin{enumerate}
+%   \item Estimate the risk ratio of being rejected from WMU between having below a 2.8 GPA and not having below a 2.8 GPA.
+%   \item Calculate a 95\% confidence interval for the risk ratio of being rejected from WMU between having below a 2.8 GPA and not having below a 2.8 GPA.
+% \end{enumerate}
+% 
+% \end{exercise} 
+% \begin{solution}  % 13c
+% 
+% \end{solution}
+% 
+% \clearpage
+% 
+%     \begin{exercise}  % 14A         %%%%%%%%%%%%%%%%%
+% 
+%     \begin{center}
+% \begin{flushleft}\textbf{\large \hfill Workshop 14A, Submitted by: }\end{flushleft}
+% 
+% \fbox{\parbox{14cm}{
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+%  }}
+% \end{center}
+% 
+% Live and Let Dye
+% 
+% In an experimental study, 44 rats were exposed to high dose of red dye and 44 rats were exposed to low dose of red dye and then it was observed how many in each group developed cancer.
+% 
+% \begin{tabular}{@{} lccc @{}} \hline
+%  	& \multicolumn{2}{c}{Cancer} \\
+% Dose Level of Red Dye &	Yes &	No &	Total \\ \hline
+% High &	14 &	30 &	44 \\
+% Low	& 4	& 40 &	44 \\ \hline
+% Total &	18 &	70 &	88 \\ \hline
+% \end{tabular}
+% 
+% \begin{enumerate}
+%   \item Estimate the odds ratio of developing cancer between high dose level of red dye and low dose level of red dye.
+%   \item Calculate a 95\% confidence interval for the odds ratio of developing cancer between high dose level of red dye and low dose level of red dye.
+% \end{enumerate}
+% 
+% \end{exercise}
+% \begin{solution}  % 14a
+% 
+% \end{solution}
+% 
+% \clearpage
+% 
+%     \begin{exercise}  % 14B         %%%%%%%%%%%%%%%%%
+% 
+%     \begin{center}
+% \begin{flushleft}\textbf{\large \hfill Workshop 14B, Submitted by: }\end{flushleft}
+% 
+% \fbox{\parbox{14cm}{
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+%  }}
+% \end{center}
+% 
+% Gone Fishin'
+% 
+% Consider the following data from the Chicago Western Electric Study (Shekelle et al., 1981). In the following table 466 men were classified based on death from coronary heart disease (CHD) and fish consumption.
+% 
+% \begin{tabular}{@{} lccc @{}} \hline
+%  	& \multicolumn{2}{c}{Death from CHD} \\
+% Daily Fish Consumption &	Yes &	No & Total \\ \hline
+% Low &	42 &	163 &	205 \\
+% High &	34 &	227 &	261 \\ \hline
+% Total &	76 &	390 &	466 \\ \hline
+% \end{tabular}
+% 
+% \begin{enumerate}
+%   \item Estimate the odds ratio of death from CHD between low daily fish consumption and high daily fish consumption.
+%   \item Calculate a 95\% confidence interval for the odds ratio of death from CHD between low daily fish consumption and high daily fish consumption.
+% \end{enumerate}
+% 
+% \end{exercise}
+% \begin{solution}  % 14b
+% 
+% \end{solution}
+% 
+% \clearpage
+% 
+%     \begin{exercise}  % 14C         %%%%%%%%%%%%%%%%%
+%     
+%     \begin{center}
+% \begin{flushleft}\textbf{\large \hfill Workshop 14C, Submitted by: }\end{flushleft}
+% 
+% \fbox{\parbox{14cm}{
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+%  }}
+% \end{center}
+% 
+% Making the Cut
+% 
+% The following table shows how many prospective students of a sample of 200 students were admitted to WMU last year, and if the student's GPA was below 2.8 or not. Out of the sample, 60 applicants were rejected and 140 were accepted.
+% 
+% \begin{tabular}{@{} lccc @{}} \hline
+%  	& \multicolumn{2}{c}{Rejected from WMU} \\
+% GPA Below 2.8 & 	Yes &	No &	Total \\ \hline
+% Yes &	45 &	20 &	65 \\
+% No &	15 &	120 &	135 \\ \hline
+% Total &	60 &	140 &	200 \\ \hline
+% \end{tabular}
+% 
+% \begin{enumerate}
+%   \item Estimate the odds ratio of being rejected from WMU between having below a 2.8 GPA and not having below a 2.8 GPA.
+%   \item Calculate a 95\% confidence interval for the odds ratio of being rejected from WMU between having below a 2.8 GPA and not having below a 2.8 GPA.
+% \end{enumerate}
+% \end{exercise}
+% \begin{solution}  % 14c
+% 
+% \end{solution}
+% 
+% \clearpage
+% 
+%     \begin{exercise}  % 15a         %%%%%%%%%%%%%%%%%
+%     
+%     \begin{center}
+% \begin{flushleft}\textbf{\large \hfill Workshop 15A, Submitted by: }\end{flushleft}
+% 
+% \fbox{\parbox{14cm}{
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+%  }}
+% \end{center}
+% 
+% The following is an excerpt from a New York Times article by Nicholas Bakalar (Feb. 10, 2009).          
+% 
+% Lengthy television viewing in adolescence may raise the risk for depression in young adulthood, according to a new report.
+% <<<<<<< HEAD
+% =======
+% 
+% The study, in the February issue of The Archives of General Psychiatry, published by the American Medical Association, found a rising risk of depressive symptoms with increasing hours spent watching television.
+% 
+% Researchers used data from a larger analysis of 4,142 adolescents who were not depressed at the start of the study. After seven years of follow-up, more than 7 percent had symptoms of depression.
+% 
+% But while about 6 percent of those who watched less than three hours a day were depressed, more than 17 percent of those who watched more than nine hours a day had depressive symptoms.
+% 
+% \begin{enumerate}
+%   \item The word `raise' in the title implies cause-and-effect, not just association.  When comparing lengthy viewers with those who watch less, what possible    confounders can you think of?
+%   \item Using one confounder from your answer(s) in (1), draw a pathway graph depicting the possible relationship between confounder, possible cause and outcome.
+% \end{enumerate}
+% \end{exercise}
+% \begin{solution}  % 15a
+% 
+% \end{solution}
+% 
+% \clearpage
+% 
+%     \begin{exercise}  % 15b         %%%%%%%%%%%%%%%%%
+%     
+%     \begin{center}
+% \begin{flushleft}\textbf{\large \hfill Workshop 15B, Submitted by: }\end{flushleft}
+% 
+% \fbox{\parbox{14cm}{
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+%  }}
+% \end{center}
+% 
+% The following is an excerpt from a Reuters article by Amy Norton (July 2011).          
+% \begin{quote}
+% 
+% Are kids safer with grandparents driving?
+% 
+% When children are involved in a car accident, they are less likely to be injured if grandma or grandpa are driving rather than mom or dad, a new study suggests.
+% 
+% The study, published in the journal Pediatrics, looked at five years' worth of data on U.S. car crashes involving children younger than 16.
+% 
+% It found that when grandparents were at the wheel, 0.7 percent of children were injured in the crash. That compared with 1 percent when parents were driving.
+% 
+% When the researchers considered other factors -- such as the circumstances and severity of the crash -- kids riding with grandparents were half as likely to be injured, versus those riding with their parents.
+% 
+% \end{quote}
+% 
+% \begin{enumerate}
+%   \item The title implies cause-and-effect, not just association.  When comparing injury rates between parents driving and grandparents driving, what possible    confounders can you think of?
+%   \item Using one confounder from your answer(s) in (1), draw a pathway graph depicting the possible relationship between confounder, possible cause and outcome.
+% \end{enumerate}
+% \end{exercise}
+% \begin{solution}  % 15b
+% 
+% \end{solution}
+% 
+% \clearpage
+% 
+%     \begin{exercise}  % 15c         %%%%%%%%%%%%%%%%%
+%     
+%     \begin{center}
+% \begin{flushleft}\textbf{\large \hfill Workshop 15C, Submitted by: }\end{flushleft}
+% 
+% \fbox{\parbox{14cm}{
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+%  }}
+% \end{center}
+% 
+% Frequency of playing violent video games has at times been linked with and seen as a possible cause for those committing violent acts.  Much debate still looms over whether playing violent video games can lead to a desensitization of violence and a lack of compassion for others.  
+% One article that explores these ideas is titled, The Impact of Degree of Exposure to Violent Video Games, Family Background, and Other Factors on Youth Violence, by the authors Whitney Decamp and Christopher Ferguson.  The authors respond to the concern that violence in video games might contribute to youth violence.  There is still no consensus on whether violent video games may be contributing to violence in youth.  The authors sought to study this issue in an ethnically diverse sample of youth in eighth (n=5133) and eleventh grade (n=3886).  Questionnaire surveys were given to the youth to assess a link.  Independent or predictor variables included the playing of violent video games, and an inclination towards violent video games.  Dependent variables included questions pertaining to hitting with the intention to hurt another and taking part in a fight. 
+% Mixed results were reported.  The authors summarized that violent video game play was not significant in 5 of the models used.  There was, however, a positive correlation between games and violent behavior for the models without controls.   When the authors controlled for the propensity and context, however, this suggested the association to be more spurious (not being what it claims to be).  What other factors may be impacting this outcome?  
+% 
+% \begin{enumerate}
+%   \item What possible confounders can you think of for a study of this nature?
+%   \item Using one confounder from your answer(s) in (1), draw a pathway graph depicting the possible relationships between confounder, possible cause and outcome.
+% \end{enumerate}
+% \end{exercise}
+% \begin{solution}  % 15c
+% 
+% \end{solution}
+% 
+% \clearpage
+% 
+%     \begin{exercise}  % 16a         %%%%%%%%%%%%%%%%%
+%     
+%     \begin{center}
+% \begin{flushleft}\textbf{\large \hfill Workshop 16A, Submitted by: }\end{flushleft}
+% 
+% \fbox{\parbox{14cm}{
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+%  }}
+% \end{center}
+% 
+% Jet design researchers have come up with two new designs for the wings of a rocket plane. They think both designs are an improvement over the old design, but want to know which of their new designs performs better at high altitudes. Specifically, they want to know which new design results in more maneuverability at or above 100,000 feet above sea level. They decide to design a randomized trial to study this.
+% 
+% 
+% \begin{enumerate}
+%   \item The researchers include a control group in their design plan. Describe a possible control group. Why did they add it to the study?
+%   \item Several pilots and planes are lined up for this study. How could the researchers randomize their experiment to avoid confounders?
+%   \item One way to measure maneuverability is by surveying pilots about how they thought the jets handled. Could a design that asks pilots this question be blinded? If so, how?
+%   \item Could the design from (2) be double-blinded? If so, how?
+%   \item What makes single and double blinding important?
+% \end{enumerate}
+% \end{exercise}
+% \begin{solution}  % 16a
+% 
+% \end{solution}
+% 
+% \clearpage
+% 
+%     \begin{exercise}  % 16b         %%%%%%%%%%%%%%%%%
+%     
+%     \begin{center}
+% \begin{flushleft}\textbf{\large \hfill Workshop 16B, Submitted by: }\end{flushleft}
+% 
+% \fbox{\parbox{14cm}{
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+%  }}
+% \end{center}
+% 
+% Some students at WMU were curious about whether partying influences GPA. To find out, they surveyed 100 of their WMU peers, asking each peer only two questions: 1) How many hours a week do you party? 2) What is your GPA? The students then compiled their data and performed an appropriate statistical analysis. They concluded that partying does influence GPA, i.e., the more you party, the lower your GPA.
+% 
+% \begin{enumerate}
+%   \item What kind of study design is this?
+%   \item What are advantages of this study design?
+%   \item What are disadvantages of this study design?
+%   \item Did the students overlook anything that might have biased or confounded their results?
+%   \item Suppose the students wanted to correct for something they overlooked. How could they improve their study design?
+% \end{enumerate}
+% 
+% \end{exercise}
+% \begin{solution}  % 16b
+% 
+% \end{solution}
+% 
+% \clearpage
+% 
+%     \begin{exercise}  % 16c         %%%%%%%%%%%%%%%%%
+%     
+%     \begin{center}
+% \begin{flushleft}\textbf{\large \hfill Workshop 16C, Submitted by: }\end{flushleft}
+% 
+% \fbox{\parbox{14cm}{
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+%  }}
+% \end{center}
+% 
+% Yogurt is known to contain `friendly bacteria' known generally as probiotics which can benefit the gastrointestinal system.  Many strains of bacteria can be found in yogurt, with some of the most common being, \textit{Lactobacillus bulgaricus}, \textit{Streptococcus thermophilus}, and \textit{Lactobacillus acidophilus}.  Further research has been done suggesting probiotics boost the immune system and may even help in weight management and reduction of disease such as cancer.  A group of researchers decided to investigate this using a questionnaire assessing yogurt consumption (yes/no) and asking questions pertaining to the health of the individuals.  
+% 
+% \begin{enumerate}
+%   \item First of all, what kind of study design is this?
+%   \item What are advantages of this type of study design?
+%   \item What are disadvantages of this study design?
+%   \item	The researchers then separated the results of the surveys for those who said `yes' they consume yogurt to those who said `no' they do not consume yogurt.  They compared the two groups using these as a treatment and control group.  What is wrong with this assumption?
+%   \item	Suppose the researchers found that those consuming yogurt had better health and concluded that \textit{Lactobacillus bulgaricus} caused a reduction of weight, improved GI and Immune systems.  What are two major problems in this?
+%   \item	What may be a bias or lead to confounding in this study?
+%   \item	How could the researchers improve their study design in order to make a conclusion about the effectiveness of \textit{Lactobacillus bulgaricus} and immune system function?
+% \end{enumerate}
+% 
+% \end{exercise}
+% \begin{solution}  % 16c
+% 
+% \end{solution}
+% 
+% \clearpage
+% 
+%     \begin{exercise}  % 17A         %%%%%%%%%%%%%%%%%
+%     
+%     \begin{center}
+% \begin{flushleft}\textbf{\large \hfill Workshop 17A, Submitted by: }\end{flushleft}
+% 
+% \fbox{\parbox{14cm}{
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+%  }}
+% \end{center}
+% 
+% Historically throughout the United States, families of four spend about \$239 a week on groceries and food with a standard deviation of 50. Assume a random sample of 250 households is taken in the United States.
+% 
+% \begin{enumerate}
+%   \item What is the expected value of the sample mean.
+%   \item	What is the Standard error of this estimate?
+%   \item	What is the probability that the mean weekly household spending is more than \$242?
+%   \item	What is the probability that the mean weekly household spending less than \$235?
+%   \item	What is the probability that the mean weekly household spending is between \$235 and \$242? 
+%   \item	If an even larger sample of 2500 households was taken and the SD remains the same, what is the new Standard Error of the estimate? Why did this occur?
+% \end{enumerate}
+% 
+% \end{exercise}
+% \begin{solution}  % 17a
+% 
+% \end{solution}
+% 
+% \clearpage
+% 
+%     \begin{exercise}  % 17B         %%%%%%%%%%%%%%%%%
+%     
+%     \begin{center}
+% \begin{flushleft}\textbf{\large \hfill Workshop 17B, Submitted by: }\end{flushleft}
+% 
+% \fbox{\parbox{14cm}{
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+%  }}
+% \end{center}
+% 
+% \begin{minipage}[ht]{7cm}
+% 
+% Too Fast, Not Enough Furious
+% 
+% The above chart shows the average cost of annual auto insurance premiums in 2008 for drivers with no accidents, one accident, two accidents, and so on. According to this chart, the average annual auto insurance premium for drivers with no accidents was \$1,387 in 2008.
+% 
+% \end{minipage}
+% \begin{minipage}[ht]{7cm}
+% 
+% %\begin{figure}[ht]
+% \centering
+%   \includegraphics[width=4cm]{chapters/Workshops/ext_figure/UsaToday.png}
+% %\end{figure}
+% \end{minipage}
+% 
+% \begin{enumerate}
+%   \item What is the estimated mean annual auto insurance premium for drivers with no accidents?
+%   \item	What is the standard error of the estimate assuming this is based on a random sample of 400 drivers? Assume that the standard deviation of auto insurance premiums for all current drivers with no accidents is \$180.
+%   \item Assuming the estimate in part a. is the mean for all drivers with no accidents, what is the probability that the mean annual auto insurance premium for drivers with no accidents is greater than \$1,395?
+%   \item If a larger random sample of 1600 such drivers was taken and the SD remains the same, what is the new standard error of the estimate?
+%   \item Assuming the estimate in part a. is the mean for all drivers with no accidents, what is the probability that the mean annual auto insurance premium for drivers with no accidents is greater than \$1,395 using the new standard error?
+% \end{enumerate}
+% 
+% \end{exercise}
+% \begin{solution}  % 17b
+% 
+% \end{solution}
+% 
+% \clearpage
+% 
+%     \begin{exercise}  % 17C         %%%%%%%%%%%%%%%%%
+%     
+%     \begin{center}
+% \begin{flushleft}\textbf{\large \hfill Workshop 17C, Submitted by: }\end{flushleft}
+% 
+% \fbox{\parbox{14cm}{
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+%  }}
+% \end{center}
+% 
+% Historically throughout the United States college students watch about 35 hours a month of television with a standard deviation of 5 hours. Assume a random sample of 25 college students is taken in West Michigan.
+% 
+% \begin{enumerate}
+%   \item What is the expected value of the sample mean.
+%   \item What is the Standard error of this estimate?
+%   \item What is the probability that the mean monthly hours spent watching tv for the college students is more than 36.5?
+%   \item What is the probability that the mean monthly hours spent watching tv is less than 34?
+%   \item What is the probability that the mean monthly hours watching tv is between 34.5 and 36? 
+%   \item If an even larger sample of 250 students was taken and the SD remains the same, what is the new Standard Error of the estimate? Why did this occur?
+% \end{enumerate}
+% \end{exercise}
+% \begin{solution}  % 17c
+% 
+% \end{solution}
+% %  >>>>>>> f92a3e0e6f8050737817729f8e5730b4f6dc1e14
+% 
+% The study, in the February issue of The Archives of General Psychiatry, published by the American Medical Association, found a rising risk of depressive symptoms with increasing hours spent watching television.
+% 
+% Researchers used data from a larger analysis of 4,142 adolescents who were not depressed at the start of the study. After seven years of follow-up, more than 7 percent had symptoms of depression.
+% 
+% But while about 6 percent of those who watched less than three hours a day were depressed, more than 17 percent of those who watched more than nine hours a day had depressive symptoms.
+% 
+% \begin{enumerate}
+%   \item The word `raise' in the title implies cause-and-effect, not just association.  When comparing lengthy viewers with those who watch less, what possible    confounders can you think of?
+%   \item Using one confounder from your answer(s) in (1), draw a pathway graph depicting the possible relationship between confounder, possible cause and outcome.
+% \end{enumerate}
+% \end{exercise}
+% \begin{solution}  % 15a
+% 
+% \end{solution}
+% 
+% \clearpage
+% 
+%     \begin{exercise}  % 15b         %%%%%%%%%%%%%%%%%
+%     
+%     \begin{center}
+% \begin{flushleft}\textbf{\large \hfill Workshop 15B, Submitted by: }\end{flushleft}
+% 
+% \fbox{\parbox{14cm}{
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+%  }}
+% \end{center}
+% 
+% The following is an excerpt from a Reuters article by Amy Norton (July 2011).          
+% \begin{quote}
+% 
+% Are kids safer with grandparents driving?
+% 
+% When children are involved in a car accident, they are less likely to be injured if grandma or grandpa are driving rather than mom or dad, a new study suggests.
+% 
+% The study, published in the journal Pediatrics, looked at five years' worth of data on U.S. car crashes involving children younger than 16.
+% 
+% It found that when grandparents were at the wheel, 0.7 percent of children were injured in the crash. That compared with 1 percent when parents were driving.
+% 
+% When the researchers considered other factors -- such as the circumstances and severity of the crash -- kids riding with grandparents were half as likely to be injured, versus those riding with their parents.
+% 
+% \end{quote}
+% 
+% \begin{enumerate}
+%   \item The title implies cause-and-effect, not just association.  When comparing injury rates between parents driving and grandparents driving, what possible    confounders can you think of?
+%   \item Using one confounder from your answer(s) in (1), draw a pathway graph depicting the possible relationship between confounder, possible cause and outcome.
+% \end{enumerate}
+% \end{exercise}
+% \begin{solution}  % 15b
+% 
+% \end{solution}
+% 
+% \clearpage
+% 
+%     \begin{exercise}  % 15c         %%%%%%%%%%%%%%%%%
+%     
+%     \begin{center}
+% \begin{flushleft}\textbf{\large \hfill Workshop 15C, Submitted by: }\end{flushleft}
+% 
+% \fbox{\parbox{14cm}{
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+%  }}
+% \end{center}
+% 
+% Frequency of playing violent video games has at times been linked with and seen as a possible cause for those committing violent acts.  Much debate still looms over whether playing violent video games can lead to a desensitization of violence and a lack of compassion for others.  
+% One article that explores these ideas is titled, The Impact of Degree of Exposure to Violent Video Games, Family Background, and Other Factors on Youth Violence, by the authors Whitney Decamp and Christopher Ferguson.  The authors respond to the concern that violence in video games might contribute to youth violence.  There is still no consensus on whether violent video games may be contributing to violence in youth.  The authors sought to study this issue in an ethnically diverse sample of youth in eighth (n=5133) and eleventh grade (n=3886).  Questionnaire surveys were given to the youth to assess a link.  Independent or predictor variables included the playing of violent video games, and an inclination towards violent video games.  Dependent variables included questions pertaining to hitting with the intention to hurt another and taking part in a fight. 
+% Mixed results were reported.  The authors summarized that violent video game play was not significant in 5 of the models used.  There was, however, a positive correlation between games and violent behavior for the models without controls.   When the authors controlled for the propensity and context, however, this suggested the association to be more spurious (not being what it claims to be).  What other factors may be impacting this outcome?  
+% 
+% \begin{enumerate}
+%   \item What possible confounders can you think of for a study of this nature?
+%   \item Using one confounder from your answer(s) in (1), draw a pathway graph depicting the possible relationships between confounder, possible cause and outcome.
+% \end{enumerate}
+% \end{exercise}
+% \begin{solution}  % 15c
+% 
+% \end{solution}
+% 
+% \clearpage
+% 
+%     \begin{exercise}  % 16a         %%%%%%%%%%%%%%%%%
+%     
+%     \begin{center}
+% \begin{flushleft}\textbf{\large \hfill Workshop 16A, Submitted by: }\end{flushleft}
+% 
+% \fbox{\parbox{14cm}{
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+%  }}
+% \end{center}
+% 
+% Jet design researchers have come up with two new designs for the wings of a rocket plane. They think both designs are an improvement over the old design, but want to know which of their new designs performs better at high altitudes. Specifically, they want to know which new design results in more maneuverability at or above 100,000 feet above sea level. They decide to design a randomized trial to study this.
+% 
+% 
+% \begin{enumerate}
+%   \item The researchers include a control group in their design plan. Describe a possible control group. Why did they add it to the study?
+%   \item Several pilots and planes are lined up for this study. How could the researchers randomize their experiment to avoid confounders?
+%   \item One way to measure maneuverability is by surveying pilots about how they thought the jets handled. Could a design that asks pilots this question be blinded? If so, how?
+%   \item Could the design from (2) be double-blinded? If so, how?
+%   \item What makes single and double blinding important?
+% \end{enumerate}
+% \end{exercise}
+% \begin{solution}  % 16a
+% 
+% \end{solution}
+% 
+% \clearpage
+% 
+%     \begin{exercise}  % 16b         %%%%%%%%%%%%%%%%%
+%     
+%     \begin{center}
+% \begin{flushleft}\textbf{\large \hfill Workshop 16B, Submitted by: }\end{flushleft}
+% 
+% \fbox{\parbox{14cm}{
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+%  }}
+% \end{center}
+% 
+% Some students at WMU were curious about whether partying influences GPA. To find out, they surveyed 100 of their WMU peers, asking each peer only two questions: 1) How many hours a week do you party? 2) What is your GPA? The students then compiled their data and performed an appropriate statistical analysis. They concluded that partying does influence GPA, i.e., the more you party, the lower your GPA.
+% 
+% \begin{enumerate}
+%   \item What kind of study design is this?
+%   \item What are advantages of this study design?
+%   \item What are disadvantages of this study design?
+%   \item Did the students overlook anything that might have biased or confounded their results?
+%   \item Suppose the students wanted to correct for something they overlooked. How could they improve their study design?
+% \end{enumerate}
+% 
+% \end{exercise}
+% \begin{solution}  % 16b
+% 
+% \end{solution}
+%
+% \clearpage
+% 
+%     \begin{exercise}  % 16c         %%%%%%%%%%%%%%%%%
+%     
+%     \begin{center}
+% \begin{flushleft}\textbf{\large \hfill Workshop 16C, Submitted by: }\end{flushleft}
+% 
+% \fbox{\parbox{14cm}{
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+%  }}
+% \end{center}
+% 
+% Yogurt is known to contain `friendly bacteria' known generally as probiotics which can benefit the gastrointestinal system.  Many strains of bacteria can be found in yogurt, with some of the most common being, \textit{Lactobacillus bulgaricus}, \textit{Streptococcus thermophilus}, and \textit{Lactobacillus acidophilus}.  Further research has been done suggesting probiotics boost the immune system and may even help in weight management and reduction of disease such as cancer.  A group of researchers decided to investigate this using a questionnaire assessing yogurt consumption (yes/no) and asking questions pertaining to the health of the individuals.  
+% 
+% \begin{enumerate}
+%   \item First of all, what kind of study design is this?
+%   \item What are advantages of this type of study design?
+%   \item What are disadvantages of this study design?
+%   \item	The researchers then separated the results of the surveys for those who said `yes' they consume yogurt to those who said `no' they do not consume yogurt.  They compared the two groups using these as a treatment and control group.  What is wrong with this assumption?
+%   \item	Suppose the researchers found that those consuming yogurt had better health and concluded that \textit{Lactobacillus bulgaricus} caused a reduction of weight, improved GI and Immune systems.  What are two major problems in this?
+%   \item	What may be a bias or lead to confounding in this study?
+%   \item	How could the researchers improve their study design in order to make a conclusion about the effectiveness of \textit{Lactobacillus bulgaricus} and immune system function?
+% \end{enumerate}
+% 
+% \end{exercise}
+% \begin{solution}  % 16c
+% 
+% \end{solution}
+%
+% \clearpage
+% 
+%     \begin{exercise}  % 17A         %%%%%%%%%%%%%%%%%
+%     
+%     \begin{center}
+% \begin{flushleft}\textbf{\large \hfill Workshop 17A, Submitted by: }\end{flushleft}
+% 
+% \fbox{\parbox{14cm}{
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+%  }}
+% \end{center}
+% 
+% Historically throughout the United States, families of four spend about \$239 a week on groceries and food with a standard deviation of 50. Assume a random sample of 250 households is taken in the United States.
+% 
+% \begin{enumerate}
+%   \item What is the expected value of the sample mean.
+%   \item	What is the Standard error of this estimate?
+%   \item	What is the probability that the mean weekly household spending is more than \$242?
+%   \item	What is the probability that the mean weekly household spending less than \$235?
+%   \item	What is the probability that the mean weekly household spending is between \$235 and \$242? 
+%   \item	If an even larger sample of 2500 households was taken and the SD remains the same, what is the new Standard Error of the estimate? Why did this occur?
+% \end{enumerate}
+% 
+% \end{exercise}
+% \begin{solution}  % 17a
+% 
+% \end{solution}
+%
+% \clearpage
+% 
+%     \begin{exercise}  % 17B         %%%%%%%%%%%%%%%%%
+%     
+%     \begin{center}
+% \begin{flushleft}\textbf{\large \hfill Workshop 17B, Submitted by: }\end{flushleft}
+% 
+% \fbox{\parbox{14cm}{
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+%  }}
+% \end{center}
+% 
+% \begin{minipage}[ht]{7cm}
+% 
+% Too Fast, Not Enough Furious
+% 
+% The above chart shows the average cost of annual auto insurance premiums in 2008 for drivers with no accidents, one accident, two accidents, and so on. According to this chart, the average annual auto insurance premium for drivers with no accidents was \$1,387 in 2008.
+% 
+% \end{minipage}
+% \begin{minipage}[ht]{7cm}
+% 
+% %\begin{figure}[ht]
+% \centering
+%   \includegraphics[width=5cm]{chapters/Workshops/ext_figure/UsaToday.png}
+% %\end{figure}
+% \end{minipage}
+% 
+% \begin{enumerate}
+%   \item What is the estimated mean annual auto insurance premium for drivers with no accidents?
+%   \item	What is the standard error of the estimate assuming this is based on a random sample of 400 drivers? Assume that the standard deviation of auto insurance premiums for all current drivers with no accidents is \$180.
+%   \item Assuming the estimate in part a. is the mean for all drivers with no accidents, what is the probability that the mean annual auto insurance premium for drivers with no accidents is greater than \$1,395?
+%   \item If a larger random sample of 1600 such drivers was taken and the SD remains the same, what is the new standard error of the estimate?
+%   \item Assuming the estimate in part a. is the mean for all drivers with no accidents, what is the probability that the mean annual auto insurance premium for drivers with no accidents is greater than \$1,395 using the new standard error?
+% \end{enumerate}
+% 
+% \end{exercise}
+% \begin{solution}  % 17b
+% 
+% \end{solution}
+%
+% \clearpage
+% 
+%     \begin{exercise}  % 17C         %%%%%%%%%%%%%%%%%
+%     
+%     \begin{center}
+% \begin{flushleft}\textbf{\large \hfill Workshop 17C, Submitted by: }\end{flushleft}
+% 
+% \fbox{\parbox{14cm}{
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+%  }}
+% \end{center}
+% 
+% Historically throughout the United States college students watch about 35 hours a month of television with a standard deviation of 5 hours. Assume a random sample of 25 college students is taken in West Michigan.
+% 
+% \begin{enumerate}
+%   \item What is the expected value of the sample mean.
+%   \item What is the Standard error of this estimate?
+%   \item What is the probability that the mean monthly hours spent watching tv for the college students is more than 36.5?
+%   \item What is the probability that the mean monthly hours spent watching tv is less than 34?
+%   \item What is the probability that the mean monthly hours watching tv is between 34.5 and 36? 
+%   \item If an even larger sample of 250 students was taken and the SD remains the same, what is the new Standard Error of the estimate? Why did this occur?
+% \end{enumerate}
+% \end{exercise}
+% \begin{solution}  % 17c
+% 
+% \end{solution}
+%
+% \clearpage
+% 
+%     \begin{exercise}  % 18A         %%%%%%%%%%%%%%%%%
+%     
+%     \begin{center}
+% \begin{flushleft}\textbf{\large \hfill Workshop 18A, Submitted by: }\end{flushleft}
+% 
+% \fbox{\parbox{14cm}{
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+%  }}
+% \end{center}
+% 
+% Historically throughout the United States families of four spend on the average of \$239 a week on groceries and food with a standard deviation of \$50. Families of 3, however, spend on average \$220 with a standard deviation of \$45 Assume these statistics are based on a random sample of 250 households with four members, and on a random sample of 285 households with three members.
+% 
+% \begin{enumerate}
+%   \item Estimate the difference in the average spending of a family of four and a family of three. (Use the family of four first in your equation).
+%   \item What is the Standard error of this estimate?
+%   \item What is the Margin of Error for your estimate?
+%   \item What is the 95\% Confidence Interval for your estimate? Is it significant?
+% \end{enumerate}
+% 
+% \end{exercise}
+% \begin{solution}  % 18A
+% 
+% \end{solution}
+%
+% \clearpage
+% 
+%     \begin{exercise}  % 18B         %%%%%%%%%%%%%%%%%
+%     
+%     \begin{center}
+% \begin{flushleft}\textbf{\large \hfill Workshop 18B, Submitted by: }\end{flushleft}
+% 
+% \fbox{\parbox{14cm}{
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+%  }}
+% \end{center}
+% 
+% \begin{minipage}[ht]{7cm}
+% 
+% The above chart shows the average cost of annual auto insurance premiums in 2008 for drivers with no accidents, one accident, two accidents, and so on. According to this chart, the 2008 average annual auto insurance premium for drivers with no accidents was \$1,387, and the premium for drivers with one accident is \$1,689. Assume that this dataset is partly based on a random sample of 60 drivers with no accidents, and a random sample of 56 drivers with one accident. Assume also that the standard deviations of the samples with no accidents and one accident are \$150 and \$178, respectively. Finally, assume the samples are independent.
+% 
+% \end{minipage}
+% \begin{minipage}[ht]{7cm}
+% 
+% %\begin{figure}[ht]
+% %\centering
+%   \includegraphics[width=5cm]{chapters/Workshops/ext_figure/UsaToday.png}
+% %\end{figure}
+% \end{minipage}
+% 
+% \begin{enumerate}
+%   \item What is the difference in means between average premiums for drivers with no accidents and drivers with one accident?
+%   \item What is the standard error of the above estimate?
+%   \item	What is the Z critical value for a 95\% confidence interval?
+%   \item	The upper bound of this confidence interval is how far from the central point estimate?
+%   \item	What are the lower and upper bounds of this confidence interval?
+%   \item	What can be concluded about the significance of the difference?
+% \end{enumerate}
+% 
+% \end{exercise}
+% \begin{solution}  % 18b
+% 
+% \end{solution}
+%
+% \clearpage
+% 
+%     \begin{exercise}  % 18C         %%%%%%%%%%%%%%%%%
+%     
+%     \begin{center}
+% \begin{flushleft}\textbf{\large \hfill Workshop 18C, Submitted by: }\end{flushleft}
+% 
+% \fbox{\parbox{14cm}{
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+%  }}
+% \end{center}
+% 
+% The summary statistics for Verbal SAT are provided below:
+% 
+% \begin{tabular}{@{} l rrr @{}} \hline
+% Graduate &	n &	Mean &	SD \\ \hline
+% No &	13 &	466.9 &	89.94 \\
+% Yes &	28 &	480 &	67.33 \\ \hline
+% \end{tabular}
+% 
+% \begin{enumerate}
+%   \item Estimate the difference in average Verbal SAT scores between the two groups.
+%   \item	Calculate a standard error for your estimate in (1).
+%   \item	Calculate a 95\% confidence interval for the difference between the two means. Does your interval exclude 0?  Is your difference statistically significant?
+% \end{enumerate}
+% 
+% \end{exercise}
+% \begin{solution}  % 18c
+% 
+% \end{solution}
+%
+% \clearpage
+% 
+%     \begin{exercise}  % 19A         %%%%%%%%%%%%%%%%%
+%     
+%     \begin{center}
+% \begin{flushleft}\textbf{\large \hfill Workshop 19A, Submitted by: }\end{flushleft}
+% 
+% \fbox{\parbox{14cm}{
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+%  }}
+% \end{center}
+% 
+% A special vitamin concoction which claims to increase muscle strength is tested on 5 weight lifters.  Athletes are selected and the weight they can bench press is recorded before and then after two weeks of taking the vitamin regimen.
+% 
+% \begin{tabular}{@{} lrr @{}} \hline
+% Athlete &	Before &	After \\ \hline
+% 1&	220&	206 \\
+% 2&	181&	179 \\
+% 3&	210&	218 \\
+% 4&	231&	235 \\
+% 5&	201&	203 \\\hline
+% \end{tabular}
+% 
+% \begin{enumerate}
+%   \item Estimate the mean difference in weight lifted before and after the vitamin regimen.
+%   \item	Calculate a standard error for your estimate in (1).
+%   \item	Calculate a 95\% confidence interval for the difference.  Does your interval exclude 0?  Is your difference statistically significant?
+% \end{enumerate}
+% \end{exercise}
+% \begin{solution}  % 19a
+% 
+% \end{solution}
 
 
 
@@ -4912,4 +4973,4 @@ Yes &	28 &	480 &	67.33 \\ \hline
 % The correlation coefficient $r$ between a player's salary and his position makes no sense.
 %     \end{solution}
 
-\end{exercises}
+
