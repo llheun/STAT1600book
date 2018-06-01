@@ -292,3 +292,17 @@
 \contentsline {subparagraph}{\nonumberline Exercise{}~15.-38:}{190}{section*.167}
 \contentsline {subparagraph}{\nonumberline Exercise{}~15.-39:}{191}{section*.168}
 \contentsline {subparagraph}{\nonumberline Exercise{}~15.-40:}{192}{section*.169}
+\contentsline {subparagraph}{\nonumberline Exercise{}~15.-41:}{193}{section*.170}
+\contentsline {subparagraph}{\nonumberline Exercise{}~15.-42:}{194}{section*.171}
+\contentsline {subparagraph}{\nonumberline Exercise{}~15.-43:}{195}{section*.172}
+\contentsline {subparagraph}{\nonumberline Exercise{}~15.-44:}{196}{section*.173}
+\contentsline {subparagraph}{\nonumberline Exercise{}~15.-45:}{197}{section*.174}
+\contentsline {subparagraph}{\nonumberline Exercise{}~15.-46:}{198}{section*.175}
+\contentsline {subparagraph}{\nonumberline Exercise{}~15.-47:}{199}{section*.176}
+\contentsline {subparagraph}{\nonumberline Exercise{}~15.-48:}{200}{section*.177}
+\contentsline {subparagraph}{\nonumberline Exercise{}~15.-49:}{201}{section*.178}
+\contentsline {subparagraph}{\nonumberline Exercise{}~15.-50:}{202}{section*.179}
+\contentsline {subparagraph}{\nonumberline Exercise{}~15.-51:}{203}{section*.180}
+\contentsline {subparagraph}{\nonumberline Exercise{}~15.-52:}{204}{section*.181}
+\contentsline {subparagraph}{\nonumberline Exercise{}~15.-53:}{205}{section*.182}
+\contentsline {subparagraph}{\nonumberline Exercise{}~15.-54:}{206}{section*.183}
