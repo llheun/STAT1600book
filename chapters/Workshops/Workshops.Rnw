@@ -1773,6 +1773,59 @@ Total &	60 &	140 &	200 \\ \hline
 
 \end{solution}
 
+\clearpage
+
+    \begin{exercise}  % 14A         %%%%%%%%%%%%%%%%%
+
+    \begin{center}
+\begin{flushleft}\textbf{\large \hfill Workshop 14A, Submitted by: }\end{flushleft}
+
+\fbox{\parbox{14cm}{
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+ }}
+\end{center}
+
+Live and Let Dye
+
+In an experimental study, 44 rats were exposed to high dose of red dye and 44 rats were exposed to low dose of red dye and then it was observed how many in each group developed cancer. 
+			
+\begin{tabular}{@{} lccc @{}} \hline				
+ 	& \multicolumn{2}{c}{Cancer} \\ \hline				
+Dose Level of Red Dye &	Yes &	No &	Total \\ \hline
+High &	14 &	30 &	44 \\
+Low	& 4	& 40 &	44 \\ \hline
+Total &	18 &	70 &	88 \\ \hline
+\end{tabular}
+				
+\begin{enumerate}
+  \item Estimate the odds ratio of developing cancer between high dose level of red dye and low dose level of red dye.
+  \item Calculate a 95\% confidence interval for the odds ratio of developing cancer between high dose level of red dye and low dose level of red dye.
+\end{enumerate}
+
+\end{exercise} 
+\begin{solution}  % 14a
+
+\end{solution}
+
+
+
+
+
+
+
+
+
+
 
 
 =======

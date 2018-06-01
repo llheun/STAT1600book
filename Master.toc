@@ -276,7 +276,6 @@
 \contentsline {subparagraph}{\nonumberline Exercise{}~15.-22:}{174}{section*.151}
 \contentsline {subparagraph}{\nonumberline Exercise{}~15.-23:}{175}{section*.152}
 \contentsline {subparagraph}{\nonumberline Exercise{}~15.-24:}{176}{section*.153}
-<<<<<<< HEAD
 \contentsline {subparagraph}{\nonumberline Exercise{}~15.-25:}{177}{section*.154}
 \contentsline {subparagraph}{\nonumberline Exercise{}~15.-26:}{178}{section*.155}
 \contentsline {subparagraph}{\nonumberline Exercise{}~15.-27:}{179}{section*.156}
@@ -292,5 +291,4 @@
 \contentsline {subparagraph}{\nonumberline Exercise{}~15.-37:}{189}{section*.166}
 \contentsline {subparagraph}{\nonumberline Exercise{}~15.-38:}{190}{section*.167}
 \contentsline {subparagraph}{\nonumberline Exercise{}~15.-39:}{191}{section*.168}
-=======
->>>>>>> 3d6c258c135c5baf35b6b4ed045ea5ef439c4c51
+\contentsline {subparagraph}{\nonumberline Exercise{}~15.-40:}{192}{section*.169}
