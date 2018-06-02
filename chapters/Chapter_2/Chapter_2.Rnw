@@ -558,7 +558,7 @@ The long tail denotes outlying observations or extreme observations.  The left-s
 @
 \end{minipage}
 
-\newpage
+\twocolumn
 
 \section{Exercise}
 
@@ -590,19 +590,19 @@ Identify the following types of data as numerical or categorical.  If numerical,
   \begin{solution}  % 1
 
     \begin{enumerate}
-	  \item The scores on exam one for Stat 1600:  numeric, ratio
-    \item Marital status: categorical, nominal
-    \item Annual income: numeric, ratio
-    \item Social Security Number: categorical, nominal
-    \item Cumulative GPA: numeric, interval
-    \item Academic level (freshman, sophomore, junior, senior, other): categorical, ordinal
-    \item Quality (poor, fair, good, excellent): categorical, ordinal
-    \item Height (short, average, tall): categorical, ordinal
-    \item Age (years): numeric: ratio
-    \item Grade $(A, B, C, \dots)$: categorical, ordinal
-    \item Color: categorical, nominal
-    \item Rating of eight local plays (poor, fair, good, excellent): categorical, ordinal
-    \item Times required for mechanics to do a tune-up: numeric, interval
+	  \item   numeric, ratio
+    \item  categorical, nominal
+    \item  numeric, ratio
+    \item  categorical, nominal
+    \item  numeric, interval
+    \item  categorical, ordinal
+    \item  categorical, ordinal
+    \item  categorical, ordinal
+    \item  numeric: ratio
+    \item  categorical, ordinal
+    \item  categorical, nominal
+    \item  categorical, ordinal
+    \item  numeric, interval
   	\end{enumerate}
   \end{solution}
 
@@ -634,7 +634,6 @@ in the U.S. is displayed in the following stem-and-leaf plot.  Note that the ste
     \item In your opinion, which of the three plots (stem-and-leaf, boxplot, histogram) best illustrates the data? Why?
 	  \end{enumerate}
 
- %   \framebox[5cm][l]{ Answer: }
 	\end{exercise}
 % 	\begin{solution}  % 2
 %
