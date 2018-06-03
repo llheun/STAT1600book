@@ -1,102 +1,19 @@
 %!Rnw root = ../../Master.Rnw
 
 \chapter{Workshops}
-\label{chap:ch15}
+\label{chap:ch16}
 
-% \section{Workshop 1A}         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{exercises}
 
+
+
 \clearpage
 
-    \begin{exercise}  % 1A        %%%%%%%%%%%%%%%%%%
-    
+    \begin{exercise}  % 12a         %%%%%%%%%%%%%%%%%
+
     \begin{center}
-\begin{flushleft}\textbf{ \large \hfill Workshop 1A, Submitted by: }\end{flushleft}
-
-\fbox{\parbox{14cm}{
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
- }}
- \end{center}
-
-\begin{minipage}[ht]{9cm}
-
-{\small{
-Table 15.1: A partial list of students registered for Stat 1600 during Fall 2016 of their Major course of study.
-
-%\begin{table}[ht]
-\centering
-%\caption{A partial list of students registered for Stat 1600 during Fall 2016 of their Major course of study.}
-\begin{tabular}{@{} l | cccccc | c @{}} \hline
-& \multicolumn{5}{c}{Class } \\ \hline
-Major & A & B & C & D & Web & Total & RF \\ \hline
-Anthropology & 2 &   &   & 1 &   & 3 & \\
-Art           &   & 5 & 3 & 1 &   & 9 & \\
-Aviation      &   &   & 1 & 1 &   & 2 & \\
-Biology       &   & 3 &   & 1 & 1 & 5 & \\
-Business      & 1 &   &   &   &   & 1 & \\
-Communication & 5 & 1 & 4 & 3 & 4 & 17 & \\
-Criminal Justice &  & 3 & 2 & 1 &   & 6 & \\
-Data Science  &   & 1 &   &   &   & 1 & \\
-Education     &   & 2 &   &   & 2 & 4 & \\
-English       & 2 & 3 &   &   & 1 & 6 & \\
-Foreign Lang. &   & 1 & 1 &   &   & 2 & \\
-Geography     &   & 1 &   &   & 1 & 2 & \\
-Graphic Design & 1 &  & 1 &   &   & 2 & \\
-History       & 1 &   & 1 &   &   & 2 & \\
-Journalism    &   & 1 & 1 &   & 1 & 3 & \\
-Mathematics   &   & 2 &   &   &   & 2 & \\
-Music         & 2 &   & 7 & 3 & 3 & 15 & \\
-Nursing       &   & 1 &   &   &   & 1 & \\
-Physics       &   &   &   & 1 &   & 1 & \\
-Psychology    &12 & 9 & 9 & 8 & 6 & 44 & \\
-Social Work   & 6 & 6 & 6 & 5 & 3 & 26 & \\
-Sociology      &   & 1 &   & 1 &   & 2 & \\ \hline
-Total         &32 &40 &36 &26 &22 &156 &   \\ \hline
-\end{tabular}
-%\end{table}
-}}
-\end{minipage}
-\begin{minipage}[ht]{6cm}
-    
-    Using the data from Table 15.1,
-
-\begin{enumerate}
-  \item Construct a relative frequency table for total student majors (column above).
-  \item	The highest percentage of \\ students fall under what major?
-  \item	What percentage of students are Art majors?
-  \item	What percentage of students' \\ majors fall in both Sociology and Psychology?
-  \item	How does the percentage of students who are communications majors in Class A compare to the percentage of communication majors overall for total students? 
-\end{enumerate}
-\end{minipage}
-    \end{exercise}
-    \begin{solution}
-      
-  \begin{enumerate}
-  \item Construct a relative frequency table for total student majors (column above).
-  \item	The highest percentage of students fall under what major?
-  \item	What percentage of students are Art majors?
-  \item	What percentage of students’ majors fall in both Sociology and Psychology?
-  \item	How does the percentage of students who are communications majors in Class A compare to the percentage of communication majors overall for total students? 
-\end{enumerate}  
-    \end{solution}
-  
-\clearpage
-
-    \begin{exercise}  % 1B        %%%%%%%%%%%%%%%%%%
-    
-    \begin{center}
-\begin{flushleft}\textbf{ \large \hfill Workshop 1B, Submitted by: }\end{flushleft}
+\begin{flushleft}\textbf{\large \hfill Workshop 12A, Submitted by: }\end{flushleft}
 
 \fbox{\parbox{14cm}{
 \vspace{4mm}
@@ -113,514 +30,35 @@ Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phan
  }}
 \end{center}
 
-\begin{minipage}[ht]{9cm}
+Live and Let Dye
 
-{\small{
-Table 15.2: A partial list of students registered for Stat 1600 during Fall 2016 of their Major course of study.
-
-%\begin{table}[ht]
-\centering
-% \caption{A partial list of students registered for Stat 1600 during Fall 2016 of their Major course of study.}
-\begin{tabular}{@{} l | cccccc | c @{}} \hline
-& \multicolumn{5}{c}{Class } \\ \hline
-Major & A & B & C & D & Web & Total & RF \\ \hline
-Anthropology & 2 &   &   & 1 &   & 3 & \\
-Art           &   & 5 & 3 & 1 &   & 9 & \\
-Aviation      &   &   & 1 & 1 &   & 2 & \\
-Biology       &   & 3 &   & 1 & 1 & 5 & \\
-Business      & 1 &   &   &   &   & 1 & \\
-Communication & 5 & 1 & 4 & 3 & 4 & 17 & \\
-Criminal Justice &  & 3 & 2 & 1 &   & 6 & \\
-Data Science  &   & 1 &   &   &   & 1 & \\
-Education     &   & 2 &   &   & 2 & 4 & \\
-English       & 2 & 3 &   &   & 1 & 6 & \\
-Foreign Lang. &   & 1 & 1 &   &   & 2 & \\
-Geography     &   & 1 &   &   & 1 & 2 & \\
-Graphic Design & 1 &  & 1 &   &   & 2 & \\
-History       & 1 &   & 1 &   &   & 2 & \\
-Journalism    &   & 1 & 1 &   & 1 & 3 & \\
-Mathematics   &   & 2 &   &   &   & 2 & \\
-Music         & 2 &   & 7 & 3 & 3 & 15 & \\
-Nursing       &   & 1 &   &   &   & 1 & \\
-Physics       &   &   &   & 1 &   & 1 & \\
-Psychology    &12 & 9 & 9 & 8 & 6 & 44 & \\
-Social Work   & 6 & 6 & 6 & 5 & 3 & 26 & \\
-Sociology      &   & 1 &   & 1 &   & 2 & \\ \hline
-Total         &32 &40 &36 &26 &22 &156 &   \\ \hline
+In an experimental study, 44 rats were exposed to a high dose of red dye, 44 rats were exposed to a low dose of red dye, and it was then observed how many in each group developed cancer. 
+				
+\begin{tabular}{@{} lccc @{}} \hline				
+   & \multicolumn{2}{c}{Cancer} \\ 
+Dose Level of Red Dye &	Yes	 & No &	Total \\ \hline
+High &	14	& 30 &	44 \\ 
+Low &	4 &	40 &	44  \\ \hline
+Total &	18 &	70 & 88 \\ \hline
 \end{tabular}
-%\end{table}
-}}
-\end{minipage}
-\begin{minipage}[ht]{6cm}
-    Using the data from Table 15.2,
-
+				
 \begin{enumerate}
-  \item	Using the column `RF' above, construct a relative frequency table for student majors in the Web Class only.
-  \item	The highest percentage of students fall under what major?
-  \item	What percentage of students are Music majors?
-  \item	What percentage of students are found in the majors of Psychology, Social Work and Sociology (combined)?
-  \item	How does the percentage of students who are education \\ majors in the Web class compare to the percentage of education majors overall for total students?  Which is higher? 
-\end{enumerate}
-\end{minipage}
-    \end{exercise}
-    \begin{solution} % 1B
-      
-  \begin{enumerate}
-  \item	Using the column `RF' above, construct a relative frequency table for student majors in the Web Class only.
-  \item	The highest percentage of students fall under what major?
-  \item	What percentage of students are Music majors?
-  \item	What percentage of students are found in the majors of Psychology, Social Work and Sociology (combined)?
-  \item	How does the percentage of students who are education majors in the Web class compare to the percentage of education majors overall for total students?  Which is higher? 
-\end{enumerate}
-    \end{solution}
-    
-\clearpage
-
-    \begin{exercise}  % 1C        %%%%%%%%%%%%%%%%%%
-    
-    \begin{center}
-\begin{flushleft}\textbf{ \large \hfill Workshop 1C, Submitted by: }\end{flushleft}
-
-\fbox{\parbox{14cm}{
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
- }}
-\end{center}
-
-Hospital-acquired infections are a serious concern for patients in hospitals and can be caused by bacterial, viral, and fungal pathogens.  Suppose hospitals in the state of Michigan reported the following number of infections and deaths from infection below for the past year.  
-
-\begin{table}[ht]
-\centering
-\caption{Hospital-acquired Infections}
-\begin{tabular}{@{} lcc @{}} \hline
-%  & \multicolumn{5}{c}{Class } \\ \hline
-Type of infection & Number of Infections & Number of Deaths \\ \hline
-Pneumonia & 184 & 79 \\
-Bloodstream & 258 & 65 \\
-Surgical site &	361 & 12 \\	
-Urinary tract	&	833 & 103 \\
-Other	& 287 & 54 \\ \hline 
-\end{tabular}
-\end{table}
-    
-    Using the data from Table 15.3,
-
-\begin{enumerate}
-  \item What type of variable is `type of infection' numerical or categorical?
-  \item	We can further describe this variable as \underline{\phantom{xxxxxxxxxxxxxxx}}.
-  \item	Construct a relative frequency table for the number of infections (show percentages to two places past the decimal).
-  \item	Complete a bar chart for the relative frequency table above complete with title and axis Labels.
-  \item	What other type of graph can we use for this variable type?
-\end{enumerate}
-    \end{exercise}
-    \begin{solution} % 1C
-      
-  \begin{enumerate}
-  \item	Using the column `RF' above, construct a relative frequency table for student majors in the Web Class only.
-  \item	The highest percentage of students fall under what major?
-  \item	What percentage of students are Music majors?
-  \item	What percentage of students are found in the majors of Psychology, Social Work and Sociology (combined)?
-  \item	How does the percentage of students who are education majors in the Web class compare to the percentage of education majors overall for total students?  Which is higher? 
-\end{enumerate}
-    \end{solution}    
-    
-
-\clearpage
-
-    \begin{exercise}  % 2A        %%%%%%%%%%%%%%%%%%
-    
-    \begin{center}
-\begin{flushleft}\textbf{ \large \hfill Workshop 2A, Submitted by: }\end{flushleft}
-
-\fbox{\parbox{14cm}{
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
- }}
-\end{center}
-
-The average test grades of 19 students are as follows (on a scale from 0 to 100, with 100 being the highest score):
-
-91 (A), 95 (A), 96 (A), 82 (B), 94 (A), 75 (C), 91 (A), 79 (C), 92 (A), 100 (A), 89 (B), 93(A), 91 (A), 86 (B), 93 (A), 72 (C), 74 (C), 93 (A), 90 (A)
-
-\begin{table}[ht]
-\centering
-\caption{Distribution of Grades}
-\begin{tabular}{@{} lcc @{}} \hline
-%%  & \multicolumn{5}{c}{Class } \\ \hline
-grades & frequency & relative frequency \\ \hline
-A  & & \\
-B  & & \\
-C  & & \\ \hline
-\end{tabular}
-\end{table}
-    
-\begin{enumerate}
-  \item Fill in the frequency and relative frequency table above
-  \item  Create a bar chart and pie chart for the above data
-  \item  What percentage of students got a grade of `A'?
-  \item  Looking at the bar chart in part a, identify the shape of the data (symmetric, right-skewed, left-skewed)? 
-\end{enumerate}
-    \end{exercise}
-    \begin{solution}  % 2A
-      
-  \begin{enumerate}
-  \item Fill in the frequency and relative frequency table above
-  \item  Create a bar chart and pie chart for the above data
-  \item  What percentage of students got a grade of `A'?
-  \item  Looking at the bar chart in part a, identify the shape of the data (symmetric, right-skewed, left-skewed)? 
-\end{enumerate}
-    \end{solution}
-
-\clearpage
-
-    \begin{exercise}  % 2B        %%%%%%%%%%%%%%%%%%
-
-    \begin{center}
-\begin{flushleft}\textbf{\large \hfill Workshop 2B, Submitted by: }\end{flushleft}
-
-\fbox{\parbox{14cm}{
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
- }}
-\end{center}
-
-The following 50 test scores for Stat 1600 students are found below. Based on the intervals provided, complete the relative frequency table and answer the following questions.
-
-84	88	76	44	80	83	51	93	69	78 \\
-49	55	78	93	64	84	54	92	96	72 \\
-97	37	97	67	83	93	95	67	72	67 \\
-86	76	80	58	62	69	64	82	48	54 \\
-80	69  62	67	66	73	77	82	84	86
-
-\begin{table}[ht]
-\centering
-\caption{Distribution of Test Scores}
-\begin{tabular}{@{} lcc @{}} \hline
-%  & \multicolumn{5}{c}{Class } \\ \hline
-Grades  & frequency & relative frequency \\ \hline
-30-39 & & \\
-40-49 & & \\
-50-59 & & \\
-60-69 & & \\
-70-79 & & \\
-80-89 & & \\
-90-99 & & \\ \hline
-\end{tabular}
-\end{table}
-
-\begin{enumerate}
-  \item Fill in the frequency and relative frequency above.
-  \item	Complete a stem and leaf plot with the stem representing the 10’s place and using 3-9.
-  \item Draw a histogram for the test scores using the intervals in the relative frequency table above.
-  \item	What percentage of students had scores of 59 or less?
+  \item Estimate the difference in percentage of developing cancer between high dose level of red dye and low dose level of red dye.
+  \item Calculate a standard error for your estimate in (1).
+  \item Calculate a 95\% confidence interval for the difference in percentage of developing cancer between high dose level of red dye and low dose level of red dye.
 \end{enumerate}
 
-    \end{exercise}
-    \begin{solution} %2B
-
-  \begin{enumerate}
-  \item Fill in the frequency and relative frequency above.
-  \item	Complete a stem and leaf plot with the stem representing the 10’s place and using 3-9.
-  \item Draw a histogram for the test scores using the intervals in the relative frequency table above.
-  \item	What percentage of students had scores of 59 or less?
-\end{enumerate}
-
-    \end{solution}
-
-\clearpage
-
-    \begin{exercise}  % 2C        %%%%%%%%%%%%%%%%%%
-
-    \begin{center}
-\begin{flushleft}\textbf{\large \hfill Workshop 2C, Submitted by: }\end{flushleft}
-
-\fbox{\parbox{14cm}{
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
- }}
-\end{center}
-
-The numbers of absences for 20 Stat 1600 students are shown below (on a scale from 0 to 30).
-
-Sample:	10, 0, 1, 3, 15, 6, 2, 1, 0, 21, 25, 11, 9, 7, 4, 5, 12, 28, 17, 8
-
-Sorted:	0, 0, 1, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 15, 17, 21, 25, 28
-
-
-\begin{table}[ht]
-\centering
-\caption{Distribution of Absences}
-\begin{tabular}{@{} lcc @{}} \hline
-%  & \multicolumn{5}{c}{Class } \\ \hline
-Number of absences & Frequency & Relative frequency \\
-0-9 & & \\
-10-19 & & \\
-20-29 & & \\ \hline
-\end{tabular}
-\end{table}
-
-\begin{enumerate}
-  \item	Fill in the frequency and relative frequency above.
-  \item	Complete a stem and leaf plot with the stem representing the 10's place and using 0-2.
-  \item	Draw a histogram for the absences using the intervals in the relative frequency table above.
-  \item	What percentage of students had number of absences less than 20?
-\end{enumerate}
-
-    \end{exercise}
-    \begin{solution} % 2C
-
-\begin{enumerate}
-  \item	Fill in the frequency and relative frequency above.
-  \item	Complete a stem and leaf plot with the stem representing the 10's place and using 0-2.
-  \item	Draw a histogram for the absences using the intervals in the relative frequency table above.
-  \item	What percentage of students had number of absences less than 20?
-\end{enumerate}
-
-    \end{solution}
-    
-\clearpage
-
-    \begin{exercise}  % 3A         %%%%%%%%%%%%%%%%%%
-
-    \begin{center}
-\begin{flushleft}\textbf{\large \hfill Workshop 3A, Submitted by: }\end{flushleft}
-
-\fbox{\parbox{14cm}{
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
- }}
-\end{center}
-
-The number of ice cream cones sold during a single day in the middle of August was tracked for surrounding stores.  Consider the following stem and leaf and answer the  questions below. The stem represents `10's' and the leaves represent `1's'.  For instance, the first number represented is 14 (14 ice cream cones were sold at one store). 
-
-% 14,16,22,23,25,28,30,34,34,36,37,37,39,41,43,45,49,54,56
-
-\begin{verbatim}
-<<label=LBL15a, results="asis", echo=FALSE>>=
-  DT1 <- c(14,16,22,23,25,28,30,34,34,36,37,37,39,41,43,45,49,54,56)
-  stem(DT1, scale=1)
-@
-\end{verbatim}
-
-Give the five-number summary of the data.   :
-
-\begin{enumerate}
-  \item Make sure to show your work!
-  \begin{enumerate}
-    \item What is the MIN?
-    \item	What is Q1?
-    \item	What is the MED?
-    \item What is Q3?
-    \item What is the MAX?
-  \end{enumerate}
-  \item Draw a boxplot for the data.
-  \item Describe the shape of the distribution (symmetric, right skewed, or left skewed).
-  \item Ice Cream sales for a single day in January were tracked among several shops.  Would we use a histogram or bar chart to represent this data?  Why?  Draw the correct chart (histogram or bar chart).
-\end{enumerate}
-
-\begin{tabular}{@{} lc @{}} \hline
-Cold Stone Creamery	& 18 \\
-Culver's &	16 \\
-Ritter's &	9 \\
-Treat Street &	3 \\
-Y'OPA &	20 \\
-Yo Go Delites &	24 \\ \hline
-\end{tabular}
-
-    \end{exercise}
-    \begin{solution} % 3A
-
-\begin{enumerate}
-  \item	Fill in the frequency and relative frequency above.
-  \item	Complete a stem and leaf plot with the stem representing the 10's place and using 0-2.
-  \item	Draw a histogram for the absences using the intervals in the relative frequency table above.
-  \item	What percentage of students had number of absences less than 20?
-\end{enumerate}
-
-    \end{solution}
-    
-\clearpage
-
-    \begin{exercise}  % 3B         %%%%%%%%%%%%%%%%%
-
-    \begin{center}
-\begin{flushleft}\textbf{\large \hfill Workshop 3B, Submitted by: }\end{flushleft}
-
-\fbox{\parbox{14cm}{
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
- }}
-\end{center}
-
-The age at inauguration for each U.S. President is provided below:
-
-52, 69, 64, 46, 54, 47, 70, 61, 57, 57, 58, 57, 61, 54, 68, 51, 49, 64, 57, 50, 48, 65, 52, 56, 46, 54, 56, 55, 51, 54, 51, 60, 62, 43, 55, 56, 61, 49, 51, 47, 55, 55, 54, 42, 51
-
-https://www.loc.gov/rr/program/bib/inaugurations/
-
-
-\begin{enumerate}
-  \item Give the five-number summary of the data:
-  {\small{
-    \begin{enumerate}
-    \item What is the MIN?
-    \item What is Q1?
-    \item What is the MED?
-    \item What is Q3?
-    \item What is the MAX?
-    \end{enumerate}
-  }}
-    \item Draw a boxplot for the data.
-    \item Finish the relative frequency table below. 
-
-{\small{
-\begin{tabular}{@{} lcc @{}} \hline
-Age & Frequency & Relative frequency \\ \hline
-40 - 44 & & \\                        
-45 - 49 & & \\                       
-50 - 54 & & \\                      
-55 - 59 & & \\                      
-60 - 64 & & \\                    
-65 - 69 & & \\  
-70 - 74 & & \\
-\end{tabular}
-}}
-    
-    \item	Construct a histogram based on the given intervals for age at inauguration.  Describe the shape of the distribution (symmetric, right skewed, or left skewed).
-    \item Do some extra research: Who was the youngest president at inauguration? Who was the oldest president at inauguration?
-\end{enumerate}
-    \end{exercise}
-    \begin{solution} % 3A
-
-\begin{enumerate}
-  \item	Fill in the frequency and relative frequency above.
-  \item	Complete a stem and leaf plot with the stem representing the 10's place and using 0-2.
-  \item	Draw a histogram for the absences using the intervals in the relative frequency table above.
-  \item	What percentage of students had number of absences less than 20?
-\end{enumerate}
-
-    \end{solution} 
-    
-\clearpage
-
-    \begin{exercise}  % 3C         %%%%%%%%%%%%%%%%%
-
-    \begin{center}
-\begin{flushleft}\textbf{\large \hfill Workshop 3C, Submitted by: }\end{flushleft}
-
-\fbox{\parbox{14cm}{
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
- }}
-\end{center}
-
-The independence years of some Caribbean and African countries are shown below:
-                
-1804, 1847, 1910, 1922, 1941, 1951, 1956, 1956, 1956, 1956, 1956, 1957, 1958, 1958,1960, 1960, 1960, 1960, 1960,1960, 1960, 1960, 1960, 1961, 1961, 1962, 1962, 1966, 1966, 1973, 1974, 1975, 1977, 1978, 1979, 1979, 1980, 1981, 1981, 1983, 1990, 1993
-
-$n = 42$
-
-\begin{enumerate}
-  \item Give the five-number summary of the data:
-  {\small{
-  \begin{enumerate}
-  \item What is the MIN?
-  \item What is Q1?
-  \item What is the MED?
-  \item What is Q3?
-  \item What is the MAX?
-\end{enumerate}
-}}
-\item Draw a boxplot for the data.
-\item Finish the relative frequency table below.
-
-{\small{
-\begin{tabular}{@{} lcc @{}} \hline
-Age & Frequency & Relative frequency \\ \hline 
-1800 – 1839 & & \\
-1840 – 1879 & & \\		
-1880 – 1919	& & \\						
-1920 – 1959	& & \\				
-1960 – 1999	& & \\
-\end{tabular}
-}}
-\item	Construct a histogram based on the given intervals for independence year. Describe the shape of the distribution (symmetric, right skewed, or left skewed).
-\item Do some extra (but fun) research: Which country has the minimum (first) independence year on this list?
-\end{enumerate}
 \end{exercise} 
-\begin{solution}  % 3C
+\begin{solution}  % 12a
 
 \end{solution}
 
 \clearpage
 
-    \begin{exercise}  % 4A         %%%%%%%%%%%%%%%%%
+    \begin{exercise}  % 12b         %%%%%%%%%%%%%%%%%
 
     \begin{center}
-\begin{flushleft}\textbf{\large \hfill Workshop 4A, Submitted by: }\end{flushleft}
+\begin{flushleft}\textbf{\large \hfill Workshop 12B, Submitted by: }\end{flushleft}
 
 \fbox{\parbox{14cm}{
 \vspace{4mm}
@@ -637,30 +75,36 @@ Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phan
  }}
 \end{center}
 
-A local bank has been monitoring daily average wait-times for its customers for four weeks. The manager believed that she could improve the wait-times by having one(1) permanent clerk and three(3) floating clerks, instead of the current three (3) permanent clerks. The floating clerks would do other tasks except when the lines became excessive. Last week the manager implemented the new system. 
+Gone Fishin'
 
-Old Policy:   5, 7, 10, 11, 18, 4, 4, 4, 14, 21, 0, 7, 8, 9, 18, 6, 6, 12, 22, 25 \\ 
-New Policy: 4, 3, 9, 13, 17
-
-Were waiting times longer using the ``Old Policy'' or the ``New Policy?''  To answer this question, calculate the following for both the old and new policies.
-
+Consider the following data from the Chicago Western Electric Study (Shekelle et al., 1981). In the following table 466 men were classified based on death from coronary heart disease (CHD) and fish consumption.
+				
+\begin{tabular}{@{} lccc @{}} \hline
+& \multicolumn{2}{c}{Death from CHD} \\ 	 		 
+Daily Fish Consumption &	Yes &	No &	Total \\ \hline
+High &	34 &	227 &	261 \\
+Low	& 42 &	163 &	205 \\ \hline
+Total &	76 &	390 &	466 \\ \hline
+\end{tabular}
+			
 \begin{enumerate}
-  \item Draw comparison dotplots for the samples above.
-  \item For each sample, calculate the mean AND median.  Locate (place) these on your dotplots, clearly distinguishing between the two.
-  \item What is the mode for the old policy?
-  \item Calculate the 10\% trimmed mean for the old policy.  How does this change from the regular mean?
+  \item Estimate the difference in percentage of death from CHD between high daily fish consumption and low daily fish consumption.
+  \item Calculate a standard error for your estimate in (1).
+  \item Calculate a 95\% confidence interval for the difference in percentage of death from CHD between high daily fish consumption and low daily fish consumption.
 \end{enumerate}
+			
+			
 \end{exercise} 
-\begin{solution}  % 4a
+\begin{solution}  % 12b
 
 \end{solution}
 
 \clearpage
 
-    \begin{exercise}  % 4B         %%%%%%%%%%%%%%%%%
+    \begin{exercise}  % 12c         %%%%%%%%%%%%%%%%%
 
     \begin{center}
-\begin{flushleft}\textbf{\large \hfill Workshop 4B, Submitted by: }\end{flushleft}
+\begin{flushleft}\textbf{\large \hfill Workshop 12C, Submitted by: }\end{flushleft}
 
 \fbox{\parbox{14cm}{
 \vspace{4mm}
@@ -677,28 +121,33 @@ Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phan
  }}
 \end{center}
 
-Annual chocolate sales in billions of dollars from 6 countries are provided below.
+Making the Cut
 
-\$2.5, \$1.9, \$4.2, \$1.2, \$3.3, \$19.1
-
-For the data above calculate:
-
-\begin{enumerate}
-  \item Mean
-  \item Median 
-  \item Median of Pairwise Averages
+The following table shows how many prospective students of a sample of 200 students were admitted to WMU last year, and if the student's GPA was below 2.8 or not.  Out of the sample, 60 applicants were rejected and 140 were accepted. 
+				
+\begin{tabular}{@{} lccc @{}} \hline				
+ 	& \multicolumn{2}{c}{Rejected from WMU} \\   		 
+GPA Below 2.8 &	Yes &	No & Total \\ \hline
+Yes	& 45 &	20 &	65 \\
+No &	15 &	120 &	135 \\ \hline
+Total &	60 &	140 &	200 \\ \hline
+\end{tabular}\begin{enumerate}
+  \item Estimate the difference in proportion of being rejected from WMU between having below a 2.8 GPA and not having below a 2.8 GPA.
+  \item Calculate a standard error for your estimate in (a).  
+  \item Calculate a 95\% confidence interval for the difference in proportion of being rejected from WMU between having below a 2.8 GPA and not having below a 2.8 GPA.
 \end{enumerate}
+
 \end{exercise} 
-\begin{solution}  % 4b
+\begin{solution}  % 12c
 
 \end{solution}
 
 \clearpage
 
-    \begin{exercise}  % 4C         %%%%%%%%%%%%%%%%%
+    \begin{exercise}  % 13a         %%%%%%%%%%%%%%%%%
 
     \begin{center}
-\begin{flushleft}\textbf{\large \hfill Workshop 4C, Submitted by: }\end{flushleft}
+\begin{flushleft}\textbf{\large \hfill Workshop 13A, Submitted by: }\end{flushleft}
 
 \fbox{\parbox{14cm}{
 \vspace{4mm}
@@ -715,111 +164,34 @@ Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phan
  }}
 \end{center}
 
-Weekly costs of lattes for 5 WMU graduate students are provided below.
+Live and Let Dye
 
-\$3.47, \$12, \$7.52, \$10.5, \$4.5
+In an experimental study, 44 rats were exposed to a high dose of red dye, 44 rats were exposed to a low dose of red dye, and it was then observed how many in each group developed cancer.
 
-\begin{enumerate}
-  \item Mean
-  \item Median 
-  \item Median of Pairwise Averages
-\end{enumerate}
-\end{exercise} 
-\begin{solution}  % 4c
-
-\end{solution}
-
-\clearpage
-
-    \begin{exercise}  % 5A         %%%%%%%%%%%%%%%%%
-
-    \begin{center}
-\begin{flushleft}\textbf{\large \hfill Workshop 5A, Submitted by: }\end{flushleft}
-
-\fbox{\parbox{14cm}{
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
- }}
-\end{center}
-
-The average MCAT scores for Michigan medical schools are provided below.
-
-504, 507, 507, 516, 508, 514
-
-\begin{enumerate}
-  \item Calculate the overall mean
-  \item Calculate the SD
-  \item How does Michigan's mean and SD compare to the national average of matriculants (those enrolled in medical schools) 508.7 and SD of 6.9?  Which has greater variability?
-\end{enumerate}
-
-http://www.mcattestscores.com/usmedicalschoolsmcatscoresGPA.html
-
-https://www.aamc.org/download/321494/data/factstablea16.pdf
-
-\end{exercise} 
-\begin{solution}  % 5a
-
-\end{solution}
-
-\clearpage
-
-    \begin{exercise}  % 5B         %%%%%%%%%%%%%%%%%
-
-    \begin{center}
-\begin{flushleft}\textbf{\large \hfill Workshop 5B, Submitted by: }\end{flushleft}
-
-\fbox{\parbox{14cm}{
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
- }}
-\end{center}
-
-Hourly wage of personnel within a small company are as follows:
-
-\begin{tabular}{@{} ll @{}} \hline
-Staff	&	Salary (dollars) \\ \hline
-Owner		& 30 \\
-Manager	& 21 \\
-Worker	& 12 \\
-Worker	& 11 \\
-Worker	& 9 \\ \hline
+\begin{tabular}{@{} lccc @{}} \hline
+ 	& \multicolumn{2}{c}{Cancer} \\
+Dose Level of Red Dye &	Yes &	No &	Total \\ \hline
+High &	14 &	30 &	44 \\
+Low &	4 &	40 & 44 \\ \hline
+Total &	18 &	70 &	88 \\ \hline
 \end{tabular}
 
 \begin{enumerate}
-  \item Calculate the average hourly wage of the staff.
-  \item Calculate the SD
-  \item A similar company has a mean hourly wage of \$17 per hour with a SD of 9.75.  Which has greater variability?  How does that relate to the spread of the data?
+  \item Estimate the risk ratio of developing cancer between high dose level of red dye and low dose level of red dye.
+  \item Calculate a 95\% confidence interval for the risk ratio of developing cancer between high dose level of red dye and low dose level of red dye.
 \end{enumerate}
 
-\end{exercise} 
-\begin{solution}  % 5b
+\end{exercise}
+\begin{solution}  % 13a
 
 \end{solution}
 
 \clearpage
 
-    \begin{exercise}  % 5c         %%%%%%%%%%%%%%%%%
+    \begin{exercise}  % 13b         %%%%%%%%%%%%%%%%%
 
     \begin{center}
-\begin{flushleft}\textbf{\large \hfill Workshop 5C, Submitted by: }\end{flushleft}
+\begin{flushleft}\textbf{\large \hfill Workshop 13B, Submitted by: }\end{flushleft}
 
 \fbox{\parbox{14cm}{
 \vspace{4mm}
@@ -836,29 +208,209 @@ Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phan
  }}
 \end{center}
 
-The data below are the weights of six (6) randomly selected kids in a daycare measured in pounds 
+Gone Fishin'
 
- 13.6, 16.6, 23.5, 10.2, 5.4, 15.0
+Consider the following data from the Chicago Western Electric Study (Shekelle et al., 1981). In the following table 466 men were classified based on death from coronary heart disease (CHD) and fish consumption.
+
+\begin{tabular}{@{} lccc @{}} \hline
+ 	& \multicolumn{2}{c}{Death from CHD} \\
+Daily Fish Consumption &	Yes &	No &	Total \\ \hline
+High &	34 &	227 &	261 \\
+Low &	42 &	163 &	205 \\ \hline
+Total &	76 &	390 &	466 \\ \hline
+\end{tabular}
 
 \begin{enumerate}
-  \item What is the average weight of the six kids in pounds?
-  \item Suppose the weights of the six kids are measured in kilograms instead. Calculate the average weight of the kids in kilograms (Hint: 1 pound = 0.453592 kilograms).
-  \item What is the standard deviation of the weight of the kids in pounds?
+  \item Estimate the risk ratio of death from CHD between high daily fish consumption and low daily fish consumption.
+  \item Calculate a 95\% confidence interval for the risk ratio of death from CHD between high daily fish consumption and low daily fish consumption.
 \end{enumerate}
 
-
-\end{exercise} 
-\begin{solution}  % 5c
+\end{exercise}
+\begin{solution}  % 13b
 
 \end{solution}
 
+\clearpage
+
+    \begin{exercise}  % 13c         %%%%%%%%%%%%%%%%%
+
+    \begin{center}
+\begin{flushleft}\textbf{\large \hfill Workshop 13C, Submitted by: }\end{flushleft}
+
+\fbox{\parbox{14cm}{
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+ }}
+\end{center}
+
+Making the Cut
+
+The following table shows how many prospective students of a sample of 200 students were admitted to WMU last year, and if the student's GPA was below 2.8 or not. Out of the sample, 60 applicants were rejected and 140 were accepted.
+
+\begin{tabular}{@{} lccc @{}} \hline
+ 	& \multicolumn{2}{c}{Rejected from WMU} \\
+GPA Below 2.8 &	Yes &	No &	Total  \\ \hline
+Yes &	45 &	20 &	65 \\
+No &	15 &	120 &	135 \\ \hline
+Total &	60 &	140 &	200 \\ \hline
+\end{tabular}
+
+\begin{enumerate}
+  \item Estimate the risk ratio of being rejected from WMU between having below a 2.8 GPA and not having below a 2.8 GPA.
+  \item Calculate a 95\% confidence interval for the risk ratio of being rejected from WMU between having below a 2.8 GPA and not having below a 2.8 GPA.
+\end{enumerate}
+
+\end{exercise}
+\begin{solution}  % 13c
+
+\end{solution}
 
 \clearpage
 
-    \begin{exercise}  % 6a         %%%%%%%%%%%%%%%%%
+    \begin{exercise}  % 14A         %%%%%%%%%%%%%%%%%
 
     \begin{center}
-\begin{flushleft}\textbf{\large \hfill Workshop 6A, Submitted by: }\end{flushleft}
+\begin{flushleft}\textbf{\large \hfill Workshop 14A, Submitted by: }\end{flushleft}
+
+\fbox{\parbox{14cm}{
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+ }}
+\end{center}
+
+Live and Let Dye
+
+In an experimental study, 44 rats were exposed to high dose of red dye and 44 rats were exposed to low dose of red dye and then it was observed how many in each group developed cancer.
+
+\begin{tabular}{@{} lccc @{}} \hline
+ 	& \multicolumn{2}{c}{Cancer} \\
+Dose Level of Red Dye &	Yes &	No &	Total \\ \hline
+High &	14 &	30 &	44 \\
+Low	& 4	& 40 &	44 \\ \hline
+Total &	18 &	70 &	88 \\ \hline
+\end{tabular}
+
+\begin{enumerate}
+  \item Estimate the odds ratio of developing cancer between high dose level of red dye and low dose level of red dye.
+  \item Calculate a 95\% confidence interval for the odds ratio of developing cancer between high dose level of red dye and low dose level of red dye.
+\end{enumerate}
+
+\end{exercise}
+\begin{solution}  % 14a
+
+\end{solution}
+
+\clearpage
+
+    \begin{exercise}  % 14B         %%%%%%%%%%%%%%%%%
+
+    \begin{center}
+\begin{flushleft}\textbf{\large \hfill Workshop 14B, Submitted by: }\end{flushleft}
+
+\fbox{\parbox{14cm}{
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+ }}
+\end{center}
+
+Gone Fishin'
+
+Consider the following data from the Chicago Western Electric Study (Shekelle et al., 1981). In the following table 466 men were classified based on death from coronary heart disease (CHD) and fish consumption.
+
+\begin{tabular}{@{} lccc @{}} \hline
+ 	& \multicolumn{2}{c}{Death from CHD} \\
+Daily Fish Consumption &	Yes &	No & Total \\ \hline
+Low &	42 &	163 &	205 \\
+High &	34 &	227 &	261 \\ \hline
+Total &	76 &	390 &	466 \\ \hline
+\end{tabular}
+
+\begin{enumerate}
+  \item Estimate the odds ratio of death from CHD between low daily fish consumption and high daily fish consumption.
+  \item Calculate a 95\% confidence interval for the odds ratio of death from CHD between low daily fish consumption and high daily fish consumption.
+\end{enumerate}
+
+\end{exercise}
+\begin{solution}  % 14b
+
+\end{solution}
+
+\clearpage
+
+    \begin{exercise}  % 14C         %%%%%%%%%%%%%%%%%
+
+    \begin{center}
+\begin{flushleft}\textbf{\large \hfill Workshop 14C, Submitted by: }\end{flushleft}
+
+\fbox{\parbox{14cm}{
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+ }}
+\end{center}
+
+Making the Cut
+
+The following table shows how many prospective students of a sample of 200 students were admitted to WMU last year, and if the student's GPA was below 2.8 or not. Out of the sample, 60 applicants were rejected and 140 were accepted.
+
+\begin{tabular}{@{} lccc @{}} \hline
+ 	& \multicolumn{2}{c}{Rejected from WMU} \\
+GPA Below 2.8 & 	Yes &	No &	Total \\ \hline
+Yes &	45 &	20 &	65 \\
+No &	15 &	120 &	135 \\ \hline
+Total &	60 &	140 &	200 \\ \hline
+\end{tabular}
+
+\begin{enumerate}
+  \item Estimate the odds ratio of being rejected from WMU between having below a 2.8 GPA and not having below a 2.8 GPA.
+  \item Calculate a 95\% confidence interval for the odds ratio of being rejected from WMU between having below a 2.8 GPA and not having below a 2.8 GPA.
+\end{enumerate}
+\end{exercise}
+\begin{solution}  % 14c
+
+\end{solution}
+
+\clearpage
+
+    \begin{exercise}  % 15a         %%%%%%%%%%%%%%%%%
+
+    \begin{center}
+\begin{flushleft}\textbf{\large \hfill Workshop 15A, Submitted by: }\end{flushleft}
 
 \fbox{\parbox{14cm}{
 \vspace{4mm}
@@ -892,16 +444,16 @@ But while about 6 percent of those who watched less than three hours a day were 
   \item Using one confounder from your answer(s) in (1), draw a pathway graph depicting the possible relationship between confounder, possible cause and outcome.
 \end{enumerate}
 \end{exercise}
-\begin{solution}  % 6a
+\begin{solution}  % 15a
 
 \end{solution}
 
 \clearpage
 
-    \begin{exercise}  % 6b         %%%%%%%%%%%%%%%%%
+    \begin{exercise}  % 15b         %%%%%%%%%%%%%%%%%
 
     \begin{center}
-\begin{flushleft}\textbf{\large \hfill Workshop 6B, Submitted by: }\end{flushleft}
+\begin{flushleft}\textbf{\large \hfill Workshop 15B, Submitted by: }\end{flushleft}
 
 \fbox{\parbox{14cm}{
 \vspace{4mm}
@@ -939,16 +491,16 @@ When the researchers considered other factors -- such as the circumstances and s
   \item Using one confounder from your answer(s) in (1), draw a pathway graph depicting the possible relationship between confounder, possible cause and outcome.
 \end{enumerate}
 \end{exercise}
-\begin{solution}  % 6b
+\begin{solution}  % 15b
 
 \end{solution}
 
 \clearpage
 
-    \begin{exercise}  % 6c         %%%%%%%%%%%%%%%%%
+    \begin{exercise}  % 15c         %%%%%%%%%%%%%%%%%
 
     \begin{center}
-\begin{flushleft}\textbf{\large \hfill Workshop 6C, Submitted by: }\end{flushleft}
+\begin{flushleft}\textbf{\large \hfill Workshop 15C, Submitted by: }\end{flushleft}
 
 \fbox{\parbox{14cm}{
 \vspace{4mm}
@@ -976,17 +528,16 @@ Mixed results were reported.  The authors summarized that violent video game pla
   \item Using one confounder from your answer(s) in (1), draw a pathway graph depicting the possible relationships between confounder, possible cause and outcome.
 \end{enumerate}
 \end{exercise}
-\begin{solution}  % 6c
+\begin{solution}  % 15c
 
 \end{solution}
 
-
 \clearpage
 
-    \begin{exercise}  % 7a         %%%%%%%%%%%%%%%%%
+    \begin{exercise}  % 16a         %%%%%%%%%%%%%%%%%
 
     \begin{center}
-\begin{flushleft}\textbf{\large \hfill Workshop 6A, Submitted by: }\end{flushleft}
+\begin{flushleft}\textbf{\large \hfill Workshop 16A, Submitted by: }\end{flushleft}
 
 \fbox{\parbox{14cm}{
 \vspace{4mm}
@@ -1003,7 +554,7 @@ Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phan
  }}
 \end{center}
 
-Jet design researchers have come up with two new designs for the wings of a rocket plane. They think both designs are an improvement over the old design but want to know which of their new designs performs better at high altitudes. Specifically, they want to know which new design results in more maneuverability at or above 100,000 feet above sea level. They decide to design a randomized trial to study this.
+Jet design researchers have come up with two new designs for the wings of a rocket plane. They think both designs are an improvement over the old design, but want to know which of their new designs performs better at high altitudes. Specifically, they want to know which new design results in more maneuverability at or above 100,000 feet above sea level. They decide to design a randomized trial to study this.
 
 
 \begin{enumerate}
@@ -1014,16 +565,16 @@ Jet design researchers have come up with two new designs for the wings of a rock
   \item What makes single and double blinding important?
 \end{enumerate}
 \end{exercise}
-\begin{solution}  % 7a
+\begin{solution}  % 16a
 
 \end{solution}
 
 \clearpage
 
-    \begin{exercise}  % 7b         %%%%%%%%%%%%%%%%%
+    \begin{exercise}  % 16b         %%%%%%%%%%%%%%%%%
 
     \begin{center}
-\begin{flushleft}\textbf{\large \hfill Workshop 7B, Submitted by: }\end{flushleft}
+\begin{flushleft}\textbf{\large \hfill Workshop 16B, Submitted by: }\end{flushleft}
 
 \fbox{\parbox{14cm}{
 \vspace{4mm}
@@ -1051,16 +602,16 @@ Some students at WMU were curious about whether partying influences GPA. To find
 \end{enumerate}
 
 \end{exercise}
-\begin{solution}  % 7b
+\begin{solution}  % 16b
 
 \end{solution}
 
 \clearpage
 
-    \begin{exercise}  % 7c         %%%%%%%%%%%%%%%%%
+    \begin{exercise}  % 16c         %%%%%%%%%%%%%%%%%
 
     \begin{center}
-\begin{flushleft}\textbf{\large \hfill Workshop 7C, Submitted by: }\end{flushleft}
+\begin{flushleft}\textbf{\large \hfill Workshop 16C, Submitted by: }\end{flushleft}
 
 \fbox{\parbox{14cm}{
 \vspace{4mm}
@@ -1090,16 +641,16 @@ Yogurt is known to contain `friendly bacteria' known generally as probiotics whi
 \end{enumerate}
 
 \end{exercise}
-\begin{solution}  % 7c
+\begin{solution}  % 16c
 
 \end{solution}
 
 \clearpage
 
-    \begin{exercise}  % 8a         %%%%%%%%%%%%%%%%%
+    \begin{exercise}  % 17A         %%%%%%%%%%%%%%%%%
 
     \begin{center}
-\begin{flushleft}\textbf{\large \hfill Workshop 8A, Submitted by: }\end{flushleft}
+\begin{flushleft}\textbf{\large \hfill Workshop 17A, Submitted by: }\end{flushleft}
 
 \fbox{\parbox{14cm}{
 \vspace{4mm}
@@ -1116,27 +667,28 @@ Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phan
  }}
 \end{center}
 
-Debt Poet's Society
-
-According to a Sallie Mae survey and credit bureau data, in 2008, college students carried an average of \$3,173 debt on their credit cards (USA TODAY, April 13, 2009). Suppose that current credit card debts for all college students have a normal distribution with a mean of \$3,173 and a standard deviation of \$800. 
+Historically throughout the United States, families of four spend about \$239 a week on groceries and food with a standard deviation of 50. Assume a random sample of 250 households is taken in the United States.
 
 \begin{enumerate}
-  \item Find the probability that credit card debt for a randomly selected college student below \$2,109.
-  \item Find the probability that credit card debt for a randomly selected college student is above \$3,605.
-  \item Find the probability that credit card debt for a randomly selected college student is between \$2,109 and \$3,605.
+  \item What is the expected value of the sample mean.
+  \item	What is the Standard error of this estimate?
+  \item	What is the probability that the mean weekly household spending is more than \$242?
+  \item	What is the probability that the mean weekly household spending less than \$235?
+  \item	What is the probability that the mean weekly household spending is between \$235 and \$242?
+  \item	If an even larger sample of 2500 households was taken and the SD remains the same, what is the new Standard Error of the estimate? Why did this occur?
 \end{enumerate}
 
-\end{exercise} 
-\begin{solution}  % 8a
+\end{exercise}
+\begin{solution}  % 17a
 
 \end{solution}
 
 \clearpage
 
-    \begin{exercise}  % 8b         %%%%%%%%%%%%%%%%%
+    \begin{exercise}  % 17B         %%%%%%%%%%%%%%%%%
 
     \begin{center}
-\begin{flushleft}\textbf{\large \hfill Workshop 8B, Submitted by: }\end{flushleft}
+\begin{flushleft}\textbf{\large \hfill Workshop 17B, Submitted by: }\end{flushleft}
 
 \fbox{\parbox{14cm}{
 \vspace{4mm}
@@ -1153,27 +705,40 @@ Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phan
  }}
 \end{center}
 
-The Social Network
+\begin{minipage}[ht]{7cm}
 
-According to an article published on the Web site www.PCMag.com, Facebook users spend an average of 190 minutes per month checking and updating their Facebook pages (Source: http://www.pcmag.com/article2/0,2817,2342757,00.asp). Suppose that the current distribution of time spent per month checking and updating a member's Facebook page is normally distributed with a mean of 190 minutes and a standard deviation of 53.4 minutes. For a randomly selected Facebook member, determine the probability that the amount of time that he or she spends per month checking and updating his or her Facebook page is…
+Too Fast, Not Enough Furious
+
+The above chart shows the average cost of annual auto insurance premiums in 2008 for drivers with no accidents, one accident, two accidents, and so on. According to this chart, the average annual auto insurance premium for drivers with no accidents was \$1,387 in 2008.
+
+\end{minipage}
+\begin{minipage}[ht]{7cm}
+
+%\begin{figure}[ht]
+\centering
+  \includegraphics[width=4cm]{chapters/Workshops/ext_figure/UsaToday.png}
+%\end{figure}
+\end{minipage}
 
 \begin{enumerate}
-  \item More than 180 minutes
-  \item Less than 120 minutes
-  \item Between 120 and 180 minutes
+  \item What is the estimated mean annual auto insurance premium for drivers with no accidents?
+  \item	What is the standard error of the estimate assuming this is based on a random sample of 400 drivers? Assume that the standard deviation of auto insurance premiums for all current drivers with no accidents is \$180.
+  \item Assuming the estimate in part a. is the mean for all drivers with no accidents, what is the probability that the mean annual auto insurance premium for drivers with no accidents is greater than \$1,395?
+  \item If a larger random sample of 1600 such drivers was taken and the SD remains the same, what is the new standard error of the estimate?
+  \item Assuming the estimate in part a. is the mean for all drivers with no accidents, what is the probability that the mean annual auto insurance premium for drivers with no accidents is greater than \$1,395 using the new standard error?
 \end{enumerate}
 
-\end{exercise} 
-\begin{solution}  % 8b
+\end{exercise}
+\begin{solution}  % 17b
 
 \end{solution}
 
 \clearpage
 
-    \begin{exercise}  % 8c         %%%%%%%%%%%%%%%%%
+    \begin{exercise}  % 17C         %%%%%%%%%%%%%%%%%
 
     \begin{center}
-\begin{flushleft}\textbf{\large \hfill Workshop 8C, Submitted by: }\end{flushleft}
+\begin{flushleft}\textbf{\large \hfill Workshop 17C, Submitted by: }\end{flushleft}
 
 \fbox{\parbox{14cm}{
 \vspace{4mm}
@@ -1190,25 +755,27 @@ Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phan
  }}
 \end{center}
 
-The amount paid out by Ajax Insurance Company in a year is normally distributed with mean 3 billion dollars and standard deviation 0.5 billion dollars. The company’s executives consider it a bad year if they must pay out more than 4.25 billion dollars. 
+Historically throughout the United States college students watch about 35 hours a month of television with a standard deviation of 5 hours. Assume a random sample of 25 college students is taken in West Michigan.
 
 \begin{enumerate}
-  \item Determine the probability of a bad year.
-  \item What is the probability that the company will have a good year?
-  \item What is the probability that the company paid out between 2 billion dollars and 3.5 billion dollars?
+  \item What is the expected value of the sample mean.
+  \item What is the Standard error of this estimate?
+  \item What is the probability that the mean monthly hours spent watching tv for the college students is more than 36.5?
+  \item What is the probability that the mean monthly hours spent watching tv is less than 34?
+  \item What is the probability that the mean monthly hours watching tv is between 34.5 and 36?
+  \item If an even larger sample of 250 students was taken and the SD remains the same, what is the new Standard Error of the estimate? Why did this occur?
 \end{enumerate}
-
-\end{exercise} 
-\begin{solution}  % 8c
+\end{exercise}
+\begin{solution}  % 17c
 
 \end{solution}
 
 \clearpage
 
-    \begin{exercise}  % 9a         %%%%%%%%%%%%%%%%%
+    \begin{exercise}  % 18A         %%%%%%%%%%%%%%%%%
 
     \begin{center}
-\begin{flushleft}\textbf{\large \hfill Workshop 9A, Submitted by: }\end{flushleft}
+\begin{flushleft}\textbf{\large \hfill Workshop 18A, Submitted by: }\end{flushleft}
 
 \fbox{\parbox{14cm}{
 \vspace{4mm}
@@ -1225,98 +792,26 @@ Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phan
  }}
 \end{center}
 
-Debt Poet’s Society
-
-According to a Sallie Mae survey and credit bureau data, in 2008, college students carried an average of \$3,173 debt on their credit cards (USA TODAY, April 13, 2009). Suppose that current credit card debts for all college students have a normal distribution with a mean of \$3,173 and a standard deviation of \$800. 
+Historically throughout the United States families of four spend on the average of \$239 a week on groceries and food with a standard deviation of \$50. Families of 3, however, spend on average \$220 with a standard deviation of \$45 Assume these statistics are based on a random sample of 250 households with four members, and on a random sample of 285 households with three members.
 
 \begin{enumerate}
-  \item 10\% of the credit card debt for college students is above what value?
-  \item 10\% of the credit card debt for college students is below what value?
-  \item The middle 80\% of the credit card debt for college students is between what two values?
-  \item How likely would it be for a college students to have credit card debt of \$4,500 or more?
+  \item Estimate the difference in the average spending of a family of four and a family of three. (Use the family of four first in your equation).
+  \item	What is the Standard error of this estimate?
+  \item	What is the Margin of Error for your estimate?
+  \item	What is the 95\% Confidence Interval for your estimate?  Is it significant?
 \end{enumerate}
 
-\end{exercise} 
-\begin{solution}  % 9a
-
-\end{solution} 
-
-\clearpage
-
-    \begin{exercise}  % 9b         %%%%%%%%%%%%%%%%%
-
-    \begin{center}
-\begin{flushleft}\textbf{\large \hfill Workshop 9B, Submitted by: }\end{flushleft}
-
-\fbox{\parbox{14cm}{
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
- }}
-\end{center}
-
-Tommy Wait, a minor-league baseball pitcher, is notorious for taking an excessive amount of time between pitches. In fact, his times between pitches are normally distributed with a mean of 36 seconds and a standard deviation of 2.5 seconds.
-
-\begin{enumerate}
-  \item 10\% of the time between pitches is above what value?
-  \item 10\% of the time between pitches is below what value?
-  \item The middle 80\% of the time between pitches is between what two values?
-  \item How likely would it be for the time between pitches of 40 seconds or more? \end{enumerate}
-
-\end{exercise} 
-\begin{solution}  % 9b
-
-\end{solution} 
-    
-\clearpage
-
-    \begin{exercise}  % 9c         %%%%%%%%%%%%%%%%%
-
-    \begin{center}
-\begin{flushleft}\textbf{\large \hfill Workshop 9C, Submitted by: }\end{flushleft}
-
-\fbox{\parbox{14cm}{
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
- }}
-\end{center}
-
-The amount paid out by Ajax Insurance Company in a year is normally distributed with mean 3 billion dollars and standard deviation 0.5 billion dollars. The company’s executives consider it a bad year if they must pay out more than 4.25 billion dollars. 
-
-\begin{enumerate}
-  \item 18\% of the amount paid out by Ajax Insurance Company is below what amount?
-  \item There is a 5\% chance that the company will have to pay more than an amount $x$ (in billions of dollars). What is the value of $x$?
-  \item The middle 60\% of the amount paid out by the company is between what two values (in billions of dollars)? 
-\end{enumerate}
-
-\end{exercise} 
-\begin{solution}  % 9c
+\end{exercise}
+\begin{solution}  % 18A
 
 \end{solution}
 
 \clearpage
 
-    \begin{exercise}  % 10a         %%%%%%%%%%%%%%%%%
+    \begin{exercise}  % 18B         %%%%%%%%%%%%%%%%%
 
     \begin{center}
-\begin{flushleft}\textbf{\large \hfill Workshop 10A, Submitted by: }\end{flushleft}
+\begin{flushleft}\textbf{\large \hfill Workshop 18B, Submitted by: }\end{flushleft}
 
 \fbox{\parbox{14cm}{
 \vspace{4mm}
@@ -1333,29 +828,271 @@ Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phan
  }}
 \end{center}
 
-Workshop 8: Drugstore Cowboy 
+\begin{minipage}[ht]{7cm}
 
-According to an October 27, 2006 article in \textit{Newsweek}, 60\% of Americans said that they take expired medicines. Suppose that this result is true of the current population of Americans. 
+The adjacent chart shows the average cost of annual auto insurance premiums in 2008 for drivers with no accidents, one accident, two accidents, and so on. According to this chart, the 2008 average annual auto insurance premium for drivers with no accidents was \$1,387, and the premium for drivers with one accident is \$1,689. Assume that this dataset is partly based on a random sample of 60 drivers with no accidents, and a random sample of 56 drivers with one accident. Assume also that the standard deviations of the samples with no accidents and one accident are \$150 and \$178, respectively. Finally, assume the samples are independent.
+\end{minipage}
+\begin{minipage}[ht]{7cm}
+
+%\begin{figure}[ht]
+\centering
+  \includegraphics[width=4cm]{chapters/Workshops/ext_figure/UsaToday.png}
+%\end{figure}
+\end{minipage}
 
 \begin{enumerate}
-  \item Let $x$ be a binomial random variable that denotes the number of American in a random sample of 4 who have taken expired medicines. What are the possible values that $x$ can assume?
-  \item Find the probability that exactly 2 Americans in a sample of 4 have taken expired medicines.
-  \item Find the probability that at least 3 Americans in a sample of 4 have taken expired medicines.
-  \item Find the probability that at most 1 American in a sample of 4 have taken expired medicines.
+  \item What is the difference in means between average premiums for drivers with no accidents and drivers with one accident?
+  \item	What is the standard error of the above estimate?
+  \item	What is the Z critical value for a 95\% confidence interval?
+  \item	The upper bound of this confidence interval is how far from the central point estimate?
+  \item	What are the lower and upper bounds of this confidence interval?
+  \item	What can be concluded about the significance of the difference?
+\end{enumerate}
+
+\end{exercise}
+\begin{solution}  % 18B
+
+\end{solution}
+
+\clearpage
+
+    \begin{exercise}  % 18C         %%%%%%%%%%%%%%%%%
+
+    \begin{center}
+\begin{flushleft}\textbf{\large \hfill Workshop 18C, Submitted by: }\end{flushleft}
+
+\fbox{\parbox{14cm}{
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+ }}
+\end{center}
+
+The summary statistics for Verbal SAT are provided below:
+
+\begin{tabular}{@{} lrrr @{}} \hline
+Graduate&	n&	Mean&	SD \\ \hline
+No&	13&	466.9&	89.94 \\
+Yes&	28&	480&	67.33 \\ \hline
+\end{tabular}
+
+\begin{enumerate}
+  \item Estimate the difference in average Verbal SAT scores between the two groups.
+  \item	Calculate a standard error for your estimate in (a).
+  \item	Calculate a 95\% confidence interval for the difference between the two means. Does your interval exclude 0?  Is your difference statistically significant?
+\end{enumerate}
+
+\end{exercise}
+\begin{solution}  % 18C
+
+\end{solution}
+
+\clearpage
+
+    \begin{exercise}  % 19A         %%%%%%%%%%%%%%%%%
+
+    \begin{center}
+\begin{flushleft}\textbf{\large \hfill Workshop 19A, Submitted by: }\end{flushleft}
+
+\fbox{\parbox{14cm}{
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+ }}
+\end{center}
+
+A special vitamin concoction which claims to increase muscle strength is tested on 5 weight lifters.  Athletes are selected and the weight they can bench press is recorded before and then after two weeks of taking the vitamin regimen. 
+
+\begin{tabular}{@{} lcc @{}} \hline
+Athlete&	Before&	After \\ \hline
+1&	220&	206 \\
+2&	181&	179 \\
+3&	210&	218 \\
+4&	231&	235 \\
+5&	201&	203 \\ \hline
+\end{tabular}
+
+\begin{enumerate}
+  \item Estimate the mean difference in weight lifted before and after the vitamin regimen.
+  \item	Calculate a standard error for your estimate in (a).
+  \item	Calculate a 95\% confidence interval for the difference.  Does your interval exclude 0?  Is your difference statistically significant?
+\end{enumerate}
+
+\end{exercise}
+\begin{solution}  % 19A
+
+\end{solution}
+
+\clearpage
+
+    \begin{exercise}  % 19B         %%%%%%%%%%%%%%%%%
+
+    \begin{center}
+\begin{flushleft}\textbf{\large \hfill Workshop 19B, Submitted by: }\end{flushleft}
+
+\fbox{\parbox{14cm}{
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+ }}
+\end{center}
+
+In 1968, the Labor Force Participation rate of women was measured in 5 different cities.  The rates in those same cities were measured again in 1972.
+
+\begin{tabular}{@{} lcc @{}} \hline
+City&	1972&	1968 \\ \hline
+N.Y.&	0.45&	0.42 \\
+L.A.&	0.50&	0.50 \\
+Chicago&	0.52&	0.52 \\
+Philadelphia&	0.45&	0.45 \\
+Detroit&	0.46&	0.43 \\ \hline
+\end{tabular}
+
+\begin{enumerate}
+  \item Estimate the mean difference in participation of women between 1968 and 1972.  
+  \item	Calculate a standard error for your estimate in (a).
+  \item	Calculate a 95\% confidence interval for the difference.  Does your interval exclude 0?  Is your difference statistically significant?
+\end{enumerate}
+
+\end{exercise}
+\begin{solution}  % 19B
+
+\end{solution}
+
+\clearpage
+
+    \begin{exercise}  % 19c         %%%%%%%%%%%%%%%%%
+
+    \begin{center}
+\begin{flushleft}\textbf{\large \hfill Workshop 19C, Submitted by: }\end{flushleft}
+
+\fbox{\parbox{14cm}{
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+ }}
+\end{center}
+
+A certain local grocery chain known for great prices is testing the effectiveness of a new product placement locations in volume of sales for their flagship household cleaning product UltraClean Spray. The grocery chain uses 5 different stores and records a week worth of sales with the old lay out and a week with the new layout. The results are recorded below.
+
+\begin{tabular}{@{} lcc @{}} \hline
+Store &	Old Layout \# sold &	New Layout \# sold \\ \hline
+1&	10&	14 \\
+2&	23&	30 \\
+3&	9&	5 \\
+4&	13&	24 \\
+5&	18&	19 \\ \hline
+\end{tabular}
+
+\begin{enumerate}
+  \item Estimate the mean difference in items sold before the new layout and after the new layout.
+  \item	Calculate the Standard Error for your estimate in (a), use a standard deviation of 5.718.
+  \item	Calculate a 95\% confidence interval for the difference. Is your difference statistically significant?
+  \item	Interpret your results, did the new layout significantly decrease, significantly increase sales or neither?
+\end{enumerate}
+
+\end{exercise}
+\begin{solution}  % 19C
+
+\end{solution}
+
+
+\clearpage
+
+    \begin{exercise}  % 20a         %%%%%%%%%%%%%%%%%
+
+    \begin{center}
+\begin{flushleft}\textbf{\large \hfill Workshop 20A, Submitted by: }\end{flushleft}
+
+\fbox{\parbox{14cm}{
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+ }}
+\end{center}
+
+In an experimental study, 44 rats were exposed to high dose of red dye and 44 rats were exposed to low dose of red dye and then it was observed how many in each group developed cancer. 
+			
+\begin{table}[ht]
+\centering				
+\begin{tabular}{@{} l rrr @{}} \hline				
+ & \multicolumn{2}{c}{Dose Level of Red Dye} \\	
+Cancer&	High&	Low&	Total \\ \hline
+Yes&	14&	4&	18 \\
+No&	30&	40&	70 \\ \hline
+Total&	44&	44&	88 \\ \hline
+\end{tabular}
+\end{table}
+
+\begin{enumerate}
+  \item Fill in the table of expected counts:
   
+\begin{tabular}{@{} l rrr @{}} \hline				
+ & \multicolumn{2}{c}{Dose Level of Red Dye} \\	
+Cancer&	High&	Low&	Total \\ \hline
+Yes&	&	&	18 \\
+No&	&	&	70 \\ \hline
+Total&	44&	44&	88 \\ \hline
+\end{tabular}
+  
+  \item	Calculate the chi-square test statistic.
+  \item	What is the correct degrees of freedom?
+  \item	Based on the degrees of freedom, what is the critical value?
+  \item	What can we conclude from this test? Is the dose level of red dye related to cancer occurrence? 
 \end{enumerate}
 
-\end{exercise} 
-\begin{solution}  % 10a
+\end{exercise}
+\begin{solution}  % 20A
 
 \end{solution}
 
+
 \clearpage
 
-    \begin{exercise}  % 10b         %%%%%%%%%%%%%%%%%
+    \begin{exercise}  % 20b         %%%%%%%%%%%%%%%%%
 
     \begin{center}
-\begin{flushleft}\textbf{\large \hfill Workshop 10B, Submitted by: }\end{flushleft}
+\begin{flushleft}\textbf{\large \hfill Workshop 20B, Submitted by: }\end{flushleft}
 
 \fbox{\parbox{14cm}{
 \vspace{4mm}
@@ -1372,32 +1109,48 @@ Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phan
  }}
 \end{center}
 
-The Social Network
-
-According to a Harris Interactive poll, 50\% of American college graduates have Facebook accounts. Suppose that this result is true for the current population of American college graduates.
-
-\begin{verbatim}
-http://www.harrisinteractive.com/harris_poll/pubs/Harris_Poll_2009_04_16.pdf
-\end{verbatim}
+Consider the following data from the Chicago Western Electric Study (Shekelle et al., 1981). In the following table 466 men were classified based on death from coronary heart disease (CHD) and fish consumption.
+			
+\begin{table}[ht]
+\centering
+\begin{tabular}{@{} l rrr @{}} \hline				
+ & \multicolumn{2}{c}{35 gm of Daily Fish Consumption} \\		
+Death from CHD &	No &	Yes &	Total \\ \hline
+Yes &	42 &	34 &	76 \\
+No &	163 &	227 &	390 \\ \hline
+Total &	205 &	261 &	466 \\ \hline
+\end{tabular}
+\end{table}
 
 \begin{enumerate}
-  \item Let $x$ be a binomial random variable that denotes the number of American college graduates in a random sample of 5 who have Facebook accounts. What are the possible values that $x$ can assume?
-  \item Find the probability that exactly 3 American college graduates in a sample of 5 have Facebook accounts.
-  \item Find the probability that at least 3. American college graduates in a sample of 5 have Facebook accounts.
-  \item Find the probability that at most 1 American college graduate in a sample of 5 have Facebook accounts.
+  \item Fill in the table of expected counts:
+
+\begin{tabular}{@{} lrrr @{}} \hline				
+ & \multicolumn{2}{c}{35 gm of Daily Fish Consumption} \\		
+Death from CHD &	No &	Yes &	Total \\ \hline
+Yes &	&	&	76 \\
+No &	&	&	390 \\ \hline
+Total &	205&	261&	466 \\ \hline
+\end{tabular}
+
+  \item	Calculate the chi-square test statistic.
+  \item	What are the degrees of freedom for the critical value?
+  \item	What is the critical value?
+  \item	What is the correct conclusion?  Are daily fish consumption and death from CHD related?
 \end{enumerate}
 
-\end{exercise} 
-\begin{solution}  % 10b
+\end{exercise}
+\begin{solution}  % 20B
 
 \end{solution}
 
+
 \clearpage
 
-    \begin{exercise}  % 8c        %%%%%%%%%%%%%%%%%
+    \begin{exercise}  % 20c         %%%%%%%%%%%%%%%%%
 
     \begin{center}
-\begin{flushleft}\textbf{\large \hfill Workshop 10C, Submitted by: }\end{flushleft}
+\begin{flushleft}\textbf{\large \hfill Workshop 20C, Submitted by: }\end{flushleft}
 
 \fbox{\parbox{14cm}{
 \vspace{4mm}
@@ -1414,27 +1167,41 @@ Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phan
  }}
 \end{center}
 
-The Bureau of Labor Statistics reports that in May 2016 that 10.5\% of people who work in the Kalamazoo metropolitan area are employed in production occupations (i.e., making things). Suppose that a random sample of 5 Kalamazoo workers is taken. Let $X$ be a random variable which denotes the number of workers in the sample who are employed in production occupations.
+Officer Smiley collects data on her department's ticketing patterns. She includes variables like gender of ticketing officers (Male or Female) and the type of offense for which the ticket is written (civil infraction, misdemeanor, felony, etc.). She wonders if there is any association between the gender of a ticketing officer and the type of offense. She generates the following data summary to conduct a test at the 5\% significance level:
+
+\begin{tabular}{@{} lrrrr @{}} \hline
+Actual&	Civil Infraction&	Felony&	Misdemeanor&	Total  \\ \hline
+Female&	6&	9&	11&	26 \\
+Male&	12&	8&	8&	28 \\ \hline
+Total&	18&	17&	19&	54 \\ \hline
+\end{tabular}
+
+\begin{tabular}{@{} lrrrr @{}} \hline
+Expected&	Civil Infraction&	Felony&	Misdemeanor&	Total \\ \hline
+Female&	8.666&	8.185&	9.148&	26 \\ \hline
+Male&	9.333&	8.815&	9.852&	28 \\ \hline
+Total&	18&	17&	19&	54 \\ \hline
+\end{tabular}
 
 \begin{enumerate}
-  \item What are the possible values which X can take? 
-  \item Find the probability that exactly 2 of the 5 workers in the sample will be employed in production occupations.
-  \item Find the probability that at least 3 of the 5 workers in the sample will be employed in production occupations.
-  \item Find the probability that at most 1 of the 5 workers in the sample will be employed in production occupations.
+  \item What is the value of the chi-square test statistic?
+  \item	What are the degrees of freedom for the critical value?
+  \item	What is the critical value for her test?
+  \item	What is the correct conclusion of this test? Are the gender of a ticketing officer and the type of offense on a ticket related?
 \end{enumerate}
 
-\end{exercise} 
-\begin{solution}  % 10c
+\end{exercise}
+\begin{solution}  % 20C
 
 \end{solution}
 
 
 \clearpage
 
-    \begin{exercise}  % 11a        %%%%%%%%%%%%%%%%%
+    \begin{exercise}  % 21a         %%%%%%%%%%%%%%%%%
 
     \begin{center}
-\begin{flushleft}\textbf{\large \hfill Workshop 11A, Submitted by: }\end{flushleft}
+\begin{flushleft}\textbf{\large \hfill Workshop 21A, Submitted by: }\end{flushleft}
 
 \fbox{\parbox{14cm}{
 \vspace{4mm}
@@ -1451,30 +1218,58 @@ Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phan
  }}
 \end{center}
 
-Credit where Credit is Due 
+An intern at a courthouse is curious about whether there is any association between two numerical variables: the age of defendants in years, and the sentence that they receive in years. The courthouse collects data on both variables for five cases:
 
-According to a May 27, 2009 Minneapolis Star-Tribune article, 78\% of U.S. households have at least one credit card. 
-
-Source: http://www.startribune.com/politics/45797562.html
+\begin{tabular}{@{} ccc @{}} \hline
+  &	Age &	Sentence \\ \hline
+1&	18&	2 \\
+2&	21&	4 \\
+3&	35&	8 \\
+4&	26&	8 \\
+5&	40&	9 \\ \hline
+\end{tabular}
 
 \begin{enumerate}
-  \item For a random sample of 500 U.S. households, what is the expected value and standard deviation of the number of U.S. households with at least one credit card. 
-  \item Using the normal approximation, find the probability that in a random sample of 500 U.S. households, more than 375 households have at least one credit card. 
-  \item Using the normal approximation, find the probability that in a random sample of 500 U.S. households, less than 385 households have at least one credit card. 
-  \item Using the normal approximation, find the probability that in a random sample of 500 U.S. households, 376 to 384 households have at least one credit card. 
+  \item Calculate the means of Age and Sentence.
+  \item	Given that the standard deviations of Age and Sentence are respectively 9.301 and 3.033, finish the following table of the $Z$-scores for Age and Sentence:
+
+\begin{tabular}{@{} ccc @{}} \hline
+ &	$Z_{Age}$ &	$Z_{Sentence}$ \\ \hline
+1&	-1.075&	-1.385 \\
+2& & \\		
+3& & \\		
+4& & \\		
+5& & \\ \hline
+\end{tabular}
+
+  \item	Finish the following table of products of Z scores for Age and Sentence:
+
+{\small{
+\begin{tabular}{@{} cc @{}} \hline
+ &	$Z_{Age} \times Z_{Sentence}$ \\ \hline
+1	& 1.489 \\
+2	& \\
+3	& \\
+4	& \\
+5	& \\ \hline
+\end{tabular}
+}}
+
+  \item	Calculate Pearson’s Correlation Coefficient $r$:
 \end{enumerate}
 
-\end{exercise} 
-\begin{solution}  % 11a
+\end{exercise}
+\begin{solution}  % 21a
 
 \end{solution}
 
+
 \clearpage
 
-    \begin{exercise}  % 11b        %%%%%%%%%%%%%%%%%
+    \begin{exercise}  % 21b         %%%%%%%%%%%%%%%%%
 
     \begin{center}
-\begin{flushleft}\textbf{\large \hfill Workshop 11B, Submitted by: }\end{flushleft}
+\begin{flushleft}\textbf{\large \hfill Workshop 21B, Submitted by: }\end{flushleft}
 
 \fbox{\parbox{14cm}{
 \vspace{4mm}
@@ -1491,31 +1286,49 @@ Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phan
  }}
 \end{center}
 
-Tongue Twister 
+Session musicians in a studio are worried about their tuning. To get just the right mix, they decide to measure the frequency of the notes they play while recording. They begin by measuring frequency in Hertz at the note ``middle C'' (0 in the table), and work their way up by regular intervals (whole steps) from there.  From ``middle C'' through the first four intervals, they produce the following data:
 
-A 2007 article states that 4.8\% of U.S. households are ``linguistically isolated,'' which means that all members of the household aged 14 years and older have difficulty speaking English.  Assume that this percentage is true for the current population of U.S. households. 
-
-
- (Source: http://www.antara.co.id/en/arc/2007/9/12/ \newline five-percent-of-us-families-dont-speak-english-report/)
-
+\begin{tabular}{@{} rr @{}} \hline
+Intervals	& Frequency (Hz) \\ \hline
+0 &	261.626 \\
+1 &	293.665 \\
+2 &	329.628 \\
+3	& 369.994 \\
+4	& 415.305 \\ \hline
+\end{tabular}
 
 \begin{enumerate}
-  \item For a random sample of 750 U.S. households, what is the expected value and standard deviation of the number of U.S. households classified as ``linguistically isolated.''
-  \item Using the normal approximation, find the probability that in a random sample of 750 U.S. households, more than 45 would be classified as ``linguistically isolated.'' 
-  \item Using the normal approximation, find the probability that in a random sample of 750 U.S. households, less than 45 would be classified as ``linguistically isolated.'' 
-  \item Using the normal approximation, find the probability that in a random sample of 750 U.S. households, exactly 45 would be classified as ``linguistically isolated.''
-\end{enumerate}  
-\end{exercise} 
-\begin{solution}  % 11b
+  \item Calculate the means for Intervals and Frequency.
+  \item	Given that the standard deviations for Intervals and Frequency are respectively 1.581 and 60.807, finish the following table of products of Z-scores:
+
+{\small{
+\begin{tabular}{@{} rc @{}} \hline
+	& $Z_{Interval} \times Z_{frequency}$ \\ \hline
+0& 	1.507 \\
+1&	0.420  \\
+2	& \\
+3	& \\
+4	& \\ \hline
+\end{tabular}
+}}
+
+  \item	Calculate Pearson's Correlation Coefficient $r$.
+  \item Interpret the correlation coefficient $r$ within the context of this dataset.  What is the relationship between intervals and frequencies?
+  \item If the musicians' frequency measurements are all off by 50 hertz, such that every frequency measurement is a uniform 50 hertz greater than its actual value, what would happen to the correlation coefficient $r$?
+\end{enumerate}
+
+\end{exercise}
+\begin{solution}  % 21b
 
 \end{solution}
 
+
 \clearpage
 
-    \begin{exercise}  % 11c        %%%%%%%%%%%%%%%%%
+    \begin{exercise}  % 21c         %%%%%%%%%%%%%%%%%
 
     \begin{center}
-\begin{flushleft}\textbf{\large \hfill Workshop 11C, Submitted by: }\end{flushleft}
+\begin{flushleft}\textbf{\large \hfill Workshop 21C, Submitted by: }\end{flushleft}
 
 \fbox{\parbox{14cm}{
 \vspace{4mm}
@@ -1532,17 +1345,180 @@ Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phan
  }}
 \end{center}
 
-The Bureau of Labor Statistics reports that in May 2016 that 10.5\% of people who work in the Kalamazoo metropolitan area are employed in production occupations (i.e., making things).
+Here we present numerical data on the first five households from the Rent/Mortgage dataset in chapter 2 of this coursepack:
+
+\begin{tabular}{@{} cccc @{}} \hline
+	& No. of Bedrooms	& Monthly Payment &	12-month HH Income \\ \hline
+1 &	2 &	880 &	11200 \\
+2 &	3	& 990 &	80800 \\
+3 &	4 &	750 &	87600 \\
+4 &	3	& 1400 & 94000 \\
+5 &	4	& 1400 & 97000 \\ \hline
+$\bar{x}$ & 3.2  & 1084   & 74120 \\
+$s$       & 0.84 & 300.72 & 35,721.03 \\ \hline
+\end{tabular}
+
+Using the above information…
 
 \begin{enumerate}
-  \item For a random sample of 200 Kalamazoo workers, what is the expected number who will work in production occupations? What is the standard deviation of this? 
-  \item Using the normal approximation, find the probability that in a random sample of 200 Kalamazoo workers, more than 25 will work in production occupations. 
-  \item Using the normal approximation, find the probability that in a random sample of 200 Kalamazoo workers, fewer than 15 will work in production occupations. 
-  \item Using the normal approximation, find the probability that in a random sample of 200 Kalamazoo workers, between 15 and 25 (inclusive) will work in production occupations.
+  \item Calculate the correlation coefficient $r$ between No. of Bedrooms and Monthly Payment.
+	\item Calculate the correlation coefficient $r$ between Monthly Payment and 12-Month HH Income.
+  \item Which set of two variables exhibits the strongest relationship: Monthly Payment \& No. of Bedrooms, or Monthly Payment \& 12-month HH Income? Why?
 \end{enumerate}
 
-\end{exercise} 
-\begin{solution}  % 11c
+\end{exercise}
+\begin{solution}  % 21c
+
+\end{solution}
+
+
+\clearpage
+
+    \begin{exercise}  % 22a         %%%%%%%%%%%%%%%%%
+
+    \begin{center}
+\begin{flushleft}\textbf{\large \hfill Workshop 22A, Submitted by: }\end{flushleft}
+
+\fbox{\parbox{14cm}{
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+ }}
+\end{center}
+
+Data on the numbers of absences and final grades are shown below for 10 randomly selected students in a statistics class.
+
+\begin{tabular}{@{} ccc @{}} \hline
+Student &	Number of absences &	Final Grade (\%) \\ \hline
+1&	7&	82 \\
+2&	2&	87 \\
+3&	13&	43 \\
+4&	9&	62 \\
+5&	4&	77 \\
+6&	3&	93 \\
+7&	1&	95 \\
+8&	15&	33 \\
+9&	8&	55 \\
+10&	6&	60 \\ \hline
+$\bar{x}$ & 6.8 & 68.7 \\
+$s$ & 4.613988 & 21.35962 \\ \hline
+\end{tabular}
+
+\begin{enumerate}
+  \item Calculate the regression line for predicting final grade based on number of absences.
+	\item Draw the scatterplot with an overlaid regression line.
+	\item Using your regression line for predicting final grade from number of absences, what is the estimated final grade of a student who has been absent 5 times?
+  \item Calculate a 95\% confidence interval for the slope of the line.  Is the slope statistically significant?
+\end{enumerate}
+
+\end{exercise}
+\begin{solution}  % 22a
+
+\end{solution}
+
+
+\clearpage
+
+    \begin{exercise}  % 22b         %%%%%%%%%%%%%%%%%
+
+    \begin{center}
+\begin{flushleft}\textbf{\large \hfill Workshop 22B, Submitted by: }\end{flushleft}
+
+\fbox{\parbox{14cm}{
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+ }}
+\end{center}
+
+Data obtained are found below for the age of 8 randomly selected patients and their systolic blood pressure.
+
+\begin{tabular}{@{} ccc @{}} \hline
+Patient &	Age (x)	& Blood Pressure (y) \\ \hline
+A&	22&	120 \\
+B&	31&	121 \\
+C&	43&	127 \\
+D&	48&	125 \\
+E&	57&	130 \\
+F&	62&	144 \\
+G&	67&	152 \\
+H&	73&	149 \\ \hline
+$\bar{x}$ & 50.375 & 133.5 \\
+$s$ & 17.75981 & 12.8619 \\ \hline
+\end{tabular}
+
+\begin{enumerate}
+  \item Calculate the regression line for predicting systolic blood pressure based on age. 
+	\item Draw the scatterplot with an overlaid regression line.
+	\item Using your regression line for predicting blood pressure from age, what is the estimated blood pressure of a person of 53 years of age?
+  \item Calculate a 95\% confidence interval for the slope of the line.  Is the slope statistically significant?
+\end{enumerate}
+
+\end{exercise}
+\begin{solution}  % 22b
+
+\end{solution}
+
+
+\clearpage
+
+    \begin{exercise}  % 22c         %%%%%%%%%%%%%%%%%
+
+    \begin{center}
+\begin{flushleft}\textbf{\large \hfill Workshop 22C, Submitted by: }\end{flushleft}
+
+\fbox{\parbox{14cm}{
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+ }}
+\end{center}
+
+Session musicians in a studio are worried about their tuning. To get just the right mix, they decide to measure the frequency of the notes they play while recording. They begin by measuring frequency in Hertz at the note ``middle C'' (0 in the table), and work their way up by regular intervals (whole steps) from there. From ``middle C'' through the first four whole step intervals, they produce the following data:
+
+\begin{tabular}{@{} ccc @{}} \hline
+Intervals &	Frequency (Hz) \\ \hline
+0&	261.626 \\
+1&	293.665 \\
+2&	329.628 \\
+3&	369.994 \\
+4&	415.305 \\ \hline
+\end{tabular}
+
+\begin{enumerate}
+  \item Write the full regression equation, using Intervals as explanatory and Frequency as response. The standard deviations of Intervals and Frequency are, respectively, 1.581 and 60.807. The correlation coefficient is 0.998
+  \item	Interpret the slope of this regression line in context.
+  \item	The session musicians take another measurement and find that the fifth whole step interval up from middle C, the A sharp, has an actual frequency of 466.164 Hz. Using your line from part a, calculate the residual for the predicted fifth interval from middle C.
+  \item	Calculate a 95\% confidence interval for the slope of the line. Is the slope statistically significant?
+
+\end{enumerate}
+
+\end{exercise}
+\begin{solution}  % 22c
 
 \end{solution}
 
@@ -1550,768 +1526,7 @@ The Bureau of Labor Statistics reports that in May 2016 that 10.5\% of people wh
 
 
 
-\end{exercises}
 
-% \clearpage
-% 
-%     \begin{exercise}  % 12a         %%%%%%%%%%%%%%%%%
-% 
-%     \begin{center}
-% \begin{flushleft}\textbf{\large \hfill Workshop 12A, Submitted by: }\end{flushleft}
-% 
-% \fbox{\parbox{14cm}{
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-%  }}
-% \end{center}
-% 
-% Live and Let Dye
-% 
-% In an experimental study, 44 rats were exposed to a high dose of red dye, 44 rats were exposed to a low dose of red dye, and it was then observed how many in each group developed cancer. 
-% 				
-% \begin{tabular}{@{} lccc @{}} \hline				
-%    & \multicolumn{2}{c}{Cancer} \\ 
-% Dose Level of Red Dye &	Yes	 & No &	Total \\ \hline
-% High &	14	& 30 &	44 \\ 
-% Low &	4 &	40 &	44  \\ \hline
-% Total &	18 &	70 & 88 \\ \hline
-% \end{tabular}
-% 				
-% \begin{enumerate}
-%   \item Estimate the difference in percentage of developing cancer between high dose level of red dye and low dose level of red dye.
-%   \item Calculate a standard error for your estimate in (1).
-%   \item Calculate a 95\% confidence interval for the difference in percentage of developing cancer between high dose level of red dye and low dose level of red dye.
-% \end{enumerate}
-% 
-% \end{exercise} 
-% \begin{solution}  % 12a
-% 
-% \end{solution}
-% 
-% \clearpage
-% 
-%     \begin{exercise}  % 12b         %%%%%%%%%%%%%%%%%
-% 
-%     \begin{center}
-% \begin{flushleft}\textbf{\large \hfill Workshop 12B, Submitted by: }\end{flushleft}
-% 
-% \fbox{\parbox{14cm}{
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-%  }}
-% \end{center}
-% 
-% Gone Fishin'
-% 
-% Consider the following data from the Chicago Western Electric Study (Shekelle et al., 1981). In the following table 466 men were classified based on death from coronary heart disease (CHD) and fish consumption.
-% 				
-% \begin{tabular}{@{} lccc @{}} \hline
-% & \multicolumn{2}{c}{Death from CHD} \\ 	 		 
-% Daily Fish Consumption &	Yes &	No &	Total \\ \hline
-% High &	34 &	227 &	261 \\
-% Low	& 42 &	163 &	205 \\ \hline
-% Total &	76 &	390 &	466 \\ \hline
-% \end{tabular}
-% 			
-% \begin{enumerate}
-%   \item Estimate the difference in percentage of death from CHD between high daily fish consumption and low daily fish consumption.
-%   \item Calculate a standard error for your estimate in (1).
-%   \item Calculate a 95\% confidence interval for the difference in percentage of death from CHD between high daily fish consumption and low daily fish consumption.
-% \end{enumerate}
-% 			
-% 			
-% \end{exercise} 
-% \begin{solution}  % 12b
-% 
-% \end{solution}
-% 
-% \clearpage
-% 
-%     \begin{exercise}  % 12c         %%%%%%%%%%%%%%%%%
-% 
-%     \begin{center}
-% \begin{flushleft}\textbf{\large \hfill Workshop 12C, Submitted by: }\end{flushleft}
-% 
-% \fbox{\parbox{14cm}{
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-%  }}
-% \end{center}
-% 
-% Making the Cut
-% 
-% The following table shows how many prospective students of a sample of 200 students were admitted to WMU last year, and if the student's GPA was below 2.8 or not.  Out of the sample, 60 applicants were rejected and 140 were accepted. 
-% 				
-% \begin{tabular}{@{} lccc @{}} \hline				
-%  	& \multicolumn{2}{c}{Rejected from WMU} \\   		 
-% GPA Below 2.8 &	Yes &	No & Total \\ \hline
-% Yes	& 45 &	20 &	65 \\
-% No &	15 &	120 &	135 \\ \hline
-% Total &	60 &	140 &	200 \\ \hline
-% \end{tabular}\begin{enumerate}
-%   \item Estimate the difference in proportion of being rejected from WMU between having below a 2.8 GPA and not having below a 2.8 GPA.
-%   \item Calculate a standard error for your estimate in (a).  
-%   \item Calculate a 95\% confidence interval for the difference in proportion of being rejected from WMU between having below a 2.8 GPA and not having below a 2.8 GPA.
-% \end{enumerate}
-% 
-% \end{exercise} 
-% \begin{solution}  % 12c
-% 
-% \end{solution}
-% 
-% \clearpage
-% 
-%     \begin{exercise}  % 13a         %%%%%%%%%%%%%%%%%
-% 
-%     \begin{center}
-% \begin{flushleft}\textbf{\large \hfill Workshop 13A, Submitted by: }\end{flushleft}
-% 
-% \fbox{\parbox{14cm}{
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-%  }}
-% \end{center}
-% 
-% Live and Let Dye
-% 
-% In an experimental study, 44 rats were exposed to a high dose of red dye, 44 rats were exposed to a low dose of red dye, and it was then observed how many in each group developed cancer. 
-% 				
-% \begin{tabular}{@{} lccc @{}} \hline				
-%  	& \multicolumn{2}{c}{Cancer} \\ 			
-% Dose Level of Red Dye &	Yes &	No &	Total \\ \hline
-% High &	14 &	30 &	44 \\
-% Low &	4 &	40 & 44 \\ \hline
-% Total &	18 &	70 &	88 \\ \hline
-% \end{tabular}
-% 				
-% \begin{enumerate}
-%   \item Estimate the risk ratio of developing cancer between high dose level of red dye and low dose level of red dye.
-%   \item Calculate a 95\% confidence interval for the risk ratio of developing cancer between high dose level of red dye and low dose level of red dye.
-% \end{enumerate}
-% 
-% \end{exercise} 
-% \begin{solution}  % 13a
-% 
-% \end{solution}
-% 
-% \clearpage
-% 
-%     \begin{exercise}  % 13b         %%%%%%%%%%%%%%%%%
-% 
-%     \begin{center}
-% \begin{flushleft}\textbf{\large \hfill Workshop 13B, Submitted by: }\end{flushleft}
-% 
-% \fbox{\parbox{14cm}{
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-%  }}
-% \end{center}
-% 
-% Gone Fishin'
-% 
-% Consider the following data from the Chicago Western Electric Study (Shekelle et al., 1981). In the following table 466 men were classified based on death from coronary heart disease (CHD) and fish consumption.
-% 				
-% \begin{tabular}{@{} lccc @{}} \hline				
-%  	& \multicolumn{2}{c}{Death from CHD} \\ 				
-% Daily Fish Consumption &	Yes &	No &	Total \\ \hline
-% High &	34 &	227 &	261 \\
-% Low &	42 &	163 &	205 \\ \hline
-% Total &	76 &	390 &	466 \\ \hline
-% \end{tabular}
-% 				
-% \begin{enumerate}
-%   \item Estimate the risk ratio of death from CHD between high daily fish consumption and low daily fish consumption.
-%   \item Calculate a 95\% confidence interval for the risk ratio of death from CHD between high daily fish consumption and low daily fish consumption.
-% \end{enumerate}
-% 
-% \end{exercise} 
-% \begin{solution}  % 13b
-% 
-% \end{solution}
-% 
-% \clearpage
-% 
-%     \begin{exercise}  % 13c         %%%%%%%%%%%%%%%%%
-% 
-%     \begin{center}
-% \begin{flushleft}\textbf{\large \hfill Workshop 13C, Submitted by: }\end{flushleft}
-% 
-% \fbox{\parbox{14cm}{
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-%  }}
-% \end{center}
-% 
-% Making the Cut
-% 
-% The following table shows how many prospective students of a sample of 200 students were admitted to WMU last year, and if the student's GPA was below 2.8 or not. Out of the sample, 60 applicants were rejected and 140 were accepted. 
-% 			
-% \begin{tabular}{@{} lccc @{}} \hline				
-%  	& \multicolumn{2}{c}{Rejected from WMU} \\ 		
-% GPA Below 2.8 &	Yes &	No &	Total  \\ \hline
-% Yes &	45 &	20 &	65 \\
-% No &	15 &	120 &	135 \\ \hline
-% Total &	60 &	140 &	200 \\ \hline
-% \end{tabular}
-% 				
-% \begin{enumerate}
-%   \item Estimate the risk ratio of being rejected from WMU between having below a 2.8 GPA and not having below a 2.8 GPA.
-%   \item Calculate a 95\% confidence interval for the risk ratio of being rejected from WMU between having below a 2.8 GPA and not having below a 2.8 GPA.
-% \end{enumerate}
-% 
-% \end{exercise} 
-% \begin{solution}  % 13c
-% 
-% \end{solution}
-% 
-% \clearpage
-% 
-%     \begin{exercise}  % 14A         %%%%%%%%%%%%%%%%%
-% 
-%     \begin{center}
-% \begin{flushleft}\textbf{\large \hfill Workshop 14A, Submitted by: }\end{flushleft}
-% 
-% \fbox{\parbox{14cm}{
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-%  }}
-% \end{center}
-% 
-% Live and Let Dye
-% 
-% In an experimental study, 44 rats were exposed to high dose of red dye and 44 rats were exposed to low dose of red dye and then it was observed how many in each group developed cancer.
-% 
-% \begin{tabular}{@{} lccc @{}} \hline
-%  	& \multicolumn{2}{c}{Cancer} \\
-% Dose Level of Red Dye &	Yes &	No &	Total \\ \hline
-% High &	14 &	30 &	44 \\
-% Low	& 4	& 40 &	44 \\ \hline
-% Total &	18 &	70 &	88 \\ \hline
-% \end{tabular}
-% 
-% \begin{enumerate}
-%   \item Estimate the odds ratio of developing cancer between high dose level of red dye and low dose level of red dye.
-%   \item Calculate a 95\% confidence interval for the odds ratio of developing cancer between high dose level of red dye and low dose level of red dye.
-% \end{enumerate}
-% 
-% \end{exercise}
-% \begin{solution}  % 14a
-% 
-% \end{solution}
-% 
-% \clearpage
-% 
-%     \begin{exercise}  % 14B         %%%%%%%%%%%%%%%%%
-% 
-%     \begin{center}
-% \begin{flushleft}\textbf{\large \hfill Workshop 14B, Submitted by: }\end{flushleft}
-% 
-% \fbox{\parbox{14cm}{
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-%  }}
-% \end{center}
-% 
-% Gone Fishin'
-% 
-% Consider the following data from the Chicago Western Electric Study (Shekelle et al., 1981). In the following table 466 men were classified based on death from coronary heart disease (CHD) and fish consumption.
-% 
-% \begin{tabular}{@{} lccc @{}} \hline
-%  	& \multicolumn{2}{c}{Death from CHD} \\
-% Daily Fish Consumption &	Yes &	No & Total \\ \hline
-% Low &	42 &	163 &	205 \\
-% High &	34 &	227 &	261 \\ \hline
-% Total &	76 &	390 &	466 \\ \hline
-% \end{tabular}
-% 
-% \begin{enumerate}
-%   \item Estimate the odds ratio of death from CHD between low daily fish consumption and high daily fish consumption.
-%   \item Calculate a 95\% confidence interval for the odds ratio of death from CHD between low daily fish consumption and high daily fish consumption.
-% \end{enumerate}
-% 
-% \end{exercise}
-% \begin{solution}  % 14b
-% 
-% \end{solution}
-% 
-% \clearpage
-% 
-%     \begin{exercise}  % 14C         %%%%%%%%%%%%%%%%%
-%     
-%     \begin{center}
-% \begin{flushleft}\textbf{\large \hfill Workshop 14C, Submitted by: }\end{flushleft}
-% 
-% \fbox{\parbox{14cm}{
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-%  }}
-% \end{center}
-% 
-% Making the Cut
-% 
-% The following table shows how many prospective students of a sample of 200 students were admitted to WMU last year, and if the student's GPA was below 2.8 or not. Out of the sample, 60 applicants were rejected and 140 were accepted.
-% 
-% \begin{tabular}{@{} lccc @{}} \hline
-%  	& \multicolumn{2}{c}{Rejected from WMU} \\
-% GPA Below 2.8 & 	Yes &	No &	Total \\ \hline
-% Yes &	45 &	20 &	65 \\
-% No &	15 &	120 &	135 \\ \hline
-% Total &	60 &	140 &	200 \\ \hline
-% \end{tabular}
-% 
-% \begin{enumerate}
-%   \item Estimate the odds ratio of being rejected from WMU between having below a 2.8 GPA and not having below a 2.8 GPA.
-%   \item Calculate a 95\% confidence interval for the odds ratio of being rejected from WMU between having below a 2.8 GPA and not having below a 2.8 GPA.
-% \end{enumerate}
-% \end{exercise}
-% \begin{solution}  % 14c
-% 
-% \end{solution}
-% 
-% \clearpage
-% 
-%     \begin{exercise}  % 15a         %%%%%%%%%%%%%%%%%
-%     
-%     \begin{center}
-% \begin{flushleft}\textbf{\large \hfill Workshop 15A, Submitted by: }\end{flushleft}
-% 
-% \fbox{\parbox{14cm}{
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-%  }}
-% \end{center}
-% 
-% The following is an excerpt from a New York Times article by Nicholas Bakalar (Feb. 10, 2009).          
-% 
-% Lengthy television viewing in adolescence may raise the risk for depression in young adulthood, according to a new report.
-% <<<<<<< HEAD
-% =======
-% 
-% The study, in the February issue of The Archives of General Psychiatry, published by the American Medical Association, found a rising risk of depressive symptoms with increasing hours spent watching television.
-% 
-% Researchers used data from a larger analysis of 4,142 adolescents who were not depressed at the start of the study. After seven years of follow-up, more than 7 percent had symptoms of depression.
-% 
-% But while about 6 percent of those who watched less than three hours a day were depressed, more than 17 percent of those who watched more than nine hours a day had depressive symptoms.
-% 
-% \begin{enumerate}
-%   \item The word `raise' in the title implies cause-and-effect, not just association.  When comparing lengthy viewers with those who watch less, what possible    confounders can you think of?
-%   \item Using one confounder from your answer(s) in (1), draw a pathway graph depicting the possible relationship between confounder, possible cause and outcome.
-% \end{enumerate}
-% \end{exercise}
-% \begin{solution}  % 15a
-% 
-% \end{solution}
-% 
-% \clearpage
-% 
-%     \begin{exercise}  % 15b         %%%%%%%%%%%%%%%%%
-%     
-%     \begin{center}
-% \begin{flushleft}\textbf{\large \hfill Workshop 15B, Submitted by: }\end{flushleft}
-% 
-% \fbox{\parbox{14cm}{
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-%  }}
-% \end{center}
-% 
-% The following is an excerpt from a Reuters article by Amy Norton (July 2011).          
-% \begin{quote}
-% 
-% Are kids safer with grandparents driving?
-% 
-% When children are involved in a car accident, they are less likely to be injured if grandma or grandpa are driving rather than mom or dad, a new study suggests.
-% 
-% The study, published in the journal Pediatrics, looked at five years' worth of data on U.S. car crashes involving children younger than 16.
-% 
-% It found that when grandparents were at the wheel, 0.7 percent of children were injured in the crash. That compared with 1 percent when parents were driving.
-% 
-% When the researchers considered other factors -- such as the circumstances and severity of the crash -- kids riding with grandparents were half as likely to be injured, versus those riding with their parents.
-% 
-% \end{quote}
-% 
-% \begin{enumerate}
-%   \item The title implies cause-and-effect, not just association.  When comparing injury rates between parents driving and grandparents driving, what possible    confounders can you think of?
-%   \item Using one confounder from your answer(s) in (1), draw a pathway graph depicting the possible relationship between confounder, possible cause and outcome.
-% \end{enumerate}
-% \end{exercise}
-% \begin{solution}  % 15b
-% 
-% \end{solution}
-% 
-% \clearpage
-% 
-%     \begin{exercise}  % 15c         %%%%%%%%%%%%%%%%%
-%     
-%     \begin{center}
-% \begin{flushleft}\textbf{\large \hfill Workshop 15C, Submitted by: }\end{flushleft}
-% 
-% \fbox{\parbox{14cm}{
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-%  }}
-% \end{center}
-% 
-% Frequency of playing violent video games has at times been linked with and seen as a possible cause for those committing violent acts.  Much debate still looms over whether playing violent video games can lead to a desensitization of violence and a lack of compassion for others.  
-% One article that explores these ideas is titled, The Impact of Degree of Exposure to Violent Video Games, Family Background, and Other Factors on Youth Violence, by the authors Whitney Decamp and Christopher Ferguson.  The authors respond to the concern that violence in video games might contribute to youth violence.  There is still no consensus on whether violent video games may be contributing to violence in youth.  The authors sought to study this issue in an ethnically diverse sample of youth in eighth (n=5133) and eleventh grade (n=3886).  Questionnaire surveys were given to the youth to assess a link.  Independent or predictor variables included the playing of violent video games, and an inclination towards violent video games.  Dependent variables included questions pertaining to hitting with the intention to hurt another and taking part in a fight. 
-% Mixed results were reported.  The authors summarized that violent video game play was not significant in 5 of the models used.  There was, however, a positive correlation between games and violent behavior for the models without controls.   When the authors controlled for the propensity and context, however, this suggested the association to be more spurious (not being what it claims to be).  What other factors may be impacting this outcome?  
-% 
-% \begin{enumerate}
-%   \item What possible confounders can you think of for a study of this nature?
-%   \item Using one confounder from your answer(s) in (1), draw a pathway graph depicting the possible relationships between confounder, possible cause and outcome.
-% \end{enumerate}
-% \end{exercise}
-% \begin{solution}  % 15c
-% 
-% \end{solution}
-% 
-% \clearpage
-% 
-%     \begin{exercise}  % 16a         %%%%%%%%%%%%%%%%%
-%     
-%     \begin{center}
-% \begin{flushleft}\textbf{\large \hfill Workshop 16A, Submitted by: }\end{flushleft}
-% 
-% \fbox{\parbox{14cm}{
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-%  }}
-% \end{center}
-% 
-% Jet design researchers have come up with two new designs for the wings of a rocket plane. They think both designs are an improvement over the old design, but want to know which of their new designs performs better at high altitudes. Specifically, they want to know which new design results in more maneuverability at or above 100,000 feet above sea level. They decide to design a randomized trial to study this.
-% 
-% 
-% \begin{enumerate}
-%   \item The researchers include a control group in their design plan. Describe a possible control group. Why did they add it to the study?
-%   \item Several pilots and planes are lined up for this study. How could the researchers randomize their experiment to avoid confounders?
-%   \item One way to measure maneuverability is by surveying pilots about how they thought the jets handled. Could a design that asks pilots this question be blinded? If so, how?
-%   \item Could the design from (2) be double-blinded? If so, how?
-%   \item What makes single and double blinding important?
-% \end{enumerate}
-% \end{exercise}
-% \begin{solution}  % 16a
-% 
-% \end{solution}
-% 
-% \clearpage
-% 
-%     \begin{exercise}  % 16b         %%%%%%%%%%%%%%%%%
-%     
-%     \begin{center}
-% \begin{flushleft}\textbf{\large \hfill Workshop 16B, Submitted by: }\end{flushleft}
-% 
-% \fbox{\parbox{14cm}{
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-%  }}
-% \end{center}
-% 
-% Some students at WMU were curious about whether partying influences GPA. To find out, they surveyed 100 of their WMU peers, asking each peer only two questions: 1) How many hours a week do you party? 2) What is your GPA? The students then compiled their data and performed an appropriate statistical analysis. They concluded that partying does influence GPA, i.e., the more you party, the lower your GPA.
-% 
-% \begin{enumerate}
-%   \item What kind of study design is this?
-%   \item What are advantages of this study design?
-%   \item What are disadvantages of this study design?
-%   \item Did the students overlook anything that might have biased or confounded their results?
-%   \item Suppose the students wanted to correct for something they overlooked. How could they improve their study design?
-% \end{enumerate}
-% 
-% \end{exercise}
-% \begin{solution}  % 16b
-% 
-% \end{solution}
-% 
-% \clearpage
-% 
-%     \begin{exercise}  % 16c         %%%%%%%%%%%%%%%%%
-%     
-%     \begin{center}
-% \begin{flushleft}\textbf{\large \hfill Workshop 16C, Submitted by: }\end{flushleft}
-% 
-% \fbox{\parbox{14cm}{
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-%  }}
-% \end{center}
-% 
-% Yogurt is known to contain `friendly bacteria' known generally as probiotics which can benefit the gastrointestinal system.  Many strains of bacteria can be found in yogurt, with some of the most common being, \textit{Lactobacillus bulgaricus}, \textit{Streptococcus thermophilus}, and \textit{Lactobacillus acidophilus}.  Further research has been done suggesting probiotics boost the immune system and may even help in weight management and reduction of disease such as cancer.  A group of researchers decided to investigate this using a questionnaire assessing yogurt consumption (yes/no) and asking questions pertaining to the health of the individuals.  
-% 
-% \begin{enumerate}
-%   \item First of all, what kind of study design is this?
-%   \item What are advantages of this type of study design?
-%   \item What are disadvantages of this study design?
-%   \item	The researchers then separated the results of the surveys for those who said `yes' they consume yogurt to those who said `no' they do not consume yogurt.  They compared the two groups using these as a treatment and control group.  What is wrong with this assumption?
-%   \item	Suppose the researchers found that those consuming yogurt had better health and concluded that \textit{Lactobacillus bulgaricus} caused a reduction of weight, improved GI and Immune systems.  What are two major problems in this?
-%   \item	What may be a bias or lead to confounding in this study?
-%   \item	How could the researchers improve their study design in order to make a conclusion about the effectiveness of \textit{Lactobacillus bulgaricus} and immune system function?
-% \end{enumerate}
-% 
-% \end{exercise}
-% \begin{solution}  % 16c
-% 
-% \end{solution}
-% 
-% \clearpage
-% 
-%     \begin{exercise}  % 17A         %%%%%%%%%%%%%%%%%
-%     
-%     \begin{center}
-% \begin{flushleft}\textbf{\large \hfill Workshop 17A, Submitted by: }\end{flushleft}
-% 
-% \fbox{\parbox{14cm}{
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-%  }}
-% \end{center}
-% 
-% Historically throughout the United States, families of four spend about \$239 a week on groceries and food with a standard deviation of 50. Assume a random sample of 250 households is taken in the United States.
-% 
-% \begin{enumerate}
-%   \item What is the expected value of the sample mean.
-%   \item	What is the Standard error of this estimate?
-%   \item	What is the probability that the mean weekly household spending is more than \$242?
-%   \item	What is the probability that the mean weekly household spending less than \$235?
-%   \item	What is the probability that the mean weekly household spending is between \$235 and \$242? 
-%   \item	If an even larger sample of 2500 households was taken and the SD remains the same, what is the new Standard Error of the estimate? Why did this occur?
-% \end{enumerate}
-% 
-% \end{exercise}
-% \begin{solution}  % 17a
-% 
-% \end{solution}
-% 
-% \clearpage
-% 
-%     \begin{exercise}  % 17B         %%%%%%%%%%%%%%%%%
-%     
-%     \begin{center}
-% \begin{flushleft}\textbf{\large \hfill Workshop 17B, Submitted by: }\end{flushleft}
-% 
-% \fbox{\parbox{14cm}{
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-%  }}
-% \end{center}
-% 
-% \begin{minipage}[ht]{7cm}
-% 
-% Too Fast, Not Enough Furious
-% 
-% The above chart shows the average cost of annual auto insurance premiums in 2008 for drivers with no accidents, one accident, two accidents, and so on. According to this chart, the average annual auto insurance premium for drivers with no accidents was \$1,387 in 2008.
-% 
-% \end{minipage}
-% \begin{minipage}[ht]{7cm}
-% 
-% %\begin{figure}[ht]
-% \centering
-%   \includegraphics[width=4cm]{chapters/Workshops/ext_figure/UsaToday.png}
-% %\end{figure}
-% \end{minipage}
-% 
-% \begin{enumerate}
-%   \item What is the estimated mean annual auto insurance premium for drivers with no accidents?
-%   \item	What is the standard error of the estimate assuming this is based on a random sample of 400 drivers? Assume that the standard deviation of auto insurance premiums for all current drivers with no accidents is \$180.
-%   \item Assuming the estimate in part a. is the mean for all drivers with no accidents, what is the probability that the mean annual auto insurance premium for drivers with no accidents is greater than \$1,395?
-%   \item If a larger random sample of 1600 such drivers was taken and the SD remains the same, what is the new standard error of the estimate?
-%   \item Assuming the estimate in part a. is the mean for all drivers with no accidents, what is the probability that the mean annual auto insurance premium for drivers with no accidents is greater than \$1,395 using the new standard error?
-% \end{enumerate}
-% 
-% \end{exercise}
-% \begin{solution}  % 17b
-% 
-% \end{solution}
-% 
-% \clearpage
-% 
-%     \begin{exercise}  % 17C         %%%%%%%%%%%%%%%%%
-%     
-%     \begin{center}
-% \begin{flushleft}\textbf{\large \hfill Workshop 17C, Submitted by: }\end{flushleft}
-% 
-% \fbox{\parbox{14cm}{
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-%  }}
-% \end{center}
-% 
-% Historically throughout the United States college students watch about 35 hours a month of television with a standard deviation of 5 hours. Assume a random sample of 25 college students is taken in West Michigan.
-% 
-% \begin{enumerate}
-%   \item What is the expected value of the sample mean.
-%   \item What is the Standard error of this estimate?
-%   \item What is the probability that the mean monthly hours spent watching tv for the college students is more than 36.5?
-%   \item What is the probability that the mean monthly hours spent watching tv is less than 34?
-%   \item What is the probability that the mean monthly hours watching tv is between 34.5 and 36? 
-%   \item If an even larger sample of 250 students was taken and the SD remains the same, what is the new Standard Error of the estimate? Why did this occur?
-% \end{enumerate}
-% \end{exercise}
-% \begin{solution}  % 17c
-% 
-% \end{solution}
-% %  >>>>>>> f92a3e0e6f8050737817729f8e5730b4f6dc1e14
-% 
 % The study, in the February issue of The Archives of General Psychiatry, published by the American Medical Association, found a rising risk of depressive symptoms with increasing hours spent watching television.
 % 
 % Researchers used data from a larger analysis of 4,142 adolescents who were not depressed at the start of the study. After seven years of follow-up, more than 7 percent had symptoms of depression.
@@ -4999,4 +4214,4 @@ The Bureau of Labor Statistics reports that in May 2016 that 10.5\% of people wh
 % The correlation coefficient $r$ between a player's salary and his position makes no sense.
 %     \end{solution}
 
-
+\end{exercises}

@@ -514,7 +514,7 @@ https://www.loc.gov/rr/program/bib/inaugurations/
 
 
 \begin{enumerate}
-  \item Give the five-number summary of the data:
+  \item Give the five number summary of the data:
   {\small{
     \begin{enumerate}
     \item What is the MIN?
@@ -852,254 +852,12 @@ The data below are the weights of six (6) randomly selected kids in a daycare me
 
 \end{solution}
 
-
 \clearpage
 
     \begin{exercise}  % 6a         %%%%%%%%%%%%%%%%%
 
     \begin{center}
 \begin{flushleft}\textbf{\large \hfill Workshop 6A, Submitted by: }\end{flushleft}
-
-\fbox{\parbox{14cm}{
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
- }}
-\end{center}
-
-The following is an excerpt from a New York Times article by Nicholas Bakalar (Feb. 10, 2009).
-
-\begin{quotation}
-Lengthy television viewing in adolescence may raise the risk for depression in young adulthood, according to a new report.
-
-The study, in the February issue of The Archives of General Psychiatry, published by the American Medical Association, found a rising risk of depressive symptoms with increasing hours spent watching television.
-
-Researchers used data from a larger analysis of 4,142 adolescents who were not depressed at the start of the study. After seven years of follow-up, more than 7 percent had symptoms of depression.
-
-But while about 6 percent of those who watched less than three hours a day were depressed, more than 17 percent of those who watched more than nine hours a day had depressive symptoms.
-\end{quotation}
-
-\begin{enumerate}
-  \item The word `raise' in the title implies cause-and-effect, not just association.  When comparing lengthy viewers with those who watch less, what possible    confounders can you think of?
-  \item Using one confounder from your answer(s) in (1), draw a pathway graph depicting the possible relationship between confounder, possible cause and outcome.
-\end{enumerate}
-\end{exercise}
-\begin{solution}  % 6a
-
-\end{solution}
-
-\clearpage
-
-    \begin{exercise}  % 6b         %%%%%%%%%%%%%%%%%
-
-    \begin{center}
-\begin{flushleft}\textbf{\large \hfill Workshop 6B, Submitted by: }\end{flushleft}
-
-\fbox{\parbox{14cm}{
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
- }}
-\end{center}
-
-The following is an excerpt from a Reuters article by Amy Norton (July 2011).
-
-\begin{quotation}
-
-Are kids safer with grandparents driving?
-
-When children are involved in a car accident, they are less likely to be injured if grandma or grandpa are driving rather than mom or dad, a new study suggests.
-
-The study, published in the journal Pediatrics, looked at five years' worth of data on U.S. car crashes involving children younger than 16.
-
-It found that when grandparents were at the wheel, 0.7 percent of children were injured in the crash. That compared with 1 percent when parents were driving.
-
-When the researchers considered other factors -- such as the circumstances and severity of the crash -- kids riding with grandparents were half as likely to be injured, versus those riding with their parents.
-
-\end{quotation}
-
-\begin{enumerate}
-  \item The title implies cause-and-effect, not just association.  When comparing injury rates between parents driving and grandparents driving, what possible    confounders can you think of?
-  \item Using one confounder from your answer(s) in (1), draw a pathway graph depicting the possible relationship between confounder, possible cause and outcome.
-\end{enumerate}
-\end{exercise}
-\begin{solution}  % 6b
-
-\end{solution}
-
-\clearpage
-
-    \begin{exercise}  % 6c         %%%%%%%%%%%%%%%%%
-
-    \begin{center}
-\begin{flushleft}\textbf{\large \hfill Workshop 6C, Submitted by: }\end{flushleft}
-
-\fbox{\parbox{14cm}{
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
- }}
-\end{center}
-
-Frequency of playing violent video games has at times been linked with and seen as a possible cause for those committing violent acts.  Much debate still looms over whether playing violent video games can lead to a desensitization of violence and a lack of compassion for others.
-
-One article that explores these ideas is titled, The Impact of Degree of Exposure to Violent Video Games, Family Background, and Other Factors on Youth Violence, by the authors Whitney Decamp and Christopher Ferguson.  The authors respond to the concern that violence in video games might contribute to youth violence.  There is still no consensus on whether violent video games may be contributing to violence in youth.  The authors sought to study this issue in an ethnically diverse sample of youth in eighth ($n = 5133$) and eleventh grade ($n = 3886$).  Questionnaire surveys were given to the youth to assess a link.  Independent or predictor variables included the playing of violent video games, and an inclination towards violent video games.  Dependent variables included questions pertaining to hitting with the intention to hurt another and taking part in a fight.
-
-Mixed results were reported.  The authors summarized that violent video game play was not significant in 5 of the models used.  There was, however, a positive correlation between games and violent behavior for the models without controls.   When the authors controlled for the propensity and context, however, this suggested the association to be more spurious (not being what it claims to be).  What other factors may be impacting this outcome?
-
-\begin{enumerate}
-  \item What possible confounders can you think of for a study of this nature?
-  \item Using one confounder from your answer(s) in (1), draw a pathway graph depicting the possible relationships between confounder, possible cause and outcome.
-\end{enumerate}
-\end{exercise}
-\begin{solution}  % 6c
-
-\end{solution}
-
-
-\clearpage
-
-    \begin{exercise}  % 7a         %%%%%%%%%%%%%%%%%
-
-    \begin{center}
-\begin{flushleft}\textbf{\large \hfill Workshop 6A, Submitted by: }\end{flushleft}
-
-\fbox{\parbox{14cm}{
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
- }}
-\end{center}
-
-Jet design researchers have come up with two new designs for the wings of a rocket plane. They think both designs are an improvement over the old design but want to know which of their new designs performs better at high altitudes. Specifically, they want to know which new design results in more maneuverability at or above 100,000 feet above sea level. They decide to design a randomized trial to study this.
-
-
-\begin{enumerate}
-  \item The researchers include a control group in their design plan. Describe a possible control group. Why did they add it to the study?
-  \item Several pilots and planes are lined up for this study. How could the researchers randomize their experiment to avoid confounders?
-  \item One way to measure maneuverability is by surveying pilots about how they thought the jets handled. Could a design that asks pilots this question be blinded? If so, how?
-  \item Could the design from (2) be double-blinded? If so, how?
-  \item What makes single and double blinding important?
-\end{enumerate}
-\end{exercise}
-\begin{solution}  % 7a
-
-\end{solution}
-
-\clearpage
-
-    \begin{exercise}  % 7b         %%%%%%%%%%%%%%%%%
-
-    \begin{center}
-\begin{flushleft}\textbf{\large \hfill Workshop 7B, Submitted by: }\end{flushleft}
-
-\fbox{\parbox{14cm}{
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
- }}
-\end{center}
-
-Some students at WMU were curious about whether partying influences GPA. To find out, they surveyed 100 of their WMU peers, asking each peer only two questions: 1) How many hours a week do you party? 2) What is your GPA? The students then compiled their data and performed an appropriate statistical analysis. They concluded that partying does influence GPA, i.e., the more you party, the lower your GPA.
-
-\begin{enumerate}
-  \item What kind of study design is this?
-  \item What are advantages of this study design?
-  \item What are disadvantages of this study design?
-  \item Did the students overlook anything that might have biased or confounded their results?
-  \item Suppose the students wanted to correct for something they overlooked. How could they improve their study design?
-\end{enumerate}
-
-\end{exercise}
-\begin{solution}  % 7b
-
-\end{solution}
-
-\clearpage
-
-    \begin{exercise}  % 7c         %%%%%%%%%%%%%%%%%
-
-    \begin{center}
-\begin{flushleft}\textbf{\large \hfill Workshop 7C, Submitted by: }\end{flushleft}
-
-\fbox{\parbox{14cm}{
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
- }}
-\end{center}
-
-Yogurt is known to contain `friendly bacteria' known generally as probiotics which can benefit the gastrointestinal system.  Many strains of bacteria can be found in yogurt, with some of the most common being, \textit{Lactobacillus bulgaricus}, \textit{Streptococcus thermophilus}, and \textit{Lactobacillus acidophilus}.  Further research has been done suggesting probiotics boost the immune system and may even help in weight management and reduction of disease such as cancer.  A group of researchers decided to investigate this using a questionnaire assessing yogurt consumption (yes/no) and asking questions pertaining to the health of the individuals.
-
-\begin{enumerate}
-  \item First of all, what kind of study design is this?
-  \item What are advantages of this type of study design?
-  \item What are disadvantages of this study design?
-  \item	The researchers then separated the results of the surveys for those who said `yes' they consume yogurt to those who said `no' they do not consume yogurt.  They compared the two groups using these as a treatment and control group.  What is wrong with this assumption?
-  \item	Suppose the researchers found that those consuming yogurt had better health and concluded that \textit{Lactobacillus bulgaricus} caused a reduction of weight, improved GI and Immune systems.  What are two major problems in this?
-  \item	What may be a bias or lead to confounding in this study?
-  \item	How could the researchers improve their study design in order to make a conclusion about the effectiveness of \textit{Lactobacillus bulgaricus} and immune system function?
-\end{enumerate}
-
-\end{exercise}
-\begin{solution}  % 7c
-
-\end{solution}
-
-\clearpage
-
-    \begin{exercise}  % 8a         %%%%%%%%%%%%%%%%%
-
-    \begin{center}
-\begin{flushleft}\textbf{\large \hfill Workshop 8A, Submitted by: }\end{flushleft}
 
 \fbox{\parbox{14cm}{
 \vspace{4mm}
@@ -1127,16 +885,16 @@ According to a Sallie Mae survey and credit bureau data, in 2008, college studen
 \end{enumerate}
 
 \end{exercise} 
-\begin{solution}  % 8a
+\begin{solution}  % 6a
 
 \end{solution}
 
 \clearpage
 
-    \begin{exercise}  % 8b         %%%%%%%%%%%%%%%%%
+    \begin{exercise}  % 6b         %%%%%%%%%%%%%%%%%
 
     \begin{center}
-\begin{flushleft}\textbf{\large \hfill Workshop 8B, Submitted by: }\end{flushleft}
+\begin{flushleft}\textbf{\large \hfill Workshop 6B, Submitted by: }\end{flushleft}
 
 \fbox{\parbox{14cm}{
 \vspace{4mm}
@@ -1164,16 +922,16 @@ According to an article published on the Web site www.PCMag.com, Facebook users 
 \end{enumerate}
 
 \end{exercise} 
-\begin{solution}  % 8b
+\begin{solution}  % 6b
 
 \end{solution}
 
 \clearpage
 
-    \begin{exercise}  % 8c         %%%%%%%%%%%%%%%%%
+    \begin{exercise}  % 6c         %%%%%%%%%%%%%%%%%
 
     \begin{center}
-\begin{flushleft}\textbf{\large \hfill Workshop 8C, Submitted by: }\end{flushleft}
+\begin{flushleft}\textbf{\large \hfill Workshop 6C, Submitted by: }\end{flushleft}
 
 \fbox{\parbox{14cm}{
 \vspace{4mm}
@@ -1199,16 +957,16 @@ The amount paid out by Ajax Insurance Company in a year is normally distributed 
 \end{enumerate}
 
 \end{exercise} 
-\begin{solution}  % 8c
+\begin{solution}  % 6c
 
 \end{solution}
 
 \clearpage
 
-    \begin{exercise}  % 9a         %%%%%%%%%%%%%%%%%
+    \begin{exercise}  % 7a         %%%%%%%%%%%%%%%%%
 
     \begin{center}
-\begin{flushleft}\textbf{\large \hfill Workshop 9A, Submitted by: }\end{flushleft}
+\begin{flushleft}\textbf{\large \hfill Workshop 7A, Submitted by: }\end{flushleft}
 
 \fbox{\parbox{14cm}{
 \vspace{4mm}
@@ -1237,16 +995,16 @@ According to a Sallie Mae survey and credit bureau data, in 2008, college studen
 \end{enumerate}
 
 \end{exercise} 
-\begin{solution}  % 9a
+\begin{solution}  % 7a
 
 \end{solution} 
 
 \clearpage
 
-    \begin{exercise}  % 9b         %%%%%%%%%%%%%%%%%
+    \begin{exercise}  % 7b         %%%%%%%%%%%%%%%%%
 
     \begin{center}
-\begin{flushleft}\textbf{\large \hfill Workshop 9B, Submitted by: }\end{flushleft}
+\begin{flushleft}\textbf{\large \hfill Workshop 7B, Submitted by: }\end{flushleft}
 
 \fbox{\parbox{14cm}{
 \vspace{4mm}
@@ -1272,16 +1030,16 @@ Tommy Wait, a minor-league baseball pitcher, is notorious for taking an excessiv
   \item How likely would it be for the time between pitches of 40 seconds or more? \end{enumerate}
 
 \end{exercise} 
-\begin{solution}  % 9b
+\begin{solution}  % 7b
 
 \end{solution} 
     
 \clearpage
 
-    \begin{exercise}  % 9c         %%%%%%%%%%%%%%%%%
+    \begin{exercise}  % 7c         %%%%%%%%%%%%%%%%%
 
     \begin{center}
-\begin{flushleft}\textbf{\large \hfill Workshop 9C, Submitted by: }\end{flushleft}
+\begin{flushleft}\textbf{\large \hfill Workshop 7C, Submitted by: }\end{flushleft}
 
 \fbox{\parbox{14cm}{
 \vspace{4mm}
@@ -1307,16 +1065,16 @@ The amount paid out by Ajax Insurance Company in a year is normally distributed 
 \end{enumerate}
 
 \end{exercise} 
-\begin{solution}  % 9c
+\begin{solution}  % 7c
 
 \end{solution}
 
 \clearpage
 
-    \begin{exercise}  % 10a         %%%%%%%%%%%%%%%%%
+    \begin{exercise}  % 8a         %%%%%%%%%%%%%%%%%
 
     \begin{center}
-\begin{flushleft}\textbf{\large \hfill Workshop 10A, Submitted by: }\end{flushleft}
+\begin{flushleft}\textbf{\large \hfill Workshop 8A, Submitted by: }\end{flushleft}
 
 \fbox{\parbox{14cm}{
 \vspace{4mm}
@@ -1335,7 +1093,7 @@ Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phan
 
 Workshop 8: Drugstore Cowboy 
 
-According to an October 27, 2006 article in \textit{Newsweek}, 60\% of Americans said that they take expired medicines. Suppose that this result is true of the current population of Americans. 
+According to an October 27, 2006 article in Newsweek, 60\% of Americans said that they take expired medicines. Suppose that this result is true of the current population of Americans. 
 
 \begin{enumerate}
   \item Let $x$ be a binomial random variable that denotes the number of American in a random sample of 4 who have taken expired medicines. What are the possible values that $x$ can assume?
@@ -1346,16 +1104,16 @@ According to an October 27, 2006 article in \textit{Newsweek}, 60\% of Americans
 \end{enumerate}
 
 \end{exercise} 
-\begin{solution}  % 10a
+\begin{solution}  % 8a
 
 \end{solution}
 
 \clearpage
 
-    \begin{exercise}  % 10b         %%%%%%%%%%%%%%%%%
+    \begin{exercise}  % 8b         %%%%%%%%%%%%%%%%%
 
     \begin{center}
-\begin{flushleft}\textbf{\large \hfill Workshop 10B, Submitted by: }\end{flushleft}
+\begin{flushleft}\textbf{\large \hfill Workshop 8B, Submitted by: }\end{flushleft}
 
 \fbox{\parbox{14cm}{
 \vspace{4mm}
@@ -1388,7 +1146,7 @@ http://www.harrisinteractive.com/harris_poll/pubs/Harris_Poll_2009_04_16.pdf
 \end{enumerate}
 
 \end{exercise} 
-\begin{solution}  % 10b
+\begin{solution}  % 8b
 
 \end{solution}
 
@@ -1397,7 +1155,7 @@ http://www.harrisinteractive.com/harris_poll/pubs/Harris_Poll_2009_04_16.pdf
     \begin{exercise}  % 8c        %%%%%%%%%%%%%%%%%
 
     \begin{center}
-\begin{flushleft}\textbf{\large \hfill Workshop 10C, Submitted by: }\end{flushleft}
+\begin{flushleft}\textbf{\large \hfill Workshop 8C, Submitted by: }\end{flushleft}
 
 \fbox{\parbox{14cm}{
 \vspace{4mm}
@@ -1424,17 +1182,17 @@ The Bureau of Labor Statistics reports that in May 2016 that 10.5\% of people wh
 \end{enumerate}
 
 \end{exercise} 
-\begin{solution}  % 10c
+\begin{solution}  % 8c
 
 \end{solution}
 
-
+<<<<<<< HEAD
 \clearpage
 
-    \begin{exercise}  % 11a        %%%%%%%%%%%%%%%%%
+    \begin{exercise}  % 9a        %%%%%%%%%%%%%%%%%
 
     \begin{center}
-\begin{flushleft}\textbf{\large \hfill Workshop 11A, Submitted by: }\end{flushleft}
+\begin{flushleft}\textbf{\large \hfill Workshop 9A, Submitted by: }\end{flushleft}
 
 \fbox{\parbox{14cm}{
 \vspace{4mm}
@@ -1465,16 +1223,16 @@ Source: http://www.startribune.com/politics/45797562.html
 \end{enumerate}
 
 \end{exercise} 
-\begin{solution}  % 11a
+\begin{solution}  % 9a
 
 \end{solution}
 
 \clearpage
 
-    \begin{exercise}  % 11b        %%%%%%%%%%%%%%%%%
+    \begin{exercise}  % 9b        %%%%%%%%%%%%%%%%%
 
     \begin{center}
-\begin{flushleft}\textbf{\large \hfill Workshop 11B, Submitted by: }\end{flushleft}
+\begin{flushleft}\textbf{\large \hfill Workshop 9B, Submitted by: }\end{flushleft}
 
 \fbox{\parbox{14cm}{
 \vspace{4mm}
@@ -1506,16 +1264,16 @@ A 2007 article states that 4.8\% of U.S. households are ``linguistically isolate
   \item Using the normal approximation, find the probability that in a random sample of 750 U.S. households, exactly 45 would be classified as ``linguistically isolated.''
 \end{enumerate}  
 \end{exercise} 
-\begin{solution}  % 11b
+\begin{solution}  % 9b
 
 \end{solution}
 
 \clearpage
 
-    \begin{exercise}  % 11c        %%%%%%%%%%%%%%%%%
+    \begin{exercise}  % 9c        %%%%%%%%%%%%%%%%%
 
     \begin{center}
-\begin{flushleft}\textbf{\large \hfill Workshop 11C, Submitted by: }\end{flushleft}
+\begin{flushleft}\textbf{\large \hfill Workshop 9C, Submitted by: }\end{flushleft}
 
 \fbox{\parbox{14cm}{
 \vspace{4mm}
@@ -1542,13 +1300,229 @@ The Bureau of Labor Statistics reports that in May 2016 that 10.5\% of people wh
 \end{enumerate}
 
 \end{exercise} 
-\begin{solution}  % 11c
+\begin{solution}  % 9c
 
 \end{solution}
 
+\clearpage
 
+    \begin{exercise}  % 10a        %%%%%%%%%%%%%%%%%
 
+    \begin{center}
+\begin{flushleft}\textbf{\large \hfill Workshop 10A, Submitted by: }\end{flushleft}
 
+\fbox{\parbox{14cm}{
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+ }}
+\end{center}
+
+According to a survey conducted by Pew Research Center in June 2009, 110 people ages 18 to 29 years said that religion is very important to them. Suppose this result is based on a sample of 250 people ages 18 to 29 years.
+
+\begin{enumerate}
+  \item What is the sample estimate of the proportion of all people ages 18 to 29 years who will say that religion is very important to them?
+  \item What is the standard error of this estimate?
+  \item Using the normal curve and assuming your estimate from a. is representative of the population proportion, what is the probability that more than 45\% of people ages 18 to 29 years say that religion is very important to them?
+\end{enumerate}
+
+\end{exercise} 
+\begin{solution}  % 10a
+
+\end{solution}
+
+\clearpage
+
+    \begin{exercise}  % 10b         %%%%%%%%%%%%%%%%%
+
+    \begin{center}
+\begin{flushleft}\textbf{\large \hfill Workshop 10B, Submitted by: }\end{flushleft}
+
+\fbox{\parbox{14cm}{
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+ }}
+\end{center}
+
+Don't Drink and Drive
+
+According to a Harris Interactive survey of 600 adults conducted in April 2009, 150 adults do not drink alcohol. 
+
+\begin{enumerate}
+  \item What is the sample estimate of the proportion of all adults who do not drink alcohol?
+  \item What is the standard error of this estimate?
+  \item Using the normal curve and assuming your estimate in a. is representative of the population proportion, what is the probability that more than 24\% of adults do not drink alcohol?
+\end{enumerate}
+
+\end{exercise} 
+\begin{solution}  % 10b
+
+\end{solution}
+
+\clearpage
+
+    \begin{exercise}  % 10c         %%%%%%%%%%%%%%%%%
+
+    \begin{center}
+\begin{flushleft}\textbf{\large \hfill Workshop 10C, Submitted by: }\end{flushleft}
+
+\fbox{\parbox{14cm}{
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+ }}
+\end{center}
+
+J. S. Carlton et al. conducted a survey of 698 biological scientists from Big 10 universities, asking respondents ``When compared with pre-1800's levels, do you think that mean global temperatures have generally risen, fallen, or remained relatively constant?'' 652 respondents said global temperatures had risen.
+ 
+\begin{enumerate}
+  \item What is the point estimate for the proportion of Big 10 biological scientists who believe in global warming?
+  \item What is the standard error of this estimate?
+  \item Using the normal curve and assuming your estimate in a. is representative of the population proportion, what is the probability that less than 93\% of Big 10 biological scientists believe in global warming?
+\end{enumerate}
+
+\end{exercise} 
+\begin{solution}  % 10c
+
+\end{solution}
+
+\clearpage
+
+    \begin{exercise}  % 11a         %%%%%%%%%%%%%%%%%
+
+    \begin{center}
+\begin{flushleft}\textbf{\large \hfill Workshop 11A, Submitted by: }\end{flushleft}
+
+\fbox{\parbox{14cm}{
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+ }}
+\end{center}
+
+According to a survey conducted by Pew Research Center in June 2009, 110 of people ages 18 to 29 years said that religion is very important to them.  Suppose this result is based on a sample of 250 people aged 18 to 29 years.
+
+\begin{enumerate}
+  \item What is the standard error of the sample proportion?
+  \item What is the margin of error of your sample proportion at a 95\% confidence level?
+  \item What is the confidence interval for the sample proportion at a 95\% confidence level?
+  \item If a larger random sample of 1000 such people is taken - and the sample proportion stays the same - what is the new standard error of the sample proportion?
+  \item Compare the two standard errors. Which is bigger, by how much?
+\end{enumerate}
+
+\end{exercise} 
+\begin{solution}  % 11a
+
+\end{solution}
+
+\clearpage
+
+    \begin{exercise}  % 11b         %%%%%%%%%%%%%%%%%
+
+    \begin{center}
+\begin{flushleft}\textbf{\large \hfill Workshop 11B, Submitted by: }\end{flushleft}
+
+\fbox{\parbox{14cm}{
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+ }}
+\end{center}
+
+Don't Drink and Drive
+
+According to a Harris Interactive survey of 600 adults conducted in April 2009, 150 adults do not drink alcohol. 
+
+\begin{enumerate}
+  \item What is the standard error of the sample proportion?
+  \item What is the margin of error of your sample proportion at a 95% confidence level?
+  \item What is the confidence interval for the sample proportion at a 95% confidence level?
+  \item If a larger random sample of 2400 adults is taken - and the sample proportion stays the same - what is the new standard error of the sample proportion?
+  \item Compare the two standard errors. Which is bigger, by how much?
+\end{enumerate}
+
+\end{exercise} 
+\begin{solution}  % 11b
+
+\end{solution}
+
+\clearpage
+
+    \begin{exercise}  % 11c         %%%%%%%%%%%%%%%%%
+
+    \begin{center}
+\begin{flushleft}\textbf{\large \hfill Workshop 11C, Submitted by: }\end{flushleft}
+
+\fbox{\parbox{14cm}{
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+ }}
+\end{center}
+
+J. S. Carlton et al. conducted a survey of 698 biological scientists from Big 10 universities, asking respondents ``When compared with pre-1800's levels, do you think that mean global temperatures have generally risen, fallen, or remained relatively constant?'' 652 respondents said global temperatures had risen.
+
+\begin{enumerate}
+  \item What is the standard error of the sample proportion?
+  \item What is the margin of error of your sample proportion at a 95% confidence level?
+  \item What is the confidence interval for the sample proportion at a 95% confidence level?
+  \item If a larger sample of 1500 is taken - and the sample proportion stays the same - what would be the new standard error?
+  \item Compare the two standard errors. Which is bigger, by how much?
+\end{enumerate}
+
+\end{exercise} 
+\begin{solution}  % 11c
+
+\end{solution}
 
 \end{exercises}
 
