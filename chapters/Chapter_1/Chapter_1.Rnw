@@ -17,6 +17,26 @@ After completing this subsection, students should be able to:
 \end{itemize}
 }}
 
+\section{Introduction}
+
+\subsection{Why Data?}
+
+\subsubsection{Understanding by the end user}
+
+First, data is not information.  Researchers extract Information from the data.  The study of statistics will give us the tools (methods) to judge the validity of the data.  
+
+\subsubsection{Designing studies}
+
+Most science journals, after 1966, started to report the results of statistical studies.  For example, FDA (Food and Drug Agency) approved many drugs with written statements from a physician saying the drug was safe, after 1966 the FDA required statistical studies to show that the proposed drug did not harm.  Later, FDA expected that the drug would be therapeutic.
+
+\subsubsection{Conducting research}
+
+Unless a sample is biased (we will get to that later), it will reveal the truth about the population.  For example, let's suppose that a drug development team after working on a compound for several months decided to try the experimental drug themselves to test its effects before the animal safety studies were complete.  (By the way, this behavior is unethical.)  The team concluded that it appeared to be safe; however, a mouse study later showed that mice in the high dose group started to canonicalize themselves.   
+
+\subsubsection{Developing critical thinking skills}
+
+Critical thinking starts with asking these type of questions: How can I confirm the validity of these data?  What can I infer from these data?  Is the source of these data credible?  Etc.
+
 \section{Knowledge and Data}
 
 There is a difference between what we know, and what we think know.  Are vaccines safe?  Will the new tax rules bring more or less revenue?  Do mandatory seat belt laws save lives?   Will legalizing drugs lead to more addiction?  Do alternative therapies work as effectively as traditional treatments?  Does exercise help prevent illness and are people who generally exercise healthier? Do taller people make more money than shorter people?  \citep{naranjo2018}
