@@ -6,7 +6,7 @@
 
 \section{Objectives}
 
-After completing this subsection, students should be able to:
+After completing this chapter, students should be able to:
 
 \fbox{\parbox{14cm}{
 \begin{itemize}
@@ -27,7 +27,7 @@ First, data is not information.  Researchers extract Information from the data. 
 
 \subsubsection{Designing studies}
 
-Most science journals, after 1966, started to report the results of statistical studies.  For example, FDA (Food and Drug Agency) approved many drugs with written statements from a physician saying the drug was safe, after 1966 the FDA required statistical studies to show that the proposed drug did not harm.  Later, FDA expected that the drug would be therapeutic.
+Most scientific journals, after 1966, started to report statistical results.  For example, before 1966, FDA (Food and Drug Agency) approved many drugs with written statements from a physician saying that the drug was safe, after 1966 the FDA required statistical studies to show that the proposed drug did not harm.  Later, FDA expected that the drug would be therapeutic.
 
 \subsubsection{Conducting research}
 
