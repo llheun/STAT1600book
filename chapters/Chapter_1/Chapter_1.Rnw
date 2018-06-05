@@ -23,7 +23,7 @@ After completing this chapter, students should be able to:
 
 \subsubsection{Understanding by the end user}
 
-First, data is not information.  Researchers extract Information from the data.  The study of statistics will give us the tools (methods) to judge the validity of the data.  
+First, data is not information.  Researchers extract information from the data.  The study of statistics will give us the tools (methods) to judge the validity of the data.  
 
 \subsubsection{Designing studies}
 
@@ -192,6 +192,28 @@ In medical studies, we use clinical trials to see if a difference exists between
 A \textbf{Type I error} occurs when the researcher falsely finds a difference between treatments where no actual difference exists.  Often, we use 95\% confidence intervals when analyzing for statistical significance.  It means that 5\% of the time we may conclude a significant difference, when in fact one doesn’t exist!  The researcher is thus willing to accept a 5\% chance that the study conclusions could be wrong.  Notice, however, 5\% is very small compared to the 95\% assurance we have that there is a significant difference.
 
 Another type of error that may be made is a \textbf{Type II error}.  Here the researcher fails to find a difference between the treatment groups when a true difference does exist!  Perhaps we did a study with only a small sample, and we didn't see a difference between our treatment and control group.  We would conclude there is no difference, which the treatment was not effective.  Another lab might perform the same type of study but have a much large sample size, and once they analyze their data find that there is a true difference.  If we fail to find a statistical difference when there is a difference, we have committed a Type II error.  It also relates to the power of a study.  The power of a study is related to the strength of the study.  Can we detect an effect when there is an effect?  How well was the study conducted?  It also relates to our sample size.  When we have a larger sample size, we will reduce the likelihood of committing a Type II error.
+
+\section{Key Words}
+
+\fbox{\parbox{14cm}{
+\begin{minipage}[ht]{6cm}
+
+\begin{itemize}
+\item Correlation
+\item Data
+\item Fallacies
+\end{itemize}
+\end{minipage} \hfill
+\begin{minipage}[ht]{6cm}
+
+\begin{itemize}
+\item Knowledge
+\item Type I error
+\item Type II error
+\end{itemize}
+\end{minipage}
+}}
+
 
 
 \twocolumn

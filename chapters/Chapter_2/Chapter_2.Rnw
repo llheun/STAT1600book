@@ -9,10 +9,16 @@ After completing this part, students should be able to:
 
 \fbox{\parbox{14cm}{
 \begin{itemize}
-  \item Use descriptive statistics to make data understandable.
-  \item Summarize and analyze data using graphical methods.
-  \item Compute and interpret percentages, proportions, ratios, rates, and percentage change.
-  \item Construct and analyze frequency distributions for variables at each of the three levels of measurement.
+  \item Classify variables.
+  \item Understand the difference between dependent and independent variables.
+  \item Summarize data using graphical methods.
+  \item Describe data in tabular form.
+  \item Compute relative frequencies.
+  % \item Use procedures to display data graphically.
+  % \item Use descriptive statistics to make data understandable.
+  % \item Summarize and analyze data using graphical methods.
+  % \item Compute and interpret percentages, proportions, ratios, rates, and percentage change.
+  % \item Construct and analyze frequency distributions for variables at each of the three levels of measurement.
 \end{itemize}
 }}
 
@@ -188,9 +194,9 @@ A \textit{relative frequency table} gives the count for each category and the re
 
 To compute Relative Frequency, divide Frequency by the total and multiply by 100\%.  For example,
 
-\begin{equation}
-RF = \frac{44}{76} \times 100 = 57.9 \nonumber
-\end{equation}
+\begin{equation*}
+RF = \frac{44}{76} \times 100 = 57.9 
+\end{equation*}
 
 \subsection{Bar Chart}
 
@@ -204,7 +210,7 @@ A \textit{bar chart} is a plot of the relative frequency table.  We use bar char
 
 A pie chart gives the same information as a bar chart, except in a circular shape.  We also use pie charts for categorical data.   Some people prefer the look of pie charts over bar charts.  However, studies have shown that people have difficulty comparing relative size of wedges.  Look at the pie chart below.  Is Rent less than half or more than half of Mortgage?
 
-<<label=LBL2c, results="asis", echo=FALSE>>=
+<<label=LBL2c, results="asis", echo=FALSE, out.width="5cm">>=
 
   pie(v2, main="Bar Plot for Type of Payment")
 
@@ -235,9 +241,10 @@ Graphs are helpful in summarizing information in the data, especially for large 
 
 There is one leaf for each observation, so there are 63 leaves in all (we left out the \$5200 outlier, for now).  Our smallest observation is \$140.  It is written on the stem `1' as a leaf of `4'.  We can infer that that the stems represent \$100's, and the leaves represent \$10's.  The next largest value \$190 is written on stem `1' as a `9'.   \$200 is written on stem `2' as `0', etc.
 
+{\small{
 \begin{minipage}[ht]{7.5cm}
 
-Stem and Leaf Display of Monthly Payment (stem width \$100)
+Stem and Leaf Display of Monthly \\ Payment (stem width \$100)
 
 \begin{tabular}{@{} r|l @{}} \hline
 1 & 49 \\
@@ -261,7 +268,7 @@ Stem and Leaf Display of Monthly Payment (stem width \$100)
 \end{minipage}
 \begin{minipage}[ht]{7.5cm}
 
-Stem-and-Leaf Display of Monthly Payment (stem width=\$200)
+Stem-and-Leaf Display of Monthly \\ Payment (stem width=\$200)
 
 \begin{tabular}{@{} r|l @{}} \hline
 0 & 49 \\
@@ -282,6 +289,7 @@ Stem-and-Leaf Display of Monthly Payment (stem width=\$200)
 30& \\ \hline
 \end{tabular}
 \end{minipage}
+}}
 
 You see why we left out \$1800, \$2400, and \$5200. It would have made the graph extend beyond the page!  We can make the graph more compact by merging stems. The plot below is about half the length because the intervals for each stem are twice as wide.
 
@@ -289,10 +297,11 @@ The stem `8' now contains both `8' and `9', so that the leaves are read as 800, 
 
 Suppose we want to compare mortgage and rent.  Do mortgage payments tend to be greater or less than rent?  We can present stem-and-leaf for mortgage and rent side by side.
 
-\newpage
+%  \newpage
 
 Stem and Leaf Display of Monthly Payment (stem width \$100)
 
+{\footnotesize{
 \begin{minipage}[ht]{3cm}
 
 Mortgage
@@ -339,6 +348,7 @@ Rent
 16& \\ \hline
 \end{tabular}
 \end{minipage}
+}}
 
 In general, rent is smaller than mortgages, and less variable.  While mortgages seem centered around \$700, rent is centered around \$500.  Furthermore, mortgages have a longer right tail, with a significant percentage over \$1000.  Plus, remember that we have removed a \$1800 - \$5200 mortgage from these plots.
 
@@ -539,24 +549,65 @@ The long tail denotes outlying observations or extreme observations.  The left-s
 
 \vspace{3mm}
 
-\begin{minipage}[ht]{5cm}
+\begin{figure}[ht]
 
-<<label=LBL2m, results="asis", echo=FALSE, out.width="5cm">>=
-  hist(SDat1, xlab="values", main="Symmetric")
-@
-\end{minipage}
-\begin{minipage}[ht]{5cm}
+<<label=LBL2m, resutls="asis", echo=FALSE, out.width="4cm">>=
+  hist( rbeta(10000,5,5),  col="skyblue", main="Symmetric" )    ## symmetric
+       
+  hist( rbeta(10000, 2, 5),  col="skyblue", main="Right Skewed" )     ## right skewed
+  
+  hist(rbeta(10000, 5, 2),  col="skyblue", main="Left Skewed" )    ## left skewed  
+@  
+  
+\end{figure}  
 
-<<label=LBL2n, results="asis", echo=FALSE, out.width="5cm">>=
-  hist(SDat2, xlab="values", main="Right-Skewed")
-@
-\end{minipage}
-\begin{minipage}[ht]{5cm}
 
-<<label=LBL2o, results="asis", echo=FALSE, out.width="5cm">>=
-  hist(SDat3, xlab="values", main="Left-Skewed")
-@
+
+
+
+
+
+
+% \begin{minipage}[ht]{5cm}
+% 
+% <<label=LBL2m, results="asis", echo=FALSE, out.width="5cm">>=
+%   hist(SDat1, xlab="values", main="Symmetric")
+% @
+% \end{minipage}
+% \begin{minipage}[ht]{5cm}
+% 
+% <<label=LBL2n, results="asis", echo=FALSE, out.width="5cm">>=
+%   hist(SDat2, xlab="values", main="Right-Skewed")
+% @
+% \end{minipage}
+% \begin{minipage}[ht]{5cm}
+% 
+% <<label=LBL2o, results="asis", echo=FALSE, out.width="5cm">>=
+%   hist(SDat3, xlab="values", main="Left-Skewed")
+% @
+% \end{minipage}
+
+\section{Key Words}
+
+\fbox{\parbox{14cm}{
+\begin{minipage}[ht]{6cm}
+
+\begin{itemize}
+\item Correlation
+\item Data
+\item Fallacies
+\end{itemize}
+\end{minipage} \hfill
+\begin{minipage}[ht]{6cm}
+
+\begin{itemize}
+\item Knowledge
+\item Type I error
+\item Type II error
+\end{itemize}
 \end{minipage}
+}}
+
 
 \twocolumn
 
@@ -631,7 +682,7 @@ in the U.S. is displayed in the following stem-and-leaf plot.  Note that the ste
 	  \begin{enumerate}
 	  \item Obtain the five-number summary.
     \item Obtain a boxplot and histogram for 6-year graduation rate.
-    \item In your opinion, which of the three plots (stem-and-leaf, boxplot, histogram) best illustrates the data? Why?
+    \item In your opinion, which of the three plots (stem-and-leaf, boxplot, histogram) \\ best illustrates the data? Why?
 	  \end{enumerate}
 
 	\end{exercise}
@@ -758,4 +809,6 @@ $(50, 55]$ 	&     6 & \Sexpr{rf4dat[7]} \\ \hline
 	\end{solution}
 
 \end{exercises}
+
+\onecolumn
 
