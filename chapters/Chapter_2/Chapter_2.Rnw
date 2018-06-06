@@ -100,8 +100,9 @@ Nominal and ordinal variables together are often called \textit{categorical} var
 \begin{figure}[htbp]
    \centering
    \includegraphics[width=10cm, height=5cm]
-   {chapters/Chapter_2/ext_figure/varType.png} % requires the graphicx package
-
+   {chapters/Chapter_2/ext_figure/zRV1.png} % requires the graphicx package
+   %{chapters/Chapter_2/ext_figure/varType.png} % requires the graphicx package
+   \caption{Mind map of a Random Variable}
 \end{figure}
 
 

@@ -35,15 +35,13 @@ Unless a sample is biased (we will get to that later), it will reveal the truth 
 
 \subsubsection{Developing critical thinking skills}
 
-Critical thinking starts with asking these type of questions: How can I confirm the validity of these data?  What can I infer from these data?  Is the source of these data credible?  Etc.
+Critical thinking starts with asking these type of questions: How can I confirm the validity of these data?  What can I infer from these data?  Is the source of these data credible?  And so forth.
 
 \section{Knowledge and Data}
 
-There is a difference between what we know, and what we think know.  Are vaccines safe?  Will the new tax rules bring more or less revenue?  Do mandatory seat belt laws save lives?   Will legalizing drugs lead to more addiction?  Do alternative therapies work as effectively as traditional treatments?  Does exercise help prevent illness and are people who generally exercise healthier? Do taller people make more money than shorter people?  \citep{naranjo2018}
+There is a difference between what we know, and what we think that we know.  Are vaccines safe?  Will the new tax rules bring more or less revenue?  Do mandatory seat belt laws save lives?   Will legalizing drugs lead to more addiction?  Do alternative therapies work as effectively as traditional treatments?  Does exercise help prevent illness and are people who generally exercise healthier? Do taller people make more money than shorter people?  \citep{naranjo2018}
 
-Most of these issues can only be settled by looking at data.  What do the data tell us?  Even then, some issues can only be partially answered by at best incomplete data.  In this course, we will discuss some fundamentals of good scientific studies
-and data analysis.  In the process, we hope to become better consumers of
-information, and better judges of what is true or not true, and what remains to be proven.
+We can settle most of these issues by looking at data.  What do the data tell us?  Even then, some problems can only be partially answered by at best incomplete data.  In this course, we will lay the groundwork for writing a protocol and  will discuss some fundamentals of sound scientific studies and data analysis.  In the process, we hope to become better consumers of information and better judges of what is real or not true, and what remains to be proven.
 
 \subsection{Building Knowledge Step-by-step}
 
