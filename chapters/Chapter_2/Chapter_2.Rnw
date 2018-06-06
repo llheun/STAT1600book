@@ -8,24 +8,20 @@
 After completing this part, students should be able to:
 
 \fbox{\parbox{14cm}{
+
 \begin{itemize}
-  \item Classify variables.
-  \item Understand the difference between dependent and independent variables.
-  \item Summarize data using graphical methods.
-  \item Describe data in tabular form.
-  \item Compute relative frequencies.
-  % \item Use procedures to display data graphically.
-  % \item Use descriptive statistics to make data understandable.
-  % \item Summarize and analyze data using graphical methods.
-  % \item Compute and interpret percentages, proportions, ratios, rates, and percentage change.
-  % \item Construct and analyze frequency distributions for variables at each of the three levels of measurement.
+\item Recognize the types of variables (categorical or numerical) and give examples of each type.
+\item Remember and explain the three levels of measurement and give examples of each level.
+\item Tell the difference between dependent and independent variables.
+\item Compute the relative frequency.
+\item Use graphical methods to display data.
 \end{itemize}
 }}
 
 \section{Statistics and Data}
 
-\textbf{Statistics} refers to a collection of techniques and procedures for analyzing data.  In this context, statistics may be considered a synonym of data analysis.  In a narrower context, `statistics' is sometimes used as a synonym for the numbers themselves, as in `demographic statistics' or `baseball statistics.'
-`Data' refers to any collection of measurements that are made on some number of subjects.  These measurements are often stored in a row-and-column display called a spreadsheet.  An example is given below of a spreadsheet containing data taken on ten students in a class.
+\textbf{Statistics} refers to a collection of techniques and procedures for analyzing data.  In this context, statistics may be considered a synonym of the data analysis.  In a narrower context, `statistics' is sometimes used as a synonym for the numbers themselves, as in `demographic statistics' or `baseball statistics.'
+`Data' refers to any collection of measurements that a researcher makes on some number of subjects.  Researchers often store these measurements in a row-and-column display called a spreadsheet.  The following example shows a spreadsheet containing data taken on ten students in a class.
 
   \begin{table}[htbp]
    \centering
@@ -46,7 +42,7 @@ After completing this part, students should be able to:
    \end{tabular}
    \end{table}
 
-Each row represents a subject (or student, in this case), and each column represents a measurement.  The measurement columns are also called variables, because the values vary from one subject to another.
+Each row represents a subject (or student, in this case), and each column represents a measurement.  The measurement columns are also called variables because the values vary from one subject to another.
 
 \section{Classification of variables}
 
@@ -57,7 +53,7 @@ It is useful to distinguish between \textbf{four levels of measurements} for var
 \begin{enumerate}
 \item \textbf{Nominal Variables}
 
-Nominal variables are categorical variables that that have two or more categories without having any kind of logical sequence or order. For example, Sex is a nominal variable, since `Male' and `Female' are just names of categories.  Additional nominal variable examples include: religious affiliation, language spoken, nationality, and blood type.   There is no intrinsic ordering between these.  We often use bar charts and pie charts to represent these data.
+Nominal variables are categorical variables that have two or more categories without having any logical sequence or order. For example, Sex is a nominal variable, since `Male' and `Female' are just names of categories.  Additional nominal variable examples include religious affiliation, language spoken, nationality, and blood type.   There is no intrinsic ordering between these.  We often use bar charts and pie charts to represent these data.
 
 \fbox{\parbox{14cm}{
 \begin{itemize}
@@ -70,23 +66,23 @@ Nominal variables are categorical variables that that have two or more categorie
 
 \item \textbf{Ordinal Variables}
 
-Ordinal variables are categorical variables with a clear ordering or rank.  A student's level of standing (freshman, sophomore, junior, or senior) is ordinal; they are also names of categories but, unlike sex, they are rank-ordered.   However, subtraction cannot be done and distances do not make sense.  Other examples of ordinal variables include Likert scale items in which we rank items.  Completing surveys or even end of semester evaluations we can rank on a scale of 1-5 (often from strongly disagree to strongly agree).
+Ordinal variables are categorical variables with an explicit ordering or rank.  A student's level of standing (freshman, sophomore, junior, or senior) is ordinal; they are also names of categories but, unlike sex, they are rank-ordered.   However, we cannot subtract them, and distances do not make sense.  Other examples of ordinal variables include Likert scale items in which we rank items.  Completing surveys or even end of semester evaluations we can rank on a scale of 1-5 (often from strongly disagree to agree strongly).
 
 \fbox{\parbox{14cm}{
 \begin{itemize}
 \item Be careful about the size of the difference between categories may not be equally spaced.
 \item Only order matters not the difference between categories
-\item The mean cannot be used for ordinal variables.
+\item We cannot use the mean for ordinal variables
 \end{itemize}
 }}
 
 \item \textbf{Interval Variables}
 
-Interval variables are numerical variables where difference between two values is meaningful.  GPA is an interval measurement; subtraction can be done and distances make sense.  For example, the distance from 2.3-2.4 is the same distance as 3.7-3.8.  However, ratios do not make sense; is 4.0 `twice as high' as 2.0?  The answer is no.  The grading system would work just as well on the scale (A, B, C)=(5.0, 4.0, 3.0) instead of (4.0, 3.0, 2.0).
+Interval variables are numerical variables where the difference between two values is meaningful.  GPA is an interval measurement; we can subtract these measurements, and distances make sense.  For example, the distance from 2.3-2.4 is the same distance as 3.7-3.8.  However, ratios do not make sense; is 4.0 `twice as high' as 2.0?  The answer is no.  The grading system would work just as well on the scale (A, B, C)=(5.0, 4.0, 3.0) instead of (4.0, 3.0, 2.0).
 
 \item \textbf{Ratio Variables}
 
-Ratio variables are numerical variables with a true 0.  Number of credit hours is a ratio measurement.  A student who has completed 90 credit hours has twice as many as 45 credit hours, and 3 times as many as 30 credit hours.  Another example is temperature on the Kelvin scale, which has a true 0.  A Kelvin temperature of 400 is twice as high as 200 Kelvin.
+Ratio variables are numerical variables with true zero.  Many credit hours is a ratio measurement.  A student who has completed 90 credit hours has twice as many as 45 credit hours and three times as many as 30 credit hours.  Another example is temperature on the Kelvin scale, which has true zero.  A Kelvin temperature of 400 is twice as high as 200 Kelvin.
 
 It is useful to recognize a hierarchy of information in the sense that a measurement level contains an amount of information greater than or equal to the level below it.  At lower levels of measurement, data analyses tend to be less sensitive and sophisticated.  A statistical study should aim for the highest levels of measurement possible or affordable.
 \end{enumerate}
@@ -95,7 +91,7 @@ It is useful to recognize a hierarchy of information in the sense that a measure
 
 Interval and ratio variables together are often called \textbf{numerical} variables or \textbf{quantitative} because they provide a number which measures `quantity' (how much, how many) of something.
 
-Nominal and ordinal variables together are often called \textit{categorical} variables because they classify into categories rather than count or measure.  It is tempting to think of categorical variables as `non-numerical' but sometimes they do consist of numbers.  For example, `Social Security number' consists of numbers, but are used more as labels rather than quantities.  Hence, SS number is categorical.
+Nominal and ordinal variables together are often called \textit{categorical} variables because they classify rather than count or measure.  It is tempting to think of categorical variables as `non-numerical,' but sometimes they do consist of numbers.  For example, `Social Security number' consists of numbers, but are used more as labels rather than quantities.  Hence, SS number is categorical.
 
 \begin{figure}[htbp]
    \centering
@@ -115,18 +111,15 @@ In cause-and-effect studies, the \textbf{independent} variable is the probable c
 
 The \textbf{dependent} variable is the outcome being caused/affected. }}
 
-The following is a description of a clinical study on the possible link between vaccines and autism.   In particular, the study tries to find an association between the amount of a mercury-containing preservative in vaccines and measures of brain function in children.   It has one independent variable (amount of mercury in vaccines) and 42 dependent variables (measures of brain function).  Similar to two previous published studies, it found no evidence of neurologic problems in children exposed to mercury-containing vaccines. The paper is titled ``Early Thimerosal Exposure and Neuropsychological Outcomes at 7 to 10 Years'' by William W. Thompson, et al. (New England Journal of Medicine, 2007 Sept; Vol. 357, pp.1281-92).
+The following is a description of a clinical study on the possible link between vaccines and autism.   In particular, the study tries to find an association between the amount of a mercury-containing preservative in vaccines and measures of brain function in children.   It has one independent variable (amount of mercury in vaccines) and 42 dependent variables (measures of brain function).  Similar to two previously published studies, it found no evidence of neurologic problems in children exposed to mercury-containing vaccines. The paper is titled ``Early Thimerosal Exposure and Neuropsychological Outcomes at 7 to 10 Years'' by William W. Thompson et al. (New England Journal of Medicine, 2007 Sept; Vol. 357, pp.1281-92).
 
 \subsubsection{Background}
 
-It has been hypothesized that early exposure to thimerosal, a mercury-containing
-preservative used in vaccines and immune globulin preparations, is associated with
-neuropsychological deficits in children.
+Others have hypothesized that early exposure to thimerosal, a mercury-containing a preservative used in vaccines and immune globulin preparations are associated with neuropsychological deficits in children.
 
 \subsubsection{Methods}
 
-We enrolled 1047 children between the ages of 7 and 10 years and administered standardized tests assessing 42 neuropsychological outcomes. We did not assess autism-spectrum disorders. Exposure to mercury from thimerosal was determined from computerized immunization records, medical records, personal immunization records, and parent interviews. Information on potential confounding factors was obtained from the interviews and medical charts. We assessed the association between current neuropsychological performance and exposure to mercury during the prenatal period, the neonatal period (birth to 28 days), and the first 7 months of
-life.
+William W. Thompson enrolled 1047 children between the ages of seven and ten years and administered standardized tests assessing 42 neuropsychological outcomes. We did not assess autism-spectrum disorders. We determined exposure to mercury from thimerosal from computerized immunization records, medical records, personal immunization records, and parent interviews.  We obtained the information on potential confounding factors from the interviews and medical charts. We assessed the association between current neuropsychological performance and exposure to mercury during the prenatal period, the neonatal period (birth to 28 days), and the first seven months of life.
 
 \subsubsection{Conclusion}
 
@@ -302,6 +295,8 @@ Suppose we want to compare mortgage and rent.  Do mortgage payments tend to be g
 
 Stem and Leaf Display of Monthly Payment (stem width \$100)
 
+\begin{center}
+
 {\footnotesize{
 \begin{minipage}[ht]{3cm}
 
@@ -350,6 +345,7 @@ Rent
 \end{tabular}
 \end{minipage}
 }}
+\end{center}
 
 In general, rent is smaller than mortgages, and less variable.  While mortgages seem centered around \$700, rent is centered around \$500.  Furthermore, mortgages have a longer right tail, with a significant percentage over \$1000.  Plus, remember that we have removed a \$1800 - \$5200 mortgage from these plots.
 
@@ -562,53 +558,43 @@ The long tail denotes outlying observations or extreme observations.  The left-s
   
 \end{figure}  
 
-
-
-
-
-
-
-
-% \begin{minipage}[ht]{5cm}
-% 
-% <<label=LBL2m, results="asis", echo=FALSE, out.width="5cm">>=
-%   hist(SDat1, xlab="values", main="Symmetric")
-% @
-% \end{minipage}
-% \begin{minipage}[ht]{5cm}
-% 
-% <<label=LBL2n, results="asis", echo=FALSE, out.width="5cm">>=
-%   hist(SDat2, xlab="values", main="Right-Skewed")
-% @
-% \end{minipage}
-% \begin{minipage}[ht]{5cm}
-% 
-% <<label=LBL2o, results="asis", echo=FALSE, out.width="5cm">>=
-%   hist(SDat3, xlab="values", main="Left-Skewed")
-% @
-% \end{minipage}
-
 \section{Key Words}
 
 \fbox{\parbox{14cm}{
+
 \begin{minipage}[ht]{6cm}
 
 \begin{itemize}
-\item Correlation
-\item Data
-\item Fallacies
-\end{itemize}
-\end{minipage} \hfill
-\begin{minipage}[ht]{6cm}
+  \item Data
+  \item Dependent
+  \item Graphical Methods
+    \begin{itemize}
+    \item bar chart
+    \item box and whisker
+    \item dot plot
+    \item histogram
+    \item pie chart
+    \item stem-and-leaf
+    \end{itemize}
+  \end{itemize}
+  \end{minipage} 
+  \begin{minipage}[ht]{6cm}
+  \begin{itemize}
+  \item Independent
+  \item Statistics
+  \item Tabular Methods
+    \begin{itemize}
+    \item frequency distribution
+    \end{itemize}
+  \item Variables
+    \begin{itemize}
+    \item Categorical
+    \item Numerical
+    \end{itemize}
 
-\begin{itemize}
-\item Knowledge
-\item Type I error
-\item Type II error
 \end{itemize}
-\end{minipage}
+\end{minipage} 
 }}
-
 
 \twocolumn
 
