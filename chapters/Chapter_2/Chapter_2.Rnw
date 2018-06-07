@@ -125,9 +125,9 @@ William W. Thompson enrolled 1047 children between the ages of seven and ten yea
 
 Our study does not support a causal association between early exposure to mercury from thimerosal-containing vaccines and immune globulins and deficits in neuropsychological functioning at the age of 7 to 10 years.
 
-Among the 42 variables used to measure brain function are tests on speech and language (comprehension of instructions, recalling sentences, stuttering), tests on verbal memory (no delay, short delay, long delay), tests on motor coordination (grooved pegboard, finger tapping), tests on behavior regulation (hyperactivity, inattentiveness), presence of tics (motor and phonic) and tests on intelligence (verbal IQ, full-scale IQ).  Most of these are numerical test scores.  Others are categorical, like the presence of stuttering (Yes-No) and tics (Yes-No).
+Among the 42 variables used to measure brain function tests on speech and language (comprehension of instructions, recalling sentences, stuttering), tests on verbal memory (no delay, short delay, long delay), tests on motor coordination (grooved pegboard, finger tapping), tests on behavior regulation (hyperactivity, inattentiveness), presence of tics (motor and phonics) and tests on intelligence (verbal IQ, full-scale IQ).  Most of these are numerical test scores.  Others are categorical, like the presence of stuttering (Yes-No) and tics (Yes-No).
 
-Note that the researcher has a choice of whether to use numerical or categorical measures of brain function.  Even for categorical outcomes, there is a choice between nominal (i.e. Yes-No), or ordinal (Frequently-Sometimes-Never). Many surveys like to use the ordinal five-point scale:
+Note that the researcher has a choice of whether to use numerical or categorical measures of brain function.  Even for categorical outcomes, there is a choice between nominal (i.e., Yes-No), or ordinal (Frequently-Sometimes-Never). Many surveys like to use the ordinal five-point scale:
 
 \begin{enumerate}
 \item Strongly agree
@@ -137,7 +137,7 @@ Note that the researcher has a choice of whether to use numerical or categorical
 \item Strongly disagree
 \end{enumerate}
 
-This is called a \textit{Likert item}.  The scores from adding up several Likert items is said to be on a \textit{Likert scale}.  Western Michigan University's course evaluations use a Likert scale.
+It is called a \textit{Likert item}.  The scores from adding up several Likert items is said to be on a \textit{Likert scale}.  Western Michigan University's course evaluations use a Likert scale.
 
 \section{Summarizing Categorical Data}
 
@@ -194,7 +194,7 @@ RF = \frac{44}{76} \times 100 = 57.9
 
 \subsection{Bar Chart}
 
-A \textit{bar chart} is a plot of the relative frequency table.  We use bar charts for categorical data.  The order by which the categories are presented in the bar chart is arbitrary.  Sometimes they are presented in order of decreasing frequency for aesthetic purposes.  Some computing packages present the categories alphabetically, unless otherwise specified.
+A \textit{bar chart} is a plot of the relative frequency table.  We use bar charts for categorical data.  Data scientists present a bar chart where the order of the categories in the bar chart is arbitrary.  Sometimes they are presented in order of decreasing frequency for aesthetic purposes.  Some computing packages present the categories alphabetically unless otherwise specified.
 
 <<label=LBL2b, results="asis", echo=FALSE>>=
   barplot(v2, main="Bar Plot for Type of Payment", xlab="Type of Monthly Payment", ylab="Relative Frequency")
@@ -202,7 +202,7 @@ A \textit{bar chart} is a plot of the relative frequency table.  We use bar char
 
 \subsection{Pie Chart}
 
-A pie chart gives the same information as a bar chart, except in a circular shape.  We also use pie charts for categorical data.   Some people prefer the look of pie charts over bar charts.  However, studies have shown that people have difficulty comparing relative size of wedges.  Look at the pie chart below.  Is Rent less than half or more than half of Mortgage?
+A pie chart gives the same information as a bar chart, except in a circular shape.  We also use pie charts for categorical data.   Some people prefer the look of pie charts over bar charts.  However, studies have shown that people have difficulty comparing the relative size of wedges.  Look at the pie chart below.  Is Rent less than half or more than half of Mortgage?
 
 <<label=LBL2c, results="asis", echo=FALSE, out.width="5cm">>=
 
@@ -212,7 +212,7 @@ A pie chart gives the same information as a bar chart, except in a circular shap
 
 \section{Summarizing numerical data}
 
-Consider the variable Monthly Payment in the ACS housing data on page 11.  What do the numbers look like?  How large are they? How variable is the data?  Are there any extreme values? These questions are attempts at getting to know the data.  In this section, we discuss tools for getting to know numerical data better.  We have n = 64 observations available, since 12 households (out of 76) do not have monthly payments.  Here is a list of the monthly payments:
+Consider the variable Monthly Payment in the ACS housing data on page 11.  How do the numbers appear?  How large are they? How variable is the data?  Are there any extreme values? These questions are attempts at getting to know the data.  In this section, we discuss tools for getting to know numerical data better.  We have n = 64 observations available since 12 households (out of 76) do not have monthly payments.  Here is a list of the monthly payments:
 
 {\small{
 880  990  750 1400 1400  560  900  380  910 1200 1200  450 1200 1300  550 340  770  700  700  140  220  650 5200  970  740  500  700 1800  800 1200  1000 1200  200  710 1100  400  370  670  350  510  900  340  440 1500  420    490 2400  500  200  670  760  720  500  280  190 1000  250  700  380  740  850  530  290  230 }}
@@ -225,15 +225,15 @@ Now, we sort the observations from smallest to largest:
 
 The smallest observation is \$140.  The largest is \$5200, which is an \textbf{outlier}.
 
-\fbox{\parbox{14cm}{In data analysis, an \textbf{outlier} is an observation that falls far from the rest of the data.  It may need to be checked for correctness if there is any possiability of clerical error.}}
+\fbox{\parbox{14cm}{In data analysis, an \textbf{outlier} is an observation that falls far from the rest of the data.  It may need to be checked for correctness if there is any possibility of clerical error.}}
 
 Can this be a typographical error that we need to correct?  Looking closely at the data, we see it belongs to observation 28, which is a mortgage for a household with \$358,000 annual income.  We infer that it is probably correct, so we leave it alone. The simple act of sorting the data already gives us more information about monthly payment.  For example, we can now see that the typical monthly payment falls around \$700.  We also see the extent to which the \$5200 value is outlying. We now turn to better ways to visualize the \textbf{spread} of this data.
 
 \subsection{Stem-and-Leaf Plot}
 
-Graphs are helpful in summarizing information in the data, especially for large data sets.  Below, we summarize monthly payment in a graph called a stem-and-leaf plot.  The numbers on the left are called stems, while the numbers on the right are called leaves.
+Graphs are helpful in summarizing information in the data, especially for large datasets.  Below, we summarize monthly payment in a graph called a stem-and-leaf plot.  The numbers on the left are stems, while the numbers on the right are called leaves.
 
-There is one leaf for each observation, so there are 63 leaves in all (we left out the \$5200 outlier, for now).  Our smallest observation is \$140.  It is written on the stem `1' as a leaf of `4'.  We can infer that that the stems represent \$100's, and the leaves represent \$10's.  The next largest value \$190 is written on stem `1' as a `9'.   \$200 is written on stem `2' as `0', etc.
+There is one leaf for each observation, so there are 63 leaves in all (we left out the \$5200 outliers, for now).  Our smallest observation is \$140.  We write it on the stem `1' as a leaf of `4'.  We can infer that the stems represent \$100's, and the leaves represent \$10's.  We write the next largest value \$190 on stem `1' as a `9'.   \$200 is written on stem `2' as `0', etc.
 
 {\small{
 \begin{minipage}[ht]{7.5cm}
@@ -287,7 +287,7 @@ Stem-and-Leaf Display of Monthly \\ Payment (stem width=\$200)
 
 You see why we left out \$1800, \$2400, and \$5200. It would have made the graph extend beyond the page!  We can make the graph more compact by merging stems. The plot below is about half the length because the intervals for each stem are twice as wide.
 
-The stem `8' now contains both `8' and `9', so that the leaves are read as 800, 850, 880, 900, 900, 910, 970, 990.  Which stem-and-leaf plot is better?  The answer depends on the viewers' taste, and is not a matter of right or wrong.  In both cases, we see that monthly payments seem to spread out from around a center of \$700.
+The stem `8' now contains both `8' and `9', so that the leaves are read as 800, 850, 880, 900, 900, 910, 970, 990.  When comparing both plots, which stem-and-leaf plot is better?  The answer depends on the viewers' taste and is not a matter of right or wrong.  In both cases, we see that monthly payments seem to spread out from around a center of \$700.
 
 Suppose we want to compare mortgage and rent.  Do mortgage payments tend to be greater or less than rent?  We can present stem-and-leaf for mortgage and rent side by side.
 
@@ -347,11 +347,11 @@ Rent
 }}
 \end{center}
 
-In general, rent is smaller than mortgages, and less variable.  While mortgages seem centered around \$700, rent is centered around \$500.  Furthermore, mortgages have a longer right tail, with a significant percentage over \$1000.  Plus, remember that we have removed a \$1800 - \$5200 mortgage from these plots.
+In general, rent is smaller than mortgages and less variable.  While mortgages seem centered around \$700, rent is centered around \$500.  Furthermore, mortgages have a longer right tail, with a significant percentage over \$1000.  Plus, remember that we have removed a \$1800 - \$5200 mortgages from these plots.
 
 \subsection{Relative Frequency Table and Histogram}
 
-Earlier in this chapter, we presented a relative frequency table for categorical data.  Relative frequency tables may also be used for numerical data.  A relative frequency table for monthly payment is presented below.  The class width is chosen so as to achieve a moderate number of class intervals.
+Earlier in this chapter, we presented a relative frequency table for categorical data.  Relative frequency tables may also be used for numerical data.  A relative frequency table for monthly payment is presented below.  The class width is chosen to achieve a moderate number of class intervals.
 
 {\small{
 <<label=LBL2d, results="asis", echo=FALSE>>=
@@ -369,9 +369,9 @@ Earlier in this chapter, we presented a relative frequency table for categorical
 @
 }}
 
-There are three things to keep in mind when constructing a frequency table. First, decide how many classes (i.e. intervals) you want.  This also determines the \textit{class width}.  Try to have 5 to 15 intervals, depending on how many observations you have. Second, decide where the first interval starts.  Third, decide how to avoid boundary disputes.
+There are three things to keep in mind when constructing a frequency table. First, decide how many classes (i.e., intervals) we want.  This also determines the \textit{class width}.  Try to have 5 to 15 intervals, depending on how many observations we have. Second, decide where the first interval starts.  Third, decide how to avoid boundary disputes.
 
-The last item requires you to choose a \textbf{boundary convention}.  For instance, the intervals in the frequency table above could have been written as follows:
+The last item requires us to choose a \textbf{boundary convention}.  For instance, the intervals in the frequency table above could have been written as follows:
 
 \begin{tabular}{@{} l @{}} \hline
 0-199 \\
@@ -381,7 +381,7 @@ The last item requires you to choose a \textbf{boundary convention}.  For instan
 etc. \\ \hline
 \end{tabular}
 
-This way, it is easier to tell that \$200 belongs to the second interval, not the first.  However, the table looks more complicated, harder to read.  To keep the intervals simple but avoid boundary disputes, include a footnote to the table that describes the boundary convention, i.e. ``Intervals contain the left endpoint but not the right.''  Then, we know that \$200 belongs to the second interval, not the first.  Or, square braces and parenthesis may be used.
+This way, it is easier to tell that \$200 belongs to the second interval, not the first.  However, the table looks more complicated, harder to read.  To keep the intervals simple but avoid boundary disputes, include a footnote to the table that describes the boundary convention, i.e. ``Intervals contain the left endpoint but not the right.''  Then, we know that \$200 belongs to the second interval, not the first.  Alternatively, we may use square braces and parenthesis.
 
 \begin{tabular}{@{} l @{}} \hline
 $ [0-200)$ \\
@@ -391,15 +391,15 @@ $ [600-800)$ \\
  etc. \\ \hline
 \end{tabular}
 
-This also means that the class intervals contain the left endpoint but not the right.  Which method do you prefer?
+It also means that the class intervals contain the left endpoint but not the right.  Which method do we prefer?
 
-The relative frequency table is a compact numerical way to present how the data is distributed.  If the frequencies are plotted as columns, the resulting plot is called a \textit{histogram}.
+The relative frequency table is a compact numerical way to present how the data is distributed.  If we plot the frequencies as columns, the resulting plot is called a \textit{histogram}.
 
-The histogram and stem-and-leaf plots look alike, except that the stem-and-leaf plot has columns that go sideways instead of upwards.  Stem-and-leafs are better if you want the data values themselves available from the plot.  However, the histogram can handle large sample sizes easily, and is more flexible in choosing class widths.  For example, you may choose class widths of \$500, as follows: $[0,500), [500,1000), [1000,1500), \dots, [5000,5500)$, which stem plots cannot do.
+The histogram and stem-and-leaf plots look alike, except that the stem-and-leaf plot has columns that go sideways instead of upwards.  Stem-and-leafs are better if we want the data values themselves available from the plot.  However, the histogram can handle large sample sizes easily and is more flexible in choosing class widths.  For example, we may choose class widths of \$500, as follows: $[0,500), [500,1000), [1000,1500), \dots, [5000,5500)$, which stem plots cannot do.
 
 \subsection{Dot Plot}
 
-For moderately large samples, a \textit{dotplot} diagram is a quick way to see what the data looks like.  We present dotplots of monthly payment for rent and mortgages below.  As we observed using side-by-side stem plots, rent is smaller than mortgages, and less variable.
+For moderately large samples, a \textit{dotplot} diagram is a quick way to see what the data appears.  We present dotplots of the monthly payment for rent and mortgages below.  As we observed using side-by-side stem plots, rent is smaller than mortgages and less variable.
 
 \begin{figure}[htbp]
    \centering
@@ -410,7 +410,7 @@ For moderately large samples, a \textit{dotplot} diagram is a quick way to see w
 
 \subsection{Box-and-Whisker Plot}
 
-A box-and-whisker or boxplot shows useful information about the data including the measures the central tendency and the variability of the distribution.  First, order the data from smallest to largest.  What is the range of the first (or smaller) half of the data?  The smallest quarter of the data?  The next quarter?  The box-and-whisker plot or boxplot is a graphical picture of the distribution of quarters of the data.  Consider once again the monthly payments from the ACS housing data.  We list them here sorted from smallest to largest (minus the \$5200 outlier).
+A box-and-whisker or boxplot shows useful information about the data including the measures the central tendency and the variability of the distribution.  First, order the data from smallest to largest.  What is the range of the first (or smaller) half of the data?  The smallest quarter of the data?  The next quarter?  The box-and-whisker plot or boxplot is a graphical picture of the distribution of quarters of the data.  Consider once again the monthly payments from the ACS housing data.  We list them here sorted from smallest to largest (minus the outlier  (\$5200)).
       {\small{
       140  190  200  200  220  230  250  280  290  340  340  350  370  380  380
       400  420  440  450  490  500  500  500  510  530  550  560  650  670  670
@@ -419,13 +419,13 @@ A box-and-whisker or boxplot shows useful information about the data including t
      1500 1800 2400
       }}
 
-There are $n = 63$ observations.  One quarter of the data is 63/4=15.75, or approximately 16 observations.  The boxplot below gives the range of each of the four quarters of the data: the range of the first quarter (i.e. the lowest 16 monthly payments) is given by the left whisker.  The range of the 2nd quarter is the left part of the box, the 3rd quarter the right part of the box, and the range of the last quarter is the right whisker.
+There are $n = 63$ observations.  One-quarter of the data is 63/4=15.75, or approximately 16 observations.  The boxplot below gives the range of each quarter of the data: the range of the first quarter (i.e., the lowest 16 monthly payments) is the left whisker.  The range of the 2nd quarter is the left part of the box, the 3rd quarter the right part of the box, and the range of the last quarter is the right whisker.
 
 <<label=LBL2g, results="asis", echo=FALSE, out.width='8cm'>>=
   boxplot(tmp0[13:75], horizontal=TRUE, xlab="Dollars", main="Box of Monthly Payments")
 @
 
-More precisely, the vertical lines are drawn at (140, 400, 700, 970, 2400).  Hence, the lowest 16 monthly payments lie within (\$140, \$400).  The next set of 16 observations lie within (\$400, \$700).  The third set lie within (\$700, \$970).  Finally, the last 16 observations lie within (\$970, \$2400).  The five values (140, 400, 700, 970, 2400) that divide the data into quarters and form the fences and whiskers of the boxplot are collectively called the five-number-summary of the data.  They are often denoted as MIN, Q1, MED, Q3, and MAX respectively.
+More precisely, the software draws vertical lines at (140, 400, 700, 970, 2400).  Hence, the lowest 16 monthly payments lie within (\$140, \$400).  The next set of 16 observations lies within (\$400, \$700).  The third set lies within (\$700, \$970).  Finally, the last 16 observations lie within (\$970, \$2400).  The five values (140, 400, 700, 970, 2400) that divide the data into quarters and form the fences and whiskers of the boxplot are collectively called the five-number-summary of the data.  They are often denoted as MIN, $Q_1$, MED, $Q_3$, and MAX respectively.
 
 \begin{enumerate}
 \item	\textbf{MIN} is called the \textbf{minimum} and is the smallest of the ordered observations.
@@ -435,7 +435,7 @@ More precisely, the vertical lines are drawn at (140, 400, 700, 970, 2400).  Hen
 \item	\textbf{MAX} is the largest of the ordered observations and is called the \textbf{maximum}.
 \end{enumerate}
 
-Boxplots are particularly useful for comparing two distributions side-by-side.  Below are boxplots of mortgage and rent drawn parallel to each other on the same scale.  It shows that mortgages tend to be larger than rent, since the median and quartiles are larger.  There is also a very big difference in spread, with mortgage having a long right tail, evidence that mortgages have a higher ceiling than rent.
+Boxplots are particularly useful for comparing two distributions side-by-side.  Below are boxplots of mortgage data and rent drew parallel to each other on the same scale.  When comparing data of mortgages and rental, we find that mortgages tend to be larger than rent since the median and quartiles are larger.  There is also a considerable difference in the spread, with the mortgage data having a long right tail, evidence that mortgages have a higher ceiling than rent.
 
 <<label=LBL2h, results="asis", echo=FALSE, out.width="9cm">>=
   boxplot(Monthly.Payment ~ Type.of.Payment, horizontal=TRUE, xlab="Dollars", main="boxplot of Monthly Payments", ylab="Type")
@@ -534,7 +534,7 @@ Left-Skewed Data
 \end{tabular}
 \end{minipage}
 
-The term `skew' refers to the direction of the longer tail if you flip the stem-and-leaf sideways or draw a histogram.  Here is the histogram of the left-skewed plot below.
+The term `skew' refers to the direction of the most extended tail when you flip the stem-and-leaf sideways or draw a histogram.  Here is the histogram of the left-skewed plot below.
 
 <<label=LBL2l, results="asis", echo=FALSE, out.width="4cm">>=
   SDat4 <- c(401,501,601,801,802,901,902,903,904,905,1001,1002,1003,1004,1005,1006,1007,1008,1101,1102)
@@ -542,7 +542,7 @@ The term `skew' refers to the direction of the longer tail if you flip the stem-
 
 @
 
-The long tail denotes outlying observations or extreme observations.  The left-skewed histogram above contains outlying small observations, while a right-skewed histogram would have outlying large observations.  A left skew also indicates that the smallest quarter of observations will be more spread out. For some further examples of histograms depicting both symmetry and skewness, see below.
+A long tail denotes extreme or outlying observations.  The left-skewed histogram above contains observations that are small and outlying, while a right-skewed histogram would have observations that are large and outlying.  A left skew also indicates that the smallest quarter of observations will be more spread out. For some further examples of histograms depicting both symmetry and skewness, see below.
 
 \vspace{3mm}
 
@@ -669,7 +669,7 @@ in the U.S. is displayed in the following stem-and-leaf plot.  Note that the ste
 	  \begin{enumerate}
 	  \item Obtain the five-number summary.
     \item Obtain a boxplot and histogram for 6-year graduation rate.
-    \item In your opinion, which of the three plots (stem-and-leaf, boxplot, histogram) \\ best illustrates the data? Why?
+    \item In our opinion, which of the three plots (stem-and-leaf, boxplot, histogram) \\ best illustrates the data? Why?
 	  \end{enumerate}
 
 	\end{exercise}
@@ -749,7 +749,7 @@ The following plots represent five different samples of data. For each, describe
 
   \begin{exercise} % 4
 
-A manager of a car rental company took a random sample of 100 business days over the last fiscal year and recorded the number of cars rented per day.  The frequency distribution for the data is given below.
+A manager of a car rental company took a random sample of 100 business days over the last fiscal year and recorded the number of cars rented per day.  The frequency distribution of the data is given below.
 
 \begin{tabular}{@{} lcc @{}} \hline
 Interval  &  Frequency &	Relative Frequency \\
@@ -765,8 +765,8 @@ $(50, 55]$ 	&      6 \\ \hline
 \begin{enumerate}
 \item Fill in the Relative Frequencies above.
 \item	Draw a histogram by hand, with either the frequencies or relative frequencies as the vertical axis.
-\item	What interval does the median number of car rentals per day fall into?
-\item What percentage of business days had 30 or less car rentals?
+\item	What interval does the median number of car rentals per day fall?
+\item What percentage of business days had 30 or fewer car rentals?
 \item	How many business days had more than 45 car rentals?
 \end{enumerate}
 
