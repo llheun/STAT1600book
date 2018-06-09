@@ -111,7 +111,8 @@ In cause-and-effect studies, the \textbf{independent} variable is the probable c
 
 The \textbf{dependent} variable is the outcome being caused/affected. }}
 
-The following is a description of a clinical study on the possible link between vaccines and autism.   In particular, the study tries to find an association between the amount of a mercury-containing preservative in vaccines and measures of brain function in children.   It has one independent variable (amount of mercury in vaccines) and 42 dependent variables (measures of brain function).  Similar to two previously published studies, it found no evidence of neurologic problems in children exposed to mercury-containing vaccines. The paper is titled ``Early Thimerosal Exposure and Neuropsychological Outcomes at 7 to 10 Years'' by William W. Thompson et al. (New England Journal of Medicine, 2007 Sept; Vol. 357, pp.1281-92).
+The following is a description of a clinical study on the possible link between vaccines and autism.   In particular, the study tries to find an association between the amount of a mercury-containing preservative in vaccines and measures of brain function in children.   It has one independent variable (amount of mercury in vaccines) and 42 dependent variables (measures of brain function).  Similar to two previously published studies, it found no evidence of neurologic problems in children exposed to mercury-containing vaccines. \citep{thompson2007}
+%The paper is titled ``Early Thimerosal Exposure and Neuropsychological Outcomes at 7 to 10 Years'' by William W. Thompson et al. (New England Journal of Medicine, 2007 Sept; Vol. 357, pp.1281-92).
 
 \subsubsection{Background}
 
