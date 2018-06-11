@@ -67,7 +67,7 @@ median, instead of the sample mean.  We have discussed the sample median (denote
 \item Let $n$ represent the total number of observations.
 \item Order the $n$ observations from smallest to largest.
 \item Then calculate $0.50(n + 1)$.
-\item If $0.50(n + 1)$. is an integer, then MED is the $0.50(n + 1)st$ ordered observation.
+\item If $0.50(n + 1)$ is an integer, then MED is the $0.50(n + 1)st$ ordered observation.
 \item If $0.50(n + 1)$ is not an integer, then MED is the average of the two adjacent ordered observations.
 \item There are $n = 10$ observations in our rental data.  We first order them from smallest to largest.
 \end{enumerate}
@@ -130,7 +130,7 @@ $\frac{500+500}{2}$ & $\frac{500+500}{2}$ & $\frac{500+525}{2}$ & $\frac{500+555
   md3 <- median(ndt3)
 @
 
-There will be 55 pairwise averages in all.  Notice that the sample size, $n$, went from ten observations to 55 observations after we do this.  We now need to figure the median and remember, the MED is the $0.50(n + 1)st$ ordered observation.  So we need to use 55 now as our $n$.  It gives us a value of 28.  We need order the pairwise averages we have calculated above, and the median will be the 28th observation.  The median of these averages is thus \Sexpr{md3} dollars.
+There will be 55 pairwise averages in all.  Notice that the sample size, $n$, went from ten observations to 55 observations after we do this.  We now need to figure the median and remember, the MED is the $0.50(n + 1)st$ ordered observation.  So, we need to use 55 now as our $n$.  It gives us a value of 28.  We need order the pairwise averages we have calculated above, and the median will be the 28th observation.  The median of these averages is thus \Sexpr{md3} dollars.
 
 \section{Estimate of Spread (or Uncertainty or Variation)}
 
@@ -321,10 +321,10 @@ Calculate the
   Daily high temperature for a given day are provided for the past 10 years
 
 \begin{tabular}{@{} ccccc @{}} \hline
-2007& 2008& 2009& 2010& 2011 \\
-59& 50& 49& 13& 41 \\ \hline
-2012& 2013& 2014& 2015& 2016 \\
-46& 51& 53& 58& 47 \\ \hline
+2007 & 2008 & 2009 & 2010 & 2011 \\
+59 & 50 & 49 & 13 & 41 \\ \hline
+2012 & 2013 & 2014 & 2015 & 2016 \\
+46 & 51 & 53 & 58 & 47 \\ \hline
 \end{tabular}
 
 Find the following statistics for \\ temperature:
@@ -388,6 +388,56 @@ Joshua has been working on \\ programming  and updating a Website for his \\ com
 % \item Decide if its symmetric, skewed to the right or to the left: the data is right skewed
 % \item Decide which measure of center provides the most relevant information about the distribution? Why?  The median is the most relevant information because the data is right skewed.
 % \end{enumerate}
+
+\end{solution}
+
+\begin{exercise} % 5
+<<label=LBL3-5, results="asis", echo=FALSE>>=
+  shape5 <- numeric(3)
+  shape5[1] <- "Left skewed"
+  shape5[2] <- "Symmetric"
+  shape5[3] <- "Right skewed"
+  DT5a <- c(86,175,157,282,38,211,497,246,393,198,
+            146,176,220,224,337,180,182,185,396,264,
+            251,76,42,149,65,93,423,188,203,105,
+            653,264,321,180,151,315,185,568,829,203,
+            98,15,180,325,341,353,229,55,239,124,
+            249,364,198,250,40,571,400,55,236,137,
+            400,195,38,196,40,124,338,61,286,135,
+            292,262,20,90,135,279,290,244,194,350,
+            131,88,61,229,597,81,398,20,277,193,
+            169,264,121,166,246,186,71,284,143,188)
+  SMP5a <- sample(x=DT5a, size=10, replace=TRUE)
+  mn5   <- mean(SMP5a)
+  md5   <- median(SMP5a)
+  sd5   <- sd(SMP5a)
+  if(mn5 == md5){shp5 <- 2} 
+  if(mn5 > md5){shp5 <- 3} else{shp5 <- 1}
+  shp5a  <- shape5[shp5]
+@  
+
+In a study of warp breakage during the process of weaving fabric (\textit{Technometrics}, 1982: 63).  Ten specimens of yarn were tested.  The number of cycles of strain to breakage was determined for each yarn specimen, resulting in the following data:
+
+$$ \Sexpr{SMP5a} $$
+
+\begin{enumerate}
+\item Calculate the mean
+\item Calculate the median
+\item Calculate the standard deviation
+\item Decide if its distribution (symmetric, \\ skewed to the right or to the left)
+\item Decide which measure of center provides the most relevant information about the distribution? Why?
+\end{enumerate}
+
+\end{exercise}
+\begin{solution}
+
+\begin{enumerate}
+\item $\bar{x} = \Sexpr{mn5}$ 
+\item $\tilde{x} = \Sexpr{md5}$
+\item $sd = \Sexpr{sd5} $
+\item The distribution is \Sexpr{shp5a} 
+\item The median provided the most relevant information because to the extreme outlier. 
+\end{enumerate}
 
 \end{solution}
 

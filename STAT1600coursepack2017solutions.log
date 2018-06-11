@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.5.12)  19 MAY 2018 15:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.6.2)  11 JUN 2018 14:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
 **STAT1600coursepack2017solutions.tex
 (./STAT1600coursepack2017solutions.tex
-LaTeX2e <2018-04-01> patch level 4
+LaTeX2e <2018-04-01> patch level 5
 (/usr/local/texlive/2018/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
 (/usr/local/texlive/2018/texmf-dist/tex/latex/base/size10.clo
@@ -221,20 +221,20 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-./Master.sol.tex:17: LaTeX Error: No counter 'chapter' defined.
+./Master.sol.tex:11: LaTeX Error: No counter 'chapter' defined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.17 \setcounter{chapter}{2}
+l.11 \setcounter{chapter}{2}
                             \chapter{Data Presentation}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./Master.sol.tex:17: Undefined control sequence.
-l.17 \setcounter{chapter}{2}\chapter
+./Master.sol.tex:11: Undefined control sequence.
+l.11 \setcounter{chapter}{2}\chapter
                                     {Data Presentation}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -243,24 +243,24 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 29.
+(Font)              <7> on input line 45.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 29.
+(Font)              <5> on input line 45.
 
-./Master.sol.tex:64: LaTeX Error: No counter 'chapter' defined.
+./Master.sol.tex:58: LaTeX Error: No counter 'chapter' defined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.64 \setcounter{chapter}{3}
+l.58 \setcounter{chapter}{3}
                             \chapter{Location and Spread}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./Master.sol.tex:64: Undefined control sequence.
-l.64 \setcounter{chapter}{3}\chapter
+./Master.sol.tex:58: Undefined control sequence.
+l.58 \setcounter{chapter}{3}\chapter
                                     {Location and Spread}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -273,35 +273,79 @@ and I'll forget about whatever was undefined.
 
 ]
 
-./Master.sol.tex:74: LaTeX Error: \begin{enumerate} on input line 68 ended by \
+./Master.sol.tex:68: LaTeX Error: \begin{enumerate} on input line 62 ended by \
 end{exsol@solution}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.74 \end{exsol@solution}
+l.68 \end{exsol@solution}
                          
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-./Master.sol.tex:97: LaTeX Error: No counter 'chapter' defined.
+./Master.sol.tex:101: LaTeX Error: No counter 'chapter' defined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.97 \setcounter{chapter}{4}
-                            \chapter{The Normal Distribution}
+l.101 \setcounter{chapter}{4}
+                             \chapter{Threats to Valid Comparisons}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./Master.sol.tex:97: Undefined control sequence.
-l.97 \setcounter{chapter}{4}\chapter
-                                    {The Normal Distribution}
+./Master.sol.tex:101: Undefined control sequence.
+l.101 \setcounter{chapter}{4}\chapter
+                                     {Threats to Valid Comparisons}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+./Master.sol.tex:109: LaTeX Error: No counter 'chapter' defined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.109 \setcounter{chapter}{5}
+                             \chapter{Study Designs}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./Master.sol.tex:109: Undefined control sequence.
+l.109 \setcounter{chapter}{5}\chapter
+                                     {Study Designs}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+./Master.sol.tex:123: LaTeX Error: No counter 'chapter' defined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.123 \setcounter{chapter}{6}
+                             \chapter{The Normal Distribution}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./Master.sol.tex:123: Undefined control sequence.
+l.123 \setcounter{chapter}{6}\chapter
+                                     {The Normal Distribution}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -310,20 +354,20 @@ and I'll forget about whatever was undefined.
 
 [2]
 
-./Master.sol.tex:158: LaTeX Error: No counter 'chapter' defined.
+./Master.sol.tex:183: LaTeX Error: No counter 'chapter' defined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.158 \setcounter{chapter}{5}
+l.183 \setcounter{chapter}{7}
                              \chapter{The Binomial Distribution}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./Master.sol.tex:158: Undefined control sequence.
-l.158 \setcounter{chapter}{5}\chapter
+./Master.sol.tex:183: Undefined control sequence.
+l.183 \setcounter{chapter}{7}\chapter
                                      {The Binomial Distribution}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -332,20 +376,20 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-./Master.sol.tex:210: LaTeX Error: No counter 'chapter' defined.
+./Master.sol.tex:235: LaTeX Error: No counter 'chapter' defined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.210 \setcounter{chapter}{6}
+l.235 \setcounter{chapter}{8}
                              \chapter{Sampling Distribution of the Proportion}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./Master.sol.tex:210: Undefined control sequence.
-l.210 \setcounter{chapter}{6}\chapter
+./Master.sol.tex:235: Undefined control sequence.
+l.235 \setcounter{chapter}{8}\chapter
                                      {Sampling Distribution of the Proportion}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -353,30 +397,30 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./Master.sol.tex:214: Missing $ inserted.
+./Master.sol.tex:239: Missing $ inserted.
 <inserted text> 
                 $
-l.214 \end{exsol@solution}
+l.239 \end{exsol@solution}
                           
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 [3]
 
-./Master.sol.tex:265: LaTeX Error: No counter 'chapter' defined.
+./Master.sol.tex:290: LaTeX Error: No counter 'chapter' defined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.265 \setcounter{chapter}{7}
+l.290 \setcounter{chapter}{9}
                              \chapter{Comparing Two Proportions }
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./Master.sol.tex:265: Undefined control sequence.
-l.265 \setcounter{chapter}{7}\chapter
+./Master.sol.tex:290: Undefined control sequence.
+l.290 \setcounter{chapter}{9}\chapter
                                      {Comparing Two Proportions }
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -384,10 +428,167 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-)
+
+./Master.sol.tex:323: LaTeX Error: No counter 'chapter' defined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.323 \setcounter{chapter}{10}
+                              \chapter{Sampling Distribution of the Mean}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./Master.sol.tex:323: Undefined control sequence.
+l.323 \setcounter{chapter}{10}\chapter
+                                      {Sampling Distribution of the Mean}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[4]
+
+./Master.sol.tex:336: LaTeX Error: No counter 'chapter' defined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.336 \setcounter{chapter}{11}
+                              \chapter{Comparing Two Means}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./Master.sol.tex:336: Undefined control sequence.
+l.336 \setcounter{chapter}{11}\chapter
+                                      {Comparing Two Means}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+./Master.sol.tex:351: LaTeX Error: No counter 'chapter' defined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.351 \setcounter{chapter}{12}
+                              \chapter{Categorical Variables: Association or...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./Master.sol.tex:351: Undefined control sequence.
+l.351 \setcounter{chapter}{12}\chapter
+                                      {Categorical Variables: Association or...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+./Master.sol.tex:362: LaTeX Error: No counter 'chapter' defined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.362 \setcounter{chapter}{13}
+                              \chapter{Correlation}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./Master.sol.tex:362: Undefined control sequence.
+l.362 \setcounter{chapter}{13}\chapter
+                                      {Correlation}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+./Master.sol.tex:387: LaTeX Error: No counter 'chapter' defined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.387 \setcounter{chapter}{14}
+                              \chapter{Linear Regression}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./Master.sol.tex:387: Undefined control sequence.
+l.387 \setcounter{chapter}{14}\chapter
+                                      {Linear Regression}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+./Master.sol.tex:402: LaTeX Error: No counter 'chapter' defined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.402 \setcounter{chapter}{15}
+                              \chapter{Workshops}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./Master.sol.tex:402: Undefined control sequence.
+l.402 \setcounter{chapter}{15}\chapter
+                                      {Workshops}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[5] [6]
+
+./Master.sol.tex:525: LaTeX Error: No counter 'chapter' defined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.525 \setcounter{chapter}{16}
+                              \chapter{Workshops}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./Master.sol.tex:525: Undefined control sequence.
+l.525 \setcounter{chapter}{16}\chapter
+                                      {Workshops}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[7])
 
 ./STAT1600coursepack2017solutions.tex:12: LaTeX Error: \begin{exsol@solution} o
-n input line 65 ended by \end{document}.
+n input line 59 ended by \end{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -399,19 +600,21 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-[4] (./STAT1600coursepack2017solutions.aux) )
+[8
+
+] (./STAT1600coursepack2017solutions.aux) )
 (\end occurred inside a group at level 1)
 
-### semi simple group (level 1) entered at line 65 (\begingroup)
+### semi simple group (level 1) entered at line 59 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 1788 strings out of 492649
- 26573 string characters out of 6129622
- 107473 words of memory out of 5000000
- 5680 multiletter control sequences out of 15000+600000
+ 1788 strings out of 492647
+ 26573 string characters out of 6129579
+ 106402 words of memory out of 5000000
+ 5682 multiletter control sequences out of 15000+600000
  6983 words of font info for 25 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 37i,7n,23p,615b,246s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 37i,7n,23p,615b,250s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmbx10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmmi10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/c
@@ -422,10 +625,10 @@ r12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr1
 fb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pf
 b></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
 
-Output written on STAT1600coursepack2017solutions.pdf (4 pages, 109043 bytes).
+Output written on STAT1600coursepack2017solutions.pdf (8 pages, 113744 bytes).
 PDF statistics:
- 53 PDF objects out of 1000 (max. 8388607)
- 37 compressed objects within 1 object stream
+ 67 PDF objects out of 1000 (max. 8388607)
+ 47 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

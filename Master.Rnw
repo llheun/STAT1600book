@@ -27,7 +27,7 @@
 
 \DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
 
-\title{{\Huge{STAT 1600 \\ Statistics and Data Analysis }}}
+\title{{\Huge{STAT 1600 \\ Statistical Literacy and Critical Thinking }}}
 \subtitle{{\huge{Course Pack}}}
 \author{Statistics Computational Lab (SCL)}
 \date{2018 - 2019 Edition}  % Activate to display a given date or no date
@@ -48,7 +48,7 @@
 \begin{center} \textbf{Acknowledgements:}
 \end{center}
 
-Carrie McKean, Srikanthmadhavan Aravamuthan, Cody Weiss, Carson Miller,  Rudie \\ Desravines, Eunice Ampah, Joseph Billian,  Ian Kapenga, and Mr. Loren L. Heun assisted with  this material.
+Eunice Ampah, Srikanthmadhavan Aravamuthan, Joseph Billian, Rudie Desravines, Mr. Loren L. Heun, Ian Kapenga, Carrie McKean, Carson Miller, and  Cody Weiss, assisted with  this material.
 
 \vspace{11cm}
 
