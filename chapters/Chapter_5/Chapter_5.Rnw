@@ -152,7 +152,7 @@ Overall, 170 subjects (24 percent) had used a cellular telephone during the 10-m
 
 \section{Key Words}
 
-\fbox{\parbox{15cm}{
+\fbox{\parbox{14cm}{
 \begin{minipage}[ht]{6cm}
 \begin{itemize}
 \item Randomized trial
