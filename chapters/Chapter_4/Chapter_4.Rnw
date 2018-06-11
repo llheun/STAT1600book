@@ -9,18 +9,10 @@ After completing this part, students should be able to:
 
 \fbox{\parbox{14cm}{
 
- \begin{itemize}
- \item Explain the logic of hypothesis testing
- \item Define and describe the elements of hypothesis testing
- 	\begin{enumerate}
- 	\item Verify assumptions
- 	\item State null and alternative Hypotheses \index{hypotheses}
- 	\item Identify the appropriate critical values  and rejection region
- 	\item Perform the appropriate test based on data in one-sample (both one and two-tailed tests). \index{two-tailed}
- 	\item Identify the appropriate conclusion based on the test and be able to explain Type I and Type II errors and how they relate to the selection of the significance of the trial   $\alpha$ and $\beta$ risks).
- 	\item Comment on the effect size.
+ \begin{enumerate}
+ \item Understand the difference between association and cause.
+ \item How confounders can effect the results of a survey.
  	\end{enumerate}
- \end{itemize}
  }}
 
 \section{Hidden Confounder}  \index{confounds}
@@ -112,35 +104,23 @@ instead of the (admittedly more sensational) relationship implied by the headlin
 
 \section{Key Words}
 
-% \colorbox{lgray}{\parbox{14cm}{
-%
-% \begin{minipage}[ht]{6cm}
-%
-% \begin{itemize}
-% \item $\alpha$ level
-% \item Critical region
-% \item Five-step model
-% \item Hypotheses testing
-% \item One-tailed test
-% \item Research hypothesis
-% \item Student's t-distribution
-% \item $t$-critical
-% \end{itemize}
-% \end{minipage} \hfill
-% \begin{minipage}[ht]{6cm}
-%
-% \begin{itemize}
-% \item $t$-obtained
-% \item Test statistic
-% \item Two-tailed test
-% \item Type I error (alpha error)
-% \item Type II error (beta error)
-% \item $Z$-critical
-% \item $Z$-obtained
-% \end{itemize}
-% \end{minipage}
-%
-% }}
+\fbox{\parbox{14cm}{
+
+\begin{minipage}[ht]{6cm}
+
+\begin{itemize}
+\item Association
+\item Cause
+\item Confounders
+\item Effect
+\end{itemize}
+\end{minipage} \hfill
+\begin{minipage}[ht]{6cm}
+
+
+\end{minipage}
+
+}}
 
 % \newpage
 \twocolumn

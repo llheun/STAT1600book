@@ -7,7 +7,7 @@
 
 After completing this part, students should be able to:
 
-\colorbox{lyellow}{\parbox{14cm}{
+\fbox{\parbox{14cm}{
 
 \begin{itemize}
 \item Identify and cite examples of when a two-sample test is appropriate.
@@ -150,35 +150,28 @@ An example is a 1997 study linking cell phone use to car accidents: ``Associatio
 Overall, 170 subjects (24 percent) had used a cellular telephone during the 10-minute period immediately before the collision, 37 (5 percent) had used the telephone during the same period on the day before the collision, and 13 (2 percent) had used the telephone during both periods. The crude analysis indicated that cellular-telephone activity was associated with a relative risk of a motor vehicle collision of 6.5 (95 percent confidence interval, 4.5 to 9.9).  The primary analysis, adjusted for intermittent driving, indicated that cellular-telephone activity was associated with a quadrupling of the risk of a motor vehicle collision (relative risk, 4.3; 95 percent confidence interval, 3.0 to 6.5).
 \end{quotation}
 
-
-
-
-
-
-
-
-
-
 \section{Key Words}
 
-% \colorbox{lgray}{\parbox{15cm}{
-% \begin{minipage}[ht]{6cm}
-% \begin{itemize}
-% \item Independent random samples
-% \item Pooled estimate
-% %\item $\sigma_{p-p^*}$
-% %\item $\sigma_{\bar{x} - \bar{x}^*}$
-% \end{itemize}
-% \end{minipage} \hfill
-% \begin{minipage}[ht]{6cm}
-% \begin{itemize}
-% %\item Independent random samples
-% %\item Pooled estimate
-% \item $\sigma_{p-p^*}$
-% \item $\sigma_{\bar{x} - \bar{x}^*}$
-% \end{itemize}
-% \end{minipage}
-% }}
+\fbox{\parbox{15cm}{
+\begin{minipage}[ht]{6cm}
+\begin{itemize}
+\item Randomized trial
+\item more 
+
+\item Pooled estimate
+%\item $\sigma_{p-p^*}$
+%\item $\sigma_{\bar{x} - \bar{x}^*}$
+\end{itemize}
+\end{minipage} \hfill
+\begin{minipage}[ht]{6cm}
+\begin{itemize}
+%\item Independent random samples
+%\item Pooled estimate
+\item $\sigma_{p-p^*}$
+\item $\sigma_{\bar{x} - \bar{x}^*}$
+\end{itemize}
+\end{minipage}
+}}
 
 % \newpage
 \twocolumn
