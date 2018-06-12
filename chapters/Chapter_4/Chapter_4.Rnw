@@ -10,7 +10,7 @@ After completing this part, students should be able to:
 \fbox{\parbox{14cm}{
 
  \begin{enumerate}
- \item Understand the difference between association and cause.
+ \item Understand the difference between association and cause. 
  \item How confounders can affect the results of a survey.
  	\end{enumerate}
  }}
@@ -57,7 +57,7 @@ A confounder or confounding variable is a third variable that is associated with
 
 \subsection{Apples and Oranges}
 
-Now, why do unknown confounders belong in a chapter on threats to valid comparisons? They are one of the most significant sources of (often unknowingly) invalid comparisons.  It seemed fair to compare leg fracture rates of men and women, didn't it?  What's wrong with that?  Unfortunately, concerning leg fracture rates, it was a case of comparing apples to oranges -- women as a group is shorter than men!  Of course, in the 1992 study, the investigators did not know that height would make a difference.  Women also tend to weigh less, smoke less, drink less, have longer hair, and wear higher heels.  Which of these would make a difference, i.e., be potential confounders?
+Now, why do unknown confounders belong in a chapter on threats to valid comparisons?  They are one of the most significant sources of (often unknowingly) invalid comparisons.  It seemed fair to compare leg fracture rates of men and women, didn't it?  What's wrong with that?  Unfortunately, concerning leg fracture rates, it was a case of comparing apples to oranges -- women as a group is shorter than men!  Of course, in the 1992 study, the investigators did not know that height would make a difference.  Women also tend to weigh less, smoke less, drink less, have longer hair, and wear higher heels.  Which of these would make a difference, i.e., be potential confounders?
 
 Confounders are a big problem in comparison studies.  Some confounders may remain hidden, but it is critical that the researcher identify and control for potential confounders as much as possible.  Does smoking cause lung cancer?  When comparing smokers to nonsmokers, it is easy to show that smokers have higher lung cancer rates.  But as a group, they exercise less than nonsmokers.  They drink more coffee than nonsmokers.  Can the exercise or the coffee or the combination be the culprit?  Furthermore, smokers tend to be male, older, and drive in the winter with their car windows open.  There are plenty of confounding variables even in this comparison.
 
@@ -110,12 +110,18 @@ instead of the (admittedly more sensational) relationship implied by the headlin
 \begin{itemize}
 \item Association
 \item Cause
-\item Confounders
-\item Effect
+% \item Confounders
+%\item Effect
 \end{itemize}
 \end{minipage} \hfill
 \begin{minipage}[ht]{6cm}
 
+\begin{itemize}
+% \item Association
+% \item Cause
+\item Confounders
+\item Effect
+\end{itemize}
 
 \end{minipage}
 

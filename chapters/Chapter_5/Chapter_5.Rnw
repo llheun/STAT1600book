@@ -9,18 +9,18 @@ After completing this part, students should be able to:
 
 \fbox{\parbox{14cm}{
 
-\begin{itemize}
-\item Identify and cite examples of when a two-sample test is appropriate.
-\item Explain an independent random sample.
-\item Perform a test of hypothesis for two-sample means or two-sample
-proportions following the 5-step process and interpret the results.
-\item Effect Size
-\end{itemize}
-}}
+ \begin{enumerate}
+ \item Understand the importance of randomized trials (RT).
+ \item Comprehend the meaning of double-blind, randomized controlled trials (RCT).
+ \item Discern the observational studies.
+ \item Perceive the need for case-controlled studies.
+ \item Grasp the need for case-crossover studies. 
+ 	\end{enumerate}
+ }}
 
 \section{Randomized trials}
 
-In the previous chapter, we covered hidden confounders, one of the most important threats to valid comparisons in statistics. In this chapter we will explore elements of study design that help statisticians deal with the threat of bias posed by hidden confounders. One of the most important elements of many study designs is appropriate randomization in the selection of subjects for the study, and to different groups within the study. Without such randomization, results of data analyses can be biased. Let's see by way of example how randomization can help us address the threat of results biased by hidden confounders.
+In the previous chapter, we covered unknown confounders, one of the most critical threats to valid comparisons in statistics. In this chapter, we will explore elements of study design that help statisticians deal with the danger of bias posed by hidden confounders. One of the most important aspects of many study designs is appropriate randomization in the selection of subjects for the study, and to different groups within the study. Without such randomization, results of data analyses can be biased. Let's see by way of example how randomization can help us address the threat of results biased by hidden confounders.
 
 Recall the diet study discussed previously: ``Comparison of the Atkins, Zone, Ornish, and LEARN Diets for Change in Weight and Related Risk Factors Among Overweight Premenopausal Women The A TO Z Weight Loss Study: A Randomized Trial'' by C.D. Gardner, et al. (JAMA, Vol. 297, pp. 969-77, March 2007)
 
@@ -32,7 +32,7 @@ This is an example of a randomized trial or randomized experiment.   Subjects en
 
 The randomization into groups eliminates the main threat to valid comparisons: confounders.  How?  By making the comparison groups similar to each other in all aspects, except for the treatment.  Think about it.  If you ask for volunteers to each treatment group, then most of the meat-eaters would go to the Atkins group, and most of the vegetarians would go to the Ornish group.   Would it then surprise you if one group had, say, more Asians than another group?  Or more smokers?  Or less physical activity?  Randomized assignments, instead of volunteering, is the best way to get balanced groups in the factors that we think might matter, and achieves balance in all other factors we have not even considered.
 
-Table 9.1 presents the characteristics of the subjects after randomization, but before treatment has started.  Observe how randomization has achieved good balance between groups in demographic and anthropometric variables, and known health risk factors.  All other variables, important or not, like IQ, shoe size, and preference for country music would also tend to be balanced, thus providing a level of protection against unknown confounders.
+Table 5.1 presents the characteristics of the subjects after randomization, but before treatment has started.  Observe how randomization has achieved good balance between groups in demographic and anthropometric variables, and known health risk factors.  All other variables, important or not, like IQ, shoe size, and preference for country music would also tend to be balanced, thus providing a level of protection against unknown confounders.
 
 \fbox{\parbox{14cm}{
 To safeguard against potential \textbf{confounders}, comparison groups should be \textbf{similar} in all factors except for treatment itself.  \textbf{Randomization} is the best way to achieve the goal.
@@ -91,7 +91,7 @@ Control groups are groups of subjects within the study that are not expected to 
    % \label{fig:example}
 \end{figure}
 
-When one of the comparison groups in a study is a control group or placebo, randomized trials are sometimes called randomized controlled trials, or randomized controlled experiments. As much as possible, researchers try to conduct double-blind randomized controlled trials, where neither doctor nor patient knows what treatment the patient is receiving. In the common cold example, some patients get a sugar pill or placebo while others get a new alternative medication thought to treat cold symptoms.  The important point to remember here is that in a double-blind controlled experiment both the patients and doctors have no idea if a patient is receiving the sugar pill/placebo or the cold medicine. This is achieved by giving each patient a pill that looks identical regardless as to whether it’s the inert placebo or the active medicine.
+When one of the comparison groups in a study is a control group or placebo, randomized trials are sometimes called \textit{randomized trials}, or randomized controlled experiments. As much as possible, researchers try to conduct \textit{double-blind} randomized controlled trials, where neither doctor nor patient knows what treatment the patient is receiving.  In the common cold example, some patients get a sugar pill or placebo while others get a new alternative medication thought to treat cold symptoms.  The important point to remember here is that in a double-blind controlled experiment both the \textit{patients} and \textit{doctors} have no idea if a patient is receiving the sugar pill/placebo or the cold medicine. This is achieved by giving each patient a pill that looks identical regardless as to whether it's the inert placebo or the active medicine.
 
 % \begin{minipage}[ht]{5cm}
 
@@ -116,35 +116,35 @@ In many cases, the treatments being compared cannot be assigned, and hence canno
 \begin{enumerate}
 \item Assigning treatment is impossible (e.g., to compare fracture rates between men and women, we cannot randomize subjects into the comparison groups).
 
-\item Assigning treatment is unethical (e.g. to compare cancer rates of smokers and nonsmokers, we do not want to randomize subjects into smoker-nonsmoker     comparison groups)
+\item Assigning treatment is unethical (e.g., to compare cancer rates of smokers and nonsmokers, we do not want to randomize subjects into smoker-nonsmoker     comparison groups)
 
-\item Assigning treatment is impractical (e.g. the outcome is a rare event like cancer or stroke, and a randomized trial would need too many subjects and too much time).  In cases like these, a case-control study is generally the way to go.
+\item Assigning treatment is impractical (e.g., the outcome is a rare event like cancer or stroke, and a randomized trial would need too many subjects and too much time).  In cases like these, a case-control study is generally the way to go.
 \end{enumerate}
 
 \fbox{\parbox{14cm}{
-\textbf{Observational} studies are conducted when randomization to treatment groups  \\ is impossible, unethical, or impractical.
+\textbf{Observational} studies are conducted when \textbf{randomization} to treatment groups  \\ is \textbf{impossible}, \textbf{unethical}, or \textbf{impractical}.
 }}
 
-Returning to the leg-fracture example, we stick to observational studies in such a case for two reasons. As described above, it's impossible to perform the study any other way with the data collected. But we also should not elect to change the study, to collect the data in a different and randomized manner.  In other words, we should not even try to get the bias-reducing benefits of randomization because of ethical constraints. To perform randomized clinical trials in this study of leg fractures we would need to randomly select subjects whose legs would be broken for the sake of the study. Causing suffering like this is prohibited by several codes of ethics like the Nuremberg Code, a code of research ethics drafted after the Nuremberg trials of Nazi war criminals.  These criminals included scientists who designed and performed inhumane experiments. Beyond the official ban, though, such research is wrong in its causing excessive suffering and its infringement upon basic human rights.
+Returning to the leg-fracture example, we stick to observational studies in such a case for two reasons. As described above, it's impossible to perform the study any other way with the data collected. But we also \textit{should not} elect to change the study, to collect the data in a different and randomized manner.  In other words, we should not even try to get the bias-reducing benefits of randomization because of ethical constraints. To perform randomized clinical trials in this study of leg fractures we would need to randomly select subjects whose legs \textit{would} be broken for the sake of the study. Causing suffering like this is prohibited by several codes of ethics like the Nuremberg Code, a code of research ethics drafted after the Nuremberg trials of Nazi war criminals.  These criminals included scientists who designed and performed inhumane experiments. Beyond the official ban, though, such research is wrong in its causing excessive suffering and its infringement upon basic human rights.
 
 Another reason we may conduct an observational study is that they can be more practical compared to randomized controlled trials. This can be due to the constraints of a rare disease, or the cost a randomized study would entail.  A researcher might want to study whether regular exercise can prevent a rare form of cancer.  Randomization and control here would require that we randomly select patients first, group them along exercise programs (say regular, irregular, and no exercise), and wait to see how the different groups respond (do the exercise groups have significantly fewer cases of cancer?).  This study might not work out at all because, since the cancer is rare, it's possible that no or very few of our subjects will get the cancer.  It also may take many years before cancer would appear.
 
-This study would be quite time-consuming and labor-intensive. Imagine all the financial resources that would be required to do all that exercise-monitoring over all the patients and years! This brings us to our second point, that observational studies are practical because they tend to be less costly than randomized controlled trials. Companies often use statistics to generate revenue, but they tend to do this not by randomized experiments, but by analyses of marketing data they collect through sales or surveys. Nonrandom observational studies like analyses of sales data are an easy approach in that all they require are a data collection apparatus and a statistician. For instance, clothing designers want to keep up with trends in consumer spending, but might sell hundreds of different garments to thousands of outlets across the world. When sales of one item begin to slip, it might be difficult to notice amidst all the chaos of such a business enterprise. A statistician can help here by analyzing the proportions of revenue generated by each garment from month to month, and making recommendations about which products to push when. The statistician might even find style or color-based patterns that repeat themselves seasonally, allowing the company to adjust before their sales ever begin slipping.
+This study would be quite time-consuming and labor-intensive. Imagine all the financial resources that would be required to do all that exercise-monitoring over all the patients and years! This brings us to our second point, that observational studies are practical because they tend to be less costly than randomized controlled trials. Companies often use statistics to generate revenue, but they tend to do this not by randomized experiments, but by analyses of marketing data they collect through sales or surveys. Nonrandom observational studies like analyses of sales data are an easy approach in that all they require are a data collection apparatus and a statistician. For instance, clothing designers want to keep up with trends in consumer spending but might sell hundreds of different garments to thousands of outlets across the world. When sales of one item begin to slip, it might be difficult to notice amidst all the chaos of such a business enterprise. A statistician can help here by analyzing the proportions of revenue generated by each garment from month to month and making recommendations about which products to push when. The statistician might even find style or color-based patterns that repeat themselves seasonally, allowing the company to adjust before their sales ever begin slipping.
 
 \subsection{Case-control studies}
 
-Instead of randomizing subjects into diet groups and then comparing the weight loss outcome, a case-control study would look for people in the population who lost weight, and then ask them what diet they used.  Thus, you start with the outcome, and then work back to the type of treatment.  These are also classified as retrospective studies, because they look back and compare weight loss or disease rates of various treatments.  Randomized experiments are necessarily prospective, in the sense that you randomize treatment and then later see which groups lost more weight or had more disease.
+Instead of randomizing subjects into diet groups and then comparing the weight loss outcome, a case-control study would look for people in the population who lost weight, and then ask them what diet they used.  Thus, you start with the \textit{outcome}, and then work back to the type of treatment.  These are also classified as \textit{retrospective} studies because they look back and compare weight loss or disease rates of various treatments.  Randomized experiments are necessarily \textit{prospective}, in the sense that you randomize treatment and then later see which groups lost more weight or had more disease.
 
 Case-control studies are frequently used because they are cheaper and easier to conduct, since it generally requires a survey of a database, instead of an expensive and time-consuming recruitment and handling of subjects.  There are plenty of successful case-control success stories in the scientific literature.
-The first study formally linking lung cancer to smoking was a 1950 case-control study ``Smoking and Carcinoma of the Lung'' by Richard Doll and A. Bradford Hill
-(British Medical Journal, 1950 September 30; 2(4682): page 739--748).  Using patients in 20 hospitals in London, they found that lung-cancer patients had higher rates of smokers than a comparable control group of patients.   For example, among district hospitals, 48 out of 98 lung cancer patients smoked 15 or more cigarettes daily.  In contrast, only 30 out of 98 non-cancer patients smoked 15 or more cigarettes daily.
 
-In general, case-control studies are able to conclude a link or `association,' but are not able to prove `causation.'   However, case-control studies provide initial evidence that can generate resources for more rigorous studies like double-blind randomized controlled trials.  In the case of smoking and lung cancer, randomized trials are unethical, but given the eventual results of multiple studies, it is now accepted by the scientific community that smoking causes lung cancer.
+The first study formally linking lung cancer to smoking was a 1950 case-control study ``Smoking and Carcinoma of the Lung'' by Richard Doll and A. Bradford Hill(British Medical Journal, 1950 September 30; 2(4682): page 739--748).  Using patients in 20 hospitals in London, they found that lung-cancer patients had higher rates of smokers than a comparable control group of patients.   For example, among district hospitals, 48 out of 98 lung cancer patients smoked 15 or more cigarettes daily.  In contrast, only 30 out of 98 non-cancer patients smoked 15 or more cigarettes daily.
+
+In general, case-control studies are able to conclude a link or `association' but are not able to prove `causation.'   However, case-control studies provide initial evidence that can generate resources for more rigorous studies like double-blind randomized controlled trials.  In the case of smoking and lung cancer, randomized trials are unethical, but given the eventual results of multiple studies, it is now accepted by the scientific community that smoking causes lung cancer.
 
 \subsection{Case-crossover studies}
 
 Sometimes, each subject can be their own control.  This is called a case-crossover study, because subjects in the treatment group ``crossover'' to the control group.
-An example is a 1997 study linking cell phone use to car accidents: ``Association between cellular-telephone calls and motor vehicle collisions'' by D.A. Redelmeier and R.J. Tibshirani (The New England Journal of Medicine, 1997 Feb 13; vol 336, pp. 453-8).  The subjects were people who reported a collision to the North York Collision Reporting Centre between July 1, 1994, and August 31, 1995, Among these, 742 had cell phones and consented to participate in the study.  Instead of asking each person whether they were using their cell phone during the time of the collision (an unreliable method), the investigators examined their detailed phone billing records.  Their results are quoted below:
+An example is a 1997 study linking cell phone use to car accidents: ``Association between cellular-telephone calls and motor vehicle collisions'' by D.A. Redelmeier and R.J. Tibshirani (The New England Journal of Medicine, 1997 Feb 13; Vol 336, pp. 453-8).  The subjects were people who reported a collision to the North York Collision Reporting Centre between July 1, 1994, and August 31, 1995, Among these, 742 had cell phones and consented to participate in the study.  Instead of asking each person whether they were using their cell phone during the time of the collision (an unreliable method), the investigators examined their detailed phone billing records.  Their results are quoted below:
 
 \begin{quotation}
 Overall, 170 subjects (24 percent) had used a cellular telephone during the 10-minute period immediately before the collision, 37 (5 percent) had used the telephone during the same period on the day before the collision, and 13 (2 percent) had used the telephone during both periods. The crude analysis indicated that cellular-telephone activity was associated with a relative risk of a motor vehicle collision of 6.5 (95 percent confidence interval, 4.5 to 9.9).  The primary analysis, adjusted for intermittent driving, indicated that cellular-telephone activity was associated with a quadrupling of the risk of a motor vehicle collision (relative risk, 4.3; 95 percent confidence interval, 3.0 to 6.5).
@@ -155,20 +155,15 @@ Overall, 170 subjects (24 percent) had used a cellular telephone during the 10-m
 \fbox{\parbox{14cm}{
 \begin{minipage}[ht]{6cm}
 \begin{itemize}
-\item Randomized trial
-\item more 
-
-\item Pooled estimate
-%\item $\sigma_{p-p^*}$
-%\item $\sigma_{\bar{x} - \bar{x}^*}$
+\item randomized trial
+\item double-blind randomized trial
+\item observational studies
 \end{itemize}
 \end{minipage} \hfill
 \begin{minipage}[ht]{6cm}
 \begin{itemize}
-%\item Independent random samples
-%\item Pooled estimate
-\item $\sigma_{p-p^*}$
-\item $\sigma_{\bar{x} - \bar{x}^*}$
+\item case-control studies
+\item case-crossover studies
 \end{itemize}
 \end{minipage}
 }}
@@ -191,34 +186,31 @@ Give some examples of \\ studies where:
 
 
 	\end{exercise}
-	\begin{solution}  % 1
-
-	  $H_0: \mu_1 = \mu_2$ vs. $H_0: \mu_1 \neq \mu_2$
-	\end{solution}
+	% \begin{solution}  % 1
+	% 
+	%   $H_0: \mu_1 = \mu_2$ vs. $H_0: \mu_1 \neq \mu_2$
+	% \end{solution}
 
   \begin{exercise} % 2
 
 Suppose a doctor is interested in investigating the causes of an \\ extremely rare disorder that occurs in only 0.00001\% of men.  What type of study would be necessary to firmly establish the causes of the disease?  Is this type of study an appropriate choice for such a disease?  Why or why not?
 
 	\end{exercise}
-% 	\begin{solution}  % 2
-% <<label=lbl9-2, results='asis', echo=FALSE>>=
-%   cv1 <- sprintf('%.4f', (qt(p=0.95, df=10)))
-% @
-%
-% 	  From the t-distribution table, choose df row 10 and column significance level 0.05. \\
-% 	  Student's $t$ distribution, $CV = \Sexpr{cv1}$
-% 	\end{solution}
+	\begin{solution}  % 2
+	
+Randomized controlled experiments are necessary to firmly establish the cause of such a disease. For instance, we might see if the disease is caused by a potassium deficiency by giving our treatment group a potassium supplement every day. However, since this disease is so rare, such a randomized controlled experiment is impractical. It would also be unethical to potentially be influencing or causing a disease in people.  Additionally, we would have no guarantee that any subjects would even develop the disease if it is very rare. Thus, observational studies may be the most appropriate choice unless scientific advances in, say, genetics are far enough along to make a more practical kind of randomized controlled experiment.
+	
+	\end{solution}
 
   \begin{exercise} % 3
 
 What is a double-blind \\ study?  Give an example where double- \\ blinding is not possible.
 
     \end{exercise}
-    \begin{solution}  % 3
-
-The test statistics is $|-1.66|$ and significance level is 1.8125.  Since the test statistic is less than the significance level, fail to reject $H_0$.
-    \end{solution}
+%     \begin{solution}  % 3
+% 
+% % The test statistics is $|-1.66|$ and significance level is 1.8125.  Since the test statistic is less than the significance level, fail to reject $H_0$.
+%     \end{solution}
 
   \begin{exercise} % 4
 
@@ -227,43 +219,45 @@ Some recent research has \\ shown that patients who know they have \\ taken noth
 
 
   \end{exercise}
-  % \begin{solution}  % 4
-  %
-  %   $H_0: P_1 = P_2$ vs. $H_A: P_1 \neq P_2$
-  % \end{solution}
+  \begin{solution}  % 4
+  
+A randomized controlled experiment is the ``gold standard of scientific knowledge'' so that would be the best way to study this. We would study four groups of patients: group one would get a standard treatment for an illness, group two would get a placebo without being told it’s a placebo, group 3 would get a placebo and be told it's a placebo, and group 4 would get no treatment at all. This would, interestingly, give controls both from the standard and no-treatment groups. The groups for primary comparisons would be the two groups that get the placebos and are either informed or not.  
+
+  \end{solution}
 
   \begin{exercise} % 5
 
 What is the advantage of case-control studies over clinical trials?
 
   \end{exercise}
-  \begin{solution}  % 5
-<<label=lbl8-5, results='asis', echo=FALSE>>=
-  cv1 <- sprintf('%.2f', (qnorm(p=0.975)))
-@
-
-    Standard Normal (z) distribution, $Z = \pm \Sexpr{cv1}$.
-  \end{solution}
+%   \begin{solution}  % 5
+% <<label=lbl8-5, results='asis', echo=FALSE>>=
+%   cv1 <- sprintf('%.2f', (qnorm(p=0.975)))
+% @
+% 
+%     Standard Normal (z) distribution, $Z = \pm \Sexpr{cv1}$.
+%   \end{solution}
 
   \begin{exercise} % 6
 
 A football organization is \\ concerned about the number of injuries to its athletes during games. The organization designs an observational study to help decide on rule changes that will reduce the risk of injury to players. They collect data and observe that a very high proportion of injuries are incurred during the first moments of the game during kickoff. The organization thus entertains the idea of changing the rules governing kickoffs. Are there any hidden confounders that the organization should address before making changes to kickoff rules? What are they, and how might they be addressed?
 
 	\end{exercise}
-	% \begin{solution}  % 6
-	%
-	%   Conclude that there is a difference, since the test statistic (z = 2.04) is greater than the critical value (z = 1.96).  Therefore, reject $H_0$
-	% \end{solution}
+	\begin{solution}  % 6
+
+Yes, there are potential confounders. For instance, it might be that players feel better rested at the start of a game, so they play harder and get injured more frequently because of this. To address this possibility, the organization could investigate the frequency of injuries that occur during later kickoffs in the game, or to conduct small-scale randomized controlled experiments that change kickoff rules before recommending large sweeping changes.
+
+	\end{solution}
 
 	  \begin{exercise} % 7
 
 What is the advantage of clinical trials over case-control studies?
 
   \end{exercise}
-  \begin{solution}  % 7
-
-    $H_0: P_1 = P_2$ vs. $H_A: P_1 > P_2$
-  \end{solution}
+  % \begin{solution}  % 7
+  % 
+  %    $H_0: P_1 = P_2$ vs. $H_A: P_1 > P_2$
+  % \end{solution}
 
 \end{exercises}
 \onecolumn
