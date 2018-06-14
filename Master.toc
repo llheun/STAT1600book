@@ -121,15 +121,16 @@
 \contentsline {section}{\numberline {6.3}Calculating percentiles}{66}{section.6.3}
 \contentsline {section}{\numberline {6.4}Calculating symmetric tail areas}{67}{section.6.4}
 \contentsline {section}{\numberline {6.5}The Empirical Rule}{68}{section.6.5}
-\contentsline {section}{\numberline {6.6}Exercises}{70}{section.6.6}
+\contentsline {section}{\numberline {6.6}Key Words}{69}{section.6.6}
+\contentsline {section}{\numberline {6.7}Exercises}{70}{section.6.7}
 \contentsline {paragraph}{\nonumberline Exercises}{70}{section*.60}
-\contentsline {subparagraph}{\nonumberline Exercise{}~6.6-1:}{70}{section*.61}
-\contentsline {subparagraph}{\nonumberline Exercise{}~6.6-2:}{70}{section*.62}
-\contentsline {subparagraph}{\nonumberline Exercise{}~6.6-3:}{70}{section*.63}
-\contentsline {subparagraph}{\nonumberline Exercise{}~6.6-4:}{70}{section*.64}
-\contentsline {subparagraph}{\nonumberline Exercise{}~6.6-5:}{70}{section*.65}
-\contentsline {subparagraph}{\nonumberline Exercise{}~6.6-6:}{71}{section*.66}
-\contentsline {subparagraph}{\nonumberline Exercise{}~6.6-7:}{71}{section*.67}
+\contentsline {subparagraph}{\nonumberline Exercise{}~6.7-1:}{70}{section*.61}
+\contentsline {subparagraph}{\nonumberline Exercise{}~6.7-2:}{70}{section*.62}
+\contentsline {subparagraph}{\nonumberline Exercise{}~6.7-3:}{70}{section*.63}
+\contentsline {subparagraph}{\nonumberline Exercise{}~6.7-4:}{70}{section*.64}
+\contentsline {subparagraph}{\nonumberline Exercise{}~6.7-5:}{70}{section*.65}
+\contentsline {subparagraph}{\nonumberline Exercise{}~6.7-6:}{71}{section*.66}
+\contentsline {subparagraph}{\nonumberline Exercise{}~6.7-7:}{71}{section*.67}
 \contentsline {chapter}{\numberline {7}The Binomial Distribution}{73}{chapter.7}
 \contentsline {section}{\numberline {7.1}Objective}{73}{section.7.1}
 \contentsline {section}{\numberline {7.2}Binomial Probabilities}{73}{section.7.2}

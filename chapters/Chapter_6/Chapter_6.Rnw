@@ -11,7 +11,7 @@ After completing this part, students should be able to:
 
 \begin{itemize}
 \item Define and explain the concept of the {\textbf{Normal Curve}}.
-\item Convert empirical scores to z-scores and use z-scores and the Normal Distribution curve table to find areas above, below and between points of the curve and  express them regarding their probabilities.
+\item Convert empirical scores to z-scores and use z-scores and the Normal Distribution curve table to find areas above, below and between points of the curve and express them regarding their probabilities.
 \item Utilize the standard normal distribution to solve probability (chance) problems.
 \end{itemize}
 }}
@@ -22,7 +22,7 @@ Best Buy wants to know how many smart fitness and GPS watches (like Fitbit, Garm
 
 \subsubsection{Problem 1.}  If they order 40 watches, what is the probability that they will run out of stock?
 
-\subsubsection{Problem 2.}  Given the cost of running out of stock and the storage cost of keeping too many, the manager decides to order enough smart watches to cover customer demands 90\% of the time, i.e there should be 10\% or less likelihood that they run out of stock. How many should they order?
+\subsubsection{Problem 2.}  Given the cost of running out of stock and the storage cost of keeping too many, the manager decides to order enough smartwatches to cover customer demands 90\% of the time, i.e., there should be 10\% or less likelihood that they run out of stock. How many should they order?
 
 Knowing the average and SD of a process $(36 \pm 8)$ gives us some understanding of what to expect.  However, the sales situation above requires the computation of probabilities, or chances, as in the ``chance of demand exceeding 40.''   This desired probability is the shaded area to the right of 40 under the histogram of demand (see the first graph in Figure 4.1).  Does this look like 0.20 of the total area?  0.30?  0.40?
 
@@ -38,10 +38,9 @@ Knowing the average and SD of a process $(36 \pm 8)$ gives us some understanding
 @
 \end{figure}
 
-The normal curve (or bell curve) is useful in helping us calculate probabilities like these.  If we smooth out the top of the histogram in Figure 4.1, it will look like a normal curve.  More precisely, it will look like a normal curve with a mean of 36 and an SD of 8, denoted as $N(36, 8)$.  So the shaded area on the left will be approximated by the shaded area under the $N(36, 8)$ curve on the right.  Do the two shaded areas look about the same?
+The normal curve (or bell curve) is useful in helping us calculate probabilities like these.  If we smooth out the top of the histogram in Figure 4.1, it will look like a normal curve.  More precisely, it will look like a normal curve with a mean of 36 and an SD of 8, denoted as $N(36, 8)$.  So the shaded area on the left will be approximated by the shaded area under the $N(36, 8)$ curve on the right.  Do the two shaded regions look the same?
 
-Of course, the areas look similar because in our example, the histogram on the left
-looks like a normal curve.  It does not have to.  If it does not, then the approximation of areas using the normal curve will be bad.  The normal curve approximation should be used with caution.
+Of course, the areas look similar because, in our example, the histogram on the left looks like a normal curve.  It does not have to.  If it does not, then the approximation of areas using the normal curve will be wrong.  We should use the normal curve approximation with caution.
 
 \subsubsection{The Standard Normal or Z Curve}
 
@@ -152,11 +151,11 @@ What is the probability of demand exceeding 40?  This is the area under the curv
 
 We restate Problem 2 given at the start of the chapter.
 
-\textbf{Problem 2.} Given the cost of running out of stock and the cost of having too many, the manager decides to order enough smart watches to cover customer demands 90\% of the time, i.e there should be 10\% or less likelihood that they run out of stock.  How many should they order?
+\textbf{Problem 2.} Given the cost of running out of stock and the value of having too many, the manager decides to order enough smartwatches to cover customer demands 90\% of the time, i.e., there should be 10\% or less likelihood that they run out of stock.  How many should they order?
 
-We want to estimate the number of smart watches so that there is only a 10\% chance of running out.  Note that this is the 90th percentile of demand.
+We want to estimate the number of smartwatches so that there is only a 10\% chance of running out.  Note that this is the 90th percentile of demand.
 
-Looking at Figure 4.5, we see that we need to shade the upper 10\% of the area under the histogram.  What X value corresponds to the boundary?  Using the normal table, the Z value 90th percentile is 1.28.  What X value corresponds to Z = 1.28?  We solve equation 4.1 backwards.
+Looking at Figure 4.5, we see that we need to shade the upper 10\% of the area under the histogram.  What X value corresponds to the boundary?  When we use the normal table, the Z-value 90th percentile is 1.28.  What X value corresponds to Z = 1.28?  We solve equation 4.1 backward.
 
 \begin{eqnarray*}
 1.28 & = & \frac{X - 36}{8}  \\
@@ -165,7 +164,7 @@ Looking at Figure 4.5, we see that we need to shade the upper 10\% of the area u
 X & = & 46.24
 \end{eqnarray*}
 
-The manager should have at least 46 smart watches in the store.
+The manager should have at least 46 smartwatches in the store.
 
 \begin{figure}[ht]
 \caption{The 90th Percentile: $P[X \ge a] = 0.10$ }
@@ -207,14 +206,33 @@ The area outside of 2.25 SD from the center is the combined area left of -2.25 a
 
 \section{The Empirical Rule}
 
-Figure 4.3 provides a useful interpretation of the SD.  It is stated as follows:
+Figure 4.3 provides a useful interpretation of the SD.  We state it as follows:
 
-\fbox{\parbox{12cm}{
+\begin{center}
+\fbox{\parbox{14cm}{
 \textbf{Empirical Rule:} \\
 If the data histogram is approximately bell-shaped, expect around \\
 68\% of the observations will fall within \textbf{one} SD of the mean  \\
 95\% of the observations will fall within \textbf{two} SD of the mean  \\
 99.7\% of the observations will fall within \textbf{three} SD of the mean
+}}
+\end{center}
+
+\section{Key Words}
+
+\fbox{\parbox{14cm}{
+\begin{minipage}[ht]{6cm}
+\begin{itemize}
+\item area under the curve
+\item empirical rule
+\end{itemize}
+\end{minipage} \hfill
+\begin{minipage}[ht]{6cm}
+\begin{itemize}
+\item normal curve
+\item normal Z-curve
+\end{itemize}
+\end{minipage}
 }}
 
 
@@ -226,13 +244,13 @@ If the data histogram is approximately bell-shaped, expect around \\
 
   \begin{exercise} % 1
 
-A study was conducted in order to determine if any link existed between cellular phone usage and the development of brain cancer (don't worry, no connection was found).  Data from this study indicate that the daily cell phone usage for all users is approximately normally distributed with mean 2.4 hours and standard deviation 1.1 hours.
+Researchers conducted a \\ study to determine if any link existed between cellular phone usage and the development of brain cancer (don't worry, no connection was found).  Data from this study indicate that the daily cell phone usage for all users is approximately normally distributed with mean 2.4 hours and standard deviation of 1.1 hours.
 
 	\begin{enumerate}
 	\item What proportion of cell phone users are on their phones between 1 hour
 and 3 hours per day?
-  \item Just to be safe, suppose you decide to be in the 5th percentile of
-cell phone users in terms of monthly usage.  How much time can you spend on your phone per day?
+  \item To be safe, suppose you decide to be in the 5th percentile of
+cell phone users concerning monthly usage.  How much time can you spend on your phone per day?
 	\end{enumerate}
 
    % \framebox[5cm][l]{ Answer: }
@@ -258,38 +276,37 @@ cell phone users in terms of monthly usage.  How much time can you spend on your
 
   \begin{exercise} % 2
 
-On the average, a watch battery is known to last for 2 years (24-months), with a standard deviation of 9 months.  \\ Assuming that the population is normally distributed,
+On the average, a watch battery is known to last for two years (24- \\ months), with a standard deviation of 9 \\ months. Assume a normally distributed population. 
 
  \begin{enumerate}
-	\item What percentage of watch  batteries  last \\ more than 6 months?
-	\item What is the life span of a watch battery which lasts longer than 60\% of all batteries?
-	\item What proportion of watch batteries last \\ shorter than 2 years or longer
-than 3 1/2 years (42 months)?
+	\item What percentage of watch batteries last \\ more than six months?
+	\item What is the lifespan of a watch battery which lasts longer than 60\% of all batteries?
+	\item What proportion of watch batteries that \\ last shorter than two years or longer \\ than 3 1/2 years (42 months)?
  \end{enumerate}
 
 	\end{exercise}
-	\begin{solution}  % 2
-
-<<label=LBL4-2, results='asis', echo=FALSE>>=
-  MN1 <- 24
-  SD1 <- 9
-  z1  <- (6 - 24) / 9
-  PROB1 <- 1 - pnorm( q=z1 , mean= MN1, sd=SD1)
-  pctl1 <- qnorm(p=.4, mean=0, sd=1)
-  x1 <- ( 24 + pctl1 * SD1 )
-  PROB2 <- 1 - pnorm( q=42, mean=MN1, sd=SD1)
-  PROB3 <- .5 + PROB2
-@
-
-\begin{enumerate}
-	\item The percentage of watch batteries last more than 6 months is $P[ X > 6] = \Sexpr{PROB1}$.
-	\item What is the life span of a watch battery which lasts longer than 60\% of all batteries?  $P[X > a] = .60$. Now solve for a = \Sexpr{x1}.
-	\item What proportion of watch batteries last shorter than 2 years or longer
-than 3 1/2 years (42 months)?
-$P[X < 24] + P[X > 42] = .5 + \Sexpr{PROB2} = \Sexpr{PROB3}$
- \end{enumerate}
-
-	\end{solution}
+% 	\begin{solution}  % 2
+% 
+% <<label=LBL4-2, results='asis', echo=FALSE>>=
+%   MN1 <- 24
+%   SD1 <- 9
+%   z1  <- (6 - 24) / 9
+%   PROB1 <- 1 - pnorm( q=z1 , mean= MN1, sd=SD1)
+%   pctl1 <- qnorm(p=.4, mean=0, sd=1)
+%   x1 <- ( 24 + pctl1 * SD1 )
+%   PROB2 <- 1 - pnorm( q=42, mean=MN1, sd=SD1)
+%   PROB3 <- .5 + PROB2
+% @
+% 
+% \begin{enumerate}
+% 	\item The percentage of watch batteries last more than 6 months is $P[ X > 6] = \Sexpr{PROB1}$.
+% 	\item What is the life span of a watch battery which lasts longer than 60\% of all batteries?  $P[X > a] = .60$. Now solve for a = \Sexpr{x1}.
+% 	\item What proportion of watch batteries last shorter than 2 years or longer
+% than 3 1/2 years (42 months)?
+% $P[X < 24] + P[X > 42] = .5 + \Sexpr{PROB2} = \Sexpr{PROB3}$
+%  \end{enumerate}
+% 
+% 	\end{solution}
 
   \begin{exercise} % 3
 
@@ -307,7 +324,7 @@ Suppose 95\% of data coming from a normally distributed population falls between
 
 	\begin{exercise}  % 4
 
-A random variable is normally distributed with mean of 10 and standard deviation of 2.
+Let's assume a normally distributed random variable with a mean of 10 and standard deviation of 2.
 
 \begin{enumerate}
 \item What is the probability the value is \\ greater than 6?
@@ -318,28 +335,28 @@ A random variable is normally distributed with mean of 10 and standard deviation
 \end{enumerate}
 
 	\end{exercise}
-	\begin{solution}  % 4
-<<label=LBL4-4, results="asis", echo=FALSE>>=
-  mn4 <- 10
-  sd4 <- 2
-  q1 <- (6 - 10)/2
-  prob4a <- 1 - pnorm(q=q1, mean=mn4, sd=sd4)
-  q2 <- (12 - 10)/2
-  prob4b <- pnorm(q2, mean=mn4, sd=sd4)
-  prob4c <- prob4a - prob4b
-  z1 <- qnorm(p=.33, mean=0, sd=1)
-  x41 <- mn4 - z1 * sd4
-  x42 <- mn4 + z1 * sd4
-@
-
-\begin{enumerate}
-\item The probability the value is greater than 6 is $P[X > 6] = \Sexpr{prob4a}$
-\item The probability the value is less than 12 is $P[X < 12] = \Sexpr{prob4b}$
-\item The probability the value is between 6 and 12 is $P[ 6 < X < 12] = \Sexpr{prob4c}$
-\item 33\% is above a, i.e., $P[X > a] = .33; a = \Sexpr{x41}$
-\item 33\% is below b, i.e., $P[X < b] = .33; b = \Sexpr{x42}$
-\end{enumerate}
-	\end{solution}
+% 	\begin{solution}  % 4
+% <<label=LBL4-4, results="asis", echo=FALSE>>=
+%   mn4 <- 10
+%   sd4 <- 2
+%   q1 <- (6 - 10)/2
+%   prob4a <- 1 - pnorm(q=q1, mean=mn4, sd=sd4)
+%   q2 <- (12 - 10)/2
+%   prob4b <- pnorm(q2, mean=mn4, sd=sd4)
+%   prob4c <- prob4a - prob4b
+%   z1 <- qnorm(p=.33, mean=0, sd=1)
+%   x41 <- mn4 - z1 * sd4
+%   x42 <- mn4 + z1 * sd4
+% @
+% 
+% \begin{enumerate}
+% \item The probability the value is greater than 6 is $P[X > 6] = \Sexpr{prob4a}$
+% \item The probability the value is less than 12 is $P[X < 12] = \Sexpr{prob4b}$
+% \item The probability the value is between 6 and 12 is $P[ 6 < X < 12] = \Sexpr{prob4c}$
+% \item 33\% is above a, i.e., $P[X > a] = .33; a = \Sexpr{x41}$
+% \item 33\% is below b, i.e., $P[X < b] = .33; b = \Sexpr{x42}$
+% \end{enumerate}
+% 	\end{solution}
 
   \begin{exercise}	% 5
 
@@ -380,30 +397,30 @@ The average adult female \\ height is 63.8 inches with a standard deviation of 2
 \end{enumerate}
 
   \end{exercise}
-\begin{solution}  % 6
-<<label=LBL4-6, results="asis", echo=FALSE>>=
-  mn6 <- 63.8
-  sd6 <- 2.4
-  prob6 <- pnorm(q=72, mean=mn6, sd=sd6)
-  z6  <- qnorm(p=(1-.25), mean=0, sd=1)
-  x6  <- mn6 + z6*sd6
-@
-
-\begin{enumerate}
-\item The proportion of adult female heights is below 72 is $P[ X < 72] = \Sexpr{prob6}$.
-\item 25\% of adult females are greater than $P[ X > a] = .25$ where a = \Sexpr{x6}
-\end{enumerate}
-\end{solution}
+% \begin{solution}  % 6
+% <<label=LBL4-6, results="asis", echo=FALSE>>=
+%   mn6 <- 63.8
+%   sd6 <- 2.4
+%   prob6 <- pnorm(q=72, mean=mn6, sd=sd6)
+%   z6  <- qnorm(p=(1-.25), mean=0, sd=1)
+%   x6  <- mn6 + z6*sd6
+% @
+% 
+% \begin{enumerate}
+% \item The proportion of adult female heights is below 72 is $P[ X < 72] = \Sexpr{prob6}$.
+% \item 25\% of adult females are greater than $P[ X > a] = .25$ where a = \Sexpr{x6}
+% \end{enumerate}
+% \end{solution}
 
 \begin{exercise} % 7
 
 Values in the table give the area under the curve to the left of the z-values on the margins.  The upper margin gives the hundredth digit of z.  For example:
 
 \begin{enumerate}
-\item The area to the left of 0.0 is ?
-\item The area to the left of 0.2 is ?
-\item The area to the left of 0.25 is ?
-\item The area to the left of 2.25 is ?
+\item The area to the left of 0.0 is?
+\item The area to the left of 0.2 is?
+\item The area to the left of 0.25 is?
+\item The area to the left of 2.25 is?
 \end{enumerate}
 
 	\end{exercise}
