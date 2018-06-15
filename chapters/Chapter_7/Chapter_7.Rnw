@@ -8,24 +8,12 @@
 After completing this part, students should be able to:
 
 \fbox{\parbox{14cm}{
+
 \begin{itemize}
-\item Explain the purpose of inferential statistics.
-
-\item Define and explain the basic techniques of random sampling.
-
-\item Explain and define these key terms:
-	\begin{itemize}
-	\item Population
-	\item Parameter
-	\item Sample
-	\item Statistic
-	\item Equal Probability of SElection Method.
-	\end{itemize}
-
-\item Differentiate between the sampling distribution, the sample, the  population.
-
-\item Explain the two theorems presented.
-
+\item Use the binomial distribution to compute probabilities.
+\item Make use of the expected value and SD of a Binomial Random Variable.
+\item Apply Binomial Probabilities Using the Normal Curve.
+\item Understand that some Approximations Are Better Than Others.
 \end{itemize}
 }}
 
@@ -35,7 +23,7 @@ A sequence of n observations is called a binomial process if
 
 \begin{enumerate}
 \item each observation results in one of two possible outcomes (which we call    success and failure)
-\item the probability of success is p and the probability of failure is q = 1 - p for all observations
+\item the probability of success is p, and the probability of failure is q = 1 - p for all observations
 \item the observations are independent of each other.
 \end{enumerate}
 
@@ -50,7 +38,7 @@ S \hspace{3mm}   F & S  \hspace{3mm}  F &  S  \hspace{3mm}  F &  & S \hspace{3mm
 Let X denote the total number of successes among the n observations.  Then
 X is called a \textbf{binomial random variable} \index{binomial random variable} with parameters n and p. The following are all binomial random variables.
 
-\subsubsection{Example 1} A Stat 1600 multiple choice quiz has 5 questions, with each question having 5 choices.  Let X be the number of correct answers (C) by someone who is guessing on all questions.  Then X is a binomial random variable with parameter values n = 5 and p = 0.2.
+\subsubsection{Example 1} A Stat 1600 multiple choice quiz has five questions, with each question having five choices.  Let X be the number of correct answers (C) by someone who is guessing on all questions.  Then X is a binomial random variable with parameter values n = 5 and p = 0.2.
 
 \begin{center}
 \begin{tabular}{@{} ccccc @{}} \hline
@@ -60,13 +48,13 @@ C \hspace{3mm} W & C  \hspace{3mm}  W &  C  \hspace{3mm}  W &   C \hspace{3mm} W
 \end{tabular}
 \end{center}
 
-\subsubsection{Example 2} Available data shows that 40\% of telephone respondents agree to be interviewed for market research surveys.  Suppose that the polling organization Reliable Research randomly selects and dials telephone numbers until 50 respondents are reached.  Let X be the number of respondents (out of the 50) who agree to be interviewed.  Then X is a binomial random variable with parameter values n = 50 and p = 0.40.
+\subsubsection{Example 2} Available data shows that 40\% of telephone respondents agree to be interviewed for market research surveys.  Suppose the polling organization Reliable Research randomly selects and dials telephone numbers until it reaches 50 respondents.  Let X be the number of respondents (out of the 50) who agree to be interviewed.  Then X is a binomial random variable with parameter values n = 50 and p = 0.40.
 
-\subsubsection{Example 3} Historically, 20\% of buyers at Best Buy who purchase smart fitness and GPS watches (like Fitbit, Garmin, and Apple) also purchase the Geek Squad’s protection plan.  Suppose that 300 smart fitness watches were sold during the previous quarter.  Let X be the number of extended protection plans that were sold along with the 300 smart watches.  Then X is a Binomial random variable with parameter values n = 300 and p = 0.20.
+\subsubsection{Example 3} Historically, 20\% of buyers at Best Buy who purchase smart fitness and GPS watches (like Fitbit, Garmin, and Apple) also purchase the Geek Squad’s protection plan.  Suppose Best Buy sold 300 smart fitness watches during the previous quarter.  Let X be the number of extended protection plans that the retailer sold along with the 300 smartwatches.  Then X is a Binomial random variable with parameter values n = 300 and p = 0.20.
 
 \section{Computing Binomial Probabilities}
 
-In Example 1, the number of correct guesses may be 0, 1, 2, 3, 4, or 5.  How likely can a guesser get all 5 questions right? The answer is 0.0003, or about three times in 10000 attempts.  How about the likelihood of getting 2 out of 5 questions right?  The answer is .2048, about a fifth of the time.  The following \textbf{probability distribution table} gives the likelihood or probability of each possible value of X.
+In Example 1, the number of correct guesses may be 0, 1, 2, 3, 4, or 5.  How likely can a guesser get all five questions right? The answer is 0.0003, or about three times in 10000 attempts.  How about the likelihood of getting 2 out of 5 items right?  The answer is .2048, about a fifth of the time.  The following \textbf{probability distribution table} gives the likelihood or probability of each possible value of X.
 
 <<label=LBL5a, results="asis", echo=FALSE>>=
   x1 <- c(0,1,2,3,4,5)
@@ -95,7 +83,7 @@ Remember that 0! = 1 and (0.2)0 = 1.  This formula is called the \textbf{binomia
  \end{equation*}
 
 
-\subsubsection{Example 3} (Cont.):  10 smart fitness and GPS watches were sold in one day.  What is the probability that 3 extended Geek Squad protection plans were sold?  Using the equation above with $n = 10, p = 0.20$, and $j = 3$, we get
+\subsubsection{Example 3} (Cont.):  The retailer sold ten smart fitness and GPS watches in one day.  What is the probability that customers purchased three extended Geek Squad protection plans?  Using the equation above with $n = 10, p = 0.20$, and $j = 3$, we get
 
 \begin{equation*}
  P[ X = 3] = \frac{10!}{3! (10 - 3)!} .2^j .8^{10 - 3} = 0.201
@@ -107,7 +95,7 @@ Remember that 0! = 1 and (0.2)0 = 1.  This formula is called the \textbf{binomia
 \end{minipage}
 \begin{minipage}[ht]{12cm}
 
-Five percent of video games rented at Gamers Retro Rental are returned late. If 30 video games were rented during the last hour, what is the probability that
+Five percent of customers who rent video games from Gamers Retro Rental who return the rental late.  What is the probability that customers will return their rental late if 30 customers borrow a video game during the last hour?
 
 \begin{enumerate}
 \item 2 will be returned late
@@ -119,9 +107,9 @@ Five percent of video games rented at Gamers Retro Rental are returned late. If 
 
 \section{Expected Value and SD of a Binomial Random Variable}
 
-Suppose that last quarter, Best Buy sold 300 Smart fitness watches.  If there is 0.20 likelihood of selling an extended protection plan with each smart watch, the number of extended protection plans sold last quarter should be around 60 give or take 7 or so (we will compute this later).
+Suppose last quarter; Best Buy sold 300 Smart fitness watches.  If there is 0.20 likelihood of selling an extended protection plan with each smartwatch, the number of extended protection plans sold last quarter should be around 60 give or take 7 or so (we will compute this later).
 
-The first number is called the expected value of the number of protection plans sold; the second number is the standard deviation.  Recall that X, the number of protection plans sold, is a \textbf{Binomial random variable}.  The \textbf{expected value}, denoted \textbf{E(X)}, of a binomial random variable X with parameters n and p is computed as:
+We call the first number the expected value of the number of protection plans sold; the second number is the standard deviation.  Recall that X, the number of protection plans sold, is a \textbf{Binomial random variable}.  The \textbf{expected value}, denoted \textbf{E(X)}, of a binomial random variable X with parameters n and p is computed as:
 
 \begin{equation*}
 E[ X ] = np
@@ -135,7 +123,7 @@ SD(X) = \sigma_x = \sqrt{npq}
 
 Returning to the example, since $n = 300$ and $p = 0.20$, we have $E(X) = 300(0.20) = 60$, and $SD(X) = \sqrt{300(0.20)(0.80)} = 6.93$, or approximately $60 \pm 7$.
 
-The SD for random variables is interpreted similarly to the SD for a sample.  If the store sells 300 smart watches sets every quarter, they won't sell exactly 60 Geek Squad protection plans every time; sometimes they will sell more, sometimes they will sell less.   By how much more, and how much less?  The answer is, ``By 7, on average.''   Similarly, a baseball player with 0.200 batting average won't necessarily get 60 hits in 300 at bats.  We expect him to get 60 hits, give or take 7 hits.
+The SD for random variables is interpreted similarly to the SD for a sample.  If the store sells 300 smartwatches sets every quarter, they won't sell precisely 60 Geek Squad protection plans every time; sometimes they will sell more, sometimes they will sell less.   By how much more, and how much less?  The answer is, ``By 7, on average.''   Similarly, a baseball player with 0.200 batting average won't necessarily get 60 hits in 300 at-bats.  We expect him to get 60 hits, give or take seven hits.
 
 \begin{minipage}[ht]{3cm}
 
@@ -151,16 +139,15 @@ Suppose that 5\% of video games rented at Gamers Retro Rental incur a late renta
 
 Beyond the empirical rule, we may apply the normal curve to approximating binomial probabilities.  The key image is a plot of binomial probabilities as a histogram.  For example, Figure 5.1 is a histogram of binomial probabilities for $n = 30$ and $p = 0.4$.
 
-The height of the rectangle over, say 10, is its probability $P[X = 10$.  However, since the width of the rectangle is 1, then
+The height of the rectangle over, say 10, is its probability $P[X = 10$.  However, since the width of the square is 1, then
 
 \begin{equation*}
 P[X = 10] = \texttt{ height of rectangle over 10 = area of rectangle over 10}
 \end{equation*}
 
-What about $P[X \le 10]$?  This probability corresponds to the total area of the rectangles over and to the left of 10 (shaded rectangles in Figure 5.2)
+What about $P[X \le 10]$?  This probability corresponds to the total area of the rectangles over and the left of 10 (shaded rectangles in Figure 5.2)
 
-Using the binomial probability function to compute the area (probability) of each
-shaded rectangle, the total area equals 0.2915.  However, this requires repeated applications of the binomial formula (11 times, in fact).  We may calculate a quick approximation of the desired probability by replacing the rectangles with a curve!  See shaded area under curve in Figure 5.2.
+The total area equals 0.2915 using the binomial probability function to compute the area (probability) of each shaded rectangle.  However, this requires repeated applications of the binomial formula (11 times, in fact).  We may calculate a quick approximation of the desired probability by replacing the rectangles with a curve!  See shaded area under the curve in Figure 5.2.
 
 There are infinitely many normal curves, which one do we use to replace the rectangles?  Answer: the one with the same mean and SD as the rectangles!  The (binomial) rectangles have a \textbf{mean}:
 
@@ -174,7 +161,7 @@ The (binomial) rectangles have a SD:
 \sigma = \sqrt{npq} = \sqrt{(30)(.4)(.6)} = 2.68
 \end{equation*}
 
-Using the normal curve with the same mean and SD, the area to the left of 10.5 is 0.2877, which is a close estimate of the true area of 0.2915.
+Using the normal curve with the same mean and SD, the area to the left of 10.5 is 0.2877, which is a close estimate of the actual area under the curve is 0.2915.
 
 Similarly, $P[X = 14] = 0.1101$ is approximated by 0.1115, the area under the normal curve between 13.5 and 14.5.
 
@@ -213,13 +200,33 @@ Examine the shape of the binomial histogram for n = 20 and p = 0.10 in Figure 5.
 @
 \end{figure}
 
-Since the curve is right skewed, we will get a poor approximation of areas if we replace the rectangles by a normal curve.  If the value of p were 0.90 instead of 0.10, the binomial histogram would be left skewed.  This is typical behavior of binomial histograms whenever $p$ is either too close to 0 or too close to 1.  When is it `safe' to use the normal curve to approximate binomial probabilities?  A convenient rule of thumb is as follows:
+Since the curve is right-skewed, we will get a poor approximation of areas if we replace the rectangles by a normal curve.  If the value of p were 0.90 instead of 0.10, the binomial histogram would be left-skewed.  It is typical behavior of binomial histograms whenever $p$ is either too close to 0 or too close to 1.  When is it `safe' to use the normal curve to approximate binomial probabilities?  A convenient rule of thumb is as follows:
 
 \fbox{\parbox{14cm}{
 The \textbf{Normal Curve gives reasonable approximations} of binomial probabilites whenever both $np > 5$ and $nq >5$.
 }}
 
-The reader is reminded that normal curve approximations, no matter how close, are still approximations.  The binomial formula should be used to calculate exact probabilities whenever possible.
+We remind the reader that the normal curve approximations are still approximations.  The binomial formula should be used to calculate exact probabilities whenever possible.
+
+\section{Key Words}
+
+\fbox{\parbox{14cm}{
+\begin{minipage}[ht]{6cm}
+\begin{itemize}
+\item binomial distribution
+\item binomial experiment
+\item binomial random variable
+\end{itemize}
+\end{minipage} \hfill
+\begin{minipage}[ht]{6cm}
+\begin{itemize}
+\item binomial tables
+\item discrete random variables
+\end{itemize}
+\end{minipage}
+}}
+
+
 
 \twocolumn
 
@@ -229,12 +236,12 @@ The reader is reminded that normal curve approximations, no matter how close, ar
 
   \begin{exercise} % 1
 
-A binomial random variable \\ with a probability of success of 0.5 and 10 \\ observations. Assume each observation is \\ independent.
+A binomial random variable \\ with a probability of success of 0.5 and ten \\ observations. Assume each observation is \\ independent.
 
 	  \begin{enumerate}
 	  \item What is the mean and standard deviation?
-    \item What is the probability that there are \\ more than 5 successes?
-    \item What is the probability that there are \\ fewer than 5 successes?
+    \item What is the probability that there are \\ more than five successes?
+    \item What is the probability that there are \\ fewer than five successes?
     \item What is the probability that there are \\ between 1 and 3, inclusive?
 	  \end{enumerate}
 
@@ -261,34 +268,34 @@ A binomial random variable \\ with a probability of success of 0.5 and 10 \\ obs
 
   \begin{exercise} % 2
 
-A statistics exam contains 10 questions with 5 multiple choice options per question. By guessing on all questions,
+A statistics exam contains ten questions with five multiple choice options per question. By guessing on all questions,
 
 \begin{enumerate}
-\item What is the probability that at least 2 questions correct?
-\item What is the probability that at most 2 questions correct?
+\item What is the probability that at least two questions correct?
+\item What is the probability that at most two questions correct?
 \item What is the probability that between 1 and 3?
 \end{enumerate}
 	\end{exercise}
-	\begin{solution}  % 2
-<<label=LBL5-2, results="asis", echo=FALSE>>=
-  N1 <- 10
-  P1 <- .2
-
-  prob1 <- 1 - pbinom(q=(2-1), size=N1, p=P1)
-  prob2 <- pbinom(q=2, size=N1, p=P1)
-  prob3 <- pbinom(q=3, size=N1, p=P1) - pbinom(q=(1-1), size=N1, p=P1)
-@
-
-\begin{enumerate}
-\item The probability that at least 2 questions are correct is $P[X \ge 2] = \Sexpr{prob1}$.
-\item The probability that at most 2 questions arecorrect is $P[X \le 2] = \Sexpr{prob2}$.
-\item The probability that there  will be between 1 and 3 questions is $P[1 \le X \le 3] = \Sexpr{prob3}$.
-\end{enumerate}
-	\end{solution}
+% 	\begin{solution}  % 2
+% <<label=LBL5-2, results="asis", echo=FALSE>>=
+%   N1 <- 10
+%   P1 <- .2
+% 
+%   prob1 <- 1 - pbinom(q=(2-1), size=N1, p=P1)
+%   prob2 <- pbinom(q=2, size=N1, p=P1)
+%   prob3 <- pbinom(q=3, size=N1, p=P1) - pbinom(q=(1-1), size=N1, p=P1)
+% @
+% 
+% \begin{enumerate}
+% \item The probability that at least 2 questions are correct is $P[X \ge 2] = \Sexpr{prob1}$.
+% \item The probability that at most 2 questions arecorrect is $P[X \le 2] = \Sexpr{prob2}$.
+% \item The probability that there  will be between 1 and 3 questions is $P[1 \le X \le 3] = \Sexpr{prob3}$.
+% \end{enumerate}
+% 	\end{solution}
 
   \begin{exercise} % 3
 
-Apple's smart phone market \\ share is  0.146. If Apple conducts a nationwide survey of 651 smart phone users,
+Apple's smartphone market \\ share is  0.146. If Apple conducts a nationwide survey of 651 smartphone users,
 
 \begin{enumerate}
 \item What is the probability that at least 100 of the people are Apple users?
@@ -314,35 +321,35 @@ Apple's smart phone market \\ share is  0.146. If Apple conducts a nationwide su
 
   \begin{exercise} % 4
 
-When rolling a die 10 \\ times,
+When rolling a die ten \\ times,
 
 \begin{enumerate}
-\item What is the probability of rolling a 6 no more than 3 times?
+\item What is the probability of rolling a six no more than three times?
 \item What is the probability that no less than 3 times?
 \end{enumerate}
 	\end{exercise}
-	\begin{solution}  % 4
-
-<<label=LBL5-4, results="asis", echo=FALSE>>=
-  N1 <- 10
-  P1 <- 1/6
-  prob1 <- pbinom(q=3, size=N1, p=P1)
-  prob2 <- 1 - pbinom(q=(3-1), size=N1, p=P1)
-@
-
-\begin{enumerate}
-\item The probability of rolling a 6 no more than 3 times is $P[X \le 3] = \Sexpr{prob1}$.
-\item The probability that no less than 3 times is $P[X \ge 3] = \Sexpr{prob2}$.
-\end{enumerate}
-  \end{solution}
+% 	\begin{solution}  % 4
+% 
+% <<label=LBL5-4, results="asis", echo=FALSE>>=
+%   N1 <- 10
+%   P1 <- 1/6
+%   prob1 <- pbinom(q=3, size=N1, p=P1)
+%   prob2 <- 1 - pbinom(q=(3-1), size=N1, p=P1)
+% @
+% 
+% \begin{enumerate}
+% \item The probability of rolling a 6 no more than 3 times is $P[X \le 3] = \Sexpr{prob1}$.
+% \item The probability that no less than 3 times is $P[X \ge 3] = \Sexpr{prob2}$.
+% \end{enumerate}
+%   \end{solution}
 
   \begin{exercise} % 5
 
-The career batting average of Ty Cobb is 0.3664. If Ty Cobb had 8 at bats during a doubleheader,
+The career batting average of Ty Cobb is 0.3664. If Ty Cobb had eight at-bats during a doubleheader,
 
 \begin{enumerate}
-\item What is the probability that he gets at least 7 hits?
-\item What is the probability that at most 1 hits?
+\item What is the probability that he gets at least seven hits?
+\item What is the probability that at most one hits?
 \item What is the probability that between 4 and 6?
 \end{enumerate}
 	\end{exercise}
@@ -367,17 +374,17 @@ The career batting average of Ty Cobb is 0.3664. If Ty Cobb had 8 at bats during
 
 Fill in the blanks. The probability of picking the Powerball number is \\ 0.0254. If 50 tickets are purchased, around \underline{\phantom{xxxxxxxx}} of  tickets will be winners,  give or take  \underline{\phantom{xxxxxxxx}}.    Assume each pick is independent.
 	\end{exercise}
-	\begin{solution}  % 6
-<<label=LBL5-6, results="asis", echo=FALSE>>=
-  N1 <- 50
-  P1 <- 0.0254
-  MN1 <- N1 * P1
-  SD1 <- sqrt(N1*P1*(1-P1))
-@
-
-The expected value is \Sexpr{MN1} and SD is \Sexpr{SD1}
-
-	\end{solution}
+% 	\begin{solution}  % 6
+% <<label=LBL5-6, results="asis", echo=FALSE>>=
+%   N1 <- 50
+%   P1 <- 0.0254
+%   MN1 <- N1 * P1
+%   SD1 <- sqrt(N1*P1*(1-P1))
+% @
+% 
+% The expected value is \Sexpr{MN1} and SD is \Sexpr{SD1}
+% 
+% 	\end{solution}
 
 		\begin{exercise}  % 7
 

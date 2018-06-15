@@ -137,20 +137,21 @@
 \contentsline {subsubsection}{\nonumberline Example 1}{74}{section*.68}
 \contentsline {subsubsection}{\nonumberline Example 2}{74}{section*.69}
 \contentsline {subsubsection}{\nonumberline Example 3}{74}{section*.70}
-\contentsline {section}{\numberline {7.3}Computing Binomial Probabilities}{75}{section.7.3}
+\contentsline {section}{\numberline {7.3}Computing Binomial Probabilities}{74}{section.7.3}
 \contentsline {subsubsection}{\nonumberline Example 3}{75}{section*.71}
 \contentsline {section}{\numberline {7.4}Expected Value and SD of a Binomial Random Variable}{76}{section.7.4}
-\contentsline {section}{\numberline {7.5}Computing Binomial Probabilities Using the Normal Curve}{77}{section.7.5}
-\contentsline {section}{\numberline {7.6}Some Approximations Are Better Than Others}{78}{section.7.6}
-\contentsline {section}{\numberline {7.7}Exercises}{81}{section.7.7}
+\contentsline {section}{\numberline {7.5}Computing Binomial Probabilities Using the Normal Curve}{76}{section.7.5}
+\contentsline {section}{\numberline {7.6}Some Approximations Are Better Than Others}{77}{section.7.6}
+\contentsline {section}{\numberline {7.7}Key Words}{78}{section.7.7}
+\contentsline {section}{\numberline {7.8}Exercises}{81}{section.7.8}
 \contentsline {paragraph}{\nonumberline Exercises}{81}{section*.72}
-\contentsline {subparagraph}{\nonumberline Exercise{}~7.7-1:}{81}{section*.73}
-\contentsline {subparagraph}{\nonumberline Exercise{}~7.7-2:}{81}{section*.74}
-\contentsline {subparagraph}{\nonumberline Exercise{}~7.7-3:}{81}{section*.75}
-\contentsline {subparagraph}{\nonumberline Exercise{}~7.7-4:}{81}{section*.76}
-\contentsline {subparagraph}{\nonumberline Exercise{}~7.7-5:}{81}{section*.77}
-\contentsline {subparagraph}{\nonumberline Exercise{}~7.7-6:}{81}{section*.78}
-\contentsline {subparagraph}{\nonumberline Exercise{}~7.7-7:}{82}{section*.79}
+\contentsline {subparagraph}{\nonumberline Exercise{}~7.8-1:}{81}{section*.73}
+\contentsline {subparagraph}{\nonumberline Exercise{}~7.8-2:}{81}{section*.74}
+\contentsline {subparagraph}{\nonumberline Exercise{}~7.8-3:}{81}{section*.75}
+\contentsline {subparagraph}{\nonumberline Exercise{}~7.8-4:}{81}{section*.76}
+\contentsline {subparagraph}{\nonumberline Exercise{}~7.8-5:}{81}{section*.77}
+\contentsline {subparagraph}{\nonumberline Exercise{}~7.8-6:}{81}{section*.78}
+\contentsline {subparagraph}{\nonumberline Exercise{}~7.8-7:}{82}{section*.79}
 \contentsline {chapter}{\numberline {8}Sampling Distribution of the Proportion}{83}{chapter.8}
 \contentsline {section}{\numberline {8.1}Objective}{83}{section.8.1}
 \contentsline {section}{\numberline {8.2}The Sample Proportion}{83}{section.8.2}
