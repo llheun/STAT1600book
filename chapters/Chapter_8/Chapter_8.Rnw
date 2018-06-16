@@ -9,29 +9,19 @@ After completing this part, students should be able to:
 
 \fbox{\parbox{14cm}{
 \begin{itemize}
-\item Explain the purpose of inferential statistics.
-\item Define and explain the basic techniques of random sampling.
-\item Explain and define these key terms:
-	\begin{itemize}
-	\item Population
-	\item Parameter
-	\item Sample
-	\item Statistic
-	\item Equal Probability of SElection Method.
-	\end{itemize}
+\item Describe and use the sampling distribution of the proportion.
 
-\item Differentiate between the sampling distribution, the sample, the  population.
-\item Explain the two theorems presented.
+
 \end{itemize}
 }}
 
 \section{The Sample Proportion}
 
-Suppose a student guesses at the answer on every question in a 300-question exam.  If he gets 60 questions correct, then his proportion of correct guesses is $60/300 = 0.20$.  If he gets 75 questions correct, then his proportion of correct guesses in $75/300 = 0.25$.  The proportion of correct guesses is simply the number of correct guesses divided by the total number of questions.
+Suppose a student guesses at the answer to every question in a 300-question exam.  If he gets 60 questions correct, then his proportion of correct guesses is $60/300 = 0.20$.  If he gets 75 questions correct, then his proportion of correct guesses in $75/300 = 0.25$.  The proportion of correct guesses is simply the number of correct guesses divided by the total number of questions.
 
-Similarly, if Best Buy's Geek Squad replacement plan sells 60 extended warranties with 300 smart watches sold, then its protection plan sales rate is $60/300 = 0.20$. If it sold 75 protection plans, this is a sales rate of $75/300 = 0.25$.  The warranty or protection plan sales rate, is simply the number of warranties sold divided by the total number of smart watches sold.
+Similarly, if Best Buy's Geek Squad replacement plan sells 60 extended warranties with 300 smartwatches sold, then its protection plan sales rate is $60/300 = 0.20$. If it sold 75 protection plans, this is a sales rate of $75/300 = 0.25$.  The warranty or protection plan sales rate is merely the number of warranties sold divided by the total number of smartwatches sold.
 
-Now, let $X$ denote the number of successes out of a sample of $n$ observations. If each observation is a success with probability p independently of the other observations, then $X$ is a binomial random variable with parameters $n$ and $p$.  Furthermore, the proportion of successes in the sample is also a random variable and is computed as
+Now, let $X$ denote the number of successes out of a sample of $n$ observations. If each response is a success with probability p independently of the other observations, then $X$ is a binomial random variable with parameters $n$ and $p$.  Furthermore, the proportion of successes in the sample is also a random variable and is computed as
 
 \begin{equation*}
   \hat{p} = \frac{X}{n} = \frac{\textit{Number of successes}}{\textit{Number observations in the sample}}
@@ -39,7 +29,7 @@ Now, let $X$ denote the number of successes out of a sample of $n$ observations.
 
 Since X is expected to be around $np$ give or take $\sqrt{npq}$, then $X/n$ is expected to be around $np/p$ give or take $\sqrt{npq}/n$, or $p$ give or take $\sqrt{pq}/\sqrt{n}$.  Make sure that you agree with the last statement before moving on.  It may help to think of this analogy: Suppose annual rainfall in Kalamazoo is expected to be around 24 inches give or take 6 inches.  How do we change the measurement from inches to feet?  We divide both numbers by 12! In feet, annual rainfall in Kalamazoo is expected to be around $24/12$ give or take $6/12$, or 2 feet give or take 0.5 feet.  Now read the first sentence of this paragraph one more time.
 
-Going back to the Best Buy example, the number of protection plans sold is expected to be around $60 \pm 7$.   Thus, the proportion of plans sold is expected to be around $60/300 \pm 7/300$, or $0.20 \pm 0.02$.
+Going back to the Best Buy example, the number of protection plans sold is expected to be around $60 \pm 7$.   Thus, the proportion of plans sold is supposed to be about $60/300 \pm 7/300$, or $0.20 \pm 0.02$.
 
 We summarize the formulas for the mean and SD of X and $\hat{p}$ in the following table.
 
@@ -62,7 +52,7 @@ $\hat{p}$ & $p$ & $\sqrt{\frac{pq}{n}}$  \\ \hline
 \begin{minipage}[ht]{11cm}
 
 \parbox{11cm}{
-If the local Best Buy sold 1200 smart watches last year,
+If the local Best Buy store sold 1200 smartwatches last year,
 
 \begin{enumerate}
 \item the proportion of sets sold with extended protection plans should be around 0.20, give or take \underline{\phantom{xxxxxxxx}}.
@@ -71,7 +61,7 @@ If the local Best Buy sold 1200 smart watches last year,
 }
 \end{minipage}
 
-Data analysis sometimes involves percentages instead of proportions.  Proportions and percentages are two ways of saying the same thing (e.g. we refer to $1/5$ as either 0.20 or 20\%).  How do we convert a proportion to a percentage?  We multiply by 100\%.  In order to avoid repetition, we present all statistical formulas in proportions.  As Exercise 1 shows, the answers can always be converted to percentages in the end.
+Data analysis sometimes involves percentages instead of proportions.  Proportions and percentages are two ways of saying the same thing (e.g., we refer to $1/5$ as either 0.20 or 20\%).  How do we convert a proportion to a percentage?  We multiply by 100\%.  To avoid repetition, we present all statistical formulas in proportions.  As Exercise 1 shows, we will convert all the answers to percentages in the end.
 
 \begin{minipage}[ht]{3cm}
 
@@ -82,7 +72,7 @@ Data analysis sometimes involves percentages instead of proportions.  Proportion
 \begin{minipage}[ht]{11cm}
 
 \parbox{11cm}{
-Historically, 5\% of video game rentals from Gamers Retro Rental are returned late.
+Historically, 5\% of customers return their video game rentals from Gamers Retro Rental late.
 
 \begin{enumerate}
 \item Gamers Retro Rental rented out 100 video games yesterday.  The percentage that will be returned late should be around 5\%, give or take \underline{\phantom{xxxxxxx}}.
@@ -91,7 +81,7 @@ Historically, 5\% of video game rentals from Gamers Retro Rental are returned la
 }
 \end{minipage}
 
-Exercise 2 is an illustration of the law of large numbers.  A simpler illustration involves a coin toss.  If you toss a coin repeatedly, which tends to get closer to 50\% heads: 100 tosses or 700 tosses?  The correct answer is 700.  The larger the number of tosses, the closer we expect to get to 50\%.  The reason for this, as the Exercise shows, is the smaller give or take value.  The sample size, $n$, lies in the denominator of the SD of $\hat{p}$.  Therefore, the larger the sample size, the smaller the SD, which happens to be the give-or-take value.
+Exercise 2 is an example of the law of large numbers.  A more straightforward illustration involves a coin toss.  If you toss a coin repeatedly, which tends to get closer to 50\% heads: 100 tosses or 700 tosses?  The correct answer is 700.  As the number of tosses increases, the closer we expect to get to 50\%.  The reason for this, as the Exercise shows, is the smaller give or take value.  The sample size, $n$, lies in the denominator of the SD of $\hat{p}$.  Therefore, the larger the sample size, the smaller the SD, which happens to be the give-or-take value.
 
 \fbox{\parbox{14cm}{
 \textbf{The Law of Large Numbers for Sample Percentages:} \\
@@ -148,15 +138,15 @@ The question is equivalent to `What is the probability that$\hat{p}$ exceed 0.60
 \begin{minipage}[ht]{11cm}
 
 \parbox{11cm}{
-If Best Buy sold 1200 smart watches last year, the percentage of smart watches sold with extended protection plans is expected to be around 20\%, give or take \underline{\phantom{xxxxxx}}.  Estimate the likelihood that it sold protection plans with more than 25\% of those watches.
+If Best Buy sold 1200 smartwatches last year, the percentage of smartwatches sold with extended protection plans is expected to be around 20\%, give or take \underline{\phantom{xxxxxx}}.  Estimate the likelihood that it sold protection plans with more than 25\% of those watches.
 }
 \end{minipage}
 
 \section{Estimating the Population Proportion p}
 
-The Best Buy computations in the previous section assume that we know the protection plan sales rate is $p = 0.20$.  In data analysis, population parameters like $p$ are typically unknown and estimated from the data.  Consider estimating the proportion p of the current WMU graduating class who plan to go to graduate school.  Suppose we take a sample of 40 graduating students and suppose that 6 out of the 40 are planning to go to graduate school.  Then our estimate is $\hat{p} = \frac{6}{40} = 0.15$ of the graduating class plan to go to graduate school.  Now $\hat{p}$ is based on a sample, and unless we got really lucky, chances are the 0.15 estimate missed.  By how much?  On the average, a random variable misses the mean by one SD.  From the previous section, the SD of $\hat{p}$  equals $\sqrt{ \frac{pq}{n}}$.   It follows that the expected size of the miss is $\sqrt{ \frac{pq}{n}}$.   This last term is the \textit{standard error of estimation of the sample proportion}, or simply \textbf{standard error (SE)} of the proportion.
+The Best Buy computations in the previous section assume that we know the protection plan sales rate is $p = 0.20$.  In data analysis, population parameters like $p$ are typically unknown and estimated from the data.  Consider estimating the proportion p of the current WMU graduating class who plan to go to graduate school.  Suppose we take a sample of 40 graduating students and suppose that 6 out of the 40 are planning to go to graduate school.  Then our estimate is $\hat{p} = \frac{6}{40} = 0.15$ of the graduating class plan to go to graduate school.  Now $\hat{p}$ is based on a sample, and unless we got fortunate, chances are the 0.15 estimate missed.  By how much?  On the average, a random variable misses the mean by one SD.  From the previous section, the SD of $\hat{p}$  equals $\sqrt{ \frac{pq}{n}}$.   It follows that the expected size of the miss is $\sqrt{ \frac{pq}{n}}$.   This last term is the \textit{standard error of estimation of the sample proportion}, or simply \textbf{standard error (SE)} of the proportion.
 
-However, since we don't know $p$, we cannot calculate this SE.  In a situation like this, statisticians replace $p$ with $\hat{p}$  when calculating the SE.  The resulting quantity is called the \textit{estimated standard error of the sample proportion}.  In practice, however, the word ``estimated'' is dropped and estimated SE is simply called the SE.
+However, since we don't know $p$, we cannot calculate this SE.  In a situation like this, statisticians replace $p$ with $\hat{p}$  when calculating the SE.  The resulting quantity is called the \textit{estimated standard error of the sample proportion}.  In practice, however, the word ``estimated'' is dropped and estimated SE is called merely the SE.
 
 \fbox{\parbox{14cm}{The population $p$ is \textbf{estimated using the sample proportion $\hat{p}$}.  This estimate tends to miss by an amount called the \textbf{standard error (SE)} of $\hat{p}$.
 }}
@@ -185,14 +175,14 @@ Fill in the following blanks.
 }
 \end{minipage}
 
-Exercise 4 shows the effect of increasing the sample size on the SE of the sample proportion.  Multiplying the sample size by a factor of 9 (from 40 to 360) makes the SE decrease by a factor of 3.  In the formula for the SE of $\hat{p}$,  the sample size appears (i) in the denominator, and (ii) inside a square root.  Therefore, multiplying the sample size by a certain factor divides the SE of $\hat{p}$ by the square root of that factor.
+Exercise 4 shows the effect of increasing the sample size on the SE of the sample proportion.  Multiplying the sample size by a factor of 9 (from 40 to 360) makes the SE decrease by a factor of 3.  In the formula for the SE of $\hat{p}$,  the sample size appears (i) in the denominator, and (ii) inside a square root.  Therefore, multiplying the sample size by a specific factor divides the SE of $\hat{p}$ by the square root of that factor.
 
 \fbox{\parbox{14cm}{As the sample size $n$ \textbf{increases}, the $SE_{\hat{p}}$ \textbf{decreases} like the square root of the sample size.
 }}
 
 \section{Estimating Population Proportion Using Intervals}
 
-Variables tend to miss their expected value but should be within \textit{one} SD 68\% of the time, and within 1.96 SD 95\% of the time.  Since the SE of $\hat{p}$ is simply an estimate of the SD, then we can write $| \hat{p} - p | \le 1.96(SE)$ or that $p$ is inside the interval $\hat{p} \pm 1.96(SE)$ 95\% of the time.  In other words, the interval $\hat{p} \pm 1.96(SE)$ contains the true value of $p$ with 95\% certainty.  This gives us an interval estimate for $p$.
+Variables tend to miss their expected value but should be within \textit{one} SD 68\% of the time, and within 1.96 SD 95\% of the time.  Since the SE of $\hat{p}$ is simply an estimate of the SD, then we can write $| \hat{p} - p | \le 1.96(SE)$ or that $p$ is inside the interval $\hat{p} \pm 1.96(SE)$ 95\% of the time.  In other words, the interval $\hat{p} \pm 1.96(SE)$ contains the true value of $p$ with 95\% certainty.  This method gives us an interval estimate of $p$.
 
 \fbox{\parbox{14cm}{ \textbf{95\% Confidence Interval for p:} \\ A 95\% confidence interval estimate for the population proportion $p$ is given by
 
@@ -202,7 +192,7 @@ Variables tend to miss their expected value but should be within \textit{one} SD
 
 }}
 
-The term $1.96 \sqrt{\frac{\hat{p} \hat{q}}{n}}$ is called the 95\% margin of error.
+The term $1.96 \sqrt{\frac{\hat{p} \hat{q}}{n}}$ is the 95\% margin of error.
 
 \begin{minipage}[ht]{3cm}
 
@@ -228,7 +218,7 @@ Try the following problems.
 If 9 out of 25 randomly selected WMU students live in Southwest Michigan, the 95\% confidence interval for the true proportion is $\hat{p} \pm 1.96 \sqrt{\frac{\hat{p} \hat{q}}{n}} = 0.36 \pm 0.19$.  This result says that the true proportion can be as low as 0.17 or as high as 0.55.  If we wanted to reduce the margin of error from 0.19 to some value $M$, then we set the formula for margin of error equal to $M$, i.e. $M = 1.96 \sqrt{\frac{\hat{p} \hat{q}}{n}}$.  Solving for $n$ gives the result we need.
 
 \fbox{\parbox{14cm}{
-To be 95\% confident that the sample proportion is within a distance $M$ of the true proportion $p$, choose a sample size equal to
+To be 95\% confident that the sample proportion is within a distance of $M$ of the true proportion $p$, choose a sample size equal to
 
 \begin{equation*}
  n = (1.96)^2 \frac{ \hat{p} \hat{q}}{M^2}
@@ -238,8 +228,27 @@ where $\hat{p}$ is an estimate based on historical data or a pilot study.  The q
 
 }}
 
-\subsubsection{Example:} Suppose we want to reduce the margin of error for estimating the population proportion from 0.19 to 0.10.  Using the estimate $\hat{p} = 0.36$  based on the initial sample, the sample size we need is: $
-n = (1.96)^2 \frac{(0.36)(0.64)}{0.10^2} = 89.$  To verify that this is the correct sample size, the 95\% confidence interval would be computed (if the sample proportion remained at 0.36) as $ 0.36 \pm (1.96)^2 \frac{(0.36)(0.64)}{(0.10)^2} = 89$.  To verify that this is the correct sample size, the 95\% confidence interval would be computed (if the sample proportion remained at 0.36) as $0.36 \pm (1.96) \sqrt{ \frac{0.36(0.64)}{89}} = 0.36 \pm 0.10$.
+\subsubsection{Example:} Suppose we want to reduce the margin of error for estimating the population proportion from 0.19 to 0.10.  Using the estimate $\hat{p} = 0.36$  based on the initial sample, the sample size we need is: $n = (1.96)^2 \frac{(0.36)(0.64)}{0.10^2} = 89.$  To verify that this is the correct sample size, the 95\% confidence interval would be computed (if the sample proportion remained at 0.36) as $ 0.36 \pm (1.96)^2 \frac{(0.36)(0.64)}{(0.10)^2} = 89$.  To verify that this is the correct sample size, the 95\% confidence interval would be computed (if the sample proportion remained at 0.36) as $0.36 \pm (1.96) \sqrt{ \frac{0.36(0.64)}{89}} = 0.36 \pm 0.10$.
+
+\section{Key Words}
+
+\fbox{\parbox{14cm}{
+\begin{minipage}[ht]{6cm}
+\begin{itemize}
+\item binomial distribution
+\item binomial experiment
+\item binomial random variable
+\end{itemize}
+\end{minipage} \hfill
+\begin{minipage}[ht]{6cm}
+\begin{itemize}
+\item binomial tables
+\item discrete random variables
+\end{itemize}
+\end{minipage}
+}}
+
+
 
 % \pagebreak
 \twocolumn
@@ -263,7 +272,7 @@ $P[ X \ge 32 ] = \Sexpr{prob61}
 
 \begin{exercise} % 2
 
-A sample of 100 observa- \\ tions is taken with 20 successes.
+Let's say that we take a \\ sample of 100 observation has 20 successes.
 
 \begin{enumerate}
 \item What is the estimate of the population proportion?
@@ -273,150 +282,150 @@ A sample of 100 observa- \\ tions is taken with 20 successes.
 \end{enumerate}
 
 \end{exercise}
-\begin{solution} % 2
-<<label=LBL6-2, results="asis", echo=FALSE>>=
-  N1 <- 100
-  X1 <- 20
-  prob62a <- X1 /N1
-  SE62b   <- sqrt(prob62a * (1 - prob62a) / N1)
-  me62c   <- 1.96 * SE62b
-@
-
-\begin{enumerate}
-\item The estimate of the population proportion is \Sexpr{prob62a}
-\item The standard error of this estimate is \Sexpr{SE62b}
-\item The 95\% margin of error is \Sexpr{me62c}
-\item The 95\% confidence interval is $\Sexpr{prob62a} \pm \Sexpr{me62c}$
-\end{enumerate}
-\end{solution}
-
-\begin{exercise} % 3
-
-A sample of 100 individuals \\ showed that 20\% experienced gastrointestinal \\ problems  after consuming 10 grams of sorbitol, a common artificial sweetener.  Attach a standard error to this estimate.
-\end{exercise}
-\begin{solution} % 3
-<<label=LBL6-3, results="asis", echo=FALSE>>=
-  N1 <- 100
-  prob63a <- .2
-  SE63b   <- sqrt(prob63a * (1 - prob63a) / N1)
-  me63c   <- 1.96 * SE62b
-@
-
-The standard error of this estimate is \Sexpr{SE63b}
-
-\end{solution}
-
-\begin{exercise} % 4
-
-When a flight experiences fewer no-shows than expected, some passengers are \\ `bumped' from their flights (are denied boarding).  These incidents can reflect poorly on customer satisfaction.  Suppose United Airlines (for example) would like to estimate the true proportion of involuntarily bumped passengers across all domestic flights in the industry.  In a pilot study of 500 domestic passengers, 33 were involuntarily bumped.
-
-\begin{enumerate}
-\item	What is the estimate of the population proportion?
-\item	What is the standard error of this \\ estimate?
-\item	What is the 95\% margin of error?
-\item	What is the 95\% confidence interval?
-\end{enumerate}
-\end{exercise}
-\begin{solution} % 4
-<<label=LBL6-4, results="asis", echo=FALSE>>=
-  N1 <- 500
-  X1 <- 33
-  prob64a <- X1 /N1
-  SE64b   <- sqrt(prob64a * (1 - prob64a) / N1)
-  me64c   <- 1.96 * SE64b
-@
-
-\begin{enumerate}
-\item	The estimate of the population proportion is \\ $\hat{p} = \Sexpr{prob64a}$
-\item	The standard error of this estimate is \\ $SE_{\hat{p}} = \Sexpr{SE64b}$
-\item	The 95\% margin of error is $M_{\hat{p}} = \Sexpr{me64c}$
-\item	The 95\% confidence interval is \\ $\Sexpr{prob64a} \pm \Sexpr{me64c}$
-\end{enumerate}
-\end{solution}
-
-\begin{exercise} % 5
-
-An appliance manufacturer offers maintenance contracts on its major appliances.  A manager wants to know what fraction of buyers of the company's convection ovens are also buying the maintenance contract with the oven.  From a random sample of 120 sales slips, 31 of the oven buyers opted for the contract.
-
-\begin{enumerate}
-\item	The proportion of customers who buy the contract along with their oven is estimated as \underline{\phantom{xxxxxxxxxx}}.
-\item	Calculate a standard error for the estimate in (a).
-\item	Calculate a 95\% confidence interval estimate for the true proportion of customers who buy the contract along with their oven.
-\end{enumerate}
-\end{exercise}
-\begin{solution} % 5
-<<label=LBL6-5, results="asis", echo=FALSE>>=
-  N1 <- 120
-  X1 <- 31
-  prob65a <- X1 /N1
-  SE65b   <- sqrt(prob65a * (1 - prob65a) / N1)
-  me65c   <- 1.96 * SE65b
-@
-
-\begin{enumerate}
-\item	The estimate of the population proportion is \\ $\hat{p} = \Sexpr{prob65a}$
-\item	The standard error of this estimate is \\ $SE_{\hat{p}} = \Sexpr{SE65b}$
-\item	The 95\% confidence interval is \\ $\Sexpr{prob65a} \pm \Sexpr{me65c}$
-\end{enumerate}
-\end{solution}
-
-\begin{exercise} % 6
-
-Wiley Publications has determined that out of a sample of 5,511 of its publications for 2012, 1,754 of them are pirated in some form.
-
-\begin{enumerate}
-\item	What is the estimate of the population proportion?
-\item	What is the standard error of this \\ estimate?
-\item	What is the 95\% margin of error?
-\item	What is the 95\% confidence interval?
-\end{enumerate}
-\end{exercise}
-\begin{solution} % 6
-<<label=LBL6-6, results="asis", echo=FALSE>>=
-  N1 <- 5511
-  X1 <- 1754
-  prob66a <- X1 /N1
-  SE66b   <- sqrt(prob66a * (1 - prob66a) / N1)
-  me66c   <- 1.96 * SE66b
-@
-
-\begin{enumerate}
-\item	The estimate of the population proportion is \\ $\hat{p} = \Sexpr{prob66a}$
-\item	The standard error of this estimate is \\ $SE_{\hat{p}} = \Sexpr{SE66b}$
-\item The margin of error the estimate is \\ $M_{\hat{p}} = \Sexpr{me66c}$
-\item	The 95\% confidence interval is \\ $\Sexpr{prob66a} \pm \Sexpr{me66c}$
-\end{enumerate}
-\end{solution}
-
-\begin{exercise} % 7
-
-Researchers who were \\ concerned if doctors were consistently adjusting dosages for weight of elderly patients studied 2000 prescriptions.  They found that for 600 of the  prescriptions, the doctors failed to adjust the \\ dosages.
-
-\begin{enumerate}
-\item	Doctors fail to adjust dosage for an estimated \underline{\phantom{xxxxxxxx}}  percent of prescriptions.
-\item	Calculate a standard error for the percentage in (a).
-\item	Calculate a 95\% margin of error for the percentage in (a).
-\item	Calculate a 95\% interval estimate for the true proportion
-\item	Calculate a 95\% confidence interval for the true percentage of prescriptions  \\ where doctors fail to adjust dosages.
-\end{enumerate}
-\end{exercise}
-\begin{solution} % 7
-<<label=LBL6-7, results="asis", echo=FALSE>>=
-  N1 <- 2000
-  X1 <- 600
-  prob67a <- X1 /N1
-  SE67b   <- sqrt(prob67a * (1 - prob67a) / N1)
-  me67c   <- 1.96 * SE67b
-@
-
-\begin{enumerate}
-\item	The estimate of the population proportion is \\ $\hat{p} = \Sexpr{prob67a}$
-\item	The standard error of this estimate is \\ $SE_{\hat{p}} = \Sexpr{SE67b}$
-\item The margin of error the estimate is \\ $M_{\hat{p}} = \Sexpr{me67c}$
-\item	The 95\% confidence interval is \\ $\Sexpr{prob67a} \pm \Sexpr{me67c}$
-\item	The 95\% confidence interval is \\ $\Sexpr{prob67a} \pm \Sexpr{me67c}$
-\end{enumerate}
-\end{solution}
+% \begin{solution} % 2
+% <<label=LBL6-2, results="asis", echo=FALSE>>=
+%   N1 <- 100
+%   X1 <- 20
+%   prob62a <- X1 /N1
+%   SE62b   <- sqrt(prob62a * (1 - prob62a) / N1)
+%   me62c   <- 1.96 * SE62b
+% @
+%
+% \begin{enumerate}
+% \item The estimate of the population proportion is \Sexpr{prob62a}
+% \item The standard error of this estimate is \Sexpr{SE62b}
+% \item The 95\% margin of error is \Sexpr{me62c}
+% \item The 95\% confidence interval is $\Sexpr{prob62a} \pm \Sexpr{me62c}$
+% \end{enumerate}
+% \end{solution}
+ 
+% \begin{exercise} % 3
+% 
+% A sample of 100 individuals \\ showed that 20\% experienced gastrointestinal \\ problems  after consuming 10 grams of sorbitol, a common artificial sweetener.  Attach a standard error to this estimate.
+% \end{exercise}
+% \begin{solution} % 3
+% <<label=LBL6-3, results="asis", echo=FALSE>>=
+%   N1 <- 100
+%   prob63a <- .2
+%   SE63b   <- sqrt(prob63a * (1 - prob63a) / N1)
+%   me63c   <- 1.96 * SE62b
+% @
+% 
+% The standard error of this estimate is \Sexpr{SE63b}
+% 
+% \end{solution}
+% 
+% \begin{exercise} % 4
+% 
+% When a flight experiences fewer no-shows than expected, some passengers are \\ `bumped' from their flights (are denied boarding).  These incidents can reflect poorly on customer satisfaction.  Suppose United Airlines (for example) would like to estimate the actual proportion of involuntarily bumped passengers across all domestic flights in the industry.  In a pilot study of 500 domestic passengers, 33 were involuntarily bumped.
+% 
+% \begin{enumerate}
+% \item	What is the estimate of the population proportion?
+% \item	What is the standard error of this \\ estimate?
+% \item	What is the 95\% margin of error?
+% \item	What is the 95\% confidence interval?
+% \end{enumerate}
+% \end{exercise}
+% % \begin{solution} % 4
+% % <<label=LBL6-4, results="asis", echo=FALSE>>=
+% %   N1 <- 500
+% %   X1 <- 33
+% %   prob64a <- X1 /N1
+% %   SE64b   <- sqrt(prob64a * (1 - prob64a) / N1)
+% %   me64c   <- 1.96 * SE64b
+% % @
+% % 
+% % \begin{enumerate}
+% % \item	The estimate of the population proportion is \\ $\hat{p} = \Sexpr{prob64a}$
+% % \item	The standard error of this estimate is \\ $SE_{\hat{p}} = \Sexpr{SE64b}$
+% % \item	The 95\% margin of error is $M_{\hat{p}} = \Sexpr{me64c}$
+% % \item	The 95\% confidence interval is \\ $\Sexpr{prob64a} \pm \Sexpr{me64c}$
+% % \end{enumerate}
+% % \end{solution}
+% 
+% \begin{exercise} % 5
+% 
+% An appliance manufacturer offers maintenance contracts on its major appliances.  A manager wants to know what fraction of buyers of the company's convection ovens are also buying the maintenance contract with the oven.  From a random sample of 120 sales slips, 31 of the oven buyers opted for the contract.
+% 
+% \begin{enumerate}
+% \item	The proportion of customers who buy the contract along with their oven is estimated as \underline{\phantom{xxxxxxxxxx}}.
+% \item	Calculate a standard error for the estimate in (a).
+% \item	Calculate a 95\% confidence interval estimate for the true proportion of customers who buy the contract along with their oven.
+% \end{enumerate}
+% \end{exercise}
+% \begin{solution} % 5
+% <<label=LBL6-5, results="asis", echo=FALSE>>=
+%   N1 <- 120
+%   X1 <- 31
+%   prob65a <- X1 /N1
+%   SE65b   <- sqrt(prob65a * (1 - prob65a) / N1)
+%   me65c   <- 1.96 * SE65b
+% @
+% 
+% \begin{enumerate}
+% \item	The estimate of the population proportion is \\ $\hat{p} = \Sexpr{prob65a}$
+% \item	The standard error of this estimate is \\ $SE_{\hat{p}} = \Sexpr{SE65b}$
+% \item	The 95\% confidence interval is \\ $\Sexpr{prob65a} \pm \Sexpr{me65c}$
+% \end{enumerate}
+% \end{solution}
+% 
+% \begin{exercise} % 6
+% 
+% Wiley Publications has determined that out of a sample of 5,511 of its publications for 2012, 1,754 of them are pirated in some form.
+% 
+% \begin{enumerate}
+% \item	What is the estimate of the population proportion?
+% \item	What is the standard error of this \\ estimate?
+% \item	What is the 95\% margin of error?
+% \item	What is the 95\% confidence interval?
+% \end{enumerate}
+% \end{exercise}
+% % \begin{solution} % 6
+% % <<label=LBL6-6, results="asis", echo=FALSE>>=
+% %   N1 <- 5511
+% %   X1 <- 1754
+% %   prob66a <- X1 /N1
+% %   SE66b   <- sqrt(prob66a * (1 - prob66a) / N1)
+% %   me66c   <- 1.96 * SE66b
+% % @
+% % 
+% % \begin{enumerate}
+% % \item	The estimate of the population proportion is \\ $\hat{p} = \Sexpr{prob66a}$
+% % \item	The standard error of this estimate is \\ $SE_{\hat{p}} = \Sexpr{SE66b}$
+% % \item The margin of error the estimate is \\ $M_{\hat{p}} = \Sexpr{me66c}$
+% % \item	The 95\% confidence interval is \\ $\Sexpr{prob66a} \pm \Sexpr{me66c}$
+% % \end{enumerate}
+% % \end{solution}
+% 
+% \begin{exercise} % 7
+% 
+% Researchers who were \\ concerned if doctors were consistently adjusting dosages for the weight of elderly patients studied 2000 prescriptions.  They found that for 600 of the  prescriptions, the doctors failed to change the \\ dosages.
+% 
+% \begin{enumerate}
+% \item	Doctors fail to adjust dosage for an estimated \underline{\phantom{xxxxxxxx}}  percent of prescriptions.
+% \item	Calculate a standard error for the percentage in (a).
+% \item	Calculate a 95\% margin of error for the percentage in (a).
+% \item	Calculate a 95\% interval estimate for the true proportion
+% \item	Calculate a 95\% confidence interval for the true percentage of prescriptions  \\ where doctors fail to adjust dosages.
+% \end{enumerate}
+% \end{exercise}
+% \begin{solution} % 7
+% <<label=LBL6-7, results="asis", echo=FALSE>>=
+%   N1 <- 2000
+%   X1 <- 600
+%   prob67a <- X1 /N1
+%   SE67b   <- sqrt(prob67a * (1 - prob67a) / N1)
+%   me67c   <- 1.96 * SE67b
+% @
+% 
+% \begin{enumerate}
+% \item	The estimate of the population proportion is \\ $\hat{p} = \Sexpr{prob67a}$
+% \item	The standard error of this estimate is \\ $SE_{\hat{p}} = \Sexpr{SE67b}$
+% \item The margin of error the estimate is \\ $M_{\hat{p}} = \Sexpr{me67c}$
+% \item	The 95\% confidence interval is \\ $\Sexpr{prob67a} \pm \Sexpr{me67c}$
+% \item	The 95\% confidence interval is \\ $\Sexpr{prob67a} \pm \Sexpr{me67c}$
+% \end{enumerate}
+% \end{solution}
 
 
 \end{exercises}
