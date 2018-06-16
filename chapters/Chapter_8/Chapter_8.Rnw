@@ -95,7 +95,7 @@ Since $\hat{p} = \frac{X}{n}$, the sampling distribution of $\hat{p}$ looks the 
 \begin{figure}[ht]
 
 \caption{Probability of Histogram and p-hat}
-<<label=LBL6a, results="asis", echo=FALSE, out.width="8cm">>=
+<<label=LBL8a, results="asis", echo=FALSE, out.width="8.2cm">>=
   dt1 <- rbinom(n=1000, size=30, p=0.40)
   hist(dt1, freq = FALSE, xlab="X", main="Histogram of n=30 & p=.4")
 @
@@ -260,14 +260,14 @@ where $\hat{p}$ is an estimate based on historical data or a pilot study.  The q
 Suppose that 20\% of students in a large university are graduate students.  If a random sample of 125 students are randomly selected, what is the probability that 25\% or more of the sample are graduate students?
 \end{exercise}
 \begin{solution} % 1
-<<label=LBL6-1, results="asis", echo=FALSE>>=
+<<label=LBL8-1, results="asis", echo=FALSE>>=
   N1 <- 125
   Q1 <- 0.25 * 125
   P1 <- 0.20
-  prob61 <- 1 - pbinom(q=Q1, size=N1, prob=P1)
+  prob81 <- 1 - pbinom(q=Q1, size=N1, prob=P1)
 @
 
-$P[ X \ge 32 ] = \Sexpr{prob61}
+$P[ X \ge 32 ] = \Sexpr{prob81}
 \end{solution}
 
 \begin{exercise} % 2
@@ -283,7 +283,7 @@ Let's say that we take a \\ sample of 100 observation has 20 successes.
 
 \end{exercise}
 % \begin{solution} % 2
-% <<label=LBL6-2, results="asis", echo=FALSE>>=
+% <<label=LBL8-2, results="asis", echo=FALSE>>=
 %   N1 <- 100
 %   X1 <- 20
 %   prob62a <- X1 /N1
@@ -299,133 +299,133 @@ Let's say that we take a \\ sample of 100 observation has 20 successes.
 % \end{enumerate}
 % \end{solution}
  
-% \begin{exercise} % 3
-% 
-% A sample of 100 individuals \\ showed that 20\% experienced gastrointestinal \\ problems  after consuming 10 grams of sorbitol, a common artificial sweetener.  Attach a standard error to this estimate.
-% \end{exercise}
-% \begin{solution} % 3
-% <<label=LBL6-3, results="asis", echo=FALSE>>=
-%   N1 <- 100
-%   prob63a <- .2
-%   SE63b   <- sqrt(prob63a * (1 - prob63a) / N1)
-%   me63c   <- 1.96 * SE62b
+\begin{exercise} % 3
+
+A sample of 100 individuals \\ showed that 20\% experienced gastrointestinal \\ problems  after consuming 10 grams of sorbitol, a common artificial sweetener.  Attach a standard error to this estimate.
+\end{exercise}
+\begin{solution} % 3
+<<label=LBL8-3, results="asis", echo=FALSE>>=
+  N1 <- 100
+  prob83a <- .2
+  SE83b   <- sqrt(prob83a * (1 - prob83a) / N1)
+  me83c   <- 1.96 * SE83b
+@
+
+The standard error of this estimate is \Sexpr{SE83b}
+
+\end{solution}
+
+\begin{exercise} % 4
+
+When a flight experiences fewer no-shows than expected, some passengers are \\ `bumped' from their flights (are denied boarding).  These incidents can reflect poorly on customer satisfaction.  Suppose United Airlines (for example) would like to estimate the actual proportion of involuntarily bumped \\ passengers across all domestic flights in the industry.  In a pilot study of 500 domestic passengers, 33 were involuntarily bumped.
+
+\begin{enumerate}
+\item	What is the estimate of the population proportion?
+\item	What is the standard error of this \\ estimate?
+\item	What is the 95\% margin of error?
+\item	What is the 95\% confidence interval?
+\end{enumerate}
+\end{exercise}
+% \begin{solution} % 4
+% <<label=LBL8-4, results="asis", echo=FALSE>>=
+%   N1 <- 500
+%   X1 <- 33
+%   prob64a <- X1 /N1
+%   SE64b   <- sqrt(prob64a * (1 - prob64a) / N1)
+%   me64c   <- 1.96 * SE64b
 % @
-% 
-% The standard error of this estimate is \Sexpr{SE63b}
-% 
-% \end{solution}
-% 
-% \begin{exercise} % 4
-% 
-% When a flight experiences fewer no-shows than expected, some passengers are \\ `bumped' from their flights (are denied boarding).  These incidents can reflect poorly on customer satisfaction.  Suppose United Airlines (for example) would like to estimate the actual proportion of involuntarily bumped passengers across all domestic flights in the industry.  In a pilot study of 500 domestic passengers, 33 were involuntarily bumped.
-% 
+%
 % \begin{enumerate}
-% \item	What is the estimate of the population proportion?
-% \item	What is the standard error of this \\ estimate?
-% \item	What is the 95\% margin of error?
-% \item	What is the 95\% confidence interval?
-% \end{enumerate}
-% \end{exercise}
-% % \begin{solution} % 4
-% % <<label=LBL6-4, results="asis", echo=FALSE>>=
-% %   N1 <- 500
-% %   X1 <- 33
-% %   prob64a <- X1 /N1
-% %   SE64b   <- sqrt(prob64a * (1 - prob64a) / N1)
-% %   me64c   <- 1.96 * SE64b
-% % @
-% % 
-% % \begin{enumerate}
-% % \item	The estimate of the population proportion is \\ $\hat{p} = \Sexpr{prob64a}$
-% % \item	The standard error of this estimate is \\ $SE_{\hat{p}} = \Sexpr{SE64b}$
-% % \item	The 95\% margin of error is $M_{\hat{p}} = \Sexpr{me64c}$
-% % \item	The 95\% confidence interval is \\ $\Sexpr{prob64a} \pm \Sexpr{me64c}$
-% % \end{enumerate}
-% % \end{solution}
-% 
-% \begin{exercise} % 5
-% 
-% An appliance manufacturer offers maintenance contracts on its major appliances.  A manager wants to know what fraction of buyers of the company's convection ovens are also buying the maintenance contract with the oven.  From a random sample of 120 sales slips, 31 of the oven buyers opted for the contract.
-% 
-% \begin{enumerate}
-% \item	The proportion of customers who buy the contract along with their oven is estimated as \underline{\phantom{xxxxxxxxxx}}.
-% \item	Calculate a standard error for the estimate in (a).
-% \item	Calculate a 95\% confidence interval estimate for the true proportion of customers who buy the contract along with their oven.
-% \end{enumerate}
-% \end{exercise}
-% \begin{solution} % 5
-% <<label=LBL6-5, results="asis", echo=FALSE>>=
-%   N1 <- 120
-%   X1 <- 31
-%   prob65a <- X1 /N1
-%   SE65b   <- sqrt(prob65a * (1 - prob65a) / N1)
-%   me65c   <- 1.96 * SE65b
-% @
-% 
-% \begin{enumerate}
-% \item	The estimate of the population proportion is \\ $\hat{p} = \Sexpr{prob65a}$
-% \item	The standard error of this estimate is \\ $SE_{\hat{p}} = \Sexpr{SE65b}$
-% \item	The 95\% confidence interval is \\ $\Sexpr{prob65a} \pm \Sexpr{me65c}$
+% \item	The estimate of the population proportion is \\ $\hat{p} = \Sexpr{prob64a}$
+% \item	The standard error of this estimate is \\ $SE_{\hat{p}} = \Sexpr{SE64b}$
+% \item	The 95\% margin of error is $M_{\hat{p}} = \Sexpr{me64c}$
+% \item	The 95\% confidence interval is \\ $\Sexpr{prob64a} \pm \Sexpr{me64c}$
 % \end{enumerate}
 % \end{solution}
-% 
-% \begin{exercise} % 6
-% 
-% Wiley Publications has determined that out of a sample of 5,511 of its publications for 2012, 1,754 of them are pirated in some form.
-% 
-% \begin{enumerate}
-% \item	What is the estimate of the population proportion?
-% \item	What is the standard error of this \\ estimate?
-% \item	What is the 95\% margin of error?
-% \item	What is the 95\% confidence interval?
-% \end{enumerate}
-% \end{exercise}
-% % \begin{solution} % 6
-% % <<label=LBL6-6, results="asis", echo=FALSE>>=
-% %   N1 <- 5511
-% %   X1 <- 1754
-% %   prob66a <- X1 /N1
-% %   SE66b   <- sqrt(prob66a * (1 - prob66a) / N1)
-% %   me66c   <- 1.96 * SE66b
-% % @
-% % 
-% % \begin{enumerate}
-% % \item	The estimate of the population proportion is \\ $\hat{p} = \Sexpr{prob66a}$
-% % \item	The standard error of this estimate is \\ $SE_{\hat{p}} = \Sexpr{SE66b}$
-% % \item The margin of error the estimate is \\ $M_{\hat{p}} = \Sexpr{me66c}$
-% % \item	The 95\% confidence interval is \\ $\Sexpr{prob66a} \pm \Sexpr{me66c}$
-% % \end{enumerate}
-% % \end{solution}
-% 
-% \begin{exercise} % 7
-% 
-% Researchers who were \\ concerned if doctors were consistently adjusting dosages for the weight of elderly patients studied 2000 prescriptions.  They found that for 600 of the  prescriptions, the doctors failed to change the \\ dosages.
-% 
-% \begin{enumerate}
-% \item	Doctors fail to adjust dosage for an estimated \underline{\phantom{xxxxxxxx}}  percent of prescriptions.
-% \item	Calculate a standard error for the percentage in (a).
-% \item	Calculate a 95\% margin of error for the percentage in (a).
-% \item	Calculate a 95\% interval estimate for the true proportion
-% \item	Calculate a 95\% confidence interval for the true percentage of prescriptions  \\ where doctors fail to adjust dosages.
-% \end{enumerate}
-% \end{exercise}
-% \begin{solution} % 7
-% <<label=LBL6-7, results="asis", echo=FALSE>>=
-%   N1 <- 2000
-%   X1 <- 600
-%   prob67a <- X1 /N1
-%   SE67b   <- sqrt(prob67a * (1 - prob67a) / N1)
-%   me67c   <- 1.96 * SE67b
+
+\begin{exercise} % 5
+
+An appliance manufacturer offers maintenance contracts on its major appliances.  A manager wants to know what fraction of buyers of the company's convection ovens are also buying the maintenance contract with the oven.  From a random sample of 120 sales slips, 31 of the oven buyers opted for the contract.
+
+\begin{enumerate}
+\item	The proportion of customers who buy the contract along with their oven is estimated as \underline{\phantom{xxxxxxxxxx}}.
+\item	Calculate a standard error for the estimate in (a).
+\item	Calculate a 95\% confidence interval estimate for the true proportion of customers who buy the contract along with their oven.
+\end{enumerate}
+\end{exercise}
+\begin{solution} % 5
+<<label=LBL8-5, results="asis", echo=FALSE>>=
+  N1 <- 120
+  X1 <- 31
+  prob65a <- X1 /N1
+  SE65b   <- sqrt(prob65a * (1 - prob65a) / N1)
+  me65c   <- 1.96 * SE65b
+@
+
+\begin{enumerate}
+\item	The estimate of the population proportion is \\ $\hat{p} = \Sexpr{prob65a}$
+\item	The standard error of this estimate is \\ $SE_{\hat{p}} = \Sexpr{SE65b}$
+\item	The 95\% confidence interval is \\ $\Sexpr{prob65a} \pm \Sexpr{me65c}$
+\end{enumerate}
+\end{solution}
+
+\begin{exercise} % 6
+
+Wiley Publications has determined that out of a sample of 5,511 of its publications for 2012, 1,754 of them are pirated in some form.
+
+\begin{enumerate}
+\item	What is the estimate of the population proportion?
+\item	What is the standard error of this \\ estimate?
+\item	What is the 95\% margin of error?
+\item	What is the 95\% confidence interval?
+\end{enumerate}
+\end{exercise}
+% \begin{solution} % 6
+% <<label=LBL8-6, results="asis", echo=FALSE>>=
+%   N1 <- 5511
+%   X1 <- 1754
+%   prob66a <- X1 /N1
+%   SE66b   <- sqrt(prob66a * (1 - prob66a) / N1)
+%   me66c   <- 1.96 * SE66b
 % @
-% 
+%
 % \begin{enumerate}
-% \item	The estimate of the population proportion is \\ $\hat{p} = \Sexpr{prob67a}$
-% \item	The standard error of this estimate is \\ $SE_{\hat{p}} = \Sexpr{SE67b}$
-% \item The margin of error the estimate is \\ $M_{\hat{p}} = \Sexpr{me67c}$
-% \item	The 95\% confidence interval is \\ $\Sexpr{prob67a} \pm \Sexpr{me67c}$
-% \item	The 95\% confidence interval is \\ $\Sexpr{prob67a} \pm \Sexpr{me67c}$
+% \item	The estimate of the population proportion is \\ $\hat{p} = \Sexpr{prob66a}$
+% \item	The standard error of this estimate is \\ $SE_{\hat{p}} = \Sexpr{SE66b}$
+% \item The margin of error the estimate is \\ $M_{\hat{p}} = \Sexpr{me66c}$
+% \item	The 95\% confidence interval is \\ $\Sexpr{prob66a} \pm \Sexpr{me66c}$
 % \end{enumerate}
 % \end{solution}
+
+\begin{exercise} % 7
+
+Researchers who were \\ concerned if doctors were consistently adjusting dosages for the weight of elderly patients studied 2000 prescriptions.  They found that for 600 of the  prescriptions, the doctors failed to change the \\ dosages.
+
+\begin{enumerate}
+\item	Doctors fail to adjust dosage for an estimated \underline{\phantom{xxxxxxxx}}  percent of prescriptions.
+\item	Calculate a standard error for the percentage in (a).
+\item	Calculate a 95\% margin of error for the percentage in (a).
+\item	Calculate a 95\% interval estimate for the true proportion
+\item	Calculate a 95\% confidence interval for the true percentage of prescriptions  \\ where doctors fail to adjust dosages.
+\end{enumerate}
+\end{exercise}
+\begin{solution} % 7
+<<label=LBL8-7, results="asis", echo=FALSE>>=
+  N1 <- 2000
+  X1 <- 600
+  prob67a <- X1 /N1
+  SE67b   <- sqrt(prob67a * (1 - prob67a) / N1)
+  me67c   <- 1.96 * SE67b
+@
+
+\begin{enumerate}
+\item	The estimate of the population proportion is \\ $\hat{p} = \Sexpr{prob67a}$
+\item	The standard error of this estimate is \\ $SE_{\hat{p}} = \Sexpr{SE67b}$
+\item The margin of error the estimate is \\ $M_{\hat{p}} = \Sexpr{me67c}$
+\item	The 95\% confidence interval is \\ $\Sexpr{prob67a} \pm \Sexpr{me67c}$
+\item	The 95\% confidence interval is \\ $\Sexpr{prob67a} \pm \Sexpr{me67c}$
+\end{enumerate}
+\end{solution}
 
 
 \end{exercises}

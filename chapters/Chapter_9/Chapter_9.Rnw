@@ -543,7 +543,7 @@ Nonsmokers & 15 & 56 & 71 \\ \hline
   \end{exercise}
   \begin{solution}  % 1
 
-<<label=LBL7-1, results="asis", echo=FALSE>>=
+<<label=LBL9-1, results="asis", echo=FALSE>>=
   # P1 - P2
   p1   <- 23/41
   p2   <- 15/71

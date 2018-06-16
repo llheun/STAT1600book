@@ -56,7 +56,7 @@ C \hspace{3mm} W & C  \hspace{3mm}  W &  C  \hspace{3mm}  W &   C \hspace{3mm} W
 
 In Example 1, the number of correct guesses may be 0, 1, 2, 3, 4, or 5.  How likely can a guesser get all five questions right? The answer is 0.0003, or about three times in 10000 attempts.  How about the likelihood of getting 2 out of 5 items right?  The answer is .2048, about a fifth of the time.  The following \textbf{probability distribution table} gives the likelihood or probability of each possible value of X.
 
-<<label=LBL5a, results="asis", echo=FALSE>>=
+<<label=LBL7a, results="asis", echo=FALSE>>=
   x1 <- c(0,1,2,3,4,5)
   size1 <- c(5,5,5,5,5,5)
   prob1 <- c(.2,.2,.2,.2,.2,.2)
@@ -167,7 +167,7 @@ Similarly, $P[X = 14] = 0.1101$ is approximated by 0.1115, the area under the no
 
 \begin{figure}[ht]
 \caption{Histogram of Probabilities for Binomial n = 30 and p = 0.4}
-<<label=LBL5b, results="asis", echo=FALSE, out.width="11cm">>=
+<<label=LBL7b, results="asis", echo=FALSE, out.width="11cm">>=
   dt1 <- rbinom(n=1000, size=30, p=0.40)
   hist(dt1, freq = FALSE, xlab="X", main="Histogram of Probabilities")
 @
@@ -177,7 +177,7 @@ Similarly, $P[X = 14] = 0.1101$ is approximated by 0.1115, the area under the no
 \begin{figure}[ht]
 \caption{Approximating $P[X \le 10]$ using Curve instead of Rectangles}
 
-<<label=LBL5c, results="asis", echo=FALSE, out.width="11cm">>=
+<<label=LBL7c, results="asis", echo=FALSE, out.width="11cm">>=
   dt1 <- rbinom(n=1000, size=30, p=0.40)
   hist(dt1, freq = FALSE, main="Probability of Demand No More than 10", xlab="X")
   xv <- seq(1.28, 23, by=0.1)
@@ -194,7 +194,7 @@ Examine the shape of the binomial histogram for n = 20 and p = 0.10 in Figure 5.
 
 \begin{figure}[ht]
 \caption{Histogram of Probabilities for Binomial n = 20 and p = 0.10}
-<<label=LBL5d, results="asis", echo=FALSE, out.width="11cm">>=
+<<label=LBL7d, results="asis", echo=FALSE, out.width="11cm">>=
   dt1 <- rbinom(n=1000, size=20, p=0.10)
   hist(dt1, freq = FALSE, xlab="X", main="Histogram of Probabilities")
 @
@@ -248,7 +248,7 @@ A binomial random variable \\ with a probability of success of 0.5 and ten \\ ob
    % \framebox[5cm][l]{ Answer: }
 	\end{exercise}
 	\begin{solution}  % 1
-<<label=LBL5-1, results="asis", echo=FALSE>>=
+<<label=LBL7-1, results="asis", echo=FALSE>>=
   N1 <- 10
   P1 <- .5
   MN1 <- N1 * P1
@@ -277,7 +277,7 @@ A statistics exam contains ten questions with five multiple choice options per q
 \end{enumerate}
 	\end{exercise}
 % 	\begin{solution}  % 2
-% <<label=LBL5-2, results="asis", echo=FALSE>>=
+% <<label=LBL7-2, results="asis", echo=FALSE>>=
 %   N1 <- 10
 %   P1 <- .2
 % 
@@ -304,7 +304,7 @@ Apple's smartphone market \\ share is  0.146. If Apple conducts a nationwide sur
 \end{enumerate}
 	\end{exercise}
 	\begin{solution}  % 3
-<<label=LBL5-3, results='asis', echo=FALSE>>=
+<<label=LBL7-3, results='asis', echo=FALSE>>=
   N1 <- 651
   P1 <- 0.146
   prob1 <- 1 - pbinom(q=(100-1), size=N1, p=P1 )
@@ -330,7 +330,7 @@ When rolling a die ten \\ times,
 	\end{exercise}
 % 	\begin{solution}  % 4
 % 
-% <<label=LBL5-4, results="asis", echo=FALSE>>=
+% <<label=LBL7-4, results="asis", echo=FALSE>>=
 %   N1 <- 10
 %   P1 <- 1/6
 %   prob1 <- pbinom(q=3, size=N1, p=P1)
@@ -354,7 +354,7 @@ The career batting average of Ty Cobb is 0.3664. If Ty Cobb had eight at-bats du
 \end{enumerate}
 	\end{exercise}
 	\begin{solution}  % 5
-<<label=LBL5-5, results="asis", echo=FALSE>>=
+<<label=LBL7-5, results="asis", echo=FALSE>>=
   N1 <- 8
   P1 <- .3664
   prob1 <- 1 - pbinom(q=(7-1), size=N1, p=P1)
@@ -375,7 +375,7 @@ The career batting average of Ty Cobb is 0.3664. If Ty Cobb had eight at-bats du
 Fill in the blanks. The probability of picking the Powerball number is \\ 0.0254. If 50 tickets are purchased, around \underline{\phantom{xxxxxxxx}} of  tickets will be winners,  give or take  \underline{\phantom{xxxxxxxx}}.    Assume each pick is independent.
 	\end{exercise}
 % 	\begin{solution}  % 6
-% <<label=LBL5-6, results="asis", echo=FALSE>>=
+% <<label=LBL7-6, results="asis", echo=FALSE>>=
 %   N1 <- 50
 %   P1 <- 0.0254
 %   MN1 <- N1 * P1
@@ -391,7 +391,7 @@ Fill in the blanks. The probability of picking the Powerball number is \\ 0.0254
 Fill in the blanks. The probability of a defective light bulb is 0.04. If purchase order of 200 bulbs is submitted, the number of defective light bulbs in the shipment is around \underline{\phantom{xxxxxxxx}}, give or take \\ \underline{\phantom{xxxxxxxx}}. Assume each light bulb is independent.
 	  \end{exercise}
 	  \begin{solution}  % 7
-<<label=LBL5-7, results="asis", echo=FALSE>>=
+<<label=LBL7-7, results="asis", echo=FALSE>>=
   N1 <- 200
   P1 <- 0.04
   MN1 <- N1*P1
