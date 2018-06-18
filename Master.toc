@@ -196,18 +196,19 @@
 \contentsline {section}{\numberline {10.1}Objectives}{107}{section.10.1}
 \contentsline {section}{\numberline {10.2}Behavioral Properties of the Sample Average}{107}{section.10.2}
 \contentsline {subsubsection}{\nonumberline Example 1}{109}{section*.98}
-\contentsline {section}{\numberline {10.3}Estimating the Population Mean}{109}{section.10.3}
+\contentsline {section}{\numberline {10.3}Estimating the Population Mean}{110}{section.10.3}
 \contentsline {subsubsection}{\nonumberline Example 2}{110}{section*.99}
-\contentsline {section}{\numberline {10.4}Estimating the Population Mean Using Intervals}{110}{section.10.4}
+\contentsline {section}{\numberline {10.4}Estimating the Population Mean Using Intervals}{111}{section.10.4}
 \contentsline {section}{\numberline {10.5}Sample Size for Estimating the Population Mean}{111}{section.10.5}
-\contentsline {section}{\numberline {10.6}Exercises}{112}{section.10.6}
+\contentsline {section}{\numberline {10.6}Key Words}{111}{section.10.6}
+\contentsline {section}{\numberline {10.7}Exercises}{112}{section.10.7}
 \contentsline {paragraph}{\nonumberline Exercises}{112}{section*.100}
-\contentsline {subparagraph}{\nonumberline Exercise{}~10.6-1:}{112}{section*.101}
-\contentsline {subparagraph}{\nonumberline Exercise{}~10.6-2:}{112}{section*.102}
-\contentsline {subparagraph}{\nonumberline Exercise{}~10.6-3:}{112}{section*.103}
-\contentsline {subparagraph}{\nonumberline Exercise{}~10.6-4:}{112}{section*.104}
-\contentsline {subparagraph}{\nonumberline Exercise{}~10.6-5:}{113}{section*.105}
-\contentsline {subparagraph}{\nonumberline Exercise{}~10.6-6:}{113}{section*.106}
+\contentsline {subparagraph}{\nonumberline Exercise{}~10.7-1:}{112}{section*.101}
+\contentsline {subparagraph}{\nonumberline Exercise{}~10.7-2:}{112}{section*.102}
+\contentsline {subparagraph}{\nonumberline Exercise{}~10.7-3:}{112}{section*.103}
+\contentsline {subparagraph}{\nonumberline Exercise{}~10.7-4:}{112}{section*.104}
+\contentsline {subparagraph}{\nonumberline Exercise{}~10.7-5:}{113}{section*.105}
+\contentsline {subparagraph}{\nonumberline Exercise{}~10.7-6:}{113}{section*.106}
 \contentsline {chapter}{\numberline {11}Comparing Two Means}{115}{chapter.11}
 \contentsline {section}{\numberline {11.1}Objective}{115}{section.11.1}
 \contentsline {section}{\numberline {11.2}Estimating the Difference between Independent Means}{115}{section.11.2}

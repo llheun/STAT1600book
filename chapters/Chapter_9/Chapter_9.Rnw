@@ -490,7 +490,7 @@ With 95\% confidence, the odds of unvaccinated subjects getting hepatitis is bet
 
 \section{Key Words}
 
-\colorbox{lgray}{\parbox{14cm}{
+\fbox{\parbox{14cm}{
 \begin{minipage}[ht]{6cm}
 
 \begin{itemize}
