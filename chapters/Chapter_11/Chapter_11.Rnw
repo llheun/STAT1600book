@@ -9,12 +9,8 @@ After completing this part, students should be able to:
 
 \fbox{\parbox{14cm}{
 \begin{itemize}
-\item Point out and cite examples of when an ANOVA test is appropriate.
-\item Explain the logic of hypothesis testing as applied to ANOVA.
-\item Perform the ANOVA test of following the 5-step process and interpret
-the results.
-\item Explain the difference between the statistical significance and the importance of
-relationships between variables.
+\item Compare two population averages when the samples are independent using confidence intervals.
+\item Compare two population averages when the data are dependent (paired) using confidence intervals.
 \end{itemize}
 }}
 
@@ -28,12 +24,11 @@ Suppose we sample two means $\bar{x}_1$ and $\bar{x}_2$  from two populations wi
 \includegraphics[width=4.3cm]{chapters/Chapter_11/ext_figure/x2.png} % requires the graphicx package
 \end{figure}
 
+As you can see, the sample circles including $\bar{x}_1$ and $\bar{x}_2$ are smaller than the entire population circles including $\mu_1$ and $\mu_2$. In other words, we do not have all the information we need to be sure about the exact values of  $\mu_1$ and $\mu_2$. However, as we have learned, statistics allows for sample means to estimate population means as depicted by the arrows. What's new in this chapter is that here we learn statistics can do more than allow us to estimate values for $\mu_1$ and $\mu_2$ separately. We can also use statistics to investigate how the population means differ from one another in tandem. We do this by performing \textit{hypothesis tests} on and using confidence intervals centered around the difference between the sample means $\bar{x}_1$ and $\bar{x}_2$. Let's now turn to some formulaic examples of such tests and intervals.
 
-As you can see, the sample circles including $\bar{x}_1$ and $\bar{x}_2$ are smaller than the entire population circles including $\mu_1$ and $\mu_2$. In other words, we do not have all the information we need to be totally sure about the exact values of  $\mu_1$ and $\mu_2$. However, as we've learned, statistics allows for sample means to estimate population means as depicted by the arrows. What's new in this chapter is that here we learn statistics can do more than just allow us to estimate values for $\mu_1$ and $\mu_2$ separately. We can also use statistics to investigate how the population means differ from one another in tandem. We do this by performing \textit{hypothesis tests} on and using confidence intervals centered around the difference between the sample means $\bar{x}_1$ and $\bar{x}_2$. Let's now turn to some formulaic examples of such tests and intervals.
+Is there ``grade inflation'' in WMU?  How does the average GPA of WMU students today compare with, say ten years ago?  Suppose a random sample of 100 student records from 10 years ago yields an average sample GPA of 2.90 with a standard deviation of 0.40.  A random sample of 100 current students today yields a sample average of 2.98 with a standard deviation of 0.45.  The difference between the two-sample means is 2.98- 2.90 = .08.  Is this proof that GPA's are higher today than ten years ago?  Well $\dots$ first, we need to account for the fact that 2.98 and 2.90 are not the correct averages but that we compute the average from random samples.  Therefore, 0.08 is not the exact difference, but merely an estimate of the actual difference. By how much will it miss?
 
-Is there ``grade inflation'' in WMU?  How does the average GPA of WMU students today compare with, say 10 years ago?  Suppose a random sample of 100 student records from 10 years ago yields a sample average GPA of 2.90 with a standard deviation of 0.40.  A random sample of 100 current students today yields a sample average of 2.98 with a standard deviation of 0.45.  The difference between the two-sample means is 2.98- 2.90 = .08.  Is this proof that GPA's are higher today than 10 years ago?  Well $\dots$ first, we need to account for the fact that 2.98 and 2.90 are not the true averages but are computed from random samples.  Therefore, .08 is not the true difference, but simply an estimate of the true difference. By how much will it miss?
-
-Note that we took differences $2.98 - $2.90 to compare average GPA.  The two averages 2.98 and 2.90 are independent, in the sense that they are based on separate and independent groups of students.  The SE of the difference is
+Note that we took differences $2.98 - $2.90 to compare average GPA.  The two averages 2.98 and 2.90 are independent, in the sense that we base them on separate and independent groups of students.  The SE of the difference is
 
 \begin{equation}
 SE_{(\bar{x}_1 - \bar{x}_2)} = \sqrt{SE_{\bar{x}_1}^2 + SE_{\bar{x}_2}^2 }
@@ -44,7 +39,7 @@ whenever the two means are independent.  Equation (11.1) is similar to the equat
 Now, applying the equation from chapter 10, $SE_{\bar{X}}$ which is calculated as $\frac{s}{\sqrt{n}}$ twice, we get
 
 \fbox{\parbox{14cm}{
-Standard error of the difference between two independent means.
+The standard error of the difference between two independent means.
 
 \begin{equation}
 SE_{(\bar{x}_1 - \bar{x}_2)} = \sqrt{\frac{s_1^2}{n_1}  + \frac{s_2^2}{n_2} }
@@ -78,12 +73,12 @@ The following two sections discuss the formulas and concepts necessary for calcu
 
 The interval between lower and upper bounds (LB, UB) includes some possible values of $\mu_1 - \mu_2$  (depicted by the many arrows). We need an interval around the central estimate $\bar{x}_1 - \bar{x}_2$ because of variation between samples and populations (which was depicted using concentric circles at the start of this chapter). This interval can be thought of as the ``wiggle room'' needed to estimate $\mu_1 - \mu_2$ using only $\bar{x}_1 - \bar{x}_2$.
 
-To see how this interval can be used, it's necessary to talk about some basic properties of a difference first.  For any two numbers A and B, there are three possibilities when evaluating their difference:
+Here we show how to use this interval, and it is necessary to talk about some basic properties of a difference first.  For any two numbers A and B, there are three possibilities when evaluating their difference:
 
 \begin{enumerate}
-  \item If $A - B$ is a positive number, then A is greater than B. Consider the numbers 4 and 3. If we take $4 - 3 = 1$, the answer is positive.
+  \item If $A - B$ is a positive number, then A is greater than B. Consider the numbers 4 and 3. If we take $4 - 3 = 1$, the answer is greater than zero.
 
-  \item If $A - B$ is a negative number, then B is greater than A.  For instance, if we take  $3 - 4 = -1$, the answer is negative.
+  \item If $A - B$ is a negative number, then B is higher than A.  For instance if we take  $3 - 4 = -1$, the answer is negative.
 
   \item If $A - B$ is 0, then A = B. Consider the numbers 4 and 4: $4 - 4 = 0$.
 \end{enumerate}
@@ -96,10 +91,10 @@ The same kind of reasoning holds for all the possible values of $\mu_1 - \mu_2$ 
 
   \item If all the values from LB to UB are negative, then $\mu_1$ is significantly less than $\mu_2$. 
 
-  \item If 0 is between LB and UB (inclusive), then $\mu_1$ is not significantly different from $\mu_2$.
+  \item If zero is between LB and UB (inclusive), then $\mu_1$ is not significantly different from $\mu_2$.
 \end{enumerate}
 
-Note that this is just to say that the same reasoning and terminology outlined in the section on statistical significance in chapter 7 apply in the new case of a difference.  If the confidence interval for $\mu_1 - \mu_2$ does not contain 0, then 0 has been effectively excluded from the range of possible values.
+Note that this is to say that the same reasoning and terminology outlined in the section on statistical significance in chapter 7 apply in the new case of a difference.  If the confidence interval for $\mu_1 - \mu_2$ does not contain 0, then 0 has been effectively excluded from the range of possible values.
 
 \fbox{\parbox{14cm}{
 When the confidence interval for $\mu_1 - \mu_2$ does not contain \textbf{zero}, we say that the difference is statistically \textbf{significant}.
@@ -179,13 +174,13 @@ Thus, even allowing for 1.96 SE's of chance variability, Atkins lost at least .4
 
 Continuing the example of the previous section, we might ask ``Can't the difference in averages $\bar{x}_1 - \bar{x}_2 = 1.12$ be explained by chance variability, rather than diet effect?''
 
-The answer is ``Yes, 1.12 can occur by chance, but with very small probability.''  How small? Well, if the true difference were 0, and the SE is 0.367, then the value 1.12 is
+The answer is ``Yes, 1.12 can occur by chance, but with very tiny probability.''  How small? Well, if the actual difference were 0, and the SE is 0.367, then the value 1.12 is
 
 \begin{equation*}
 \frac{1.12}{0.367} = 3.05
 \end{equation*}
 
-SE's from expected value.  Using the normal curve, random variables fall as far as 3.05 or more SE's from expected value with approximately 0.0022 probability.  Since this number (also called the $P$-value) is quite small, it makes it hard to believe that the true difference is zero.  Hence, we conclude that statistically, the two means are different.  Or we can say that the means are \textit{significantly} different.
+SE's from the expected value using the normal curve, random variables fall as far as 3.05 or more SE's from the expected value with approximately 0.0022 probability.  Since this number (also called the $P$-value) is quite small, it makes it hard to believe that the actual difference is zero.  Hence, we conclude that statistically, the two means are different.  Alternatively, we can say that the means are \textit{significantly} different.
 
 \begin{table}[ht]
 \centering
@@ -206,7 +201,7 @@ SD:  & 18.1 & 16.4 \\ \hline
 
 \section{Paired data (before-and-after)}
 
-In this section, we will discuss a common problem in data analysis: comparing before and after measurements.  Consider the hypothetical weight loss data in Table 11.2.
+In this section, we will discuss a common problem in data analysis: comparing before and after measurements.  Consider the possible weight loss data in Table 11.2.
 
 Using the notation of the previous section estimating the difference between independent means, we have
 
@@ -233,11 +228,10 @@ SE_{(\bar{x}_1 - \bar{x}_2)} = \sqrt{\frac{s_1^2}{n_1}  + \frac{s_2^2}{n_2} } = 
 
 right?  \textbf{wrong!}
 
-We should not use equations (11.1) or (11.2) because the two means are \textbf{not} independent, i.e. they are not calculated on independent samples.  As a matter of fact, the use of the plural `samples' is in itself wrong because we do not have two samples, we only have one! You need to watch out for this.  How many samples are there?  Before-and-after data generally consist of only one sample of subjects, each measured twice.
+We should not use equations (11.1) or (11.2) because the two means are \textbf{not} independent, i.e., they are not calculated on independent samples. The use of the plural `samples' is in itself wrong because we do not have two samples, we only have one! We need to watch out for this.  How many samples are there?  Before-and-after data generally consist of only one sample of subjects, each measured twice.
 
 So how do we calculate an estimate and standard error of average weight loss?  
-By calculating the amount of change from Before to After.  This amounts to taking 
-differences, as shown in Table 11.3.
+By calculating the amount of change from Before to After.  The computed value amounts to taking differences, as shown in Table 11.3.
 
 \begin{table}[ht]
 \centering
@@ -256,7 +250,7 @@ SD:  &  & & 11.1 \\ \hline
 \end{tabular}
 \end{table}
 
-Compare Table 11.3 to Table 11.2.  We have reduced the summary statistics to a single sample, appropriately.  The relevant statistics are now
+Compare Table 11.3 to Table 11.2.  We have reduced the summary statistics to a single sample, appropriately.  The relevant statistics are now:
 
 $$ \bar{X} = 9.6,  S = 11.1,  n= 7 $$
 
@@ -279,7 +273,7 @@ Since the interval does not contain zero, the average weight change is statistic
 
 \subsection{Paired Data}
 
-Paired data are data in which natural matchings occur.  Even when we have two samples, if each observation in one sample is uniquely matched to an observation in the other sample, then we have paired data and analysis should follow as described above.  
+Paired data are data in which natural matchings occur.  For example, when researchers collect two measurements (one before treatment and one after treatment) from a subject, then we have paired data, and the analysis should follow as described above.  
 
 For example, we might want to compare the head injury of drivers versus passengers in car crashes.   In a study, automobiles were crashed into a wall at a speed of 35 MPH with dummies in the driver and front passenger seat. The head injury criterion (HIC) was measured.  Following is a selection of cars and their HIC values.
 
@@ -297,10 +291,26 @@ Volvo 740 GLE 88        &      		519   &      445 \\ \hline
 \end{tabular}
 \end{table}
 
-Since each pair of observations (e.g. 599 and 597) are uniquely matched to each other (driver and passenger HIC in the same car and crash), this is paired data and deserves paired data analysis.
+Since we uniquely match each pair of observations (e.g., 599 and 597) to each other (driver and passenger HIC in the same car and crash), this is paired data and deserves paired data analysis.
 
 \section{Key Words}
 
+\fbox{\parbox{14cm}{
+\begin{minipage}[ht]{6cm}
+
+\begin{itemize}
+\item independent sample experiment
+\item paired difference experiment
+\end{itemize}
+\end{minipage} \hfill
+\begin{minipage}[ht]{6cm}
+
+\begin{itemize}
+\item confidence intervals
+\item sampling distribution
+\end{itemize}
+\end{minipage}
+}}
 
 \twocolumn
 
