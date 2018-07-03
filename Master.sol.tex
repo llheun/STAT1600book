@@ -90,10 +90,10 @@ $(50, 55]$ 	&     6 & 6 \\ \hline
 \begin{exsol@solution}{3.4-5}
 
 \begin{enumerate}
-\item $\bar{x} = 294.6$
-\item $\tilde{x} = 282$
-\item $sd = 171.3036291 $
-\item The distribution is Right skewed
+\item $\bar{x} = 155.1$
+\item $\tilde{x} = 159.5$
+\item $sd = 77.6122127 $
+\item The distribution is Left skewed
 \item The median provided the most relevant information because to the extreme outlier.
 \end{enumerate}
 
@@ -238,6 +238,51 @@ The standard error of this estimate is 0.04
 \begin{exsol@solution}{10.7-1}
 \end{exsol@solution}
 \begin{exsol@solution}{10.7-2}
+\begin{enumerate}
+  \item The standard error of this estimate is $SE = \frac{2}{\sqrt{16}} = 0.5$
+  \item The 95\% margin of error is $ME = 1.96 \times SE = 1.96 \times 0.5 = 0.98$
+  \item The 95\% CI is $\bar{x} \pm ME = 10.5 \pm 0.98 = (9.52, 11.48) $
+  \item
+  \begin{eqnarray*}
+      P[ \bar{x} > \mu ] &=& P[z > z^*] \\
+       P[z > z^*] &=& P\Big[ z > \frac{ \bar{x}-\mu}{ \sigma/\sqrt{n}} \Big] \\
+       &=& P\Big[ \frac{z > 9 - 10}{ 2/\sqrt{16}} \Big] \\
+       &=& P\Big[ z > \frac{-1}{0.5} \Big]   \\
+        &=& P[z > -2]
+        &=& 1 - 0.025 = 0.975
+  \end{eqnarray*}
+
+  \item
+  \begin{eqnarray*}
+      P[ \bar{x} < \mu ] &=& P[z < z^*] \\
+       P[z < z^*] &=& P\Big[ z < \frac{ \bar{x}-\mu}{ \sigma/\sqrt{n}} \Big] \\
+       &=& P\Big[ z < \frac{ 9 - 10}{ 2/\sqrt{16}} \Big] \\
+       &=& P\Big[ z < \frac{-1}{0.5} \Big]   \\
+        &=& P[z < -2]
+        &=&  0.025
+  \end{eqnarray*}
+
+  \item
+  \begin{eqnarray*}
+      P[ 8 < \bar{x} < 10 ] &=& P[ z^* < z < z^{**} ] \\
+       P[z < z^*] &=& P\Big[ z < \frac{ \bar{x}-\mu}{ \sigma/\sqrt{n}} \Big] \\
+       &=& P\Big[ z < \frac{ 8 - 10}{ 2/\sqrt{16}} \Big] \\
+       &=& P\Big[ z < \frac{-2}{0.5} \Big]   \\
+        &=& P[z < -4] \\
+        P[z < z^*] &=& P\Big[ z < \frac{ \bar{x}-\mu}{ \sigma/\sqrt{n}} \Big] \\
+       &=& P\Big[ z < \frac{ 10 - 10}{ 2/\sqrt{16}} \Big] \\
+       &=& P\Big[ z < \frac{-2}{0.5} \Big]   \\
+        &=& P[z < 0]
+      P[ z^* < z < z^{**} ] &=& P[ -4 < z < 0] \\
+        &=&  P[ z < 0 ] - P[z < -4] \approx 0.5 - 0 \\
+        &=& 0.5
+  \end{eqnarray*}
+
+
+
+  \item 33\% of sample means are above what value?
+  \item 33\% of sample means are below what value?
+\end{enumerate}
 \end{exsol@solution}
 \begin{exsol@solution}{10.7-3}
 \end{exsol@solution}
@@ -263,15 +308,15 @@ The standard error of this estimate is 0.04
 \begin{exsol@solution}{11.5-6}
 \end{exsol@solution}
 \setcounter{chapter}{12}\chapter{Categorical Variables: Association or Independence}
-\begin{exsol@solution}{12.3-1}
+\begin{exsol@solution}{12.4-1}
 \end{exsol@solution}
-\begin{exsol@solution}{12.3-2}
+\begin{exsol@solution}{12.4-2}
 \end{exsol@solution}
-\begin{exsol@solution}{12.3-3}
+\begin{exsol@solution}{12.4-3}
 \end{exsol@solution}
-\begin{exsol@solution}{12.3-4}
+\begin{exsol@solution}{12.4-4}
 \end{exsol@solution}
-\begin{exsol@solution}{12.3-5}
+\begin{exsol@solution}{12.4-5}
 \end{exsol@solution}
 \setcounter{chapter}{13}\chapter{Correlation}
 \begin{exsol@solution}{13.3-1}

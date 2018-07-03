@@ -199,7 +199,7 @@ The national average on a science test for tenth graders has a mean of 210 and a
 A sample of 16 observations is taken from a distribution with mean of 10 and standard deviation 2.
 
 \begin{enumerate}
-  \item Suppose the sample a mean is 10.5. What is the standard error of this estimate?
+  \item Suppose the sample a \\ mean is 10.5. What is the standard error of this estimate?
   \item What is the 95\% margin of error?
   \item What is the 95\% confidence interval?
   \item What is the probability the sample \\ mean is greater than 9?

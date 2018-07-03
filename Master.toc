@@ -196,9 +196,9 @@
 \contentsline {section}{\numberline {10.1}Objectives}{107}{section.10.1}
 \contentsline {section}{\numberline {10.2}Behavioral Properties of the Sample Average}{107}{section.10.2}
 \contentsline {subsubsection}{\nonumberline Example 1}{109}{section*.98}
-\contentsline {section}{\numberline {10.3}Estimating the Population Mean}{110}{section.10.3}
+\contentsline {section}{\numberline {10.3}Estimating the Population Mean}{109}{section.10.3}
 \contentsline {subsubsection}{\nonumberline Example 2}{110}{section*.99}
-\contentsline {section}{\numberline {10.4}Estimating the Population Mean Using Intervals}{111}{section.10.4}
+\contentsline {section}{\numberline {10.4}Estimating the Population Mean Using Intervals}{110}{section.10.4}
 \contentsline {section}{\numberline {10.5}Sample Size for Estimating the Population Mean}{111}{section.10.5}
 \contentsline {section}{\numberline {10.6}Key Words}{111}{section.10.6}
 \contentsline {section}{\numberline {10.7}Exercises}{112}{section.10.7}
@@ -232,13 +232,14 @@
 \contentsline {section}{\numberline {12.1}Objective}{127}{section.12.1}
 \contentsline {section}{\numberline {12.2}Association versus independence in an r x c table}{127}{section.12.2}
 \contentsline {subsection}{\numberline {12.2.1}Testing for statistical association}{129}{subsection.12.2.1}
-\contentsline {section}{\numberline {12.3}Exercises}{131}{section.12.3}
+\contentsline {section}{\numberline {12.3}Key Words}{130}{section.12.3}
+\contentsline {section}{\numberline {12.4}Exercises}{131}{section.12.4}
 \contentsline {paragraph}{\nonumberline Exercises}{131}{section*.116}
-\contentsline {subparagraph}{\nonumberline Exercise{}~12.3-1:}{131}{section*.117}
-\contentsline {subparagraph}{\nonumberline Exercise{}~12.3-2:}{131}{section*.118}
-\contentsline {subparagraph}{\nonumberline Exercise{}~12.3-3:}{131}{section*.119}
-\contentsline {subparagraph}{\nonumberline Exercise{}~12.3-4:}{131}{section*.120}
-\contentsline {subparagraph}{\nonumberline Exercise{}~12.3-5:}{131}{section*.121}
+\contentsline {subparagraph}{\nonumberline Exercise{}~12.4-1:}{131}{section*.117}
+\contentsline {subparagraph}{\nonumberline Exercise{}~12.4-2:}{131}{section*.118}
+\contentsline {subparagraph}{\nonumberline Exercise{}~12.4-3:}{131}{section*.119}
+\contentsline {subparagraph}{\nonumberline Exercise{}~12.4-4:}{131}{section*.120}
+\contentsline {subparagraph}{\nonumberline Exercise{}~12.4-5:}{131}{section*.121}
 \contentsline {chapter}{\numberline {13}Correlation}{133}{chapter.13}
 \contentsline {section}{\numberline {13.1}Objective}{133}{section.13.1}
 \contentsline {section}{\numberline {13.2}Computing the Pearson Correlation Coefficient}{135}{section.13.2}
