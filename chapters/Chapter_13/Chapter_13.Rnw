@@ -12,14 +12,14 @@ After completing this part, students should be able to:
 
 \item Interpret  a scatter plot.
 \item Interpret the correlation coefficient $r$ \index{coefficient coefficient}  and the coefficient of determination $r^2$. \index{coefficient of determination}
-\item Find and elucidate the regression line and use it to predict values of the response variable.
-\item Put into words the concepts of the total, unexplained, and explained variation.  \index{unexplain variation} \index{explained variation}  \index{total variation}
-\item Use correlation and regression techniques to evaluate two-variable relationships.
+% \item Find and elucidate the regression line and use it to predict values of the response variable.
+% \item Put into words the concepts of the total, unexplained, and explained variation.  \index{unexplain variation} \index{explained variation}  \index{total variation}
+% \item Use correlation and regression techniques to evaluate two-variable relationships.
 \end{itemize}
 
 }}
 
-The following data appeared in the Wall Street Journal in 1984.  Advertisements were selected by an annual survey conducted by Video Board Tests, Inc., a New York ad-testing company, based on interviews with 20,000 adults who were asked to name the most outstanding TV commercial they had seen, noticed, and liked. The retained impressions were based on a survey of 4,000 adults, in which regular product users were asked to cite a commercial they had seen for that product category in the past week.  `TV Ad Budget' was the 1983 advertising budget in \$ millions.  `Impressions' is the estimated number of million impressions per week.
+The following data appeared in the Wall Street Journal in 1984.  Advertisements were selected by an annual survey conducted by Video Board Tests, Inc., a New York ad-testing company, based on interviews with 20,000 adults who were asked to name the most outstanding TV commercial they had seen, noticed, and liked. We based the retained impressions on a survey of 4,000 adults, in which regular product users were asked to cite a commercial they had seen for that product category in the past week.  `TV Ad Budget' was the 1983 advertising budget in \$ millions.  `Impressions' is the estimated number of million impressions per week.
 
 \begin{table}[ht]
 \centering 
@@ -174,6 +174,26 @@ If $X$ and $Y$ tend to be simultaneously above average or simultaneously below a
 If above-average X values tend to be paired with below-average Y values, then the correlation coefficient will be \textbf{negative}. 
 
 }}
+
+
+\section{Key Words}
+
+\fbox{\parbox{14cm}{
+\begin{minipage}[ht]{6cm}
+\begin{itemize}
+\item chi-square test for independence
+\item contingency table
+\end{itemize}
+
+\end{minipage} \hfill
+\begin{minipage}[ht]{6cm}
+\begin{itemize}
+\item homogeneity
+\item multinomial experiment
+\end{itemize}
+\end{minipage}
+}}
+
 
 \twocolumn
 
