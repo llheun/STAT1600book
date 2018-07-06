@@ -50,7 +50,7 @@ Kibbles 'n Bits & 6.1 & 4.4 \\ \hline
 \end{tabular}
 \end{table}
 
-Figure 13.1 shows a scatterplot of Impressions Score (Y) versus Ad Spending (X). Note that the points seem to loosely fall around a line sloped upwards.  We say that there is a positive linear association, or a linear relationship between spending and the number of impressions made.  
+Figure 13.1 shows a scatterplot of Impressions Score (Y) versus Ad Spending (X). Note that the points seem to fall around a line sloped upwards loosely.  We say that there is a positive linear association or a linear relationship between spending and the number of impressions made.  
 
 If the points fall around a straight line sloped downwards, we say that there is a negative association.
 
@@ -64,9 +64,9 @@ If the points fall around a straight line sloped downwards, we say that there is
 @
 \end{figure}
 
-The direction and strength of association is often expressed in a single number called the (Pearson) \textit{correlation coefficient}.  Typically denoted by $r$, the correlation coefficient $r$ is a number between $-1$ and $+1$, inclusive.  A value of $r = 0$ means that no linear association exists; the points either look like a random scatter or fall around a horizontal line.  A value of $r = +1$ indicates a perfectly linear relationship; all the points fall on a straight line sloped upwards.  If $r = -1$, all the points fall on a straight line sloped downwards. The correlation between TV Ad Budget and Impressions in the data above is $+0.65$.
+Researchers often express the direction and the strength of association in a single number called the (Pearson) \textit{correlation coefficient}.  Typically denoted by $r$, the correlation coefficient $r$ is a number between $-1$ and $+1$, inclusive.  A value of $r = 0$ means that no linear association exists; the points either look like a random scatter or fall around a horizontal line.  A value of $r = +1$ indicates a perfectly linear relationship; all the points fall on a straight line sloped upwards.  If $r = -1$, all the points fall on a straight line sloped downwards. The correlation between TV Ad Budget and Impressions in the data above is $+0.65$.
 
-Figure 13.2 on the following page shows various scatterplots with different correlations.  Although $0.5$ is halfway between $0$ and $1$, note that the plot corresponding to $r = 0.5$ barely shows a pattern of association.  In practice, plots can show correlations up to $0.3$ purely by accident (e.g., correlation between GPA and, say, shoe size).  When correlation reaches $+1$ or $-1$, all points fall on a straight line.
+Figure 13.2 on the following page shows various scatterplots with different correlations.  Although $0.5$ is halfway between $0$ and $1$, note that the plot corresponding to $r = 0.5$ barely shows a pattern of association.  In practice, plots can show correlations up to $0.3$ purely by accident (e.g., the correlation between GPA and, say, shoe size).  When correlation reaches $+1$ or $-1$, all points fall on a straight line.
 
 \begin{figure}[ht]
 
@@ -150,7 +150,7 @@ Average &  & 3.75 \\
 $$ r = \frac{3.75}{6 - 1} = 0.75 $$
 \end{enumerate}
 
-The whole process can be summarized in the following formula.
+We summarize the whole process in the following formula. 
 
 \begin{center}
 \fbox{\parbox{10cm}{
@@ -162,16 +162,16 @@ r = \frac{ \sum Z_x Z_y }{n - 1}
 }}
 \end{center}
 
-Consider the Ad Spending example at the start of this chapter.  Many of the (X, Y) points are simultaneously above average, since companies that have higher than average Advertising Spending also have higher than average Impressions.  
+Consider the Ad Spending example at the start of this chapter.  Many of the (X, Y) points are simultaneously above average since companies that have higher than average Advertising Spending also have higher than average Impressions.  
 
-Both $X - \bar{X}$  and $Y - \bar{Y}$ are positive for these companies, therefore $Z_x$  and $Z_y$  are both positive, and the product ($Z_x$)($Z_y$)  is positive for these companies.  Most of the remaining companies have lower than average Spending and lower than average Impressions.  Both $Z_x$  and $Z_y$  are negative for these companies, but the product ($Z_x$)($Z_y$) is still positive!  Hence the numerator in (13.1) tends to be a large positive number for the Ad Spending data.
+Both $X - \bar{X}$  and $Y - \bar{Y}$ are positive for these companies; therefore, $Z_x$  and $Z_y$  are both positive, and the product ($Z_x$)($Z_y$)  is positive for these companies.  Most of the remaining companies have lower than average Spending and lower than average Impressions.  Both $Z_x$  and $Z_y$  are negative for these companies, but the product ($Z_x$)($Z_y$) is still positive!  Hence the numerator in (13.1) tends to be a large positive number for the Ad Spending data.
 
-If the points were sloped downwards, then high X-values tend to go with low Y-values, and many points have negative product ($Z_x$)($Z_y$).  This is how the correlation formula (13.1) works.  
+If the points were sloped downwards, then high X-values tend to go with low Y-values, and many points have a negative product ($Z_x$)($Z_y$).  This procedure shows how the correlation formula (13.1) works.  
 
 \fbox{\parbox{14cm}{
 If $X$ and $Y$ tend to be simultaneously above average or simultaneously below average, then the correlation coefficient will be \textbf{positive}.  
 
-If above-average X values tend to be paired with below-average Y values, then the correlation coefficient will be \textbf{negative}. 
+If the data is paired above-average X values with below-average Y values, then the correlation coefficient will be \textbf{negative}.  
 
 }}
 
@@ -181,15 +181,16 @@ If above-average X values tend to be paired with below-average Y values, then th
 \fbox{\parbox{14cm}{
 \begin{minipage}[ht]{6cm}
 \begin{itemize}
-\item chi-square test for independence
-\item contingency table
+\item correlation coefficient
+\item correlation plots
+\item 
 \end{itemize}
 
 \end{minipage} \hfill
 \begin{minipage}[ht]{6cm}
 \begin{itemize}
-\item homogeneity
-\item multinomial experiment
+\item Pearson Correlation
+\item scatter plot
 \end{itemize}
 \end{minipage}
 }}
@@ -255,15 +256,17 @@ Consider the following \\ data.
 
 \begin{exercise} % 2
 
-Suppose we have two variables, X and Y. If an increase in X results in the exact same increase in Y, then what is the correlation coefficient $r$?
+Suppose we have two variables, X and Y. If an increase in X results in the same increase in Y, then what is the correlation coefficient $r$?
 \end{exercise}
 \begin{solution} % 2
+
+$r = 1$ because the points (x, y) all fall perfectly along a line tilted upward.
 
 \end{solution}
 
 \begin{exercise} % 3
 
-Suppose we have two variables, X and Y. If a decrease in X results in the exact same increase in Y, then what is the correlation coefficient $r$?
+Suppose we have two variables, X and Y. If a decrease in X results in the same increase in Y, then what is the correlation coefficient $r$?
 \end{exercise}
 \begin{solution} % 3
 
@@ -271,17 +274,27 @@ Suppose we have two variables, X and Y. If a decrease in X results in the exact 
 
 \begin{exercise} % 4
 
-Suppose we have two variables, X and Y. The points (x, y) are plotted in a scatterplot, and it is observed that the points appear to be clustered around a 
-line of best fit that is tilted upward from left to right.  What is the possible range of the correlation coefficient $r$?
+Suppose that we plot two variables, X, and Y in a scatterplot, and we observe that the points appear to be clustered around a line of best fit that is tilted upward from left to right.  What is the possible range of the correlation coefficient $r$?
 \end{exercise}
 \begin{solution} % 4
 
+
 \end{solution}
 
+\begin{exercise} % 5
+
+Suppose we have two variables, X and Y. The points (x, y) are plotted in a scatterplot, and it is observed that the points appear to be clustered around a line of best fit that is tilted downward from left to right. What is the possible range of the correlation coefficient r?
+
+\end{exercise}
+\begin{solution} % 5
+
+$ -1 < r < 0$. We know $r$ is negative because the line of best fit is tilted downward. We know $r$ is not $-1$ nor $0$ because the points are clustered, but do not perfectly fall on, the line of best fit.
+
+\end{solution}
 
 \begin{exercise} % 6
 
-Suppose we have two variables, X and Y. The products of all their respective Z scores are calculated and none of them are negative. What can we conclude about the correlation coefficient $r$?
+Suppose we have two variables, X, and Y. The products of all their respective Z scores are calculated, and none of them are negative. What can we conclude about the correlation coefficient $r$?
 \end{exercise}
 \begin{solution} % 6
 
@@ -289,10 +302,11 @@ Suppose we have two variables, X and Y. The products of all their respective Z s
 
 \begin{exercise} % 7
 
-Suppose we have two variables, X and Y. The products of all their respective Z scores are calculated and all the products are negative. What can we conclude about the correlation coefficient $r$?
+Suppose we have two variables, X and Y. The products of all their respective Z scores are calculated, and all the products are negative. What can we conclude about the correlation coefficient $r$?
 \end{exercise}
 \begin{solution} % 7
 
+Since $ r = \frac{ \sum Z_x Z_y}{(n - 1)}$, and we know that all the products of Z scores are negative, we know that r must be -1≤r<0. Since $ r = \frac{ \sum Z_x Z_y}{(n - 1)}$, and we know that all the products of Z scores are negative, we know that $r$ must be $-1 \le r < 0$.
 \end{solution}
 \end{exercises}
 

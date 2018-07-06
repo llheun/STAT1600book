@@ -9,15 +9,14 @@ After completing this part, students should be able to:
 
 \fbox{\parbox{14cm}{
 \begin{itemize}
-
-\item Interpret  a scatter plot.
-\item Interpret the correlation coefficient $r$ \index{coefficient coefficient}  and the coefficient of determination $r^2$. \index{coefficient of determination}
-\item Find and elucidate the regression line and use it to predict values of the response variable.
+\item Elucidate the simple linear regression model.
+\item Detect the least square point estimates of the slope and y-intercept.
+\item Report the assumptions behind simple linear regression and calculate the standard error.
+\item Evaluate the significance of the slope and y-intercept.
+\item Compute and elucidate the confidence interval for the mean value and the prediction interval for individual value.
 \item Put into words the concepts of the total, unexplained, and explained variation.  \index{unexplain variation} \index{explained variation}  \index{total variation}
 \item Use correlation and regression techniques to evaluate two-variable relationships.
-
 \end{itemize}
-
 }}
 
 \section{Simple Linear Regression}  \index{Linear Regression}
@@ -62,11 +61,11 @@ prc1<- c(7100,15500,4400,4400,5900,4600,8800,2000,2750,2550,960,1025)
 
 \subsubsection{Problem:}
 
-Based on the data, how much do I expect to get for a Saturn car that has been driven 60,000 miles?
+Based on the data, how much do we expect to get for a Saturn car that has been driven 60,000 miles?
 
 Simple linear regression is a data analysis technique that tries to find a \textit{linear} pattern in the data.  We then use this line for prediction.
 
-Notice that the points seem to fall around a \textit{straight line} sloping downwards.  Can you draw this line?  We will discuss one way to do this, called the \textit{least squares} (LS) method.  For now, suppose that the LS line has already been computed (we will do this later).  The LS line is overlayed on the scatterplot looks like Figure 14.1.
+Notice that the points seem to fall around a \textit{straight line} sloping downwards.  Can we draw this line?  We will discuss one way to do this, called the \textit{least squares} (LS) method.  For now, suppose that the LS line has already been computed (we will do this later).  The LS line is overlayed on the scatterplot looks like Figure 14.1.
 
 \begin{figure}[ht]
 \centering
@@ -86,7 +85,7 @@ The formula for this line, in the form $Y= a + bX$,  is
   \texttt{Predicted Price} = \Sexpr{aa0} + (\Sexpr{aa1})(\texttt{Miles})
 \end{equation*}
 
-The \textit{slope} of the line is \Sexpr{aa1}, which means that predicted Price tends to drop 5 cents for every additional mile driven, or about \$512.70 for every 10,000 miles. The \textit{Y-intercept} of the line is \$ \Sexpr{aa0}; this should not be interpreted as the predicted price of a car with 0 mileage because the range of the data does not include cars with 0 miles.  
+The \textit{slope} of the line is \Sexpr{aa1}, which means that predicted Price tends to drop 5 cents for every additional mile driven or about \$512.70 for every 10,000 miles. The \textit{Y-intercept} of the line is \$ \Sexpr{aa0}; this should not be interpreted as the predicted price of a car with 0 mileage because the range of the data does not include cars with 0 miles.  
 
 We can now use the line to predict the selling price of a car with 60000 miles.  What is the height or Y value of the line at $X = 60000$?  The answer is
 
@@ -94,7 +93,7 @@ We can now use the line to predict the selling price of a car with 60000 miles. 
   \texttt{Predicted Price} = \Sexpr{aa0} + (\Sexpr{aa1})(60000) = \$5059.80
 \end{equation*}
 
-or about \$5000 or \$5100 or so.
+alternately, about \$5000 or \$5100 or so.
 
 \section{Calculating the Least Squares Regression Line}
 
@@ -121,7 +120,7 @@ where the slope $b$ and the intercept $a$ are calculated as
 }}
 \end{center}
 
-Next, we'll perform the calculations for the Saturn Price data. 
+Next, we will perform the calculations for the Saturn Price data. 
 
 \begin{table}[ht]
 \centering 
@@ -158,7 +157,7 @@ so that the regression line is
 PREDICTED = a + b X = 8136 + (-0.05127) X
 \end{equation*}
 
-In terms of the original variable names, the regression line is
+Regarding the original variable names, the regression line is
 
 \begin{equation*}
   \texttt{Predicted Price} = \Sexpr{aa0} + (\Sexpr{aa1}) \texttt{Miles} 
@@ -166,7 +165,7 @@ In terms of the original variable names, the regression line is
 
 \section{More on Simple Regression}
 
-Why is this called the least squares line?  The answer is best shown by example.
+Why is this called the least squares line?  Example best shows the answer.
 
 \begin{table}[ht]
 
@@ -209,7 +208,7 @@ This predicted value missed the actual selling price $Y = 7100$.  By how much? B
 
 The negative value means actual value is too low.  This difference is called the residual.  
 
-Small residuals (ignoring the sign) are good because this means the prediction was close  (Car 1 above was predicted well, but Car 2 was not -- the selling price is almost double what was predicted).  Therefore, a prediction line is good if it gives residuals that are as small as possible.  
+Small residuals (ignoring the sign) are good because this means the prediction was close  (Car 1 above was predicted well, but Car 2 was not -- the selling price is almost double what was predicted).  Therefore, a prediction line is okay if it gives residuals that are as small as possible.  
 
 \begin{center}
 \fbox{\parbox{9cm}{
@@ -231,12 +230,12 @@ This means that if you use any other intercept and slope combination besides $(a
 
 \section{A 95\% Confidence Interval for Slope}
 
-Is there a linear relationship between X and Y?  It seems obvious that selling price (Y) responds to a car's mileage (X), but in science, relationships are often not too obvious and need confirmation by data.  For example, does an individual's systolic blood pressure (Y) tend to increase with their cholesterol level (X)?   Is there a relationship between one's total number of years of education (X) and income (Y)?  In this section, we will investigate the strength of linear relationships by looking at the slope estimate.  Since the slope represents how much Y responds to changes in the X-value, we will calculate a 95\% confidence interval for the slope, and examine whether it excludes 0.  If it does, then we can rule out the likelihood that the slope is 0.  Thus, we conclude that there is a significant linear relationship between $X$ and $Y$.
+Is there a linear relationship between X and Y?  It seems evident that selling price (Y) responds to a car's mileage (X), but in science, relationships are often not too noticeable and need confirmation by data.  For example, does an individual's systolic blood pressure (Y) tend to increase with their cholesterol level (X)?   Is there a relationship between one's total number of years of education (X) and income (Y)?  In this section, we will investigate the strength of linear relationships by looking at the slope estimate.  Since the slope represents how much Y responds to changes in the X-value, we will calculate a 95\% confidence interval for the slope, and examine whether it excludes 0.  If it does, then we can rule out the likelihood that the slope is 0.  Thus, we conclude that there is a significant linear relationship between $X$ and $Y$.
 
 We start by stating the formula for standard error:
 
 \fbox{\parbox{14cm}{
-The slope estimate $b$ tends to miss the true value $\beta$ by an amount called the \textit{standard error} of the slope, denoted SE of $b$, and calculated as:
+The slope estimate $b$ tends to miss the true value $\beta$ by an amount called the \textit{standard error} of the slope, denoted SE of $b$ and calculated as:
 
 \begin{equation}
   SE_b = \sqrt{ \frac{(1 - r^2) S_y^2}{(n - 2) S_x^2}} 
@@ -257,7 +256,7 @@ denoted SE of $b$, and calculated as:
 \end{equation}  
 }}
 
-If this interval excludes 0, then the likelihood of zero slope is ruled out, and we conclude that there is a significant linear relationship between $X$ and $Y$.
+If this interval excludes 0, then the likelihood of zero slopes is ruled out, and we conclude that there is a significant linear relationship between $X$ and $Y$.
 
 Returning to our Saturn car price example, recall that $b = -0.05127$.  The standard error of this estimate is
 
@@ -277,6 +276,23 @@ The 95\% confidence interval is
 Since this interval excludes 0, we conclude a significant relationship between car mileage and selling price.
 
 \section{Key Words}
+
+\fbox{\parbox{14cm}{
+\begin{minipage}[ht]{6cm}
+\begin{itemize}
+\item correlation coefficient
+\item correlation plots
+\item 
+\end{itemize}
+
+\end{minipage} \hfill
+\begin{minipage}[ht]{6cm}
+\begin{itemize}
+\item Pearson Correlation
+\item scatter plot
+\end{itemize}
+\end{minipage}
+}}
 
 \twocolumn
 
@@ -326,7 +342,7 @@ Several children are \\ observed, and their ages (in years) and vocabularies (th
   \item A regression equation is calculated as Y = 836X + 451. What is the slope of this regression equation?
   \item A regression equation is calculated as Y = 836X + 451. What is the intercept of this regression equation?
   \item	If a 12-year-old child knows 8,000 words, then what is the residual for this child based on the above regression equation?
-  \item	If a child has a negative residual, then do they fall above or below the predicted number of words known for average children their age (above of below the regression line)?
+  \item	If a child has a negative residual, then do they fall above or below the predicted number of words known for average children their age (above or below the regression line)?
   \item	If a 14-year-old child knows 14,000 \\ words, then what is the residual for this child based on the above regression \\ equation?
   \item	If a child has a positive residual, then do they fall above or below the predicted number of words known for average children their age (above or below the regression line)?
 \end{enumerate}
