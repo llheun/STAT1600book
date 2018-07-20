@@ -176,8 +176,8 @@ $\vdots$ & & & $\vdots$ & &  $\vdots$ \\ \hline
 A \textit{relative frequency table} gives the count for each category and the relative frequency or percentage of time in which each category occurs.  Here is a relative frequency table for Monthly Payment type.
 
 <<label=LBL2a, results="asis", echo=FALSE>>=
-  ## DT1 <- read.csv("data/ACSdata.csv", header=TRUE)
-  DT1 <- read.csv("~/Desktop/ACSdatacopy.csv", header=TRUE)
+  DT1 <- read.csv("data/ACSdata.csv", header=TRUE)
+  ## DT1 <- read.csv("~/Desktop/ACSdatacopy.csv", header=TRUE)
   attach(DT1)
   ## names(DT1)
   v1 <- table(Type.of.Payment)
@@ -402,12 +402,22 @@ The histogram and stem-and-leaf plots look alike, except that the stem-and-leaf 
 
 For moderately large samples, a \textit{dotplot} diagram is a quick way to see what the data appears.  We present dotplots of the monthly payment for rent and mortgages below.  As we observed using side-by-side stem plots, rent is smaller than mortgages and less variable.
 
-\begin{figure}[htbp]
-   \centering
-   \includegraphics[width=11cm]{chapters/Chapter_2/ext_figure/dotchart.pdf} % requires the graphicx package
-   %\caption{example caption}
-   %\label{fig:example}
-\end{figure}
+<<label=LBL2dd, results="asis", echo=FALSE, out.width="10cm">>=
+  library(ggplot2)
+  Payments <- c(140,190,200,200,220,230,250,280,290,340,340,350,370,380,380,400,420,440,450,490,500,500,500,510,530,550,560,650,670,670,700,700,700,700,710,720,740,740,750,760,770,800,850,880,900,900,910,970,990, 1000, 1000, 1100, 1200, 1200, 1200, 1200, 1200, 1300, 1400, 1400,1500, 1800, 2400)
+Type <- c("Rent", "Mortgage", "Mortgage", "Mortgage", "Rent", "Mortgage", "Rent", "Rent", "Mortgage", "Rent", "Mortgage", "Rent","Mortgage","Mortgage","Rent","Mortgage","Rent","Mortgage","Mortgage","Mortgage","Rent","Rent","Mortgage","Mortgage","Mortgage","Mortgage","Mortgage","Rent","Rent","Rent","Mortgage","Rent","Rent","Mortgage","Mortgage","Mortgage","Mortgage","Mortgage","Rent","Rent","Mortgage","Mortgage","Mortgage","Rent","Mortgage","Mortgage","Rent","Mortgage","Mortgage","Mortgage","Mortgage","Mortgage","Rent","Mortgage","Mortgage","Mortgage","Mortgage","Mortgage","Mortgage","Mortgage","Mortgage","Mortgage","Mortgage")
+df <- data.frame(Payments, Type)
+ggplot2.dotplot(data=df,xName='Type',yName='Payments', orientation="horizontal")
+ 
+@  
+
+% 
+% \begin{figure}[htbp]
+%    \centering
+%    \includegraphics[width=11cm]{chapters/Chapter_2/ext_figure/dotchart.pdf} % requires the graphicx package
+%    %\caption{example caption}
+%    %\label{fig:example}
+% \end{figure}
 
 \subsection{Box-and-Whisker Plot}
 

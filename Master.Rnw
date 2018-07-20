@@ -52,7 +52,7 @@ Eunice Ampah, Srikanthmadhavan Aravamuthan, Joseph Billian, Rudie Desravines, Mr
 
 \vspace{11cm}
 
-Copyright 2017 by The Department of Statistics at Western Michigan University.
+Copyright 2018 by The Department of Statistics at Western Michigan University.
 
 All rights reserved.
 
@@ -67,6 +67,7 @@ A general introduction to statistics with an emphasis on data analysis and graph
 library(knitr)
 library(foreign)
 library(xtable)
+library(ggplot2)
 lineWidth <- 6.1
 # ltwidth  <- 8.5
 # ltheight <- 11
