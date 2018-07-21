@@ -27,8 +27,8 @@
 
 \DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
 
-\title{{\Huge{STAT 1600 \\ Statistical Literacy and Critical Thinking }}}
-\subtitle{{\huge{Course Pack}}}
+\title{{\Huge{How to Deal with Variations of Life}}}
+\subtitle{{\Large{Statistical Literacy and Critical Thinking \\ STAT 1600 -- Course Pack}}}
 \author{Statistics Computational Lab (SCL)}
 \date{2018 - 2019 Edition}  % Activate to display a given date or no date
 
