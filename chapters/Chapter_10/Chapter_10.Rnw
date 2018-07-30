@@ -10,6 +10,7 @@ After completing this part, students should be able to:
 \fbox{\parbox{14cm}{
 
 \begin{itemize}
+\item Understand the ``wall'' between sample and population
 \item Define and explain the behavioral properties of the sample average
 \item Estimate the population mean
 \item Estimate, the population mean, using intervals

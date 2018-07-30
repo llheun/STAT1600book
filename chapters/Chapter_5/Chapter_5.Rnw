@@ -10,6 +10,7 @@ After completing this part, students should be able to:
 \fbox{\parbox{14cm}{
 
  \begin{enumerate}
+ \item Grasp the basic of good experimental design, especially of confounders
  \item Understand the importance of randomized trials (RT).
  \item Comprehend the meaning of double-blind, randomized controlled trials (RCT).
  \item Discern the observational studies.

@@ -26,6 +26,8 @@ Two variables A and B are said to be \textbf{associated} if the distribution of 
 
 Therefore, height is associated with gender and shoe size, but independent of GPA.  
 
+If we are thinking, ``association and independence are the same,''  we are almost correct.  The difference is about design. In the test of independence, we collect observational units at random from a population, and the two categorical variables are observed for each unit. In the test of association, we collect the data by randomly sampling from each sub-group \textbf{separately}. (Say, 100 Democrat, 100 Republican, 100 Independent, and so on.) The null hypothesis is that each sub-group shares the same distribution of another categorical variable. (Say, ``chain smoker'', ``occasional smoker'', ``non-smoker''.)  The difference between these two tests is subtle yet important.
+
 Now consider the following 3 by 4 table.  Researchers followed 189 students entering a business school program as part of attrition (i.e., drop out, transfer) study.  The students were cross-classified according to 4 categories of high school GPA $(2.0-2.5, 2.5-3.0, 3.0-3.5, 3.5-4.0)$ and three categories of attrition outcomes (`did not return for the 2nd year,' `returned for second but not for a 3rd year,' `returned for 3rd year').  Is there an association between HS GPA and college attrition?
 
 \begin{table}[ht]
