@@ -79,7 +79,7 @@ opts_chunk$set(
 )
 @
 
-\overfullrule=1cm
+%% \overfullrule=1cm
 
 \tableofcontents
 

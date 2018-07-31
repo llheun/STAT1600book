@@ -405,7 +405,7 @@ With    & 26 & 19 & 17 & 34 & 17 & 25 & 22 \\ \hline
 
 \begin{exercise}  % 6
 
-The group of charity workers from the above question decides on a statistical test based on the sage wisdom we previously offered. They perform a test for significance of the average difference, and it yields a p-value of 0.50. As their stats advisor, how would we interpret this p-value concerning \\ whether the average difference in donations for August versus September was significant?
+The group of charity workers from the above question decides on a statistical test based on the sage wisdom we previously offered. They perform a test for significance of the average difference, and it yields a p-value of 0.50. As their stats advisor, how would we interpret this p-value concerning \\ whether the average difference in donations for August versus September was \\ significant?
 \end{exercise}
 \begin{solution}  % 6
 
