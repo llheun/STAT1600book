@@ -441,6 +441,396 @@ $$ \Sexpr{SMP5a} $$
 
 \end{solution}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% new exercises
+
+  \begin{exercise} % 1
+  
+  The weekly budgets for groceries of six students are as follows: \\
+\$30, \$35, \$40, \$28, \$35, \$25. \\ Compute the mean, median, and mode, respectively.
+	\begin{enumerate}
+	\item 188, 30, 40
+	\item 32.167, 35, 35
+	\item 32.167, 32.5, 35
+	\item 188, 30, 35
+	\end{enumerate}
+	
+	\vspace{5mm}
+    \framebox[5cm][l]{ Answer: }
+	\end{exercise}
+	\vspace{2mm}
+	\begin{solution}
+	
+	Compute the mean, median, and mode for the weekly grocery budget
+	mean = 32.167, median = 32.5, mode = 35
+	
+	\end{solution}
+	
+  \begin{exercise} % 2
+  
+  John got 16 and 22 on his two Stat 2830 quizzes.  What score must he have on his next quiz to have the mean of exactly 20 for his three quizzes?
+	\begin{enumerate}
+	\item 20
+	\item 22
+	\item 18 
+	\item 24
+	\end{enumerate}
+	
+	\vspace{5mm}
+    \framebox[5cm][l]{ Answer: }
+	\end{exercise}
+	\vspace{2mm}
+	\begin{solution}
+	
+	The third value must be 22 so that the average is 20 for all three quizzes.
+	
+	\end{solution}
+
+  \begin{exercise} % 3
+
+    The following table lists the average number of cars per 1000 population for eight nations. Compute the three central tendency variables (mean and median) for these data.
+
+% Requires the booktabs if the memoir class is not being used
+% \begin{table}[htbp]
+%  \centering
+   %\topcaption{Table captions are better up top} % requires the topcapt package
+  % \multicolumn{9}{c}{Time Lost due to Traffic Congestion}
+  {\small{
+   \begin{tabular}{@{} lc @{}} \hline  % Column formatting, @{} suppresses leading/trailing space
+   Nation & cars per 1000 population \\ \hline
+   United States & 820 \\
+   Canada & 607 \\
+   China & 83 \\
+   Russia & 293 \\
+   Japan & 591 \\
+   Mexico & 275 \\
+   Spain & 593 \\
+   United Kingdom & 519 \\ \hline
+   \end{tabular}
+  }}
+   % \caption{Source: http://www.nationmaster.com}
+   % \label{tab:t3_9}
+% \end{table}
+
+
+  \begin{enumerate}
+  \item Which is greater in value?
+  \item Is there a positive skew in the data?
+  \item How do you know?
+  \end{enumerate}
+
+  \vspace{5mm}
+    \framebox[5cm][l]{ Answer: }
+  \end{exercise}
+  \vspace{2mm}
+  \begin{solution}
+
+
+<<result="asis", echo=FALSE>>=
+
+xdt1 <- c(819.79, 607, 83, 293, 591, 275, 593, 519)
+xsumm1 <- summary(xdt1)
+@
+
+    The mean is \Sexpr{xsumm1[4]}
+    The median is \Sexpr{xsumm1[3]}
+    There is no mode since there are no duplicates.
+
+{\bf{1. }} The greater value is the median (555).  {\bf{2. }} There is a negative skewness in the middle half the of the dataset.  (Refer to Figure 3.1.)
+
+\begin{figure}[htbp] %  figure placement: here, top, bottom, or page
+   \centering
+   \includegraphics[width=6cm]{figure/f3_1-1.pdf}
+   \caption{Boxplot of Cars per 1000}
+   \label{fig:f3_1}
+\end{figure}
+
+{\bf{3. }} When we compare the median to the mean, we find the median (555) is greater the mean (472.6).  Therefore, we can say the the dataset is left skewed.
+
+  \end{solution}
+
+
+  \begin{exercise} % 4
+
+
+      You are a researcher for a mid-sized city.  Using Table 3.8, you have collected six types of variables from a random sample of students from a large university.  These variables include:
+
+%\begin{minipage}[ht]{4cm}
+
+Select the  appropriate measures of central tendency for each variable:
+
+
+
+  \begin{enumerate}
+  \item their region of birth of country
+  \item the extent they support marijuana legalization (7=strong, 4=neutral, 1=weak)
+  \item the weekly amount of money spent on cafeteria food
+  \item number of movies they watched per \\ week
+  \item quality of cafeteria food at their university (10=excellent, 0=bad)
+  \item religious affiliation.
+  \end{enumerate}
+
+% \end{minipage}
+
+\vspace{1cm}
+    \framebox[5cm][l]{ Answer: }
+
+  \end{exercise}
+  \vspace{2mm}
+  \begin{solution}
+
+  {\bf{(1. )}} Mode  {\bf{(2. )}} Median  {\bf{(3. )}} Mean  {\bf{(4. )}} Mean  {\bf{(5. )}} Median  {\bf{(6. )}} Mode
+
+  \end{solution}
+
+%' \pagebreak
+  \begin{exercise} % 5
+
+
+% Requires the booktabs if the memoir class is not being used
+\begin{table}[htbp]
+   \centering
+   \caption{Find appropriate measures of central tendency}
+   %\topcaption{Table captions are better up top} % requires the topcapt package
+   {\tiny{
+   \begin{tabular}{@{} ccccccc  @{}} \hline % Column formatting, @{} suppresses leading/trailing space
+   Student & Birth & Legal & Expense & Movies & Food & Religion \\ \hline
+   a & West & 2 & 43 & 4 & 6 & Cath. \\
+   b & MW & 1 & 51 & 3 & 5 & Other \\
+   c & South & 4 & 65 & 14 & 0 & Other \\
+   d & South & 1 & 52 & 0 & 10 & Prot. \\
+   e & North & 5 & 48 & 1 & 6 & Jew \\
+   f & North & 2 & 62 & 5 & 8 & Prot. \\
+   g & MW & 2 & 47 & 7 & 1 & None \\
+   h & South & 3 & 45 & 10 & 2 & Cath. \\
+   i & North & 4 & 39 & 14 & 7 & Prot. \\
+   j & North & 7 & 33 & 0 & 10 & Prot. \\ \hline
+   \end{tabular}
+   }}
+   \label{tab:t3_8}
+\end{table}
+
+
+  Using the dataset from Table 3.8, determine the value of the central tendency measures for each variable.
+
+
+  \vspace{1cm}
+    \framebox[5cm][l]{ Answer: }
+  \end{exercise}
+  \vspace{2mm}
+  \begin{solution}
+    {\bf{Birth}} Mode=``North''; {\bf{Legal}} Median=2.5;  {\bf{Expense}} Mean=48.5; {\bf{Movies}} Mean=5.8; {\bf{Food}} Median=6;  {\bf{Religion}} Mode=``Protestant''
+
+  \end{solution}
+
+% \newpage  
+%   \begin{exercise} % 6
+%   
+%   
+%     For the next two questions, use the following scenario.  As a leader of a Kalamazoo social services agency that employs 20 staff members, you are concerned that your staff has an increased caseload of clients compared to 10 years ago.  The case load of each worker is reported in the following table (Table 3.9) for years 2005 and 2015.  
+%     
+% % Requires the booktabs if the memoir class is not being used
+% \begin{table}[htbp]
+%    \centering
+%    %\topcaption{Table captions are better up top} % requires the topcapt package
+%    \begin{tabular}{@{} ccccccccccc  @{}} \hline % Column formatting, @{} suppresses leading/trailing space
+%    2005 & 50&64&55&64&60&53&56&50&51&45 \\ & 46&46&50&56&63&65&53&54&58&69 \\ \hline
+%    2015 & 57&47&46&59&59&50&57&52&41&66 \\ & 65&52&57&75&65&76&43&56&52&67 \\ \hline
+%    \end{tabular}
+%     \caption{Central Tendency}
+%    \label{tab:t3_9}
+% \end{table}
+% 
+%   Has the average caseload increased, decreased, or stayed the same?
+%   
+%   \vspace{2mm}
+%     \framebox[5cm][l]{ Answer: }
+%   \end{exercise}
+%   \vspace{2mm}
+%   \begin{solution}
+%       
+%       
+% <<results="asis", echo=FALSE>>=
+%         cl2005 <- c(50,	64,	55,	64,	60,	53,	56,	50,	51,	45,	46,	46,	50,	56,	63,	65,	53,	54,	58,	69)
+%         cl2015 <- c(57,	47,	46,	59,	59,	50,	57,	52,	41,	66,	65,	52,	57,	75,	65,	76,	43,	56,	52,	67)
+%         mn3a <- mean(cl2005)
+%         med3a <- median(cl2005)
+%         mn3b <- mean(cl2015)
+%         med3b <- median(cl2015)
+% @
+% The mean for 2005 is \Sexpr{mn3a}.
+% The median for 2005 is \Sexpr{med3a}.
+% The mean for 2015 is \Sexpr{mn3b}.
+% The median for 2015 is \Sexpr{med3b}.
+% 
+%   \end{solution}
+%     
+%   \begin{exercise} % 7
+%   
+%   
+%   The admissions department at WMU gave 25 randomly selected freshmen a national prejudice survey.  The racial prejudice index scores  will be used in three years to see if higher education affects prejudice.
+%   
+% % Requires the booktabs if the memoir class is not being used
+% \begin{table}[htbp]
+%    \centering
+%    %\topcaption{Table captions are better up top} % requires the topcapt package
+%    \begin{tabular}{@{} ccccc  @{}} \hline % Column formatting, @{} suppresses leading/trailing space
+%    45 & 30 & 35 & 30 & 42 \\ 
+%    50 & 43 & 40 & 32 & 48 \\
+%    9  & 13 & 10 & 11 & 11 \\
+%    40 & 26 & 39 & 38 & 44 \\
+%    32 & 37 & 41 & 27 & 22 \\ \hline
+%    \end{tabular}
+%     \caption{Freshmen Racial Prejudice Index}
+%    \label{tab:t3_12}
+% \end{table}
+%   
+%   Calculate the mean and median scores of these data.
+%   
+% 	\vspace{2mm}
+%     \framebox[5cm][l]{ Answer: }
+% 	\end{exercise}
+% 	\vspace{2mm}
+% 	\begin{solution}
+% 	
+% 	The mean is 
+% 	<<results="asis", echo=FALSE>>=
+% 	e3dat7 <- c(45, 30, 35, 30,42, 50, 43, 40, 32, 48, 9, 13, 10, 11, 11, 40, 26, 39, 38, 44, 32, 37, 41, 27, 22)
+% 	mean(e3dat7)
+%   @
+% 	
+% 	The median is 
+% 	<<results="asis", echo=FALSE>>=
+% 
+% 	median(e3dat7)
+%   @
+% 	
+% 	\end{solution}  
+% 	
+% 	  \begin{exercise} % 8
+%   
+%   
+%   The same 25 students completed the same survey during their senior year.  Compute the mean and median for this second set of scores, and compare them to the scores from four years earlier.   What happened?
+%   
+% % Requires the booktabs if the memoir class is not being used
+% \begin{table}[htbp]
+%    \centering
+%    %\topcaption{Table captions are better up top} % requires the topcapt package
+%    \begin{tabular}{@{} ccccc  @{}} \hline % Column formatting, @{} suppresses leading/trailing space
+%    50 & 27 & 31 & 35 & 41 \\ 
+%    11 & 45 & 50 & 37 & 43 \\
+%    11 & 9  & 10 & 20 & 10 \\
+%    35 & 10 & 30 & 41 & 40 \\
+%    15 & 30 & 40 & 26 & 21 \\ \hline
+%    \end{tabular}
+%     \caption{Senior Racial Prejudice Index}
+%    \label{tab:t3_13}
+% \end{table}
+%   
+%   Calculate the mean and median scores of these data.  
+%   
+% 	\vspace{2mm}
+%     \framebox[5cm][l]{ Answer: }
+% 	\end{exercise}
+% 	\vspace{2mm}
+% 	\begin{solution}
+% 	
+% 	 
+% <<results="asis", echo=FALSE>>=
+% 	e3dat8 <- c(50, 27, 31, 35, 41, 11, 45, 50, 37, 43, 11, 9, 10, 20, 10, 35, 10, 30, 41, 40, 15, 30, 40, 26, 21)
+% 	  
+% 	mn38 <- mean(e3dat8)
+% 	md38 <- median(e3dat8)
+% 	rm(e3dat8)
+% @
+%   
+%   The mean is \Sexpr{mn38}, and the median is \Sexpr{md38}
+% 	
+% 	\end{solution}  
+% 	
+% 	\begin{exercise} % 9
+%   
+%   The next two questions refer to the following scenario.  A local social service agency has started a sex education course for teen girls.  The girls took a 20-question exam for general information about sex, anatomy and physiology upon entry and again after completing the course.  Table 3.12 has the listing of scores of a random sample of 15 girls.
+%   
+% \begin{minipage}[ht]{6cm}  
+%   
+%   Calculate the mean and median of the pre and post test scores and comment on the results.
+%   
+% \end{minipage} \hfill
+% \begin{minipage}[ht]{7cm}
+%   
+% %'     <<t3_14,echo=FALSE, fig.pos="ht", fig.align="center", fig.width=4, fig.height=4, fig.cap="Test Scores">>=
+% %' 	    t3_14a <- read.csv("data/testing.csv", header=TRUE)
+% %' 	    xtable(t3_14a)
+% %' 	    
+% %' 	  @
+% {\small{	  
+%  % latex table generated in R 3.2.1 by xtable 1.7-4 package
+%  % Wed Sep  2 09:06:12 2015
+% % \begin{table}[ht]
+%  \centering
+%  Table 3.12: Pre and Post Test Results
+%  \begin{tabular}{rrrrr}
+%    \hline
+%    case & posttest & pretest & difference \\ 
+%    \hline
+%     1 &  12 &   8 &   4 \\ 
+%       2 &  13 &   7 &   6 \\ 
+%       3 &  12 &  10 &   2 \\ 
+%       4 &  19 &  15 &   4 \\ 
+%       5 &   8 &  10 &  -2 \\ 
+%       6 &  17 &  10 &   7 \\ 
+%       7 &  12 &   3 &   9 \\ 
+%       8 &  11 &  10 &   1 \\ 
+%       9 &   7 &   5 &   2 \\ 
+%      10 &  12 &  15 &  -3 \\ 
+%      11 &  21 &  13 &   8 \\ 
+%      12 &   5 &   4 &   1 \\ 
+%      13 &  15 &  10 &   5 \\ 
+%      14 &  11 &   8 &   3 \\ 
+%      15 &  20 &  12 &   8 \\ 
+%     \hline
+%  \end{tabular}
+%  % \caption{Pre and Post Test Results}
+%  % \label{tab:t3_12}
+% % \end{table}
+% }}
+% \end{minipage} 
+% 	 
+% 	\vspace{2mm}
+%     \framebox[5cm][l]{ Answer: }
+% 	\end{exercise}
+% 	\vspace{2mm}
+% 	\begin{solution}
+% 	
+% 
+% <<results="asis", echo=FALSE>>=
+% 	pretest3 <- c(8,7,10,15,10,10,3,10,5,15,13,4,10,8,12)
+% 	mn3a <-  mean(pretest3)
+% @
+% 	The pretest mean is  \Sexpr{mn3a}	
+%  
+% <<results="asis", echo=FALSE>>=
+% 	med3a <- median(pretest3)
+% @
+% 	The pretest median is \Sexpr{med3a}
+%  
+% <<results="asis", echo=FALSE>>=
+% 	posttest3 <- c(12,13,12,19,8,17,12,11,7,12,20,5,15,11,20)
+% 	mn3a <- mean(posttest3)
+% @
+% 	The posttest mean is	\Sexpr{mn3a}
+% 	
+% <<results="asis", echo=FALSE>>=
+% 	med3b <- median(posttest3)
+% @
+% The pretest median is \Sexpr{med3b}
+% 
+% 	
+% 	\end{solution}  
+
+
+
+
 \end{exercises}
 
 \onecolumn
