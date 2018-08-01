@@ -136,7 +136,7 @@ Since $\chi^2 = 23.42$ from (12.1), then $\chi^2 > 12.59$.   We conclude that th
 \fbox{\parbox{14cm}{
 \begin{minipage}[ht]{6cm}
 \begin{itemize}
-\item chi-square test for independence
+\item chi-square test for indep
 \item contingency table
 \end{itemize}
 
