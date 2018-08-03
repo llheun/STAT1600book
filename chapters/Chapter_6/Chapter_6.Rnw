@@ -398,18 +398,8 @@ The average adult female \\ height is 63.8 inches with a standard deviation of 2
 
   \end{exercise}
 % \begin{solution}  % 6
-% <<label=LBL4-6, results="asis", echo=FALSE>>=
-%   mn6 <- 63.8
-%   sd6 <- 2.4
-%   prob6 <- pnorm(q=72, mean=mn6, sd=sd6)
-%   z6  <- qnorm(p=(1-.25), mean=0, sd=1)
-%   x6  <- mn6 + z6*sd6
-% @
-% 
-% \begin{enumerate}
-% \item The proportion of adult female heights is below 72 is $P[ X < 72] = \Sexpr{prob6}$.
-% \item 25\% of adult females are greater than $P[ X > a] = .25$ where a = \Sexpr{x6}
-% \end{enumerate}
+
+
 % \end{solution}
 
 \begin{exercise} % 7
@@ -433,6 +423,241 @@ Values in the table give the area under the curve to the left of the z-values on
 \item The area to the left of 2.25 is.9878
 \end{enumerate}
 \end{solution}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% new exercises
+
+  \begin{exercise} % 1 
+  
+    Test scores for 120 students were found to have a mean of 32.  Suppose the upper bound of the middle 99.7\% is  41.  What is the standard deviation of this data?
+	  \begin{enumerate}
+	  \item 2
+	  \item 2.5
+	  \item 3
+	  \item 4
+	  \end{enumerate}
+	  \vspace{2mm}
+    \framebox[5cm][l]{ Answer: }
+	\end{exercise}
+	\vspace{2mm}
+	\begin{solution}
+	  \begin{equation}
+	    SD = \frac{(41 - 32)}{3} = 3
+	  \end{equation}
+	\end{solution}
+	
+  \begin{exercise} % 2
+
+    Given a distribution of male weights  has a mean of 153 lbs and standard deviation of 11 pounds, how many standard deviations away from the average weight is 173 lbs?
+	  \begin{enumerate}
+	  \item $-1.82$
+	  \item 1.82
+	  \item 1.82 lbs.
+	  \item You cannot calculate the z-score with the information provided.
+	  \end{enumerate}
+	  \vspace{2mm}
+    \framebox[5cm][l]{ Answer: }
+	\end{exercise}
+	\vspace{2mm}
+	\begin{solution}
+	  \begin{equation}
+	    z = \frac{173 - 153}{11} = 1.82
+	  \end{equation}
+	\end{solution}
+
+  \begin{exercise} % 3
+
+    Given the distribution of male weights has a mean of 155 and standard deviation of 12, what percent
+of men weight less than 143 pounds?
+	  \begin{enumerate}
+	  \item 0.1587
+	  \item 0.3413
+	  \item 15.87
+	  \item 34.13
+	  \end{enumerate}
+	  \vspace{2mm}
+    \framebox[5cm][l]{ Answer: }
+	\end{exercise}
+	\vspace{2mm}
+	\begin{solution}
+
+	    $z = \frac{143 - 155}{12} = -1$ \\
+	    $P[z < -1] = 15.87$
+
+	\end{solution}
+
+% \newpage
+
+  \begin{exercise} % 4
+
+    Given the distribution of male poundage with a mean of 155 and standard deviation of 12, what value
+represents the $90^{th}$ percentile for weights of men (in \\ pounds)?
+	  \begin{enumerate}
+	   \item 155.00
+	  \item 170.36
+	  \item 179.00
+	  \item 189.13
+	  \end{enumerate}
+	  \vspace{5mm}
+    \framebox[5cm][l]{ Answer: }
+	\end{exercise}
+	\vspace{2mm}
+	\begin{solution}
+
+	    $x = \mu + Z \sigma$ \\
+	    $x = 155 + 1.28 \times (12) $ \\
+	    $x = 170.36$
+
+  \end{solution}
+
+  \begin{exercise} % 5
+
+
+    Given the distribution of male poundage with a mean of 155 and standard deviation of 12, what value
+represents the $25^{th}$ percentile for weights of men (in \\ pounds)?
+	  \begin{enumerate}
+	   \item 155.00
+	  \item 163.10
+	  \item 146.91
+	  \item 131.00
+	  \end{enumerate}
+	  \vspace{5mm}
+    \framebox[5cm][l]{ Answer: }
+	\end{exercise}
+	\vspace{2mm}
+	\begin{solution}
+
+	    $x = \mu + Z \sigma$ \\
+	    $x = 155 - 0.6745 \times (12) $ \\
+	    $x = 146.91$
+
+  \end{solution}
+
+% 	\begin{exercise}  % 6
+% 	
+% 	
+% 	 The next five activities refer to the following scenario.  Table 5.1 shows the 2013 total expenditure on health as a percentage of GDP in 34  countries.  The health expenditure per capita is the sum of private and public health costs divided by GDP. Health fees include emergency aid, family-planning services, health functions, and nutrition activities, but exclude services of sanitation and potable water.  \cite{Health2013}
+% 
+% 
+% % 	  % Requires the booktabs if the memoir class is not being used
+% % \begin{table}[htbp]
+% %    \centering
+% %    %\topcaption{Table captions are better up top} % requires the topcapt package
+% %    {\tiny{
+% %    \caption{2013 Expenditure on Health as a Percentage of GDP.}
+% %    \begin{tabular}{@{} lr | lr | lr @{}} \hline % Column formatting, @{} suppresses leading/trailing space
+% %     Country & Percent & Country & Percent & Country & Percent \\ \hline
+% %     Argentina & 7.3 & Greece & 9.8 & Saudi Arabia & 3.2 \\ 
+% %     Australia & 9.4 & India & 4.0  & South Africa & 8.9 \\
+% %     Austria   & 11.0 & Indonesia & 3.1 & Spain & 8.9 \\
+% %     Belgium & 11.2 & Israel & 7.2 & Sweden & 9.7 \\
+% %     Brazil & 9.7 & Italy & 9.1 & Switzerland & 11.5 \\
+% %     Canada & 10.9 & Japan & 10.3 & Thailand & 4.6 \\
+% %     Chile & 7.7 & Malaysia & 4.0 & Turkey & 5.6 \\
+% %     China & 5.6 & Mexico & 6.2 & UK & 9.1 \\
+% %     Congo & 4.1 & Netherland & 12.9 & USA & 17.1 \\
+% %     Denmark & 10.6 & Norway & 9.6 & Venezuela & 3.6 \\
+% %     France & 11.7 & Poland & 6.7 & & \\
+% %     Germany & 11.3 & Russian Fed. & 6.5 & & \\ \hline
+% %    \end{tabular}
+% % }}
+% %    \label{tab:t5_6_1}
+% % \end{table}
+% 
+%   Suppose that the mean and standard deviations are 8.30 and 3.224, respectively, are population parameters.  What countries are in the top 15 percent?  Hint: find the value of the $85^{th}$ percentile and compare it to the Percentage of GDP.
+% 
+% 	\end{exercise}
+% 	\vspace{1.5cm}
+% 	\begin{solution}
+% 	
+% <<results="asis", echo=FALSE>>=
+%   
+%   tmp51 <- qnorm(.85, mean=8.3, sd=3.224)
+% 
+% @
+% 	 
+% 	  The value of the $85^{th}$ percentile is \Sexpr{tmp51}.
+% 	  
+% 	  There are three countries: USA(17.1), Netherland (12.9), and France (11.7).
+% 	   
+% 	\end{solution}  
+% 	
+		\begin{exercise}  % 7
+
+
+	  The mean and standard \\ deviation are 8.30 and 3.224, respectively. \\ What countries are in the bottom 15 percent?  Hint: find the value of the $15^{th}$ percentile and compare it to the percentage of GDP.
+
+	  \end{exercise}
+	  \vspace{2cm}
+	  \begin{solution}
+
+	  <<results="asis", echo=FALSE>>=
+
+  tmp52 <- qnorm(.15, mean=8.3, sd=3.224)
+
+@
+
+	  The value of the $15^{th}$ percentile is \Sexpr{tmp52}.
+
+	  There are six countries: Congo (4.1), Indonesia (3.1), Saudi Arabia (3.2), Venezuela (3.6), India (4.0), Malaysia (4.0), and Thailand (4.6).
+
+	\end{solution}
+
+		\begin{exercise}  % 8
+
+
+	  The mean and standard \\ deviation are 8.30 and 3.224, respectively.  \\ What percentage of countries 2013 Expenditures on Health as a share of GDP had values below 7.3?   Hint: find the probability of the mean being less than 7.3 and compare it to the Percentage of GDP.
+
+	  \end{exercise}
+	  \vspace{2cm}
+	  \begin{solution}
+
+	  <<results="asis", echo=FALSE>>=
+
+  tmp53 <- pnorm(7.3, mean=8.3, sd=3.224)
+
+@
+
+    The probability of having a mean less than 7.3 ($P[ \bar{x} < 7.3 ]$) is \Sexpr{tmp53}.
+
+	\end{solution}
+
+			\begin{exercise}  % 9
+
+
+	  The mean and standard \\ deviation are 8.30 and 3.224, respectively.  \\ What percentage of countries 2013 Expenditures on Health as a share of GDP had values above 9.3?   Hint: find the probability of the mean being greater than 9.3.
+
+	  \end{exercise}
+	  \vspace{2cm}
+	  \begin{solution}
+
+	  <<results="asis", echo=FALSE>>=
+
+  tmp54 <- pnorm(9.3, mean=8.3, sd=3.224)
+
+@
+
+    The probability of having a mean greater than 9.3 ($P[ \bar{x} > 9.3 ]$) is \Sexpr{tmp54}.
+
+	\end{solution}
+
+  			\begin{exercise}  % 10
+
+
+	  The mean and standard \\ deviation are 8.30 and 3.224, respectively.  \\ What percentage of countries 2013 Expenditures on Health as a share of GDP had values between 7.3 and 9.3?   Hint: find the probability of the mean being between 7.3 and  9.3.
+
+	  \end{exercise}
+	  \vspace{1.5cm}
+	  \begin{solution}
+
+	  <<results="asis", echo=FALSE>>=
+
+  tmp55 <- pnorm(9.3, mean=8.3, sd=3.224) - pnorm(7.3, mean=8.3, sd=3.224)
+
+@
+
+    The probability of having a mean between 7.3 and  9.3 ($P[ 7.3 < \bar{x} < 9.3 ]$) is \Sexpr{tmp55}.
+
+	\end{solution}
 
 \end{exercises}
 

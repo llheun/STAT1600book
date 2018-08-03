@@ -373,19 +373,19 @@ Moviegoers are monitored for their level of anxiety while watching a new horror 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% new questions
 
  \begin{exercise} % 1       %%%%%%%%%%%%%%%%%%%%%%%%%%%
-  
-  
+
+
     How well does the number of beers a student drinks predict his or her
 blood alcohol content (BAC)? Sociology researchers, at Ohio State University, wanted to know if there is a relationship between the amount of beer consumed and BAC. The researchers assigned the number of cans of beer to each student. After each student had consumed the assigned number of beers,  thirty minutes later, an officer of the law measured the students BAC. \cite{OSU2016}
-% A scatterplot of the data appears below.  
+% A scatterplot of the data appears below.
 One \\ student drank nine beers. You see from the scatter plot that his BAC was about
 
 \begin{figure}[htbp] %  figure placement: here, top, bottom, or page
    \centering
-   \includegraphics[width=7cm]{chapters/Chapter_14/ext_figure/zRegF.png} 
+   \includegraphics[width=7cm]{chapters/Chapter_14/ext_figure/zRegF.png}
    \caption{Number of Beers vs. BAC}
    \label{fig:f12_11}
-\end{figure} 
+\end{figure}
 
 
     \begin{enumerate}
@@ -397,11 +397,11 @@ One \\ student drank nine beers. You see from the scatter plot that his BAC was 
     \end{enumerate}
     \vspace{5mm}
     \framebox[5cm][l]{ Answer: }
-    
+
   \end{exercise}
   \vspace{2mm}
   \begin{solution}
-     $ BAC = -0.012 + 0.017 (9) = 0.14 $ 
+     $ BAC = -0.012 + 0.017 (9) = 0.14 $
   \end{solution}
 
   \begin{exercise} % 2            %%%%%%%%%%%%%%%%%%%%
@@ -436,7 +436,7 @@ A scatterplot of the data appears below.  The scatterplot shows
     A moderately strong positive straight-line relationship between number of beers and BAC.
   \end{solution}
 
-  \begin{exercise} % 3         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%    
+  \begin{exercise} % 3         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
     How well does the number of beers a student drinks predict his or her
 blood alcohol content (BAC)? Sociology researchers, at Ohio State University, wanted to know if there is a relationship between the amount of beer consumed and BAC. The researchers assigned the number of cans of beer to each student. After each student had consumed the assigned number of beers,  thirty minutes later, an officer of the law measured the students BAC. \cite{OSU2016}
@@ -465,7 +465,7 @@ A scatterplot of the data appears below.  A plausible value of the correlation b
        The correllation coefficient is $r = 0.875 = \sqrt{0.765}$ where  $r^2$ is the coefficient of determination.
     \end{solution}
 
-    
+
   \begin{exercise} % 4
 
 
@@ -501,7 +501,7 @@ abline(m12)
 }}
 
     \vspace{5mm}
-    \framebox[7cm][l]{ Answer: }
+    \framebox[5cm][l]{ Answer: }
 
     \end{exercise}
     \vspace{2mm}
@@ -514,7 +514,7 @@ abline(m12)
     STEP 2: Using the information from exercise four, we must state the hypotheses about its relationship between {\textit{income}} and {\textit{height}}.  Based on our experience, how should we state our hypotheses?
 
     \vspace{5mm}
-    \framebox[7cm][l]{ Answer: }
+    \framebox[5cm][l]{ Answer: }
 
     \end{exercise}
     \vspace{2mm}
@@ -529,7 +529,7 @@ abline(m12)
     STEP 3: Using the information from exercise four, determine the coefficient of determination.  Recall that this value is also referred to as r-squared.
 
     \vspace{5mm}
-    \framebox[7cm][l]{ Answer: }
+    \framebox[5cm][l]{ Answer: }
 
     \end{exercise}
     \vspace{2mm}
@@ -583,11 +583,8 @@ abline(m12)
 
     STEP 5: Using the information from exercise four, describe the results of the independent variable.  Identify variables that we tested, their strength and direction of the relationship.  We should distinguish the relationship in general terms and refer the statistical value in parentheses.  Also not whether the hypotheses were supported.
 
-
-
-
     \vspace{10mm}
-    \framebox[14cm][l]{ Answer: }
+    \framebox[5cm][l]{ Answer: }
 
     \end{exercise}
     \vspace{2mm}
@@ -639,7 +636,7 @@ NotMarried <- x12_11[,4]
 What are the dependent and independent \\ variables?
 
     \vspace{5mm}
-    \framebox[7cm][l]{ Answer: }
+    \framebox[5cm][l]{ Answer: }
 
     \end{exercise}
     \vspace{2mm}
@@ -670,7 +667,7 @@ What are the dependent and independent \\ variables?
     STEP 3: Using the information from exercise 12, determine the coefficient of determination.
 
     \vspace{5mm}
-    \framebox[7cm][l]{ Answer: }
+    \framebox[5cm][l]{ Answer: }
 
     \end{exercise}
     \vspace{2mm}
@@ -714,7 +711,7 @@ What are the dependent and independent \\ variables?
      \end{table}
 
   %  \vspace{5mm}
-  %  \framebox[8cm][l]{ Answer: }
+  %  \framebox[5cm][l]{ Answer: }
 
     \end{exercise}
     \vspace{2mm}
@@ -730,8 +727,8 @@ What are the dependent and independent \\ variables?
 
     Using the information from exercise 12, record the independent, dependent variables, and the correlation coefficients.
 
-  %  \vspace{5mm}
-  %  \framebox[8cm][l]{ Answer: }
+    \vspace{5mm}
+    \framebox[5cm][l]{ Answer: }
 
     \end{exercise}
     \vspace{2mm}
