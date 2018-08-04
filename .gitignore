@@ -2,8 +2,6 @@
 .Rhistory
 .RData
 .Ruserdata
-
 *.log
 figure/*.pdf
 Master.tex
-Master.pdf

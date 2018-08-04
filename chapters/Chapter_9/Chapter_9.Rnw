@@ -403,7 +403,7 @@ If $OR < 1$, we can put the `not exposed' group in the numerator, so that $OR > 
  \end{tabular}
  \end{table}
 
-and get $OR = (66)(895)/(830)(3) = 23.7$ (``Placebo group has 24 times the odds of getting hepatitis''). If we use
+and get $OR = ((66)(895))/((830)(3)) = 23.7$ (``Placebo group has 24 times the odds of getting hepatitis''). If we use
 
 \begin{table}[ht]
 \centering
@@ -637,27 +637,96 @@ The age at which a woman gives birth to her first child may be an \\ essential f
 In a sample of 200 surgeons, 15\% thought the government should control health care.  Whereas, in a sample of 200 gen- \\ eral practitioners, 21\% thought the same.
 
 \begin{enumerate}
-\item Estimate the difference in the percentage of those who think the government should control health care between surgeons \\ and general practitioners.
-\item Calculate a standard error for our \\ estimate in (1).
-\item Calculate a 95\% confidence interval for the difference in the percentage of those who \\ think the government should control \\ health care between surgeons and \\ general practitioners.
-\item Estimate the risk ratio of those who \\ think the government should control \\ health care between surgeons and \\ general practitioners.
-\item Estimate the odds ratio of those who \\ think the government should control \\ health care between surgeons and \\ general practitioners.
+\item Estimate the difference in the percentage of those who think the government should control health care between surgeons and general practitioners.
+\item Calculate a standard error for our estimate in (1).
+\item Calculate a 95\% confidence interval for the difference in the percentage of those who think the government should control health care between surgeons and general practitioners.
+\item Estimate the risk ratio of those who \\ think the government should control  \\ health care between surgeons and general practitioners.
+\item Estimate the odds ratio of those who think the government should control \\  health care between surgeons and general practitioners.
 \end{enumerate}
   \end{exercise}
   % \begin{solution}  % 4
   %
   %     SE =
-  %     <<results="asis", echo=FALSE>>=
+  %    < results="asis", echo=FALSE>>=
   %       SE1 <- 0.3/sqrt(100)
   %       SE1
   %     @
   %
   %     ME =
-  %     <<results="asis", echo=FALSE>>=
+  %     results="asis", echo=FALSE>>=
   %       ME1 <- CV1 * SE1
   %       ME1
   %     @
   % \end{solution}
+  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% new exercise
+
+  \begin{exercise} % 6
+  
+A Pew Research Center poll asked randomly selected subjects if they \\ agreed with the statement that ``It is morally wrong for married people to have an affair.''  Among the 386 women surveyed, 347 agreed and among the 359 men, 305 agreed.  Use a 5 percent significance to test if the difference in significant? 
+    
+  Given the computer output,  what should we conclude with 95 percent confidence \\ interval?
+  
+    {\small{
+    \begin{tabular}{@{} cccc @{}} \hline % Column formatting, @{} suppresses leading/trailing space   
+       \multicolumn{4}{c}{CI for Two Proportion} \\ \hline
+       Sample & X & N & Sample p \\ \hline
+       1 (women) & 347 & 386 & 0.898964 \\
+       2 (men) & 305 & 359 & 0.849582 \\ \hline                               
+    \end{tabular} 
+    }}
+    
+    {\footnotesize{
+    \begin{tabular}{@{} l @{}} 
+    Difference = p(1) - p(2) \\
+    Estimate for difference: -0.0493816 \\
+    95\% CI for difference: (0.00172287, 0.0970402)  \\
+    Test for difference = 0 (vs not $= 0$): Z = 2.04,  \\ p-val = .042
+    \end{tabular}
+    }}
+    
+\begin{enumerate}
+\item Determine the difference in the percentage of those who thought that it is \\ wrong for married people to have an affair.  
+
+\item Calculate a standard error for our estimate in (1).
+
+\item Determine a 95\% confidence interval for the difference in the percentage of those who thought that it is wrong for married people to have an affair.
+
+\item Estimate the risk ratio of those who \\ thought that it is wrong for married people to have an affair.
+
+\item Estimate the odds ratio of those who thought that it is wrong for married people to have an affair.
+\end{enumerate}
+
+	  \vspace{2mm}
+    \framebox[5cm][l]{ Answer: }
+	\end{exercise}
+	\vspace{2mm}
+	\begin{solution}
+	
+	<<label=LBL9-2, results="asis", echo=FALSE>>=
+  # P1 - P2
+  p3   <- 305/359
+  p4   <- 347/386
+  p3p4 <- p3 - p4
+  Sp1p2 <- sprintf("%.1f", p3p4 * 100)
+  sep3  <- sqrt( p3* (1 - p3)/ 359)
+  sep4  <- sqrt( p4* (1 - p4)/ 386)
+  sep3p4  <- sqrt( sep3^2 + sep4^2)
+  Ssep1p2 <- sprintf("%.4f", sep3p4)
+  lbnd1   <- sprintf("%.2f", (p3p4 - 1.96 * sep3p4)*100)
+  ubnd1   <- sprintf("%.2f", (p3p4 + 1.96 * sep3p4)*100)
+  rr1     <- p4/p3
+  OR1     <- (347 * (359-305)) / (305 * (386-347))
+@
+	  
+	  \begin{enumerate}
+	  \item Conclude that there is a difference since zero is not within the interval that the difference in the proportion of men and women who think that it is wrong for married people to have an affair. 
+	  \item SE = \Sexpr{Ssep1p2} 
+	  \item RR = \Sexpr{rr1} 
+	  \item OR = \Sexpr{OR1}
+	  \end{enumerate}	
+	  
+	\end{solution} 
 
 
 \end{exercises}
