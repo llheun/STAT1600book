@@ -516,7 +516,7 @@ With 95\% confidence, the odds of unvaccinated subjects getting hepatitis is bet
 
   \begin{exercise}  % 1
 
-In a study of drug usage by students at a large university, researchers obtained the data regarding hard liquor experience of \\ smokers and nonsmokers.
+In a study of drug usage by students at a large university, researchers obtained the data regarding hard liquor \\ experience of smokers and nonsmokers.
 
 \begin{table}[ht]
 \centering
@@ -727,7 +727,66 @@ A Pew Research Center poll asked randomly selected subjects if they \\ agreed wi
 	  \end{enumerate}	
 	  
 	\end{solution} 
+	
+  \begin{exercise} % 6
 
+      Suppose half of the public safety officers in Kalamazoo, Michigan, completed the investigative procedures Curriculum (IPC).  The other half did not attend the IPC.  Did the course increase their effectiveness in clearing crimes by arrest?  The following table reports the results of the survey:
+
+\vspace{2mm}
+
+{\small{
+    \begin{tabular}{@{} lcc @{}} \hline % Column formatting, @{} suppresses leading/trailing space
+      & \multicolumn{2}{c}{Frequency Distribution} \\ \hline
+        & Trained (1) & Untrained (2)  \\ \hline
+       Cleared & 75 & 49  \\
+       Uncleared & 85 & 66  \\ \hline
+       Total     & 160 & 115  \\ \hline
+    \end{tabular}
+}}
+
+\begin{enumerate}
+\item Determine the difference in the percentage of those who completed the investigative procedures Curriculum (IPC)
+
+\item Calculate a standard error for our estimate in (1).
+
+\item Determine a 95\% confidence interval for the difference in the percentage of those who completed the investigative procedures Curriculum (IPC)
+
+\item Estimate the risk ratio of those who \\ completed the investigative procedures Curriculum (IPC)
+
+\item Estimate the odds ratio of those who completed the investigative procedures Curriculum (IPC)
+\end{enumerate}
+
+	  \vspace{2mm}
+    \framebox[5cm][l]{ Answer: }
+	\end{exercise}
+% 	\vspace{2mm}
+% 	\begin{solution}
+% 	
+% 	<label=LBL9-3, results="asis", echo=FALSE>>=
+%   # P1 - P2
+%   p5   <- 75/160
+%   p6   <- 49/115
+%   p5p6 <- p5 - p6
+%   Sp1p2 <- sprintf("%.1f", p5p6 * 100)
+%   sep5  <- sqrt( p5* (1 - p5)/ 160)
+%   sep6  <- sqrt( p6* (1 - p6)/ 115)
+%   sep5p6  <- sqrt( sep5^2 + sep6^2)
+%   Ssep1p2 <- sprintf("%.4f", sep5p6)
+%   lbnd1   <- sprintf("%.2f", (p5p6 - 1.96 * sep5p6)*100)
+%   ubnd1   <- sprintf("%.2f", (p5p6 + 1.96 * sep5p6)*100)
+%   rr1     <- p5/p6
+%   OR1     <- (75 * 66) / (85 * 49) 
+% @
+% 	 
+% 	  \begin{enumerate}
+% 	  \item Conclude that there is a difference since zero is not within the interval that the difference in the proportion of trained and untrained who completed the investigative procedures Curriculum (IPC) 
+% 	  \item SE = \Sexpr{Ssep1p2} 
+% 	  \item RR = \Sexpr{rr1} 
+% 	  \item OR = \Sexpr{OR1}
+% 	  \end{enumerate}	
+% 	  
+% 	\end{solution} 	
 
 \end{exercises}
+
 \onecolumn
