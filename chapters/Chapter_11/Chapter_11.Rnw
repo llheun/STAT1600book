@@ -411,6 +411,39 @@ The group of charity workers from the above question decides on a statistical te
 
 \end{solution}
 
+\begin{exercise}  % 7
+
+Suppose a shoe company wants to test material for the soles of shoes.  For each pair of shoes the new material is placed on one shoe and the old material is placed on the other shoe.  After a given period of time a random sample of 16 pairs of shoes is selected.  The wear is measured on a 10 point scale (higher is better) with the following results.  The average of the differences is $\bar{X}_n - \bar{X}_o = 0.4$ and it standard deviation is $s_{diff} = 1.6$.
+
+\begin{enumerate}
+  \item Determine the mean difference in the sole-wear between the two material \\ types.        
+  \item Calculate a standard error for our estimate in (1).
+  \item Calculate a 95\% confidence interval for the mean sole-wear difference.
+  \item Does the data support the claim that the new material gives superior wear?
+\end{enumerate}
+
+\end{exercise}
+\begin{solution}  % # 7
+
+<<label=LBL11a, results="asis", echo=FALSE>>=
+  n11 <- 16
+  xbar11 <- 0.4
+  sd11 <- 1.6
+  se11 <- 1.6 / sqrt(16)
+  cv11 <- qt(.975, (n11-1))
+  lbnd11 <- xbar11 - cv11 * se11
+  ubnd11 <- xbar11 + cv11 * se11
+@
+
+\begin{enumerate}
+  \item $\bar{X}_d = \Sexpr{xbar11} $     
+  \item $SE_d = \Sexpr{se11}$
+  \item $95\% CI  \rightarrow ( \Sexpr{lbnd11}, \Sexpr{ubnd11} )$
+  \item Does the data support the claim that the new material gives superior wear?  No, since zero is contained in the 95\% CI.
+\end{enumerate}
+
+\end{solution}
+
 \end{exercises}
 
 
