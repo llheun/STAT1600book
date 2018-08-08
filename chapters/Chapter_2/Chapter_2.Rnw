@@ -413,14 +413,6 @@ ggplot(data=df, aes(x = Type, y = Payments, fill = Type)) +
     coord_flip()
 @  
 
-% 
-% \begin{figure}[htbp]
-%    \centering
-%    \includegraphics[width=11cm]{chapters/Chapter_2/ext_figure/dotchart.pdf} % requires the graphicx package
-%    %\caption{example caption}
-%    %\label{fig:example}
-% \end{figure}
-
 \subsection{Box-and-Whisker Plot}
 
 A box-and-whisker or boxplot shows useful information about the data including the measures the central tendency and the variability of the distribution.  First, order the data from smallest to largest.  What is the range of the first (or smaller) half of the data?  The smallest quarter of the data?  The next quarter?  The box-and-whisker plot or boxplot is a graphical picture of the distribution of quarters of the data.  Consider once again the monthly payments from the ACS housing data.  We list them here sorted from smallest to largest (minus the outlier  (\$5200)).
@@ -440,6 +432,7 @@ There are $n = 63$ observations.  One-quarter of the data is 63/4=15.75, or appr
 
 More precisely, the software draws vertical lines at (140, 400, 700, 970, 2400).  Hence, the lowest 16 monthly payments lie within (\$140, \$400).  The next set of 16 observations lies within (\$400, \$700).  The third set lies within (\$700, \$970).  Finally, the last 16 observations lie within (\$970, \$2400).  The five values (140, 400, 700, 970, 2400) that divide the data into quarters and form the fences and whiskers of the boxplot are collectively called the five-number-summary of the data.  They are often denoted as MIN, $Q_1$, MED, $Q_3$, and MAX respectively.
 
+{\small{
 \begin{enumerate}
 \item	\textbf{MIN} is called the \textbf{minimum} and is the smallest of the ordered observations.
 \item	\textbf{$Q_1$} is the upper boundary of the first quarter and is called the \textbf{first quartile}.
@@ -447,6 +440,7 @@ More precisely, the software draws vertical lines at (140, 400, 700, 970, 2400).
 \item	\textbf{$Q_3$} is the upper boundary of the third quarter and is called the \textbf{third quartile}.
 \item	\textbf{MAX} is the largest of the ordered observations and is called the \textbf{maximum}.
 \end{enumerate}
+}}
 
 Boxplots are particularly useful for comparing two distributions side-by-side.  Below are boxplots of mortgage data and rent drew parallel to each other on the same scale.  When comparing data of mortgages and rental, we find that mortgages tend to be larger than rent since the median and quartiles are larger.  There is also a considerable difference in the spread, with the mortgage data having a long right tail, evidence that mortgages have a higher ceiling than rent.
 

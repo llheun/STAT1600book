@@ -283,7 +283,7 @@ Let's say that we take a \\ sample of 100 observation has 20 successes.
 
 \end{exercise}
 % \begin{solution} % 2
-% <<label=LBL8-2, results="asis", echo=FALSE>>=
+% <label=LBL8-2, results="asis", echo=FALSE>>=
 %   N1 <- 100
 %   X1 <- 20
 %   prob62a <- X1 /N1
@@ -327,7 +327,7 @@ When a flight experiences fewer no-shows than expected, some passengers are \\ `
 \end{enumerate}
 \end{exercise}
 % \begin{solution} % 4
-% <<label=LBL8-4, results="asis", echo=FALSE>>=
+% <label=LBL8-4, results="asis", echo=FALSE>>=
 %   N1 <- 500
 %   X1 <- 33
 %   prob64a <- X1 /N1
@@ -381,7 +381,7 @@ Wiley Publications has determined that out of a sample of 5,511 of its publicati
 \end{enumerate}
 \end{exercise}
 % \begin{solution} % 6
-% <<label=LBL8-6, results="asis", echo=FALSE>>=
+% <label=LBL8-6, results="asis", echo=FALSE>>=
 %   N1 <- 5511
 %   X1 <- 1754
 %   prob66a <- X1 /N1
@@ -425,6 +425,24 @@ Researchers who were \\ concerned if doctors were consistently adjusting dosages
 \item	The 95\% confidence interval is \\ $\Sexpr{prob67a} \pm \Sexpr{me67c}$
 \item	The 95\% confidence interval is \\ $\Sexpr{prob67a} \pm \Sexpr{me67c}$
 \end{enumerate}
+\end{solution}
+
+\begin{exercise} % 8
+
+Suppose researchers are interested in the potential sample size of an experiment to investigate gastrointestial problems after consuming 10 grams of sorbitol.  What is the sample size that researchers need if they suspect that 20\% of people who experience gastrointestial problems after consuming 10 grams of sorbitol?  They want 95\% confidence and and margin of error of 8\%.
+
+\end{exercise}
+\begin{solution} % 8
+<<label=LBL8-8, results="asis", echo=FALSE>>=
+  cv8a <- 1.96       ## P[ a < z < b ] = .95
+  M8a  <- 0.08
+  p8a  <- .2
+  q8a  <- 1 - .2
+  n8   <- ceiling( p8a * q8a * (cv8a/M8a)^2 )
+@
+
+The standard error of this estimate is \Sexpr{n8}
+
 \end{solution}
 
 

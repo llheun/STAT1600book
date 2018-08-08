@@ -76,7 +76,7 @@ You can compute these probabilities yourself by successively substituting \\ $j 
  P[ X = j] = \frac{5!}{j! (5 - j)!} .2^j .8^{5 - j}, \texttt{ where j = 0,1,2,3,4,5 }
  \end{equation*}
 
-Remember that 0! = 1 and (0.2)0 = 1.  This formula is called the \textbf{binomial probability distribution function (pdf)} for $n = 5$ and p$ = 0.2$.  To compute the probabilities for Examples 2 and 3, you will need the binomial pdf for general $n$ and $p$:
+Remember that $0! = 1$ and $(0.2)^0 = 1$.  This formula is called the \textbf{binomial probability distribution function (pdf)} for $n = 5$ and p$ = 0.2$.  To compute the probabilities for Examples 2 and 3, you will need the binomial pdf for general $n$ and $p$:
 
 \begin{equation*}
  P[ X = j] = \frac{n!}{j! (n - j)!} p^j q^{n - j}, \texttt{ where j = 0,1,2, $\cdots$ , n}
@@ -375,7 +375,7 @@ The career batting average of Ty Cobb is 0.3664. If Ty Cobb had eight at-bats du
 Fill in the blanks. The probability of picking the Powerball number is \\ 0.0254. If 50 tickets are purchased, around \underline{\phantom{xxxxxxxx}} of  tickets will be winners,  give or take  \underline{\phantom{xxxxxxxx}}.    Assume each pick is independent.
 	\end{exercise}
 % 	\begin{solution}  % 6
-% <<label=LBL7-6, results="asis", echo=FALSE>>=
+% <label=LBL7-6, results="asis", echo=FALSE>>=
 %   N1 <- 50
 %   P1 <- 0.0254
 %   MN1 <- N1 * P1
@@ -383,7 +383,6 @@ Fill in the blanks. The probability of picking the Powerball number is \\ 0.0254
 % @
 % 
 % The expected value is \Sexpr{MN1} and SD is \Sexpr{SD1}
-% 
 % 	\end{solution}
 
 		\begin{exercise}  % 7
@@ -401,7 +400,35 @@ Fill in the blanks. The probability of a defective light bulb is 0.04. If purcha
 The expected value is \Sexpr{MN1} and SD is \Sexpr{SD1}
 	\end{solution}
 
-%
+  \begin{exercise}   % 8
+  
+An industry official claims that 60 percent of all satellite dish owners subscribe to at least two premium movie channels.  In an attempt to clarify this claim, the official will poll a random sample of dish owners.  Suppose the official's claim is true, and that she selected a random sample of 50 dish owners.  Assuming independence, 
+
+\begin{enumerate}
+\item what is the probability that 33 or more dish owners in the sample subscribe to at least two premium movie channels? 
+\item what is the probability that 25 or fewer dish owners in the sample subscribe to at least two premium movie channels?
+\end{enumerate}
+\end{exercise}
+\begin{solution}
+
+<<label=LBL7h, results="asis", echo=FALSE>>=
+  n7 <- 50
+  p7 <- .60
+  mn7 <- n7 * p7
+  sd7 <- sqrt(n7 * p7 * (1 - p7))
+  z7a  <- ((33-.5) - mn7) / sd7
+  prb7a <- sprintf("%.4f", (1 - pnorm(z7a)))       ## P[ x >= 33]
+  z7b  <- ((25+.5) - mn7) / sd7
+  prb7b <- sprintf("%.4f", pnorm(z7b))             ## P[ x <= 25]
+@  
+
+\begin{enumerate}
+\item $P[ x \ge 33] = \Sexpr{prb7a}$
+\item $P[ x \le 25] = \Sexpr{prb7b}$
+\end{enumerate}
+
+\end{solution}
+
 \end{exercises}
 \onecolumn
 
