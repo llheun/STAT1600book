@@ -84,26 +84,25 @@
 \contentsline {subsection}{\numberline {3.2.1}The Sample Mean}{40}{subsection.3.2.1}
 \contentsline {subsection}{\numberline {3.2.2}The Sample Median}{41}{subsection.3.2.2}
 \contentsline {subsection}{\numberline {3.2.3}The Trimmed Mean}{41}{subsection.3.2.3}
-\contentsline {subsection}{\numberline {3.2.4}The Median of Pairwise Averages}{42}{subsection.3.2.4}
-\contentsline {section}{\numberline {3.3}Estimate of Spread (or Uncertainty or Variation)}{43}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}The Sample Standard Deviation}{43}{subsection.3.3.1}
+\contentsline {section}{\numberline {3.3}Estimate of Spread (or Uncertainty or Variation)}{42}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}The Sample Standard Deviation}{42}{subsection.3.3.1}
 \contentsline {subsection}{\numberline {3.3.2}Effect of Multiplication and Addition by a Constant}{44}{subsection.3.3.2}
-\contentsline {section}{\numberline {3.4}Exercises}{47}{section.3.4}
-\contentsline {paragraph}{\nonumberline Exercises}{47}{section*.49}
-\contentsline {subparagraph}{\nonumberline Exercise{}~3.4-1:}{47}{section*.50}
-\contentsline {subparagraph}{\nonumberline Exercise{}~3.4-2:}{47}{section*.51}
-\contentsline {subparagraph}{\nonumberline Exercise{}~3.4-3:}{47}{section*.52}
-\contentsline {subparagraph}{\nonumberline Exercise{}~3.4-4:}{47}{section*.53}
+\contentsline {section}{\numberline {3.4}Exercises}{46}{section.3.4}
+\contentsline {paragraph}{\nonumberline Exercises}{46}{section*.49}
+\contentsline {subparagraph}{\nonumberline Exercise{}~3.4-1:}{46}{section*.50}
+\contentsline {subparagraph}{\nonumberline Exercise{}~3.4-2:}{46}{section*.51}
+\contentsline {subparagraph}{\nonumberline Exercise{}~3.4-3:}{46}{section*.52}
+\contentsline {subparagraph}{\nonumberline Exercise{}~3.4-4:}{46}{section*.53}
 \contentsline {subparagraph}{\nonumberline Exercise{}~3.4-5:}{47}{section*.54}
-\contentsline {subparagraph}{\nonumberline Exercise{}~3.4-6:}{48}{section*.55}
-\contentsline {subparagraph}{\nonumberline Exercise{}~3.4-7:}{48}{section*.56}
-\contentsline {subparagraph}{\nonumberline Exercise{}~3.4-8:}{48}{section*.57}
+\contentsline {subparagraph}{\nonumberline Exercise{}~3.4-6:}{47}{section*.55}
+\contentsline {subparagraph}{\nonumberline Exercise{}~3.4-7:}{47}{section*.56}
+\contentsline {subparagraph}{\nonumberline Exercise{}~3.4-8:}{47}{section*.57}
 \contentsline {subparagraph}{\nonumberline Exercise{}~3.4-9:}{48}{section*.58}
-\contentsline {subparagraph}{\nonumberline Exercise{}~3.4-10:}{49}{table.3.3}
-\contentsline {subparagraph}{\nonumberline Exercise{}~3.4-11:}{49}{section*.60}
-\contentsline {subparagraph}{\nonumberline Exercise{}~3.4-12:}{49}{section*.61}
-\contentsline {subparagraph}{\nonumberline Exercise{}~3.4-13:}{50}{section*.62}
-\contentsline {subparagraph}{\nonumberline Exercise{}~3.4-14:}{50}{section*.63}
+\contentsline {subparagraph}{\nonumberline Exercise{}~3.4-10:}{48}{table.3.3}
+\contentsline {subparagraph}{\nonumberline Exercise{}~3.4-11:}{48}{section*.60}
+\contentsline {subparagraph}{\nonumberline Exercise{}~3.4-12:}{48}{section*.61}
+\contentsline {subparagraph}{\nonumberline Exercise{}~3.4-13:}{49}{section*.62}
+\contentsline {subparagraph}{\nonumberline Exercise{}~3.4-14:}{49}{section*.63}
 \contentsline {chapter}{\numberline {4}Threats to Valid Comparisons}{51}{chapter.4}
 \contentsline {section}{\numberline {4.1}Objective}{51}{section.4.1}
 \contentsline {section}{\numberline {4.2}Hidden Confounder}{51}{section.4.2}

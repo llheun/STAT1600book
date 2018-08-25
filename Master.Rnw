@@ -133,8 +133,8 @@ opts_chunk$set(
 <<Ch16, child="chapters/Workshops/Workshop2.Rnw",eval=TRUE>>=
 @
 
-<<Ch17, child="chapters/Appendix/Appendix.Rnw",eval=FALSE>>=
-@
+%<<Ch17, child="chapters/Appendix/Appendix.Rnw",eval=TRUE>>=
+%@
 
 
 % \printbibliography

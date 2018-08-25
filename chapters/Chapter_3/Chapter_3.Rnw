@@ -42,9 +42,9 @@ The sample mean is the statistical term for `average of the sample.'  For the ex
 
 $$ \bar{X} = \frac{635+525+500+800+650+750+555+500+670+675}{10} = \$626 $$
 
-so that the average rent in Kalamazoo may be estimated as \$626.  Note that this is an \textit{estimate} based on a \textit{sample}.  Therefore, it is subject to \textit{sampling error}.   Sampling error means that due to the luck of the draw, the sample average likely missed the true population average.  More precisely, the two-word term `sampling error' refers to $| \bar{X} = \mu |$,  the distance by which the \textit{sample} average $\bar{X}$  misses the population average  $\mu$.
+so that the average rent in Kalamazoo may be estimated as \$626.  Note that this is an \textit{estimate} based on a \textit{sample}.  Therefore, it is subject to \textit{sampling error}.   Sampling error means that due to the luck of the draw, the sample average likely missed the true population average.  More precisely, the two-word term `sampling error' refers to $| \bar{X} - \mu |$,  the distance by which the \textit{sample} average $\bar{X}$  misses the population average  $\mu$.
 
-The advantages of the mean:
+The advantages of the sample mean:
 
 \begin{itemize}
 \item It is easy to understand and simple calculate.
@@ -55,18 +55,17 @@ The advantages of the mean:
 The disadvantage of the mean:
 
 \begin{itemize}
-\item It is always affected by small and large values.
+\item It is always affected by outliers relatively small and relatively large data values.
 \end{itemize}
 
 \subsection{The Sample Median}
 
-There are alternative ways to estimate average rent.  We can compute the sample
-median, instead of the sample mean.  We have discussed the sample median (denoted MED) earlier in Chapter 1.  It is computed as follows.
+There are alternative ways to estimate average rent if we want to avoid the effect of outliers.  We can determine the sample median, instead of the sample mean.  We have discussed the sample median (denoted MED) earlier in Chapter 1.  It is computed as follows.
 
 \begin{enumerate}
 \item Let $n$ represent the total number of observations.
 \item Order the $n$ observations from smallest to largest.
-\item Then calculate $0.50(n + 1)$.
+\item Then calculate $0.50(n + 1)$ to locate the middle value of the dataset.
 \item If $0.50(n + 1)$ is an integer, then MED is the $0.50(n + 1)st$ ordered observation.
 \item If $0.50(n + 1)$ is not an integer, then MED is the average of the two adjacent ordered observations.
 \item There are $n = 10$ observations in our rental data.  We first order them from smallest to largest.
@@ -91,46 +90,46 @@ $$\bar{X} = \frac{635+525+650+750+555+500+670+675}{10} = \$620$$
 
 What if 10\% of the data is not an integer?  For example, if $n = 23$, then 10\% of n is 2.3.  Since we cannot remove 2.3 observations, we will remove three observations from each end (to ensure at least 10\% protection) and take the average of the middle 17 observations.
 
-\subsection{The Median of Pairwise Averages}
-
-The median of pairwise averages is another compromise between the mean and median.  As the name implies, we replace the observations by pairwise averages, then take the median of those.  Here again are the ten ordered observations:
-
-$$ 500, 500, 525, 555, 635, 650, 670, 675, 750, 800 $$
-
-The first observation (\$500) is paired with all ten observations (including itself).  The second observation (also \$500) has already been paired with the first observation, so it paired with only nine observations (including itself).  The third observation (\$525) has already been paired with the first two observations, so it is paired with only eight observations (including itself).  Proceeding in this pattern, we get the following pairwise averages:
-
-\begin{table}[ht]
-\centering
-{\scriptsize{
-\begin{tabular}{@{}cccccccccc @{}} 
-$\frac{500+500}{2}$ & $\frac{500+500}{2}$ & $\frac{500+525}{2}$ & $\frac{500+555}{2}$ & $\frac{500+635}{2}$ & $\frac{500+650}{2}$ & $\frac{500+670}{2}$ & $\frac{500+675}{2}$ & $\frac{500+750}{2}$ & $\frac{500+800}{2}$ \\
-     & $\frac{500+500}{2}$ & $\frac{500+525}{2}$ & $\frac{500+555}{2}$ & $\frac{500+635}{2}$ & $\frac{500+650}{2}$ & $\frac{500+670}{2}$ & $\frac{500+675}{2}$ & $\frac{500+750}{2}$ & $\frac{500+800}{2}$ \\
-     & & $\frac{525+525}{2}$ & $\frac{525+555}{2}$ & $\frac{525+635}{2}$ & $\frac{525+650}{2}$ & $\frac{525+670}{2}$ & $\frac{525+675}{2}$ & $\frac{525+750}{2}$ & $\frac{525+800}{2}$ \\
-     & & & $\frac{555+555}{2}$ & $\frac{555+635}{2}$ & $\frac{555+650}{2}$ & $\frac{555+670}{2}$ & $\frac{555+675}{2}$ & $\frac{555+750}{2}$ & $\frac{555+800}{2}$ \\
-     & & & & $\frac{635+635}{2}$ & $\frac{635+650}{2}$ & $\frac{635+670}{2}$ & $\frac{635+675}{2}$ & $\frac{635+750}{2}$ & $\frac{635+800}{2}$ \\
-     & & & & & $\frac{650+650}{2}$ & $\frac{650+670}{2}$ & $\frac{650+675}{2}$ & $\frac{650+750}{2}$ & $\frac{650+800}{2}$ \\
-     & & & & & & $\frac{670+670}{2}$ & $\frac{670+675}{2}$ & $\frac{670+750}{2}$ & $\frac{670+800}{2}$ \\
-     & & & & & & & $\frac{675+675}{2}$ & $\frac{675+750}{2}$ & $\frac{675+800}{2}$ \\
-     & & & & & & & & $\frac{750+750}{2}$ & $\frac{750+800}{2}$ \\ 
-     & & & & & & & & & $\frac{800+800}{2}$ \\
-\end{tabular}
-}}
-\end{table}
-
-<<label=LBL3aa, results="asis", echo=FALSE>>=
-  dt3  <- c(500, 500, 525, 555, 635, 650, 670, 675, 750, 800)
-  ndt3 <- numeric(55)
-  k <- 0
-  for(i in 1:10){
-    for(j in i:10){
-      k <- k + 1
-      ndt3[k] <- (dt3[i] + dt3[j])/2
-    }
-  }
-  md3 <- median(ndt3)
-@
-
-There will be 55 pairwise averages in all.  Notice that the sample size, $n$, went from ten observations to 55 observations after we do this.  We now need to figure the median and remember, the MED is the $0.50(n + 1)st$ ordered observation.  So, we need to use 55 now as our $n$.  It gives us a value of 28.  We need order the pairwise averages we have calculated above, and the median will be the 28th observation.  The median of these averages is thus \Sexpr{md3} dollars.
+% \subsection{The Median of Pairwise Averages}
+% 
+% The median of pairwise averages is another compromise between the mean and median.  As the name implies, we replace the observations by pairwise averages, then take the median of those.  Here again are the ten ordered observations:
+% 
+% $$ 500, 500, 525, 555, 635, 650, 670, 675, 750, 800 $$
+% 
+% The first observation (\$500) is paired with all ten observations (including itself).  The second observation (also \$500) has already been paired with the first observation, so it paired with only nine observations (including itself).  The third observation (\$525) has already been paired with the first two observations, so it is paired with only eight observations (including itself).  Proceeding in this pattern, we get the following pairwise averages:
+% 
+% \begin{table}[ht]
+% \centering
+% {\scriptsize{
+% \begin{tabular}{@{}cccccccccc @{}} 
+% $\frac{500+500}{2}$ & $\frac{500+500}{2}$ & $\frac{500+525}{2}$ & $\frac{500+555}{2}$ & $\frac{500+635}{2}$ & $\frac{500+650}{2}$ & $\frac{500+670}{2}$ & $\frac{500+675}{2}$ & $\frac{500+750}{2}$ & $\frac{500+800}{2}$ \\
+%      & $\frac{500+500}{2}$ & $\frac{500+525}{2}$ & $\frac{500+555}{2}$ & $\frac{500+635}{2}$ & $\frac{500+650}{2}$ & $\frac{500+670}{2}$ & $\frac{500+675}{2}$ & $\frac{500+750}{2}$ & $\frac{500+800}{2}$ \\
+%      & & $\frac{525+525}{2}$ & $\frac{525+555}{2}$ & $\frac{525+635}{2}$ & $\frac{525+650}{2}$ & $\frac{525+670}{2}$ & $\frac{525+675}{2}$ & $\frac{525+750}{2}$ & $\frac{525+800}{2}$ \\
+%      & & & $\frac{555+555}{2}$ & $\frac{555+635}{2}$ & $\frac{555+650}{2}$ & $\frac{555+670}{2}$ & $\frac{555+675}{2}$ & $\frac{555+750}{2}$ & $\frac{555+800}{2}$ \\
+%      & & & & $\frac{635+635}{2}$ & $\frac{635+650}{2}$ & $\frac{635+670}{2}$ & $\frac{635+675}{2}$ & $\frac{635+750}{2}$ & $\frac{635+800}{2}$ \\
+%      & & & & & $\frac{650+650}{2}$ & $\frac{650+670}{2}$ & $\frac{650+675}{2}$ & $\frac{650+750}{2}$ & $\frac{650+800}{2}$ \\
+%      & & & & & & $\frac{670+670}{2}$ & $\frac{670+675}{2}$ & $\frac{670+750}{2}$ & $\frac{670+800}{2}$ \\
+%      & & & & & & & $\frac{675+675}{2}$ & $\frac{675+750}{2}$ & $\frac{675+800}{2}$ \\
+%      & & & & & & & & $\frac{750+750}{2}$ & $\frac{750+800}{2}$ \\ 
+%      & & & & & & & & & $\frac{800+800}{2}$ \\
+% \end{tabular}
+% }}
+% \end{table}
+% 
+%    <label=LBL3aa, results="asis", echo=FALSE>>=
+%   dt3  <- c(500, 500, 525, 555, 635, 650, 670, 675, 750, 800)
+%   ndt3 <- numeric(55)
+%   k <- 0
+%   for(i in 1:10){
+%     for(j in i:10){
+%       k <- k + 1
+%       ndt3[k] <- (dt3[i] + dt3[j])/2
+%     }
+%   }
+%   md3 <- median(ndt3)
+% @
+% 
+% There will be 55 pairwise averages in all.  Notice that the sample size, $n$, went from ten observations to 55 observations after we do this.  We now need to figure the median and remember, the MED is the $0.50(n + 1)st$ ordered observation.  So, we need to use 55 now as our $n$.  It gives us a value of 28.  We need order the pairwise averages we have calculated above, and the median will be the 28th observation.  The median of these averages is thus \Sexpr{md3} dollars.
 
 \section{Estimate of Spread (or Uncertainty or Variation)}
 
@@ -146,7 +145,7 @@ In this chapter, we will discuss the sample standard deviation, which is typical
 
 \subsection{The Sample Standard Deviation}
 
-The standard deviation (or SD) for the monthly rent data is computed using a series of steps.  Notice in the last row we have the average, the sum of the deviations from the mean, which will always be 0, and the Sum of Squares (SS) which is the sum of the squared deviations.
+The standard deviation (or SD) for the monthly rent data is computed using a series of steps.  Notice in the last row we have the average, the sum of the deviations from the mean, which will always be 0, and the Sum of Squares (SS) which is the sum of the squared deviations from the average.
 
 
 <<label=LBL3a, results="asis", echo=FALSE>>=
@@ -207,6 +206,9 @@ Original rent: $ 626 \pm 104 $ \hspace{2cm} Subsidized rent: $ 526 \pm 104 $
 
 If we are not convinced, consider the data itself on the following table.
 
+\fbox{\parbox{14cm}{In general, when the data is \textbf{multiplied or divided by a positive constant}, the \textbf{same thing happens} to both the average and the SD}}
+
+
 <<label=LBL3b, results="asis", echo=FALSE>>=
   tmp33 <- c(635,525,500,800,650,750,555,500,670,675)
   rent31 <- tmp33 / 2
@@ -221,16 +223,18 @@ If we are not convinced, consider the data itself on the following table.
   tbl32 <- rbind(tbl31, sum31)
   colnames(tbl32) <- c( "Rent", "Deviations", "SS")
   rownames(tbl32) <- c('1','2','3','4','5','6','7','8','9','10','Sum')
-  xtable(tbl32, digits=1, caption="Calculating the SD when rent is halved")
+  xtable(tbl32, digits=1, caption="Calculating the SD when rent is DIVIDED BY 2")
   tmp31 <- sprintf("%.2f", sqrt(sum31[3]/9))
   tmp32 <- sum31[3]
 @
 
 $$ SD = \sqrt{ \frac{ SS}{n - 1}} = \sqrt{ \frac{ \Sexpr{tmp32}}{9}} \approx \Sexpr{tmp31} $$
 
-\fbox{\parbox{14cm}{In general, when the data is \textbf{multiplied or divided by a positive constant}, the \textbf{same thing happens} to both the average and the SD}}
+\newpage
 
-<<label=LBL3c, results="asis", echo=FALSE>>=
+\fbox{\parbox{14cm}{ In general, when we add or subtract a \textbf{constant} to the data, the same thing happens to both the average, but the \textbf{SD remains unchanged.}}}
+
+  <<label=LBL3c, results="asis", echo=FALSE>>=
   tmp34 <- c(635,525,500,800,650,750,555,500,670,675)
   rent31 <- tmp34 - 100
   mn31   <- mean(rent31)
@@ -249,11 +253,9 @@ $$ SD = \sqrt{ \frac{ SS}{n - 1}} = \sqrt{ \frac{ \Sexpr{tmp32}}{9}} \approx \Se
   tmp32 <- sum31[3]
 @
 
+
 $$ SD = \sqrt{ \frac{ SS}{n - 1}} = \sqrt{ \frac{ \Sexpr{tmp32}}{9}} \approx \Sexpr{tmp31} $$
 
-\fbox{\parbox{14cm}{ In general, when we add or subtract a \textbf{constant} to the data, the same thing happens to both the average, but the \textbf{SD remains unchanged.}}}
-
-%  \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%% Exercises %%%%%%%%%%%%%%%%%%%%
 \twocolumn
 \section{Exercises}
@@ -270,7 +272,7 @@ The carbon monoxide measures (in mgs) are given on 25 brands of \\ cigarettes.
 Calculate the
 
 \begin{enumerate}
-\item Mean
+\item mean
 \item median
 \item 10\% trimmed-mean
 \item standard deviation
@@ -298,9 +300,9 @@ Calculate the
   \begin{enumerate}
   \item mean = \Sexpr{mn1}
   \item median = \Sexpr{md1}
-  \item Trimmed mean = \Sexpr{tr1}
+  \item trimmed mean = \Sexpr{tr1}
   \item SD = \Sexpr{sd1}
-  \item Mean = \Sexpr{mn2} and standard deviation \Sexpr{sd2} (in grams)
+  \item mean = \Sexpr{mn2} and standard deviation \Sexpr{sd2} (in grams)
 	\end{solution}
 
   \begin{exercise} % 2
@@ -330,13 +332,12 @@ Calculate the
 Find the following statistics for \\ temperature:
 
 \begin{enumerate}
-\item Range
-\item Mean
-\item Median
-\item Mode
-\item Remove the temperature of the year \\ 2010 from the data set and re-calculate the Mean and compare it with part (3)? Is the mean closer to the median and why?
+\item range
+\item mean
+\item median
+\item mode
+\item Remove the temperature of the year \\ 2010 from the data set and re-calculate the mean and compare it with part (3)? Is the mean closer to the median and why?
 \end{enumerate}
-
 
    \end{exercise}
    \begin{solution} % 3
@@ -354,7 +355,7 @@ Find the following statistics for \\ temperature:
 
 \begin{enumerate}
 \item The range is from \Sexpr{rng1} to \Sexpr{rng2}
-\item the mean is \Sexpr{mn33}
+\item The mean is \Sexpr{mn33}
 \item The median is \Sexpr{md33}
 \item There is no mode since there are no duplicates.
 \item Removing the smallest value changes the mean to \Sexpr{mn34}.  The new value is closer to median because 13 is an outlier.
@@ -391,6 +392,8 @@ Joshua has been working on \\ programming  and updating a Website for his \\ com
 
 \end{solution}
 
+\newpage
+
 \begin{exercise} % 5
 <<label=LBL3-5, results="asis", echo=FALSE>>=
   shape5 <- numeric(3)
@@ -411,10 +414,10 @@ Joshua has been working on \\ programming  and updating a Website for his \\ com
   mn5   <- mean(SMP5a)
   md5   <- median(SMP5a)
   sd5   <- sd(SMP5a)
-  if(mn5 == md5){shp5 <- 2} 
+  if(mn5 == md5){shp5 <- 2}
   if(mn5 > md5){shp5 <- 3} else{shp5 <- 1}
   shp5a  <- shape5[shp5]
-@  
+@
 
 In a study of warp breakage during the process of weaving fabric (\textit{Technometrics}, 1982: 63).  Ten specimens of yarn were tested.  The number of cycles of strain to breakage was determined for each yarn specimen, resulting in the following data:
 
@@ -429,22 +432,22 @@ $$ \Sexpr{SMP5a} $$
 \end{enumerate}
 
 \end{exercise}
-\begin{solution}
+\begin{solution}   % 5
 
 \begin{enumerate}
-\item $\bar{x} = \Sexpr{mn5}$ 
+\item $\bar{x} = \Sexpr{mn5}$
 \item $\tilde{x} = \Sexpr{md5}$
 \item $sd = \Sexpr{sd5} $
-\item The distribution is \Sexpr{shp5a} 
-\item The median provided the most relevant information because to the extreme outlier. 
+\item The distribution is \Sexpr{shp5a}
+\item The median provided the most relevant information because to the extreme outlier.
 \end{enumerate}
 
 \end{solution}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% new exercises
 
-  \begin{exercise} % 1
-  
+  \begin{exercise} % 6
+
   The weekly budgets for groceries of six students are as follows: \\
 \$30, \$35, \$40, \$28, \$35, \$25. \\ Compute the mean, median, and mode, respectively.
 	\begin{enumerate}
@@ -453,39 +456,39 @@ $$ \Sexpr{SMP5a} $$
 	\item 32.167, 32.5, 35
 	\item 188, 30, 35
 	\end{enumerate}
-	
+
 	\vspace{5mm}
     \framebox[5cm][l]{ Answer: }
 	\end{exercise}
 	\vspace{2mm}
-	\begin{solution}
-	
+	\begin{solution}   % 6
+
 	Compute the mean, median, and mode for the weekly grocery budget
 	mean = 32.167, median = 32.5, mode = 35
-	
+
 	\end{solution}
-	
-  \begin{exercise} % 2
-  
-  John got 16 and 22 on his two Stat 2830 quizzes.  What score must he have on his next quiz to have the mean of exactly 20 for his three quizzes?
+
+  \begin{exercise} % 7
+
+  John got 16 and 22 on his two Stat 1600 quizzes.  What score must he have on his next quiz to have the mean of exactly 20 for his three quizzes?
 	\begin{enumerate}
 	\item 20
 	\item 22
-	\item 18 
+	\item 18
 	\item 24
 	\end{enumerate}
-	
+
 	\vspace{5mm}
     \framebox[5cm][l]{ Answer: }
 	\end{exercise}
 	\vspace{2mm}
-	\begin{solution}
-	
+	\begin{solution}   % 7
+
 	The third value must be 22 so that the average is 20 for all three quizzes.
-	
+
 	\end{solution}
 
-  \begin{exercise} % 3
+  \begin{exercise} % 8
 
     The following table lists the average number of cars per 1000 population for eight nations. Compute the three central tendency variables (mean and median) for these data.
 
@@ -522,7 +525,7 @@ $$ \Sexpr{SMP5a} $$
     \framebox[5cm][l]{ Answer: }
   \end{exercise}
   \vspace{2mm}
-  \begin{solution}
+  \begin{solution}   % 8
 
 
 <<result="asis", echo=FALSE>>=
@@ -548,17 +551,11 @@ xsumm1 <- summary(xdt1)
 
   \end{solution}
 
+  \begin{exercise} % 9
 
-  \begin{exercise} % 4
-
-
-      You are a researcher for a mid-sized city.  Using Table 3.8, you have collected six types of variables from a random sample of students from a large university.  These variables include:
-
-%\begin{minipage}[ht]{4cm}
+You are a researcher for a mid-sized city.  Using Table 3.8, you have collected six types of variables from a random sample of students from a large university.  These variables include:
 
 Select the  appropriate measures of central tendency for each variable:
-
-
 
   \begin{enumerate}
   \item their region of birth of country
@@ -575,16 +572,14 @@ Select the  appropriate measures of central tendency for each variable:
     \framebox[5cm][l]{ Answer: }
 
   \end{exercise}
-  \vspace{2mm}
-  \begin{solution}
+  \begin{solution}   % 9
 
   {\bf{(1. )}} Mode  {\bf{(2. )}} Median  {\bf{(3. )}} Mean  {\bf{(4. )}} Mean  {\bf{(5. )}} Median  {\bf{(6. )}} Mode
 
   \end{solution}
 
 %' \pagebreak
-  \begin{exercise} % 5
-
+  \begin{exercise} % 10
 
 % Requires the booktabs if the memoir class is not being used
 \begin{table}[htbp]
@@ -606,27 +601,23 @@ Select the  appropriate measures of central tendency for each variable:
    j & North  & 33 & 0 & 10 & Prot. \\ \hline
    \end{tabular}
    }}
-   \label{tab:t3_8}
+   \label{tab:t3_3a}
 \end{table}
-
 
   Using the dataset from Table 3.3, determine the value of the central tendency measures for each variable.
 
-
-  \vspace{1cm}
     \framebox[5cm][l]{ Answer: }
   \end{exercise}
-  \vspace{2mm}
-  \begin{solution}
-    {\bf{Birth}} Mode=``North'';   {\bf{Expense}} Mean=48.5; {\bf{Movies}} Mean=5.8; {\bf{Food}} Median=6;  {\bf{Religion}} Mode=``Protestant''
+   \begin{solution}  % 10
+  
+     {\bf{Birth}} Mode=``North'';   {\bf{Expense}} Mean=48.5; {\bf{Movies}} Mean=5.8; {\bf{Food}} Median=6;  {\bf{Religion}} Mode=``Protestant''
+   
+   \end{solution}
 
-  \end{solution}
+% \newpage
+  \begin{exercise} % 11
 
-\newpage
-  \begin{exercise} % 6
-
-
-    For the next two questions, use the following scenario.  As a leader of a Kalamazoo social services agency that employs 20 staff members, you are concerned that your staff has an increased caseload of clients compared to 10 years ago.  The case load of each worker is reported in the following table (Table 3.9) for years 2005 and 2015.
+For the next two questions, use the following scenario.  As a leader of a Kalamazoo social services agency that employs 20 staff members, you are concerned that your staff has an increased caseload of clients compared to 10 years ago.  The case load of each worker is reported in the following table (Table 3.9) for years 2005 and 2015.
 
 % Requires the booktabs if the memoir class is not being used
 \begin{table}[htbp]
@@ -638,7 +629,7 @@ Select the  appropriate measures of central tendency for each variable:
    2015 & 57&47&46&59&59&50&57&52&41&66 \\ & 65&52&57&75&65&76&43&56&52&67 \\ \hline
    \end{tabular}
     \caption{Central Tendency}
-   \label{tab:t3_9}
+   \label{tab:t3_4a}
    }}
 \end{table}
 
@@ -649,7 +640,6 @@ Select the  appropriate measures of central tendency for each variable:
   \end{exercise}
   \vspace{2mm}
   \begin{solution}
-
 
 <<results="asis", echo=FALSE>>=
         cl2005 <- c(50,	64,	55,	64,	60,	53,	56,	50,	51,	45,	46,	46,	50,	56,	63,	65,	53,	54,	58,	69)
@@ -666,7 +656,7 @@ The median for 2015 is \Sexpr{med3b}.
 
   \end{solution}
 
-  \begin{exercise} % 7
+  \begin{exercise} % 12
 
   The admissions \\ department at WMU gave 25 randomly selected freshmen a national prejudice survey.  The racial prejudice index scores  will be used in three years to see if higher education affects prejudice.
 
@@ -692,8 +682,7 @@ The median for 2015 is \Sexpr{med3b}.
 	\vspace{2mm}
     \framebox[5cm][l]{ Answer: }
 	\end{exercise}
-	\vspace{2mm}
-	\begin{solution}
+	\begin{solution}   % 12
 
 	The mean is
 	<<results="asis", echo=FALSE>>=
@@ -709,10 +698,9 @@ The median for 2015 is \Sexpr{med3b}.
 
 	\end{solution}
 
-	  \begin{exercise} % 8
+	  \begin{exercise} % 13
 
-
-  The same 25 students completed the same survey during their senior \\ year.  Compute the mean and median for this second set of scores, and compare them to the scores from four years earlier.   What happened?
+The same 25 students completed the same survey during their senior \\ year.  Compute the mean and median for this second set of scores, and compare them to the scores from four years earlier.   What happened?
 
 % Requires the booktabs if the memoir class is not being used
 \begin{table}[htbp]
@@ -728,7 +716,7 @@ The median for 2015 is \Sexpr{med3b}.
    \end{tabular}
    }}
     \caption{Senior Racial Prejudice Index}
-   \label{tab:t3_13}
+   \label{tab:t3_6a}
 \end{table}
 
   Calculate the mean and median scores of these data.
@@ -737,8 +725,7 @@ The median for 2015 is \Sexpr{med3b}.
     \framebox[5cm][l]{ Answer: }
 	\end{exercise}
 	\vspace{2mm}
-	\begin{solution}
-
+	\begin{solution}   % 13
 
 <<results="asis", echo=FALSE>>=
 	e3dat8 <- c(50, 27, 31, 35, 41, 11, 45, 50, 37, 43, 11, 9, 10, 20, 10, 35, 10, 30, 41, 40, 15, 30, 40, 26, 21)
@@ -752,30 +739,18 @@ The median for 2015 is \Sexpr{med3b}.
 
 	\end{solution}
 
-	\begin{exercise} % 9
+	\begin{exercise} % 14
 
   The next two questions refer to the following scenario.  A local social service agency has started a sex education \\ course for teen girls.  The girls took a 20-question exam for general information about sex, anatomy and physiology upon entry and again after completing the course.  Table 3.7 has the listing of scores of a random sample of 15 girls.
 
-% \begin{minipage}[ht]{6cm}
+Calculate the mean and median of the pre and post test scores and comment on the results.
 
-  Calculate the mean and median of the pre and post test scores and comment on the results.
-
-% \end{minipage} \hfill
-% \begin{minipage}[ht]{7cm}
-
- %   ##  t3_14,echo=FALSE, fig.pos="ht", fig.align="center", fig.width=4, fig.height=4, fig.cap="Test Scores">>=
- % 	    t3_14a <- read.csv("data/testing.csv", header=TRUE)
- % 	    xtable(t3_14a)
- % 
- % 	  @
- 
-{\small{
  % latex table generated in R 3.2.1 by xtable 1.7-4 package
  % Wed Sep  2 09:06:12 2015
 \begin{table}[ht]
  \centering
  \caption{Pre and Post Test Results}
- 
+
  {\footnotesize{
  \begin{tabular}{rrrrr}
    \hline
@@ -799,17 +774,15 @@ The median for 2015 is \Sexpr{med3b}.
     \hline
  \end{tabular}
  }}
- 
+
  \label{tab:t3_14}
 \end{table}
-}}
-%  \end{minipage}
 
 	\vspace{2mm}
     \framebox[5cm][l]{ Answer: }
 	\end{exercise}
 	\vspace{2mm}
-	\begin{solution}
+	\begin{solution}  % 14
 
 
 <<results="asis", echo=FALSE>>=

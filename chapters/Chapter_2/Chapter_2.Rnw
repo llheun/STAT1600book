@@ -686,12 +686,10 @@ in the U.S. is displayed in the following stem-and-leaf plot.  Note that the ste
 	  \end{enumerate}
 
 	\end{exercise}
-	\begin{solution}  % 2
+%	\begin{solution}  % 2
+%  \end{solution}
 
-
-  \end{solution}
-
-  \begin{exercise} % 4
+  \begin{exercise} % 3
 
 A manager of a car rental company took a random sample of 100 business days over the last fiscal year and recorded the number of cars rented per day.  The frequency distribution of the data is given below.
 
@@ -707,7 +705,7 @@ $(50, 55]$ 	&      6 \\ \hline
 \end{tabular}
 
 \begin{enumerate}
-\item Fill in the Relative Frequencies above.
+\item Fill in the relative frequencies above.
 \item	Draw a histogram by hand, with either the frequencies or relative frequencies as the vertical axis.
 \item	What interval does the median number of car rentals per day fall?
 \item What percentage of business days had 30 or fewer car rentals?
@@ -717,7 +715,7 @@ $(50, 55]$ 	&      6 \\ \hline
    % \framebox[5cm][l]{ Answer: }
 
 	\end{exercise}
-	\begin{solution}  % 4
+	\begin{solution}  % 3
 <<label=LBL2p, results="asis", echo=FALSE>>=
   ex4dat <- c(4,11,23,31,15,10,6)
   rf4dat <- ex4dat*100/sum(ex4dat)
@@ -739,7 +737,7 @@ $(50, 55]$ 	&     6 & \Sexpr{rf4dat[7]} \\ \hline
 
 	\end{solution}
 
-\begin{exercise}  % 3
+\begin{exercise}  % 4
 
 The following plots represent five different samples of data. For each, describe the shape.
 
@@ -795,7 +793,7 @@ The following plots represent five different samples of data. For each, describe
 
 \framebox[5cm][l]{ Answer: }
 \end{exercise}
-\begin{solution}  % 3
+\begin{solution}  % 4
 
 2.5-7.1: Left-skewed
 
@@ -811,7 +809,7 @@ The following plots represent five different samples of data. For each, describe
 
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% new %%%%%%%%%%%%%%%%%%%%
 
-  \begin{exercise}  % 2
+  \begin{exercise}  % 5
 
   A survey contained a question regarding marital status.  The respondent checked either single, married, divorced, separated or widowed.  What is the level of measurement of marital status?
 	  \begin{enumerate}
@@ -828,7 +826,7 @@ The following plots represent five different samples of data. For each, describe
 	  The level of measurement of marital status is nominal.
 	\end{solution}
 
-  \begin{exercise} % 3
+  \begin{exercise} % 6
 
   Blood alcohol content \\ (BAC) is the concentration of alcohol present in a person's blood.  What is the level of measurement of BAC?
 	  \begin{enumerate}
@@ -851,7 +849,7 @@ The following plots represent five different samples of data. For each, describe
 	  The level of measurement of marital status is category - nominal.
 	\end{solution}
 
-  \begin{exercise}  % 4
+  \begin{exercise}  % 7
 
   What type of variable is the number of robberies reported in June 2014 in Kalamazoo County?
 	  \begin{enumerate}
@@ -872,7 +870,7 @@ The following plots represent five different samples of data. For each, describe
 	  The number of reported robberies in June 2014 is Kalamazoo County is a continuous variable.
 	\end{solution}
 
-	\begin{exercise}  % 5
+	\begin{exercise}  % 8
 
 	The team of researchers \\ took the following items from a 2007 survey of drug use among young UK children \cite{Teen2007}.  In how many occasions have you used or taken Cannabis?  Determine whether the data are categorical or numerical and the level measurement.
 
@@ -895,28 +893,33 @@ The following plots represent five different samples of data. For each, describe
     \framebox[5cm][l]{ Answer: }
   \end{exercise}
   \vspace{2mm}
-  \begin{solution}
+  \begin{solution}   % 8
 
     Numeric - interval
 
   \end{solution}
 
-	\begin{exercise}  % 6
+	\begin{exercise}  % 9
 
-	The researchers asked students the following questions from a 2007 survey of drug use among young UK children \cite{Teen2007}.    Write the number of glasses of liquors (e.g., Baileys, gin, tequila, vodka) drunk in the last seven days.  \underline{\phantom{xxxx}}.   Determine whether they are categorical or numerical and the level of measurement.
+	The researchers asked \\ students the following questions from a 2007 survey of drug use among young UK children  \cite{Teen2007}.  
+	Write the number of glasses of liquors (e.g., Baileys, gin, tequila, vodka) drunk in the last seven days   \underline{\phantom{xxxx}}.   
+	 Determine whether they are categorical or numerical and the level of measurement.
 
     \vspace{4mm}
+    
     \framebox[5cm][l]{ Answer: }
 
   \end{exercise}
   \vspace{2mm}
-  \begin{solution}
-    Numeric - ratio
+  \begin{solution}   % 9
+  
+    Numeric  ratio
+    
   \end{solution}
 
-% \pagebreak
-% 
-	\begin{exercise}  % 7
+% % \pagebreak
+% % 
+	\begin{exercise}  % 10
 
 	  The General Social Survey (GSS), conducted by the National Opinion Research Center at the University of Chicago, is a primary source of data on social attitudes in the U.S.  Once each year, researchers from UC interview 1500 adults in their homes all across the country.  They ask subjects their opinions about sex and marriage, attitudes toward women, welfare, foreign policy, and many other issues \cite{GSS2014}.
 
@@ -932,11 +935,12 @@ The following plots represent five different samples of data. For each, describe
 
   \end{exercise}
   \vspace{2mm}
-  \begin{solution}
+  \begin{solution}   % 10
+  
     all adult residents of the U.S.
   \end{solution}
 
-	\begin{exercise}  % 8
+\begin{exercise}  % 11
 
 	  A recent issue of the \emph{New England Journal of Medicine} reported a study of all 122,754 infants born over an 8.5 year period at Parkland Hospital in Dallas, Texas, leaving out multiple births and babies with birth defects.  The researchers  wanted to know if there is a specific birth weight below which infant death and illness increases sharply.
 
@@ -961,7 +965,7 @@ The following plots represent five different samples of data. For each, describe
     birth weight.
   \end{solution}
 
-	\begin{exercise}  % 9
+	\begin{exercise}  % 12
 
 	  For the following research project, classify all variables in terms of levels of measurement and reveal whether they're continuous and discrete.  As researchers, we should select the correct statistical method: {\emph{single variable descriptive statistic}} or {\emph{a multi-variable descriptive statistic}} or \\ {\emph{inferential statistics.}}  Recall that it is common for some projects to require more than one type of method.
 
@@ -972,7 +976,7 @@ The following plots represent five different samples of data. For each, describe
 
   \end{exercise}
   \vspace{2mm}
-  \begin{solution}
+  \begin{solution}  %12
 
     Variable: Homicide rate \\
     Level of Measurement: Interval-ratio \\
@@ -981,7 +985,7 @@ The following plots represent five different samples of data. For each, describe
 
   \end{solution}
 
-	\begin{exercise}  % 10
+	\begin{exercise}  % 13
 
 	  For the following research project, classify all variables regarding levels of measurement and reveal whether they're continuous and discrete.  We should also \\ select which statistical method should be \\ used: {\emph{single variable descriptive statistic}} or \\ {\emph{a multi-variable descriptive statistic}} or \\ {\emph{inferential statistics}}.  Recall that it is \\ common for some projects to require more than one type of method.
 
@@ -998,7 +1002,7 @@ The following plots represent five different samples of data. For each, describe
 
   \end{exercise}
   \vspace{2mm}
-  \begin{solution}
+  \begin{solution}  % 13
 
     Variable: party, gender, opinion \\
     Level of Measurement: nominal, nominal, ordinal \\
@@ -1006,21 +1010,22 @@ The following plots represent five different samples of data. For each, describe
     Application: inferential, NA, NA
 
   \end{solution}
-  
-	  \begin{exercise}  % 1
+
+	  \begin{exercise}  % 14
 
   Descriptive statistics allow social researchers to
     \begin{enumerate}
-	  \item quantify the strength and direction of the relationship between two variables, 
-	  \item reduce thousands of individual numbers into a few easily understood numbers. 
-	  \item graphically display the number of \\ respondents according to their gender. 
+	  \item quantify the strength and direction of the relationship between two variables,
+	  \item reduce thousands of individual numbers into a few easily understood numbers.
+	  \item graphically display the number of \\ respondents according to their gender.
 	  \item all of the choices
 	  \end{enumerate}
 	  \vspace{3mm}
 	  \framebox[5cm][l]{ Answer: }
   \end{exercise}
   \vspace{2mm}
-  \begin{solution}
+  \begin{solution}   % 14
+  
     All of the choices is the correct answer.
   \end{solution}
 
