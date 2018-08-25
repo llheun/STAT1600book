@@ -1,4 +1,4 @@
-\begin{thebibliography}{6}
+\begin{thebibliography}{8}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -10,6 +10,10 @@ Anonymous.
 \newblock Regression exercise.
 \newblock web-page, 04 2016.
 
+\bibitem[Bruin()]{bruin2011}
+J~Bruin.
+\newblock newtest: command to compute new test {@ONLINE}.
+
 \bibitem[Fuller(2008)]{Teen2007}
 Elizabeth Fuller, editor.
 \newblock \emph{Drug use, smoking and drinking among young people in England in
@@ -20,6 +24,11 @@ Elizabeth Fuller, editor.
 \bibitem[Naranjo()]{naranjo2018}
 Joshua Naranjo.
 \newblock Knowledge building/research 1 knowledge and data.
+
+\bibitem[Sullivan(2013)]{sullivan2013}
+Micheal Sullivan, III.
+\newblock \emph{Statistics Informed Decisions Using Data}.
+\newblock Pearson, 4th edition, 2013.
 
 \bibitem[Thompson(2007)]{thompson2007}
 William~W. Thompson.

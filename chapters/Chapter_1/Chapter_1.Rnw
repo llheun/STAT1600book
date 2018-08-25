@@ -10,9 +10,9 @@ After completing this chapter, students should be able to:
 
 \fbox{\parbox{14cm}{
 \begin{itemize}
-\item Discern the difference between knowledge and data.
+\item Distinguish the difference between knowledge and data.
 \item Understand the process of acquiring knowledge from the data.
-\item Perceive the fallacies of design.
+\item Be aware of all the fallacies of design.
 \item Comprehend the meaning of the Type-I and Type-II errors.
 \end{itemize}
 }}
@@ -23,7 +23,7 @@ After completing this chapter, students should be able to:
 
 \subsubsection{Understanding by the end user}
 
-First, data is not information.  Researchers extract information from the data.  The study of statistics will give us the tools (methods) to judge the validity of the data.  
+First, data is not information.  Researchers extract information from the data.  The study of statistics will give us the tools (methods) to judge the validity of the data and to interpret the information.
 
 \subsubsection{Designing studies}
 
@@ -31,11 +31,11 @@ Most scientific journals, after 1966, started to report statistical results.  Fo
 
 \subsubsection{Conducting research}
 
-Unless a sample is biased (we will get to that later), it will reveal the truth about the population.  For example, let's suppose that a drug development team after working on a compound for several months decided to try the experimental drug themselves to test its effects before the animal safety studies were complete.  (By the way, this behavior is unethical.)  The team concluded that it appeared to be safe; however, a mouse study later showed that mice in the high dose group started to canonicalize themselves.   
+Unless a sample is biased (we will get to that later), it will reveal the truth about the population.  For example, let's suppose that a drug development team after working on a compound for several months decided to try the experimental drug themselves to test its effects before the animal safety studies were complete.  (By the way, this behavior is unethical.)  The team concluded that it appeared to be safe; however, a mouse study later showed that mice in the high dose group started to cannibalize themselves.   
 
 \subsubsection{Developing critical thinking skills}
 
-Critical thinking starts with asking these type of questions: How can I confirm the validity of these data?  What can I infer from these data?  Is the source of these data credible?  And so forth.
+Critical thinking starts with asking these type of questions: How can I confirm the validity of these data? Is the source of these data credible?  What can I infer from these data?  And so forth.
 
 \section{Knowledge and Data}
 
@@ -49,9 +49,9 @@ Scientific studies often go through the following steps.  It might help to read 
 
 \subsubsection{1. Conceptualize the problem} \index{Concept}
 
-Suppose that you wish to study and the problem of interest.  The wording is usually broad. The idea at first may be too complex to understand so we look for ways to explain and describe it.
+Suppose that you wish to study the problem of interest.  The wording is usually broad. The idea at first may be too complex to understand so we look for ways to explain and describe it.
 
-For example, perhaps we are interested in a problem of interest within education.  We will want to clarify and define education.  Are we interested in investigating particular schools or grade levels? Perhaps we want to look at a specific component of education, like science or look at different methods of instruction.   Clarifying specific concepts which we want to investigate and putting this into words helps bring focus to our study.
+For example, perhaps we are interested in the effectiveness the iClicker within education.  We will want to clarify and define education.  Are we interested in investigating particular schools or grade levels?  Perhaps we want to look at a specific component of education, like science or look at different methods of instruction.   Clarifying specific concepts which we want to investigate and putting this into words helps bring focus to our study.
 
 \subsubsection{2. Operationalize the problem}
 
@@ -61,15 +61,15 @@ Perhaps we are interested in looking at how well students are doing with several
 
 \subsubsection{3. Design the study}
 
-Here we need to address all the components of how our study will be performed.  We will likely need to identify the population of interest and to obtain a good representative sample of that population.  We will need to figure out how we will select the sample and how many groups we may be comparing.
+We need to address all the components of how our study will be performed.  We will likely need to identify the population of interest and to obtain a good representative sample of that population.  We will need to figure out how we will select the sample and how many groups we may be comparing.
 
 In our study of science education will we sample from several schools or several districts?  If we take a sample of students from several schools, but from only one state, for example, our population would be students within that state.  If we wanted to define our population as education within the continental U.S., we might need to pull randomly from schools across the U.S.
 
 \subsubsection{4. Collect the data}
 
-In the data collection stage, we must decide what instrument we are using (questionnaire, interview, observation).  Once we have designed our study, we should be able to identify the main variables of interest.  As we collect the data, we are gathering information to help us answer the question we have proposed.
+In the data collection stage, we must decide what instrument we are using (questionnaire, interview, observation).  Once we have designed our study, we should be able to identify the primary variables of interest.  As we collect the data, we are gathering information to help us answer the question we have proposed.
 
-In our example of science education, perhaps we are collecting scores on a particular assessment (exam) to see how well students are learning the material.
+In our example of science education, we collect scores on a particular assessment (exam) to see how well students are comprehending the material.
 
 \subsubsection{5. Analyze the data}
 
@@ -79,15 +79,15 @@ In our exploration of teaching science perhaps we are comparing two different me
 
 \subsubsection{6. Conclusions}
 
-Do your results generalize to a larger population?  Check back to see how you defined the population so that you can generalize the results.  Are you concluding cause-and-effect relationship, did you perform an experiment, or did you observe   associations?  In your conclusions, you will also want to identify limits to your study and perhaps suggest further research that may be done in your area.
+Do our results generalize to a larger population?  Check back to see how we defined the population so that we can generalize the results.  Are we concluding cause-and-effect relationship, did we do an experiment, or did we observe associations?  In our conclusions, we will want to identify limits to our study and suggest further research in our area.
 
-As we conclude science teaching, perhaps we could only afford to do a smaller study within a particular district.  We could then relate the results of our study, based on our sample of schools, to the population of the entire school district.  We may not be able to make conclusions to the whole state or the U.S. since our sample was not representative of the whole state or the U.S.  Depending on how the study was defined we may have only made observations of the teachers.  If we were investigating two distinct types of instruction, then this falls more within the realm of an experiment.  We, of course, would still need to identify and try to control for confounding variables, which might be difficult.
+As we summarize our study of science teaching, we could only afford to do a smaller study within a particular district.  We could then relate the results of our study, based on our sample of schools, to the population of the entire school district.  We may not be able to make conclusions to the whole state or the U.S. since our sample was not representative of the whole state or the U.S.  Depending on how the study was defined we may have only made observations of the teachers.  If we were investigating two distinct types of instruction, then this falls more within the realm of an experiment.  We, of course, would still need to identify and try to control for confounding variables, which might be difficult.
 
 \subsubsection{7. Disseminate results}
 
 How are we sharing our results?  We need to find the best approach to sharing the results of our study.
 
-Is this information going to be made available to the schools for future educational Improvement?  Are we going to try to publish in a scientific or educational journal?
+Is this information going to be made available to the schools for future educational improvement?  Are we going to try to publish in a scientific or educational journal?
 
 \subsubsection{The Science Wheel Summarizes the above Steps}
 
@@ -113,7 +113,7 @@ Which weight loss program is most effective?   Which one is the \textit{most hea
 
 \subsubsection{2.	Operationalize the problem}
 
-How would we measure `effective' and `healthy'?  Do we look at weight \textit{loss} after two weeks? Two months?  Two years?  Do we compare the average weight \textit{loss} or percentage of people who lost 15 pounds or more?  How do we measure health?  By cholesterol reduction?  LDL cholesterol reduction?  Blood pressure reduction?  Glucose levels?  Percentage who feel better?
+How would we measure `effective' and `healthy?'  Do we look at weight \textit{loss} after two weeks? Two months?  Two years?  Do we compare the average weight \textit{loss} or percentage of people who lost 15 pounds or more?  How do we measure health?  By cholesterol reduction?  LDL cholesterol reduction?  Blood pressure reduction?  Glucose levels?  Percentage who feel better?
 
 \subsubsection{3.	Design the study}
 
@@ -176,7 +176,7 @@ A fallacy is sometimes defined as a mistake in basic reasoning. The following ar
 
 \item \textbf{Anecdotal evidence fallacy}
 
-``We give you testimonies of real people who \dots'' improved their golf game, or improved their sex life, or lost weight, or got rid of acne or achieved financial success.  They make claims without comparison studies.  Take a golf infomercial with testimonies from five golfers that a new driver improved their distance and accuracy.  Did it?  These are five golfers out of how many that they approached?  These are televised shots out of how many that each took?  The fallacy lies in the reasoning that existence means prevalence.
+``We give you testimonies of real people who $\dots$'' improved their golf game, or improved their sex life, or lost weight, or got rid of acne or achieved financial success.  They make claims without comparison studies.  Take a golf infomercial with testimonies from five golfers that a new driver improved their distance and accuracy.  Did it?  These are five golfers out of how many that they approached?  These are televised shots out of how many that each took?  The fallacy lies in the reasoning that existence means prevalence.
 
 \item \textbf{Correlation equals causation fallacy}
 
@@ -273,6 +273,9 @@ All the members (sample \\ size, n=30) of a high school tennis team were given a
 	 % 
 	 %   
 	 % \end{solution}
+	 
+	 
+%%%% ADD MORE EXERCISES	 
 
 \end{exercises}
 

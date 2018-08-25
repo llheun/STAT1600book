@@ -48,7 +48,7 @@
 \begin{center} \textbf{Acknowledgements:}
 \end{center}
 
-Eunice Ampah, Srikanthmadhavan Aravamuthan, Joseph Billian, Rudie Desravines, Mr. Loren L. Heun, Ian Kapenga, Carrie McKean, Carson Miller, and  Cody Weiss, assisted with  this material.
+Eunice Ampah, Srikanthmadhavan Aravamuthan, Joseph Billian, Magdalena Niewiadomska-Bugaj, PhD, Rudie Desravines, Mr. Loren L. Heun, Ian Kapenga, Carrie McKean, Carson Miller, and  Cody Weiss, assisted with  this material.
 
 \vspace{11cm}
 
