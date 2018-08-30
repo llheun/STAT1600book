@@ -10,15 +10,15 @@ After completing this part, students should be able to:
 \fbox{\parbox{14cm}{
 
  \begin{enumerate}
- \item Understand the difference between association and cause. 
- \item How confounders can affect the results of a survey.
+ \item The difference between association and cause. 
+ \item Understand how confounders can affect the results of a survey.
  	\end{enumerate}
  }}
 
 \section{Hidden Confounder}  \index{confounds}
 
-In 1992, a research study “Lower extremity fractures in motor vehicle collisions:
-Influence of direction of impact and seatbelt use” by Dischinger, P., Cushing, B. and Kerns, T. was published in the 36th Proceedings of the Association for the Advancement of Automotive Medicine.  It involved data analysis of the trauma-center population in Maryland.  Some of the conclusions were:
+In 1992, a research study ``Lower extremity fractures in motor vehicle collisions:
+Influence of direction of impact and seatbelt use'' by Dischinger, P., Cushing, B. and Kerns, T. was published in the 36th Proceedings of the Association for the Advancement of Automotive Medicine.  It involved data analysis of the trauma-center population in Maryland.  Some of the conclusions were:
 
 \begin{enumerate}
    \item there was a higher incidence of lower extremity injury in frontal collisions,
@@ -26,12 +26,12 @@ Influence of direction of impact and seatbelt use” by Dischinger, P., Cushing,
    \item there was a higher incidence of lower extremity fracture among women.
 \end{enumerate}
 
-The conclusion (3) is exciting.  It begs the follow-up question: ``Why do women have higher rates of leg fractures?''  Is it because they drive faster, or apply brakes more slowly, or have weaker bones?  It turns out that these are false questions -- they presume that gender is the variable that causes higher leg fractures.
+The conclusion (3) is interesting.  It begs the follow-up question: ``Why do women have higher rates of leg fractures?''  Is it because they drive faster, or apply brakes more slowly, or have weaker bones?  It turns out that these are false questions -- they presume that gender is the variable that causes higher leg fractures.
 
 Researchers proposed an explanation in a follow-up study with the same lead author: ``Lower extremity fractures in motor vehicle collisions: The role of driver gender and height'' by Dischinger, P.C., Kerns, T.J., Kufera, J.A. Accident Analysis \& Prevention Volume 27, Issue 4, August 1995.
 
 \begin{quotation}
-Abstract: In a previous study it was noted that there was a higher incidence of lower-extremity fractures among women drivers. Analyses were based on a linkage between trauma registry and police crash report data. The present study addresses the issue of whether the differences noted are attributed to driver gender or are merely a reflection of differences in driver height. An inverse association was noted between driver height and the incidence of lower-extremity fractures. Those shorter than average (5'7'') for this population had a 64\% increase in a lower-extremity fracture, which can be mainly attributed to ankle/tarsal injuries. Thus, the incidence of these injuries appears to be a function of driver height, with an increase among shorter drivers, most of whom are women.
+Abstract: In a previous study it was noted that there was a higher incidence of lower-extremity fractures among women drivers. Analyses were based on a linkage between trauma registry and police crash report data. The present study addresses the issue of whether the differences noted are attributed to driver gender or are merely a reflection of differences in driver's height. An inverse association was noted between driver height and the incidence of lower-extremity fractures. Those shorter than average (5'7'') for this population had a 64\% increase in a lower-extremity fracture, which can be mainly attributed to ankle/tarsal injuries. Thus, the incidence of these injuries appears to be a function of driver height, with an increase among shorter drivers, most of whom are women.
 \end{quotation}
 
 It turns out that height was the culprit, but it initially looked like gender because height and gender have a strong link.  The following \textit{pathway graph} describes the true relationship:
@@ -48,7 +48,7 @@ $$ \texttt{Gender} \Rightarrow  \texttt{Leg Fracture} $$
 
 The symbol $\Rightarrow$ represents ``cause-and-effect'' while $\updownarrow$      represents ``association.''
 
-In this situation, leg fracture rate is the outcome variable gender is the probable cause.  The hidden variable height is called a \textbf{confounder}, or a confounding variable.
+In this situation, leg fracture rate is the outcome, variable gender is the probable cause.  The hidden variable height is called a \textbf{confounder}, or a confounding variable.
 
 \fbox{\parbox{14cm}{
 \textbf{Confounding Variable:} \\
@@ -59,7 +59,7 @@ A confounder or confounding variable is a third variable that is associated with
 
 Now, why do unknown confounders belong in a chapter on threats to valid comparisons?  They are one of the most significant sources of (often unknowingly) invalid comparisons.  It seemed fair to compare leg fracture rates of men and women, didn't it?  What's wrong with that?  Unfortunately, concerning leg fracture rates, it was a case of comparing apples to oranges -- women as a group is shorter than men!  Of course, in the 1992 study, the investigators did not know that height would make a difference.  Women also tend to weigh less, smoke less, drink less, have longer hair, and wear higher heels.  Which of these would make a difference, i.e., be potential confounders?
 
-Confounders are a big problem in comparison studies.  Some confounders may remain hidden, but it is critical that the researcher identify and control for potential confounders as much as possible.  Does smoking cause lung cancer?  When comparing smokers to nonsmokers, it is easy to show that smokers have higher lung cancer rates.  But as a group, they exercise less than nonsmokers.  They drink more coffee than nonsmokers.  Can the exercise or the coffee or the combination be the culprit?  Furthermore, smokers tend to be male, older, and drive in the winter with their car windows open.  There are plenty of confounding variables even in this comparison.
+Confounders are a big problem in comparison studies.  Some confounders may remain hidden, but it is critical that the researchers identify and control for potential confounders as much as possible.  Does smoking cause lung cancer?  When comparing smokers to nonsmokers, it is easy to show that smokers have higher lung cancer rates.  But as a group, they exercise less than nonsmokers.  They drink more coffee than nonsmokers.  Can the exercise or the coffee or the combination be the culprit?  Furthermore, smokers tend to be male, older, and drive in the winter with their car windows open.  There are plenty of confounding variables even in this comparison.
 
 \subsection{In the news}
 
@@ -69,7 +69,7 @@ politics, or a simple lack of information or knowledge.''  The following is an e
 
 \begin{quotation}
 \textbf{If you take Viagra, will you get an STD?} \\
-Rebecca Goldin Ph.D. and Jing Peng, August 2, 2010
+Rebecca Goldin Ph.D. and Jing Peng, August 2, 2010 \footnote{"If you take Viagra, will you get an STD?" Goldin, et al., \textit{http://www.stats.org}, August 2, 2010}
 
 Judging from recent headlines, it seems clear:  ``Sex Diseases Tripled in Men 40 or Older Taking Viagra, Cialis, Study Says'' reports Bloomberg; ``Older Viagra Users More Likely to Get STDs'' says the Chicago Sun-Times, presumably comparing older Viagra users with older non-Viagra users.  And Health Day was even more explicit, saying ``Drugs Like Viagra Linked to Higher Rates of STDs.''  The next logic behind the claim seems persuasively apparent: if men who take Viagra are having more sex, then they have inevitably increased their risk of catching a sexually transmitted disease (STD). But is this the case?
 
@@ -97,7 +97,6 @@ The paper goes on with detailed analysis, but the main point has been stated.  T
 instead of the (admittedly more sensational) relationship implied by the headlines.
 
 \end{enumerate}
-
 
 % \pagebreak
 

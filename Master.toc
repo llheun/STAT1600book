@@ -108,12 +108,12 @@
 \contentsline {section}{\numberline {4.2}Hidden Confounder}{51}{section.4.2}
 \contentsline {subsection}{\numberline {4.2.1}Apples and Oranges}{53}{subsection.4.2.1}
 \contentsline {subsection}{\numberline {4.2.2}In the news}{53}{subsection.4.2.2}
-\contentsline {section}{\numberline {4.3}Key Words}{54}{section.4.3}
-\contentsline {section}{\numberline {4.4}Exercises}{55}{section.4.4}
-\contentsline {paragraph}{\nonumberline Exercises}{55}{section*.64}
-\contentsline {subparagraph}{\nonumberline Exercise{}~4.4-1:}{55}{section*.65}
-\contentsline {subparagraph}{\nonumberline Exercise{}~4.4-2:}{55}{section*.66}
-\contentsline {subparagraph}{\nonumberline Exercise{}~4.4-3:}{55}{section*.67}
+\contentsline {section}{\numberline {4.3}Key Words}{55}{section.4.3}
+\contentsline {section}{\numberline {4.4}Exercises}{56}{section.4.4}
+\contentsline {paragraph}{\nonumberline Exercises}{56}{section*.64}
+\contentsline {subparagraph}{\nonumberline Exercise{}~4.4-1:}{56}{section*.65}
+\contentsline {subparagraph}{\nonumberline Exercise{}~4.4-2:}{56}{section*.66}
+\contentsline {subparagraph}{\nonumberline Exercise{}~4.4-3:}{56}{section*.67}
 \contentsline {chapter}{\numberline {5}Study Designs}{57}{chapter.5}
 \contentsline {section}{\numberline {5.1}Objective}{57}{section.5.1}
 \contentsline {section}{\numberline {5.2}Randomized trials}{57}{section.5.2}
