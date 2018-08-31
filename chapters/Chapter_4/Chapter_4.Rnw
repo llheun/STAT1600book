@@ -69,7 +69,7 @@ politics, or a simple lack of information or knowledge.''  The following is an e
 
 \begin{quotation}
 \textbf{If you take Viagra, will you get an STD?} \\
-Rebecca Goldin Ph.D. and Jing Peng, August 2, 2010 \footnote{"If you take Viagra, will you get an STD?" Goldin, et al., \textit{http://www.stats.org}, August 2, 2010}
+Rebecca Goldin Ph.D. and Jing Peng, August 2, 2010 
 
 Judging from recent headlines, it seems clear:  ``Sex Diseases Tripled in Men 40 or Older Taking Viagra, Cialis, Study Says'' reports Bloomberg; ``Older Viagra Users More Likely to Get STDs'' says the Chicago Sun-Times, presumably comparing older Viagra users with older non-Viagra users.  And Health Day was even more explicit, saying ``Drugs Like Viagra Linked to Higher Rates of STDs.''  The next logic behind the claim seems persuasively apparent: if men who take Viagra are having more sex, then they have inevitably increased their risk of catching a sexually transmitted disease (STD). But is this the case?
 
@@ -80,7 +80,9 @@ The main problem in the coverage is the direct suggestion that taking Viagra is 
 There is a critical distinction. To see what it means, let's go backward in time and compare STD rates among people who plan to take Viagra but haven't and people who are not planning on taking Viagra. This quick comparison is what the authors of the research article did; they combed medical records for people who filled prescriptions for ED drugs and compared STD rates for these people before filling their prescription to the STD rates of people who did not subsequently fill a prescription for Viagra.  It turns out that the rate of STDs is higher among people who intend to take it.  In other words, the drug is absent, but those people who will take Viagra within a year are already at higher risk of STDs.
 
 In fact, compared to those who don't take ED drugs, those who plan to take Viagra had a slightly higher rate for STDs, an odds ratio (OR) of 2.80; 95\% confidence interval CI, 2.10 to 3.75, than those who actually take it (OR) 2.65, CI, 1.84 to 3.81, though the difference was not significant. It means that the drug had no discernable effect on STD rates for this group of men.
+\citep{goldin2010}
 \end{quotation}
+
 
 The paper goes on with detailed analysis, but the main point has been stated.  To summarize the conclusions of the study:
 
@@ -154,7 +156,7 @@ A study says, ``Slightly overweight people live longer than thin people.''
 
   \begin{exercise} % 2
 
-Generally, a study that appeared in the American journal of cardiology (March 15, 2003) found out that ``heart attack survivors who owned a dog had better heart function post-heart attack than those who did not own a dog.''
+Generally, a study that appeared in the American Journal of Cardiology (March 15, 2003) found out that ``heart attack survivors who owned a dog had better heart function post-heart attack than those who did not own a dog.''
 
 \begin{enumerate}
   \item Does a dog help a heart heal faster?  \\ Can you think of possible confounders?

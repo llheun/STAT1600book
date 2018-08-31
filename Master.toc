@@ -108,29 +108,29 @@
 \contentsline {section}{\numberline {4.2}Hidden Confounder}{51}{section.4.2}
 \contentsline {subsection}{\numberline {4.2.1}Apples and Oranges}{53}{subsection.4.2.1}
 \contentsline {subsection}{\numberline {4.2.2}In the news}{53}{subsection.4.2.2}
-\contentsline {section}{\numberline {4.3}Key Words}{55}{section.4.3}
-\contentsline {section}{\numberline {4.4}Exercises}{56}{section.4.4}
-\contentsline {paragraph}{\nonumberline Exercises}{56}{section*.64}
-\contentsline {subparagraph}{\nonumberline Exercise{}~4.4-1:}{56}{section*.65}
-\contentsline {subparagraph}{\nonumberline Exercise{}~4.4-2:}{56}{section*.66}
-\contentsline {subparagraph}{\nonumberline Exercise{}~4.4-3:}{56}{section*.67}
+\contentsline {section}{\numberline {4.3}Key Words}{54}{section.4.3}
+\contentsline {section}{\numberline {4.4}Exercises}{55}{section.4.4}
+\contentsline {paragraph}{\nonumberline Exercises}{55}{section*.64}
+\contentsline {subparagraph}{\nonumberline Exercise{}~4.4-1:}{55}{section*.65}
+\contentsline {subparagraph}{\nonumberline Exercise{}~4.4-2:}{55}{section*.66}
+\contentsline {subparagraph}{\nonumberline Exercise{}~4.4-3:}{55}{section*.67}
 \contentsline {chapter}{\numberline {5}Study Designs}{57}{chapter.5}
 \contentsline {section}{\numberline {5.1}Objective}{57}{section.5.1}
 \contentsline {section}{\numberline {5.2}Randomized trials}{57}{section.5.2}
 \contentsline {subsection}{\numberline {5.2.1}Double-blind randomized controlled trials (RCT)}{58}{subsection.5.2.1}
-\contentsline {section}{\numberline {5.3}Observational studies}{60}{section.5.3}
+\contentsline {section}{\numberline {5.3}Observational studies}{61}{section.5.3}
 \contentsline {subsection}{\numberline {5.3.1}Case-control studies}{62}{subsection.5.3.1}
 \contentsline {subsection}{\numberline {5.3.2}Case-crossover studies}{63}{subsection.5.3.2}
-\contentsline {section}{\numberline {5.4}Key Words}{63}{section.5.4}
-\contentsline {section}{\numberline {5.5}Exercises}{65}{section.5.5}
-\contentsline {paragraph}{\nonumberline Exercises}{65}{section*.68}
-\contentsline {subparagraph}{\nonumberline Exercise{}~5.5-1:}{65}{section*.69}
-\contentsline {subparagraph}{\nonumberline Exercise{}~5.5-2:}{65}{section*.70}
-\contentsline {subparagraph}{\nonumberline Exercise{}~5.5-3:}{65}{section*.71}
-\contentsline {subparagraph}{\nonumberline Exercise{}~5.5-4:}{65}{section*.72}
-\contentsline {subparagraph}{\nonumberline Exercise{}~5.5-5:}{65}{section*.73}
-\contentsline {subparagraph}{\nonumberline Exercise{}~5.5-6:}{65}{section*.74}
-\contentsline {subparagraph}{\nonumberline Exercise{}~5.5-7:}{65}{section*.75}
+\contentsline {section}{\numberline {5.4}Key Words}{64}{section.5.4}
+\contentsline {section}{\numberline {5.5}Exercises}{66}{section.5.5}
+\contentsline {paragraph}{\nonumberline Exercises}{66}{section*.68}
+\contentsline {subparagraph}{\nonumberline Exercise{}~5.5-1:}{66}{section*.69}
+\contentsline {subparagraph}{\nonumberline Exercise{}~5.5-2:}{66}{section*.70}
+\contentsline {subparagraph}{\nonumberline Exercise{}~5.5-3:}{66}{section*.71}
+\contentsline {subparagraph}{\nonumberline Exercise{}~5.5-4:}{66}{section*.72}
+\contentsline {subparagraph}{\nonumberline Exercise{}~5.5-5:}{66}{section*.73}
+\contentsline {subparagraph}{\nonumberline Exercise{}~5.5-6:}{66}{section*.74}
+\contentsline {subparagraph}{\nonumberline Exercise{}~5.5-7:}{66}{section*.75}
 \contentsline {chapter}{\numberline {6}The Normal Distribution}{67}{chapter.6}
 \contentsline {section}{\numberline {6.1}Objective}{67}{section.6.1}
 \contentsline {section}{\numberline {6.2}Using the normal curve}{67}{section.6.2}
