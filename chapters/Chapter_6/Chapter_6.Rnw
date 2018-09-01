@@ -22,29 +22,29 @@ Best Buy wants to know how many smart fitness and GPS watches (like Fitbit, Garm
 
 \subsubsection{Problem 1.}  If they order 40 watches, what is the probability that they will run out of stock?
 
-\subsubsection{Problem 2.}  Given the cost of running out of stock and the storage cost of keeping too many, the manager decides to order enough smartwatches to cover customer demands 90\% of the time, i.e., there should be 10\% or less likelihood that they run out of stock. How many should they order?
+\subsubsection{Problem 2.}  \label{LBL622} Given the cost of running out of stock and the storage cost of keeping too many, the manager decides to order enough smartwatches to cover customer demands 90\% of the time, i.e., there should be 10\% or less likelihood that they run out of stock. How many should they order?
 
-Knowing the average and SD of a process $(36 \pm 8)$ gives us some understanding of what to expect.  However, the sales situation above requires the computation of probabilities, or chances, as in the ``chance of demand exceeding 40.''   This desired probability is the shaded area to the right of 40 under the histogram of demand (see the first graph in Figure 4.1).  Does this look like 0.20 of the total area?  0.30?  0.40?
+Knowing the average and SD of a process $(36 \pm 8)$ gives us some understanding of what to expect.  However, the sales situation above requires the computation of probabilities, or chances, as in the ``chance of demand exceeding 40.''   This desired probability is the shaded area to the right of 40 under the histogram of demand (see the first graph in Figure 6.1).  Does this look like 0.20 of the total area?  0.30?  0.40?
 
 \begin{figure}[ht]
-\caption{Probability of Demand exceeding 40}
+\caption{Probability of Demand Exceeding 40}
 <<label=LBL4a, results="asis", echo=FALSE, out.width="8cm" >>=
   dt1 <- rnorm(n=1000, mean=36, sd=8)
   hist(dt1, freq = FALSE, main="Probability of Demand > 40", xlab="X")
   xv <- seq(2, 68, by=0.1)
   yv <- dnorm(xv, mean=36, sd=8)
   lines(xv, yv)
-  polygon(c(xv[xv>40], 40), c(dnorm(c(xv[xv>40], 1e-4), mean=36,sd=8)),col="yellow")
+  polygon(c(xv[xv>40], 40), c(dnorm(c(xv[xv>40], 1e-4), mean=36,sd=8)),col="skyblue")
 @
 \end{figure}
 
-The normal curve (or bell curve) is useful in helping us calculate probabilities like these.  If we smooth out the top of the histogram in Figure 4.1, it will look like a normal curve.  More precisely, it will look like a normal curve with a mean of 36 and an SD of 8, denoted as $N(36, 8)$.  So the shaded area on the left will be approximated by the shaded area under the $N(36, 8)$ curve on the right.  Do the two shaded regions look the same?
+The normal curve (or bell curve) is useful in helping us calculate probabilities like these.  If we smooth out the top of the histogram in Figure 6.1, it will look like a normal curve.  More precisely, it will look like a normal curve with a mean of 36 and an SD of 8, denoted as $N(36, 8)$.  So the shaded area on the left will be approximated by the shaded area under the $N(36, 8)$ curve on the right.  Do the two shaded regions look the same?
 
 Of course, the areas look similar because, in our example, the histogram on the left looks like a normal curve.  It does not have to.  If it does not, then the approximation of areas using the normal curve will be wrong.  We should use the normal curve approximation with caution.
 
 \subsubsection{The Standard Normal or Z Curve}
 
-The standard normal curve (or Z-curve) looks like Figure 4.2, and has the following properties:
+The standard normal curve (or Z-curve) looks like Figure 6.1, and has the following properties:
 
 \begin{center}
 \fbox{\parbox{10cm}{
@@ -54,7 +54,7 @@ The standard normal curve (or Z-curve) looks like Figure 4.2, and has the follow
   The area between -1 and +1 is 0.68 \\
   The area between -2 and +2 is 0.95 \\
   The area between -3 and +3 is 0.997 \\
-  The area between $- \infty$ and $+ \infty$is 1.00
+  The area between $- \infty$ and $+ \infty$ is 1.00
   \end{enumerate}
 }}
 \end{center}
@@ -69,7 +69,8 @@ The standard normal curve (or Z-curve) looks like Figure 4.2, and has the follow
 @
 \end{figure}
 
-In general, any area under the curve can be found using the Z-table on page 46 at the end of this chapter.
+In general, any area under the curve can be found using the Z-table on \ref{TBL61} on page \pageref{TBL61} at the end of this chapter.  
+% Table 6.1 on page 73.
 
 \begin{minipage}[ht]{3cm}
 
@@ -90,7 +91,7 @@ In general, any area under the curve can be found using the Z-table on page 46 a
 }
 \end{minipage}
 
-Are we ready to find the area under the normal curve in Figure 4.1?  Not yet.  The horizontal axis in Figure 4.1 is wrong for the Z-table, it does not have a mean of 0 and an SD of 1. Instead, it has a mean of 36 and an SD of 8.  The trick is to replace the $N(36, 8)$ horizontal axis with a $N(0, 1)$ axis, labeled Z.  See Figure 4.3.  Note that $Z = 1$ whenever X is one SD above the mean.  Similarly, $Z = -1$ whenever $X$ is one SD below the mean.  In general, Z is related to $X$ as follows:
+Are we ready to find the area under the normal curve in Figure 6.1?  Not yet.  The horizontal axis in Figure 6.1 is wrong for the Z-table, it does not have a mean of 0 and an SD of 1. Instead, it has a mean of 36 and an SD of 8.  The trick is to replace the $N(36, 8)$ horizontal axis with a $N(0, 1)$ axis, labeled Z.  See Figure 6.3.  Note that $Z = 1$ whenever X is one SD above the mean.  Similarly, $Z = -1$ whenever $X$ is one SD below the mean.  In general, Z is related to $X$ as follows:
 
   \begin{equation} Z = \frac{X - mean}{SD} \end{equation}
 
@@ -104,7 +105,7 @@ Are we ready to find the area under the normal curve in Figure 4.1?  Not yet.  T
   xr <- seq(-3, 3, by=0.01)
   yr <- dnorm(xr, mean=0, sd=1)
   plot(xr, yr, type="l", xlab="Z", ylab="Density")
-  polygon(c(xr[xr > -1 & xr < 1], 1, -1), c(dnorm(xr[xr > -1 & xr < 1], mean=0, sd=1), 1e-4, 1e-4), col="yellow")
+  polygon(c(xr[xr > -1 & xr < 1], 1, -1), c(dnorm(xr[xr > -1 & xr < 1], mean=0, sd=1), 1e-4, 1e-4), col="skyblue")
   text(2, .352, "0.6827")
   arrows(2, .33, 0.9, .242)
 @
@@ -121,7 +122,7 @@ Are we ready to find the area under the normal curve in Figure 4.1?  Not yet.  T
 \end{minipage}
 \end{figure}
 
-What is the probability of demand exceeding 40?  This is the area under the curve to the right of $X = 40$ or $Z = 0.5$ (see Figure 4.4).  Using the $Z$-table, this area is $1 -  0.6915 = 0.3085$.
+What is the probability of demand exceeding 40?  This is the area under the curve to the right of $X = 40$ or $Z = 0.5$ (see Figure 6.4).  Using the $Z$-table, this area is $1 -  0.6915 = 0.3085$.
 
 \begin{figure}[ht]
 
@@ -133,7 +134,7 @@ What is the probability of demand exceeding 40?  This is the area under the curv
   xt <- seq(2, 68, by=1)
   yt <- dnorm(xt, mean=36, sd=8)
   plot(xt, yt, xlab="X", type="l")
-  polygon(c(xt[xt > 40], 40), c(dnorm(c(xt[xt > 40]), mean=36,sd=8), 1e-4), col="yellow")
+  polygon(c(xt[xt > 40], 40), c(dnorm(c(xt[xt > 40]), mean=36,sd=8), 1e-4), col="skyblue")
 @
 \end{minipage}
 \begin{minipage}[ht]{7cm}
@@ -141,27 +142,27 @@ What is the probability of demand exceeding 40?  This is the area under the curv
   xu <- seq(-4, 4, by=0.01)
   yu <- dnorm(xu, mean=0, sd=1)
   plot(xu, yu, type="l", xlab="Z")
-  polygon(c(xu[xu > 0.5], 0.5), c(dnorm(c(xu[xu > 0.5]), mean=0, sd=1), 1e-4), col="yellow")
+  polygon(c(xu[xu > 0.5], 0.5), c(dnorm(c(xu[xu > 0.5]), mean=0, sd=1), 1e-4), col="skyblue")
 @
 
 \end{minipage}
 \end{figure}
 
-\section{Calculating percentiles}
+\section{Calculating percentiles}     %%%%%%%%%%%%%%%%%%%%%%%%
 
-We restate Problem 2 given at the start of the chapter.
+We restate Problem 2 \ref{LBL622} on page \pageref{LBL622} given at the start of the chapter.
 
-\textbf{Problem 2.} Given the cost of running out of stock and the value of having too many, the manager decides to order enough smartwatches to cover customer demands 90\% of the time, i.e., there should be 10\% or less likelihood that they run out of stock.  How many should they order?
+\textbf{Problem 2.}  Given the cost of running out of stock and the value of having too many, the manager decides to order enough smartwatches to cover customer demands 90\% of the time, i.e., there should be 10\% or less chance that they run out of stock.  How many should they order?
 
 We want to estimate the number of smartwatches so that there is only a 10\% chance of running out.  Note that this is the 90th percentile of demand.
 
-Looking at Figure 4.5, we see that we need to shade the upper 10\% of the area under the histogram.  What X value corresponds to the boundary?  When we use the normal table, the Z-value 90th percentile is 1.28.  What X value corresponds to Z = 1.28?  We solve equation 4.1 backward.
+Looking at Figure 6.5, we see that we need to shade the upper 10\% of the area under the histogram.  What X value corresponds to the boundary?  When we use the normal table, the Z-value 90th percentile is 1.28.  What X value corresponds to Z = 1.28?  We solve equation 6.1 backward.
 
 \begin{eqnarray*}
 1.28 & = & \frac{X - 36}{8}  \\
-36 + 1.28(8) & = & X-36 + 36 \\
-36 + 1.28(8) & = & X \\
-X & = & 46.24
+36 + 1.28(8) & = & X-36 + 36  \\
+36 + 1.28(8) & = & X  \\
+X & = & 46.24 
 \end{eqnarray*}
 
 The manager should have at least 46 smartwatches in the store.
@@ -174,7 +175,7 @@ The manager should have at least 46 smartwatches in the store.
   xu <- seq(2, 68, by=0.1)
   yu <- dnorm(x=xu, mean=36, sd=8)
   lines(xu, yu)
-  polygon(c(xu[xu > 46], 46), c(dnorm(c(xu[xu > 46], 1e-4), mean=36,sd=8)),col="yellow")
+  polygon(c(xu[xu > 46], 46), c(dnorm(c(xu[xu > 46], 1e-4), mean=36,sd=8)),col="skyblue")
   text(54, .04, "10%")
   arrows(54, .037, 48, .014)
 @
@@ -206,7 +207,7 @@ The area outside of 2.25 SD from the center is the combined area left of -2.25 a
 
 \section{The Empirical Rule}
 
-Figure 4.3 provides a useful interpretation of the SD.  We state it as follows:
+Figure 6.3 provides a useful interpretation of the SD.  We state it as follows:
 
 \begin{center}
 \fbox{\parbox{14cm}{
@@ -235,6 +236,23 @@ If the data histogram is approximately bell-shaped, expect around \\
 \end{minipage}
 }}
 
+
+<<label=LBL6aa, results="asis", echo=FALSE>>=
+  v1 <- seq(from=0, to=2.4, by=0.1)
+  v2 <- seq(from=0, to=0.09, by=0.01)
+  mtrx <- matrix(nrow=25, ncol=10)
+  for(i in 1:25){
+    for(j in 1:10){
+      z1 <- v1[i] + v2[j]
+      mtrx[i,j] <- sprintf('%.3f', pnorm(z1))
+    }  
+  }  
+  
+  rownames(mtrx) <- v1
+  colnames(mtrx) <- v2
+  xtable(mtrx, caption="Z Table (Positive Values)")
+@  
+\label{TBL61}
 
 \twocolumn
 
@@ -310,7 +328,7 @@ On the average, a watch battery is known to last for two years (24- \\ months), 
 
   \begin{exercise} % 3
 
-Suppose 95\% of data coming from a normally distributed population falls between 4 and 35.  Based on the empirical rule, what is the standard deviation of this sample of data?
+Suppose 95\% of data coming from a normally distributed population falls between 4 and 35.  Based on the empirical rule, what is the standard deviation of this sample of data?  Show your work.
 
   \end{exercise}
   \begin{solution}   % 3
