@@ -20,9 +20,9 @@ After completing this part, students should be able to:
 
 Best Buy wants to know how many smart fitness and GPS watches (like Fitbit, Garmin, and Apple) to order for their Kalamazoo location. Past data show that this time of year, they sell an average of 36 fitness watches per month, with a standard deviation of 8.
 
-\subsubsection{Problem 1.}  If they order 40 watches, what is the probability that they will run out of stock?
+\subsubsection{Problem 6.2.1}  If they order 40 watches, what is the probability that they will run out of stock?
 
-\subsubsection{Problem 2.}  \label{LBL622} Given the cost of running out of stock and the storage cost of keeping too many, the manager decides to order enough smartwatches to cover customer demands 90\% of the time, i.e., there should be 10\% or less likelihood that they run out of stock. How many should they order?
+\subsubsection{Problem 6.2.2}  \label{LBL622} Given the cost of running out of stock and the storage cost of keeping too many, the manager decides to order enough smartwatches to cover customer demands 90\% of the time, i.e., there should be 10\% or less likelihood that they run out of stock. How many should they order?
 
 Knowing the average and SD of a process $(36 \pm 8)$ gives us some understanding of what to expect.  However, the sales situation above requires the computation of probabilities, or chances, as in the ``chance of demand exceeding 40.''   This desired probability is the shaded area to the right of 40 under the histogram of demand (see the first graph in Figure 6.1).  Does this look like 0.20 of the total area?  0.30?  0.40?
 
@@ -91,7 +91,7 @@ In general, any area under the curve can be found using the Z-table on \ref{TBL6
 }
 \end{minipage}
 
-Are we ready to find the area under the normal curve in Figure 6.1?  Not yet.  The horizontal axis in Figure 6.1 is wrong for the Z-table, it does not have a mean of 0 and an SD of 1. Instead, it has a mean of 36 and an SD of 8.  The trick is to replace the $N(36, 8)$ horizontal axis with a $N(0, 1)$ axis, labeled Z.  See Figure 6.3.  Note that $Z = 1$ whenever X is one SD above the mean.  Similarly, $Z = -1$ whenever $X$ is one SD below the mean.  In general, Z is related to $X$ as follows:
+Are we ready to find the area under the normal curve in Figure 6.1?  Not yet.  The horizontal axis in Figure 6.1 is wrong for the Z-table, it does not have a mean of 0 (horizontal axis) and an SD of 1. Instead, it has a mean of 36 and an SD of 8.  The trick is to replace the $N(36, 8)$ horizontal axis with a $N(0, 1)$ axis, labeled Z.  See Figure 6.3.  Note that $Z = 1$ whenever X is one SD above the mean.  Similarly, $Z = -1$ whenever $X$ is one SD below the mean.  In general, Z is related to $X$ as follows:
 
   \begin{equation} Z = \frac{X - mean}{SD} \end{equation}
 
@@ -115,7 +115,7 @@ Are we ready to find the area under the normal curve in Figure 6.1?  Not yet.  T
   xs <- seq(-3, 3, by=0.01)
   ys <- dnorm(xs, mean=0, sd=1)
   plot(xs, ys, type="l", xlab="Z", ylab="Density")
-  polygon(c(xs[xs > -2 & xs < 2], 2, -2), c(dnorm(xs[xs > -2 & xs < 2], mean=0, sd=1), 1e-4, 1e-4), col="yellow")
+  polygon(c(xs[xs > -2 & xs < 2], 2, -2), c(dnorm(xs[xs > -2 & xs < 2], mean=0, sd=1), 1e-4, 1e-4), col="skyblue")
   text(2, .352, "0.9545")
   arrows(2, .33, 1.5, .13)
 @
@@ -150,9 +150,9 @@ What is the probability of demand exceeding 40?  This is the area under the curv
 
 \section{Calculating percentiles}     %%%%%%%%%%%%%%%%%%%%%%%%
 
-We restate Problem 2 \ref{LBL622} on page \pageref{LBL622} given at the start of the chapter.
+We restate Problem 6.2.2 \ref{LBL622} on page \pageref{LBL622} given at the start of the chapter.
 
-\textbf{Problem 2.}  Given the cost of running out of stock and the value of having too many, the manager decides to order enough smartwatches to cover customer demands 90\% of the time, i.e., there should be 10\% or less chance that they run out of stock.  How many should they order?
+\textbf{Problem 6.2.2}  Given the cost of running out of stock and the value of having too many, the manager decides to order enough smartwatches to cover customer demands 90\% of the time, i.e., there should be 10\% or less chance that they run out of stock.  How many should they order?
 
 We want to estimate the number of smartwatches so that there is only a 10\% chance of running out.  Note that this is the 90th percentile of demand.
 
@@ -256,7 +256,7 @@ If the data histogram is approximately bell-shaped, expect around \\
 
 \twocolumn
 
-\section{Exercises}
+\section{}
 
 \begin{exercises}
 

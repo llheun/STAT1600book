@@ -198,7 +198,7 @@ If the data is paired above-average X values with below-average Y values, then t
 
 \twocolumn
 
-\section{Exercises}
+\section{}
 
 \begin{exercises}
 

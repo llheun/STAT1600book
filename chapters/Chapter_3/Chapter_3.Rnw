@@ -258,7 +258,7 @@ $$ SD = \sqrt{ \frac{ SS}{n - 1}} = \sqrt{ \frac{ \Sexpr{tmp32}}{9}} \approx \Se
 
 %%%%%%%%%%%%%%%%%%%%%%%%%% Exercises %%%%%%%%%%%%%%%%%%%%
 \twocolumn
-\section{Exercises}
+\section{}
 \begin{exercises}
 
   \begin{exercise} % 1
@@ -392,7 +392,7 @@ Joshua has been working on \\ programming  and updating a Website for his \\ com
 
 \end{solution}
 
-\newpage
+% \newpage
 
 \begin{exercise} % 5
 <<label=LBL3-5, results="asis", echo=FALSE>>=
@@ -421,7 +421,7 @@ Joshua has been working on \\ programming  and updating a Website for his \\ com
 
 In a study of warp breakage during the process of weaving fabric (\textit{Technometrics}, 1982: 63).  Ten specimens of yarn were tested.  The number of cycles of strain to breakage was determined for each yarn specimen, resulting in the following data:
 
-$$ \Sexpr{SMP5a} $$
+\Sexpr{SMP5a} 
 
 \begin{enumerate}
 \item Calculate the mean
@@ -808,11 +808,7 @@ Calculate the mean and median of the pre and post test scores and comment on the
 @
 The pretest median is \Sexpr{med3b}
 
-
 	\end{solution}
-
-
-
 
 \end{exercises}
 

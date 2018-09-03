@@ -151,7 +151,7 @@ Since $\chi^2 = 23.42$ from (12.1), then $\chi^2 > 12.59$.   We conclude that th
 
 \twocolumn
 
-\section{Exercises}
+\section{}
  
 \begin{exercises}
 

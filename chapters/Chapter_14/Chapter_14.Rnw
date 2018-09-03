@@ -296,7 +296,7 @@ Since this interval excludes 0, we conclude a significant relationship between c
 
 \twocolumn
 
-\section{exercises}
+\section{}
 
 \begin{exercises}
 

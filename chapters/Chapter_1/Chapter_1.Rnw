@@ -216,7 +216,7 @@ Another type of error that may be made is a \textbf{Type II error}.  Here the re
 
 \twocolumn
 
-\section{Exercises}    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%.
+\section{}    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%.
 
 \begin{exercises}
 

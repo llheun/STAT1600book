@@ -252,7 +252,7 @@ where $\hat{p}$ is an estimate based on historical data or a pilot study.  The q
 
 % \pagebreak
 \twocolumn
-\section{Exercises}
+\section{}
 \begin{exercises}
 
 \begin{exercise} % 1

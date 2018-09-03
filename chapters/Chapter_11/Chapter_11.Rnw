@@ -314,7 +314,7 @@ Since we uniquely match each pair of observations (e.g., 599 and 597) to each ot
 
 \twocolumn
 
-\section{Exercises}
+\section{}
 
 \begin{exercises}
 

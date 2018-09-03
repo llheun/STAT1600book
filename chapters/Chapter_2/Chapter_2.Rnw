@@ -64,7 +64,7 @@ Nominal variables are categorical variables that have two or more categories wit
 
 \item \textbf{Ordinal Variables}
 
-Ordinal variables are categorical variables with an explicit ordering or rank.  A student's level of standing (freshman, sophomore, junior, or senior) is ordinal; they are also names of categories but, unlike gender, they are rank-ordered.   However, we cannot subtract them, and distances do not make sense.  Other examples of ordinal variables include Likert scale items in which we rank items.  Completing surveys or even end of semester evaluations we can rank on a scale of 1-5 (often from strongly disagree to agree strongly).
+Ordinal variables are variables with an explicit ordering or rank.  A student's level of standing (freshman, sophomore, junior, or senior) is ordinal; they are also names of categories but, unlike gender, they are rank-ordered.   However, we cannot subtract them, and distances do not make sense.  Other examples of ordinal variables include Likert scale items in which we rank items.  Completing surveys or even end of semester evaluations we can rank on a scale of 1-5 (often from strongly disagree to agree strongly).
 
 \fbox{\parbox{14cm}{
 \begin{itemize}
@@ -81,7 +81,7 @@ An interval variable is similar to an ordinal variable, except that the interval
 
 \item \textbf{Ratio Variables}
 
-Ratio variables are numerical variables with true zero.  Many credit hours is a ratio measurement.  A student who has completed 90 credit hours has twice as many as 45 credit hours and three times as many as 30 credit hours.  Another example is the temperature on the Kelvin scale, which has true zero because there is no molecular motion.  A Kelvin temperature of 400 is twice as high as 200 Kelvin.
+Ratio variables are numerical variables with true zero.  Many credit hours is a ratio measurement.  A student who has completed 90 credit hours has twice as many as 45 credit hours and three times as many as 30 credit hours.  Another example is the speed of an automobile which has true zero mph when it is not moving.  A speed of 40 mph is twice as fast as 20 mph.
 
 It is useful to recognize a hierarchy of information in the sense that a measurement level contains an amount of information greater than or equal to the level below it.  At lower levels of measurement, data analyses tend to be less sensitive and sophisticated.  A statistical study should aim for the highest levels of measurement possible or affordable.
 \end{enumerate}
@@ -90,7 +90,7 @@ It is useful to recognize a hierarchy of information in the sense that a measure
 
 Interval and ratio variables together are often called \textbf{numerical} variables or \textbf{quantitative} because they provide a number which measures `quantity' (how much, how many) of something.
 
-Nominal and ordinal variables together are often called \textit{categorical} variables because they classify rather than count or measure.  It is tempting to think of categorical variables as `non-numerical,' but sometimes they do consist of numbers.  For example, `Social Security number' consists of numbers, but are used more as labels rather than quantities.  Hence, SS number is categorical.
+Nominal and ordinal variables together are often called \textbf{categorical} variables because they classify rather than count or measure.  It is tempting to think of categorical variables as `non-numerical,' but sometimes they do consist of numbers.  For example, `Social Security number' consists of numbers, but are used more as labels rather than quantities.  Hence, SS number is categorical.
 
 \begin{figure}[htbp]
    \centering
@@ -190,6 +190,7 @@ A \textit{relative frequency table} gives the count for each category and the re
   DT1 <- read.csv("data/ACSdata.csv", header=TRUE)
   
   attach(DT1)
+  MP1 <- numeric(76)
   ## names(DT1)
   v1 <- table(Type.of.Payment)
   v2 <- v1 * 100 / sum(v1)
@@ -198,6 +199,10 @@ A \textit{relative frequency table} gives the count for each category and the re
   t1 <- rbind(tmp1, Total)
   colnames(t1) <- c( "Frequency", "Relative Frequency(%)")
   xtable(t1, caption="Relative Frequency Table for Type of Monthly Payment", digits=0)
+  MP1 <- Monthly.Payment
+  tmp2 <- sort(MP1)
+  MP2 <- tmp2[13:76]
+  MP3 <- tmp2[13:75]
 @
 
 To compute Relative Frequency, divide Frequency by the total and multiply by 100\%.  For example,
@@ -217,7 +222,7 @@ in decreasing frequency for aesthetic purposes and is called a Pareto chart.  So
 
 \subsection{Pie Chart}
 
-A pie chart gives the same information as a bar chart, except in a circular shape.  We also use pie charts for categorical data.   Some people prefer the look of pie charts over bar charts.  However, studies have shown that people have difficulty comparing the relative size of wedges.  When using this type of chart, we should only consider it when the number of variables is less than six.  Look at the pie chart below.  Is Rent less than half or more than half of Mortgage?
+A pie chart gives the same information as a bar chart, except in a circular shape.  We also use pie charts for categorical data.   Some people prefer the look of pie charts over bar charts.  However, studies have shown that people have difficulty comparing the relative size of wedges.  When using this type of chart, we should only consider it when the number of variables is less than six, and we will use bar charts when we have more than six.  Look at the pie chart below.  Is Rent less than half or more than half of Mortgage?
 
 <<label=LBL2c, results="asis", echo=FALSE, out.width="7cm">>=
   pie(v2, main="Bar Plot for Type of Payment")
@@ -230,26 +235,27 @@ Remember that the	\textit{mean} and \textit{median} cannot be used for nominal v
 Consider the variable Monthly Payment in the ACS housing data on page 11.  How do the numbers appear?  How large are they? How variable is the data?  Are there any extreme values? These questions are attempts at getting to know the data.  In this section, we discuss tools for getting to know numerical data better.  We have n = 64 observations available since 12 households (out of 76) do not have monthly payments.  Here is a list of the monthly payments:
 
 {\small{
-880  990  750 1400 1400  560  900  380  910 1200 1200  450 1200 1300  550 340  770  700  700  140  220  650 5200  970  740  500  700 1800  800 1200  1000 1200  200  710 1100  400  370  670  350  510  900  340  440 1500  420    490 2400  500  200  670  760  720  500  280  190 1000  250  700  380  740  850  530  290  230 }}
-
+\Sexpr{MP1}
+}}
 
 Now, we sort the observations from smallest to largest:
 
 {\small{
-140  190  200  200  220  230  250  280  290  340  340  350  370  380  380  400  420  440  450  490  500  500  500  510  530  550  560  650  670  670  700  700  700  700  710  720  740  740  750  760  770  800  850  880  900   900  910  970  990 1000 1000 1100 1200 1200 1200 1200 1200 1300 1400 1400  1500 1800 2400 5200 }}
+\Sexpr{MP2}
+}}
 
 The smallest observation is \$140.  The largest is \$5200, which is an \textbf{outlier}.
 
 \fbox{\parbox{14cm}{In data analysis, an \textbf{outlier} is an observation that falls far from the rest of the data.  It may need to be checked for correctness if there is any possibility of clerical error.}}
 
-Can this be a typographical error that we need to correct?  Looking closely at the data, we see it belongs to observation 28, which is a mortgage for a household with a \$358,000 annual income.  We infer that it is probably correct, so we leave it alone. The simple act of sorting the data already gives us more information about monthly payment.  For example, we can now see that the typical monthly payment falls around \$700.  We also see the extent to which the \$5200 value is outlying. We now turn to better ways to visualize the \textbf{spread} of this data.
+Can this be a typographical error that we need to correct?  When we Look closely at the data, we see it belongs to observation 28, which is a mortgage for a household with a \$358,000 annual income.  We can infer that it is probably correct, so we leave it alone. The simple act of sorting the data already gives us more information about monthly payment.  For example, we can now see that the typical monthly payment falls around \$700.  We also see the extent to which the \$5200 value is outlying. We now turn to better ways to visualize the \textbf{spread} of this data.
 
 \subsection{Stem-and-Leaf Plot}
 
 
 <<label=LBL2d, results="asis", echo=FALSE>>=
   DT2 <- c(15.4,9.9,19.6,17.1,15.0,11.7,8.2,10.9,17.2,13.9,16.9,11.2,13.0,12.8,15.2,10.1,13.2,17.0,16.2,11.7,9.1,11.1,13.5,10.5,20.6,14.4,13.2,10.2,11.9,7.4,9.3,19.3,15.0,15.4,11.4,13.5,13.3,12.0,11.0,12.9,13.9,13.6,15.8,16.6,8.6,9.2,10.5,11.0,15.2,10.3,9.7)
-  # stem(x=DT2, scale=2, width=22)
+
 @  
 
 Graphs are helpful in summarizing information in the data, especially for large datasets.  Below, we summarize two-year average percentage of persons living in poverty (2008-2009) in the U.S.A. in a graph called a stem-and-leaf plot.  The numbers on the left are stems, while the numbers on the right are called leaves.
@@ -275,9 +281,7 @@ Graphs are helpful in summarizing information in the data, especially for large 
 }}
 \end{minipage}
 
-
-There is one leaf for each observation, so there are 51 leaves in all, one for each state.  Our smallest observation is 7.4.  We write it on the stem `7' as a leaf of `4.'  We can infer that the stems represent tens and units digits while the leaves represent tenths digits.  We write the value 8.2 on the stem `8' as an `8' and the leaf as a `2', and so forth.  \citep{sullivan2013}
-
+There is one leaf for each observation, so there are 51 leaves in all, one for each state.  Our smallest observation is 7.4.  We write it on the stem `7' as a leaf of `4.'  We can infer that the stems represent tens and units digits while the leaves represent tenths digits.  We write the value 20.6 on the stem `20' as an `20' and the leaf as a `6', and so forth.  \citep{sullivan2013}
 
 % Suppose we want to compare mortgage and rent.  Do mortgage payments tend to be greater or less than rent?  We can present stem-and-leaf for mortgage and rent side by side.
 % 
@@ -398,7 +402,7 @@ The histogram and stem-and-leaf plots look alike, except that the stem-and-leaf 
 
 For moderately large samples, a \textit{dotplot} diagram is a quick way to see repeating data values.  We present the dot-plots of the resting pulse rates among college students before and after exercise.  As we observed using side-by-side dots plots, we find that the after exercise spread (maximum minus minimum) is wider than before exercise which makes sense.  We also see that six students of the 28 had a pulse rate of 68 beats per minute.
 
-<<label=LBL2g, results="asis", echo=FALSE, out.width="9cm">>=
+<<label=LBL2g, results="asis", echo=FALSE, out.width="10cm">>=
    B1 <- c(68,60,76,68,64,80,72,76,92,68,56,72,68,60, 72,56,88,76,80,68,80,84,64,80,72,69,68,76)
    A1  <- B1 + rnorm(n=28, mean=10, sd=5)
    Pulse <- c(B1, A1)
@@ -411,23 +415,26 @@ For moderately large samples, a \textit{dotplot} diagram is a quick way to see r
      coord_flip()
 @
   
-  
-
 \subsection{Box-and-Whisker Plot}
 
 A box-and-whisker or boxplot shows useful information about the data including the measures the central tendency and the variability of the distribution.  First, order the data from smallest to largest.  What is the range of the first (or smaller) half of the data?  The smallest quarter of the data?  The next quarter?  The box-and-whisker plot or boxplot is a graphical picture of the distribution of quarters of the data.  Consider once again the monthly payments from the ACS housing data.  We list them here sorted from smallest to largest (minus the outlier  (\$5200)).
-      {\small{
-      140  190  200  200  220  230  250  280  290  340  340  350  370  380  380
-      400  420  440  450  490  500  500  500  510  530  550  560  650  670  670
-      700  700  700  700  710  720  740  740  750  760  770  800  850  880  900
-      900  910  970  990 1000 1000 1100 1200 1200 1200 1200 1200 1300 1400 1400
-     1500 1800 2400
-      }}
+
+
+{\small{
+\Sexpr{MP3}
+}}
+     %  {\small{
+     %  140  190  200  200  220  230  250  280  290  340  340  350  370  380  380
+     %  400  420  440  450  490  500  500  500  510  530  550  560  650  670  670
+     %  700  700  700  700  710  720  740  740  750  760  770  800  850  880  900
+     %  900  910  970  990 1000 1000 1100 1200 1200 1200 1200 1200 1300 1400 1400
+     % 1500 1800 2400
+     %  }}
 
 There are $n = 63$ observations.  One-quarter of the data is 63/4=15.75, or approximately 16 observations.  The boxplot below gives the range of each quarter of the data: the range of the first quarter (i.e., the lowest 16 monthly payments) is the left whisker.  The range of the 2nd quarter is the left part of the box, the 3rd quarter the right part of the box, and the range of the last quarter is the right whisker.
 
 <<label=LBL2h, results="asis", echo=FALSE, out.width='8cm'>>=
-  boxplot(tmp0[13:75], horizontal=TRUE, xlab="Dollars", main="Box of Monthly Payments", col="green")
+  boxplot(MP3, horizontal=TRUE, xlab="Dollars", main="Box of Monthly Payments", col="green")
 @
 
 More precisely, the software draws vertical lines at (140, 400, 700, 970, 2400).  Hence, the lowest 16 monthly payments lie within (\$140, \$400).  The next set of 16 observations lies within (\$400, \$700).  The third set lies within (\$700, \$970).  Finally, the last 16 observations lie within (\$970, \$2400).  The five values (140, 400, 700, 970, 2400) that divide the data into quarters and form the fences and whiskers of the boxplot are collectively called the five-number-summary of the data.  They are often denoted as MIN, $Q_1$, MED, $Q_3$, and MAX respectively.
@@ -459,12 +466,15 @@ $Q_3$ is the .75(n+1)st ordered observation.
 If .25(n+1) is not an integer, take the average of the two adjacent ordered observations.  Similarly, for MED and $Q_3$.  Here again are the $n = 63$ ordered observations of monthly payments.
 
 {\small{
-140  190  200  200  220  230  250  280  290  340  340  350  370  380  380
-      400  420  440  450  490  500  500  500  510  530  550  560  650  670  670
-      700  700  700  700  710  720  740  740  750  760  770  800  850  880  900
-      900  910  970  990 1000 1000 1100 1200 1200 1200 1200 1200 1300 1400 1400
-     1500 1800 2400
+\Sexpr{MP3}
 }}
+% {\small{
+% 140  190  200  200  220  230  250  280  290  340  340  350  370  380  380
+%       400  420  440  450  490  500  500  500  510  530  550  560  650  670  670
+%       700  700  700  700  710  720  740  740  750  760  770  800  850  880  900
+%       900  910  970  990 1000 1000 1100 1200 1200 1200 1200 1200 1300 1400 1400
+%      1500 1800 2400
+% }}
 
 
 Since .25(63+1)=16, then $Q_1$ is the $16^{th}$ ordered observation.  Hence $Q_1 = 400$.  Similarly, \\ 0.50(63+1)=32 so MED=700.  Finally, .75(63+1)=48, so $Q_3 = 970$.
@@ -545,7 +555,7 @@ The term `skew' refers to the direction of the most extended tail when you flip 
 
 <<label=LBL2m, results="asis", echo=FALSE, out.width="4cm">>=
   SDat4 <- c(401,501,601,702,801,802,901,902,903,904,905,1001,1002,1003,1004,1005,1006,1007,1008,1101,1102)
-  hist(SDat4, xlab="values", col="yellow")
+  hist(SDat4, xlab="values", col="green")
 @
 
 A long tail denotes presence of extreme or outlying observations.  The left-skewed histogram above contains observations that are small and outlying, while a right-skewed histogram would have observations that are large and outlying.  A left skew also indicates that the smallest quarter of observations will be more spread out. For some further examples of histograms depicting both symmetry and skewness, see below.
@@ -612,7 +622,7 @@ A long tail denotes presence of extreme or outlying observations.  The left-skew
 
 \twocolumn
 
-\section{Exercise}
+\section{}
 
 \begin{exercises}    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 

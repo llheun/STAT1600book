@@ -230,7 +230,7 @@ We remind the reader that the normal curve approximations are still approximatio
 
 \twocolumn
 
-\section{Exercises}
+\section{}
 
 \begin{exercises}
 

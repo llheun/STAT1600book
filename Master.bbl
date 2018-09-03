@@ -1,4 +1,4 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{12}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -13,6 +13,13 @@ Anonymous.
 \bibitem[Bruin()]{bruin2011}
 J~Bruin.
 \newblock newtest: command to compute new test {@ONLINE}.
+
+\bibitem[Dischinger(1995)]{dischinger1995}
+P.C. Dischinger.
+\newblock Lower extremity fractures in motor vehicle collisins: The role of
+  driver gender and height.
+\newblock \emph{Accident Analysis and Prevention}, 27\penalty0 (4), August
+  1995.
 
 \bibitem[Doll(1950)]{doll1950}
 Richard Doll.
@@ -35,6 +42,13 @@ Rebeccca Goldin.
 \bibitem[Naranjo()]{naranjo2018}
 Joshua Naranjo.
 \newblock Knowledge building/research 1 knowledge and data.
+
+\bibitem[Redelmeier(1997)]{redelmeier1997}
+D.~A. Redelmeier.
+\newblock Association between cellular-telephone calls and motor vehicle
+  collisions.
+\newblock \emph{The New England Journal of Medicine}, 336:\penalty0 453--458,
+  February 1997.
 
 \bibitem[Sullivan(2013)]{sullivan2013}
 Micheal Sullivan, III.

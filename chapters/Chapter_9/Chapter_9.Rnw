@@ -511,7 +511,7 @@ With 95\% confidence, the odds of unvaccinated subjects getting hepatitis is bet
 
 
 \twocolumn
-\section{Exercises}
+\section{}
 \begin{exercises}
 
   \begin{exercise}  % 1

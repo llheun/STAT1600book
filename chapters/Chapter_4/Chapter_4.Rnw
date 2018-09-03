@@ -10,7 +10,7 @@ After completing this part, students should be able to:
 \fbox{\parbox{14cm}{
 
  \begin{enumerate}
- \item The difference between association and cause. 
+ \item Know the difference between association and cause. 
  \item Understand how confounders can affect the results of a survey.
  	\end{enumerate}
  }}
@@ -26,13 +26,13 @@ Influence of direction of impact and seatbelt use'' by Dischinger, P., Cushing, 
    \item there was a higher incidence of lower extremity fracture among women.
 \end{enumerate}
 
-The conclusion (3) is interesting.  It begs the follow-up question: ``Why do women have higher rates of leg fractures?''  Is it because they drive faster, or apply brakes more slowly, or have weaker bones?  It turns out that these are false questions -- they presume that gender is the variable that causes higher leg fractures.
+The conclusion (3) is interesting.  It begs the follow-up question: ``Why do women have higher rates of leg fractures?''  Is it because they drive faster, or apply brakes more slowly, or have weaker bones?  It turns out that these are false questions -- they presume that gender is the variable that causes higher leg fractures.  
 
 Researchers proposed an explanation in a follow-up study with the same lead author: ``Lower extremity fractures in motor vehicle collisions: The role of driver gender and height'' by Dischinger, P.C., Kerns, T.J., Kufera, J.A. Accident Analysis \& Prevention Volume 27, Issue 4, August 1995.
 
 \begin{quotation}
 Abstract: In a previous study it was noted that there was a higher incidence of lower-extremity fractures among women drivers. Analyses were based on a linkage between trauma registry and police crash report data. The present study addresses the issue of whether the differences noted are attributed to driver gender or are merely a reflection of differences in driver's height. An inverse association was noted between driver height and the incidence of lower-extremity fractures. Those shorter than average (5'7'') for this population had a 64\% increase in a lower-extremity fracture, which can be mainly attributed to ankle/tarsal injuries. Thus, the incidence of these injuries appears to be a function of driver height, with an increase among shorter drivers, most of whom are women.
-\end{quotation}
+\end{quotation}  \citep{dischinger1995}
 
 It turns out that height was the culprit, but it initially looked like gender because height and gender have a strong link.  The following \textit{pathway graph} describes the true relationship:
 
@@ -130,7 +130,7 @@ instead of the (admittedly more sensational) relationship implied by the headlin
 
 % \newpage
 \twocolumn
-\section{Exercises}
+\section{}
 
 \begin{exercises}
 

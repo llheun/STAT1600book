@@ -1,5 +1,6 @@
 \documentclass[11pt, chapterprefix=true]{scrbook}
-\usepackage[colorlinks=true]{hyperref}
+\usepackage{color}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue]{hyperref}
 %\usepackage[lmargin=3cm, rmargin=2cm, showframe]{geometry}    % See geometry.pdf to learn the layout options. There are lots.
 % \usepackage[lmargin=3cm, rmargin=2cm]{geometry}
 \usepackage[lmargin=4cm, rmargin=2cm]{geometry}
@@ -18,7 +19,7 @@
 \usepackage{amsmath}
 \usepackage{epstopdf}
 \usepackage{exsol, fancyvrb}                % Provides exercises and solutions.  See https://ctan.org/pkg/exsol.
-\usepackage{color}
+
 \usepackage{verbatim}
 \usepackage{changepage}
 \usepackage{url}

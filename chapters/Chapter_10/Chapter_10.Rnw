@@ -175,7 +175,7 @@ where $S$ is the standard deviation based on historical data or a pilot sample. 
 
 \twocolumn
 
-\section{Exercises}
+\section{}
 
 \begin{exercises}
 
