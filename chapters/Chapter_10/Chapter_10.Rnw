@@ -10,10 +10,9 @@ After completing this part, students should be able to:
 \fbox{\parbox{14cm}{
 
 \begin{itemize}
-\item Understand the ``wall'' between sample and population
 \item Define and explain the behavioral properties of the sample average
 \item Estimate the population mean
-\item Estimate, the population mean, using intervals
+\item Calculate and interpret confidence interval of the population mean
 \item Determine the sample size for estimating the population mean
 \end{itemize}
 }}
@@ -25,13 +24,19 @@ What percentage of adult men are between 5'6'' and 6' tall?  Population surveys 
 \begin{figure}[ht]
 \caption{The Percentage of Men's Heights between 66 and 72 inches}
 
-<<label=LBL10, results="asis", echo=FALSE, out.width="6cm">>=
-  xr <- seq(57, 81, by=.5)
+<<label=LBL10, results="asis", echo=FALSE, out.width="10cm", out.height="6cm">>=
+  xr <- seq(50, 90, by=0.1)
   yr <- dnorm(xr, mean=69, sd=3)
-  plot(xr, yr, type="l", xlab="Height (inches)", ylab="Density")
-  polygon(c(xr[xr > 66 & xr < 72], 72, 66), c(dnorm(xr[xr > 66 & xr < 72], mean=69, sd=3), 1e-4, 1e-4), col="yellow")
-  text(78, .1, "0.6827")
-  arrows(75, .1, 71, .1)
+  df1<-data.frame(xr,yr)
+  p<-ggplot(df1,aes(x=xr, y=yr))+geom_line() + theme_bw() +
+    geom_area(data = subset(df1, xr > 66 & xr < 72), aes(x=xr, y=yr), fill="skyblue") +
+    theme(panel.border=(element_blank())) +
+    labs(x="Heights (inches)", y=NULL, size=3) + scale_y_continuous(breaks=NULL) + 
+    scale_x_continuous(breaks=seq(60,78,3)) +
+    annotate("text",x=80,y=0.1, label="0.6827", color="black", size=5) + 
+    annotate("segment",x=76,xend=71, y=0.1,yend=0.1,color="black", size=0.5, arrow=arrow()) 
+  
+  p
 @
 
 \end{figure}
@@ -63,7 +68,9 @@ Do we see this in the simulation study?  To make it easier to see, look at the S
 
 Since the individuals in the simulation study have SD of 3 inches, the SD of 9-member averages is:
 
-\fbox{\parbox{14cm}{SD of $\bar{X}_{n=9} = \frac{\texttt{SD of individuals}}{\sqrt{n} } = \frac{3}{\sqrt{9}} = 1.0$ }}
+\begin{equation*}
+\bar{X}_{n=9} = \frac{\texttt{SD of individuals}}{\sqrt{n} } = \frac{3}{\sqrt{9}} = 1.0$ 
+\end{equation*}
 
 Therefore, the real value for the SD of the last column is 1.0.  The simulated SD is 0.92, which is close.
 
@@ -85,14 +92,14 @@ Suppose that men's heights are normally distributed with a mean 5'9'' and a SD 3
 
 Consider estimating the average GPA (call this $\mu$) of the approximately 23,000 WMU undergraduates.  In the absence of the complete database, we may wish to estimate $\mu$ by taking a random sample of, say, $n = 25$ students and computing the sample average (call this $\bar{X}$).  Suppose $\bar{X} = 3.05$.  Now, unless we got fortunate with the random sample, chances are the 3.05 estimate missed the true value $\mu$.  By how much?
 
-On the average, a random variable misses its expected value by one standard deviation.  We expect $\bar{X}$ to miss by how much?  one SD of $\bar{X}$.  Using the equation above, we can estimate this by $\frac{S}{\sqrt{n}}$, since the sample standard deviation $S$ estimates the SD of individuals.
+On the average, a random variable misses its expected value by one standard deviation.  We expect $\bar{X}$ to miss by how much?  one SD of $\bar{X}$.  Using the equation above, we can estimate this by $\frac{s}{\sqrt{n}}$, since the sample standard deviation $s$ estimates the SD of individuals.
 
 \fbox{\parbox{14cm}{
-The population mean ($\mu$) is estimated using the sample mean ($\bar{X}$).  The estimate tends to miss the $\mu$ by an amount called the \textit{standard error (SE)} of the mean which is calculated as $\frac{S}{\sqrt{n}}$:
-$$ SE_{\bar{x}} = \frac{S}{\sqrt{n}} $$
+The population mean ($\mu$) is estimated using the sample mean ($\bar{X}$).  The estimate tends to miss the $\mu$ by an amount called the \textit{standard error (SE)} of the mean which is calculated as $\frac{s}{\sqrt{n}}$:
+$$ SE_{\bar{x}} = \frac{s}{\sqrt{n}} $$
 }}
 
-Returning to the GPA example, suppose that the sample of $n = 25$ students yielded an average GPA of 3.05 and a standard deviation of 0.40.  Then the WMU population average GPA is estimated as 3.05 with a standard error of $\frac{S}{\sqrt{n}} = \frac{0.40}{\sqrt{25}} = 0.08$.
+Returning to the GPA example, suppose that the sample of $n = 25$ students yielded an average GPA of 3.05 and a standard deviation of 0.40.  Then the WMU population average GPA is estimated as 3.05 with a standard error of $\frac{s}{\sqrt{n}} = \frac{0.40}{\sqrt{25}} = 0.08$.
 
 \subsubsection{Example 2}
 
@@ -118,10 +125,10 @@ Variables tend to miss their expected value, but should be within 1 SD 68\% of t
 | \bar{X} - \mu | \le 1.96 (SE) 
 \end{equation*}
 
-95\% of the time, where the SE is given in equation ??? 11.1.  As a consequence,
+95\% of the time, where SE is given by the equation in section 10.3.  As a consequence,
 
 \begin{equation*}
-\mu \texttt{ is inside the interval } \bar{X} \pm 1.96 (SE) 
+\texttt{Population mean, } \mu \texttt{ is inside the interval } \bar{X} \pm 1.96 (SE) 
 \end{equation*}
 
 95\% of the time.  This method gives an interval estimate of $\mu$. 
@@ -131,22 +138,22 @@ Variables tend to miss their expected value, but should be within 1 SD 68\% of t
 A 95\% Confidence Interval estimate for the population mean $\mu$ is given by 
 
 \begin{equation*}
- \bar{X} \pm 1.96 \frac{S}{\sqrt{n}}
+ \bar{X} \pm 1.96 \frac{s}{\sqrt{n}}
 \end{equation*}
 }}
 
-The term $1.96 \frac{S}{\sqrt{n}}$ is called the 95\% margin of error.
+The term $1.96 \frac{s}{\sqrt{n}}$ is called the 95\% margin of error.
 
 \section{Sample Size for Estimating the Population Mean}
 
-If we wanted to reduce the margin of error to some value M, then we set the formula for margin of error equal to $M$, i.e., $M = 1.96 \frac{S}{\sqrt{n}}$.  Solving for $n$ gives the result we need.  
+If we wanted to reduce the margin of error to some value $ME$, then we set the formula for margin of error equal to $ME$, i.e., $ME = 1.96 \frac{s}{\sqrt{n}}$.  Solving for $n$ gives the result we need.  
 
 \fbox{\parbox{14cm}{
-In order to be 95\% confident that the sample mean is within a distance $M$ of the true population $\mu$, choose a sample size equal to 
+In order to be 95\% confident that the sample mean is within a distance $ME$ of the true population $\mu$, choose a sample size equal to 
 \begin{equation*}
- n = \frac{1.96^2 S^2}{M^2}
+ n = \frac{1.96^2 s^2}{ME^2}
 \end{equation*}
-where $S$ is the standard deviation based on historical data or a pilot sample.  The quantity $M$ is called the 95\% margin of error for $\mu$.
+where $s$ is the standard deviation based on historical data or a pilot sample.  The quantity $ME$ is called the 95\% margin of error for $\mu$.
 }}
 
 \section{Key Words}
@@ -155,16 +162,15 @@ where $S$ is the standard deviation based on historical data or a pilot sample. 
 \begin{minipage}[ht]{6cm}
 
 \begin{itemize}
-\item $\alpha$ (Alpha)
-\item Bias
-\item Confidence interval
+\item sample mean
+\item population mean
+\item standard error
 \end{itemize}
 \end{minipage} \hfill
 \begin{minipage}[ht]{6cm}
 
 \begin{itemize}
-\item Confidence level
-\item Efficiency
+\item confidence interval
 \item margin of error
 \end{itemize}
 \end{minipage}
@@ -200,7 +206,7 @@ The national average on a science test for tenth graders has a mean of 210 and a
 A sample of 16 observations is taken from a distribution with mean of 10 and standard deviation 2.
 
 \begin{enumerate}
-  \item Suppose the sample a \\ mean is 10.5. What is the standard error of this estimate?
+  \item Suppose the sample mean is 10.5. What is the standard error of this estimate?
   \item What is the 95\% margin of error?
   \item What is the 95\% confidence interval?
   \item What is the probability the sample \\ mean is greater than 9?
@@ -273,7 +279,7 @@ Safe Skies Airline took a random sample of 25 flights to estimate the average ti
 The normal human body temperature is on average $98.6^o F$ with a standard deviation of $1.0^o F$. Researchers take a random sample of 35. 
 
 \begin{enumerate}
-\item What is the distribution of the sample mean?
+%\item What is the distribution of the sample mean?
 \item What is the mean of this estimate? 
 \item What is the standard error of this estimate?
 \end{enumerate}

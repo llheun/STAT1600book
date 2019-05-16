@@ -49,11 +49,11 @@
 \begin{center} \textbf{Acknowledgements:}
 \end{center}
 
-Eunice Ampah, Srikanthmadhavan Aravamuthan, Joseph Billian, Magdalena Niewiadomska-Bugaj, PhD, Rudie Desravines, Mr. Loren L. Heun, Ian Kapenga, Carrie McKean, Carson Miller, and  Cody Weiss, assisted with  this material.
+Eunice Ampah, Srikanthmadhavan Aravamuthan, Joseph Billian, Magdalena Niewiadomska-Bugaj, PhD, Rudie Desravines, Mr. Loren L. Heun, Ian Kapenga, Carrie McKean, Carson Miller, Cody Weiss, Ronalyn Vitancol and Norman Vitancol assisted with  this material.
 
 \vspace{11cm}
 
-Copyright 2018 by The Department of Statistics at Western Michigan University.
+Copyright 2019 by The Department of Statistics at Western Michigan University.
 
 All rights reserved.
 
@@ -61,7 +61,7 @@ Reproductions or translation of any part of this work beyond that permitted by S
 
 A general introduction to statistics with an emphasis on data analysis and graphical presentation. Extensive use will be made of the computer to prepare results. Topics may include: data collection, sampling and experimentation, measurement issues, descriptive statistics, statistical graphics, normal distribution, cross-classified data, correlation and association, formal statistical inferences, and resampling methods.
 
-<<label=setup, echo=FALSE>>=
+<<label=setup, echo=FALSE, warning=FALSE, message=FALSE>>=
 #
 # Put all R "require" statements here (for the whole book)
 #
@@ -69,13 +69,14 @@ library(knitr)
 library(foreign)
 library(xtable)
 library(ggplot2)
+library(ggpubr)
 lineWidth <- 6.1
 # ltwidth  <- 8.5
 # ltheight <- 11
 # These options apply to all R chunks in the entire book.
 opts_chunk$set(
   # ***************************************
-  echo=FALSE, eval=TRUE, fig.align='center', fig.show='hold',size='footnotesize', fig.width=4.1, fig.height=4.2, out.width='8cm', par=FALSE
+  echo=FALSE, eval=TRUE, fig.align='center', fig.show='hold',size='footnotesize', fig.width=4.1, fig.height=4.2, out.width='8cm', par=FALSE, warning=FALSE, mesage=FALSE
   # ***************************************
 )
 @

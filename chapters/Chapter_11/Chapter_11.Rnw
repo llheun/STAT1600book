@@ -3,7 +3,7 @@
 \chapter{Comparing Two Means}
 \label{chap:ch11}
 
-\section{Objective}
+\section{Objectives}
 
 After completing this part, students should be able to:
 
@@ -34,7 +34,7 @@ Note that we took differences $2.98 - $2.90 to compare average GPA.  The two ave
 SE_{(\bar{x}_1 - \bar{x}_2)} = \sqrt{SE_{\bar{x}_1}^2 + SE_{\bar{x}_2}^2 }
 \end{equation}
 
-whenever the two means are independent.  Equation (11.1) is similar to the equation from chapter 7, the $SE_{\hat{p}_1 - \hat{p}_2} = \sqrt{(SE_{\hat{p}_1^2} + SE_{\hat{p}_2^2 })}$, for proportions. 
+whenever the two means are independent.  Equation (11.1) is similar to the equation from chapter 9, the $SE_{\hat{p}_1 - \hat{p}_2} = \sqrt{(SE_{\hat{p}_1^2} + SE_{\hat{p}_2^2 })}$, for proportions. 
 
 Now, applying the equation from chapter 10, $SE_{\bar{X}}$ which is calculated as $\frac{s}{\sqrt{n}}$ twice, we get
 
@@ -46,7 +46,7 @@ SE_{(\bar{x}_1 - \bar{x}_2)} = \sqrt{\frac{s_1^2}{n_1}  + \frac{s_2^2}{n_2} }
 \end{equation}
 }}
 
-Continuing with the example, let $\bar{X}_1  = 2.98$ and $\bar{X}_2  = 2.90$.  Then the sample standard deviations are $S_1 = 0.45$ and $S_2 = 0.40$.   The sample sizes are $n_1 = 100$ and $n_2 = 100$.
+Continuing with the example, let $\bar{X}_1  = 2.98$ and $\bar{X}_2  = 2.90$.  Then the sample standard deviations are $s_1 = 0.45$ and $s_2 = 0.40$.   The sample sizes are $n_1 = 100$ and $n_2 = 100$.
 
 \begin{equation*}
 SE_{(\bar{x}_1 - \bar{x}_2)} = \sqrt{\frac{s_1^2}{n_1}  + \frac{s_2^2}{n_2} } = \sqrt{\frac{0.45^2}{100}  + \frac{0.40^2}{100} } = 0.06
@@ -55,8 +55,8 @@ SE_{(\bar{x}_1 - \bar{x}_2)} = \sqrt{\frac{s_1^2}{n_1}  + \frac{s_2^2}{n_2} } = 
 Therefore, we can state the conclusion of the study as follows: ``The average GPA of WMU students today is .08 higher than 10 years ago, give or take .06 or so.'' We also could have used equation (11.1) instead of (11.2) in calculating the standard error:
 
 \begin{eqnarray*}
-SE_{\bar{X}_1} &=& \frac{S_1}{\sqrt{n_1}} = \frac{0.45}{\sqrt{100}} = 0.045 \\
-SE_{\bar{X}_2} &=& \frac{S_2}{\sqrt{n_2}} = \frac{0.40}{\sqrt{100}} = 0.040 \\
+SE_{\bar{X}_1} &=& \frac{s_1}{\sqrt{n_1}} = \frac{0.45}{\sqrt{100}} = 0.045 \\
+SE_{\bar{X}_2} &=& \frac{s_2}{\sqrt{n_2}} = \frac{0.40}{\sqrt{100}} = 0.040 \\
 SE_{\bar{X}_1 - \bar{X}_2} &=& \sqrt{0.045^2 + 0.040^2} = 0.06 
 \end{eqnarray*}
 
@@ -94,7 +94,7 @@ The same kind of reasoning holds for all the possible values of $\mu_1 - \mu_2$ 
   \item If zero is between LB and UB (inclusive), then $\mu_1$ is not significantly different from $\mu_2$.
 \end{enumerate}
 
-Note that this is to say that the same reasoning and terminology outlined in the section on statistical significance in chapter 7 apply in the new case of a difference.  If the confidence interval for $\mu_1 - \mu_2$ does not contain 0, then 0 has been effectively excluded from the range of possible values.
+Note that this is to say that the same reasoning and terminology outlined in the section on statistical significance in chapter 9 apply in the new case of a difference.  If the confidence interval for $\mu_1 - \mu_2$ does not contain 0, then 0 has been effectively excluded from the range of possible values.
 
 \fbox{\parbox{14cm}{
 When the confidence interval for $\mu_1 - \mu_2$ does not contain \textbf{zero}, we say that the difference is statistically \textbf{significant}.
@@ -182,6 +182,11 @@ The answer is ``Yes, 1.12 can occur by chance, but with very tiny probability.''
 
 SE's from the expected value using the normal curve, random variables fall as far as 3.05 or more SE's from the expected value with approximately 0.0022 probability.  Since this number (also called the $P$-value) is quite small, it makes it hard to believe that the actual difference is zero.  Hence, we conclude that statistically, the two means are different.  Alternatively, we can say that the means are \textit{significantly} different.
 
+
+\section{Paired data (before-and-after)}
+
+In this section, we will discuss a common problem in data analysis: comparing before and after measurements.  Consider the possible weight loss data in Table 11.2.
+
 \begin{table}[ht]
 \centering
 \caption{Weight in pounds before and after after 12 months on diet}
@@ -199,23 +204,19 @@ SD:  & 18.1 & 16.4 \\ \hline
 \end{tabular}
 \end{table}
 
-\section{Paired data (before-and-after)}
-
-In this section, we will discuss a common problem in data analysis: comparing before and after measurements.  Consider the possible weight loss data in Table 11.2.
-
 Using the notation of the previous section estimating the difference between independent means, we have
 
 \begin{center}
 \begin{minipage}[ht]{3cm}
 
 $\bar{X}_1 = 189.9$ \\
-$S_1 = 18.1$ \\
+$s_1 = 18.1$ \\
 $n_1 = 7$ 
 \end{minipage}
 \begin{minipage}[ht]{3cm}
 
 $\bar{X}_2 = 180.3$ \\
-$S_2 = 16.4$ \\
+$s_2 = 16.4$ \\
 $n_2 = 7$ 
 \end{minipage}
 \end{center}
@@ -252,7 +253,7 @@ SD:  &  & & 11.1 \\ \hline
 
 Compare Table 11.3 to Table 11.2.  We have reduced the summary statistics to a single sample, appropriately.  The relevant statistics are now:
 
-$$ \bar{X} = 9.6,  S = 11.1,  n= 7 $$
+$$ \bar{X} = 9.6,  s = 11.1,  n= 7 $$
 
 What does the sample mean $\bar{X} = 9.6$ estimate?  It estimates the average change, right?  To be specific, it estimates the average weight loss from Month 0 to Month 12.  What is the standard error of the estimate?  Since it is just another average, the appropriate procedure is given by 
 

@@ -3,7 +3,7 @@
 \chapter{Categorical Variables: Association or Independence}
 \label{chap:ch12}
 
-\section{Objective}
+\section{Objectives}
 
 After completing this part, students should be able to:
 
@@ -112,7 +112,8 @@ Otherwise, conclude independence.  The number $b$ is called a critical value and
 df = (r - 1) \times (c - 1)
 \end{equation*}
 
-be a parameter called the degrees of freedom.  Then $b$ is given by the following table.
+\vspace{1cm}
+be a parameter called the degrees of freedom.  Then $b$ is given by the following table:
 
 \begin{table}[ht]
 \centering
@@ -134,19 +135,19 @@ Since $\chi^2 = 23.42$ from (12.1), then $\chi^2 > 12.59$.   We conclude that th
 \section{Key Words}
 
 \fbox{\parbox{14cm}{
-\begin{minipage}[ht]{6cm}
+%\begin{minipage}[ht]{6cm}
 \begin{itemize}
-\item chi-square test for indep
+\item chi-square test for independence
 \item contingency table
 \end{itemize}
 
-\end{minipage} \hfill
-\begin{minipage}[ht]{6cm}
-\begin{itemize}
-\item homogeneity
-\item multinomial experiment
-\end{itemize}
-\end{minipage}
+% \end{minipage} \hfill
+% \begin{minipage}[ht]{6cm}
+% \begin{itemize}
+% \item homogeneity
+% \item multinomial experiment
+% \end{itemize}
+% \end{minipage}
 }}
 
 \twocolumn

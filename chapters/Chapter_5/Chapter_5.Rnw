@@ -10,10 +10,10 @@ After completing this part, students should be able to:
 \fbox{\parbox{14cm}{
 
  \begin{enumerate}
- \item Grasp the basic of good experimental design, especially of confounders
+ \item Grasp the basics of good experimental design
  \item Understand the importance of randomized trials (RT).
  \item Comprehend the meaning of double-blind, randomized controlled trials (RCT).
- \item Discern the observational studies.
+ \item Recognize the difference between observational studies and randomized controlled trials.
  \item Perceive the need for case-controlled studies.
  \item Grasp the need for case-crossover studies. 
  	\end{enumerate}
@@ -92,7 +92,7 @@ Control groups are groups of subjects within the study that are not expected to 
    % \label{fig:example}
 \end{figure}
 
-One of the comparison groups in a study is a control group or placebo are sometimes called \textit{randomized trials}, or randomized controlled experiments. As much as possible, researchers try to conduct \textit{double-blind} randomized controlled trials, when neither the doctor nor the patient knows what treatment the patient is receiving.  In the common cold example, some patients get a sugar pill or placebo while others get a new alternative medication thought to treat cold symptoms.  (The critical point to remember here is that in a double-blind-controlled experiment both the \textit{patients} and \textit{doctors} have no idea if a patient is receiving the sugar pill/placebo or the cold medicine.) This method gives each patient a pill that looks identical regardless as to whether it is the inert placebo or the active drug.
+When one of the comparison groups in a study is a control group or placebo, randomized trials are sometimes called randomized controlled trials, or randomized controlled experiments. As much as possible, researchers try to conduct \textit{double-blind} randomized controlled trials, when neither the doctor nor the patient knows what treatment the patient is receiving.  In the common cold example, some patients get a sugar pill or placebo while others get a new alternative medication thought to treat cold symptoms.  (The critical point to remember here is that in a double-blind-controlled experiment both the \textit{patients} and \textit{doctors} have no idea if a patient is receiving the sugar pill/placebo or the cold medicine.) This method gives each patient a pill that looks identical regardless as to whether it is the inert placebo or the active drug.
 
 % \begin{minipage}[ht]{5cm}
 
@@ -112,7 +112,7 @@ This double-blinding is essential because it offers additional protection agains
 
 \section{Observational studies}
 
-In many cases, when researchers, who want to compare Rx effects, cannot assign treatments to subjects, trials cannot be randomized.  The study involving women and leg fractures is an example.  We compared leg fracture rates of two groups, men, and women.  Whenever a new subject enters the study, e.g., by having a car accident, we observe what gender they belong to, instead of randomly assigning it to control or treated group.  Studies like these are called observational studies, as opposed to randomized experiments.  In the hierarchy of scientific evidence, observational studies are not as reliable as randomized trials are regarded as the gold standard. Since the subjects of observational studies assign themselves to a different group, there may be a selection bias that leads to confounders (like the women in the leg-fracture-study being shorter).  We can control the effects of known confounders in the analysis.  For example, we can compare leg fracture rates of men and women with the same heights.  Investigators will need to anticipate potential confounders and control for them. We enumerate common reasons for nonrandomized studies:
+In many cases, the treatments being compared cannot be assigned, and hence cannot be randomized.  The study involving women and leg fractures is an example.  We compared leg fracture rates of two groups, men, and women.  Whenever a new subject enters the study, e.g., by having a car accident, we \textit{observe} what gender they belong to, instead of randomly assigning it to control or treated group.  Studies like these are called \textit{observational studies}, as opposed to randomized experiments.  In the hierarchy of scientific evidence, observational studies are not as reliable as randomized trials are regarded as the gold standard. Since the subjects of observational studies assign themselves to a different group, there may be a selection bias that leads to confounders (like the women in the leg-fracture-study being shorter).  We can control the effects of known confounders in the analysis.  For example, we can compare leg fracture rates of men and women with the same heights.  Investigators will need to anticipate potential confounders and control for them. We enumerate common reasons for nonrandomized studies:
 
 \begin{enumerate}
 \item Assigning treatment is impossible (e.g., to compare fracture rates between men and women, we cannot randomize subjects into the comparison groups).
@@ -123,10 +123,10 @@ In many cases, when researchers, who want to compare Rx effects, cannot assign t
 \end{enumerate}
 
 \fbox{\parbox{14cm}{
-\textbf{Observational} studies are conducted when \textbf{randomization} to treatment groups  \\ is \textbf{impossible}, \textbf{unethical}, or \textbf{impractical}.
+\textbf{Observational studies} are conducted when \textbf{randomization} to treatment groups  \\ is \textbf{impossible}, \textbf{unethical}, or \textbf{impractical}.
 }}
 
-Returning to the leg-fracture example, we stick to observational studies in such a case for two reasons. As described above, it's impossible to perform the research any other way with the data collected. But we also \textit{should not} elect to change the study, to collect the data in a different and randomized manner.  In other words, we should not even try to get the bias-reducing benefits of randomization because of ethical constraints. To perform randomized clinical trials in this study of leg fractures, we would need to randomly select subjects whose legs \textit{would} be broken for the sake of the study. Causing suffering like this is prohibited by several codes of ethics like the Nuremberg Code, a system of research ethics drafted after the Nuremberg trials of Nazi war criminals.  These criminals included scientists who designed and performed inhumane experiments. Beyond the official ban, though, such research is wrong in its causing undue suffering and its infringement upon fundamental human rights.
+Returning to the leg-fracture example, we stick to observational studies in such a case for two reasons. As described above, it's impossible to perform the research any other way with the data collected. But we also \textit{should not} elect to collect the data in a randomized manner.  In other words, we should not even try to get the bias-reducing benefits of randomization because of ethical constraints. To perform randomized clinical trials in this study of leg fractures, we would need to randomly select subjects whose legs \textit{would} be broken for the sake of the study. Causing suffering like this is prohibited by several codes of ethics like the Nuremberg Code, a system of research ethics drafted after the Nuremberg trials of Nazi war criminals.  These criminals included scientists who designed and performed inhumane experiments. Beyond the official ban, though, such research is wrong in its causing undue suffering and its infringement upon fundamental human rights.
 
 Another reason we may conduct an observational study is that they can be more practical compared to randomized controlled trials. It can be due to the constraints of a rare disease, or the cost of a randomized study would entail.  A researcher might want to study whether regular exercise can prevent a rare form of cancer.  Randomization and control here would require that we randomly select patients first, group them along exercise programs (say regular, irregular, and no exercise), and wait to see how the different groups respond (do the exercise groups have significantly fewer cases of cancer?).  This study might not work out at all because, since the cancer is rare, it's possible that no or very few of our subjects will get cancer.  It also may take many years before cancer would appear.
 
@@ -225,7 +225,7 @@ A randomized controlled experiment is the ``gold standard of scientific knowledg
 
   \begin{exercise} % 5
 
-What is the advantage of case-control studies over clinical trials?
+What is the advantage of case-control studies over randomized \\ controlled trials?
 
   \end{exercise}
 %   \begin{solution}  % 5
@@ -249,7 +249,7 @@ Yes, there are potential confounders. For instance, it might be that players fee
 
 	  \begin{exercise} % 7
 
-What is the advantage of clinical trials over case-control studies?
+What is the advantage of randomized controlled trials over case-control studies?
 
   \end{exercise}
   % \begin{solution}  % 7

@@ -3,28 +3,19 @@
 \chapter{Location and Spread}
 \label{chap:ch3}
 
-\section{Objective}
+\section{Objectives}
 
 After completing this part, students should be able to:
 
 \fbox{\parbox{14cm}{
 \begin{itemize}
 \item Explain the concept of measures of central tendency and interpret the information they provide.
-\item Calculate, describe and compare the three most commonly used measures of central tendency: means, medians, and modes.
+\item Calculate, describe and compare the commonly used measures of central tendency: mean, \textit{$\bar{X}$} and median, \textit{MED}.
 \item Understand other measures of central tendency.
 \item Select appropriate measure of central tendency based on the
 level of measurement and characteristics of the data (distribution).
-\item Explain the concept of measures of dispersion and the information they convey.
-\item Compute and explain the following:
-	\begin{itemize}
-	\item The range ({\textbf{R}}).
-	\item The interquartile range ({\textbf{IQR}})
-	\item The sample variance (denoted as {\textbf{$s^2$}}).
-	\item The population variance  (denoted as {\textbf{$\sigma^2$}}).
-	\item The sample standard deviation  (denoted as {\textbf{$s$}}).
-	\item The population standard deviation  (denoted as {\textbf{$\sigma$}}).
-	\end{itemize}
-\item Select the  measure of dispersion appropriate for our current problem.
+\item Explain the concept of measures of spread and the information they convey.
+\item Compute and explain sample standard deviation, \textit{SD}.
 \end{itemize}
 }}
 
@@ -38,7 +29,7 @@ How much would we say is the average rent for two-bedroom apartments in Kalamazo
 
 \subsection{The Sample Mean}
 
-The sample mean is the statistical term for `average of the sample.'  For the example above, the sample mean (denoted $\bar{X}$) is: The sample mean is the statistical term for `average of the sample.'  For the example above, the sample mean (denoted $\bar{X}$) is:
+The sample mean is the statistical term for `average of the sample.'  For the example above, the sample mean (denoted $\bar{X}$) is:
 
 $$ \bar{X} = \frac{635+525+500+800+650+750+555+500+670+675}{10} = \$626 $$
 
@@ -55,7 +46,7 @@ The advantages of the sample mean:
 The disadvantage of the mean:
 
 \begin{itemize}
-\item It is always affected by outliers relatively small and relatively large data values.
+\item It is always affected by outliers, which are relatively small and/or relatively large data values.
 \end{itemize}
 
 \subsection{The Sample Median}
@@ -66,7 +57,7 @@ There are alternative ways to estimate average rent if we want to avoid the effe
 \item Let $n$ represent the total number of observations.
 \item Order the $n$ observations from smallest to largest.
 \item Then calculate $0.50(n + 1)$ to locate the middle value of the dataset.
-\item If $0.50(n + 1)$ is an integer, then MED is the $0.50(n + 1)st$ ordered observation.
+\item If $0.50(n + 1)$ is an integer, then MED is the $0.50(n + 1)th$ ordered observation.
 \item If $0.50(n + 1)$ is not an integer, then MED is the average of the two adjacent ordered observations.
 \item There are $n = 10$ observations in our rental data.  We first order them from smallest to largest.
 \end{enumerate}
@@ -145,8 +136,18 @@ In this chapter, we will discuss the sample standard deviation, which is typical
 
 \subsection{The Sample Standard Deviation}
 
-The standard deviation (or SD) for the monthly rent data is computed using a series of steps.  Notice in the last row we have the average, the sum of the deviations from the mean, which will always be 0, and the Sum of Squares (SS) which is the sum of the squared deviations from the average.
+The standard deviation (or SD) is computed using a series of steps:
+\begin{enumerate}
+\item Compute the mean.
+\item Subtract mean from each observation. These are the deviations from the mean or "Deviations".
+\item Square the deviations from the mean. These are the "Squared Deviations".
+\item Take the sum of squared deviations, this is called the "Sum of Squares" or \textit{SS}.
+\item Compute SD using the equation: $$SD=\sqrt{\frac{SS}{n-1}}$$ where \textit{n} is the number of observations.
+\end{enumerate}
 
+The table below shows the computations for the monthly rent data. Notice in the last row that the sum of the deviations from the mean is 0. This will always be the case for the sum of deviations from the mean.
+
+%\vspace{2cm}
 
 <<label=LBL3a, results="asis", echo=FALSE>>=
   rent31 <- c(635,525,500,800,650,750,555,500,670,675)
@@ -159,7 +160,7 @@ The standard deviation (or SD) for the monthly rent data is computed using a ser
   sum31[3] <- sum(SS31)
   tbl31 <- cbind(rent31, diff31, SS31)
   tbl32 <- rbind(tbl31, sum31)
-  colnames(tbl32) <- c( "Rent", "Deviations", "SS")
+  colnames(tbl32) <- c( "Rent", "Deviations", "Squared Deviations")
   rownames(tbl32) <- c('1','2','3','4','5','6','7','8','9','10','Sum')
   xtable(tbl32, digits=0)
   tmp31 <- sprintf("%.1f", sqrt(sum31[3]/9))
@@ -221,7 +222,7 @@ If we are not convinced, consider the data itself on the following table.
   sum31[3] <- sum(SS31)
   tbl31 <- cbind(rent31, diff31, SS31)
   tbl32 <- rbind(tbl31, sum31)
-  colnames(tbl32) <- c( "Rent", "Deviations", "SS")
+  colnames(tbl32) <- c( "Rent", "Deviations", "Squared Deviations")
   rownames(tbl32) <- c('1','2','3','4','5','6','7','8','9','10','Sum')
   xtable(tbl32, digits=1, caption="Calculating the SD when rent is DIVIDED BY 2")
   tmp31 <- sprintf("%.2f", sqrt(sum31[3]/9))
@@ -232,7 +233,7 @@ $$ SD = \sqrt{ \frac{ SS}{n - 1}} = \sqrt{ \frac{ \Sexpr{tmp32}}{9}} \approx \Se
 
 \newpage
 
-\fbox{\parbox{14cm}{ In general, when we add or subtract a \textbf{constant} to the data, the same thing happens to both the average, but the \textbf{SD remains unchanged.}}}
+\fbox{\parbox{14cm}{ In general, when we add or subtract a \textbf{constant} to the data, the same thing happens to the average, but the \textbf{SD remains unchanged.}}}
 
   <<label=LBL3c, results="asis", echo=FALSE>>=
   tmp34 <- c(635,525,500,800,650,750,555,500,670,675)
@@ -246,7 +247,7 @@ $$ SD = \sqrt{ \frac{ SS}{n - 1}} = \sqrt{ \frac{ \Sexpr{tmp32}}{9}} \approx \Se
   sum31[3] <- sum(SS31)
   tbl31 <- cbind(rent31, diff31, SS31)
   tbl32 <- rbind(tbl31, sum31)
-  colnames(tbl32) <- c( "Rent", "Deviations", "SS")
+  colnames(tbl32) <- c( "Rent", "Deviations", "Squared Deviations")
   rownames(tbl32) <- c('1','2','3','4','5','6','7','8','9','10','Sum')
   xtable(tbl32, digits=1, caption="Calculating the SD when rent is reduced by 100 dollars")
   tmp31 <- sprintf("%.2f", sqrt(sum31[3]/9))
@@ -255,6 +256,18 @@ $$ SD = \sqrt{ \frac{ SS}{n - 1}} = \sqrt{ \frac{ \Sexpr{tmp32}}{9}} \approx \Se
 
 
 $$ SD = \sqrt{ \frac{ SS}{n - 1}} = \sqrt{ \frac{ \Sexpr{tmp32}}{9}} \approx \Sexpr{tmp31} $$
+
+\section{Key Words}
+
+\fbox{\parbox{14cm}{
+
+\begin{itemize}
+    \item sample mean
+    \item sample median
+    \item trimmed mean
+    \item sample standard deviation
+\end{itemize}
+}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%% Exercises %%%%%%%%%%%%%%%%%%%%
 \twocolumn
@@ -305,20 +318,20 @@ Calculate the
   \item mean = \Sexpr{mn2} and standard deviation \Sexpr{sd2} (in grams)
 	\end{solution}
 
-  \begin{exercise} % 2
+%   \begin{exercise} % 2
+% 
+%   Calculate the median of \\ pairwise average for the first 6 observations which are listed below:
+% 
+% 13.6    16.6    23.5    10.2     5.4     15.0
 
-  Calculate the median of \\ pairwise average for the first 6 observations which are listed below:
-
-13.6    16.6    23.5    10.2     5.4     15.0
-
- 	\end{exercise}
+ 	% \end{exercise}
  	% \begin{solution}  % 2
  	%
  	%
  	% The third value must be 22 so that the average is 20 for all three quizzes.
  	% \end{solution}
 
-  \begin{exercise} % 3
+  \begin{exercise} % 2
 
   Daily high temperature for a given day are provided for the past 10 years
 
@@ -335,21 +348,19 @@ Find the following statistics for \\ temperature:
 \item range
 \item mean
 \item median
-\item mode
-\item Remove the temperature of the year \\ 2010 from the data set and re-calculate the mean and compare it with part (3)? Is the mean closer to the median and why?
+\item Remove the temperature of the year \\ 2010 from the data set and re-calculate the mean and compare it with part (2)? Is the mean closer to the median and why?
 \end{enumerate}
 
    \end{exercise}
-   \begin{solution} % 3
+   \begin{solution} % 2
 
-<<label=LBL3-3, result="asis", echo=FALSE>>=
+<<label=LBL3-2, result="asis", echo=FALSE>>=
   xdt1 <- c(59,50,49,13,41,46,51,53,58,47)
   tmp3b <- sort(xdt1)
   rng1  <- tmp3b[1]
   rng2  <- tmp3b[10]
   mn33  <- mean(tmp3b)
   md33  <- median(tmp3b)
-  mod33 <- NA
   mn34  <- sprintf('%.1f', mean(tmp3b[2:10]) )
 @
 
@@ -357,12 +368,11 @@ Find the following statistics for \\ temperature:
 \item The range is from \Sexpr{rng1} to \Sexpr{rng2}
 \item The mean is \Sexpr{mn33}
 \item The median is \Sexpr{md33}
-\item There is no mode since there are no duplicates.
 \item Removing the smallest value changes the mean to \Sexpr{mn34}.  The new value is closer to median because 13 is an outlier.
 \end{enumerate}
   \end{solution}
 
-   \begin{exercise} % 4
+   \begin{exercise} % 3
 
 Joshua has been working on \\ programming  and updating a Website for his \\ company for the past 12 months. The following numbers represent the number of hours Joshua  has worked on this Website for each of the past 12 months:
 
@@ -376,8 +386,8 @@ Joshua has been working on \\ programming  and updating a Website for his \\ com
 \end{enumerate}
 
 \end{exercise}
-\begin{solution}  % 4
-<<label=LBL3-4, results="asis", echo=FALSE>>=
+\begin{solution}  % 3
+<<label=LBL3-3, results="asis", echo=FALSE>>=
   dt3 <- c(24, 25, 31, 40, 48, 40, 36, 50, 38, 35 ,42, 112)
   mn1 <- mean(dt3)
   md1 <- median(dt3)
@@ -394,8 +404,8 @@ Joshua has been working on \\ programming  and updating a Website for his \\ com
 
 % \newpage
 
-\begin{exercise} % 5
-<<label=LBL3-5, results="asis", echo=FALSE>>=
+\begin{exercise} % 4
+<<label=LBL3-4, results="asis", echo=FALSE>>=
   shape5 <- numeric(3)
   shape5[1] <- "Left skewed"
   shape5[2] <- "Symmetric"
@@ -432,7 +442,7 @@ In a study of warp breakage during the process of weaving fabric (\textit{Techno
 \end{enumerate}
 
 \end{exercise}
-\begin{solution}   % 5
+\begin{solution}   % 4
 
 \begin{enumerate}
 \item $\bar{x} = \Sexpr{mn5}$
@@ -446,29 +456,29 @@ In a study of warp breakage during the process of weaving fabric (\textit{Techno
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% new exercises
 
-  \begin{exercise} % 6
+  \begin{exercise} % 5
 
   The weekly budgets for groceries of six students are as follows: \\
-\$30, \$35, \$40, \$28, \$35, \$25. \\ Compute the mean, median, and mode, respectively.
+\$30, \$35, \$40, \$28, \$35, \$25. \\ Compute for the mean and median and \\ choose the correct answer from the choices below:
 	\begin{enumerate}
-	\item 188, 30, 40
-	\item 32.167, 35, 35
-	\item 32.167, 32.5, 35
-	\item 188, 30, 35
+	\item mean = 188, median = 30
+	\item mean = 32.167, median = 35
+	\item mean= 32.167, median = 32.5
+	\item mean= 188, median = 30
 	\end{enumerate}
 
 	\vspace{5mm}
     \framebox[5cm][l]{ Answer: }
 	\end{exercise}
 	\vspace{2mm}
-	\begin{solution}   % 6
+	\begin{solution}   % 5
 
 	Compute the mean, median, and mode for the weekly grocery budget
-	mean = 32.167, median = 32.5, mode = 35
+	mean = 32.167, median = 32.5
 
 	\end{solution}
 
-  \begin{exercise} % 7
+  \begin{exercise} % 6
 
   John got 16 and 22 on his two Stat 1600 quizzes.  What score must he have on his next quiz to have the mean of exactly 20 for his three quizzes?
 	\begin{enumerate}
@@ -482,15 +492,15 @@ In a study of warp breakage during the process of weaving fabric (\textit{Techno
     \framebox[5cm][l]{ Answer: }
 	\end{exercise}
 	\vspace{2mm}
-	\begin{solution}   % 7
+	\begin{solution}   % 6
 
 	The third value must be 22 so that the average is 20 for all three quizzes.
 
 	\end{solution}
 
-  \begin{exercise} % 8
+  \begin{exercise} % 7
 
-    The following table lists the average number of cars per 1000 population for eight nations. Compute the three central tendency variables (mean and median) for these data.
+    The following table lists the average number of cars per 1000 population for eight nations. Compute the mean and median for these data.
 
 % Requires the booktabs if the memoir class is not being used
 % \begin{table}[htbp]
@@ -521,11 +531,11 @@ In a study of warp breakage during the process of weaving fabric (\textit{Techno
   \item How do you know?
   \end{enumerate}
 
-  \vspace{5mm}
-    \framebox[5cm][l]{ Answer: }
+  % \vspace{5mm}
+  %   \framebox[5cm][l]{ Answer: }
   \end{exercise}
-  \vspace{2mm}
-  \begin{solution}   % 8
+  % \vspace{2mm}
+  \begin{solution}   % 7
 
 
 <<result="asis", echo=FALSE>>=
@@ -536,7 +546,7 @@ xsumm1 <- summary(xdt1)
 
     The mean is \Sexpr{xsumm1[4]}
     The median is \Sexpr{xsumm1[3]}
-    There is no mode since there are no duplicates.
+    %There is no mode since there are no duplicates.
 
 {\bf{1. }} The greater value is the median (555).  {\bf{2. }} There is a negative skewness in the middle half the of the dataset.  (Refer to Figure 3.1.)
 
@@ -551,11 +561,9 @@ xsumm1 <- summary(xdt1)
 
   \end{solution}
 
-  \begin{exercise} % 9
+  \begin{exercise} % 8
 
-You are a researcher for a mid-sized city.  Using Table 3.8, you have collected six types of variables from a random sample of students from a large university.  These variables include:
-
-Select the  appropriate measures of central tendency for each variable:
+You are a researcher for a mid-sized city. You collected six types of variables from a random sample of students from a large university.  These variables include:
 
   \begin{enumerate}
   \item their region of birth of country
@@ -566,20 +574,23 @@ Select the  appropriate measures of central tendency for each variable:
   \item religious affiliation.
   \end{enumerate}
 
+Select the  appropriate measures of central tendency for each variable.
+
+ 
 % \end{minipage}
 
-\vspace{1cm}
-    \framebox[5cm][l]{ Answer: }
+% \vspace{1cm}
+%     \framebox[5cm][l]{ Answer: }
 
   \end{exercise}
-  \begin{solution}   % 9
+  \begin{solution}   % 8
 
   {\bf{(1. )}} Mode  {\bf{(2. )}} Median  {\bf{(3. )}} Mean  {\bf{(4. )}} Mean  {\bf{(5. )}} Median  {\bf{(6. )}} Mode
 
   \end{solution}
 
 %' \pagebreak
-  \begin{exercise} % 10
+  \begin{exercise} % 9
 
 % Requires the booktabs if the memoir class is not being used
 \begin{table}[htbp]
@@ -606,18 +617,18 @@ Select the  appropriate measures of central tendency for each variable:
 
   Using the dataset from Table 3.3, determine the value of the central tendency measures for each variable.
 
-    \framebox[5cm][l]{ Answer: }
+   % \framebox[5cm][l]{ Answer: }
   \end{exercise}
-   \begin{solution}  % 10
+   \begin{solution}  % 9
   
      {\bf{Birth}} Mode=``North'';   {\bf{Expense}} Mean=48.5; {\bf{Movies}} Mean=5.8; {\bf{Food}} Median=6;  {\bf{Religion}} Mode=``Protestant''
    
    \end{solution}
 
 % \newpage
-  \begin{exercise} % 11
+  \begin{exercise} % 10
 
-For the next two questions, use the following scenario.  As a leader of a Kalamazoo social services agency that employs 20 staff members, you are concerned that your staff has an increased caseload of clients compared to 10 years ago.  The case load of each worker is reported in the following table (Table 3.9) for years 2005 and 2015.
+As a leader of a Kalamazoo social services agency that employs 20 staff members, you are concerned that your staff has an increased case load of clients compared to 10 years ago.  The case load of each worker is reported in the following table (Table 3.4) for years 2005 and 2015.
 
 % Requires the booktabs if the memoir class is not being used
 \begin{table}[htbp]
@@ -628,18 +639,18 @@ For the next two questions, use the following scenario.  As a leader of a Kalama
    2005 & 50&64&55&64&60&53&56&50&51&45 \\ & 46&46&50&56&63&65&53&54&58&69 \\ \hline
    2015 & 57&47&46&59&59&50&57&52&41&66 \\ & 65&52&57&75&65&76&43&56&52&67 \\ \hline
    \end{tabular}
-    \caption{Central Tendency}
+    \caption{Case Loads Comparison}
    \label{tab:t3_4a}
    }}
 \end{table}
 
-  Has the average caseload increased, decreased, or stayed the same?
+  Has the average case load increased, \\ decreased, or stayed the same?
 
-  \vspace{2mm}
-    \framebox[5cm][l]{ Answer: }
+   \vspace{2mm}
+     \framebox[5cm][l]{ Answer: }
   \end{exercise}
   \vspace{2mm}
-  \begin{solution}
+  \begin{solution} %10
 
 <<results="asis", echo=FALSE>>=
         cl2005 <- c(50,	64,	55,	64,	60,	53,	56,	50,	51,	45,	46,	46,	50,	56,	63,	65,	53,	54,	58,	69)
@@ -656,7 +667,7 @@ The median for 2015 is \Sexpr{med3b}.
 
   \end{solution}
 
-  \begin{exercise} % 12
+  \begin{exercise} % 11
 
   The admissions \\ department at WMU gave 25 randomly selected freshmen a national prejudice survey.  The racial prejudice index scores  will be used in three years to see if higher education affects prejudice.
 
@@ -682,7 +693,7 @@ The median for 2015 is \Sexpr{med3b}.
 	\vspace{2mm}
     \framebox[5cm][l]{ Answer: }
 	\end{exercise}
-	\begin{solution}   % 12
+	\begin{solution}   % 11
 
 	The mean is
 	<<results="asis", echo=FALSE>>=
@@ -698,7 +709,7 @@ The median for 2015 is \Sexpr{med3b}.
 
 	\end{solution}
 
-	  \begin{exercise} % 13
+	  \begin{exercise} % 12
 
 The same 25 students completed the same survey during their senior \\ year.  Compute the mean and median for this second set of scores, and compare them to the scores from four years earlier.   What happened?
 
@@ -725,7 +736,7 @@ The same 25 students completed the same survey during their senior \\ year.  Com
     \framebox[5cm][l]{ Answer: }
 	\end{exercise}
 	\vspace{2mm}
-	\begin{solution}   % 13
+	\begin{solution}   % 12
 
 <<results="asis", echo=FALSE>>=
 	e3dat8 <- c(50, 27, 31, 35, 41, 11, 45, 50, 37, 43, 11, 9, 10, 20, 10, 35, 10, 30, 41, 40, 15, 30, 40, 26, 21)
@@ -739,9 +750,9 @@ The same 25 students completed the same survey during their senior \\ year.  Com
 
 	\end{solution}
 
-	\begin{exercise} % 14
+	\begin{exercise} % 13
 
-  The next two questions refer to the following scenario.  A local social service agency has started a sex education \\ course for teen girls.  The girls took a 20-question exam for general information about sex, anatomy and physiology upon entry and again after completing the course.  Table 3.7 has the listing of scores of a random sample of 15 girls.
+A local social service \\ agency has started a sex education course for teen girls.  The girls took a 20-question exam for general information about sex, anatomy and physiology upon entry and again after completing the course.  Table 3.7 has the listing of scores of a random sample of 15 girls.
 
 Calculate the mean and median of the pre and post test scores and comment on the results.
 
@@ -782,7 +793,7 @@ Calculate the mean and median of the pre and post test scores and comment on the
     \framebox[5cm][l]{ Answer: }
 	\end{exercise}
 	\vspace{2mm}
-	\begin{solution}  % 14
+	\begin{solution}  % 13
 
 
 <<results="asis", echo=FALSE>>=

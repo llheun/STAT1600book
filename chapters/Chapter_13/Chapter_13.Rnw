@@ -3,7 +3,7 @@
 \chapter{Correlation}
 \label{chap:ch13}
 
-\section{Objective}
+\section{Objectives}
 
 After completing this part, students should be able to:
 
@@ -11,7 +11,7 @@ After completing this part, students should be able to:
 \begin{itemize}
 
 \item Interpret  a scatter plot.
-\item Interpret the correlation coefficient $r$ \index{coefficient coefficient}  and the coefficient of determination $r^2$. \index{coefficient of determination}
+\item Compute and interpret the correlation coefficient $r$ \index{coefficient coefficient}
 % \item Find and elucidate the regression line and use it to predict values of the response variable.
 % \item Put into words the concepts of the total, unexplained, and explained variation.  \index{unexplain variation} \index{explained variation}  \index{total variation}
 % \item Use correlation and regression techniques to evaluate two-variable relationships.
@@ -23,30 +23,20 @@ The following data appeared in the Wall Street Journal in 1984.  Advertisements 
 
 \begin{table}[ht]
 \centering 
-\begin{tabular}{@{} lrr @{}} \hline
-& \multicolumn{1}{c}{TV Ad} \\
-Company & Budget & Impressions \\ \hline
-Miller Lite & 50.1 & 32.1 \\
-Pepsi & 74.1 & 99.6 \\
-Stroh's & 19.3 & 11.7 \\
-Fed'd Express & 22.9 & 21.9 \\
-Burger King & 82.4 & 60.8 \\
-Cola-Cola & 40.1 & 78.6 \\
-McDonald's & 185.9 & 92.4 \\
-MCI & 26.9 & 50.7 \\
-Diet Cola & 20.4 & 21.4 \\
-Ford & 166.2 & 40.1 \\
-Levi's & 27.0 & 40.8 \\
-Bud Lite & 45.6 & 10.4 \\
-ATT/Bell & 154.9 & 88.9 \\
-Calvin Klein & 5.0 & 12.0 \\
-Wendy's & 49.7 & 29.2 \\
-Polandoid & 26.9 & 38.0 \\
-Shasta & 5.7 & 10.0 \\
-Meow Mix & 7.6 & 12.3 \\
-Oscar Meyer & 9.2 & 23.4 \\
-Crest & 32.4 & 71.1 \\
-Kibbles 'n Bits & 6.1 & 4.4 \\ \hline
+\begin{tabular}{@{} lrr | lrr @{}} \hline
+& \multicolumn{4}{c}{TV Ad} \\
+Company & Ad Spending & Impressions & Company & Ad Spending & Impressions \\ \hline
+Miller Lite & 50.1 & 32.1 & Bud Lite & 45.6 & 10.4\\
+Pepsi & 74.1 & 99.6 & ATT/Bell & 154.9 & 88.9 \\
+Stroh's & 19.3 & 11.7 & Calvin Klein & 5.0 & 12.0\\
+Fed'd Express & 22.9 & 21.9 & Wendy's & 49.7 & 29.2\\
+Burger King & 82.4 & 60.8 & Polandoid & 26.9 & 38.0\\
+Cola-Cola & 40.1 & 78.6 & Shasta & 5.7 & 10.0\\
+McDonald's & 185.9 & 92.4 & Meow Mix & 7.6 & 12.3\\
+MCI & 26.9 & 50.7 & Oscar Meyer & 9.2 & 23.4\\
+Diet Cola & 20.4 & 21.4 & Crest & 32.4 & 71.1\\
+Ford & 166.2 & 40.1 & Kibbles 'n Bits & 6.1 & 4.4\\
+Levi's & 27.0 & 40.8 \\ \hline
 \end{tabular}
 \end{table}
 
@@ -55,18 +45,24 @@ Figure 13.1 shows a scatterplot of Impressions Score (Y) versus Ad Spending (X).
 If the points fall around a straight line sloped downwards, we say that there is a negative association.
 
 \begin{figure}[ht]
+\caption{Plot of Impressions vs. Ad Budget}
 \centering
 
-<<label=LBL13a, results="asis", echo=FALSE, out.width="8cm">>=
-  budget1 <- c(50.1,74.1,19.3,22.9,82.4,40.1,185.9,26.9,20.4,166.2,27.0,45.6,154.9,5.0,49.7,26.9,5.7,7.6,9.2,32.4,6.1)
-  impress1 <- c(32.1,99.6,11.7,21.9,60.8,78.6,92.4,50.7,21.4,40.1,40.8,10.4,88.9,12.0,29.2,38.0,10.0,12.3,23.4,71.1,4.4)
-  plot(budget1, impress1, xlab="Ad Budget", ylab="Impressions", main="Plot of Impressions vs. Ad Budget ")
+<<label=LBL13a, results="asis", echo=FALSE, out.width="10cm", out.height="6cm">>=
+budget1 <- c(50.1,74.1,19.3,22.9,82.4,40.1,185.9,26.9,20.4,166.2,27.0,
+             45.6,154.9,5.0,49.7,26.9,5.7,7.6,9.2,32.4,6.1)
+impress1 <- c(32.1,99.6,11.7,21.9,60.8,78.6,92.4,50.7,21.4,40.1,40.8,
+              10.4,88.9,12.0,29.2,38.0,10.0,12.3,23.4,71.1,4.4)
+df2 <- data.frame(budget1,impress1)
+p <- ggplot(df2, aes(x=budget1, y=impress1)) + geom_point(size=2, shape=23) + theme_bw() +
+      labs(x="Ad Spending", y="Impressions")
+p
 @
 \end{figure}
 
 Researchers often express the direction and the strength of association in a single number called the (Pearson) \textit{correlation coefficient}.  Typically denoted by $r$, the correlation coefficient $r$ is a number between $-1$ and $+1$, inclusive.  A value of $r = 0$ means that no linear association exists; the points either look like a random scatter or fall around a horizontal line.  A value of $r = +1$ indicates a perfectly linear relationship; all the points fall on a straight line sloped upwards.  If $r = -1$, all the points fall on a straight line sloped downwards. The correlation between TV Ad Budget and Impressions in the data above is $+0.65$.
 
-Figure 13.2 on the following page shows various scatterplots with different correlations.  Although $0.5$ is halfway between $0$ and $1$, note that the plot corresponding to $r = 0.5$ barely shows a pattern of association.  In practice, plots can show correlations up to $0.3$ purely by accident (e.g., the correlation between GPA and, say, shoe size).  When correlation reaches $+1$ or $-1$, all points fall on a straight line.
+Figure 13.2 shows various scatterplots with different correlations.  Although $0.5$ is halfway between $0$ and $1$, note that the plot corresponding to $r = 0.5$ barely shows a pattern of association.  In practice, plots can show correlations up to $0.3$ purely by accident (e.g., the correlation between GPA and, say, shoe size).  When correlation reaches $+1$ or $-1$, all points fall on a straight line.
 
 \begin{figure}[ht]
 
@@ -89,16 +85,16 @@ Figure 13.2 on the following page shows various scatterplots with different corr
 @
 
 \caption{Correlation plots (from top to bottom, r = \Sexpr{cr1}, \Sexpr{cr2}, \Sexpr{cr3}, \Sexpr{cr4})}
-<<label=LBL13b, results="asis", echo=FALSE, out.width="4cm">>=
+<<label=LBL13b, results="asis", echo=FALSE, out.width="5cm">>=
   plot(wt1, mpg1, xlab="Car weight", ylab="MPG")
 @
-<<label=LBL13c, results="asis", echo=FALSE, out.width="4cm">>=
+<<label=LBL13c, results="asis", echo=FALSE, out.width="5cm">>=
   plot(rs1, pe1, xlab="R/S", ylab="P/E")
 @
-<<label=LBL13d, results="asis", echo=FALSE, out.width="4cm">>=
+<<label=LBL13d, results="asis", echo=FALSE, out.width="5cm">>=
   plot(temp1, use1, xlab="Ave-Temp", ylab="Power Usage (KW)")
 @  
-<<label=LBL13e, results="asis", echo=FALSE, out.width="4cm">>=
+<<label=LBL13e, results="asis", echo=FALSE, out.width="5cm">>=
   plot(sqft1, asls1, xlab="Area (sq-ft)", ylab="Annual Sales ($)")
 @  
 \end{figure}
@@ -125,9 +121,9 @@ SD  & 2 & 4 \\ \hline
 \end{tabular}
 \end{table}
 
-\item Calculate the Z-scores from equation (4.1) on page 42.  
+\item Calculate the Z-scores from equation (6.1) on page 70.  
 
-$$ Z_x = \frac{X - \bar{X}}{S_x} = \frac{X - 4}{2} \texttt{ and } Z_y = \frac{Y - \bar{Y}}{S_y} = \frac{Y - 9}{4} $$
+$$ Z_x = \frac{X - \bar{X}}{s_x} = \frac{X - 4}{2} \texttt{ and } Z_y = \frac{Y - \bar{Y}}{s_y} = \frac{Y - 9}{4} $$
 
 \item Multiply the Z-scores and add up.
 
@@ -179,20 +175,20 @@ If the data is paired above-average X values with below-average Y values, then t
 \section{Key Words}
 
 \fbox{\parbox{14cm}{
-\begin{minipage}[ht]{6cm}
+%\begin{minipage}[ht]{6cm}
 \begin{itemize}
-\item correlation coefficient
-\item correlation plots
-\item 
-\end{itemize}
-
-\end{minipage} \hfill
-\begin{minipage}[ht]{6cm}
-\begin{itemize}
-\item Pearson Correlation
+\item pearson correlation coefficient
 \item scatter plot
 \end{itemize}
-\end{minipage}
+
+%\end{minipage} \hfill
+% \begin{minipage}[ht]{6cm}
+% \begin{itemize}
+% \item Pearson Correlation
+% \item residuals
+% \item scatter plot
+% \end{itemize}
+% \end{minipage}
 }}
 
 

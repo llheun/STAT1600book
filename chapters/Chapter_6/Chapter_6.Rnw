@@ -28,23 +28,41 @@ Knowing the average and SD of a process $(36 \pm 8)$ gives us some understanding
 
 \begin{figure}[ht]
 \caption{Probability of Demand Exceeding 40}
-<<label=LBL4a, results="asis", echo=FALSE, out.width="8cm" >>=
-  dt1 <- rnorm(n=1000, mean=36, sd=8)
-  hist(dt1, freq = FALSE, main="Probability of Demand > 40", xlab="X")
-  xv <- seq(2, 68, by=0.1)
-  yv <- dnorm(xv, mean=36, sd=8)
-  lines(xv, yv)
-  polygon(c(xv[xv>40], 40), c(dnorm(c(xv[xv>40], 1e-4), mean=36,sd=8)),col="skyblue")
+<<label=LBL4a, results="asis", echo=FALSE, out.width="14cm", out.height="8cm" >>=
+dataset<-rnorm(n=1000000, mean=36, sd=8)
+dataset <- data.frame(X=dataset)
+
+hist1<-ggplot(dataset,aes(x=X)) +
+        geom_histogram(binwidth=3,fill="white",color="black") +
+        geom_histogram(data=subset(dataset,X>40.5),binwidth=3, 
+                 color="black", fill="skyblue")+ labs(y=NULL) + theme_bw() + 
+        scale_y_continuous(breaks=NULL) + theme(panel.border=(element_blank()))
+
+density1<-ggplot(dataset,aes(x=X)) + geom_density(fill="white",color="black")+theme_bw() + 
+        labs(y=NULL) + scale_y_continuous(breaks=NULL) + theme(panel.border=(element_blank()))
+
+d <- ggplot_build(density1)$data[[1]]
+density1 <- density1 + geom_area(data = subset(d, x > 40.5), aes(x=x, y=y), fill="skyblue")
+                                                                   
+ggarrange(hist1, density1, ncol = 2, nrow = 1)
+ 
+
+ #dt1 <- rnorm(n=1000, mean=36, sd=8)
+ #hist(dt1, freq = FALSE, main="Probability of Demand > 40", xlab="X")
+ #xv <- seq(2, 68, by=0.1)
+ #yv <- dnorm(xv, mean=36, sd=8)
+ #lines(xv, yv)
+ #polygon(c(xv[xv>40], 40), c(dnorm(c(xv[xv>40], 1e-4), mean=36,sd=8)),col="skyblue")
 @
 \end{figure}
 
-The normal curve (or bell curve) is useful in helping us calculate probabilities like these.  If we smooth out the top of the histogram in Figure 6.1, it will look like a normal curve.  More precisely, it will look like a normal curve with a mean of 36 and an SD of 8, denoted as $N(36, 8)$.  So the shaded area on the left will be approximated by the shaded area under the $N(36, 8)$ curve on the right.  Do the two shaded regions look the same?
+The normal curve (or bell curve) is useful in helping us calculate probabilities like these.  If we smooth out the histogram in Figure 6.1, it will look like a normal curve.  More precisely, it will look like a normal curve with a mean of 36 and an SD of 8, denoted as $N(36, 8)$.  So the shaded area on the left will be approximated by the shaded area under the $N(36, 8)$ curve on the right.  Do the two shaded regions look the same?
 
 Of course, the areas look similar because, in our example, the histogram on the left looks like a normal curve.  It does not have to.  If it does not, then the approximation of areas using the normal curve will be wrong.  We should use the normal curve approximation with caution.
 
 \subsubsection{The Standard Normal or Z Curve}
 
-The standard normal curve (or Z-curve) looks like Figure 6.1, and has the following properties:
+The standard normal curve (or Z-curve) looks like Figure 6.2, and has the following properties:
 
 \begin{center}
 \fbox{\parbox{10cm}{
@@ -62,14 +80,25 @@ The standard normal curve (or Z-curve) looks like Figure 6.1, and has the follow
 \begin{figure}[ht]
 \caption{Normal Z-curve}
 
-<<label=LBL4b, results="asis", echo=FALSE, out.width="8cm" >>=
+<<label=LBL4b, results="asis", echo=FALSE, out.width="10cm", out.height="10cm" >>=
   xv <- seq(-4, 4, by=.01)
   yv <- dnorm(xv, mean=0, sd=1)
-  plot(xv, yv, main="The Z-Curve", xlab="Z-Score", type="l", ylab="Density")
+  x_coor  <- seq(from=-4, to=4, by=1)
+  z_labs  <- x_coor
+  yrng  <- diff(range(yv))
+  df1<-data.frame(xv,yv)
+
+  p1<-ggplot(df1,aes(x=xv, y=yv))+geom_line() + 
+        labs(y=NULL, x="Z-score") + theme_bw() + #scale_x_continuous(breaks=NULL) +
+        scale_y_continuous(breaks=NULL) + theme(panel.border=(element_blank())) 
+        #annotate(geom = "text", x=0, y=-0.20*yrng, label="Z-score", size=4) +
+        #annotate(geom = "text", x=x_coor, y=-0.29*yrng, label=z_labs, size=4) +
+        #annotate(geom = "text", x=x_coor, y=-0.25*yrng, label="|", size=3) 
+  p1
 @
 \end{figure}
 
-In general, any area under the curve can be found using the Z-table on \ref{TBL61} on page \pageref{TBL61} at the end of this chapter.  
+In general, area under the curve for \textit{positive Z values} can be found using the Z-table on \ref{TBL61} on page 74 at the end of this chapter.  
 % Table 6.1 on page 73.
 
 \begin{minipage}[ht]{3cm}
@@ -93,7 +122,7 @@ In general, any area under the curve can be found using the Z-table on \ref{TBL6
 
 Are we ready to find the area under the normal curve in Figure 6.1?  Not yet.  The horizontal axis in Figure 6.1 is wrong for the Z-table, it does not have a mean of 0 (horizontal axis) and an SD of 1. Instead, it has a mean of 36 and an SD of 8.  The trick is to replace the $N(36, 8)$ horizontal axis with a $N(0, 1)$ axis, labeled Z.  See Figure 6.3.  Note that $Z = 1$ whenever X is one SD above the mean.  Similarly, $Z = -1$ whenever $X$ is one SD below the mean.  In general, Z is related to $X$ as follows:
 
-  \begin{equation} Z = \frac{X - mean}{SD} \end{equation}
+  \begin{equation} Z = \text{number of SD away from the mean} = \frac{X - mean}{SD} \end{equation}
 
 \begin{figure}[ht]
 
@@ -101,23 +130,60 @@ Are we ready to find the area under the normal curve in Figure 6.1?  Not yet.  T
 
 \begin{minipage}[ht]{7cm}
 
-<<label=LBL4c1, results="asis", echo=FALSE, out.width="4cm">>=
+<<label=LBL4c1, results="asis", echo=FALSE, out.width="7cm", out.height="7cm">>=
   xr <- seq(-3, 3, by=0.01)
   yr <- dnorm(xr, mean=0, sd=1)
-  plot(xr, yr, type="l", xlab="Z", ylab="Density")
-  polygon(c(xr[xr > -1 & xr < 1], 1, -1), c(dnorm(xr[xr > -1 & xr < 1], mean=0, sd=1), 1e-4, 1e-4), col="skyblue")
-  text(2, .352, "0.6827")
-  arrows(2, .33, 0.9, .242)
+  x_coor  <- seq(from=-3, to=3, by=1)
+  x_labs  <- seq(12,60,8)
+  z_labs  <- x_coor
+  yrng  <- diff(range(yr))
+  df1<-data.frame(xr,yr)
+
+  p1<-ggplot(df1,aes(x=xr, y=yr))+geom_line() + 
+        geom_area(data = subset(df1, xr > -1 & xr < 1), aes(x=xr, y=yr), fill="skyblue") +
+        labs(y=NULL, x=NULL) + theme_bw() + scale_x_continuous(breaks=NULL) +
+        scale_y_continuous(breaks=NULL) + #theme(panel.border=(element_blank())) +
+        annotate(geom = "text", x=0, y=-0.04*yrng, label="X", size=4) +
+        annotate(geom = "text", x = x_coor, y = -0.12*yrng, label = x_labs, size=4) +
+        annotate(geom = "text", x=0, y=-0.20*yrng, label="Z-score", size=4) +
+        annotate(geom = "text", x=x_coor, y=-0.30*yrng, label=z_labs, size=4) +
+        annotate(geom = "text", x=x_coor, y=-0.07*yrng, label="|", size=3) +
+        annotate(geom = "text", x=x_coor, y=-0.25*yrng, label="|", size=3) +
+        annotate("text",x=2,y=0.352, label="0.6827", color="black", size=5) + 
+        annotate("segment",x=2,xend=0.9, y=0.33,yend=0.242,color="black", size=1, arrow=arrow()) 
+  p1
+
+  
+#  plot(xr, yr, type="l", xlab="Z", ylab="Density")
+#  polygon(c(xr[xr > -1 & xr < 1], 1, -1), c(dnorm(xr[xr > -1 & xr < 1], mean=0, sd=1), 1e-4, 1e-4), col="skyblue")
+#  text(2, .352, "0.6827")
+#  arrows(2, .33, 0.9, .242)
 @
 \end{minipage}
 \begin{minipage}[ht]{7cm}
-<<label=LBL4c2, results="asis", echo=FALSE, out.width="4cm">>=
+<<label=LBL4c2, results="asis", echo=FALSE, out.width="7cm", out.height="7cm">>=
   xs <- seq(-3, 3, by=0.01)
   ys <- dnorm(xs, mean=0, sd=1)
-  plot(xs, ys, type="l", xlab="Z", ylab="Density")
-  polygon(c(xs[xs > -2 & xs < 2], 2, -2), c(dnorm(xs[xs > -2 & xs < 2], mean=0, sd=1), 1e-4, 1e-4), col="skyblue")
-  text(2, .352, "0.9545")
-  arrows(2, .33, 1.5, .13)
+  df1<-data.frame(xr,yr)
+
+  p1<-ggplot(df1,aes(x=xr, y=yr))+geom_line() + 
+        geom_area(data = subset(df1, xr > -2 & xr < 2), aes(x=xr, y=yr), fill="skyblue") +
+        labs(y=NULL, x=NULL) + theme_bw() + scale_x_continuous(breaks=NULL) +
+        scale_y_continuous(breaks=NULL) + #theme(panel.border=(element_blank())) +
+        annotate(geom = "text", x=0, y=-0.04*yrng, label="X", size=4) +
+        annotate(geom = "text", x = x_coor, y = -0.12*yrng, label = x_labs, size=4) +
+        annotate(geom = "text", x=0, y=-0.20*yrng, label="Z-score", size=4) +
+        annotate(geom = "text", x=x_coor, y=-0.30*yrng, label=z_labs, size=4) +
+        annotate(geom = "text", x=x_coor, y=-0.07*yrng, label="|", size=3) +
+        annotate(geom = "text", x=x_coor, y=-0.25*yrng, label="|", size=3) +
+        annotate("text",x=2,y=0.352, label="0.9545", color="black", size=5) + 
+        annotate("segment",x=2,xend=1.3, y=0.33,yend=0.13,color="black", size=1, arrow=arrow()) 
+  p1
+  
+#  plot(xs, ys, type="l", xlab="Z", ylab="Density")
+#  polygon(c(xs[xs > -2 & xs < 2], 2, -2), c(dnorm(xs[xs > -2 & xs < 2], mean=0, sd=1), 1e-4, 1e-4), col="skyblue")
+#  text(2, .352, "0.9545")
+#  arrows(2, .33, 1.5, .13)
 @
 \end{minipage}
 \end{figure}
@@ -128,35 +194,57 @@ What is the probability of demand exceeding 40?  This is the area under the curv
 
 \caption{$P[ X \ge 40 ]$ }
 
-\begin{minipage}[ht]{7cm}
+%\begin{minipage}[ht]{7cm}
 
-<<label=LBL4d1, results="asis", echo=FALSE, out.width="4cm">>=
-  xt <- seq(2, 68, by=1)
-  yt <- dnorm(xt, mean=36, sd=8)
-  plot(xt, yt, xlab="X", type="l")
-  polygon(c(xt[xt > 40], 40), c(dnorm(c(xt[xt > 40]), mean=36,sd=8), 1e-4), col="skyblue")
+%<<label=LBL4d1, results="asis", echo=FALSE, out.width="7cm", out.height="7cm">>=
+<<label=LBL4d, results="asis", echo=FALSE, out.width="7cm", out.height="7cm" >>=
+  xr <- seq(-3, 3, by=0.01)
+  yr <- dnorm(xr, mean=0, sd=1)
+  x_coor  <- seq(from=-3, to=3, by=1)
+  x_coor <-c(x_coor,0.5)
+  x_labs  <- seq(12,60,8)
+  x_labs <-c(x_labs,40)
+  z_labs  <- x_coor
+  yrng  <- diff(range(yr))
+  df1<-data.frame(xr,yr)
+  p<-ggplot(df1,aes(x=xr, y=yr))+geom_line() + 
+     geom_area(data = subset(df1, xr > 0.5), aes(x=xr, y=yr), fill="skyblue") +
+     labs(x=NULL, y=NULL) + scale_y_continuous(breaks=NULL) + scale_x_continuous(breaks=NULL) +
+     annotate(geom = "text", x=0, y=-0.04*yrng, label="X", size=4) +
+     annotate(geom = "text", x = x_coor, y = -0.12*yrng, label = x_labs, size=4) +
+     annotate(geom = "text", x=0, y=-0.18*yrng, label="Z-score", size=4) +
+     annotate(geom = "text", x=x_coor, y=-0.28*yrng, label=z_labs, size=4) + theme_bw() +
+     annotate(geom = "text", x=x_coor, y=-0.07*yrng, label="|", size=3) +
+     annotate(geom = "text", x=x_coor, y=-0.23*yrng, label="|", size=3) +
+     theme(panel.border=(element_blank()))
+  p
+  
+ # xt <- seq(2, 68, by=1)
+#  yt <- dnorm(xt, mean=36, sd=8)
+#  plot(xt, yt, xlab="X", type="l")
+#  polygon(c(xt[xt > 40], 40), c(dnorm(c(xt[xt > 40]), mean=36,sd=8), 1e-4), col="skyblue")
 @
-\end{minipage}
-\begin{minipage}[ht]{7cm}
-<<label=LBL4d2, results="asis", echo=FALSE, out.width="4cm">>=
-  xu <- seq(-4, 4, by=0.01)
-  yu <- dnorm(xu, mean=0, sd=1)
-  plot(xu, yu, type="l", xlab="Z")
-  polygon(c(xu[xu > 0.5], 0.5), c(dnorm(c(xu[xu > 0.5]), mean=0, sd=1), 1e-4), col="skyblue")
-@
+%\end{minipage}
+%\begin{minipage}[ht]{7cm}
+%<<label=LBL4d2, results="asis", echo=FALSE, out.width="7cm", out.height="7cm">>=
+%  xu <- seq(-4, 4, by=0.01)
+%  yu <- dnorm(xu, mean=0, sd=1)
+%  plot(xu, yu, type="l", xlab="Z")
+%  polygon(c(xu[xu > 0.5], 0.5), c(dnorm(c(xu[xu > 0.5]), mean=0, sd=1), 1e-4), col="skyblue")
+%@
 
-\end{minipage}
+%\end{minipage}
 \end{figure}
 
 \section{Calculating percentiles}     %%%%%%%%%%%%%%%%%%%%%%%%
 
-We restate Problem 6.2.2 \ref{LBL622} on page \pageref{LBL622} given at the start of the chapter.
+We restate Problem 6.2.2 on page \pageref{LBL622} given at the start of the chapter.
 
 \textbf{Problem 6.2.2}  Given the cost of running out of stock and the value of having too many, the manager decides to order enough smartwatches to cover customer demands 90\% of the time, i.e., there should be 10\% or less chance that they run out of stock.  How many should they order?
 
 We want to estimate the number of smartwatches so that there is only a 10\% chance of running out.  Note that this is the 90th percentile of demand.
 
-Looking at Figure 6.5, we see that we need to shade the upper 10\% of the area under the histogram.  What X value corresponds to the boundary?  When we use the normal table, the Z-value 90th percentile is 1.28.  What X value corresponds to Z = 1.28?  We solve equation 6.1 backward.
+Looking at Figure 6.5, we see that we need to shade the upper 10\% of the area under the curve  .  What X value corresponds to the boundary?  When we use the normal table, the Z-value 90th percentile is 1.28.  What X value corresponds to Z = 1.28?  We solve equation 6.1 backward.
 
 \begin{eqnarray*}
 1.28 & = & \frac{X - 36}{8}  \\
@@ -165,19 +253,41 @@ Looking at Figure 6.5, we see that we need to shade the upper 10\% of the area u
 X & = & 46.24 
 \end{eqnarray*}
 
-The manager should have at least 46 smartwatches in the store.
+The manager should have at least 47 smartwatches in the store.
 
 \begin{figure}[ht]
 \caption{The 90th Percentile: $P[X \ge a] = 0.10$ }
 <<label=LBL4e, results="asis", echo=FALSE, out.width="8cm" >>=
-  dt2 <- rnorm(n=1000, mean=36, sd=8)
-  hist(dt2, freq = FALSE, main="Probability of Demand > 46", xlab="X" )
-  xu <- seq(2, 68, by=0.1)
-  yu <- dnorm(x=xu, mean=36, sd=8)
-  lines(xu, yu)
-  polygon(c(xu[xu > 46], 46), c(dnorm(c(xu[xu > 46], 1e-4), mean=36,sd=8)),col="skyblue")
-  text(54, .04, "10%")
-  arrows(54, .037, 48, .014)
+  xr <- seq(-3, 3, by=0.01)
+  yr <- dnorm(xr, mean=0, sd=1)
+  x_coor  <- c(-3, -2, -1, 0, 1.28, 2, 3)
+  x_labs  <- c('12','20','28','36','a','52','60')
+  z_labs  <- x_coor
+  yrng  <- diff(range(yr))
+  df1<-data.frame(xr,yr)
+  p<-ggplot(df1,aes(x=xr, y=yr))+geom_line() + 
+     geom_area(data = subset(df1, xr > 1.28), aes(x=xr, y=yr), fill="skyblue") +
+     labs(x=NULL, y=NULL) + scale_y_continuous(breaks=NULL) + scale_x_continuous(breaks=NULL) +
+     annotate(geom = "text", x=0, y=-0.04*yrng, label="X", size=4) +
+     annotate(geom = "text", x = x_coor, y = -0.12*yrng, label = x_labs, size=4) +
+     annotate(geom = "text", x=0, y=-0.18*yrng, label="Z-score", size=4) +
+     annotate(geom = "text", x=x_coor, y=-0.28*yrng, label=z_labs, size=4) + theme_bw() +
+     annotate(geom = "text", x=x_coor, y=-0.07*yrng, label="|", size=3) +
+     annotate(geom = "text", x=x_coor, y=-0.23*yrng, label="|", size=3) +
+     annotate("text",x=2.5,y=0.15, label="10%", color="black", size=5) + 
+     annotate("segment",x=2.4,xend=2, y=0.12,yend=0.03,color="black", size=1, arrow=arrow()) +
+     theme(panel.border=(element_blank()))
+  p
+  
+  
+  #dt2 <- rnorm(n=1000, mean=36, sd=8)
+  #hist(dt2, freq = FALSE, main="Probability of Demand > 46", xlab="X" )
+  #xu <- seq(2, 68, by=0.1)
+  #yu <- dnorm(x=xu, mean=36, sd=8)
+  #lines(xu, yu)
+  #polygon(c(xu[xu > 46], 46), c(dnorm(c(xu[xu > 46], 1e-4), mean=36,sd=8)),col="skyblue")
+  #text(54, .04, "10%")
+  #arrows(54, .037, 48, .014)
 @
 \end{figure}
 
@@ -299,7 +409,7 @@ On the average, a watch battery is known to last for two years (24- \\ months), 
  \begin{enumerate}
 	\item What percentage of watch batteries last \\ more than six months?
 	\item What is the lifespan of a watch battery which lasts longer than 60\% of all batteries?
-	\item What proportion of watch batteries that \\ last shorter than two years or longer \\ than 3 1/2 years (42 months)?
+	\item What proportion of watch batteries last \\ shorter than two years or longer than \\ 3 1/2 years (42 months)?
  \end{enumerate}
 
 	\end{exercise}
@@ -422,7 +532,7 @@ The average adult female \\ height is 63.8 inches with a standard deviation of 2
 
 \begin{exercise} % 7
 
-Values in the table give the area under the curve to the left of the z-values on the margins.  The upper margin gives the hundredth digit of z.  For example:
+Values in the z-table give the area under the curve to the left of the z-values on the margins.  The upper margin gives the hundredth digit of z.  For example:
 
 \begin{enumerate}
 \item The area to the left of 0.0 is?
@@ -599,31 +709,31 @@ represents the $25^{th}$ percentile for weights of men (in \\ pounds)?
 % 	   
 % 	\end{solution}  
 % 	
+%		\begin{exercise}  % 7
+
+
+%	  The mean and standard \\ deviation are 8.30 and 3.224, respectively. \\ What countries are in the bottom 15 percent?  Hint: find the value of the $15^{th}$ percentile and compare it to the percentage of GDP.
+
+%	  \end{exercise}
+%	  \vspace{2cm}
+%	  \begin{solution}
+
+%	  <<results="asis", echo=FALSE>>=
+
+%  tmp52 <- qnorm(.15, mean=8.3, sd=3.224)
+
+%@
+
+%	  The value of the $15^{th}$ percentile is \Sexpr{tmp52}.
+
+%	  There are six countries: Congo (4.1), Indonesia (3.1), Saudi Arabia (3.2), Venezuela (3.6), India (4.0), Malaysia (4.0), and Thailand (4.6).
+
+%	\end{solution}
+
 		\begin{exercise}  % 7
 
 
-	  The mean and standard \\ deviation are 8.30 and 3.224, respectively. \\ What countries are in the bottom 15 percent?  Hint: find the value of the $15^{th}$ percentile and compare it to the percentage of GDP.
-
-	  \end{exercise}
-	  \vspace{2cm}
-	  \begin{solution}
-
-	  <<results="asis", echo=FALSE>>=
-
-  tmp52 <- qnorm(.15, mean=8.3, sd=3.224)
-
-@
-
-	  The value of the $15^{th}$ percentile is \Sexpr{tmp52}.
-
-	  There are six countries: Congo (4.1), Indonesia (3.1), Saudi Arabia (3.2), Venezuela (3.6), India (4.0), Malaysia (4.0), and Thailand (4.6).
-
-	\end{solution}
-
-		\begin{exercise}  % 8
-
-
-	  The mean and standard \\ deviation are 8.30 and 3.224, respectively.  \\ What percentage of countries 2013 Expenditures on Health as a share of GDP had values below 7.3?   Hint: find the probability of the mean being less than 7.3 and compare it to the Percentage of GDP.
+	  The mean and standard \\ deviation of 2013 Expenditures on Health as a share of GDP are 8.30 and 3.224, respectively.  \\ What percentage of countries had values below 7.3?   Hint: find the probability of the mean being less than 7.3. 
 
 	  \end{exercise}
 	  \vspace{2cm}
@@ -642,7 +752,7 @@ represents the $25^{th}$ percentile for weights of men (in \\ pounds)?
 			\begin{exercise}  % 9
 
 
-	  The mean and standard \\ deviation are 8.30 and 3.224, respectively.  \\ What percentage of countries 2013 Expenditures on Health as a share of GDP had values above 9.3?   Hint: find the probability of the mean being greater than 9.3.
+	  The mean and standard \\ deviation of 2013 Expenditures on Health as a share of GDP are 8.30 and 3.224, respectively.  \\ What percentage of countries had values \\ above 9.3?   Hint: find the probability of the mean being greater than 9.3.
 
 	  \end{exercise}
 	  \vspace{2cm}
@@ -661,7 +771,7 @@ represents the $25^{th}$ percentile for weights of men (in \\ pounds)?
   			\begin{exercise}  % 10
 
 
-	  The mean and standard \\ deviation are 8.30 and 3.224, respectively.  \\ What percentage of countries 2013 Expenditures on Health as a share of GDP had values between 7.3 and 9.3?   Hint: find the probability of the mean being between 7.3 and  9.3.
+	  The mean and standard \\ deviation of 2013 Expenditures on Health as a share of GDP are 8.30 and 3.224, respectively.  \\ What percentage of countries had values between 7.3 and 9.3?   Hint: find the probability of the mean being between 7.3 and  9.3.
 
 	  \end{exercise}
 	  \vspace{1.5cm}
