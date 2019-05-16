@@ -1,150 +1,314 @@
 %!Rnw root = ../../Master.Rnw
 
-\chapter{Categorical Variables: Association or Independence}
-\label{chap:ch12}
+\chapter{Comparing Two Means}
+\label{chap:ch11}
 
-\section{Objective}
+\section{Objectives}
 
 After completing this part, students should be able to:
 
 \fbox{\parbox{14cm}{
 \begin{itemize}
-\item Compute expected frequencies.
-\item Understand the difference between association and independence.
-\item Test for a statistical association.
+\item Compare two population averages when the samples are independent using confidence intervals.
+\item Compare two population averages when the data are dependent (paired) using confidence intervals.
 \end{itemize}
-
 }}
 
-\section{Association versus independence in an r x c table}  \index{association}
+\section{Estimating the Difference between Independent Means}  \index{comparing two means}
 
-Is there an association between gender and height?  Yes, males tend to be taller than females.  A more formal way of saying this is `height distribution for males tends to be different from females.'   Is there an association between shoe size and height?  Yes,  `height distribution for men who wear size 12 is different from those who wear size 8.'    Is there an association between GPA and height?  No, `height distribution tends to be the same for 3.0 students as well as 3.5 students.'
+Suppose we sample two means $\bar{x}_1$ and $\bar{x}_2$  from two populations with unknown means $\mu_1$ and $\mu_2$. Think of it as a picture:
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=4cm]{chapters/Chapter_11/ext_figure/x1.png} % requires the graphicx package
+\includegraphics[width=4.3cm]{chapters/Chapter_11/ext_figure/x2.png} % requires the graphicx package
+\end{figure}
+
+As you can see, the sample circles including $\bar{x}_1$ and $\bar{x}_2$ are smaller than the entire population circles including $\mu_1$ and $\mu_2$. In other words, we do not have all the information we need to be sure about the exact values of  $\mu_1$ and $\mu_2$. However, as we have learned, statistics allows for sample means to estimate population means as depicted by the arrows. What's new in this chapter is that here we learn statistics can do more than allow us to estimate values for $\mu_1$ and $\mu_2$ separately. We can also use statistics to investigate how the population means differ from one another in tandem. We do this by performing \textit{hypothesis tests} on and using confidence intervals centered around the difference between the sample means $\bar{x}_1$ and $\bar{x}_2$. Let's now turn to some formulaic examples of such tests and intervals.
+
+Is there ``grade inflation'' in WMU?  How does the average GPA of WMU students today compare with, say ten years ago?  Suppose a random sample of 100 student records from 10 years ago yields an average sample GPA of 2.90 with a standard deviation of 0.40.  A random sample of 100 current students today yields a sample average of 2.98 with a standard deviation of 0.45.  The difference between the two-sample means is 2.98- 2.90 = .08.  Is this proof that GPA's are higher today than ten years ago?  Well $\dots$ first, we need to account for the fact that 2.98 and 2.90 are not the correct averages but that we compute the average from random samples.  Therefore, 0.08 is not the exact difference, but merely an estimate of the actual difference. By how much will it miss?
+
+Note that we took differences $2.98 - $2.90 to compare average GPA.  The two averages 2.98 and 2.90 are independent, in the sense that we base them on separate and independent groups of students.  The SE of the difference is
+
+\begin{equation}
+SE_{(\bar{x}_1 - \bar{x}_2)} = \sqrt{SE_{\bar{x}_1}^2 + SE_{\bar{x}_2}^2 }
+\end{equation}
+
+whenever the two means are independent.  Equation (11.1) is similar to the equation from chapter 9, the $SE_{\hat{p}_1 - \hat{p}_2} = \sqrt{(SE_{\hat{p}_1^2} + SE_{\hat{p}_2^2 })}$, for proportions. 
+
+Now, applying the equation from chapter 10, $SE_{\bar{X}}$ which is calculated as $\frac{s}{\sqrt{n}}$ twice, we get
 
 \fbox{\parbox{14cm}{
-Two variables A and B are said to be \textbf{associated} if the distribution of B tends to change with the level of the A variable.  Otherwise, they are said to be \textbf{independent} variables. 
+The standard error of the difference between two independent means.
+
+\begin{equation}
+SE_{(\bar{x}_1 - \bar{x}_2)} = \sqrt{\frac{s_1^2}{n_1}  + \frac{s_2^2}{n_2} }
+\end{equation}
 }}
 
-Therefore, height is associated with gender and shoe size, but independent of GPA.  
-
-If we are thinking, ``association and independence are the same,''  we are almost correct.  The difference is about design. In the test of independence, we collect observational units at random from a population, and the two categorical variables are observed for each unit. In the test of association, we collect the data by randomly sampling from each sub-group \textbf{separately}. (Say, 100 Democrat, 100 Republican, 100 Independent, and so on.) The null hypothesis is that each sub-group shares the same distribution of another categorical variable. (Say, ``chain smoker'', ``occasional smoker'', ``non-smoker''.)  The difference between these two tests is subtle yet important.
-
-Now consider the following 3 by 4 table.  Researchers followed 189 students entering a business school program as part of attrition (i.e., drop out, transfer) study.  The students were cross-classified according to 4 categories of high school GPA $(2.0-2.5, 2.5-3.0, 3.0-3.5, 3.5-4.0)$ and three categories of attrition outcomes (`did not return for the 2nd year,' `returned for second but not for a 3rd year,' `returned for 3rd year').  Is there an association between HS GPA and college attrition?
-
-\begin{table}[ht]
-\centering
-\caption{Retention versus HS GPA}
-\begin{tabular}{@{} lcccc @{}} \hline
-& \multicolumn{4}{c}{GPA} \\
-Returned & $2.0-2.5$ & $2.5-3.0$ & $3.0-3.5$ & $3.5-4.0$ \\ \hline
-No --2nd yr & 25 & 3 & 4 & 6 \\
-No -- 3rd yr & 14 & 7 & 4 & 6 \\
-Yes -- 3rd yr & 41 & 7 & 28 & 44 \\ \hline
-\end{tabular}
-\end{table}
-
-To analyze whether attrition and GPA are independent, we will analyze whether attrition distribution remains the same regardless of GPA level.  Let us start by looking at the 1st column (worst HS grades) and 4th column (best HS grades).  Do the distributions look the same?   The answer seems to be `no' - a bigger proportion of the 1st column never returned for their second year.  In other words, the value `25' in the very first cell is too large, implying that 'poor grades seems to be associated with first-year attrition.'  If grades and attrition were independent, Table 12.1 should have looked more like Table 12.2.
-
-\begin{table}[ht]
-\centering
-\caption{Expected counts (if independent)}
-\begin{tabular}{@{} lcccc @{}} \hline
-& \multicolumn{4}{c}{GPA} \\
-Returned & $2.0-2.5$ & $2.5-3.0$ & $3.0-3.5$ & $3.5-4.0$ \\ \hline
-No --2nd yr & 16 & 3 & 7 & 11 \\
-No -- 3rd yr & 13 & 3 & 6 & 9 \\
-Yes -- 3rd yr & 51 & 11 & 23 & 36 \\ \hline
-\end{tabular}
-\end{table}
-
-The table shows expected counts under independence.  Observe that the row and column totals of the two tables are the same
-
-\begin{table}[ht]
-\centering
-\caption{Expected counts (if independent)}
-\begin{tabular}{@{} lcccccc @{}} \hline
-& \multicolumn{4}{c}{GPA} \\
-Returned & $2.0-2.5$ & $2.5-3.0$ & $3.0-3.5$ & $3.5-4.0$ & Total & Percent \\ \hline
-No -- 2nd yr &  &  &  &  & 38 & (20.1\%) \\
-No -- 3rd yr &  &  &  &  & 31 & (16.4\%)\\
-Yes -- 3rd yr &  &  &  &  & 120 & (63.5\%) \\ \hline
-Total        & 80 & 17 & 36 & 56 & 189 & (100\%) \\
-\end{tabular}
-\end{table}
-
-Furthermore, note that 20.1\% of the data is in the first row, 16.4\% in the second row, and 65.5\% in the third row.  If we apply the same percentage breakdown to each column, we get
-
-\begin{table}[ht]
-\centering
-\begin{tabular}{@{} llll @{}} \hline
-$80 \times .201 = 16.08$ & $17 \times .201 = 3.42$ & $56 \times .201 = 7.24$ & $56 \times .201 = 11.26$  \\
-$80 \times .164 = 13.12$ & $17 \times .164 = 2.79$ & $56 \times .164 = 5.90$ & $56 \times .164 = 9.18$  \\
-$80 \times .635 = 50.80$ & $17 \times .635 = 10.80$ & $56 \times .635 = 22.86$ & $56 \times .635 = 35.56$  \\ \hline
-\end{tabular}
-\end{table}
-
-Rounding off gives us the expected frequencies in Table 12.2.
-
-\subsection{Testing for statistical association}
-
-Statisticians will conclude `independence' if Tables 12.1 and 12.2 are close and conclude `association' if they are far from each other.    We measure closeness and fairness by subtraction and squaring, as follows:
-
-<<label=LBL12a, results="asis", echo=FALSE>>=
-  DT1 <- c(25,14,41,3,7,7,4,4,28,6,6,44)
-  MX1 <- matrix(DT1, nrow=3, ncol=4, byrow=FALSE)
-  ## x2tst <- chisq.test(MX1, correct=FALSE)
-@
+Continuing with the example, let $\bar{X}_1  = 2.98$ and $\bar{X}_2  = 2.90$.  Then the sample standard deviations are $s_1 = 0.45$ and $s_2 = 0.40$.   The sample sizes are $n_1 = 100$ and $n_2 = 100$.
 
 \begin{equation*}
-\chi^2 = \frac{(25-16.08)^2}{16.08} + \frac{(3-3.42)^2}{3.42} + \cdots + \frac{(44-35.56)^2}{35.56} = 23.42  
+SE_{(\bar{x}_1 - \bar{x}_2)} = \sqrt{\frac{s_1^2}{n_1}  + \frac{s_2^2}{n_2} } = \sqrt{\frac{0.45^2}{100}  + \frac{0.40^2}{100} } = 0.06
 \end{equation*}
 
-Note that if Tables 12.1 and 12.2 are the same, then the $\chi^2$ statistic (pronounced `chi-square') in (12.1) will be zero (0).  If the two tables are far apart, the $\chi^2$ statistic will be large.  Statisticians use the following rule. 
+Therefore, we can state the conclusion of the study as follows: ``The average GPA of WMU students today is .08 higher than 10 years ago, give or take .06 or so.'' We also could have used equation (11.1) instead of (11.2) in calculating the standard error:
+
+\begin{eqnarray*}
+SE_{\bar{X}_1} &=& \frac{s_1}{\sqrt{n_1}} = \frac{0.45}{\sqrt{100}} = 0.045 \\
+SE_{\bar{X}_2} &=& \frac{s_2}{\sqrt{n_2}} = \frac{0.40}{\sqrt{100}} = 0.040 \\
+SE_{\bar{X}_1 - \bar{X}_2} &=& \sqrt{0.045^2 + 0.040^2} = 0.06 
+\end{eqnarray*}
+
+\subsection{Using a confidence interval}
+
+The following two sections discuss the formulas and concepts necessary for calculation and interpretation (respectively) of confidence intervals on the difference between two independent means. Let’s start with the concepts and then proceed to some formulas and examples.
+
+\subsubsection{Confidence Interval - Concepts:}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=9cm]{chapters/Chapter_11/ext_figure/2sample.png} % requires the graphicx package
+\end{figure}
+
+The interval between lower and upper bounds (LB, UB) includes some possible values of $\mu_1 - \mu_2$  (depicted by the many arrows). We need an interval around the central estimate $\bar{x}_1 - \bar{x}_2$ because of variation between samples and populations (which was depicted using concentric circles at the start of this chapter). This interval can be thought of as the ``wiggle room'' needed to estimate $\mu_1 - \mu_2$ using only $\bar{x}_1 - \bar{x}_2$.
+
+Here we show how to use this interval, and it is necessary to talk about some basic properties of a difference first.  For any two numbers A and B, there are three possibilities when evaluating their difference:
+
+\begin{enumerate}
+  \item If $A - B$ is a positive number, then A is greater than B. Consider the numbers 4 and 3. If we take $4 - 3 = 1$, the answer is greater than zero.
+
+  \item If $A - B$ is a negative number, then B is higher than A.  For instance if we take  $3 - 4 = -1$, the answer is negative.
+
+  \item If $A - B$ is 0, then A = B. Consider the numbers 4 and 4: $4 - 4 = 0$.
+\end{enumerate}
+
+The same kind of reasoning holds for all the possible values of $\mu_1 - \mu_2$ between LB and UB depicted above:
+
+\begin{enumerate}
+  \item If all the values from LB to UB are positive, then 
+  $\mu_1$ is significantly greater than $\mu_2$.
+
+  \item If all the values from LB to UB are negative, then $\mu_1$ is significantly less than $\mu_2$. 
+
+  \item If zero is between LB and UB (inclusive), then $\mu_1$ is not significantly different from $\mu_2$.
+\end{enumerate}
+
+Note that this is to say that the same reasoning and terminology outlined in the section on statistical significance in chapter 9 apply in the new case of a difference.  If the confidence interval for $\mu_1 - \mu_2$ does not contain 0, then 0 has been effectively excluded from the range of possible values.
+
+\fbox{\parbox{14cm}{
+When the confidence interval for $\mu_1 - \mu_2$ does not contain \textbf{zero}, we say that the difference is statistically \textbf{significant}.
+}}
+
+\subsubsection{Confidence Interval - Calculations and Examples:}
+
+The difference of two means is a random variable with expected value and spread.  The 68\% and 95\% rules apply, i.e. the estimated difference of $\bar{x}_1 - \bar{x}_2$ should be within 1 SE of the true value 68\% of the time, and within 1.96 SE's 95\% of the time.  Following the usual reasoning,    
+
+\begin{equation*}
+(\bar{X}_1 - \bar{X}_2) \pm 1.96 SE_{(\bar{X}_1 - \bar{X}_2)}
+\end{equation*}
+
+should contain the true difference $(\mu_1 - \mu_2)$ with 95\% confidence.  Substituting (11.2), we get the following formula.
+
+\fbox{\parbox{14cm}{
+95\% confidence interval for $(\mu_1 - \mu_2)$:
+
+\begin{equation}
+  (\bar{X}_1 - \bar{X}_2) \pm 1.96 \sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}}
+\end{equation}
+}}
+
+For grade inflation, we have
+
+\begin{equation*}
+  (2.98 - 2.90) \pm 1.96 \sqrt{\frac{0.45^2}{100} + \frac{0.40^2}{100}}
+\end{equation*}
+\begin{equation*}
+  0.08 \pm 1.96 (0.06)
+\end{equation*}
+\begin{equation*}
+  (-0.04, 0.20)
+\end{equation*}
+
+We say that the difference in GPA averages is between $-.04$ and $.20$ with 95\% confidence.  Note that 0 has not been excluded, making simple chance variability a viable explanation for the observed difference. 
+
+\subsection{Statistical Significance}
+
+Let us revisit the diet study mentioned earlier.  The following table contains the mean changes in body mass index (weight in kilograms divided by height in meters squared) for the Atkins, Zone and Ornish diets. Now, compare the Atkins and Zone diets at 12 months:
+
+\begin{table}[ht]
+\centering
+\caption{Mean Changes (SD) in Body Mass Index by Diet Group \& Time}
+\begin{tabular}{@{} cccc @{}} \hline
+Time (months) & Atkins $(n = 77)$ & Zone $(n = 79)$ & Ornish $(n = 76)$ \\ \hline
+2 & -1.60(0.98) & -0.76(0.99) & -0.95(0.90) \\
+6 & -2.16(2.14) & -0.73(0.90) & -0.85(1.60) \\
+12 & -1.65(2.54) & -0.53(2.00) & -0.77(2.14) \\ \hline
+\end{tabular}
+\end{table}
+
+On the average, Atkins lost how much more body mass index points than Zone?  The estimate of $(\mu_1 - \mu_2)$ is
+
+\begin{equation*}
+  (\bar{X}_1 - \bar{X}_2) = (-0.53) - (-1.65) = 1.12
+\end{equation*}
+
+The standard error is 
+
+\begin{equation*}
+  SE_{(\bar{X}_1 - \bar{X}_2)} = \sqrt{ \frac{(2.00)^2}{79} + \frac{(2.54)^2}{77}} = 0.367
+\end{equation*}
+
+The 95\% confidence interval for $(\mu_1 - \mu_2)$ is
+
+\begin{equation*}
+  1.12 \pm 1.96 (0.367)
+\end{equation*}
+\begin{equation*}
+(0.84, 1.84)
+\end{equation*}
+
+Thus, even allowing for 1.96 SE's of chance variability, Atkins lost at least .40 more body mass index points than Zone (and could be as large as 1.84).   When the confidence interval for $(\mu_1 - \mu_2)$  does not contain zero, we say that the difference is statistically significant.  
+
+\subsection{The P-value}
+
+Continuing the example of the previous section, we might ask ``Can't the difference in averages $\bar{x}_1 - \bar{x}_2 = 1.12$ be explained by chance variability, rather than diet effect?''
+
+The answer is ``Yes, 1.12 can occur by chance, but with very tiny probability.''  How small? Well, if the actual difference were 0, and the SE is 0.367, then the value 1.12 is
+
+\begin{equation*}
+\frac{1.12}{0.367} = 3.05
+\end{equation*}
+
+SE's from the expected value using the normal curve, random variables fall as far as 3.05 or more SE's from the expected value with approximately 0.0022 probability.  Since this number (also called the $P$-value) is quite small, it makes it hard to believe that the actual difference is zero.  Hence, we conclude that statistically, the two means are different.  Alternatively, we can say that the means are \textit{significantly} different.
+
+
+\section{Paired data (before-and-after)}
+
+In this section, we will discuss a common problem in data analysis: comparing before and after measurements.  Consider the possible weight loss data in Table 11.2.
+
+\begin{table}[ht]
+\centering
+\caption{Weight in pounds before and after after 12 months on diet}
+\begin{tabular}{@{} crr @{}} \hline
+Subject & Before & After \\ \hline
+1 & 180 & 155 \\
+2 & 192 & 187 \\
+3 & 205 & 194 \\
+4 & 166 & 176 \\
+5 & 220 & 205 \\
+6 & 177 & 172 \\
+7 & 189 & 173 \\ \hline
+Ave: & 189.9 & 180.3 \\
+SD:  & 18.1 & 16.4 \\ \hline
+\end{tabular}
+\end{table}
+
+Using the notation of the previous section estimating the difference between independent means, we have
 
 \begin{center}
-\fbox{\parbox{8cm}{
-If the $\chi^2 > b$, then conclude statistic association
-}}
+\begin{minipage}[ht]{3cm}
+
+$\bar{X}_1 = 189.9$ \\
+$s_1 = 18.1$ \\
+$n_1 = 7$ 
+\end{minipage}
+\begin{minipage}[ht]{3cm}
+
+$\bar{X}_2 = 180.3$ \\
+$s_2 = 16.4$ \\
+$n_2 = 7$ 
+\end{minipage}
 \end{center}
 
-Otherwise, conclude independence.  The number $b$ is called a critical value and depends on the dimensions of the table.  Let $r$ be the number of rows, and $c$ be the number of columns.  Let
+What is the estimate of mean weight change after 12 months?  $\bar{x}_1 - \bar{x}_2 = 9.6$ pounds, right?  What is the standard error of this estimate? Using equation (11.2) 
 
 \begin{equation*}
-df = (r - 1) \times (c - 1)
+SE_{(\bar{x}_1 - \bar{x}_2)} = \sqrt{\frac{s_1^2}{n_1}  + \frac{s_2^2}{n_2} } = \sqrt{\frac{(18.1)^2}{7}  + \frac{(16.4)^2}{7} } = 9.2 \texttt{ pounds}
 \end{equation*}
 
-be a parameter called the degrees of freedom.  Then $b$ is given by the following table.
+right?  \textbf{wrong!}
+
+We should not use equations (11.1) or (11.2) because the two means are \textbf{not} independent, i.e., they are not calculated on independent samples. The use of the plural `samples' is in itself wrong because we do not have two samples, we only have one! We need to watch out for this.  How many samples are there?  Before-and-after data generally consist of only one sample of subjects, each measured twice.
+
+So how do we calculate an estimate and standard error of average weight loss?  
+By calculating the amount of change from Before to After.  The computed value amounts to taking differences, as shown in Table 11.3.
 
 \begin{table}[ht]
 \centering
-\begin{tabular}{@{} lllllllllll @{}} \hline
-df & 1&2&3&4&5&6&7&8&9&10 \\
-b  & 3.84&5.99&7.81&9.49&11.07&12.59&14.07&15.51&16.92&18.31 \\ \hline
+\caption{Weight in pounds before and after after 12 months on diet}
+\begin{tabular}{@{} crrr @{}} \hline
+Subject & Before & After & Difference \\ \hline
+1 & 180 & 155 & 25 \\
+2 & 192 & 187 & 5 \\
+3 & 205 & 194 & 11 \\
+4 & 166 & 176 & -10 \\
+5 & 220 & 205 & 15 \\
+6 & 177 & 172 & 5 \\
+7 & 189 & 173 & 16 \\ \hline
+Ave: &  &  & 9.6 \\
+SD:  &  & & 11.1 \\ \hline
 \end{tabular}
 \end{table}
 
-In our example on grades and attrition, we have r=3 rows and c=4 columns, so that
+Compare Table 11.3 to Table 11.2.  We have reduced the summary statistics to a single sample, appropriately.  The relevant statistics are now:
+
+$$ \bar{X} = 9.6,  s = 11.1,  n= 7 $$
+
+What does the sample mean $\bar{X} = 9.6$ estimate?  It estimates the average change, right?  To be specific, it estimates the average weight loss from Month 0 to Month 12.  What is the standard error of the estimate?  Since it is just another average, the appropriate procedure is given by 
 
 \begin{equation*}
-df = (3 - 1) \times (4 - 1) = 6
+SE_{\bar{X}} = \frac{s}{\sqrt{n}} = \frac{11.1}{\sqrt{7}} = 4.2 \texttt{ pounds}
 \end{equation*}
 
-so, the line between statistical association and independence is drawn at b=12.59.  
-Since $\chi^2 = 23.42$ from (12.1), then $\chi^2 > 12.59$.   We conclude that there is significant association between high school GPA and college attrition rate.
+Completing the analysis, the 95\% confidence interval for average change is
+
+\begin{equation*}
+9.6 \pm 1.96 (4.2)
+\end{equation*}
+\begin{equation*}
+(1.4, 17.8)
+\end{equation*}
+
+Since the interval does not contain zero, the average weight change is statistically significant.
+
+\subsection{Paired Data}
+
+Paired data are data in which natural matchings occur.  For example, when researchers collect two measurements (one before treatment and one after treatment) from a subject, then we have paired data, and the analysis should follow as described above.  
+
+For example, we might want to compare the head injury of drivers versus passengers in car crashes.   In a study, automobiles were crashed into a wall at a speed of 35 MPH with dummies in the driver and front passenger seat. The head injury criterion (HIC) was measured.  Following is a selection of cars and their HIC values.
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{@{} lll @{}} \hline
+Company & Driver & Passenger \\ \hline
+Acura Integra 87        &     		599   &      597 \\
+Audi 80 89              &    		600    &     515 \\
+Chevrolet Camaro 91     &    		585    &     583 \\
+Ford Escort 87          &     		551   &      418 \\
+Honda Accord LX 91      &     	562     &    539 \\
+Toyota Corolla Fx 88    &    		593     &    397 \\
+Volvo 740 GLE 88        &      		519   &      445 \\ \hline
+\end{tabular}
+\end{table}
+
+Since we uniquely match each pair of observations (e.g., 599 and 597) to each other (driver and passenger HIC in the same car and crash), this is paired data and deserves paired data analysis.
 
 \section{Key Words}
 
 \fbox{\parbox{14cm}{
 \begin{minipage}[ht]{6cm}
-\begin{itemize}
-\item chi-square test for indep
-\item contingency table
-\end{itemize}
 
+\begin{itemize}
+\item independent sample \\ experiment
+\item paired difference experiment
+\end{itemize}
 \end{minipage} \hfill
 \begin{minipage}[ht]{6cm}
+
 \begin{itemize}
-\item homogeneity
-\item multinomial experiment
+\item confidence intervals
+\item sampling distribution
 \end{itemize}
 \end{minipage}
 }}
@@ -152,49 +316,35 @@ Since $\chi^2 = 23.42$ from (12.1), then $\chi^2 > 12.59$.   We conclude that th
 \twocolumn
 
 \section{}
- 
+
 \begin{exercises}
 
 \begin{exercise} % 1
 
-In a study of drug usage by students at a large university, data was obtained regarding hard liquor experience of smokers and nonsmokers.
+Do credit cards with no annual fee charge higher interest rates (APR) than cards that have annual fees?  Among 29 cards surveyed, 17 had no annual fees while 12 charged an annual fee.  Among the cards with no annual fee, the average APR was 19\% (SD=8\%).  Among cards with an annual fee, the average APR was 17\% (SD=3\%).
 
-\begin{tabular}{@{} lll @{}} \hline
-Hard-Liquor Use & Nonsmokers & Smokers \\ \hline
-Once or more & 15 & 23 \\
-Never        & 56 & 18 \\ \hline
-\end{tabular}
-
-Is liquor use associated with smoking?  Conduct a chi-square test to assess significance of association.
-
+\begin{enumerate}
+  \item Estimate the difference in APR.
+  \item Calculate a standard error for your estimate in (1).
+  \item Calculate a 95\% confidence interval for the difference in APR between the two groups.
+  \item Are interest rates significantly higher for cards with no annual fees?
+  \item What is the P-value for comparing the two averages? Is the difference significant?
+\end{enumerate}
 \end{exercise}
 \begin{solution} % 1
 
+
 \end{solution}
 
-\begin{exercise} % 2
+\begin{exercise}  % 2
 
-2.	During the filming of an original comedy special, Netflix monitored whether audience members who received free tickets laughed during the show (LDS). The results follow:
-
-\begin{table}[ht]
-\centering
-\begin{tabular}{@{} llll @{}} \hline
-& \multicolumn{2}{c}{LDS} \\
-Free Tickets & Yes & No & Total \\ \hline
-Yes & 17 & 1  & 18 \\
-No  & 28 & 43 & 71  \\ \hline
-Total & 45 & 44 & 89 \\ \hline
-\end{tabular}
-% \caption{LDS -- Laughed During Show}
-\end{table}
+100 students graduating \\ with Bachelor degrees in engineering make an average of \$70,000 with a standard deviation of \$5,000 when entering the workforce. 68 students graduating with Bachelor degrees in statistics make an average of \$65,000 with a standard deviation of \$3,000 when entering the workforce. Assuming the two samples of students are independent, answer the following questions:
 
 \begin{enumerate}
-  \item Calculate the expected count for audience members who did not receive a free ticket and did not laugh during the \\ show.
-  \item Calculate the expected count for audience members who did not receive a free ticket and did laugh during the show.
-  \item Calculate the expected count for audience members who did receive a free \\ ticket and did laugh during the show.
-  \item Calculate the expected count for audience members who did receive a free \\ ticket and did not laugh during the \\ show.
-  \item Calculate the chi-square test statistic.
-  \item What do you conclude?
+  \item What is the difference between the sample averages (engineers – statisticians)?
+  \item What is the standard error of the estimate for the true difference in average entrance salaries between all engineering and statistics BA graduates?
+  \item What is a 95\% confidence interval for the difference in sample averages?
+  \item Do these statistics suggest that average entrance salaries for stats vs. engineering students are significantly different?
 \end{enumerate}
 
 \end{exercise}
@@ -202,63 +352,109 @@ Total & 45 & 44 & 89 \\ \hline
 
 \end{solution}
 
-\begin{exercise} % 3
+\begin{exercise}  % 3
 
-A study investigating the association between size of cars and country found the following frequency counts:
+A Junior at Southwest \\ Michigan college is debating whether to pursue an MBA after her Bachelor degree in management.  She interviews some people she \\ knows in the workforce and was able to obtain their salaries. The annual salaries (in dollars) are summarized in the following table:
 
-\begin{table}[ht]
-\centering 
-\begin{tabular}{@{} lrrrr @{}} \hline
-         & US & Japan & UK & France \\ \hline
-Economy & 21 & 24 & 33 & 55 \\
-Compact & 27 & 35 & 37 & 40 \\
-Full size & 36 & 11 & 12 & 4 \\
-Luxury  & 15 & 3 & 7 & 8 \\ \hline
+\begin{tabular}{@{} lccc @{}} \hline
+Degree & Aver & SD & Sample Size \\ \hline
+Bachelor & \$48,286 & \$416 & 12 \\
+Master   & \$59,496 & \$675 & 7 \\ \hline
 \end{tabular}
-\end{table}
-
-Is there evidence of a significant relationship between size of car and country, or are the two variables independent?
-\end{exercise}
-\begin{solution} % 3
-
-\end{solution}
-
-\begin{exercise} % 4
-
-Suppose Netflix held another special, collected data, and had a statistician calculate and interpret the chi square test statistic. However, this time, the statistician found insignificant differences between observed and expected counts for all those who did and did not laugh with and without free tickets. What is the appropriate conclusion in this case?
-\end{exercise}
-\begin{solution} % 4
-
-\end{solution}
-
-\begin{exercise} % 5
-
-Computer-controlled cameras are being used to ticket automobile \\ drivers for speeding and running red lights.  These devices are operated by private firms and have an incentive to pull in as many \\ drivers as they can.  Although approximately 70\% of the motorists stoically accept and pay these tickets, others resent this procedure and fight the ticket.  A frequency table with \\ marginal totals is given below. 
-
-\begin{table}[ht]
-\centering
-\begin{tabular}{@{} llll @{}} \hline
-& \multicolumn{2}{c}{Volation} \\
-Ticket & Run Red Light & Speeding & Total \\ \hline
-Pay  &  &   & 140 \\
-Fight   &  &  & 60  \\ \hline
-Total & 60 & 140 & 200 \\ \hline
-\end{tabular}
-% \caption{LDS -- Laughed During Show}
-\end{table}
 
 \begin{enumerate}
-  \item Compute the table of expected frequencies.
-  \item Suppose we know that 1/3 of those who were ticketed for running a red light \\ fought the ticket.  Is this enough information to conduct a test of association or independence between the two variables?
-  \item Using the information in (b), compute the chi-square statistic for testing independence or association between the two variables.
-  \item What is the correct degrees of freedom to use?
-  \item What is the conclusion of your test?
+  \item Estimate the difference in average salary between the two groups.
+  \item Calculate a standard error for our estimate in (1).
+  \item Calculate a 95\% confidence interval for the average difference in salary.
+  \item Are MBA salaries significantly higher?
+  \item What is the P-value for comparing the two averages? Is the difference significant?
+\end{enumerate}
+\end{exercise}  
+\begin{solution}  % 3
+
+\end{solution}
+
+\begin{exercise}  % 4
+
+A group of charity workers employed by a large foundation track the donations made to the foundation every month. They note that the average donations for August were somewhat higher than the average donations for September, and they want to know if this fact should worry them moving forward. Performing the correct statistical test could determine whether the average difference in donations between August and \\ September was significant. However, they \\ must first decide whether their August and  September donations are independent or not. If we were advising the charity workers, what would we tell them?
+\end{exercise}
+\begin{solution}  % 4
+
+
+\end{solution}
+
+\begin{exercise}  % 5
+
+A new gasoline additive is supposed to make gas burn more cleanly and increase gas mileage in the process.  Consumer Protection Anonymous conducted a mileage test to confirm this.  They took seven of their cars, filled it with regular gas, and drove it on I-94 until it was empty.  They repeated the process using the same cars, but using the gas additive.  The recorded gas mileage follows:
+
+\begin{tabular}{@{} llllllll @{}} \hline
+Additive & 1 & 2 & 3 & 4 & 5 & 6 & 7 \\ \hline
+Without & 22 & 15 & 18 & 28 & 12 & 25 & 18 \\
+With    & 26 & 19 & 17 & 34 & 17 & 25 & 22 \\ \hline
+\end{tabular}
+
+\begin{enumerate}
+  \item Calculate the mean difference in mileage between the two fuel types.         \item Calculate a standard error for our estimate in (1).
+  \item Calculate a 95\% confidence interval for the mean mileage difference.
+  \item Does the data support the claim of \\ higher gas mileage?
 \end{enumerate}
 
 \end{exercise}
-\begin{solution} % 5
+\begin{solution}  % 5
 
 \end{solution}
+
+\begin{exercise}  % 6
+
+The group of charity workers from the above question decides on a statistical test based on the sage wisdom we previously offered. They perform a test for significance of the average difference, and it yields a p-value of 0.50. As their stats advisor, how would we interpret this p-value concerning \\ whether the average difference in donations for August versus September was \\ significant?
+\end{exercise}
+\begin{solution}  % 6
+
+\end{solution}
+
+\begin{exercise}  % 7
+
+Suppose a shoe company wants to test material for the soles of shoes.  For each pair of shoes the new material is placed on one shoe and the old material is placed on the other shoe.  After a given period of time a random sample of 16 pairs of shoes is selected.  The wear is measured on a 10 point scale (higher is better) with the following results.  The average of the differences is $\bar{X}_n - \bar{X}_o = 0.4$ and it standard deviation is $s_{diff} = 1.6$.
+
+\begin{enumerate}
+  \item Determine the mean difference in the sole-wear between the two material \\ types.        
+  \item Calculate a standard error for our estimate in (1).
+  \item Calculate a 95\% confidence interval for the mean sole-wear difference.
+  \item Does the data support the claim that the new material gives superior wear?
+\end{enumerate}
+
+\end{exercise}
+\begin{solution}  % # 7
+
+<<label=LBL11a, results="asis", echo=FALSE>>=
+  n11 <- 16
+  xbar11 <- 0.4
+  sd11 <- 1.6
+  se11 <- 1.6 / sqrt(16)
+  cv11 <- qt(.975, (n11-1))
+  lbnd11 <- xbar11 - cv11 * se11
+  ubnd11 <- xbar11 + cv11 * se11
+@
+
+\begin{enumerate}
+  \item $\bar{X}_d = \Sexpr{xbar11} $     
+  \item $SE_d = \Sexpr{se11}$
+  \item $95\% CI  \rightarrow ( \Sexpr{lbnd11}, \Sexpr{ubnd11} )$
+  \item Does the data support the claim that the new material gives superior wear?  No, since zero is contained in the 95\% CI.
+\end{enumerate}
+
+\end{solution}
+
 \end{exercises}
 
+
 \onecolumn
+
+
+
+
+
+
+
+
+

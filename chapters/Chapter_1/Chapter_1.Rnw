@@ -11,8 +11,8 @@ After completing this chapter, students should be able to:
 \fbox{\parbox{14cm}{
 \begin{itemize}
 \item Distinguish the difference between knowledge and data.
-\item Understand the process of acquiring knowledge from the data.
-\item Be aware of all the fallacies of design.
+\item Understand the process of acquiring knowledge from data.
+\item Be aware of common fallacies when interpreting data.
 \item Comprehend the meaning of the Type-I and Type-II errors.
 \end{itemize}
 }}
@@ -21,9 +21,9 @@ After completing this chapter, students should be able to:
 
 \subsection{Why Data?}
 
-\subsubsection{Understanding by the end user}
+\subsubsection{Information vs. Data}
 
-First, data is not information.  Researchers extract information from the data.  The study of statistics will give us the tools (methods) to judge the validity of the data and to interpret the information.
+First, data is not information.  Researchers extract information from data.  The study of statistics will give us the tools (methods) to judge data validity and to interpret the information extracted from data.
 
 \subsubsection{Designing studies}
 
@@ -41,7 +41,7 @@ Critical thinking starts with asking these type of questions: How can I confirm 
 
 There is a difference between what we know, and what we think that we know.  Are vaccines safe?  Will the new tax rules bring more or less revenue?  Do mandatory seat belt laws save lives?   Will legalizing drugs lead to more addiction?  Do alternative therapies work as effectively as traditional treatments?  Does exercise help prevent illness and are people who generally exercise healthier? Do taller people make more money than shorter people?  \citep{naranjo2018}
 
-We can settle most of these issues by looking at data.  What do the data tell us?  Even then, some problems can only be partially answered by at best incomplete data.  In this course, we will lay the groundwork for writing a protocol and  will discuss some fundamentals of sound scientific studies and data analysis.  In the process, we hope to become better consumers of information and better judges of what is real or not true, and what remains to be proven.
+We can settle most of these issues by looking at data.  What do the data tell us?  Even then, some problems can only be partially answered by at best incomplete data.  In this course, we will lay the groundwork for writing a protocol and  will discuss some fundamentals of sound scientific studies and data analysis.  In the process, we hope to become better consumers of information and better judges of what is real or not, and what remains to be proven.
 
 \subsection{Building Knowledge Step-by-step}
 
@@ -89,6 +89,7 @@ How are we sharing our results?  We need to find the best approach to sharing th
 
 Is this information going to be made available to the schools for future educational improvement?  Are we going to try to publish in a scientific or educational journal?
 
+
 \subsubsection{The Science Wheel Summarizes the above Steps}
 
 The Wheel of Science  \citep{Wallace1971}
@@ -97,7 +98,7 @@ gives us a process to refine our thinking about the nature of social interaction
 \begin{figure}[htbp]
    \centering
 
-\includegraphics[width=0.5\linewidth]{chapters/Chapter_1/ext_figure/zWheel_Science.png} % requires the graphicx package
+\includegraphics[width=0.45\linewidth]{chapters/Chapter_1/ext_figure/zWheel_Science.png} % requires the graphicx package
 
    \caption{The Wheel of Science}
    \label{fig:WS}
@@ -197,17 +198,17 @@ Another type of error that may be made is a \textbf{Type II error}.  Here the re
 \begin{minipage}[ht]{6cm}
 
 \begin{itemize}
-\item Correlation
-\item Data
-\item Fallacies
+\item correlation
+\item data
+\item fallacies
 \end{itemize}
 \end{minipage} \hfill
 \begin{minipage}[ht]{6cm}
 
 \begin{itemize}
-\item Knowledge
-\item Type I error
-\item Type II error
+\item knowledge
+\item type I error
+\item type II error
 \end{itemize}
 \end{minipage}
 }}

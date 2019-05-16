@@ -10,8 +10,7 @@ After completing this part, students should be able to:
 \fbox{\parbox{14cm}{
 \begin{itemize}
 \item Describe and use the sampling distribution of the proportion.
-
-
+\item Make and interpret confidence interval of proportions.
 \end{itemize}
 }}
 
@@ -27,7 +26,7 @@ Now, let $X$ denote the number of successes out of a sample of $n$ observations.
   \hat{p} = \frac{X}{n} = \frac{\textit{Number of successes}}{\textit{Number observations in the sample}}
 \end{equation*}
 
-Since X is expected to be around $np$ give or take $\sqrt{npq}$, then $X/n$ is expected to be around $np/p$ give or take $\sqrt{npq}/n$, or $p$ give or take $\sqrt{pq}/\sqrt{n}$.  Make sure that you agree with the last statement before moving on.  It may help to think of this analogy: Suppose annual rainfall in Kalamazoo is expected to be around 24 inches give or take 6 inches.  How do we change the measurement from inches to feet?  We divide both numbers by 12! In feet, annual rainfall in Kalamazoo is expected to be around $24/12$ give or take $6/12$, or 2 feet give or take 0.5 feet.  Now read the first sentence of this paragraph one more time.
+Since X is expected to be around $np$ give or take $\sqrt{npq}$, then $X/n$ is expected to be around $np/n$ give or take $\sqrt{npq}/n$, or $p$ give or take $\sqrt{pq/n}$.  Make sure that you agree with the last statement before moving on.  It may help to think of this analogy: Suppose annual rainfall in Kalamazoo is expected to be around 24 inches give or take 6 inches.  How do we change the measurement from inches to feet?  We divide both numbers by 12! In feet, annual rainfall in Kalamazoo is expected to be around $24/12$ give or take $6/12$, or 2 feet give or take 0.5 feet.  Now read the first sentence of this paragraph one more time.
 
 Going back to the Best Buy example, the number of protection plans sold is expected to be around $60 \pm 7$.   Thus, the proportion of plans sold is supposed to be about $60/300 \pm 7/300$, or $0.20 \pm 0.02$.
 
@@ -88,16 +87,34 @@ Exercise 2 is an example of the law of large numbers.  A more straightforward il
 The sample percentage tends to get closer to the true percentage as the size increases.
 }}
 
-\subsection{The Sampling Distribution of p-hat is Approximately Normal}
+\subsection{The Sampling Distribution of $\hat{p}$ is Approximately Normal}
 
-Since $\hat{p} = \frac{X}{n}$, the sampling distribution of $\hat{p}$ looks the same as that of X except for different numbers on the horizontal axis.  For $n = 30$ and $p = 0.4$, the probability histogram of $X$ and $\hat{p}$ is shown in Figure 6.1.
+Since $\hat{p} = \frac{X}{n}$, the sampling distribution of $\hat{p}$ looks the same as that of X except for different numbers on the horizontal axis.  For $n = 30$ and $p = 0.4$, the probability histogram of $X$ and $\hat{p}$ is shown in Figure 8.1.
 
 \begin{figure}[ht]
 
-\caption{Probability of Histogram and p-hat}
-<<label=LBL8a, results="asis", echo=FALSE, out.width="8.2cm">>=
-  dt1 <- rbinom(n=1000, size=30, p=0.40)
-  hist(dt1, freq = FALSE, xlab="X", main="Histogram of n=30 & p=.4")
+\caption{Probability of Histogram and $\hat{p}$}
+<<label=LBL8a, results="asis", echo=FALSE, out.width="15cm", out.height="10cm">>=
+dataset<-rbinom(n=100000, size=30, prob=0.4)
+dataset <- data.frame(X=dataset)
+x_coor  <- seq(3,21,1)
+x_labs  <- x_coor
+p_labs<-format(round(x_coor/30, 2), nsmall = 2)
+yrng<-diff(range(dataset$X))
+
+hist1<-ggplot(dataset,aes(x=X)) +
+  geom_histogram(binwidth=1,fill="white",color="black") +
+  theme_bw() + 
+  scale_y_continuous(breaks=NULL, name=NULL) + scale_x_continuous(breaks=NULL, name=NULL) +
+  theme(panel.border=(element_blank())) + 
+  annotate(geom = "text", x=0, y=-50*yrng, label="X", size=3) +
+  annotate(geom = "text", x=x_coor, y=-20*yrng, label="|", size=2) +
+  annotate(geom = "text", x = x_coor, y = -50*yrng, label = x_labs, size=2) +
+  annotate(geom = "text", x=0, y=-110*yrng, label="p-hat", size=3) +
+  annotate(geom = "text", x=x_coor, y=-90*yrng, label="|", size=2) + 
+  annotate(geom = "text", x=x_coor, y=-110*yrng, label=p_labs, size=1.6)
+
+hist1
 @
 \end{figure}
 
@@ -152,7 +169,7 @@ However, since we don't know $p$, we cannot calculate this SE.  In a situation l
 }}
 
 \begin{equation*}
-SE_{\hat{p}} = \sqrt{\frac{pq}{n}}
+SE_{\hat{p}} = \sqrt{\frac{\hat{p}\hat{q}}{n}}
 \end{equation*}
 
 \begin{minipage}[ht]{3cm}
@@ -192,7 +209,7 @@ Variables tend to miss their expected value but should be within \textit{one} SD
 
 }}
 
-The term $1.96 \sqrt{\frac{\hat{p} \hat{q}}{n}}$ is the 95\% margin of error.
+The term $1.96 \sqrt{\frac{\hat{p} \hat{q}}{n}}$ is the 95\% margin of error, $ME$.
 
 \begin{minipage}[ht]{3cm}
 
@@ -215,35 +232,35 @@ Try the following problems.
 
 \section{Sample Size for Estimating the Population Proportion}
 
-If 9 out of 25 randomly selected WMU students live in Southwest Michigan, the 95\% confidence interval for the true proportion is $\hat{p} \pm 1.96 \sqrt{\frac{\hat{p} \hat{q}}{n}} = 0.36 \pm 0.19$.  This result says that the true proportion can be as low as 0.17 or as high as 0.55.  If we wanted to reduce the margin of error from 0.19 to some value $M$, then we set the formula for margin of error equal to $M$, i.e. $M = 1.96 \sqrt{\frac{\hat{p} \hat{q}}{n}}$.  Solving for $n$ gives the result we need.
+If 9 out of 25 randomly selected WMU students live in Southwest Michigan, the 95\% confidence interval for the true proportion is $\hat{p} \pm 1.96 \sqrt{\frac{\hat{p} \hat{q}}{n}} = 0.36 \pm 0.19$.  This result says that the true proportion can be as low as 0.17 or as high as 0.55.  If we wanted to reduce the margin of error from 0.19 to some value $ME$, then we set the formula for margin of error equal to $ME$, i.e. $ME = 1.96 \sqrt{\frac{\hat{p} \hat{q}}{n}}$.  Solving for $n$ gives the result we need.
 
 \fbox{\parbox{14cm}{
-To be 95\% confident that the sample proportion is within a distance of $M$ of the true proportion $p$, choose a sample size equal to
+To be 95\% confident that the sample proportion is within a distance of $ME$ of the true proportion $p$, choose a sample size equal to
 
 \begin{equation*}
- n = (1.96)^2 \frac{ \hat{p} \hat{q}}{M^2}
+ n = (1.96)^2 \frac{ \hat{p} \hat{q}}{ME^2}
 \end{equation*}
 
-where $\hat{p}$ is an estimate based on historical data or a pilot study.  The quantity $M$ is called the 95\% margin of error for $p$.
+where $\hat{p}$ is an estimate based on historical data or a pilot study.  The quantity $ME$ is called the 95\% margin of error for $p$.
 
 }}
 
-\subsubsection{Example:} Suppose we want to reduce the margin of error for estimating the population proportion from 0.19 to 0.10.  Using the estimate $\hat{p} = 0.36$  based on the initial sample, the sample size we need is: $n = (1.96)^2 \frac{(0.36)(0.64)}{0.10^2} = 89.$  To verify that this is the correct sample size, the 95\% confidence interval would be computed (if the sample proportion remained at 0.36) as $ 0.36 \pm (1.96)^2 \frac{(0.36)(0.64)}{(0.10)^2} = 89$.  To verify that this is the correct sample size, the 95\% confidence interval would be computed (if the sample proportion remained at 0.36) as $0.36 \pm (1.96) \sqrt{ \frac{0.36(0.64)}{89}} = 0.36 \pm 0.10$.
+\subsubsection{Example:} Suppose we want to reduce the margin of error for estimating the population proportion from 0.19 to 0.10.  Using the estimate $\hat{p} = 0.36$  based on the initial sample, the sample size we need is: $n = (1.96)^2 \frac{(0.36)(0.64)}{0.10^2} = 89.$  To verify that this is the correct sample size, the 95\% confidence interval would be computed (if the sample proportion remained at 0.36) as $0.36 \pm (1.96) \sqrt{ \frac{0.36(0.64)}{89}} = 0.36 \pm 0.10$.
 
 \section{Key Words}
 
 \fbox{\parbox{14cm}{
 \begin{minipage}[ht]{6cm}
 \begin{itemize}
-\item binomial distribution
-\item binomial experiment
-\item binomial random variable
+\item sample proportion
+\item sampling distribution
+\item standard error
 \end{itemize}
 \end{minipage} \hfill
 \begin{minipage}[ht]{6cm}
 \begin{itemize}
-\item binomial tables
-\item discrete random variables
+\item 95\% confidence interval
+\item margin of error
 \end{itemize}
 \end{minipage}
 }}
@@ -317,7 +334,7 @@ The standard error of this estimate is \Sexpr{SE83b}
 
 \begin{exercise} % 4
 
-When a flight experiences fewer no-shows than expected, some passengers are \\ `bumped' from their flights (are denied boarding).  These incidents can reflect poorly on customer satisfaction.  Suppose United Airlines (for example) would like to estimate the actual proportion of involuntarily bumped \\ passengers across all domestic flights in the industry.  In a pilot study of 500 domestic passengers, 33 were involuntarily bumped.
+When a flight experiences fewer no-shows than expected, some passengers are `bumped' from their flights (are denied boarding).  These incidents can reflect poorly on customer satisfaction.  Suppose \\ United Airlines (for example) would like to estimate the actual proportion of involuntarily bumped passengers across all domestic flights in the industry.  In a pilot study of 500 domestic passengers, 33 were involuntarily  \\ bumped.
 
 \begin{enumerate}
 \item	What is the estimate of the population proportion?
@@ -338,7 +355,7 @@ When a flight experiences fewer no-shows than expected, some passengers are \\ `
 % \begin{enumerate}
 % \item	The estimate of the population proportion is \\ $\hat{p} = \Sexpr{prob64a}$
 % \item	The standard error of this estimate is \\ $SE_{\hat{p}} = \Sexpr{SE64b}$
-% \item	The 95\% margin of error is $M_{\hat{p}} = \Sexpr{me64c}$
+% \item	The 95\% margin of error is $ME_{\hat{p}} = \Sexpr{me64c}$
 % \item	The 95\% confidence interval is \\ $\Sexpr{prob64a} \pm \Sexpr{me64c}$
 % \end{enumerate}
 % \end{solution}
@@ -392,7 +409,7 @@ Wiley Publications has determined that out of a sample of 5,511 of its publicati
 % \begin{enumerate}
 % \item	The estimate of the population proportion is \\ $\hat{p} = \Sexpr{prob66a}$
 % \item	The standard error of this estimate is \\ $SE_{\hat{p}} = \Sexpr{SE66b}$
-% \item The margin of error the estimate is \\ $M_{\hat{p}} = \Sexpr{me66c}$
+% \item The margin of error the estimate is \\ $ME_{\hat{p}} = \Sexpr{me66c}$
 % \item	The 95\% confidence interval is \\ $\Sexpr{prob66a} \pm \Sexpr{me66c}$
 % \end{enumerate}
 % \end{solution}
@@ -421,7 +438,7 @@ Researchers who were \\ concerned if doctors were consistently adjusting dosages
 \begin{enumerate}
 \item	The estimate of the population proportion is \\ $\hat{p} = \Sexpr{prob67a}$
 \item	The standard error of this estimate is \\ $SE_{\hat{p}} = \Sexpr{SE67b}$
-\item The margin of error the estimate is \\ $M_{\hat{p}} = \Sexpr{me67c}$
+\item The margin of error the estimate is \\ $ME_{\hat{p}} = \Sexpr{me67c}$
 \item	The 95\% confidence interval is \\ $\Sexpr{prob67a} \pm \Sexpr{me67c}$
 \item	The 95\% confidence interval is \\ $\Sexpr{prob67a} \pm \Sexpr{me67c}$
 \end{enumerate}

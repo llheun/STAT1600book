@@ -1,0 +1,72 @@
+%!Rnw root = ../../Master.Rnw
+
+\chapter{Sampling Distr. of the Mean}
+\label{chap:ch10}
+
+\section{Objective}
+
+
+temp
+
+% After completing this part, students should be able to:
+% 
+% \fbox{\parbox{14cm}{
+% 
+% \begin{itemize}
+% % \item Point out and cite examples of when more than two sample proportion \\ is appropriate.
+% \item Perform a test of hypothesis for more than two sample proportions \\ following the 5-step process and interpret the results.
+% \end{itemize}
+% }}
+% 
+% \section{Properties of the Sample Average }  \index{average}
+% 
+% What percentage of adult men are between 5'6'' and 6' tall?  Population surveys have shown that men's heights are approximately normally distributed with mean 5'9'' and SD 3''.  Thus, the percentage of men between 5'6'' and 6' is estimated as 68\%, the percentage within 1 SD of the mean.  See Figure 10.1 below.
+% 
+
+
+
+
+
+
+
+
+\twocolumn
+\section{Exercises}
+
+\begin{exercises}
+
+   \begin{exercise} % 1
+   
+   yyyy
+
+ 	\end{exercise}
+	\begin{solution}   % 1
+
+	  \begin{enumerate}
+	 \item Significance test:
+
+	  <<results="asis", echo=FALSE>>=
+	    dtA <- c(14,27,12,16,18,13)
+	    mtxA <- matrix(dtA, nrow=3)
+	    chisq.test(mtxA)
+	  @
+
+Reviewing the results of the chi-square test, the test statistic ($\chi^2 = 1.6192$), degrees of freedom = 2, and the $p$-value = 0.445 which is greater than 0.05, we conclude that there is no difference in GPA from students who live on-campus or off-campus.
+	  \item column percents
+	  <<results="asis", echo=FALSE>>=
+	    pdtA <- numeric(6)
+	    pdtA[1:3] <- dtA[1:3] / sum(dtA[1:3]) *100
+	    pdtA[4:6] <- dtA[4:6] / sum(dtA[4:6]) *100
+	    pmtxA <- matrix(pdtA,nrow=3)
+	    xtable(pmtxA)
+	    rm(dtA, mtxA, pdtA, pmtxA)
+	  @
+
+	  The on-campus group is most likely to have a high GPA.
+	  \end{enumerate}
+	\end{solution}
+
+\end{exercises}
+
+\onecolumn
+

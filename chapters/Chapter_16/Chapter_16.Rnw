@@ -1,0 +1,885 @@
+%!Rnw root = ../../Master.Rnw
+
+\chapter{Linear Regression}
+\label{chap:ch14}
+
+\section{Objectives}
+
+After completing this part, students should be able to:
+
+\fbox{\parbox{14cm}{
+\begin{itemize}
+\item Understand the basic concept of simple linear regression.
+\item Learn to compute the least square point estimates of the slope and y-intercept.
+\item Compute the confidence interval of the mean.
+\end{itemize}
+}}
+
+\section{Simple Linear Regression}  \index{Linear Regression}
+
+The following table contains data on winning bid price for 12 Saturn cars on eBay in July 2002.  The car mileage is also given, and the cars have been arranged in increasing order of Miles.
+
+Here is a scatterplot of the data.  Since Price depends on Miles (not the other way around), we let Price be the $Y$-variable, or the \textit{response variable}.    Miles is the $X$-variable, or the \textit{explanatory variable}.
+
+\begin{minipage}[ht]{7cm}
+%\begin{table}[ht]
+\centering 
+\begin{tabular}{@{} c rr @{}} \hline 
+Car & Miles & Price (\$) \\ \hline
+1 & 9300 & 7100 \\
+2 & 10565 & 15500 \\
+3 & 15000 & 4400 \\
+4 & 15000 & 4400 \\
+5 & 17764 & 5900 \\
+6 & 57000 & 4600 \\
+7 & 65940 & 8800 \\
+8 & 73676 & 2000 \\
+9 & 77006 & 2750 \\
+10 & 93739 & 2550 \\
+11 & 146088 & 960 \\
+12 & 153260 & 1025 \\ \hline
+\end{tabular}
+%\end{table}
+\end{minipage}
+\begin{minipage}[ht]{7cm}
+% \begin{figure}[ht]
+\centering
+%\caption{
+Scatterplot of Price (\$) vs. Miles
+
+<<label=LBL14a, results="asis", echo=FALSE, out.width="7cm">>=
+ml1 <- c(9300,10565,15000,15000,17764,57000,65940,73676,77006,93739,146088,153260)
+prc1<- c(7100,15500,4400,4400,5900,4600,8800,2000,2750,2550,960,1025)
+  plot(ml1, prc1, xlab="Miles", ylab="Price ($)")
+@
+% \end{figure}
+\end{minipage}
+
+\subsubsection{Problem:}
+
+Based on the data, how much do we expect to get for a Saturn car that has been driven 60,000 miles?
+
+Simple linear regression is a data analysis technique that tries to find a \textit{linear} pattern in the data.  We then use this line for prediction.
+
+Notice that the points seem to fall around a \textit{straight line} sloping downwards.  Can we draw this line?  We will discuss one way to do this, called the \textit{least squares} (LS) method.  For now, suppose that the LS line has already been computed (we will do this later).  The LS line is overlayed on the scatterplot looks like Figure 14.1.
+
+\begin{figure}[ht]
+\centering
+\caption{Least Squares (LS) Regression Line is overlayed on Scatterplot}
+<<label=LBL14b, results="asis", echo=FALSE>>=
+  tmp1 <- lm(prc1 ~ ml1)
+  plot(ml1, prc1, xlab="Miles", ylab="Price ($)")
+  abline(tmp1)
+  aa0 <- sprintf("%.0f", tmp1$coefficients[1])
+  aa1 <- sprintf("%.5f", tmp1$coefficients[2])
+@  
+\end{figure}
+
+The formula for this line, in the form $Y= a + bX$,  is 
+
+\begin{equation*}
+  \texttt{Predicted Price} = \Sexpr{aa0} + (\Sexpr{aa1})(\texttt{Miles})
+\end{equation*}
+
+The \textit{slope} of the line is \Sexpr{aa1}, which means that predicted Price tends to drop 5 cents for every additional mile driven or about \$512.70 for every 10,000 miles. The \textit{Y-intercept} of the line is \$ \Sexpr{aa0}; this should not be interpreted as the predicted price of a car with 0 mileage because the range of the data does not include cars with 0 miles.  
+
+We can now use the line to predict the selling price of a car with 60000 miles.  What is the height or Y value of the line at $X = 60000$?  The answer is
+
+\begin{equation*}
+  \texttt{Predicted Price} = \Sexpr{aa0} + (\Sexpr{aa1})(60000) = \$5059.80
+\end{equation*}
+
+alternately, about \$5000 or \$5100 or so.
+
+\section{Calculating the Least Squares Regression Line}
+
+One way to calculate the regression line is to use these five statistics:
+
+$$ \bar{X}, s_x, \bar{Y},s_y, \texttt{ and } r  $$
+
+(i.e., the mean and SD of $X$, the mean and SD of $Y$, and the correlation between $X$ and $Y$.)
+
+\begin{center}
+\fbox{\parbox{14cm}{
+The least square regression line is given by the equation
+
+\begin{equation*}
+  \texttt{Predicted} = a + b X
+\end{equation*}
+
+where the slope $b$ and the intercept $a$ are calculated as 
+
+\begin{eqnarray}
+  b &=& r \frac{s_y}{s_x} \\
+  a &=& \bar{Y} - b \bar{X}  \nonumber \\
+\end{eqnarray}
+}}
+\end{center}
+
+Next, we will perform the calculations for the Saturn Price data. 
+
+\begin{table}[ht]
+\centering 
+\begin{tabular}{@{} c rr @{}} \hline 
+Car & Miles & Price (\$) \\ \hline
+1 & 9300 & 7100 \\
+2 & 10565 & 15500 \\
+3 & 15000 & 4400 \\
+4 & 15000 & 4400 \\
+5 & 17764 & 5900 \\
+6 & 57000 & 4600 \\
+7 & 65940 & 8800 \\
+8 & 73676 & 2000 \\
+9 & 77006 & 2750 \\
+10 & 93739 & 2550 \\
+11 & 146088 & 960 \\
+12 & 153260 & 1025 \\ \hline
+Average & 61195 & 4999 \\
+SD  & 50989 & 4079 \\
+$r$ & \multicolumn{2}{c}{-0.641} \\ \hline
+\end{tabular}
+\end{table}
+
+Using the formulas for slope and intercept in equation (14.1 and 14.2)
+
+\begin{eqnarray*}
+b &=& r \frac{s_y}{s_x} = -0.641 \frac{4079}{50989} = -0.05127 \\
+a &=& \bar{Y} - b \bar{X} = 4999 - (-0.05127)(61195) = 8136  \\
+\end{eqnarray*}
+
+so that the regression line is
+
+\begin{equation*}
+PREDICTED = a + b X = 8136 + (-0.05127) X
+\end{equation*}
+
+Regarding the original variable names, the regression line is
+
+\begin{equation*}
+  \texttt{Predicted Price} = \Sexpr{aa0} + (\Sexpr{aa1}) \texttt{Miles} 
+\end{equation*}
+
+\section{More on Simple Regression}
+
+Why is this called the least squares line?  Example best shows the answer.
+
+\begin{table}[ht]
+
+<<label=LBL14c, results="asis", echo=FALSE>>=
+  rs1 <- numeric(12)
+  yh1 <- numeric(12)
+  yh1 <- sprintf("%.2f", tmp1$fitted.values)
+  rs1 <- sprintf("%.2f", tmp1$residuals)
+  rs1a <- sprintf("%.2f", sum(tmp1$residuals^2))
+@  
+\centering 
+\begin{tabular}{@{} c rrrc @{}} \hline 
+Car & Miles & Price (\$) & PRED & RES = Y - PRED    \\ \hline
+1 & 9300 & 7100 & \Sexpr{yh1[1]} & \Sexpr{rs1[1]} \\
+2 & 10565 & 15500 & \Sexpr{yh1[2]} & \Sexpr{rs1[2]} \\
+3 & 15000 & 4400 & \Sexpr{yh1[3]} & \Sexpr{rs1[3]} \\
+4 & 15000 & 4400 & \Sexpr{yh1[4]} & \Sexpr{rs1[4]} \\
+5 & 17764 & 5900 & \Sexpr{yh1[5]} & \Sexpr{rs1[5]} \\
+6 & 57000 & 4600 & \Sexpr{yh1[6]} & \Sexpr{rs1[6]} \\
+7 & 65940 & 8800 & \Sexpr{yh1[7]} & \Sexpr{rs1[7]} \\
+8 & 73676 & 2000 & \Sexpr{yh1[8]} & \Sexpr{rs1[8]} \\
+9 & 77006 & 2750 & \Sexpr{yh1[9]} & \Sexpr{rs1[9]} \\
+10 & 93739 & 2550 & \Sexpr{yh1[10]} & \Sexpr{rs1[10]} \\
+11 & 146088 & 960 & \Sexpr{yh1[11]} & \Sexpr{rs1[11]} \\
+12 & 153260 & 1025 & \Sexpr{yh1[12]} & \Sexpr{rs1[12]} \\ \hline
+\end{tabular}
+\end{table}
+
+The first car has $Miles = 9300$.  What is its predicted price?  The predicted value is 
+
+\begin{equation*}
+  \texttt{Predicted Price} = \Sexpr{aa0} + (\Sexpr{aa1})(9300) = \Sexpr{yh1[1]}
+\end{equation*}
+
+This predicted value missed the actual selling price $Y = 7100$.  By how much? By
+
+\begin{equation*}
+  \texttt{Residual} = 7100 + \Sexpr{yh1[1]} = \Sexpr{rs1[1]}
+\end{equation*}
+
+The negative value means actual value is too low.  This difference is called the residual.  
+
+Small residuals (ignoring the sign) are good because this means the prediction was close  (Car 1 above was predicted well, but Car 2 was not -- the selling price is almost double what was predicted).  Therefore, a prediction line is okay if it gives residuals that are as small as possible.  
+
+\begin{center}
+\fbox{\parbox{9cm}{
+The sum of squared residuals is 
+$$ SSE = (\Sexpr{rs1[1]})^2 + \cdots + (\Sexpr{rs1[12]})^2 = \Sexpr{rs1a} $$
+}}
+\end{center}
+
+and is a measure of `overall size' of the residuals.  In the Saturn Price data, \\
+$SSE =  107,805,718$.
+
+\begin{center}
+\fbox{\parbox{8cm}{
+The least square line given by (14.1) will have a smaller SSE than any other straight line.
+}}
+\end{center}
+
+This means that if you use any other intercept and slope combination besides $(a,b) = (8136,.05127)$, the new set of predicted values and residuals will give an SSE that is larger than, or at best equal to 107,805,718. 
+
+\section{A 95\% Confidence Interval for Slope}
+
+Is there a linear relationship between X and Y?  It seems evident that selling price (Y) responds to a car's mileage (X), but in science, relationships are often not too noticeable and need confirmation by data.  For example, does an individual's systolic blood pressure (Y) tend to increase with their cholesterol level (X)?   Is there a relationship between one's total number of years of education (X) and income (Y)?  In this section, we will investigate the strength of linear relationships by looking at the slope estimate.  Since the slope represents how much Y responds to changes in the X-value, we will calculate a 95\% confidence interval for the slope, and examine whether it excludes 0.  If it does, then we can rule out the likelihood that the slope is 0.  Thus, we conclude that there is a significant linear relationship between $X$ and $Y$.
+
+We start by stating the formula for standard error:
+
+\fbox{\parbox{14cm}{
+The slope estimate $b$ tends to miss the true value $\beta$ by an amount called the \textit{standard error} of the slope, denoted SE of $b$ and calculated as:
+
+\begin{equation}
+  SE_b = \sqrt{ \frac{(1 - r^2) s_y^2}{(n - 2) s_x^2}} 
+\end{equation}  
+}}
+
+The interval estimate is the familiar $b \pm 1.96(SE)$.  It is formally calculated as follows.
+
+\fbox{\parbox{14cm}{
+A 95\% confidence interval estimate for the slope of the regression line is given by: 
+
+The slope estimate $b$ tends to miss the true value $\beta$ by 
+an amount called the \textit{standard error} of the slope, 
+denoted SE of $b$, and calculated as:
+
+\begin{equation}
+  b \pm 1.96 \sqrt{ \frac{(1 - r^2) s_y^2}{(n - 2) s_x^2}} 
+\end{equation}  
+}}
+
+If this interval excludes 0, then the likelihood of zero slopes is ruled out, and we conclude that there is a significant linear relationship between $X$ and $Y$.
+
+Returning to our Saturn car price example, recall that $b = -0.05127$.  The standard error of this estimate is
+
+\begin{equation*}
+  SE_b = \sqrt{ \frac{(1 - (-0.641)^2) (4079)^2}{(12 - 2) (50989)^2}} = 0.01942 
+\end{equation*}  
+
+The 95\% confidence interval is 
+
+\begin{equation*}
+  -.05127 \pm 1.96 (0.01942) 
+\end{equation*}  
+\begin{equation*}
+  (-.09,  -.01) 
+\end{equation*}
+
+Since this interval excludes 0, we conclude a significant relationship between car mileage and selling price.
+
+\section{Key Words}
+
+\fbox{\parbox{14cm}{
+\begin{minipage}[ht]{6cm}
+\begin{itemize}
+\item slope
+\item y-intercept
+\item regression
+\end{itemize}
+
+\end{minipage} \hfill
+\begin{minipage}[ht]{6cm}
+\begin{itemize}
+\item residuals
+\item confidence interval
+\end{itemize}
+\end{minipage}
+}}
+
+\twocolumn
+
+\section{}
+
+\begin{exercises}
+
+\begin{exercise}  % 1      %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Consider the following \\ data:
+
+\begin{tabular}{@{} cc @{}} \hline
+X & Y \\ \hline
+-2 & 0 \\
+2 & 3 \\
+5 & 10 \\
+-1 & 1 \\
+9 & 5 \\ \hline
+\end{tabular}
+
+\begin{enumerate}
+  \item Calculate the regression line for predicting Y from X.
+  \item Draw the scatterplot with an overlaid regression line.
+  \item Add 5 to Y, so the new values are 5, 8, 15, 6, 20.  Calculate the new regression line.                                         
+  \item Multiply Y by 5, so the new values are 0, 15, 50, 5, 75.  Calculate the new regression line.                                         
+\end{enumerate}
+
+
+\end{exercise}
+\begin{solution} % 1
+
+\begin{enumerate}
+  \item Calculate the regression line for predicting Y from X.
+  \item Draw the scatterplot with an overlaid regression line.
+  \item Add 5 to Y, so the new values are 5, 8, 15, 6, 20.  Calculate the new regression line.                                         
+  \item Multiply Y by 5, so the new values are 0, 15, 50, 5, 75.  Calculate the new regression line.                                         
+\end{enumerate}
+
+\end{solution}
+
+\begin{exercise} % 2            %%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Several children are \\ observed, and their ages (in years) and vocabularies (the estimated number of words that each child knows) are recorded. A child psychologist wants to create a model that relates these two variables.
+
+\begin{enumerate}
+  \item Which variable should be explanatory, and which response?
+  \item A regression equation is calculated as Y = 836X + 451. What is the slope of this regression equation?
+  \item A regression equation is calculated as Y = 836X + 451. What is the intercept of this regression equation?
+  \item	If a 12-year-old child knows 8,000 words, then what is the residual for this child based on the above regression equation?
+  \item	If a child has a negative residual, then do they fall above or below the predicted number of words known for average children their age (above or below the regression line)?
+  \item	If a 14-year-old child knows 14,000 \\ words, then what is the residual for this child based on the above regression \\ equation?
+  \item	If a child has a positive residual, then do they fall above or below the predicted number of words known for average children their age (above or below the regression line)?
+\end{enumerate}
+
+\end{exercise}
+\begin{solution} % 2
+
+\end{solution}
+
+\begin{exercise} % 3            %%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Moviegoers are monitored for their level of anxiety while watching a new horror movie billed to be the “scariest movie of all time.” The intensity of a scene in the movie and anxiety are both measured on numerical scales of 0 to 100. A producer for the movie finds that the correlation coefficient between intensity and anxiety is 0.63, the standard deviation of intensity is 30, and the standard deviation of anxiety is 35.
+
+\begin{enumerate}
+  \item What is the slope of the regression equation that predicts anxiety based on intensity?
+  \item	How do you properly interpret the slope calculated in part a?
+  \item	If the intercept is 15, then what is the regression equation?
+  \item	What is the predicted value of anxiety for a scene measured at 90 intensity \\ units?
+  \item	If a moviegoer experiences anxiety measured at 82 units during a scene measured at 90 intensity units, then what is the residual for that moviegoer?
+  \item	How do you properly interpret the residual in part 5?
+\end{enumerate}
+
+\end{exercise}
+\begin{solution}
+
+\end{solution}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% new questions
+
+ \begin{exercise} % 1       %%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+    How well does the number of beers a student drinks predict his or her
+blood alcohol content (BAC)? Sociology researchers, at Ohio State University, wanted to know if there is a relationship between the amount of beer consumed and BAC. The researchers assigned the number of cans of beer to each student. After each student had consumed the assigned number of beers,  thirty minutes later, an officer of the law measured the students BAC. \cite{OSU2016}
+% A scatterplot of the data appears below.
+One \\ student drank nine beers. You see from the scatter plot that his BAC was about
+
+\begin{figure}[htbp] %  figure placement: here, top, bottom, or page
+   \centering
+   \includegraphics[width=7cm]{chapters/Chapter_14/ext_figure/zRegF.png}
+   \caption{Number of Beers vs. BAC}
+   \label{fig:f12_11}
+\end{figure}
+
+
+    \begin{enumerate}
+    \item 0.014
+    \item 0.14
+    \item 1.4
+    \item 14
+    \item 140
+    \end{enumerate}
+    \vspace{5mm}
+    \framebox[5cm][l]{ Answer: }
+
+  \end{exercise}
+  \vspace{2mm}
+  \begin{solution}
+     $ BAC = -0.012 + 0.017 (9) = 0.14 $
+  \end{solution}
+
+  \begin{exercise} % 2            %%%%%%%%%%%%%%%%%%%%
+
+    How well does the number of beers a student drinks predict his or her
+blood alcohol content (BAC)? Sociology researchers, at Ohio State University, wanted to know if there is a relationship between the amount of beer consumed and BAC. The researchers assigned the number of cans of beer to each student. After each student had consumed the assigned number of beers,  thirty minutes later, an officer of the law measured the students BAC. \cite{OSU2016}
+A scatterplot of the data appears below.  The scatterplot shows
+
+<<label=LBL14f, echo=FALSE, fig.pos="ht", fig.align="center", fig.width=3.5, fig.height=3.5, fig.cap="No. Beers vs. BAC", out.width="7cm" >>=
+
+     dt12_4 <- read.csv("data/beers.csv",header=TRUE)
+     plot( dt12_4$BAC ~ dt12_4$NB, xlab="Number of Beers(NB)", ylab="Blood alcohol content(BAC)")
+     lm_4 <- lm( dt12_4$BAC ~ dt12_4$NB )
+     abline( lm_4 )
+     b_1 <- lm_4$coefficient[2]
+     b_0 <- lm_4$coefficient[1]
+@
+
+      \begin{enumerate}
+      \item a weak negative relationship.
+      \item a moderately high negative correlation.
+      \item almost no connection.
+      \item a small positive correlation.
+      \item a moderately high positive straight-line relationship between some beers and \\ BAC.
+      \end{enumerate}
+      \vspace{5mm}
+    \framebox[5cm][l]{ Answer: }
+
+  \end{exercise}
+  \vspace{2mm}
+  \begin{solution}
+    A moderately strong positive straight-line relationship between number of beers and BAC.
+  \end{solution}
+
+  \begin{exercise} % 3         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+    How well does the number of beers a student drinks predict his or her
+blood alcohol content (BAC)? Sociology researchers, at Ohio State University, wanted to know if there is a relationship between the amount of beer consumed and BAC. The researchers assigned the number of cans of beer to each student. After each student had consumed the assigned number of beers,  thirty minutes later, an officer of the law measured the students BAC. \cite{OSU2016}
+A scatterplot of the data appears below.  A plausible value of the correlation between number of beers and blood alcohol content, based on the scatterplot, is
+
+\begin{figure}[htbp] %  figure placement: here, top, bottom, or page
+   \centering
+   \includegraphics[width=7cm]{chapters/Chapter_14/ext_figure/zCorF.png}
+   \caption{Number of Beers vs. BAC}
+   \label{fig:f12_14}
+\end{figure}
+
+      \begin{enumerate}
+      \item $r = -0.875$.
+      \item $r = -0.765$.
+      \item $r$ close to 0.
+      \item $r = 0.765$.
+      \item $r = 0.875$.
+      \end{enumerate}
+      \vspace{5mm}
+    \framebox[5cm][l]{ Answer: }
+
+    \end{exercise}
+    \vspace{2mm}
+    \begin{solution}
+       The correllation coefficient is $r = 0.875 = \sqrt{0.765}$ where  $r^2$ is the coefficient of determination.
+    \end{solution}
+
+
+  \begin{exercise} % 4
+
+
+    STEP 1: In the next six tasks, we will use the data from GSS2014 in this exercise.  We have been asked to examine the relationship between a person's height and a person's income.  Here we have {\textit{income}} which is an  interval-ratio type of variable \\ while {\textit{height}} is also an interval-ratio type of variable.  These types of variables require that we use a Simple Linear Regression (SLR) \\ analysis.  So step 1 in the process of analysis is to choose the an independent and dependent variables.  Note: In the GSS2014 dataset, {\textit{height}} is known as HEIGHT and {\textit{income}} is known as rincom06.
+
+<<label=LBL14h, results="asis", echo=FALSE, fig.pos="ht", fig.align="center", fig.width=3.5, fig.height=3.5, fig.cap="Respondent's Height vs. Income", out.width="7cm" >>=
+
+dt12_5 <- read.csv("data/GSS2014.csv", header=TRUE)
+x12_1 <- cbind( dt12_5$HEIGHT, dt12_5$rincom06 )            ## select only the respondent's height and income
+x12_2 <- x12_1[ (dt12_5$HEIGHT > 0 & dt12_5$HEIGHT < 98) &
+						  (dt12_5$rincom06 > 0 & dt12_5$rincom06 < 26),  ]    ## select only valid data
+nrw12 <- length( x12_2[ , 1] )
+x12_3 <- x12_2[ sample( 1:nrw12, size= 100, replace = TRUE),  ]
+Height <- x12_3[,1]
+Income <- x12_3[,2]
+plot(Height, Income, xlab="Height (inches)", ylab="Income (K dollars)", main="Scatterplot of Height vs. Income" )
+
+cor12 <- cor(Income, Height)
+## print(xtable(cor12))
+rSq   <- cor12 * cor12
+
+m12 <- lm(Income ~ Height)
+abline(m12)
+
+@
+
+{\tiny{
+  \begin{verbatim}
+  <<label=LBL14j, results="asis", echo=FALSE>>=
+  print(summary(m12))
+@
+  \end{verbatim}
+}}
+
+    \vspace{5mm}
+    \framebox[5cm][l]{ Answer: }
+
+    \end{exercise}
+    \vspace{2mm}
+    \begin{solution}
+       The independent variable is HEIGHT and the dependent variable is rincom06.
+    \end{solution}
+
+  \begin{exercise} % 5
+
+    STEP 2: Using the information from exercise four, we must state the hypotheses about its relationship between {\textit{income}} and {\textit{height}}.  Based on our experience, how should we state our hypotheses?
+
+    \vspace{5mm}
+    \framebox[5cm][l]{ Answer: }
+
+    \end{exercise}
+    \vspace{2mm}
+    \begin{solution}
+
+       $H_0: \beta = 0" vs. $H_1: \beta \ne 0$
+
+    \end{solution}
+
+  \begin{exercise} % 6
+
+    STEP 3: Using the information from exercise four, determine the coefficient of determination.  Recall that this value is also referred to as r-squared.
+
+    \vspace{5mm}
+    \framebox[5cm][l]{ Answer: }
+
+    \end{exercise}
+    \vspace{2mm}
+    \begin{solution}
+
+       The correlation coefficient between the respondent's height and income is \Sexpr{rSq}
+
+    \end{solution}
+
+  \begin{exercise} % 7
+
+
+    STEP 4: Using the information from exercise four, record the independent, dependent variables, and the correlation coefficient.
+
+{\scriptsize{
+    \begin{table}[ht]
+    \centering
+    \begin{tabular}{lr} \hline
+        &  \multicolumn{1}{c}{Independent} \\ \hline
+
+    Dep. Var. & 1. \underline{\phantom{xxxxxxxx}}      \\ \hline
+    1. \underline{\phantom{xxxxxxxx}}  &  \underline{\phantom{xxxxxxxx}}       \\ \hline
+
+    \end{tabular}
+    \end{table}
+}}
+
+  \vspace{5mm}
+  \framebox[7cm][l]{ Answer: }
+
+    \end{exercise}
+    \vspace{2mm}
+    \begin{solution}
+
+       \begin{table}[ht]
+    \centering
+    \begin{tabular}{lr} \hline
+        &  \multicolumn{1}{c}{Independent} \\ \hline
+
+    Dep. Var. & 1. height      \\ \hline
+    1. income  &   \Sexpr{cor12}      \\ \hline
+
+    \end{tabular}
+    \end{table}
+
+
+    \end{solution}
+
+      \begin{exercise} % 8
+
+
+    STEP 5: Using the information from exercise four, describe the results of the independent variable.  Identify variables that we tested, their strength and direction of the relationship.  We should distinguish the relationship in general terms and refer the statistical value in parentheses.  Also not whether the hypotheses were supported.
+
+    \vspace{10mm}
+    \framebox[5cm][l]{ Answer: }
+
+    \end{exercise}
+    \vspace{2mm}
+    \begin{solution}
+
+    For a sample of 40 subjects, we tested the relationship between height and income.  We found a weak positive relationship using the correlation coefficient (\Sexpr{cor12}).  We then looked at the slope:  as {\textit{height}} increases by one inch, {\textit{income}} increases by \Sexpr{m12$coefficients[2]} with a p-value of
+
+
+    \end{solution}
+
+  \begin{exercise} % 9
+
+
+    STEP 1:  In the next six tasks, we will use a sample of 100 subjects from the GSS2014 data in this exercise.  We have been asked to examine the relationship between a person's income, age, and ``not \\ married'' and a person's happiness.  Here we have variables which are  interval-ratio type of variable.  These types of variables require that we use a Simple Linear Regression (SLR) analysis.  So step 1 in the process of analysis is choosing independent and dependent variables.  Note: In the GSS2014 dataset, {\textit{happy}} is known as GENERAL HAPPINESS, {\textit{income06}} is known as TOTAL FAMILY INCOME, {\textit{age}} is known as AGE OF RESPONDENT, and {\textit{absingle}} is known as NOT MARRIED.
+
+{\small{
+<<label=LBL14i, results="asis", echo=FALSE, fig.pos="ht", fig.align="center", fig.width=3.5, fig.height=3.5, fig.cap="Respondent's Height vs. Income", out.width="7cm" >>=
+
+## dt12_5 <- read.csv("data/GSS2014.csv", header=TRUE)
+x12_9 <- cbind( dt12_5$happy, dt12_5$age, dt12_5$income06, dt12_5$absingle )            ## select only the respondent's height and income
+x12_10 <- x12_9[ (dt12_5$happy > 0 & dt12_5$happy < 8) &
+						  (dt12_5$income06 > 0 & dt12_5$income06 < 26) &
+						  (dt12_5$age  > 0) & (dt12_5$age < 98) &
+						  (dt12_5$absingle > 0) & (dt12_5$absingle < 8),  ]  ## select only valid data
+nrw4 <- length( x12_10[ , 1] )
+x12_11 <- x12_10[ sample( 1:nrw4, size= 100, replace = TRUE),  ]
+Happiness <- x12_11[,1]
+Age       <- x12_11[,2]
+Income    <- x12_11[,3]
+NotMarried <- x12_11[,4]
+
+  cor13 <- cor(x12_11 )
+
+  print(xtable(cor13))
+
+  m13 <- lm( Happiness ~  Age + Income + NotMarried )
+
+@
+}}
+
+{\tiny{
+  \begin{verbatim}
+  <<label=LBL14k, results="asis", echo=FALSE>>=
+  print(summary(m13))
+@
+  \end{verbatim}
+}}
+
+What are the dependent and independent \\ variables?
+
+    \vspace{5mm}
+    \framebox[5cm][l]{ Answer: }
+
+    \end{exercise}
+    \vspace{2mm}
+    \begin{solution}
+       The independent variable is income,   age, and absingle and the dependent variable is happiness.
+    \end{solution}
+
+  \begin{exercise} % 10
+
+    STEP 2: Using the information from exercise nine, we must state the hypotheses about its relationship between {\textit{Happiness}}, {\textit{income}}, and {\textit{age}}.  Based on our experience, how should we state our hypotheses?
+
+    \vspace{5mm}
+    \framebox[7cm][l]{ Answer: }
+
+    \end{exercise}
+    \vspace{2mm}
+    \begin{solution}
+
+       $H_0: \beta_1 = \beta_2 = \beta_3 = 0$ \\
+       $H_1:$ at least one slope is not equal zero. \\
+       where $\beta_1$ is the slope for Happiness and Income,  $\beta_2$ is the slope for Happiness and Age and $\beta_3$ is         the slope for Happiness and single.
+
+    \end{solution}
+
+  \begin{exercise} % 11
+
+
+    STEP 3: Using the information from exercise 12, determine the coefficient of determination.
+
+    \vspace{5mm}
+    \framebox[5cm][l]{ Answer: }
+
+    \end{exercise}
+    \vspace{2mm}
+    \begin{solution}
+
+       Read the results from the computer generated output.
+
+    \end{solution}
+
+  \begin{exercise} % 12
+
+
+    STEP 4: Using the information from exercise 12, record the independent, dependent variables, and the correlation coefficients.
+
+     \begin{table}[ht]
+     \centering
+     {\tiny{
+     \begin{tabular}{lrrrr} \hline
+         &  \multicolumn{3}{c}{Independent} \\ \hline
+
+     Dep. Var. & 1. \underline{\phantom{xxxx}} &
+                 2. \underline{\phantom{xxxx}} &
+                 3. \underline{\phantom{xxxx}} &
+                 4. \underline{\phantom{xxxx}} \\ \hline
+     1. \underline{\phantom{xxxx}}  &
+     \underline{\phantom{xxxx}}  \\ \hline
+     2. \underline{\phantom{xxxx}}  &
+     \underline{\phantom{xxxx}} &
+     \underline{\phantom{xxxx}}  \\ \hline
+     3. \underline{\phantom{xxxx}}  &
+     \underline{\phantom{xxxx}} &
+     \underline{\phantom{xxxx}} &
+     \underline{\phantom{xxxx}}  \\ \hline
+     4. \underline{\phantom{xxxx}}  &
+     \underline{\phantom{xxxx}} &
+     \underline{\phantom{xxxx}} &
+     \underline{\phantom{xxxx}} &
+     \underline{\phantom{xxxx}}  \\ \hline
+     \end{tabular}
+     }}
+     \end{table}
+
+  %  \vspace{5mm}
+  %  \framebox[5cm][l]{ Answer: }
+
+    \end{exercise}
+    \vspace{2mm}
+    \begin{solution}
+
+      The results are in the table.
+
+    \end{solution}
+
+  \begin{exercise} % 13
+
+    STEP 5:
+
+    Using the information from exercise 12, record the independent, dependent variables, and the correlation coefficients.
+
+    \vspace{5mm}
+    \framebox[5cm][l]{ Answer: }
+
+    \end{exercise}
+    \vspace{2mm}
+    \begin{solution}
+
+  The results are in the table.
+
+    \end{solution}
+
+
+  \begin{exercise} % 14
+
+
+    STEP 1:  In the next six tasks, we will use all of the data from GSS2014 in this exercise.  We have been asked to examine the relationship between a person's income, age, and ``not married'' and a person's happiness.  Here we have variables which are  interval-ratio type of variable.  These types of variables require that we use a Simple Linear Regression (SLR) analysis.  So step 1 in the process of analysis is choosing independent and dependent variables.  Note: In the GSS2014 dataset, {\textit{happy}} is known as GENERAL HAPPINESS, {\textit{income06}} is known as TOTAL FAMILY INCOME, {\textit{age}} is \\ known as AGE OF RESPONDENT, and {\textit{absingle}} is known as NOT MARRIED.
+
+{\small{
+<<label=LBL14e, results="asis", echo=FALSE, fig.pos="ht", fig.align="center", fig.width=3.5, fig.height=3.5, fig.cap="Respondent's Height vs. Income", out.width="7cm" >>=
+
+## dt12_5 <- read.csv("data/GSS2014.csv", header=TRUE)
+## x12_9 <- cbind( dt12_5$happy, dt12_5$age, dt12_5$income, dt12_5$absingle )            ## select only the respondent's height and income
+## x12_10 <- x12_9[ (dt12_5$happy > 0 & dt12_5$happy < 8) &
+##						  (dt12_5$income06 > 0 & dt12_5$income06 < 26) &
+##						  (dt12_5$age  > 0) & (dt12_5$age < 98) &
+##						  (dt12_5$absingle > 0) & (dt12_5$absingle < 8),  ]  ## select only valid data
+## nrw4 <- length( x12_10[ , 1] )
+## x12_11 <- x12_10[ sample( 1:nrw4, size= 100, replace = TRUE),  ]
+Happiness <- x12_10[,1]
+Age       <- x12_10[,2]
+Income    <- x12_10[,3]
+NotMarried <- x12_10[,4]
+
+  cor14 <- cor(x12_9 )
+
+  print(xtable(cor14))
+
+  m14 <- lm( Happiness ~  Age + Income + NotMarried )
+@
+}}
+
+{\tiny{
+  \begin{verbatim}
+  <<label=LBL14l, results="asis", echo=FALSE>>=
+  print(summary(m14))
+@
+  \end{verbatim}
+}}
+
+What are the dependent and independent \\ variables?
+
+    \vspace{5mm}
+    \framebox[7cm][l]{ Answer: }
+
+    \end{exercise}
+    \vspace{2mm}
+    \begin{solution}
+       The independent variable is income,   age, and absingle and the dependent variable is happiness.
+    \end{solution}
+
+  \begin{exercise} % 15
+
+    STEP 2: Using the information from exercise 12, we must state the hypotheses about its relationship between {\textit{Happiness}}, {\textit{income}}, and {\textit{age}}.  Based on our experience, how should we state our hypotheses?
+
+    \vspace{5mm}
+    \framebox[7cm][l]{ Answer: }
+
+    \end{exercise}
+    \vspace{2mm}
+    \begin{solution}
+
+       $H_0: \beta_1 = \beta_2 = \beta_3 = 0$ \\
+       $H_1:$ at least one slope is not equal zero. \\
+       where $\beta_1$ is the slope for Happiness and Income,  $\beta_2$ is the slope for Happiness and Age and $\beta_3$ is         the slope for Happiness and single.
+
+    \end{solution}
+
+  \begin{exercise} % 16
+
+    STEP 3: Using the information from exercise nine, determine the coefficient of determination.
+
+    \vspace{5mm}
+    \framebox[7cm][l]{ Answer: }
+
+    \end{exercise}
+    \vspace{2mm}
+    \begin{solution}
+
+       Read the results from the computer generated output.
+
+    \end{solution}
+
+  \begin{exercise} % 17
+
+
+    STEP 4: Using the information from exercise 12, record the independent, dependent variables, and the correlation coefficients.
+
+     \begin{table}[ht]
+     \centering
+     {\tiny{
+     \begin{tabular}{lrrrr} \hline
+         &  \multicolumn{3}{c}{Independent} \\ \hline
+
+     Dep. Var. & 1. \underline{\phantom{xxxx}} &
+                 2. \underline{\phantom{xxxx}} &
+                 3. \underline{\phantom{xxxx}} &
+                 4. \underline{\phantom{xxxx}} \\ \hline
+     1. \underline{\phantom{xxxx}}  &
+     \underline{\phantom{xxxx}}  \\ \hline
+     2. \underline{\phantom{xxxx}}  &
+     \underline{\phantom{xxxx}} &
+     \underline{\phantom{xxxx}}  \\ \hline
+     3. \underline{\phantom{xxxx}}  &
+     \underline{\phantom{xxxx}} &
+     \underline{\phantom{xxxx}} &
+     \underline{\phantom{xxxx}}  \\ \hline
+     4. \underline{\phantom{xxxx}}  &
+     \underline{\phantom{xxxx}} &
+     \underline{\phantom{xxxx}} &
+     \underline{\phantom{xxxx}} &
+     \underline{\phantom{xxxx}}  \\ \hline
+     \end{tabular}
+     }}
+     \end{table}
+
+  %  \vspace{5mm}
+  %  \framebox[7cm][l]{ Answer: }
+
+    \end{exercise}
+    \vspace{2mm}
+    \begin{solution}
+
+      The results are in the table.
+
+    \end{solution}
+
+  \begin{exercise} % 18
+
+
+    STEP 5:
+
+    Using the information from exercise 12, record the independent, dependent variables, and the correlation coefficients.
+
+
+  %  \vspace{5mm}
+  %  \framebox[7cm][l]{ Answer: }
+
+    \end{exercise}
+    \vspace{2mm}
+    \begin{solution}
+
+  The results are in the table.
+
+
+    \end{solution}
+
+
+\end{exercises}
+
+\onecolumn

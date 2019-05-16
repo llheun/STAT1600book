@@ -3,17 +3,16 @@
 \chapter{Comparing Two Proportions }
 \label{chap:ch9}
 
-\section{Objective}
+\section{Objectives}
 
 After completing this part, students should be able to:
 
-\fbox{\parbox{14cm}{
+\fbox{\parbox{13cm}{
 \begin{itemize}
-\item Explain the logic of estimation and the role of the sample, sampling
-distribution and the population.
-\item Make and interpret intervals for sample proportions.
-\item Describe the relationships between trust levels, sample size, and the width
-of the confidence interval.  \index{confidence interval}
+\item Estimate the difference between independent proportions.
+\item Calculate and interpret confidence interval of the difference between proportions.
+\item Understand the concept of risk ratio and odds ratio.
+\item Calculate and interpret risk ratio and odds ratio confidence intervals. 
 \end{itemize}
 
 }}
@@ -31,7 +30,7 @@ Changing notation from the percentage to proportions and taking the difference o
 
 Whenever the two proportions are independent.  Applying equation SE of $\hat{p} = \sqrt{ \frac{ \hat{p} \hat{q} }{n}}$ twice, we have $SE_{\hat{p}_1} = \sqrt{ \frac{ \hat{p}_1 \hat{q}_1 }{n_1}}$ and $SE_{\hat{p}_2} = \sqrt{ \frac{ \hat{p}_2 \hat{q}_2 }{n_2}}$.  Substituting into the formula above, $SE_{(\hat{p}_1 - \hat{p}_2)} = \sqrt{ SE_{\hat{p}_1}^2 + SE_{\hat{p}_2}^2}$, we get:
 
-\fbox{\parbox{14cm}{
+\fbox{\parbox{13cm}{
 \textbf{Standard Error of the Difference between two independent Proportions}
 
 \begin{equation*}
@@ -68,7 +67,7 @@ $$ SE_{( \hat{p}_1 - \hat{p}_2)} = \sqrt{ \frac{ \hat{p}_1 \hat{q}_1}{n_1} + \fr
 we get the following formula:
 
 \begin{center}
-\fbox{\parbox{14cm}{
+\fbox{\parbox{13cm}{
 \textbf{95\% Confidence Interval for $p_1 - p_2$}
 
 \begin{equation*}
@@ -120,7 +119,7 @@ The 95\% confidence interval for $p_1 - p_2$ is
 
 Thus, even allowing for 1.96 SE's of chance variability, the actual difference between proportions is at least 0.16 (and could be as large as 0.26).  This difference means that the interval does not contain or it excluded 0 from the range of possible values.  When this happens, statisticians say that the differences are \textit{statistically significant}.
 
-\fbox{\parbox{14cm}{
+\fbox{\parbox{13cm}{
 If the confidence interval for $\hat{p}_1 - \hat{p}_2$ excludes \textbf{zero}, then the difference is \textbf{statistically significant.}
 
 }}
@@ -207,7 +206,7 @@ The data given in the `Results' part of the abstract may be summarized as follow
  & \multicolumn{2}{c}{hepatitis E} \\
  & Yes & No & Total \\ \hline
  Vaccine & 3 & 895 & 898 \\
- Placbo  & 66 & 830 & 896 \\ \hline
+ Placebo  & 66 & 830 & 896 \\ \hline
  \end{tabular}
  \end{table}
 
@@ -287,7 +286,7 @@ ln(RR) = ln(0.045) = -3.101
 
 \item
 \begin{equation*}
-SE = \sqrt{ \frac{1}{3} + \frac{1}{66} - \frac{1}{898} - \frac{1}{896}} = \sqrt{0.3462} = 0.5884
+SE_{ln(RR)} = \sqrt{ \frac{1}{3} + \frac{1}{66} - \frac{1}{898} - \frac{1}{896}} = \sqrt{0.3462} = 0.5884
 \end{equation*}
 
 \item
@@ -387,7 +386,7 @@ We write the confidence interval formulas for odds ratios (OR) for the natural l
 The odds of disease occurrence in the exposed group is $\Big[ \frac{ \frac{a}{a + b}}{ \frac{b}{a + b}} \Big] = \frac{a}{b} $.  Similarly, the odds in the unexposed group is $\frac{c}{d}$.  Hence, the odds ratio of disease occurrence is
 
 \begin{equation*}
-  \texttt{OR} = \frac{\texttt{Odds(Disease|Exposed)}}{\texttt{Odds(Disease|Not Exposed)}} = \frac{a/b}{c/d} = \frac{p_1 / q_1}{p_2 / q_2} = \frac{ p_1 \times (1- p_2)}{ p_2 \times (1 - p_1)}
+  \texttt{OR} = \frac{\texttt{Odds(Disease|Exposed)}}{\texttt{Odds(Disease|Not Exposed)}} = \frac{a/b}{c/d} = \frac{p_1 / q_1}{p_2 / q_2} =\frac{p_1 \times q_2}{p_2 \times q_1}= \frac{ p_1 \times (1- p_2)}{ p_2 \times (1 - p_1)}
 \end{equation*}
 
 If $OR < 1$, we can put the `not exposed' group in the numerator, so that $OR > 1$  (the resulting odds ratio should, of course, be interpreted accordingly).  In our hepatitis example, we can use the following table:
@@ -397,7 +396,7 @@ If $OR < 1$, we can put the `not exposed' group in the numerator, so that $OR > 
 \begin{tabular}{@{} cccc @{}} \hline
  & \multicolumn{2}{c}{hepatitis E} \\
  & Yes & No & Total \\ \hline
- Placbo  & 66 & 830 & 896 \\
+ Placebo  & 66 & 830 & 896 \\
  Vaccine & 3 & 895 & 898 \\
   \hline
  \end{tabular}
@@ -411,7 +410,7 @@ and get $OR = ((66)(895))/((830)(3)) = 23.7$ (``Placebo group has 24 times the o
  & \multicolumn{2}{c}{hepatitis E} \\
  & Yes & No & Total \\ \hline
  Vaccine & 3 & 895 & 898 \\
- Placbo  & 66 & 830 & 896 \\
+ Placebo  & 66 & 830 & 896 \\
   \hline
  \end{tabular}
  \end{table}
@@ -482,7 +481,7 @@ so that
 
 \item
 \begin{equation*}
-  [ e^{2.004}, e^{4.326} ]
+  [ e^{2.004}, e^{4.326} ] = [ 7.419, 75.641]
 \end{equation*}
 \end{enumerate}
 
@@ -490,21 +489,20 @@ With 95\% confidence, the odds of unvaccinated subjects getting hepatitis is bet
 
 \section{Key Words}
 
-\fbox{\parbox{14cm}{
+\fbox{\parbox{13cm}{
 \begin{minipage}[ht]{6cm}
 
 \begin{itemize}
-\item $\alpha$ (Alpha)
-\item Bias
-\item Confidence interval
+\item p-value
+\item risk ratio
+\item odds
 \end{itemize}
 \end{minipage} \hfill
 \begin{minipage}[ht]{6cm}
 
 \begin{itemize}
-\item Confidence level
-\item Efficiency
-\item margin of error
+\item odds ratio
+\item confidence interval
 \end{itemize}
 \end{minipage}
 }}
@@ -529,7 +527,7 @@ Nonsmokers & 15 & 56 & 71 \\ \hline
 \end{table}
 
 \begin{enumerate}
-\item Estimate the difference in the percentage \\ of drug use between smokers and nonsmokers.
+\item Estimate the difference in the percentage of drug use between smokers and nonsmokers.
 \item Calculate a standard error for our estimate in (1).
 \item Calculate a 95\% confidence interval for the difference in the percentage of drug \\ use between smokers and nonsmokers.
 \item Estimate the risk ratio of drug use \\ between smokers and nonsmokers.
@@ -614,7 +612,7 @@ Nonsmoker & 351 & 254 \\ \hline
 The age at which a woman gives birth to her first child may be an \\ essential factor in the risk of later \\ developing breast cancer.  An international study conducted by WHO selected women \\ with at least one birth and recorded if they had breast cancer or not and whether they had their first child before their $30^{th}$ birthday or after. In a sample of 3220 women who had their first child after their $30^{th}$ birthday, 683 developed breast cancer.  Whereas, in a sample of 10245 women who had their first child before their $30^{th}$ birthday, 1483 developed breast cancer.
 
 	  \begin{enumerate}
-	  \item Estimate the difference in the percentage \\ of developing breast cancer between \\ women who had their first child after their $30^{th}$ birthday and before their $30^{th}$ birthday.
+	  \item Estimate the difference in the percentage of developing breast cancer between \\ women who had their first child after their $30^{th}$ birthday and before their $30^{th}$ birthday.
     \item Calculate a standard error for our \\ estimate in (1).
     \item Calculate a 95\% confidence interval for the difference in the percentage developing breast cancer between women who had their first child after their $30^{th}$ \\ birthday and before their $30^{th}$ birthday.
     \item Estimate the risk ratio of developing \\ breast cancer between women who had their first child after their $30^{th}$ \\ birthday and before their $30^{th}$ birthday.
@@ -661,9 +659,9 @@ In a sample of 200 surgeons, 15\% thought the government should control health c
   
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% new exercise
 
-  \begin{exercise} % 6
+  \begin{exercise} % 5
   
-A Pew Research Center poll asked randomly selected subjects if they \\ agreed with the statement that ``It is morally wrong for married people to have an affair.''  Among the 386 women surveyed, 347 agreed and among the 359 men, 305 agreed.  Use a 5 percent significance to test if the difference in significant? 
+A Pew Research Center poll asked randomly selected subjects if they \\ agreed with the statement that ``It is morally wrong for married people to have an affair.''  Among the 386 women surveyed, 347 agreed and among the 359 men, 305 agreed.  Use a 95\% confidence level if the difference in significant. 
     
   Given the computer output,  what should we conclude with 95 percent confidence \\ interval?
   
@@ -697,10 +695,7 @@ A Pew Research Center poll asked randomly selected subjects if they \\ agreed wi
 \item Estimate the odds ratio of those who thought that it is wrong for married people to have an affair.
 \end{enumerate}
 
-	  \vspace{2mm}
-    \framebox[5cm][l]{ Answer: }
 	\end{exercise}
-	\vspace{2mm}
 	\begin{solution}
 	
 	<<label=LBL9-2, results="asis", echo=FALSE>>=
@@ -730,19 +725,29 @@ A Pew Research Center poll asked randomly selected subjects if they \\ agreed wi
 	
   \begin{exercise} % 6
 
-      Suppose half of the public safety officers in Kalamazoo, Michigan, completed the investigative procedures Curriculum (IPC).  The other half did not attend the IPC.  Did the course increase their effectiveness in clearing crimes by arrest?  The following table reports the results of the survey:
+      Suppose half of the public safety officers in Kalamazoo, Michigan, completed the Investigative Procedures Curriculum (IPC).  The other half did not attend the IPC.  Did the course increase their effectiveness in clearing crimes by arrest?  The following table reports the results of the survey:
 
 \vspace{2mm}
 
-{\small{
-    \begin{tabular}{@{} lcc @{}} \hline % Column formatting, @{} suppresses leading/trailing space
-      & \multicolumn{2}{c}{Frequency Distribution} \\ \hline
-        & Trained (1) & Untrained (2)  \\ \hline
-       Cleared & 75 & 49  \\
-       Uncleared & 85 & 66  \\ \hline
-       Total     & 160 & 115  \\ \hline
-    \end{tabular}
-}}
+% {\small{
+%     \begin{tabular}{@{} lcc @{}} \hline % Column formatting, @{} suppresses leading/trailing space
+%       & \multicolumn{2}{c}{Frequency Distribution} \\ \hline
+%         & Cleared & Uncleared & Total\\ \hline
+%        Trained & 75 & 85 & 160  \\
+%        Untrained & 49 & 66 & 115  \\ \hline
+%     \end{tabular}
+% }}
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{@{} cccc @{}} \hline
+ & \multicolumn{2}{c}{Clearing Crimes} \\
+ & Cleared & Uncleared & Total \\ \hline
+Trained & 75 & 85 & 160 \\
+Untrained & 49 & 66 & 115 \\ \hline
+\end{tabular}
+\end{table}
+
 
 \begin{enumerate}
 \item Determine the difference in the percentage of those who completed the investigative procedures Curriculum (IPC)
@@ -756,8 +761,6 @@ A Pew Research Center poll asked randomly selected subjects if they \\ agreed wi
 \item Estimate the odds ratio of those who completed the investigative procedures Curriculum (IPC)
 \end{enumerate}
 
-	  \vspace{2mm}
-    \framebox[5cm][l]{ Answer: }
 	\end{exercise}
 % 	\vspace{2mm}
 % 	\begin{solution}

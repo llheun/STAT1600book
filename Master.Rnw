@@ -31,7 +31,7 @@
 \title{{\Huge{Discovery with Data}}}
 \subtitle{{\Large{Statistical Literacy and Critical Thinking \\ STAT 1600 -- Course Pack}}}
 \author{Statistics Computational Lab (SCL)}
-\date{2018 - 2019 Edition}  % Activate to display a given date or no date
+\date{2019 - 2020 Edition}  % Activate to display a given date or no date
 
 %\title{STAT 1600 \\ Statistics and Data Analysis }
 %\author{Department of Statistics \\ Western Michigan University}
@@ -40,6 +40,32 @@
 \makeindex
 
 \begin{document}
+%% \SweaveOpts{concordance=TRUE}
+
+<<label=setup, echo=FALSE, warning=FALSE, message=FALSE>>=
+#
+# Put all R "require" statements here (for the whole book)
+#
+library(knitr)
+library(foreign)
+library(xtable)
+library(ggplot2)
+library(ggpubr)
+lineWidth <- 6.1
+# ltwidth  <- 8.5
+# ltheight <- 11
+# These options apply to all R chunks in the entire book.
+opts_chunk$set(
+  # ***************************************
+  eval=TRUE, echo=FALSE, fig.show="hold", fig.align="center", fig.path="figure/", size="footnotesize", fig.width=4, fig.height=4, out.width="6cm", par=TRUE 
+  # ***************************************
+
+# opts_chunk$set(
+#   # ***************************************
+#   echo=FALSE, eval=TRUE, fig.align='center', fig.show='hold',size='footnotesize', fig.width=4, fig.height=4, out.width='8cm', par=TRUE, warning=FALSE, message=FALSE
+  # ***************************************
+)
+@
 
 \maketitle
 
@@ -49,11 +75,11 @@
 \begin{center} \textbf{Acknowledgements:}
 \end{center}
 
-Eunice Ampah, Srikanthmadhavan Aravamuthan, Joseph Billian, Magdalena Niewiadomska-Bugaj, PhD, Rudie Desravines, Mr. Loren L. Heun, Ian Kapenga, Carrie McKean, Carson Miller, and  Cody Weiss, assisted with  this material.
+Eunice Ampah, Srikanthmadhavan Aravamuthan, Joseph Billian, Magdalena Niewiadomska-Bugaj, PhD, Rudie Desravines, Mr. Loren L. Heun, Ian Kapenga, Carrie McKean, Carson Miller, Cody Weiss, Ronalyn Vitancol and Norman Vitancol assisted with  this material.
 
 \vspace{11cm}
 
-Copyright 2018 by The Department of Statistics at Western Michigan University.
+Copyright 2019 by The Department of Statistics at Western Michigan University.
 
 All rights reserved.
 
@@ -61,24 +87,7 @@ Reproductions or translation of any part of this work beyond that permitted by S
 
 A general introduction to statistics with an emphasis on data analysis and graphical presentation. Extensive use will be made of the computer to prepare results. Topics may include: data collection, sampling and experimentation, measurement issues, descriptive statistics, statistical graphics, normal distribution, cross-classified data, correlation and association, formal statistical inferences, and resampling methods.
 
-<<label=setup, echo=FALSE>>=
-#
-# Put all R "require" statements here (for the whole book)
-#
-library(knitr)
-library(foreign)
-library(xtable)
-library(ggplot2)
-lineWidth <- 6.1
-# ltwidth  <- 8.5
-# ltheight <- 11
-# These options apply to all R chunks in the entire book.
-opts_chunk$set(
-  # ***************************************
-  echo=FALSE, eval=TRUE, fig.align='center', fig.show='hold',size='footnotesize', fig.width=4.1, fig.height=4.2, out.width='8cm', par=FALSE
-  # ***************************************
-)
-@
+
 
 \overfullrule=1cm
 
@@ -122,19 +131,25 @@ opts_chunk$set(
 <<Ch12, child="chapters/Chapter_12/Chapter_12.Rnw",eval=TRUE>>=
 @
 
-<<Ch13, child="chapters/Chapter_13/Chapter_13.Rnw",eval=TRUE>>=
-@
+% <<Ch13, child="chapters/Chapter_13/Chapter_13.Rnw",eval=TRUE>>=
+% @
 
 <<Ch14, child="chapters/Chapter_14/Chapter_14.Rnw",eval=TRUE>>=
 @
 
-<<Ch15, child="chapters/Workshops/Workshop1.Rnw",eval=TRUE>>=
+<<Ch15, child="chapters/Chapter_15/Chapter_15.Rnw",eval=TRUE>>=
 @
 
-<<Ch16, child="chapters/Workshops/Workshop2.Rnw",eval=TRUE>>=
+<<Ch16, child="chapters/Chapter_16/Chapter_16.Rnw",eval=TRUE>>=
 @
 
-%<<Ch17, child="chapters/Appendix/Appendix.Rnw",eval=TRUE>>=
+<<Ch17, child="chapters/Workshops/Workshop1.Rnw",eval=TRUE>>=
+@
+
+<<Ch18, child="chapters/Workshops/Workshop2.Rnw",eval=TRUE>>=
+@
+
+%<<Ch19, child="chapters/Appendix/Appendix.Rnw",eval=TRUE>>=
 %@
 
 
