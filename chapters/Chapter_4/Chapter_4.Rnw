@@ -3,15 +3,15 @@
 \chapter{Threats to Valid Comparisons}
 \label{chap:ch4}
 
-\section{Objective}
+\section{Objectives}
 
 After completing this part, students should be able to:
 
 \fbox{\parbox{14cm}{
 
  \begin{enumerate}
- \item Know the difference between association and cause. 
- \item Understand how confounders can affect the results of a survey.
+ \item Know the difference between association and causation. 
+ \item Understand how confounders can affect the results of a study.
  	\end{enumerate}
  }}
 
@@ -109,19 +109,15 @@ instead of the (admittedly more sensational) relationship implied by the headlin
 \begin{minipage}[ht]{6cm}
 
 \begin{itemize}
-\item Association
-\item Cause
-% \item Confounders
-%\item Effect
+\item association
+\item cause
 \end{itemize}
 \end{minipage} \hfill
 \begin{minipage}[ht]{6cm}
 
 \begin{itemize}
-% \item Association
-% \item Cause
-\item Confounders
-\item Effect
+\item confounders
+\item effect
 \end{itemize}
 
 \end{minipage}
@@ -156,7 +152,7 @@ A study says, ``Slightly overweight people live longer than thin people.''
 
   \begin{exercise} % 2
 
-Generally, a study that appeared in the American Journal of Cardiology (March 15, 2003) found out that ``heart attack survivors who owned a dog had better heart function post-heart attack than those who did not own a dog.''
+A study that appeared in the American Journal of Cardiology (March 15, 2003) found out that generally, ``heart attack survivors who owned a dog had better heart function post-heart attack than those who did not own a dog.''
 
 \begin{enumerate}
   \item Does a dog help a heart heal faster?  \\ Can you think of possible confounders?

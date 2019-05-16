@@ -986,7 +986,7 @@ Mixed results were reported.  The authors summarized that violent video game pla
     \begin{exercise}  % 7a         %%%%%%%%%%%%%%%%%
 
     \begin{center}
-\begin{flushleft}\textbf{\large \hfill Workshop 6A, Submitted by: }\end{flushleft}
+\begin{flushleft}\textbf{\large \hfill Workshop 7A, Submitted by: }\end{flushleft}
 
 \fbox{\parbox{14cm}{
 \vspace{4mm}

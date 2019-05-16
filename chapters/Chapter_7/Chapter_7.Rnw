@@ -3,7 +3,7 @@
 \chapter{The Binomial Distribution}
 \label{chap:ch7}
 
-\section{Objective}
+\section{Objectives}
 
 After completing this part, students should be able to:
 
@@ -86,7 +86,7 @@ Remember that $0! = 1$ and $(0.2)^0 = 1$.  This formula is called the \textbf{bi
 \subsubsection{Example 3} (Cont.):  The retailer sold ten smart fitness and GPS watches in one day.  What is the probability that customers purchased three extended Geek Squad protection plans?  Using the equation above with $n = 10, p = 0.20$, and $j = 3$, we get
 
 \begin{equation*}
- P[ X = 3] = \frac{10!}{3! (10 - 3)!} .2^j .8^{10 - 3} = 0.201
+ P[ X = 3] = \frac{10!}{3! (10 - 3)!} .2^3 .8^{10 - 3} = 0.201
  \end{equation*}
 
 \begin{minipage}[ht]{3cm}
@@ -137,17 +137,17 @@ Suppose that 5\% of video games rented at Gamers Retro Rental incur a late renta
 
 \section{Computing Binomial Probabilities Using the Normal Curve}
 
-Beyond the empirical rule, we may apply the normal curve to approximating binomial probabilities.  The key image is a plot of binomial probabilities as a histogram.  For example, Figure 5.1 is a histogram of binomial probabilities for $n = 30$ and $p = 0.4$.
+Beyond the empirical rule, we may apply the normal curve to approximating binomial probabilities.  The key image is a plot of binomial probabilities as a histogram.  For example, Figure 7.1 is a histogram of binomial probabilities for $n = 30$ and $p = 0.4$.
 
-The height of the rectangle over, say 10, is its probability $P[X = 10$.  However, since the width of the square is 1, then
+The height of the rectangle over, say 10, is its probability $P[X = 10]$.  However, since the width of the rectangle is 1, then
 
 \begin{equation*}
 P[X = 10] = \texttt{ height of rectangle over 10 = area of rectangle over 10}
 \end{equation*}
 
-What about $P[X \le 10]$?  This probability corresponds to the total area of the rectangles over and the left of 10 (shaded rectangles in Figure 5.2)
+What about $P[X \le 10]$?  This probability corresponds to the total area of the rectangles over and the left of 10 (shaded rectangles in Figure 7.2)
 
-The total area equals 0.2915 using the binomial probability function to compute the area (probability) of each shaded rectangle.  However, this requires repeated applications of the binomial formula (11 times, in fact).  We may calculate a quick approximation of the desired probability by replacing the rectangles with a curve!  See shaded area under the curve in Figure 5.2.
+The total area equals 0.2915 using the binomial probability function to compute the area (probability) of each shaded rectangle.  However, this requires repeated applications of the binomial formula (11 times, in fact).  We may calculate a quick approximation of the desired probability by replacing the rectangles with a curve!  See shaded area under the curve in Figure 7.2.
 
 There are infinitely many normal curves, which one do we use to replace the rectangles?  Answer: the one with the same mean and SD as the rectangles!  The (binomial) rectangles have a \textbf{mean}:
 
@@ -167,9 +167,19 @@ Similarly, $P[X = 14] = 0.1101$ is approximated by 0.1115, the area under the no
 
 \begin{figure}[ht]
 \caption{Histogram of Probabilities for Binomial n = 30 and p = 0.4}
-<<label=LBL7b, results="asis", echo=FALSE, out.width="11cm">>=
-  dt1 <- rbinom(n=1000, size=30, p=0.40)
-  hist(dt1, freq = FALSE, xlab="X", main="Histogram of Probabilities")
+<<label=LBL7b, results="asis", echo=FALSE, out.width="14cm", out.height="8cm">>=
+  dataset<-rnorm(n=1000000, mean=12, sd=sqrt(30*.4*.6))
+  dataset <- data.frame(X=dataset)
+  
+  hist1<-ggplot(dataset,aes(x=X)) +
+    geom_histogram(binwidth=1,fill="white",color="black") +
+    geom_histogram(data=subset(dataset,X>9.5&X<10.5),binwidth=1, 
+                 color="black", fill="skyblue")+ labs(y=NULL) +
+    theme_bw() + 
+    scale_y_continuous(breaks=NULL, name=NULL) + scale_x_continuous(breaks=seq(1,20,1)) +
+    theme(panel.border=(element_blank()))
+  
+  hist1
 @
 \end{figure}
 
@@ -177,26 +187,42 @@ Similarly, $P[X = 14] = 0.1101$ is approximated by 0.1115, the area under the no
 \begin{figure}[ht]
 \caption{Approximating $P[X \le 10]$ using Curve instead of Rectangles}
 
-<<label=LBL7c, results="asis", echo=FALSE, out.width="11cm">>=
-  dt1 <- rbinom(n=1000, size=30, p=0.40)
-  hist(dt1, freq = FALSE, main="Probability of Demand No More than 10", xlab="X")
-  xv <- seq(1.28, 23, by=0.1)
-  yv <- dnorm(xv, mean=12, sd=2.68)
-  lines(xv, yv)
-  polygon(c(xv[xv<10.5], 10.5), c(dnorm(c(xv[xv<10.5], 1e-4), mean=12,sd=2.68)),col="yellow")
+<<label=LBL7c, results="asis", echo=FALSE, out.width="14cm", out.height="8cm">>=
+  hist1<-ggplot(dataset,aes(x=X)) +
+        geom_histogram(binwidth=1,fill="white",color="black") +
+        geom_histogram(data=subset(dataset,X<10.5),binwidth=1, 
+                 color="black", fill="skyblue")+ labs(y=NULL) + theme_bw() + 
+        scale_y_continuous(breaks=NULL) + theme(panel.border=(element_blank()))
+
+  density1<-ggplot(dataset,aes(x=X)) + geom_density(fill="white",color="black")+theme_bw() + 
+          labs(y=NULL) + scale_y_continuous(breaks=NULL) + scale_x_continuous(breaks=c(0,5,10.5,15,20)) +
+          theme(panel.border=(element_blank()))
+  
+  d <- ggplot_build(density1)$data[[1]]
+  density1 <- density1 + geom_area(data = subset(d, x < 10.5), aes(x=x, y=y), fill="skyblue")
+                                                                     
+  ggarrange(hist1, density1, ncol = 2, nrow = 1)
 @
 
 \end{figure}
 
 \section{Some Approximations Are Better Than Others}
 
-Examine the shape of the binomial histogram for n = 20 and p = 0.10 in Figure 5.3.
+Examine the shape of the binomial histogram for n = 20 and p = 0.10 in Figure 7.3.
 
 \begin{figure}[ht]
 \caption{Histogram of Probabilities for Binomial n = 20 and p = 0.10}
 <<label=LBL7d, results="asis", echo=FALSE, out.width="11cm">>=
-  dt1 <- rbinom(n=1000, size=20, p=0.10)
-  hist(dt1, freq = FALSE, xlab="X", main="Histogram of Probabilities")
+  dataset<-rbinom(n=100000, size=20, prob=0.1)
+  dataset <- data.frame(X=dataset)
+  
+  hist1<-ggplot(dataset,aes(x=X)) +
+    geom_histogram(binwidth=1,fill="white",color="black") +
+    theme_bw() + 
+    scale_y_continuous(breaks=NULL, name=NULL) + scale_x_continuous(breaks=seq(1,20,1)) +
+    theme(panel.border=(element_blank()))
+  
+  hist1
 @
 \end{figure}
 
@@ -211,19 +237,19 @@ We remind the reader that the normal curve approximations are still approximatio
 \section{Key Words}
 
 \fbox{\parbox{14cm}{
-\begin{minipage}[ht]{6cm}
+%\begin{minipage}[ht]{6cm}
 \begin{itemize}
 \item binomial distribution
 \item binomial experiment
 \item binomial random variable
 \end{itemize}
-\end{minipage} \hfill
-\begin{minipage}[ht]{6cm}
-\begin{itemize}
-\item binomial tables
-\item discrete random variables
-\end{itemize}
-\end{minipage}
+%\end{minipage} \hfill
+% \begin{minipage}[ht]{6cm}
+% \begin{itemize}
+% \item binomial tables
+% \item discrete random variables
+% \end{itemize}
+% \end{minipage}
 }}
 
 

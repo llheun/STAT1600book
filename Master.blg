@@ -1,0 +1,10 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: Master.aux
+The style file: plainnat.bst
+Database file #1: chapters/mybibliography.bib
+Warning--entry type for "goldin2010" isn't style-file defined
+--line 23 of file chapters/mybibliography.bib
+Warning--entry type for "naranjo2018" isn't style-file defined
+--line 114 of file chapters/mybibliography.bib
+Warning--empty year in naranjo2018
+Warning--can't use both author and editor fields in sullivan2013
+(There were 4 warnings)
