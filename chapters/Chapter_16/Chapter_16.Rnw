@@ -1,7 +1,7 @@
 %!Rnw root = ../../Master.Rnw
 
 \chapter{Linear Regression}
-\label{chap:ch14}
+\label{chap:ch16}
 
 \section{Objectives}
 

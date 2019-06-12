@@ -2,7 +2,7 @@
 
 \chapter{More Comparing of Two Proportions} 
 
-\label{chap:ch16}
+\label{chap:ch10}
 
 \section{Objective}
 
@@ -11,7 +11,7 @@ After completing this part, we should be able to:
 \vspace{1mm}
 
 % \colorbox{yellow}
-{\parbox{13cm}{
+{\parbox{14cm}{
 
 \begin{itemize}
 \item Set-up the hypotheses testing for proportions
@@ -19,7 +19,7 @@ After completing this part, we should be able to:
 \item Articulate the conclusions to a broader audience. 
 % \item
 \end{itemize}
- }
+ }}
 
 \section{Example 1}
 

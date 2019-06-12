@@ -7,7 +7,7 @@
 
 After completing this part, students should be able to:
 
-\fbox{\parbox{13cm}{
+\fbox{\parbox{14cm}{
 \begin{itemize}
 \item Estimate the difference between independent proportions.
 \item Calculate and interpret confidence interval of the difference between proportions.
@@ -169,323 +169,323 @@ If the $p$-value $\le 0.01$, the difference is called \textit{highly significant
 In the occupation example, we can say that the percentage of women head chefs
 is lower than that of regular cooks.  Furthermore, the difference is highly significant.
 
-\subsection{Risk ratio and odds ratio}   %%%%%%%%%%%%%%
-
- In clinical studies, statisticians frequently take ratios of proportions or probabilities (instead of differences).  There are several reasons for this idea.  Sometimes, the disease or medical event of interest is quite rare, i.e., $p_1 = 0.0008$.  If a new treatment reduces the probability of getting the disease to 0.0006, the difference in probabilities is quite small and hard to assess $((p_1 - p_2) = 0.0002)$.  In the meantime, the ratio $ \frac{p_2}{p_1} = \frac{0.0006}{0.0008} = 0.75 $ means that the risk of getting the disease under the new treatment has been reduced by 25\%.
-
-A technical reason for using ratios is that a ratio can control for other variables such as age and race. 
-
-\subsection{Risk ratio}
-
-Following is the abstract of the study ``Safety and Efficacy of a Recombinant Hepatitis E Vaccine.''  % \citep{shrestha2007}
-
-\subsubsection{Background}
-
-Hepatitis E virus (HEV) is a significant cause of viral hepatitis.  We evaluated
-the safety and efficacy of an HEV recombinant protein (rHEV) vaccine in a phase
-2, randomized, double-blind, placebo-controlled trial.
-
-\subsubsection{Methods}
-
-In Nepal, we studied 2000 healthy adults susceptible to HEV infection who were randomly assigned to receive three doses of either the rHEV vaccine or placebo at months 0, 1, and 6. Active (including hospital) surveillance was used to identify acute hepatitis and adverse events. The primary endpoint was the development of hepatitis E after three vaccine doses.
-
-\subsubsection{Results}
-
-A total of 1794 subjects (898 in the vaccine group and 896 in the placebo group) received three vaccine doses; researchers followed the total vaccinated cohort for a median of 804 days.  After three vaccine doses, hepatitis E developed in 69 subjects, of whom 66 were in the placebo group.  The vaccine efficacy was 95.5\% (95\% confidence interval [CI], 85.6 to 98.6).  In an intention-to-treat analysis that included all 87 subjects in whom hepatitis E developed after the first vaccine dose, nine subjects were in the vaccine group, with a vaccine efficacy of 88.5\% (95\% CI, 77.1 to 94.2).  Among subjects in a sub-group randomly selected for analysis of injection-site findings and general symptoms (reactogenicity sub-group) during the 8-day period after the administration of any dose, the proportion of subjects with adverse events was similar in the two study groups, except that injection-site pain was increased in the vaccine group ($p = 0.03$).
-
-\subsubsection{Conclusion}
-
-In a high-risk population, the rHEV vaccine was effective in the prevention of
-hepatitis E.
-
-The data given in the `Results' part of the abstract may be summarized as follows.
-
-\begin{table}[ht]
-\centering
-\begin{tabular}{@{} cccc @{}} \hline
- & \multicolumn{2}{c}{hepatitis E} \\
- & Yes & No & Total \\ \hline
- Vaccine & 3 & 895 & 898 \\
- Placebo  & 66 & 830 & 896 \\ \hline
- \end{tabular}
- \end{table}
-
-We may present data for comparing proportions in a 2 by 2 table.
-
-\begin{table}[ht]
-\centering
-\begin{tabular}{@{} cccc @{}} \hline
- & \multicolumn{2}{c}{Disease} \\
- & Yes & No & Total \\ \hline
- Exposure & a & b & $a + b$ \\
- No Exposure  & c & d & $c + d$ \\ \hline
- \end{tabular}
- \end{table}
-
-The risk ratio also called the relative risk is the ratio of probabilities
-
-\begin{equation*}
-  RR = \frac{ \frac{P(Disease)}{Exposure}}{ \frac{P(Disease)}{No Exposure} } = \frac{ \frac{a}{a + b}}{ \frac{c}{c + d} } = \frac{p_1}{p_2}
-\end{equation*}
-
-For our example, we can define and calculate the risk ratio as
-
-\begin{equation*}
-  RR = \frac{ \frac{P(Disease)}{Exposure}}{ \frac{P(Disease)}{No Exposure} } = \frac{ \frac{3}{898}}{ \frac{66}{896} } = \frac{0.00334}{0.07366} = 0.045
-\end{equation*}
-
-It means that getting the vaccine reduces our risk to only 4.5\% of the original, or has 95.5\% efficacy.
-
-\subsection{A 95\% confidence interval for risk ratio}
-
-We write the confidence interval formulas for the natural logarithm of RR.  Consider a 2 by 2 table as before.
-
-\begin{table}[ht]
-\centering
-\begin{tabular}{@{} cccc @{}} \hline
- & \multicolumn{2}{c}{Disease} \\
- & Yes & No & Total \\ \hline
- Exposure & a & b & $a + b$ \\
- No Exposure  & c & d & $c + d$ \\ \hline
- \end{tabular}
- \end{table}
-
-We will calculate the confidence interval for RR in 4 steps.
-
-\begin{enumerate}
-\item Calculate the \textbf{natural log (ln)} of the risk ratio:
-$$ ln(RR) = ln \left( \frac{ \frac{a}{a + b}}{ \frac{c}{c + d} } \right) $$
-
-\item Calculate the standard error of ln(RR) as follows:
-
-\begin{equation*}
-   SE_{ln(RR)} = \sqrt{ \frac{1}{a} + \frac{1}{c} - \frac{1}{a + b} - \frac{1}{c + d}}
-\end{equation*}
-
-\item A 95\% confidence interval for ln(RR) is given by
-
-\begin{equation*}
-  [ ln(RR) - 1.96 (SE), ln(RR) + 1.96 (SE) ]
-\end{equation*}
-
-\item Finally, a 95\% confidence interval for RR is given by
-
-\begin{equation*}
-  \Big[ e^{ln(RR) - 1.96 (SE)}, e^{ln(RR) + 1.96 (SE)} \Big]
-\end{equation*}
-
-\end{enumerate}
-
-Returning to our example,
-
-\begin{enumerate}
-\item
-\begin{equation*}
-ln(RR) = ln(0.045) = -3.101
-\end{equation*}
-
-\item
-\begin{equation*}
-SE_{ln(RR)} = \sqrt{ \frac{1}{3} + \frac{1}{66} - \frac{1}{898} - \frac{1}{896}} = \sqrt{0.3462} = 0.5884
-\end{equation*}
-
-\item
-\begin{equation*}
- [ -3.101 - 1.96(0.5884), -3.101 + 1.96(0.5884) ] = [ -4.254, 1.948]
-\end{equation*}
-
-\item
-\begin{equation*}
-  \Big[ e^{-4.254}, e^{-1.948} \Big] = [ 0.014, 0.143 ]
-\end{equation*}
-
-\end{enumerate}
-
-With 95\% confidence, the risk of getting hepatitis with the vaccine is only 1.4\% to 14.3\% of placebo.  It means that the vaccine reduces our risk by as low as 85.7\% or as high as 98.6\%.  Now read the Results section of the abstract again.  They say ``The vaccine efficacy was 95.5\% (95\% confidence interval [CI], 85.6 to 98.6).''  The two sets of the numbers match, (slight discrepancy due to rounding error.)
-
-\subsection{Odds ratio}
-
-The odds of an event occurring is
-
-\begin{equation*}
-  Odds = \frac{ \texttt{Probability that event occurs}}{\texttt{Probability that event doesn't occur}} = \frac{p}{q}
-\end{equation*}
-
-For example, if you win a game a 20\% of the time ($p = 0.20$), then our odds of winning is $( \frac{0.20}{0.80}) = \frac{1}{4}$.  We say that we have a \textit{1-in-4} odds of winning, or we win once for every four times we lose.  If we win 80\% of the time, the odds are $\frac{0.80}{0.20} = 4$. It means we have \textit{4-in-1} odds of winning, or we win four times for every one time we lose.  Here is a table of odds corresponding to various probabilities.
-
-\begin{table}[ht]
-\centering
-\begin{tabular}{@{} cc @{}} \hline
-Probability & Odds \\ \hline
-0.10 & 1/9 = 0.11 \\
-0.20 & 1/4 = 0.25 \\
-0.50 & 1/1 = 1.00 \\
-0.80 & 4/1 = 4.00 \\
-0.90 & 9/1 = 9.00 \\ \hline
-\end{tabular}
-\end{table}
-
-Unlike probabilities, odds can be greater than 1.  The odds ratio is just the ratio of two odds (usually for comparing two groups).
-
-\begin{equation*}
-  Odds Ratio = \frac{ \texttt{Odds of Group 1}}{\texttt{Odds of Group 2}} = \frac{ \frac{p_1}{q_1}}{ \frac{p_2}{q_2}}
-\end{equation*}
-
-Returning to the hepatitis E study, recall the disease occurrence data:
-
-\begin{table}[ht]
-\centering
-\begin{tabular}{@{} cccc @{}} \hline
- & \multicolumn{2}{c}{hepatitis E} \\
- & Yes & No & Total \\ \hline
- Vaccine & 3 & 895 & 898 \\
- Placbo  & 66 & 830 & 896 \\ \hline
- \end{tabular}
- \end{table}
-
-The disease rate for each group is
-
-\begin{equation*}
-  \texttt{Odds(Hepatitis|Placebo)} = \frac{0.07366}{(1 - 0.07366)} = 0.07952
-\end{equation*}
-
-\begin{equation*}
-  \texttt{Odds(Hepatitis|Vaccine)} = \frac{0.00334}{(1 - 0.00334)} = 0.00335
-\end{equation*}
-
-\begin{equation*}
-  \texttt{Odds Ratio} = \frac{\texttt{Odds(Hepatitis|Placebo)}}{\texttt{Odds(Hepatitis|Vaccine)}} = \frac{0.07952}{0.00335} = 23.7
-\end{equation*}
-
-We say that ``the odds of getting hepatitis is 24 times greater if we remain unvaccinated.''
-
-Odds ratios are generally easier to interpret if they are more significant than one.  We can always ensure this by choosing which group to put in the numerator, i.e., the one with more substantial odds.
-
-It is essential to understand that the odds ratio is not a ratio of likelihood or probabilities.  If the disease rates for men and women are 0.80 and 0.40, respectively, then the odds ratio is
-
-\begin{equation*}
-   \frac{ \frac{0.80}{0.20}}{ \frac{0.40}{0.60}} = 6.00
-\end{equation*}
-
-In this example, men are twice as likely to get the disease but have six times the odds.
-
-\subsection{A 95\% confidence interval for odds ratio}
-
-We write the confidence interval formulas for odds ratios (OR) for the natural logarithm, similarly to risk ratios.  Consider a 2 by 2 table as before.
-
-\begin{table}[ht]
-\centering
-\begin{tabular}{@{} cccc @{}} \hline
- & \multicolumn{2}{c}{Disease} \\
- & Yes & No & Total \\ \hline
- Exposure & a & b & $a + b$ \\
- No Exposure  & c & d & $c + d$ \\ \hline
- \end{tabular}
- \end{table}
-
-The odds of disease occurrence in the exposed group is $\Big[ \frac{ \frac{a}{a + b}}{ \frac{b}{a + b}} \Big] = \frac{a}{b} $.  Similarly, the odds in the unexposed group is $\frac{c}{d}$.  Hence, the odds ratio of disease occurrence is
-
-\begin{equation*}
-  \texttt{OR} = \frac{\texttt{Odds(Disease|Exposed)}}{\texttt{Odds(Disease|Not Exposed)}} = \frac{a/b}{c/d} = \frac{p_1 / q_1}{p_2 / q_2} =\frac{p_1 \times q_2}{p_2 \times q_1}= \frac{ p_1 \times (1- p_2)}{ p_2 \times (1 - p_1)}
-\end{equation*}
-
-If $OR < 1$, we can put the `not exposed' group in the numerator, so that $OR > 1$  (the resulting odds ratio should, of course, be interpreted accordingly).  In our hepatitis example, we can use the following table:
-
-\begin{table}[ht]
-\centering
-\begin{tabular}{@{} cccc @{}} \hline
- & \multicolumn{2}{c}{hepatitis E} \\
- & Yes & No & Total \\ \hline
- Placebo  & 66 & 830 & 896 \\
- Vaccine & 3 & 895 & 898 \\
-  \hline
- \end{tabular}
- \end{table}
-
-and get $OR = ((66)(895))/((830)(3)) = 23.7$ (``Placebo group has 24 times the odds of getting hepatitis''). If we use
-
-\begin{table}[ht]
-\centering
-\begin{tabular}{@{} cccc @{}} \hline
- & \multicolumn{2}{c}{hepatitis E} \\
- & Yes & No & Total \\ \hline
- Vaccine & 3 & 895 & 898 \\
- Placebo  & 66 & 830 & 896 \\
-  \hline
- \end{tabular}
- \end{table}
-
-then $OR = (3)(830)/(66)(895) = 0.04$ (``Vaccine group has 0.04 times the odds of getting hepatitis'').
-
-In either case, we will calculate the confidence interval for odds ratio in 4 steps.
-
-\begin{enumerate}
-\item Calculate the natural log of the odds ratio:
-\begin{equation*}
-  ln(OR) = ln \Big( \frac{a \times d}{b \times c} \Big)
-\end{equation*}
-
-\item	Calculate the standard error of ln(OR) as follows:
-\begin{equation*}
-  SE_{ln(OR)} = \sqrt{ \Big( \frac{1}{a} + \frac{1}{b} + \frac{1}{c} + \frac{1}{d} \Big)}
-\end{equation*}
-
-\item A 95\% confidence interval for ln(OR) is given by
-\begin{equation*}
-  [ ln(OR) - 1.96(SE), ln(OR) + 1.96(SE)]
-\end{equation*}
-
-\item Finally, a 95\% confidence interval for OR is given by
-\begin{equation*}
-   e^{ln(OR) - 1.96(SE)}, e^{ln(OR) + 1.96(SE)}
-\end{equation*}
-
-\end{enumerate}
-
-Returning to the hepatitis E study, recall the disease occurrence data:
-
-\begin{table}[ht]
-\centering
-\begin{tabular}{@{} cccc @{}} \hline
- & \multicolumn{2}{c}{hepatitis E} \\
- & Yes & No & Total \\ \hline
- Placbo  & 66 & 830 & 896 \\
- Vaccine & 3 & 895 & 898 \\
-  \hline
- \end{tabular}
- \end{table}
-
-The odds ratio of getting hepatitis is
-
-\begin{equation*}
-  \texttt{Odds Ratio} = \frac{\texttt{Odds(Hepatitis|Placebo)}}{\texttt{Odds(Hepatitis|Vaccine)}} = \frac{66 \times 895}{3 \times 830} = 23.7
-\end{equation*}
-
-so that
-
-\begin{enumerate}
-\item
-\begin{equation*}
-  ln(OR) = ln(23.7) = 3.165
-\end{equation*}
-
-\item
-\begin{equation*}
-  SE_{ln(OR)} = \sqrt{ \frac{1}{66} + \frac{1}{830} + \frac{1}{3} + \frac{1}{895}   } = \sqrt{0.3508} = 0.5923
-\end{equation*}
-
-\item
-\begin{equation*}
- [3.165-1.96 (0.5923), 3.165+1.96 (.5923)] = [2.004, 4.326]
-\end{equation*}
-
-\item
-\begin{equation*}
-  [ e^{2.004}, e^{4.326} ] = [ 7.419, 75.641]
-\end{equation*}
-\end{enumerate}
-
-With 95\% confidence, the odds of unvaccinated subjects getting hepatitis is between 7 and 76 times greater than vaccinated subjects.
+% \subsection{Risk ratio and odds ratio}   %%%%%%%%%%%%%%
+% 
+%  In clinical studies, statisticians frequently take ratios of proportions or probabilities (instead of differences).  There are several reasons for this idea.  Sometimes, the disease or medical event of interest is quite rare, i.e., $p_1 = 0.0008$.  If a new treatment reduces the probability of getting the disease to 0.0006, the difference in probabilities is quite small and hard to assess $((p_1 - p_2) = 0.0002)$.  In the meantime, the ratio $ \frac{p_2}{p_1} = \frac{0.0006}{0.0008} = 0.75 $ means that the risk of getting the disease under the new treatment has been reduced by 25\%.
+% 
+% A technical reason for using ratios is that a ratio can control for other variables such as age and race. 
+% 
+% \subsection{Risk ratio}
+% 
+% Following is the abstract of the study ``Safety and Efficacy of a Recombinant Hepatitis E Vaccine.''  % \citep{shrestha2007}
+% 
+% \subsubsection{Background}
+% 
+% Hepatitis E virus (HEV) is a significant cause of viral hepatitis.  We evaluated
+% the safety and efficacy of an HEV recombinant protein (rHEV) vaccine in a phase
+% 2, randomized, double-blind, placebo-controlled trial.
+% 
+% \subsubsection{Methods}
+% 
+% In Nepal, we studied 2000 healthy adults susceptible to HEV infection who were randomly assigned to receive three doses of either the rHEV vaccine or placebo at months 0, 1, and 6. Active (including hospital) surveillance was used to identify acute hepatitis and adverse events. The primary endpoint was the development of hepatitis E after three vaccine doses.
+% 
+% \subsubsection{Results}
+% 
+% A total of 1794 subjects (898 in the vaccine group and 896 in the placebo group) received three vaccine doses; researchers followed the total vaccinated cohort for a median of 804 days.  After three vaccine doses, hepatitis E developed in 69 subjects, of whom 66 were in the placebo group.  The vaccine efficacy was 95.5\% (95\% confidence interval [CI], 85.6 to 98.6).  In an intention-to-treat analysis that included all 87 subjects in whom hepatitis E developed after the first vaccine dose, nine subjects were in the vaccine group, with a vaccine efficacy of 88.5\% (95\% CI, 77.1 to 94.2).  Among subjects in a sub-group randomly selected for analysis of injection-site findings and general symptoms (reactogenicity sub-group) during the 8-day period after the administration of any dose, the proportion of subjects with adverse events was similar in the two study groups, except that injection-site pain was increased in the vaccine group ($p = 0.03$).
+% 
+% \subsubsection{Conclusion}
+% 
+% In a high-risk population, the rHEV vaccine was effective in the prevention of
+% hepatitis E.
+% 
+% The data given in the `Results' part of the abstract may be summarized as follows.
+% 
+% \begin{table}[ht]
+% \centering
+% \begin{tabular}{@{} cccc @{}} \hline
+%  & \multicolumn{2}{c}{hepatitis E} \\
+%  & Yes & No & Total \\ \hline
+%  Vaccine & 3 & 895 & 898 \\
+%  Placebo  & 66 & 830 & 896 \\ \hline
+%  \end{tabular}
+%  \end{table}
+% 
+% We may present data for comparing proportions in a 2 by 2 table.
+% 
+% \begin{table}[ht]
+% \centering
+% \begin{tabular}{@{} cccc @{}} \hline
+%  & \multicolumn{2}{c}{Disease} \\
+%  & Yes & No & Total \\ \hline
+%  Exposure & a & b & $a + b$ \\
+%  No Exposure  & c & d & $c + d$ \\ \hline
+%  \end{tabular}
+%  \end{table}
+% 
+% The risk ratio also called the relative risk is the ratio of probabilities
+% 
+% \begin{equation*}
+%   RR = \frac{ \frac{P(Disease)}{Exposure}}{ \frac{P(Disease)}{No Exposure} } = \frac{ \frac{a}{a + b}}{ \frac{c}{c + d} } = \frac{p_1}{p_2}
+% \end{equation*}
+% 
+% For our example, we can define and calculate the risk ratio as
+% 
+% \begin{equation*}
+%   RR = \frac{ \frac{P(Disease)}{Exposure}}{ \frac{P(Disease)}{No Exposure} } = \frac{ \frac{3}{898}}{ \frac{66}{896} } = \frac{0.00334}{0.07366} = 0.045
+% \end{equation*}
+% 
+% It means that getting the vaccine reduces our risk to only 4.5\% of the original, or has 95.5\% efficacy.
+% 
+% \subsection{A 95\% confidence interval for risk ratio}
+% 
+% We write the confidence interval formulas for the natural logarithm of RR.  Consider a 2 by 2 table as before.
+% 
+% \begin{table}[ht]
+% \centering
+% \begin{tabular}{@{} cccc @{}} \hline
+%  & \multicolumn{2}{c}{Disease} \\
+%  & Yes & No & Total \\ \hline
+%  Exposure & a & b & $a + b$ \\
+%  No Exposure  & c & d & $c + d$ \\ \hline
+%  \end{tabular}
+%  \end{table}
+% 
+% We will calculate the confidence interval for RR in 4 steps.
+% 
+% \begin{enumerate}
+% \item Calculate the \textbf{natural log (ln)} of the risk ratio:
+% $$ ln(RR) = ln \left( \frac{ \frac{a}{a + b}}{ \frac{c}{c + d} } \right) $$
+% 
+% \item Calculate the standard error of ln(RR) as follows:
+% 
+% \begin{equation*}
+%    SE_{ln(RR)} = \sqrt{ \frac{1}{a} + \frac{1}{c} - \frac{1}{a + b} - \frac{1}{c + d}}
+% \end{equation*}
+% 
+% \item A 95\% confidence interval for ln(RR) is given by
+% 
+% \begin{equation*}
+%   [ ln(RR) - 1.96 (SE), ln(RR) + 1.96 (SE) ]
+% \end{equation*}
+% 
+% \item Finally, a 95\% confidence interval for RR is given by
+% 
+% \begin{equation*}
+%   \Big[ e^{ln(RR) - 1.96 (SE)}, e^{ln(RR) + 1.96 (SE)} \Big]
+% \end{equation*}
+% 
+% \end{enumerate}
+% 
+% Returning to our example,
+% 
+% \begin{enumerate}
+% \item
+% \begin{equation*}
+% ln(RR) = ln(0.045) = -3.101
+% \end{equation*}
+% 
+% \item
+% \begin{equation*}
+% SE_{ln(RR)} = \sqrt{ \frac{1}{3} + \frac{1}{66} - \frac{1}{898} - \frac{1}{896}} = \sqrt{0.3462} = 0.5884
+% \end{equation*}
+% 
+% \item
+% \begin{equation*}
+%  [ -3.101 - 1.96(0.5884), -3.101 + 1.96(0.5884) ] = [ -4.254, 1.948]
+% \end{equation*}
+% 
+% \item
+% \begin{equation*}
+%   \Big[ e^{-4.254}, e^{-1.948} \Big] = [ 0.014, 0.143 ]
+% \end{equation*}
+% 
+% \end{enumerate}
+% 
+% With 95\% confidence, the risk of getting hepatitis with the vaccine is only 1.4\% to 14.3\% of placebo.  It means that the vaccine reduces our risk by as low as 85.7\% or as high as 98.6\%.  Now read the Results section of the abstract again.  They say ``The vaccine efficacy was 95.5\% (95\% confidence interval [CI], 85.6 to 98.6).''  The two sets of the numbers match, (slight discrepancy due to rounding error.)
+% 
+% \subsection{Odds ratio}
+% 
+% The odds of an event occurring is
+% 
+% \begin{equation*}
+%   Odds = \frac{ \texttt{Probability that event occurs}}{\texttt{Probability that event doesn't occur}} = \frac{p}{q}
+% \end{equation*}
+% 
+% For example, if you win a game a 20\% of the time ($p = 0.20$), then our odds of winning is $( \frac{0.20}{0.80}) = \frac{1}{4}$.  We say that we have a \textit{1-in-4} odds of winning, or we win once for every four times we lose.  If we win 80\% of the time, the odds are $\frac{0.80}{0.20} = 4$. It means we have \textit{4-in-1} odds of winning, or we win four times for every one time we lose.  Here is a table of odds corresponding to various probabilities.
+% 
+% \begin{table}[ht]
+% \centering
+% \begin{tabular}{@{} cc @{}} \hline
+% Probability & Odds \\ \hline
+% 0.10 & 1/9 = 0.11 \\
+% 0.20 & 1/4 = 0.25 \\
+% 0.50 & 1/1 = 1.00 \\
+% 0.80 & 4/1 = 4.00 \\
+% 0.90 & 9/1 = 9.00 \\ \hline
+% \end{tabular}
+% \end{table}
+% 
+% Unlike probabilities, odds can be greater than 1.  The odds ratio is just the ratio of two odds (usually for comparing two groups).
+% 
+% \begin{equation*}
+%   Odds Ratio = \frac{ \texttt{Odds of Group 1}}{\texttt{Odds of Group 2}} = \frac{ \frac{p_1}{q_1}}{ \frac{p_2}{q_2}}
+% \end{equation*}
+% 
+% Returning to the hepatitis E study, recall the disease occurrence data:
+% 
+% \begin{table}[ht]
+% \centering
+% \begin{tabular}{@{} cccc @{}} \hline
+%  & \multicolumn{2}{c}{hepatitis E} \\
+%  & Yes & No & Total \\ \hline
+%  Vaccine & 3 & 895 & 898 \\
+%  Placbo  & 66 & 830 & 896 \\ \hline
+%  \end{tabular}
+%  \end{table}
+% 
+% The disease rate for each group is
+% 
+% \begin{equation*}
+%   \texttt{Odds(Hepatitis|Placebo)} = \frac{0.07366}{(1 - 0.07366)} = 0.07952
+% \end{equation*}
+% 
+% \begin{equation*}
+%   \texttt{Odds(Hepatitis|Vaccine)} = \frac{0.00334}{(1 - 0.00334)} = 0.00335
+% \end{equation*}
+% 
+% \begin{equation*}
+%   \texttt{Odds Ratio} = \frac{\texttt{Odds(Hepatitis|Placebo)}}{\texttt{Odds(Hepatitis|Vaccine)}} = \frac{0.07952}{0.00335} = 23.7
+% \end{equation*}
+% 
+% We say that ``the odds of getting hepatitis is 24 times greater if we remain unvaccinated.''
+% 
+% Odds ratios are generally easier to interpret if they are more significant than one.  We can always ensure this by choosing which group to put in the numerator, i.e., the one with more substantial odds.
+% 
+% It is essential to understand that the odds ratio is not a ratio of likelihood or probabilities.  If the disease rates for men and women are 0.80 and 0.40, respectively, then the odds ratio is
+% 
+% \begin{equation*}
+%    \frac{ \frac{0.80}{0.20}}{ \frac{0.40}{0.60}} = 6.00
+% \end{equation*}
+% 
+% In this example, men are twice as likely to get the disease but have six times the odds.
+% 
+% \subsection{A 95\% confidence interval for odds ratio}
+% 
+% We write the confidence interval formulas for odds ratios (OR) for the natural logarithm, similarly to risk ratios.  Consider a 2 by 2 table as before.
+% 
+% \begin{table}[ht]
+% \centering
+% \begin{tabular}{@{} cccc @{}} \hline
+%  & \multicolumn{2}{c}{Disease} \\
+%  & Yes & No & Total \\ \hline
+%  Exposure & a & b & $a + b$ \\
+%  No Exposure  & c & d & $c + d$ \\ \hline
+%  \end{tabular}
+%  \end{table}
+% 
+% The odds of disease occurrence in the exposed group is $\Big[ \frac{ \frac{a}{a + b}}{ \frac{b}{a + b}} \Big] = \frac{a}{b} $.  Similarly, the odds in the unexposed group is $\frac{c}{d}$.  Hence, the odds ratio of disease occurrence is
+% 
+% \begin{equation*}
+%   \texttt{OR} = \frac{\texttt{Odds(Disease|Exposed)}}{\texttt{Odds(Disease|Not Exposed)}} = \frac{a/b}{c/d} = \frac{p_1 / q_1}{p_2 / q_2} =\frac{p_1 \times q_2}{p_2 \times q_1}= \frac{ p_1 \times (1- p_2)}{ p_2 \times (1 - p_1)}
+% \end{equation*}
+% 
+% If $OR < 1$, we can put the `not exposed' group in the numerator, so that $OR > 1$  (the resulting odds ratio should, of course, be interpreted accordingly).  In our hepatitis example, we can use the following table:
+% 
+% \begin{table}[ht]
+% \centering
+% \begin{tabular}{@{} cccc @{}} \hline
+%  & \multicolumn{2}{c}{hepatitis E} \\
+%  & Yes & No & Total \\ \hline
+%  Placebo  & 66 & 830 & 896 \\
+%  Vaccine & 3 & 895 & 898 \\
+%   \hline
+%  \end{tabular}
+%  \end{table}
+% 
+% and get $OR = ((66)(895))/((830)(3)) = 23.7$ (``Placebo group has 24 times the odds of getting hepatitis''). If we use
+% 
+% \begin{table}[ht]
+% \centering
+% \begin{tabular}{@{} cccc @{}} \hline
+%  & \multicolumn{2}{c}{hepatitis E} \\
+%  & Yes & No & Total \\ \hline
+%  Vaccine & 3 & 895 & 898 \\
+%  Placebo  & 66 & 830 & 896 \\
+%   \hline
+%  \end{tabular}
+%  \end{table}
+% 
+% then $OR = (3)(830)/(66)(895) = 0.04$ (``Vaccine group has 0.04 times the odds of getting hepatitis'').
+% 
+% In either case, we will calculate the confidence interval for odds ratio in 4 steps.
+% 
+% \begin{enumerate}
+% \item Calculate the natural log of the odds ratio:
+% \begin{equation*}
+%   ln(OR) = ln \Big( \frac{a \times d}{b \times c} \Big)
+% \end{equation*}
+% 
+% \item	Calculate the standard error of ln(OR) as follows:
+% \begin{equation*}
+%   SE_{ln(OR)} = \sqrt{ \Big( \frac{1}{a} + \frac{1}{b} + \frac{1}{c} + \frac{1}{d} \Big)}
+% \end{equation*}
+% 
+% \item A 95\% confidence interval for ln(OR) is given by
+% \begin{equation*}
+%   [ ln(OR) - 1.96(SE), ln(OR) + 1.96(SE)]
+% \end{equation*}
+% 
+% \item Finally, a 95\% confidence interval for OR is given by
+% \begin{equation*}
+%    e^{ln(OR) - 1.96(SE)}, e^{ln(OR) + 1.96(SE)}
+% \end{equation*}
+% 
+% \end{enumerate}
+% 
+% Returning to the hepatitis E study, recall the disease occurrence data:
+% 
+% \begin{table}[ht]
+% \centering
+% \begin{tabular}{@{} cccc @{}} \hline
+%  & \multicolumn{2}{c}{hepatitis E} \\
+%  & Yes & No & Total \\ \hline
+%  Placbo  & 66 & 830 & 896 \\
+%  Vaccine & 3 & 895 & 898 \\
+%   \hline
+%  \end{tabular}
+%  \end{table}
+% 
+% The odds ratio of getting hepatitis is
+% 
+% \begin{equation*}
+%   \texttt{Odds Ratio} = \frac{\texttt{Odds(Hepatitis|Placebo)}}{\texttt{Odds(Hepatitis|Vaccine)}} = \frac{66 \times 895}{3 \times 830} = 23.7
+% \end{equation*}
+% 
+% so that
+% 
+% \begin{enumerate}
+% \item
+% \begin{equation*}
+%   ln(OR) = ln(23.7) = 3.165
+% \end{equation*}
+% 
+% \item
+% \begin{equation*}
+%   SE_{ln(OR)} = \sqrt{ \frac{1}{66} + \frac{1}{830} + \frac{1}{3} + \frac{1}{895}   } = \sqrt{0.3508} = 0.5923
+% \end{equation*}
+% 
+% \item
+% \begin{equation*}
+%  [3.165-1.96 (0.5923), 3.165+1.96 (.5923)] = [2.004, 4.326]
+% \end{equation*}
+% 
+% \item
+% \begin{equation*}
+%   [ e^{2.004}, e^{4.326} ] = [ 7.419, 75.641]
+% \end{equation*}
+% \end{enumerate}
+% 
+% With 95\% confidence, the odds of unvaccinated subjects getting hepatitis is between 7 and 76 times greater than vaccinated subjects.
 
 \section{Key Words}
 
@@ -509,7 +509,9 @@ With 95\% confidence, the odds of unvaccinated subjects getting hepatitis is bet
 
 
 \twocolumn
+
 \section{}
+
 \begin{exercises}
 
   \begin{exercise}  % 1

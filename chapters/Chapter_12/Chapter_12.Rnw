@@ -1,7 +1,7 @@
 %!Rnw root = ../../Master.Rnw
 
 \chapter{Comparing Two Means}
-\label{chap:ch11}
+\label{chap:ch12}
 
 \section{Objectives}
 

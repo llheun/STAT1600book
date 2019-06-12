@@ -1,7 +1,7 @@
 %!Rnw root = ../../Master.Rnw
 
 \chapter{Sampling Distribution of the Mean}
-\label{chap:ch10}
+\label{chap:ch11}
 
 \section{Objectives}
 

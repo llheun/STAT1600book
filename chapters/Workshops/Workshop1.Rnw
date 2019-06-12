@@ -1,7 +1,7 @@
 %!Rnw root = ../../Master.Rnw
 
 \chapter{Workshops}
-\label{chap:ch15}
+\label{chap:ch17}
 
 % \section{Workshop 1A}         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -1325,6 +1325,144 @@ Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phan
 \vspace{4mm}
 Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
 
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+ }}
+\end{center}
+
+% Sincich, T, ``Business Statistics by Example,'' Prentice Hall, 1996, p 555
+
+As a professional courtesy, physicians have traditionally provided health care free of charge or at a reduced rate to other physicians and their families.  In 1966, 94\% of a sample of 1000 physicians offered this professional courtesy.  The \textit{New England Journal of Medicine} (Nov. 25, 1993) conducted a national survey to see if this practice continues.  It surveyed 2224 physicians who are members of the American Medical Association (AMA) and found that 1957 currently offer free or reduced-rate health care to fellow physicians.  Is there sufficient evidence to conclude that the true proportion of physicians who offer professional courtesy has changed since 1966?  Use a significance level of ($\alpha = 0.05$).
+
+
+\begin{enumerate}
+  \item In 1966, what is the proportion of physicians who offer free or reduced rate health care as a professional courtesy to other physicians and their families?
+  \item In 1993, what is the proportion of physicians who offer free or reduced rate health care as a professional courtesy to other physicians and their families?
+  \item What are the hypotheses for this scenario?
+  \item Select an analysis plan.
+  \item Compute the standard error.
+  \item Compute the test statistic.
+  \item Based on the test statistic and the critical value, what is your decision about the hypotheses?
+  \item Interpret your result in every day language?
+\end{enumerate}
+
+\end{exercise} 
+\begin{solution}  % 10a
+
+\end{solution} 
+
+\clearpage
+
+    \begin{exercise}  % 10b         %%%%%%%%%%%%%%%%%
+
+    \begin{center}
+\begin{flushleft}\textbf{\large \hfill Workshop 10B, Submitted by: }\end{flushleft}
+
+\fbox{\parbox{14cm}{
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+ }}
+\end{center}
+
+Sports fans often argue that the outcomes of professional basketball games are not decided until the fourth (and last) quarter.  In contrast, the conventional ``wisdom'' in Major League Baseball (MLB) suggests that most nine-inning games are ``over'' by the seventh inning.   Can the outcome of a baseball game really be predicted based on the team leading after seven innings?   So are we correct in assuming the team leading after three-quarters of an NBA game will win the game?  To answer these and other questions, University of Missouri researchers collected and analyzed data for 200 NBA games and 100 MLB games played during the 1900 regular season (Chance, Vol. 5, 1992). The following table reports the number and percentage of games in which the team leading after three quarters or seven innings won.  [Note: Tied games after three quarters were removed from the data set.]  Use a teat of hypothesis to compare the win percentage of NBA teams leading after three quarters to the win percentage of MLB teams leading after seven innings.  Let's use a significance level ($\alpha = 0.05$). 
+
+
+% Requires the booktabs if the memoir class is not being used
+\begin{table}[htbp]
+   \centering
+   %\topcaption{Table captions are better up top} % requires the topcapt package
+   \begin{tabular}{@{} ccccc @{}} % Column formatting, @{} suppresses leading/trailing space
+      % \toprule
+      % \multicolumn{2}{c}{Item} \\
+      % \cmidrule(r){1-2} % Partial rule. (r) trims the line a little bit on the right; (l) & (lr) also possible
+      Sport & Games & Leader Wins  & Leader Loses & \% Reversal \\ \hline
+      NBA & 189 & 150 & 39 & 20.6 \\
+      MLB & 92  & 86  & 6  & 6.5  \\ \hline
+\end{tabular}
+\caption{Source: Cooper, H, etal, \textit{Predicting outcoming}, ``Chance'', Vol 5, Nos 3-4, 1992, pp. 18-22}
+\end{table}
+
+\begin{enumerate}
+  \item What is the proportion of an NBA team winning when leading after the third period?
+  \item What is the proportion of an MLB team winning when leading after the seventh inning?
+  \item What are the hypotheses for this scenario?
+  \item Select an analysis plan.
+   Compute the standard error.
+   Compute the test statistic.
+  \item Based on the test statistic and the critical value, what is your decision about the hypotheses?
+  \item Interpret your result in every day language?
+\end{enumerate}
+
+\end{exercise} 
+\begin{solution}  % 10b
+
+\end{solution} 
+    
+\clearpage
+
+    \begin{exercise}  % 10c         %%%%%%%%%%%%%%%%%
+
+    \begin{center}
+\begin{flushleft}\textbf{\large \hfill Workshop 10C, Submitted by: }\end{flushleft}
+
+\fbox{\parbox{14cm}{
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+ }}
+\end{center}
+
+According to \textit{Havard Business Review} (July-Aug, 1986), approximately two-thirds of the 500 largest U.S. corporations have, in varying degrees, committed some form of unethical behavior.  The lack of ethics in business has led many to question higher education's role in the ethics process.  A more recent study found that the presence of ethics in the business school curriculum is sorely lacking.  In a sample of 94 MBA programs, only 7 required a course on ethics, whereas 18 of 86 sampled undergraduate business programs required an ethics course (\textit{Journal of Education for Business}, Nov-Dec. 1990)  
+
+\begin{enumerate}
+  \item What is the proportion of MBA programs required an ethics course?
+  \item What is the proportion of undergraduate business programs required an ethics course?
+  \item What are the hypotheses for this scenario?
+  \item Select an analysis plan.
+  \item Compute the standard error.
+  \item Compute the test statistic.
+  \item Based on the test statistic and the critical value, what is your decision about the hypotheses?
+  \item Interpret your result in every day language?
+\end{enumerate}
+
+\end{exercise} 
+\begin{solution}  % 10c
+
+\end{solution}
+
+\clearpage
+
+    \begin{exercise}  % 11a         %%%%%%%%%%%%%%%%%
+
+    \begin{center}
+\begin{flushleft}\textbf{\large \hfill Workshop 10A, Submitted by: }\end{flushleft}
+
+\fbox{\parbox{14cm}{
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
 \vspace{4mm}
 Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
 
@@ -1346,13 +1484,13 @@ According to an October 27, 2006 article in \textit{Newsweek}, 60\% of Americans
 \end{enumerate}
 
 \end{exercise} 
-\begin{solution}  % 10a
+\begin{solution}  % 11a
 
 \end{solution}
 
 \clearpage
 
-    \begin{exercise}  % 10b         %%%%%%%%%%%%%%%%%
+    \begin{exercise}  % 11b         %%%%%%%%%%%%%%%%%
 
     \begin{center}
 \begin{flushleft}\textbf{\large \hfill Workshop 10B, Submitted by: }\end{flushleft}
@@ -1388,7 +1526,7 @@ http://www.harrisinteractive.com/harris_poll/pubs/Harris_Poll_2009_04_16.pdf
 \end{enumerate}
 
 \end{exercise} 
-\begin{solution}  % 10b
+\begin{solution}  % 11b
 
 \end{solution}
 

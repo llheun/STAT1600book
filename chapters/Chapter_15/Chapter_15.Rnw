@@ -1,7 +1,7 @@
 %!Rnw root = ../../Master.Rnw
 
 \chapter{Correlation}
-\label{chap:ch13}
+\label{chap:ch15}
 
 \section{Objectives}
 

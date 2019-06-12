@@ -1,7 +1,7 @@
 %!Rnw root = ../../Master.Rnw
 
 \chapter{Categorical Variables: Association or Independence}
-\label{chap:ch12}
+\label{chap:ch14}
 
 \section{Objectives}
 

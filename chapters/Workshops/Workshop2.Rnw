@@ -1,7 +1,7 @@
 %!Rnw root = ../../Master.Rnw
 
 \chapter{Workshops}
-\label{chap:ch16}
+\label{chap:ch18}
 
 
 \begin{exercises}
