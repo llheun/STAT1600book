@@ -1,4 +1,4 @@
-%!Rnw root = ../../Master.Rnw
+%!Rnw root = ../../Main.Rnw
 
 \chapter{Sampling Distribution of the Mean}
 \label{chap:ch11}
@@ -114,7 +114,7 @@ What is the average length of stay for undergraduate students at WMU?
 Similar to the SE for proportions, the formula for the SE of the mean has the sample size (i) in the denominator, and (ii) inside the square root sign.  Therefore, increasing the sample size by a factor of 4 makes the standard error decrease by a factor of $\sqrt{4}$. 
 
 \fbox{\parbox{14cm}{
-The standard error of the mean decreases like the square root of the sample size (n).
+The standard error (SE) of the mean decreases like the square root of the sample size (n).
 }}
 
 \section{Estimating the Population Mean Using Intervals}
@@ -133,6 +133,8 @@ Variables tend to miss their expected value, but should be within 1 SD 68\% of t
 
 95\% of the time.  This method gives an interval estimate of $\mu$. 
 
+\vspace{2mm}
+
 \fbox{\parbox{14cm}{
 \textbf{95\% Confidence Interval for $\mu$} \\
 A 95\% Confidence Interval estimate for the population mean $\mu$ is given by 
@@ -141,6 +143,8 @@ A 95\% Confidence Interval estimate for the population mean $\mu$ is given by
  \bar{X} \pm 1.96 \frac{s}{\sqrt{n}}
 \end{equation*}
 }}
+
+\vspace{2mm}
 
 The term $1.96 \frac{s}{\sqrt{n}}$ is called the 95\% margin of error.
 
@@ -184,7 +188,6 @@ where $s$ is the standard deviation based on historical data or a pilot sample. 
 \section{}
 
 \begin{exercises}
-
 \begin{exercise}  % 1
 
 The national average on a science test for tenth graders has a mean of 210 and a standard deviation of 28.
@@ -319,7 +322,38 @@ The average annual rainfall in Mawsynram, India (the wettest place on Earth) is 
 
 \end{solution}
 
-\end{exercises}
+\begin{exercise} % 7
 
+<<label=LBL11b, results="asis", echo=FALSE>>=
+  MU   <- 9.02
+  XBAR <- 8.10
+  SD   <- 0.70
+  N    <- 12
+  SE1  <- SD/sqrt(12)
+  Z1   <- (XBAR - MU)/(SD / sqrt(N))
+  pval1 <- sprintf("%.4f", pnorm(Z1))
+@  
+
+In a study published in the \textit{American Journal of Psychiatry} (157.737-744, May 2000), researchers wanted to measure the effect of alcohol on the development of the hippocampal region in adolescents.  The hippocampus is the portion of the brain responsible for long-term memory storage.  The researchers randomly selected 12 adolescents \\ with alcohol use disorders.  They wanted to determine whether the hippocampal volumes in the alcoholic adolescents were less than the normal volume of 9.02 cubic-centimeters \\ ($cm^2$).  An analysis of the sample data revealed that the hippocampal volume is approximately normal  with $\bar{x} = 8.10$ and $s = 0.7$.  
+
+\begin{enumerate}
+  \item What happens to the distribution of \\ sample means as the sample size \\ increases?
+  \item What is the mean of this distribution? 
+  \item What is the standard error of this distribution?
+\end{enumerate}
+
+\end{exercise}  
+\begin{solution}  % 7
+
+\begin{enumerate}
+  \item Stays the same.
+  \item $\bar{X} = 8.10$
+  \item $ SE = \frac{0.70}{\sqrt{12}} = \Sexpr{SE1}$ 
+\end{enumerate}
+
+\end{solution}
+
+
+\end{exercises}
 
 \onecolumn

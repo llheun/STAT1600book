@@ -1,0 +1,68 @@
+\begin{thebibliography}{10}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Dischinger(1995)]{dischinger1995}
+P.C. Dischinger.
+\newblock Lower extremity fractures in motor vehicle collisins: The role of
+  driver gender and height.
+\newblock \emph{Accident Analysis and Prevention}, 27\penalty0 (4), August
+  1995.
+
+\bibitem[Doll(1950)]{doll1950}
+Richard Doll.
+\newblock Smoking and carcinoma of the lung.
+\newblock \emph{British Medical Journal}, 2\penalty0 (4682):\penalty0 739--748,
+  September 1950.
+
+\bibitem[Fuller(2008)]{Teen2007}
+Elizabeth Fuller, editor.
+\newblock \emph{Drug use, smoking and drinking among young people in England in
+  2007}.
+\newblock The Health and Social Care Information Centre, 35 Northampton Square,
+  London, EC1V 0AX, 2008.
+
+\bibitem[Goldin(2010)]{goldin2010}
+Rebeccca Goldin.
+\newblock If you take viagra, will you get a std?, August 2010.
+\newblock URL \url{http:www.stats.org}.
+
+\bibitem[Naranjo()]{naranjo2018}
+Joshua Naranjo.
+\newblock Knowledge building/research 1 knowledge and data.
+
+\bibitem[Redelmeier(1997)]{redelmeier1997}
+D.~A. Redelmeier.
+\newblock Association between cellular-telephone calls and motor vehicle
+  collisions.
+\newblock \emph{The New England Journal of Medicine}, 336:\penalty0 453--458,
+  February 1997.
+
+\bibitem[Sullivan(2013)]{sullivan2013}
+Micheal Sullivan, III.
+\newblock \emph{Statistics Informed Decisions Using Data}.
+\newblock Pearson, 4th edition, 2013.
+
+\bibitem[Thompson(2007)]{thompson2007}
+William~W. Thompson.
+\newblock Early thimerosal exposure and neuropsychological outcomes at 7 to 10
+  years.
+\newblock \emph{New England Journal of Medicine}, 357:\penalty0 1281--1292,
+  September 2007.
+
+\bibitem[Trustees(2016)]{GSS2014}
+Board Trustees.
+\newblock General social survey (gss).
+\newblock www.norc.org/Research/Projects/Pages/general-social-survey.aspx, 02
+  2016.
+\newblock URL \url{www.norc.org/Research/Projects/Pages/}.
+
+\bibitem[Wallace(1971)]{Wallace1971}
+Walter Wallace.
+\newblock \emph{The Logic of Science in Sociology}.
+\newblock Aldine-Atherton, Chicago, 2nd edition, 1971.
+
+\end{thebibliography}

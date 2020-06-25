@@ -1,4 +1,4 @@
-%!Rnw root = ../../Master.Rnw
+%!Rnw root = ../../Main.Rnw
 
 \chapter{Sampling Distribution of the Proportion}
 \label{chap:ch8}
@@ -87,14 +87,15 @@ Exercise 2 is an example of the law of large numbers.  A more straightforward il
 The sample percentage tends to get closer to the true percentage as the size increases.
 }}
 
-\subsection{The Sampling Distribution of $\hat{p}$ is Approximately Normal}
+\subsection{The Sampling Distribution of p-hat is Approximately Normal}
 
 Since $\hat{p} = \frac{X}{n}$, the sampling distribution of $\hat{p}$ looks the same as that of X except for different numbers on the horizontal axis.  For $n = 30$ and $p = 0.4$, the probability histogram of $X$ and $\hat{p}$ is shown in Figure 8.1.
 
 \begin{figure}[ht]
 
-\caption{Probability of Histogram and $\hat{p}$}
-<<label=LBL8a, results="asis", echo=FALSE, out.width="15cm", out.height="10cm">>=
+\caption{Probability of Histogram and p-hat}
+
+<<label=LBL8a, results="asis", echo=FALSE, out.width="8cm", out.height="7cm">>=
 dataset<-rbinom(n=100000, size=30, prob=0.4)
 dataset <- data.frame(X=dataset)
 x_coor  <- seq(3,21,1)
@@ -104,14 +105,14 @@ yrng<-diff(range(dataset$X))
 
 hist1<-ggplot(dataset,aes(x=X)) +
   geom_histogram(binwidth=1,fill="white",color="black") +
-  theme_bw() + 
+  theme_bw() +
   scale_y_continuous(breaks=NULL, name=NULL) + scale_x_continuous(breaks=NULL, name=NULL) +
-  theme(panel.border=(element_blank())) + 
+  theme(panel.border=(element_blank())) +
   annotate(geom = "text", x=0, y=-50*yrng, label="X", size=3) +
   annotate(geom = "text", x=x_coor, y=-20*yrng, label="|", size=2) +
   annotate(geom = "text", x = x_coor, y = -50*yrng, label = x_labs, size=2) +
   annotate(geom = "text", x=0, y=-110*yrng, label="p-hat", size=3) +
-  annotate(geom = "text", x=x_coor, y=-90*yrng, label="|", size=2) + 
+  annotate(geom = "text", x=x_coor, y=-90*yrng, label="|", size=2) +
   annotate(geom = "text", x=x_coor, y=-110*yrng, label=p_labs, size=1.6)
 
 hist1
@@ -231,7 +232,7 @@ Try the following problems.
 \end{minipage}
 
 \section{Sample Size for Estimating the Population Proportion}
-
+ 
 If 9 out of 25 randomly selected WMU students live in Southwest Michigan, the 95\% confidence interval for the true proportion is $\hat{p} \pm 1.96 \sqrt{\frac{\hat{p} \hat{q}}{n}} = 0.36 \pm 0.19$.  This result says that the true proportion can be as low as 0.17 or as high as 0.55.  If we wanted to reduce the margin of error from 0.19 to some value $ME$, then we set the formula for margin of error equal to $ME$, i.e. $ME = 1.96 \sqrt{\frac{\hat{p} \hat{q}}{n}}$.  Solving for $n$ gives the result we need.
 
 \fbox{\parbox{14cm}{
@@ -265,13 +266,13 @@ where $\hat{p}$ is an estimate based on historical data or a pilot study.  The q
 \end{minipage}
 }}
 
+% \newpage
 
-
-% \pagebreak
 \twocolumn
-\section{}
-\begin{exercises}
 
+\section{}
+
+\begin{exercises}
 \begin{exercise} % 1
 
 Suppose that 20\% of students in a large university are graduate students.  If a random sample of 125 students are randomly selected, what is the probability that 25\% or more of the sample are graduate students?
@@ -315,7 +316,7 @@ Let's say that we take a \\ sample of 100 observation has 20 successes.
 % \item The 95\% confidence interval is $\Sexpr{prob62a} \pm \Sexpr{me62c}$
 % \end{enumerate}
 % \end{solution}
- 
+
 \begin{exercise} % 3
 
 A sample of 100 individuals \\ showed that 20\% experienced gastrointestinal \\ problems  after consuming 10 grams of sorbitol, a common artificial sweetener.  Attach a standard error to this estimate.
@@ -366,7 +367,7 @@ An appliance manufacturer offers maintenance contracts on its major appliances. 
 
 \begin{enumerate}
 \item	The proportion of customers who buy the contract along with their oven is estimated as \underline{\phantom{xxxxxxxxxx}}.
-\item	Calculate a standard error for the estimate in (a).
+\item	Calculate a standard error for the estimate in (1).
 \item	Calculate a 95\% confidence interval estimate for the true proportion of customers who buy the contract along with their oven.
 \end{enumerate}
 \end{exercise}
@@ -420,8 +421,8 @@ Researchers who were \\ concerned if doctors were consistently adjusting dosages
 
 \begin{enumerate}
 \item	Doctors fail to adjust dosage for an estimated \underline{\phantom{xxxxxxxx}}  percent of prescriptions.
-\item	Calculate a standard error for the percentage in (a).
-\item	Calculate a 95\% margin of error for the percentage in (a).
+\item	Calculate a standard error for the percentage in (1).
+\item	Calculate a 95\% margin of error for the percentage in (1).
 \item	Calculate a 95\% interval estimate for the true proportion
 \item	Calculate a 95\% confidence interval for the true percentage of prescriptions  \\ where doctors fail to adjust dosages.
 \end{enumerate}
@@ -462,6 +463,6 @@ The standard error of this estimate is \Sexpr{n8}
 
 \end{solution}
 
-
 \end{exercises}
+
 \onecolumn

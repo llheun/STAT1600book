@@ -1,4 +1,4 @@
-%!Rnw root = ../../Master.Rnw
+%!Rnw root = ../../Main.Rnw
 
 \chapter{Threats to Valid Comparisons}
 \label{chap:ch4}
@@ -129,12 +129,6 @@ instead of the (admittedly more sensational) relationship implied by the headlin
 \section{}
 
 \begin{exercises}
-
-% \begin{exercise}  % dummy
-%
-%   what is x + y, when x = 5 and y = 5
-%
-% \end{exercise}
   \begin{exercise} % 1
 
 A study says, ``Slightly overweight people live longer than thin people.''
@@ -184,41 +178,14 @@ A study says, ``People who \\ consider themselves depressed eat more \\ chocolat
     From the distribution of $t$, using row df = 24 and column 0.025, CV(t) = \Sexpr{cv1}.
   \end{solution}
 
-%   \begin{exercise} % 4
-%
-%     What is your conclusion?
-%
-% 	  \begin{enumerate}
-% 	  \item There is a significant difference.
-% 	  \item There is not a significant difference.
-% 	  \item Seniors watch too much TV.
-% 	  \item Statewide people watch too much TV
-% 	  \end{enumerate}
-%
-%     \framebox[5cm][l]{ Answer: }
-%   \end{exercise}
-% %   \begin{solution}   % 4
-% %
-% % Since the test statistic, $ |t| = |-2.14| > t_{.025} = 2.064 $ \\
-% %     Therefore, reject $H_0$, there is  difference.
-% %   \end{solution}
-%
-%   \begin{exercise} % 5
-%
-% The next four questions refer to the following scenario.  In a recent statewide election, 55 percent of the voters rejected a proposal to institute a state lottery.  In a random sample of 150 urban precincts, 60 percent of the electorate rejected the proposal.  Is the difference significant?
-%
-% What are the hypotheses for this question?
-%
-% 	  \begin{enumerate}
-% 	  \item $H_0: P_u \neq 0.55$ vs. $H_A: P_u = 0.55$
-% 	  \item $H_0: P_u = 0.55$ vs. $H_A: P_u > 0.55$
-% 	  \item $H_0: P_u = 0.55$ vs. $H_A: P_u < 0.55$
-% 	  \item $H_0: P_u = 0.55$ vs. $H_A: P_u \neq 0.55$
-% 	  \end{enumerate}
-%
-%     \framebox[5cm][l]{ Answer: }
-%   \end{exercise}
-%   \begin{solution} % 5
+
+  \begin{exercise} % 4
+
+The next four questions refer to the following scenario.  In a recent \\ statewide election, 55 percent of the voters rejected a proposal to institute a state lottery.  In a random sample of 150 urban precincts, 60 percent of the electorate rejected the proposal.  Can you think of possible cofounders?
+
+
+  \end{exercise}
+%   \begin{solution} % 4
 %
 %     $H_0: P_u = 0.55$ vs. $H_A: P_u \neq 0.55$
 %   \end{solution}
@@ -323,6 +290,12 @@ A study says, ``People who \\ consider themselves depressed eat more \\ chocolat
 %   %   Seniors are not significant greater than the student body. \\
 %   %
 %   % \end{solution}
+%
+% \begin{exercise}  % dummy
+%
+%   what is x + y, when x = 5 and y = 5
+%
+% \end{exercise}
 
 \end{exercises}
 \onecolumn

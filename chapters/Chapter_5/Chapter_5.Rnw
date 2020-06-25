@@ -1,4 +1,4 @@
-%!Rnw root = ../../Master.Rnw
+%!Rnw root = ../../Main.Rnw
 
 \chapter{Study Designs}
 \label{chap:ch5}
@@ -174,7 +174,6 @@ Overall, 170 subjects (24 percent) had used a cellular telephone during the 10-m
 \section{}
 
 \begin{exercises}
-
   \begin{exercise} %1
 
 Give some examples of \\ studies where:

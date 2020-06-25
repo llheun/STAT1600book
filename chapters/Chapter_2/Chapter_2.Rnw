@@ -1,4 +1,4 @@
-%!Rnw root = ../../Master.Rnw
+%!Rnw root = ../../Main.Rnw
 
 \chapter{Data Presentation}
 \label{chap:ch2}
@@ -75,8 +75,6 @@ Ordinal variables are \textbf{categorical variables} with a clear ordering or ra
 
 \item \textbf{Interval Variables}
 
-%An interval variable is similar to an ordinal variable, except that the intervals between the values of the interval variable are equally spaced.  For example, suppose we have a variable such as the annual income that we measure in dollars, and we have three people who make \$10,000, \$15,000 and \$20,000. The second person makes \$5,000 more than the first person and \$5,000 less than the third person, and the size of these intervals is the same.  If two other people make \$90,000 and \$95,000, the size of that interval between these two people is also the same (\$5,000).  \citep{bruin2011}
-
 Interval variables are \textbf{numerical variables} where the difference between the two values is meaningful.  GPA is an interval measurement; we can subtract these measurements, and distances make sense.  For example, the distance from 2.3-2.4 is the same distance as 3.7-3.8.  However, ratios do not make sense; is 4.0 `twice as high' as 2.0?  The answer is no.  The grading system would work just as well on the scale (A, B, C)=(5.0, 4.0, 3.0) instead of (4.0, 3.0, 2.0).
 
 \item \textbf{Ratio Variables}
@@ -94,10 +92,12 @@ Nominal and ordinal variables together are often called \textbf{categorical} var
 
 \begin{figure}[htbp]
    \centering
-   \includegraphics[width=12cm, height=6cm]
-   {chapters/Chapter_2/ext_figure/zRV1.png} % requires the graphicx package
-   %{chapters/Chapter_2/ext_figure/varType.png} % requires the graphicx package
+   
    \caption{Mind map of a Random Variable}
+   
+   \includegraphics[width=12cm, height=6cm]{chapters/Chapter_2/ext_figure/zRV1.png} % requires the graphicx package
+   %{chapters/Chapter_2/ext_figure/varType.png} % requires the graphicx package
+   
 \end{figure}
 
 
@@ -117,7 +117,7 @@ The following is a description of a clinical study on the possible link between 
 %The paper is titled ``Early Thimerosal Exposure and Neuropsychological Outcomes at 7 to 10 Years'' by William W. Thompson et al. (New England Journal of Medicine, 2007 Sept; Vol. 357, pp.1281-92).
 
 %\subsubsection{Background}
-\begin{enumerate} 
+\begin{enumerate}
 
 \item \textbf{Background}
 
@@ -180,7 +180,7 @@ Household &	State	& Bedrooms	& Payment	& Payment 	& Income \\ \hline
 8	& Michigan	& 2	& 0	& None	& 39000 \\
 9	& Michigan	& 1	& 380	& Rent	& 24370 \\
 10	& Michigan & 2 &	910	& Rent &	54500 \\
-$\vdots$ & & & $\vdots$ & &  $\vdots$ \\ 
+$\vdots$ & & & $\vdots$ & &  $\vdots$ \\
 39	& Indiana	& 2	& 200	& Mortgage	& 46000 \\
 59	& Indiana	& 4	& 200	& Mortgage	& 38300 \\
 66  &	Indiana	& 2	& 190	& Mortgage	& 18320 \\
@@ -197,7 +197,7 @@ A \textit{relative frequency table} gives the count for each category and the re
 
 <<label=LBL2a, results="asis", echo=FALSE>>=
   DT1 <- read.csv("data/ACSdata.csv", header=TRUE)
-  
+
   attach(DT1)
   MP1 <- numeric(76)
   ## names(DT1)
@@ -217,7 +217,7 @@ A \textit{relative frequency table} gives the count for each category and the re
 To compute Relative Frequency, divide Frequency by the total and multiply by 100\%.  For example,
 
 \begin{equation*}
-RF(Mortgage) = \frac{\text{Mortgage Frequency}}{\text{Total Frequency}} = \frac{44}{76} \times 100 = 57.9 
+RF(Mortgage) = \frac{\text{Mortgage Frequency}}{\text{Total Frequency}} = \frac{44}{76} \times 100 = 57.9
 \end{equation*}
 
 \subsection{Bar Chart}
@@ -240,7 +240,7 @@ A pie chart gives the same information as a bar chart, except in a circular shap
 
 Remember that the	\textit{mean} and \textit{median} cannot be used for nominal variables.
 
-Consider the variable Monthly Payment in the ACS housing data on page 11.  How do the numbers appear?  How large are they? How variable is the data?  Are there any extreme values? These questions are attempts at getting to know the data.  In this section, we discuss tools for getting to know numerical data better.  We have n = 64 observations available since 12 households (out of 76) do not have monthly payments.  Here is a list of the monthly payments:
+Consider the variable Monthly Payment in the ACS housing data on page 26.  How do the numbers appear?  How large are they? How variable is the data?  Are there any extreme values? These questions are attempts at getting to know the data.  In this section, we discuss tools for getting to know numerical data better.  We have n = 64 observations available since 12 households (out of 76) do not have monthly payments.  Here is a list of the monthly payments:
 
 {\small{
 \Sexpr{MP1}
@@ -264,27 +264,29 @@ Can this be a typographical error that we need to correct?  When we Look closely
 <<label=LBL2d, results="asis", echo=FALSE>>=
   DT2 <- c(15.4,9.9,19.6,17.1,15.0,11.7,8.2,10.9,17.2,13.9,16.9,11.2,13.0,12.8,15.2,10.1,13.2,17.0,16.2,11.7,9.1,11.1,13.5,10.5,20.6,14.4,13.2,10.2,11.9,7.4,9.3,19.3,15.0,15.4,11.4,13.5,13.3,12.0,11.0,12.9,13.9,13.6,15.8,16.6,8.6,9.2,10.5,11.0,15.2,10.3,9.7)
 
-@  
+@
 
 Graphs are helpful in summarizing information in the data, especially for large datasets.  Below, we summarize two-year average percentage of persons living in poverty (2008-2009) in the U.S.A. in a graph called a stem-and-leaf plot.  The numbers on the left are stems, while the numbers on the right are called leaves.
+
+\newpage
 
 \begin{minipage}[ht]{7cm}
 
 {\small{
 <<label=LBL2e, results="asis", echo=FALSE>>=
   DT2s <- sort(DT2)
-@  
+@
 
 \Sexpr{DT2s}
 }}
-\end{minipage} \hfill
+\end{minipage} % \hfill
 \begin{minipage}[ht]{7cm}
 
-{\footnotesize{
+{\small{
 \begin{verbatim}
 <<label=LBL2ee, results="asis", echo=FALSE>>=
-  stem(x=DT2, scale=2, width=22) 
-@ 
+  stem(x=DT2, scale=2, width=22)
+@
 \end{verbatim}
 }}
 \end{minipage}
@@ -405,27 +407,43 @@ The relative frequency table is a compact numerical way to present how the data 
 
 The histogram and stem-and-leaf plots look alike, except that the stem-and-leaf plot has columns that go sideways instead of upwards.  Stem-and-leafs are better if we want the data values themselves available from the plot.  However, the histogram can handle large sample sizes easily and is more flexible in choosing class widths.  For example, we may choose class widths of \$500, as follows: $[0,500), [500,1000), [1000,1500), \dots, [5000,5500)$, which stem plots cannot do.
 
-<<label=LBL2g, results="asis", echo=FALSE, out.height="7cm">>=
+\newpage
+
+\begin{figure}[ht]
+
+\caption{Monthly Payments }
+
+<<label=LBL2g, results="asis", echo=FALSE, out.height="7cm", out.width="7cm">>=
    hist(Monthly.Payment, xlab="Monthly Payments", main="Histogram of Monthly Payments", col="green")
 @
+
+\end{figure}
 
 \subsection{Dot Plot}
 
 For moderately large samples, a \textit{dotplot} diagram is a quick way to see repeating data values.  We present the dot-plots of the resting pulse rates among college students before and after exercise.  As we observed using side-by-side dots plots, we find that the after exercise spread (maximum minus minimum) is wider than before exercise which makes sense.  We also see that six students of the 28 had a pulse rate of 68 beats per minute.
 
-<<label=LBL2h, results="asis", echo=FALSE, out.height="8cm", out.width="12cm">>=
+\begin{figure}[ht]
+
+\caption{Dot Plot }
+
+<<label=LBL2h, results="asis", echo=FALSE, out.height="5cm", out.width="10cm">>=
    B1 <- c(68,60,76,68,64,80,72,76,92,68,56,72,68,60, 72,56,88,76,80,68,80,84,64,80,72,69,68,76)
    A1  <- B1 + rnorm(n=28, mean=10, sd=5)
    Pulse <- c(B1, A1)
    Time_ <- c(rep("Before", 28), rep("After", 28))
-   
+
    bwidth <- 1
    dfrm <- data.frame(Pulse, Time_)
-   ggplot(data=dfrm, aes(x = Time_, y =  Pulse, fill = Time_)) + 
+   ggplot(data=dfrm, aes(x = Time_, y =  Pulse, fill = Time_)) +
      geom_dotplot(binwidth=bwidth, binaxis = "y", stackdir = "center") +
      coord_flip()
 @
-  
+
+\end{figure}
+
+\newpage 
+
 \subsection{Box-and-Whisker Plot}
 
 A box-and-whisker or boxplot shows useful information about the data including the measures the central tendency and the variability of the distribution.  First, order the data from smallest to largest.  What is the range of the first (or smaller) half of the data?  The smallest quarter of the data?  The next quarter?  The box-and-whisker plot or boxplot is a graphical picture of the distribution of quarters of the data.  Consider once again the monthly payments from the ACS housing data.  We list them here sorted from smallest to largest (minus the outlier  (\$5200)).
@@ -444,9 +462,15 @@ A box-and-whisker or boxplot shows useful information about the data including t
 
 There are $n = 63$ observations.  One-quarter of the data is 63/4=15.75, or approximately 16 observations.  The boxplot below gives the range of each quarter of the data: the range of the first quarter (i.e., the lowest 16 monthly payments) is the left whisker.  The range of the 2nd quarter is the left part of the box, the 3rd quarter the right part of the box, and the range of the last quarter is the right whisker.
 
-<<label=LBL2i, results="asis", echo=FALSE, out.width='8cm'>>=
+\begin{figure}[ht]
+
+\caption{Box Plot }
+
+<<label=LBL2i, results="asis", echo=FALSE, out.width='7cm', out.height="7cm" >>=
   boxplot(MP3, horizontal=TRUE, xlab="Dollars", main="Boxplot of Monthly Payments", col="green", range=0)
 @
+
+\end{figure}
 
 More precisely, the software draws vertical lines at (140, 400, 700, 970, 2400).  Hence, the lowest 16 monthly payments lie within (\$140, \$400).  The next set of 16 observations lies within (\$400, \$700).  The third set lies within (\$700, \$970).  Finally, the last 16 observations lie within (\$970, \$2400).  The five values (140, 400, 700, 970, 2400) that divide the data into quarters and form the fences and whiskers of the boxplot are collectively called the five-number-summary of the data.  They are often denoted as MIN, $Q_1$, MED, $Q_3$, and MAX respectively.
 
@@ -462,9 +486,15 @@ More precisely, the software draws vertical lines at (140, 400, 700, 970, 2400).
 
 Boxplots are particularly useful for comparing two distributions side-by-side.  Below are boxplots of mortgage data and rent drew parallel to each other on the same scale.  When comparing data of mortgages and rental, we find that mortgages tend to be larger than rent since the median and quartiles are larger.  There is also a considerable difference in the spread, with the mortgage data having a long right tail, evidence that mortgages have a higher ceiling than rent.
 
-<<label=LBL2j, results="asis", echo=FALSE, out.width="9cm">>=
+\begin{figure}[ht]
+
+\caption{Box Plot }
+
+<<label=LBL2j, results="asis", echo=FALSE, out.width="9cm", out.height="9cm" >>=
   boxplot(Monthly.Payment ~ Type.of.Payment, horizontal=TRUE, xlab="Dollars", main="Boxplot of Monthly Payments", ylab="Type", col="green", range=0)
 @
+
+\end{figure}
 
 Different statistical computing packages have different ways of computing the quartiles, but the differences are minimal.  In this class, we compute the quartiles as follows.  First, arrange the observations from smallest (1st ordered observation) to largest ($n^{th}$ ordered observation).  Then
 
@@ -566,31 +596,33 @@ Left-Skewed Data
 
 The term `skew' refers to the direction of the most extended tail when you flip the stem-and-leaf sideways or draw a histogram. See histogram examples below. A long tail denotes presence of extreme or outlying observations.  The left-skewed histogram contains observations that are small and outlying, while a right-skewed histogram would have observations that are large and outlying.  A left skew also indicates that the smallest quarter of observations will be more spread out.
 
-%<<label=LBL2n, results="asis", echo=FALSE, out.width="4cm">>=
+% label=LBL2n, results="asis", echo=FALSE, out.width="4cm">>=
 %  SDat4 <- c(401,501,601,702,801,802,901,902,903,904,905,1001,1002,1003,1004,1005,1006,1007,1008,1101,1102)
 %  hist(SDat4, xlab="values", col="green", main="Left Skewed")
-%@
-
-%For some further examples of histograms depicting both symmetry and skewness, see below.
+% @
+% 
+% For some further examples of histograms depicting both symmetry and skewness, see below.
 
 \vspace{2cm}
 
 \begin{figure}[ht]
 
-<<label=LBL2o, resutls="asis", echo=FALSE, out.width="6cm">>=
+<<label=LBL2o, resutls="asis", echo=FALSE, out.width="5cm", out.height="5cm" >>=
+   
   hist( rbeta(10000,5,5),  col="skyblue", main="Symmetric", xlab="" )    ## symmetric
-       
-  hist( rbeta(10000, 2, 5),  col="skyblue", main="Right Skewed", xlab="" )     ## right skewed
-  
-  hist(rbeta(10000, 5, 2),  col="skyblue", main="Left Skewed", xlab="" )    ## left skewed  
-@  
-  
-\end{figure}  
 
+  hist( rbeta(10000, 2, 5),  col="skyblue", main="Right Skewed", xlab="" )     ## right skewed
+
+  hist(rbeta(10000, 5, 2),  col="skyblue", main="Left Skewed", xlab="" )    ## left skewed
+@
+
+\end{figure}
+
+\newpage 
 
 \section{Key Words}
 
-\fbox{\parbox{14cm}{
+\fbox{\parbox{13cm}{
 
 \begin{minipage}[ht]{6cm}
 
@@ -607,7 +639,8 @@ The term `skew' refers to the direction of the most extended tail when you flip 
     \item stem-and-leaf
     \end{itemize}
   \end{itemize}
-  \end{minipage} 
+  
+  \end{minipage}
   \begin{minipage}[ht]{6cm}
   \begin{itemize}
   \item independent
@@ -623,7 +656,8 @@ The term `skew' refers to the direction of the most extended tail when you flip 
     \end{itemize}
 
 \end{itemize}
-\end{minipage} 
+
+\end{minipage}
 }}
 
 \section{Summary}
@@ -633,15 +667,16 @@ The term `skew' refers to the direction of the most extended tail when you flip 
 \item We cannot use the mean for ordinal variables.
 \end{itemize}
 
+\newpage
+
 \twocolumn
 
 \section{}
 
-\begin{exercises}    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+ \begin{exercises}    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \begin{exercise}  % 1
 
-Identify the following types of data as numerical or categorical.  If numerical, further classify into interval or ratio. If categorical, classify if it is nominal or ordinal.
+Identify the following \\ types of  data as numerical or categorical.  If numerical, further classify into interval or ratio. If categorical, classify if it is nominal or ordinal.
 
 	  \begin{enumerate}
 	  \item The scores on exam one for Stat 1600.
@@ -714,7 +749,7 @@ in the U.S. is displayed in the stem-and-leaf plot below.  Note that the stem un
 
   \begin{exercise} % 3
 
-A manager of a car rental company took a random sample of 100 business days over the last fiscal year and recorded the number of cars rented per day.  The frequency distribution of the data is given below.
+A manager of a car rental company took a random sample of 100 business days over the last fiscal year and \\ recorded the number of cars rented per day.  The frequency distribution of the data is \\ given below.
 
 \begin{tabular}{@{} lcc @{}} \hline
 Interval  &  Frequency &	Relative Frequency \\
@@ -732,7 +767,7 @@ $(50, 55]$ 	&      6 \\ \hline
 \item	Draw a histogram by hand, with either the frequencies or relative frequencies as the vertical axis.
 \item	What interval does the median number of car rentals per day fall?
 \item What percentage of business days had 30 or fewer car rentals?
-\item	How many business days had more than 45 car rentals?
+\item	How many business days had more \\ than 45 car rentals?
 \end{enumerate}
 
    % \framebox[5cm][l]{ Answer: }
@@ -834,7 +869,7 @@ The following plots represent five different samples of data. For each, describe
 
   \begin{exercise}  % 5
 
-  A survey contained a question regarding marital status.  The respondent checked either single, married, divorced, separated or widowed.  What is the level of measurement of marital status?
+  A survey contained a question regarding marital status.  The respondent checked either single, married, \\ divorced, separated or widowed.  What is the level of measurement of marital status?
 	  \begin{enumerate}
 	  \item Ordinal
 	  \item Interval-Ratio
@@ -895,7 +930,7 @@ The following plots represent five different samples of data. For each, describe
 
 	\begin{exercise}  % 8
 
-	The team of researchers \\ took the following items from a 2007 survey of drug use among young UK children \cite{Teen2007}.  In how many occasions have you used or taken Cannabis?  Determine whether the data are categorical or numerical and the level measurement.
+	The team of researchers \\ took the following items from a 2007 survey of drug use among young UK children \cite{Teen2007}.  In how many occasions have you \\ used or taken Cannabis?  Determine whether the data are categorical or numerical and the level measurement.
 
   % \end{minipage} \hfill
   % \begin{minipage}[[htbp]{6.5cm}
@@ -924,27 +959,27 @@ The following plots represent five different samples of data. For each, describe
 
 	\begin{exercise}  % 9
 
-	The researchers asked \\ students the following questions from a 2007 survey of drug use among young UK children  \cite{Teen2007}.  
-	Write the number of glasses of liquors (e.g., Baileys, gin, tequila, vodka) drunk in the last seven days   \underline{\phantom{xxxx}}.   
-	 Determine whether they are categorical or numerical and the level of measurement.
+	The researchers asked \\ students the following questions from a 2007 survey of drug use among young UK children  \cite{Teen2007}.
+	Write the number of glasses of liquors (e.g., Baileys, gin, tequila, vodka) drunk in the last seven days   \underline{\phantom{xxxx}}.
+	 Determine whether they are categorical or numerical \\ and the level of measurement.
 
     \vspace{4mm}
-    
+
     \framebox[5cm][l]{ Answer: }
 
   \end{exercise}
   \vspace{2mm}
   \begin{solution}   % 9
-  
+
     Numeric  ratio
-    
+
   \end{solution}
 
 % % \pagebreak
-% % 
+% %
 	\begin{exercise}  % 10
 
-	  The General Social Survey (GSS), conducted by the National Opinion Research Center at the University of Chicago, is a primary source of data on social attitudes in the U.S.  Once each year, researchers from UC interview 1500 adults in their homes all across the country.  They ask subjects their opinions about sex and marriage, attitudes toward women, welfare, foreign policy, and many other issues \cite{GSS2014}.
+	  The General Social \\ Survey (GSS), conducted by the National \\ Opinion Research Center at the University of Chicago, is a primary source of data on social attitudes in the U.S.  Once each year, researchers from UC interview 1500 adults in their homes all across the country.  They ask subjects their opinions about sex and marriage, attitudes toward women, welfare, foreign policy, and many other issues \cite{GSS2014}.
 
     The population for the GSS is
     \begin{enumerate}
@@ -959,13 +994,13 @@ The following plots represent five different samples of data. For each, describe
   \end{exercise}
   \vspace{2mm}
   \begin{solution}   % 10
-  
+
     all adult residents of the U.S.
   \end{solution}
 
 \begin{exercise}  % 11
 
-	  A recent issue of the \emph{New England Journal of Medicine} reported a study of all 122,754 infants born over an 8.5 year period at Parkland Hospital in Dallas, Texas, leaving out multiple births and babies with birth defects.  The researchers  wanted to know if there is a specific birth weight below which infant death and illness increases sharply.
+	  A recent issue of the \emph{New England Journal of Medicine} reported a study of all 122,754 infants born over an 8.5 year period at Parkland Hospital in Dallas, Texas, leaving out multiple births and babies with birth defects.  The researchers  wanted to \\ know if there is a specific birth weight below which infant death and illness increases sharply.
 
     The independent variable in the study is
     \begin{enumerate}
@@ -988,54 +1023,54 @@ The following plots represent five different samples of data. For each, describe
     birth weight.
   \end{solution}
 
-	% \begin{exercise}  % 12
-	% 
-	%   For the following research project, classify all variables in terms of levels of measurement and reveal whether they're continuous and discrete.  As researchers, we should select the correct statistical method: {\emph{single variable descriptive statistic}} or {\emph{a multi-variable descriptive statistic}} or \\ {\emph{inferential statistics.}}  Recall that it is common for some projects to require more than one type of method.
+\begin{exercise}  % 12
 
-% 	  Ten years ago, a state re-instituted the execution for first-degree murder.  Researchers asked, did this change of policy reduce capital crime?  A team of researchers gathered data on the number of homicides in the state for two-year periods before and after the policy change.
-% 
-%     \vspace{3mm}
-%     \framebox[5cm][l]{ Answer: }
-% 
-%   \end{exercise}
-%   \vspace{2mm}
+  For the following research project, classify all variables in terms of levels of measurement and reveal whether \\ they're continuous and discrete.  As \\ researchers, we should select the correct statistical method: {\emph{single variable descriptive \\ statistic}} or {\emph{a multi-variable descriptive  statistic}} or  {\emph{inferential statistics.}}  Recall that it is common for some projects to require more than one type of method.
+
+	  Ten years ago, a state re-instituted the execution for first-degree murder.  Researchers asked, did this change of policy reduce capital crime?  A team of researchers gathered data on the number of homicides in the state for two-year periods before and after the policy change.
+
+    \vspace{3mm}
+    \framebox[5cm][l]{ Answer: }
+
+  \end{exercise}
+  \vspace{2mm}
 %   \begin{solution}  %12
-% 
+%
 %     Variable: Homicide rate \\
 %     Level of Measurement: Interval-ratio \\
 %     Type: Continuous \\
 %     Application: Descriptive (two variables)
-% 
+%
 %   \end{solution}
-% 
+%
 % 	\begin{exercise}  % 13
-% 
+%
 % 	  For the following research project, classify all variables regarding levels of measurement and reveal whether they're continuous and discrete.  We should also \\ select which statistical method should be \\ used: {\emph{single variable descriptive statistic}} or \\ {\emph{a multi-variable descriptive statistic}} or \\ {\emph{inferential statistics}}.  Recall that it is \\ common for some projects to require more than one type of method.
-% 
+%
 % 	  Our relative is running for a seat on the city commission and has hired us to poll a random sample of voters about their concerns.  \\ Specifically, she wants a profile of the \\ electorate that will tell her:
-% 
+%
 % \begin{itemize}
 % \item  what percentage belong to each political party,
 % \item  what percentage are male or female, and
 % \item  what percentage favor or oppose the \\ widening of the main street in the city.
 % \end{itemize}
-% 
+%
 %     \vspace{5mm}
 %     \framebox[5cm][l]{ Answer: }
-% 
+%
 %   \end{exercise}
 %   \vspace{2mm}
 %   \begin{solution}  % 13
-% 
+%
 %     Variable: party, gender, opinion \\
 %     Level of Measurement: nominal, nominal, ordinal \\
 %     Type: discrete, discrete, discrete \\
 %     Application: inferential, NA, NA
-% 
+%
 %   \end{solution}
-% 
+%
 % 	  \begin{exercise}  % 14
-% 
+%
 %   Descriptive statistics allow social researchers to
 %     \begin{enumerate}
 % 	  \item quantify the strength and direction of the relationship between two variables,
@@ -1048,7 +1083,7 @@ The following plots represent five different samples of data. For each, describe
 %   \end{exercise}
 %   \vspace{2mm}
 %   \begin{solution}   % 14
-%   
+%
 %     All of the choices is the correct answer.
 %   \end{solution}
 

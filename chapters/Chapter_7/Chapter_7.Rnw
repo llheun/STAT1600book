@@ -1,4 +1,4 @@
-%!Rnw root = ../../Master.Rnw
+%!Rnw root = ../../Main.Rnw
 
 \chapter{The Binomial Distribution}
 \label{chap:ch7}
@@ -151,80 +151,27 @@ The total area equals 0.2915 using the binomial probability function to compute 
 
 There are infinitely many normal curves, which one do we use to replace the rectangles?  Answer: the one with the same mean and SD as the rectangles!  The (binomial) rectangles have a \textbf{mean}:
 
-\begin{equation*}
-\mu = np = (30)(.4) = 12
-\end{equation*}
+\begin{eqnarray*}
+\mu &=& np \\
+  &=& (30)(.4) \\
+  &=& 12
+\end{eqnarray*}
 
 The (binomial) rectangles have a SD:
 
-\begin{equation*}
-\sigma = \sqrt{npq} = \sqrt{(30)(.4)(.6)} = 2.68
-\end{equation*}
+\begin{eqnarray*}
+\sigma &=& \sqrt{npq} \\
+  &=& \sqrt{(30)(.4)(.6)} \\
+  &=& 2.68
+\end{eqnarray*}
 
 Using the normal curve with the same mean and SD, the area to the left of 10.5 is 0.2877, which is a close estimate of the actual area under the curve is 0.2915.
 
 Similarly, $P[X = 14] = 0.1101$ is approximated by 0.1115, the area under the normal curve between 13.5 and 14.5.
 
-\begin{figure}[ht]
-\caption{Histogram of Probabilities for Binomial n = 30 and p = 0.4}
-<<label=LBL7b, results="asis", echo=FALSE, out.width="14cm", out.height="8cm">>=
-  dataset<-rnorm(n=1000000, mean=12, sd=sqrt(30*.4*.6))
-  dataset <- data.frame(X=dataset)
-  
-  hist1<-ggplot(dataset,aes(x=X)) +
-    geom_histogram(binwidth=1,fill="white",color="black") +
-    geom_histogram(data=subset(dataset,X>9.5&X<10.5),binwidth=1, 
-                 color="black", fill="skyblue")+ labs(y=NULL) +
-    theme_bw() + 
-    scale_y_continuous(breaks=NULL, name=NULL) + scale_x_continuous(breaks=seq(1,20,1)) +
-    theme(panel.border=(element_blank()))
-  
-  hist1
-@
-\end{figure}
-
-
-\begin{figure}[ht]
-\caption{Approximating $P[X \le 10]$ using Curve instead of Rectangles}
-
-<<label=LBL7c, results="asis", echo=FALSE, out.width="14cm", out.height="8cm">>=
-  hist1<-ggplot(dataset,aes(x=X)) +
-        geom_histogram(binwidth=1,fill="white",color="black") +
-        geom_histogram(data=subset(dataset,X<10.5),binwidth=1, 
-                 color="black", fill="skyblue")+ labs(y=NULL) + theme_bw() + 
-        scale_y_continuous(breaks=NULL) + theme(panel.border=(element_blank()))
-
-  density1<-ggplot(dataset,aes(x=X)) + geom_density(fill="white",color="black")+theme_bw() + 
-          labs(y=NULL) + scale_y_continuous(breaks=NULL) + scale_x_continuous(breaks=c(0,5,10.5,15,20)) +
-          theme(panel.border=(element_blank()))
-  
-  d <- ggplot_build(density1)$data[[1]]
-  density1 <- density1 + geom_area(data = subset(d, x < 10.5), aes(x=x, y=y), fill="skyblue")
-                                                                     
-  ggarrange(hist1, density1, ncol = 2, nrow = 1)
-@
-
-\end{figure}
-
 \section{Some Approximations Are Better Than Others}
 
 Examine the shape of the binomial histogram for n = 20 and p = 0.10 in Figure 7.3.
-
-\begin{figure}[ht]
-\caption{Histogram of Probabilities for Binomial n = 20 and p = 0.10}
-<<label=LBL7d, results="asis", echo=FALSE, out.width="11cm">>=
-  dataset<-rbinom(n=100000, size=20, prob=0.1)
-  dataset <- data.frame(X=dataset)
-  
-  hist1<-ggplot(dataset,aes(x=X)) +
-    geom_histogram(binwidth=1,fill="white",color="black") +
-    theme_bw() + 
-    scale_y_continuous(breaks=NULL, name=NULL) + scale_x_continuous(breaks=seq(1,20,1)) +
-    theme(panel.border=(element_blank()))
-  
-  hist1
-@
-\end{figure}
 
 Since the curve is right-skewed, we will get a poor approximation of areas if we replace the rectangles by a normal curve.  If the value of p were 0.90 instead of 0.10, the binomial histogram would be left-skewed.  It is typical behavior of binomial histograms whenever $p$ is either too close to 0 or too close to 1.  When is it `safe' to use the normal curve to approximate binomial probabilities?  A convenient rule of thumb is as follows:
 
@@ -234,32 +181,106 @@ The \textbf{Normal Curve gives reasonable approximations} of binomial probabilit
 
 We remind the reader that the normal curve approximations are still approximations.  The binomial formula should be used to calculate exact probabilities whenever possible.
 
+\newpage
+
+\begin{figure}[ht]
+
+\caption{Histogram of Probabilities for Binomial n = 30 and p = 0.4}
+
+<<label=LBL7b, results="asis", echo=FALSE, out.width="10cm", out.height="8cm">>=
+  dataset<-rnorm(n=1000000, mean=12, sd=sqrt(30*.4*.6))
+  dataset <- data.frame(X=dataset)
+
+  hist1<-ggplot(dataset,aes(x=X)) +
+    geom_histogram(binwidth=1,fill="white",color="black") +
+    geom_histogram(data=subset(dataset,X>9.5&X<10.5),binwidth=1,
+                 color="black", fill="skyblue")+ labs(y=NULL) +
+    theme_bw() +
+    scale_y_continuous(breaks=NULL, name=NULL) + scale_x_continuous(breaks=seq(1,20,1)) +
+    theme(panel.border=(element_blank()))
+
+  hist1
+@
+
+ \end{figure}
+ 
+
+\begin{figure}[ht]
+
+\caption{Approximating $P[X \le 10]$ using Curve instead of Rectangles}
+
+<<label=LBL7c, results="asis", echo=FALSE, out.width="10cm", out.height="8cm">>=
+  hist1<-ggplot(dataset,aes(x=X)) +
+        geom_histogram(binwidth=1,fill="white",color="black") +
+        geom_histogram(data=subset(dataset,X<10.5),binwidth=1,
+                 color="black", fill="skyblue")+ labs(y=NULL) + theme_bw() +
+        scale_y_continuous(breaks=NULL) + theme(panel.border=(element_blank()))
+
+  density1<-ggplot(dataset,aes(x=X)) + geom_density(fill="white",color="black")+theme_bw() +
+          labs(y=NULL) + scale_y_continuous(breaks=NULL) + scale_x_continuous(breaks=c(0,5,10.5,15,20)) +
+          theme(panel.border=(element_blank()))
+
+  d <- ggplot_build(density1)$data[[1]]
+  density1 <- density1 + geom_area(data = subset(d, x < 10.5), aes(x=x, y=y), fill="skyblue")
+
+  ggarrange(hist1, density1, ncol = 2, nrow = 1)
+@
+
+\end{figure}
+
+
+ \begin{figure}[ht]
+
+\caption{Histogram of Probabilities for Binomial n = 20 and p = 0.10}
+
+  <<label=LBL7d, results="asis", echo=FALSE, out.width="10cm", out.height="8cm" >>=
+  dataset<-rbinom(n=100000, size=20, prob=0.1)
+  dataset <- data.frame(X=dataset)
+
+  hist1<-ggplot(dataset,aes(x=X)) +
+    geom_histogram(binwidth=1,fill="white",color="black") +
+    theme_bw() +
+    scale_y_continuous(breaks=NULL, name=NULL) + scale_x_continuous(breaks=seq(1,20,1)) +
+    theme(panel.border=(element_blank()))
+
+  hist1
+@
+
+\end{figure}
+
+
 \section{Key Words}
 
 \fbox{\parbox{14cm}{
-%\begin{minipage}[ht]{6cm}
+
+\begin{minipage}[ht]{6cm}
+
 \begin{itemize}
 \item binomial distribution
 \item binomial experiment
-\item binomial random variable
 \end{itemize}
-%\end{minipage} \hfill
-% \begin{minipage}[ht]{6cm}
-% \begin{itemize}
+
+\end{minipage} 
+\begin{minipage}[ht]{6cm}
+
+\begin{itemize}
+\item binomial random variable
+\item normalize binomial distribution
 % \item binomial tables
 % \item discrete random variables
-% \end{itemize}
-% \end{minipage}
+ \end{itemize}
+ 
+\end{minipage}
 }}
 
 
+\newpage
 
 \twocolumn
 
 \section{}
 
 \begin{exercises}
-
   \begin{exercise} % 1
 
 A binomial random variable \\ with a probability of success of 0.5 and ten \\ observations. Assume each observation is \\ independent.
@@ -306,12 +327,12 @@ A statistics exam contains ten questions with five multiple choice options per q
 % <<label=LBL7-2, results="asis", echo=FALSE>>=
 %   N1 <- 10
 %   P1 <- .2
-% 
+%
 %   prob1 <- 1 - pbinom(q=(2-1), size=N1, p=P1)
 %   prob2 <- pbinom(q=2, size=N1, p=P1)
 %   prob3 <- pbinom(q=3, size=N1, p=P1) - pbinom(q=(1-1), size=N1, p=P1)
 % @
-% 
+%
 % \begin{enumerate}
 % \item The probability that at least 2 questions are correct is $P[X \ge 2] = \Sexpr{prob1}$.
 % \item The probability that at most 2 questions arecorrect is $P[X \le 2] = \Sexpr{prob2}$.
@@ -355,14 +376,14 @@ When rolling a die ten \\ times,
 \end{enumerate}
 	\end{exercise}
 % 	\begin{solution}  % 4
-% 
+%
 % <<label=LBL7-4, results="asis", echo=FALSE>>=
 %   N1 <- 10
 %   P1 <- 1/6
 %   prob1 <- pbinom(q=3, size=N1, p=P1)
 %   prob2 <- 1 - pbinom(q=(3-1), size=N1, p=P1)
 % @
-% 
+%
 % \begin{enumerate}
 % \item The probability of rolling a 6 no more than 3 times is $P[X \le 3] = \Sexpr{prob1}$.
 % \item The probability that no less than 3 times is $P[X \ge 3] = \Sexpr{prob2}$.
@@ -407,7 +428,7 @@ Fill in the blanks. The probability of picking the Powerball number is \\ 0.0254
 %   MN1 <- N1 * P1
 %   SD1 <- sqrt(N1*P1*(1-P1))
 % @
-% 
+%
 % The expected value is \Sexpr{MN1} and SD is \Sexpr{SD1}
 % 	\end{solution}
 
@@ -427,11 +448,11 @@ The expected value is \Sexpr{MN1} and SD is \Sexpr{SD1}
 	\end{solution}
 
   \begin{exercise}   % 8
-  
-An industry official claims that 60 percent of all satellite dish owners subscribe to at least two premium movie channels.  In an attempt to clarify this claim, the official will poll a random sample of dish owners.  Suppose the official's claim is true, and that she selected a random sample of 50 dish owners.  Assuming independence, 
+
+An industry official claims that 60 percent of all satellite dish owners subscribe to at least two premium movie channels.  In an attempt to clarify this claim, the official will poll a random sample of dish owners.  Suppose the official's claim is true, and that she selected a random sample of 50 dish owners.  Assuming independence,
 
 \begin{enumerate}
-\item what is the probability that 33 or more dish owners in the sample subscribe to at least two premium movie channels? 
+\item what is the probability that 33 or more dish owners in the sample subscribe to at least two premium movie channels?
 \item what is the probability that 25 or fewer dish owners in the sample subscribe to at least two premium movie channels?
 \end{enumerate}
 \end{exercise}
@@ -446,7 +467,7 @@ An industry official claims that 60 percent of all satellite dish owners subscri
   prb7a <- sprintf("%.4f", (1 - pnorm(z7a)))       ## P[ x >= 33]
   z7b  <- ((25+.5) - mn7) / sd7
   prb7b <- sprintf("%.4f", pnorm(z7b))             ## P[ x <= 25]
-@  
+@
 
 \begin{enumerate}
 \item $P[ x \ge 33] = \Sexpr{prb7a}$
@@ -454,7 +475,8 @@ An industry official claims that 60 percent of all satellite dish owners subscri
 \end{enumerate}
 
 \end{solution}
-
+ 
 \end{exercises}
+ 
 \onecolumn
 

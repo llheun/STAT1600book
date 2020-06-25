@@ -1,0 +1,589 @@
+%!Rnw root = ../../Main.Rnw
+
+\chapter{More Comparing Two Means}
+\label{chap:ch13}
+
+\section{Objectives}
+
+After completing this part, students should be able to:
+
+\fbox{\parbox{14cm}{
+\begin{itemize}
+\item Set-up and perform hypothesis testing for means
+\item Explain Type I and Type II errors
+\item Articulate the conclusions to a broader audience.
+\end{itemize}
+}}
+
+\section{Overview and Example 1}
+
+\subsection{Grade Inflation Revisited}
+
+The previous chapter outlines a situation where some grade inflation might occur at WMU over the last ten years.  The method used to analyze this situation was a confidence interval.  Instead of a confidence interval, let us return to that example, and try a different form of analysis:  the hypothesis test using test statistic, and $p$-value.  The new method will have the same result as the confidence interval.  However, we must learn both methods since many disciplines use both statistical analyses.  Let us review the relevant statistics.
+
+Suppose a random sample of 100 student records from 10 years ago yields an average sample GPA of 2.90 with a standard deviation of 0.40. A random sample of 100 current students today yields a sample average of 2.98 with a standard deviation of 0.45. The difference between the two-sample means is $2.98 - 2.90 = 0.08$.  We will use the following  notation: $n_1 = 100$, $\bar{x}_1 = 2.90$, $s_1 = 0.40$, $n_2 = 100$, $\bar{x}_2 = 2.98$, and $s_2 = 0.45$.
+
+% \newpage
+
+What are the two possibilities here?
+
+
+\begin{enumerate}
+\item There is no grade inflation at WMU, our sample is in error.
+\item There is grade inflation at WMU, our sample is not in error.
+\end{enumerate}
+
+
+Although we cannot say for sure which of the possibilities is true, we can calculate the probability of each possibility. To do so, we will (as always) assume the normal distribution holds, assume the two means are independent, calculate a standard error, calculate a test statistic, and find a $p$-value.
+
+\subsection{Define Hypotheses Testing}
+
+Definition: Hypotheses testing is a process of using sample data and probability to test the characteristics of one or more populations. In the present example, the populations are all the students at WMU during the first sampling, and all students at WMU during the second sampling.
+
+Here is how we use hypotheses tests:
+
+\begin{enumerate}
+\item Make a statement about the nature of the population(s). 
+\item Formulate an Analysis Plan.
+  \begin{itemize}
+  \item Sampling Distribution is approximately normal 
+  \item Choose a level of significance equal to 0.05.
+  \item Decide the number of observations.
+  \item Select a test method.
+  \end{itemize}
+\item Analyze the data.
+\item Interpret the Results.
+\item Communicate our results to the audience.
+\end{enumerate}
+
+\subsubsection{Definition:} The Null Hypothesis $(H_0)$ is a statement about the status quo. It says there is no difference.
+
+\subsubsection{Definition:} The Alternative Hypothesis $(H_a)$ is a statement that contradicts the $(H_0)$. It says there is a difference.
+
+If the null hypothesis is true, then in a sense nothing special is going on. In the present example, the null hypothesis is that there is no grade inflation at WMU. Can we reject this null hypothesis and state that it is probably the case that there is grade inflation at WMU? If so, then we would be affirming the alternative hypothesis We will find out soon. For now let us write that:
+
+\begin{eqnarray*}
+H_0: \mu_1 = \mu_2 \\
+H_a: \mu_1 \ne \mu_2 
+\end{eqnarray*}
+
+The greek letter $\mu$ is a common symbol for a population mean. This is convenient notation that really says the same thing as the above text: the null hypothesis is that the two population means are equal, or that there is no difference between WMU grades at time 1 and time 2; the alternative hypothesis is that the two population means are not equal, or that there is a difference between WMU grades at time 1 and time 2. Often in the real world of statistical analyses, the statement of the alternative hypothesis is a little more difficult. An alternative hypothesis could be $<$, $>$, or $\ne$, i.e., it could be either one or two-tailed, but in our course we keep things simple for you and simply always use $\ne$.
+
+\section{Calculation and Analysis for Example 1}
+
+When the difference, between the observed means of sample A and sample B, is similar; we can expect no significance, i.e., $(\bar{x}_1 - \bar{x}_2) \sim 0 $.   On the other hand, when the means are
+dissimilar, we should expect a significant difference. The bigger the difference, the more likely we are to find significance and conclude with the alternative hypothesis. Recalling that our difference in the grade inflation example is $(2.98 - 2.90) = 0.08$, we might expect there really is not a significant difference here, but let us perform the full analysis to find out.
+
+\begin{enumerate}
+\item State the hypotheses
+  \begin{itemize}
+  \item $H_0: \mu_1 = \mu_2$ ,  there is no grade inflation. 
+  \item $H_a: \mu_1 \ne \mu_2$ ,  there is  grade inflation. 
+  \end{itemize}
+\item Formulate an Analysis Plan:
+  \begin{enumerate}
+  \item We assume the sampling Distribution is approximately normal
+  \item Choose a level of significance equal to 0.05 (this could be any value $\le 1$,  but again, we will keep things simple for this course and always select 0.05 or 95 percent confidence).
+  \item Determine the number of observations: $n_1 = 100, n_2 = 100$. 
+  \item Selecting a standard error based on the above assumptions:
+  
+  \begin{eqnarray*}
+  SE_{\bar{x}_1 - \bar{x}_2} &=& \sqrt{ SE_{\bar{x}_1} + SE_{\bar{x}_2}} \\
+   &=& \sqrt{ \frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}}
+   \end{eqnarray*} 
+ 
+\item Selecting a test method (statistic):
+
+  \begin{eqnarray*}
+  Z_0 &=& \frac{ \bar{x}_1 - \bar{x}_2}{SE_{\bar{x}_1 - \bar{x}_2}} \\
+  &=& \frac{ \bar{x}_1 - \bar{x}_2}{ \sqrt{ \frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}} }
+   \end{eqnarray*} 
+ \end{enumerate}
+ 
+\item Analyze the data. Let us calculate the above:
+
+  \begin{eqnarray*}
+  Z_0 &=& \frac{ \bar{x}_1 - \bar{x}_2}{ \sqrt{ \frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}} } \\
+    &=& \frac{ 2.98 - 2.90 }{ \sqrt{ \frac{0.45^2 }{100} + \frac{0.40^2}{100}}} \\
+    &=& \frac{ 0.08}{0.06} \\
+    &\approx& 1.3333 
+   \end{eqnarray*} 
+   
+\item Interpret the Results.
+
+\begin{itemize}
+\item The test statistic is relatively small at $Z_0 = 1.3333$.  Recall that we decided on a significance level $(\alpha)$ of 0.05. This level of significance implies we’d need at least $|Z| = 1.96$ to conclude there is a significant change between the two sampling times.
+
+\item We cannot conclude a significant difference, so we do not reject the null hypothesis. Our sample does not show there is significant grade inflation at WMU.
+
+\item Note: We have to be careful here. This is not quite the same as saying there is no grade inflation at WMU. Instead, we say that it’s not likely there is grade inflation given our sample data. We just don’t have enough evidence for the alternative hypothesis that there is grade inflation.
+
+\item Could we have used the $p$-value instead to decide whether to reject the null hypothesis? Yes. The $p$-value of these two-tailed tests is the probability of obtaining an $|Z|$ value larger than that of the test statistic.  In notation: 
+$p$-value $ = P[ |Z| > |Z_0|$].  This probability can be obtained from the $Z$-table by finding the area of the curve less than a negative $Z_0$ or greater than a positive $Z_0$, then multiplying this area by 2. In our example, the probability obtained from the $Z$-table using $Z_0 = 1.33$ is 0.0918.  $p$-value $= 2 \times 0.0918 = 0.1836$. Recall now that our significance level was set at 0.05 at the outset of this problem.  We use the decision rule that the $p$-value must be less or equal to the significance level in order to reject the null hypothesis. 
+Since our $p$-value 0.1836 is much greater than 0.05, therefore, we do not reject the null hypothesis (as we expected). Once again we conclude there is not enough evidence to decide there is grade inflation at WMU, whether using the test statistic, the $p$-value, or the previous chapter confidence interval.
+
+\end{itemize}
+
+\end{enumerate}
+
+\section{Example 2}
+
+\subsection{The Question}
+
+In their paper \textit{Modeling wine preferences by data mining from physicochemical properties,} \footnote{ P. Cortez, A. Cerdeira, F. Almeida, T. Matos and J. Reis. Modeling wine preferences by data mining from physicochemical properties.  In Decision Support Systems, Elsevier, 47(4):547-553, 2009.}
+Cortez et al. present a dataset on wine qualities and preferences. Many interesting variables
+are included such as the pH, fixed acidity, alcohol content, and quality score for thousands of 
+sampled wines. For the remainder of this chapter, we will use this dataset to compare means 
+
+
+So what questions can we ask about the wines using this dataset? There are many interesting topics to choose from since the dataset contains 13 variables across 6497 different sampled wines. Let’s start with grouping by color and go from there; the dataset contains 1599 red wines and 4898 white wines. Do you think there may be a difference in the fixed acidity of red vs. white wines? Let’s find out.
+
+\subsubsection{The Question:}  Do the averages of fixed acidity for white vs. red wines significantly differ?
+
+\subsection{Working Through Example 2}
+
+<<label=LBL13aa, results="asis", echo=FALSE>>=
+  
+  red1   <- read.csv("data/winequalityRed.csv", sep = ";")
+  
+  white1 <- read.csv("data/winequalityWhite.csv", sep = ";")
+  red1['color']   <- 'red'
+  white1['color'] <- 'white'
+  nwhite1 <- length(white1$fixed.acidity)
+  mnwhite1 <- mean(white1$fixed.acidity)
+  sdwhite1 <- sd(white1$fixed.acidity)
+  nred1   <- length(red1$fixed.acidity)
+  mnred1  <- mean(red1$fixed.acidity)   
+  sdred1  <- sd(red1$fixed.acidity)
+  nTot    <- nwhite1 + nred1
+@
+
+\begin{enumerate}
+\item Make a statement about the nature of the population(s).
+
+We did this above. Let’s note here that the two populations, red vs. white wines, are independent of one another as required by the mathematics taught here.
+
+\item Formulate an Analysis Plan.
+
+  \begin{itemize}
+  \item Sampling Distribution is approximately normal \\ Are the samples roughly normal? Let’s check by constructing histograms:
+  
+\begin{minipage}[ht]{6cm}
+
+<<label=LBL13ab, results="asis", echo=FALSE, out.height="6cm", out.width="6cm">>=
+  hist(x = white1$fixed.acidity, xlab="Fixed Acidity", main="White Wines", col="white")
+
+@  
+
+\end{minipage}
+\begin{minipage}[ht]{6cm}
+
+<<label=LBL13ac, results="asis", echo=FALSE, out.height="6cm", out.width="6cm">>=
+  hist(x = red1$fixed.acidity, xlab="Fixed Acidity", main="Red Wines", col="red")
+
+@  
+\end{minipage}
+
+
+Although a little right skewed, we can treat these as normal for our purposes. It is always a good idea to check the data before proceeding. We also know the samples are separate.
+
+  \item Choose a level of significance equal to 0.05.
+
+  Recall this implies that we'll use a benchmark $|Z| = 1.96$ to draw our conclusions at the end.
+  
+  \item Determine the number of observations.
+  
+  As noted above, there are \Sexpr{nTot} different sampled wines in this dataset. \Sexpr{nred1} are
+red, and \Sexpr{nwhite1} are white.
+
+  \item Select a test method.
+  
+  We'll use the same $Z_0$ as before:
+  
+    \begin{eqnarray*}
+    Z_0 &=& \frac{ \bar{x}_1 - \bar{x}_2}{SE_{\bar{x}_1 - \bar{x}_2}} \\
+      &=& \frac{ \bar{x}_1 - \bar{x}_2}{ \sqrt{ \frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}} }
+   \end{eqnarray*} 
+
+  \end{itemize}
+  
+\item Analyze the data.
+
+  \begin{itemize}
+  \item $H_0: \mu_w = \mu_r$ ,    there is no difference in fixed acidity between red and white wines. 
+  \item $H_a: \mu_w \ne \mu_r$ ,  there is a difference in fixed acidity between red and white wines. 
+  \end{itemize}
+  
+  We will use R software to calculate the necessary sample statistic:
+ 
+ % Requires the booktabs if the memoir class is not being used
+\begin{table}[htbp]
+   \centering
+   \caption{Summary Statistics}
+   %\topcaption{Table captions are better up top} % requires the topcapt package
+   \begin{tabular}{@{} lrr @{}}  \hline % Column formatting, @{} suppresses leading/trailing space
+      % \toprule
+      & \multicolumn{2}{c}{Wines } \\
+      \hline 
+      % \cmidrule(r){1-2} % Partial rule. (r) trims the line a little bit on the right; (l) & (lr) also possible
+          & White(w)  & Red(r)  \\ \hline
+      % \midrule
+      Mean & \Sexpr{mnwhite1} & \Sexpr{mnred1} \\
+      SD   & \Sexpr{sdwhite1} & \Sexpr{sdred1} \\
+      N    & \Sexpr{nwhite1}  & \Sexpr{nred1}  \\ \hline
+   \end{tabular}
+   
+   \label{tab:tbwines}
+\end{table} 
+
+Finally we calculate the test statistic:
+
+  \begin{eqnarray*}
+  Z_0 &=& \frac{ \bar{x}_w - \bar{x}_r}{ \sqrt{ \frac{s_w^2}{n_w} + \frac{s_r^2}{n_r}}} \\
+    &=& \frac{ 6.85 - 8.32 }{ \sqrt{ \frac{0.844^2 }{4898} + \frac{1.741^2}{1599}}} \\
+    &\approx& -32.42 
+   \end{eqnarray*} 
+   
+Note that this time we obtained a negative $Z_0$ because of the way we took the difference in the numerator. There is nothing wrong with this. We could have switched the numerator around and obtained its positive counterpart just as easily.
+
+\item Interpret the Results.
+
+This $Z_0 = -32.42$ is an extreme Z value.  It falls very far off the Z table.  This is much less than $Z = -1.96$, so we reject the null hypothesis with great force.  We might also consider the $p$-value. Although the $p$-value cannot be obtained from the Z-table since it does not go beyond -4, we can use R software to calculate it. The $p$-value is 1.43e-230, diminishingly smaller than 0.05, so we reject the null hypothesis. The fixed acidities are quite different given the large sample size. We are much more than 95 percent confident that white wine and red wine differ in their fixed acidities according to this analysis.
+
+\item Communicate our results to the audience.
+
+Many different options are available to you here such as the histograms, sample statistics, test statistic, and $p$-value.  Perhaps the most difficult point to make is the significance of our $Z_0$ since it is quite far from zero, and the $p$-value quite small. To help with this, we can say we are over 30 standard errors from no difference between these two means! We could also say that the $p$-value has over 200 zeros past the decimal!
+
+\end{enumerate}
+
+\subsection{Large Samples, Free Data, and Free Software }
+
+The wine dataset used above is freely available online and fun to play with. One reason it was selected for this chapter was to demonstrate the impact a larger sample can have on your analysis. As you saw above, a large sample tends to make even small differences appear extremely significant. Another reason it was selected was to demonstrate the computational power you can get out of the free R software used to do the calculations. The reader is highly encouraged to download both the dataset and R software to do some explorations of their own. Please do not hesitate to ask your instructor for help downloading or using R during your coursework with us.
+
+\section{Key Words}
+
+\fbox{\parbox{14cm}{
+\begin{minipage}[ht]{6cm}
+
+\begin{itemize}
+\item Dependent
+\item Independent
+\item Sampling Distribution 
+\item Normal Distribution
+\item Hypothesis Testing
+\item Null Hypothesis
+\end{itemize}
+\end{minipage} \hfill
+\begin{minipage}[ht]{6cm}
+
+\begin{itemize}
+\item Alternative Hypothesis 
+\item Standard Error
+\item Test Statistic
+\item P-value
+\item Significance Level
+\item Two Sample Means
+\end{itemize}
+\end{minipage}
+}}
+
+\twocolumn
+
+\section{}
+
+\begin{exercises}
+\begin{exercise} % 1
+
+<<label=LBL13d, results="asis", echoFALSE>>=
+    nwhite2  <- length(white1$alcohol)
+    mnwhite2 <- mean(white1$alcohol) 
+    sdwhite2 <- sd(white1$alcohol)
+    nred2  <- length(red1$alcohol)
+    mnred2 <- mean(red1$alcohol) 
+    sdred2 <- sd(red1$alcohol)
+    mnDiff <- mnred2 - mnwhite2
+    SDdiff <- sqrt( sdred2^2/nred2 + sdwhite2^2/nwhite2)
+    z2     <- mnDiff / SDdiff
+    pval2  <- 2 * pnorm(z2)
+    
+@  
+
+The wine quality dataset used in this chapter includes a variable on alcohol content. The average alcohol content of red wine is 10.423, while that of white wine is 10.5143. The respective standard deviations are 1.0657 and 1.2306. The respective sample sizes are 1599 and 4898.
+
+\begin{itemize}
+  \item Set up a hypothesis test. What are the two hypotheses?
+  \item What is the difference between means?
+  \item What is the standard error of the difference?
+  \item What is the test statistic $Z_0$?
+  \item What is the $p$-value?
+  \item What should you conclude?
+\end{itemize}
+
+\end{exercise}
+\begin{solution} % 1
+
+Percent of alcohol 
+
+\begin{itemize}
+  \item $H_0: \mu_r = \mu_w$ vs. $H_a: \mu_r \ne \mu_w$
+  \item  means difference = \Sexpr{mnDiff}
+  \item  standard error  = \Sexpr{SDdiff}
+  \item  test statistic = \Sexpr{z2}
+  \item  $p$-value = \Sexpr{pval2}
+  \item  I conclude to reject the null hypothesis since the p-value is less than 0.05.
+\end{itemize}
+
+\end{solution}
+
+\begin{exercise} % 2
+
+The wine quality dataset used in this chapter includes a variable on quality. The average quality score of red wine is 5.636, while that of white wine is 5.8779. The respective standard deviations are 0.8076 and 0.8856. The respective sample sizes are 1599 and 4898.
+
+\begin{itemize}
+  \item Set up a hypothesis test. What are the two hypotheses?
+  \item What is the difference between means?
+  \item What is the standard error of the difference?
+  \item What is the test statistic $Z_0$?
+  \item What is the $p$-value?
+  \item What should you conclude?
+\end{itemize}
+
+\end{exercise}
+% \begin{solution} % 2
+% 
+% 
+% \end{solution}
+
+\begin{exercise} % 3
+
+True or False? Suppose a two-tailed $Z_0$ test statistic is calculated and it is positive. Then the $p$-value will be the area below this $Z_0$.
+
+\end{exercise}
+\begin{solution} % 3
+
+False
+
+\end{solution}
+
+\begin{exercise} % 4
+
+True or False? Suppose a two-tailed $Z_0$ test statistic is calculated and it is negative. Then the $p$-value will be the area below this $Z_0$.
+
+\end{exercise}
+% \begin{solution} % 4
+% 
+% 
+% \end{solution}
+
+\begin{exercise} % 5
+
+True or False? If we obtain a test statistic that is either much greater than 1.96 or much smaller than -1.96, then we fail to reject the null hypothesis.
+
+\end{exercise}
+\begin{solution} % 5
+
+False 
+
+\end{solution}
+
+
+\begin{exercise} % 6
+
+True or False? If we obtain a $p$-value that is much larger than 0.05, then we fail to reject the null hypothesis.
+
+\end{exercise}
+% \begin{solution} % 6
+% 
+% 
+% \end{solution}
+
+
+
+
+
+% \begin{exercise} % 1
+% 
+% Do credit cards with no annual fee charge higher interest rates (APR) than cards that have annual fees?  Among 29 cards surveyed, 17 had no annual fees while 12 charged an annual fee.  Among the cards with no annual fee, the average APR was 19\% (SD=8\%).  Among cards with an annual fee, the average APR was 17\% (SD=3\%).
+% 
+% \begin{enumerate}
+%   \item Estimate the difference in APR.
+%   \item Calculate a standard error for your estimate in (1).
+%   \item Calculate a 95\% confidence interval for the difference in APR between the two groups.
+%   \item Are interest rates significantly higher for cards with no annual fees?
+%   \item What is the P-value for comparing the two averages? Is the difference significant?
+% \end{enumerate}
+% \end{exercise}
+% \begin{solution} % 1
+% 
+% 
+% \end{solution}
+%
+% \begin{exercise}  % 2
+% 
+% 100 students graduating \\ with Bachelor degrees in engineering make an average of \$70,000 with a standard deviation of \$5,000 when entering the workforce. 68 students graduating with Bachelor degrees in statistics make an average of \$65,000 with a standard deviation of \$3,000 when entering the workforce. Assuming the two samples of students are independent, answer the following questions:
+% 
+% \begin{enumerate}
+%   \item What is the difference between the sample averages (engineers – statisticians)?
+%   \item What is the standard error of the estimate for the true difference in average entrance salaries between all engineering and statistics BA graduates?
+%   \item What is a 95\% confidence interval for the difference in sample averages?
+%   \item Do these statistics suggest that average entrance salaries for stats vs. engineering students are significantly different?
+% \end{enumerate}
+% 
+% \end{exercise}
+% \begin{solution}  % 2
+% 
+% \end{solution}
+% 
+% \begin{exercise}  % 3
+% 
+% A Junior at Southwest \\ Michigan college is debating whether to pursue an MBA after her Bachelor degree in management.  She interviews some people she \\ knows in the workforce and was able to obtain their salaries. The annual salaries (in dollars) are summarized in the following table:
+% 
+% \begin{tabular}{@{} lccc @{}} \hline
+% Degree & Aver & SD & Sample Size \\ \hline
+% Bachelor & \$48,286 & \$416 & 12 \\
+% Master   & \$59,496 & \$675 & 7 \\ \hline
+% \end{tabular}
+% 
+% \begin{enumerate}
+%   \item Estimate the difference in average salary between the two groups.
+%   \item Calculate a standard error for our estimate in (1).
+%   \item Calculate a 95\% confidence interval for the average difference in salary.
+%   \item Are MBA salaries significantly higher?
+%   \item What is the P-value for comparing the two averages? Is the difference significant?
+% \end{enumerate}
+% \end{exercise}  
+% \begin{solution}  % 3
+% 
+% \end{solution}
+% 
+% \begin{exercise}  % 4
+% 
+% A group of charity workers employed by a large foundation track the donations made to the foundation every month. They note that the average donations for August were somewhat higher than the average donations for September, and they want to know if this fact should worry them moving forward. Performing the correct statistical test could determine whether the average difference in donations between August and \\ September was significant. However, they \\ must first decide whether their August and  September donations are independent or not. If we were advising the charity workers, what would we tell them?
+% \end{exercise}
+% \begin{solution}  % 4
+% 
+% 
+% \end{solution}
+% 
+% \begin{exercise}  % 5
+% 
+% A new gasoline additive is supposed to make gas burn more cleanly and increase gas mileage in the process.  Consumer Protection Anonymous conducted a mileage test to confirm this.  They took seven of their cars, filled it with regular gas, and drove it on I-94 until it was empty.  They repeated the process using the same cars, but using the gas additive.  The recorded gas mileage follows:
+% 
+% \begin{tabular}{@{} llllllll @{}} \hline
+% Additive & 1 & 2 & 3 & 4 & 5 & 6 & 7 \\ \hline
+% Without & 22 & 15 & 18 & 28 & 12 & 25 & 18 \\
+% With    & 26 & 19 & 17 & 34 & 17 & 25 & 22 \\ \hline
+% \end{tabular}
+% 
+% \begin{enumerate}
+%   \item Calculate the mean difference in mileage between the two fuel types.         \item Calculate a standard error for our estimate in (1).
+%   \item Calculate a 95\% confidence interval for the mean mileage difference.
+%   \item Does the data support the claim of \\ higher gas mileage?
+% \end{enumerate}
+% 
+% \end{exercise}
+% \begin{solution}  % 5
+% 
+% \end{solution}
+% 
+% \begin{exercise}  % 6
+% 
+% The group of charity workers from the above question decides on a statistical test based on the sage wisdom we previously offered. They perform a test for significance of the average difference, and it yields a p-value of 0.50. As their stats advisor, how would we interpret this p-value concerning \\ whether the average difference in donations for August versus September was \\ significant?
+% \end{exercise}
+% \begin{solution}  % 6
+% 
+% \end{solution}
+% 
+% \begin{exercise}  % 7
+% 
+% Suppose a shoe company wants to test material for the soles of shoes.  For each pair of shoes the new material is placed on one shoe and the old material is placed on the other shoe.  After a given period of time a random sample of 16 pairs of shoes is selected.  The wear is measured on a 10 point scale (higher is better) with the following results.  The average of the differences is $\bar{X}_n - \bar{X}_o = 0.4$ and it standard deviation is $s_{diff} = 1.6$.
+% 
+% \begin{enumerate}
+%   \item Determine the mean difference in the sole-wear between the two material \\ types.        
+%   \item Calculate a standard error for our estimate in (1).
+%   \item Calculate a 95\% confidence interval for the mean sole-wear difference.
+%   \item Does the data support the claim that the new material gives superior wear?
+% \end{enumerate}
+% 
+% \end{exercise}
+% \begin{solution}  % # 7
+% 
+% <<label=LBL13a, results="asis", echo=FALSE>>=
+%   n11 <- 16
+%   xbar11 <- 0.4
+%   sd11 <- 1.6
+%   se11 <- 1.6 / sqrt(16)
+%   cv11 <- qt(.975, (n11-1))
+%   lbnd11 <- xbar11 - cv11 * se11
+%   ubnd11 <- xbar11 + cv11 * se11
+% @
+% 
+% \begin{enumerate}
+%   \item $\bar{X}_d = \Sexpr{xbar11} $     
+%   \item $SE_d = \Sexpr{se11}$
+%   \item $95\% CI  \rightarrow ( \Sexpr{lbnd11}, \Sexpr{ubnd11} )$
+%   \item Does the data support the claim that the new material gives superior wear?  No, since zero is contained in the 95\% CI.
+% \end{enumerate}
+% 
+% \end{solution}
+% 
+% \begin{exercise}   % 8
+% 
+% <<label=LBL13b, results="asis", echo=FALSE>>=
+%   RMon  <- c(28,38,43,35,42,48,31,46,55,26,56,25,50,40,47)
+%   RMoff <- c(24,34,47,29,37,26,37,38,23,52,42,31,17,40,41)
+%   tbl1 <- matrix(nrow=3,ncol=2)
+%   rownames(tbl1)<- c('Mean', 'SD', 'n')
+%   colnames(tbl1)<- c('RMon', 'RMoff')
+%   tmp11 <- mean(RMon)
+%   tbl1[1,1] <- sprintf("%.2f",tmp11)
+%   tmp21 <- sd(RMon)
+%   tbl1[2,1] <- sprintf("%.3f", tmp21)
+%   tmp31 <- length(RMon)
+%   tbl1[3,1] <- sprintf("%.0f", tmp31)
+%   tmp12 <- mean(RMoff)
+%   tbl1[1,2] <- sprintf("%.2f", tmp12)
+%   tmp22 <- sd(RMoff)
+%   tbl1[2,2] <- sprintf("%.3f", tmp22)
+%   tmp32 <- length(RMoff)
+%   tbl1[3,2] <- sprintf("%.0f", tmp32)
+%   
+%   diff1 <- tmp11 - tmp12
+%   SE1   <- sqrt( (tmp21^2/tmp31) + (tmp22^2/tmp32 ))
+%   z1    <- diff1/ SE1
+%   pval1 <- 1 - pnorm(z1)
+%   xtable(tbl1, caption="Ramp Metering")
+%                  
+% @  
+% 
+% Ramp metering is an engineering experiment that studies how automobiles enter an expressway to stop for a short time before they join the flow of traffic.  The theory is that ramp metering  directs the number of vehicles on the expressway and the \\ number of vehicles accessing the expressway, resulting in a freer flow, which results in a faster travel times.  To prove the hypothesis whether ramp metering affects travel time, traffic engineers in Kalamazoo, Michigan, set up an experiment on a section of expressway where ramp meters were installed.  The response variable was the speed of vehicles.  A random sample of 15 vehicles on the expressway for a Tuesday at 5 p.m. with the ramp meters on and a second random sample of 15 vehicles on a different Tuesday at 5 p.m. with the ramp meters off resulted in the following speed summaries(in miles per hour).
+% 
+% \begin{enumerate}
+%   \item Determine the mean difference between ramp meters on and ramp meters off.
+%           
+%   \item Calculate a standard error for our estimate in (1).
+%   \item Calculate a 95\% confidence interval for the mean ramp meter on-off difference.
+%   \item Does the data support the claim that ramp metering improves traffic flow?
+% \end{enumerate}
+% 
+% 
+% \end{exercise}
+% \begin{solution}  % 8
+% 
+% 
+% \end{solution}
+
+
+\end{exercises}
+
+
+\onecolumn
+
+
+
+
+
+
+
+
+

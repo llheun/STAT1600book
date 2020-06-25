@@ -1,14 +1,12 @@
-%!Rnw root = ../../Master.Rnw
+%!Rnw root = ../../Main.Rnw
 
 \chapter{Workshops}
 \label{chap:ch17}
 
 % \section{Workshop 1A}         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{exercises}
-
 \clearpage
-
+\begin{exercises}
     \begin{exercise}  % 1A        %%%%%%%%%%%%%%%%%%
     
     \begin{center}
@@ -32,7 +30,7 @@ Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phan
 \begin{minipage}[ht]{9cm}
 
 {\small{
-Table 15.1: A partial list of students registered for Stat 1600 during Fall 2016 of their Major course of study.
+Table 17.1: A partial list of students registered for Stat 1600 during Fall 2016 of their Major course of study.
 
 %\begin{table}[ht]
 \centering
@@ -69,7 +67,7 @@ Total         &32 &40 &36 &26 &22 &156 &   \\ \hline
 \end{minipage}
 \begin{minipage}[ht]{6cm}
     
-    Using the data from Table 15.1,
+    Using the data from Table 17.1,
 
 \begin{enumerate}
   \item Construct a relative frequency table for total student majors (column above).
@@ -116,7 +114,7 @@ Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phan
 \begin{minipage}[ht]{9cm}
 
 {\small{
-Table 15.2: A partial list of students registered for Stat 1600 during Fall 2016 of their Major course of study.
+Table 17.2: A partial list of students registered for Stat 1600 during Fall 2016 of their Major course of study.
 
 %\begin{table}[ht]
 \centering
@@ -152,7 +150,8 @@ Total         &32 &40 &36 &26 &22 &156 &   \\ \hline
 }}
 \end{minipage}
 \begin{minipage}[ht]{6cm}
-    Using the data from Table 15.2,
+
+    Using the data from Table 17.2,
 
 \begin{enumerate}
   \item	Using the column `RF' above, construct a relative frequency table for student majors in the Web Class only.
@@ -212,7 +211,7 @@ Other	& 287 & 54 \\ \hline
 \end{tabular}
 \end{table}
     
-    Using the data from Table 15.3,
+    Using the data from Table 17.1,
 
 \begin{enumerate}
   \item What type of variable is `type of infection' numerical or categorical?
@@ -436,19 +435,29 @@ Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phan
  }}
 \end{center}
 
+% {\small{
 The number of ice cream cones sold during a single day in the middle of August was tracked for surrounding stores.  Consider the following stem and leaf and answer the  questions below. The stem represents `10's' and the leaves represent `1's'.  For instance, the first number represented is 14 (14 ice cream cones were sold at one store). 
 
-% 14,16,22,23,25,28,30,34,34,36,37,37,39,41,43,45,49,54,56
+\vspace{-4mm} 
 
+{\small{
 \begin{verbatim}
-<<label=LBL15a, results="asis", echo=FALSE>>=
+<<label=LBL17a, results="asis", echo=FALSE>>=
   DT1 <- c(14,16,22,23,25,28,30,34,34,36,37,37,39,41,43,45,49,54,56)
   stem(DT1, scale=1)
 @
 \end{verbatim}
+}}
 
-Give the five-number summary of the data.   :
+\vspace{-4mm}
 
+\begin{minipage}[ht]{7cm}
+
+{\small{Give the five-number summary of the data:}}
+
+\vspace{-2mm}
+
+{\small{
 \begin{enumerate}
   \item Make sure to show your work!
   \begin{enumerate}
@@ -457,12 +466,18 @@ Give the five-number summary of the data.   :
     \item	What is the MED?
     \item What is Q3?
     \item What is the MAX?
-  \end{enumerate}
+  \end{enumerate} 
+  
   \item Draw a boxplot for the data.
-  \item Describe the shape of the distribution (symmetric, right skewed, or left skewed).
+  \item Describe the shape of the \\ distribution (symmetric, right skewed, or left skewed).
   \item Ice Cream sales for a single day in January were tracked among several shops.  Would we use a histogram or bar chart to represent this data?  Why?  Draw the correct chart (histogram or bar chart).
 \end{enumerate}
+}}
 
+\end{minipage} \hfill
+\begin{minipage}[bht]{7cm}
+
+{\small{
 \begin{tabular}{@{} lc @{}} \hline
 Cold Stone Creamery	& 18 \\
 Culver's &	16 \\
@@ -471,9 +486,10 @@ Treat Street &	3 \\
 Y'OPA &	20 \\
 Yo Go Delites &	24 \\ \hline
 \end{tabular}
-
-    \end{exercise}
-    \begin{solution} % 3A
+}}
+\end{minipage}
+\end{exercise} 
+\begin{solution} % 3A
 
 \begin{enumerate}
   \item	Fill in the frequency and relative frequency above.
@@ -647,7 +663,7 @@ Were waiting times longer using the ``Old Policy'' or the ``New Policy?''  To an
 \begin{enumerate}
   \item Draw comparison dotplots for the samples above.
   \item For each sample, calculate the mean AND median.  Locate (place) these on your dotplots, clearly distinguishing between the two.
-  \item What is the mode for the old policy?
+  % \item What is the mode for the old policy?
   \item Calculate the 10\% trimmed mean for the old policy.  How does this change from the regular mean?
 \end{enumerate}
 \end{exercise} 
@@ -686,7 +702,7 @@ For the data above calculate:
 \begin{enumerate}
   \item Mean
   \item Median 
-  \item Median of Pairwise Averages
+  \item 10 percent trimmed mean   % Median of Pairwise Averages
 \end{enumerate}
 \end{exercise} 
 \begin{solution}  % 4b
@@ -722,7 +738,7 @@ Weekly costs of lattes for 5 WMU graduate students are provided below.
 \begin{enumerate}
   \item Mean
   \item Median 
-  \item Median of Pairwise Averages
+  \item 20 percent trimmed mean   % Median of Pairwise Averages
 \end{enumerate}
 \end{exercise} 
 \begin{solution}  % 4c
@@ -1332,165 +1348,26 @@ Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phan
  }}
 \end{center}
 
-% Sincich, T, ``Business Statistics by Example,'' Prentice Hall, 1996, p 555
+Drugstore Cowboy
 
-As a professional courtesy, physicians have traditionally provided health care free of charge or at a reduced rate to other physicians and their families.  In 1966, 94\% of a sample of 1000 physicians offered this professional courtesy.  The \textit{New England Journal of Medicine} (Nov. 25, 1993) conducted a national survey to see if this practice continues.  It surveyed 2224 physicians who are members of the American Medical Association (AMA) and found that 1957 currently offer free or reduced-rate health care to fellow physicians.  Is there sufficient evidence to conclude that the true proportion of physicians who offer professional courtesy has changed since 1966?  Use a significance level of ($\alpha = 0.05$).
-
-
-\begin{enumerate}
-  \item In 1966, what is the proportion of physicians who offer free or reduced rate health care as a professional courtesy to other physicians and their families?
-  \item In 1993, what is the proportion of physicians who offer free or reduced rate health care as a professional courtesy to other physicians and their families?
-  \item What are the hypotheses for this scenario?
-  \item Select an analysis plan.
-  \item Compute the standard error.
-  \item Compute the test statistic.
-  \item Based on the test statistic and the critical value, what is your decision about the hypotheses?
-  \item Interpret your result in every day language?
-\end{enumerate}
-
-\end{exercise} 
-\begin{solution}  % 10a
-
-\end{solution} 
-
-\clearpage
-
-    \begin{exercise}  % 10b         %%%%%%%%%%%%%%%%%
-
-    \begin{center}
-\begin{flushleft}\textbf{\large \hfill Workshop 10B, Submitted by: }\end{flushleft}
-
-\fbox{\parbox{14cm}{
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
- }}
-\end{center}
-
-Sports fans often argue that the outcomes of professional basketball games are not decided until the fourth (and last) quarter.  In contrast, the conventional ``wisdom'' in Major League Baseball (MLB) suggests that most nine-inning games are ``over'' by the seventh inning.   Can the outcome of a baseball game really be predicted based on the team leading after seven innings?   So are we correct in assuming the team leading after three-quarters of an NBA game will win the game?  To answer these and other questions, University of Missouri researchers collected and analyzed data for 200 NBA games and 100 MLB games played during the 1900 regular season (Chance, Vol. 5, 1992). The following table reports the number and percentage of games in which the team leading after three quarters or seven innings won.  [Note: Tied games after three quarters were removed from the data set.]  Use a teat of hypothesis to compare the win percentage of NBA teams leading after three quarters to the win percentage of MLB teams leading after seven innings.  Let's use a significance level ($\alpha = 0.05$). 
-
-
-% Requires the booktabs if the memoir class is not being used
-\begin{table}[htbp]
-   \centering
-   %\topcaption{Table captions are better up top} % requires the topcapt package
-   \begin{tabular}{@{} ccccc @{}} % Column formatting, @{} suppresses leading/trailing space
-      % \toprule
-      % \multicolumn{2}{c}{Item} \\
-      % \cmidrule(r){1-2} % Partial rule. (r) trims the line a little bit on the right; (l) & (lr) also possible
-      Sport & Games & Leader Wins  & Leader Loses & \% Reversal \\ \hline
-      NBA & 189 & 150 & 39 & 20.6 \\
-      MLB & 92  & 86  & 6  & 6.5  \\ \hline
-\end{tabular}
-\caption{Source: Cooper, H, etal, \textit{Predicting outcoming}, ``Chance'', Vol 5, Nos 3-4, 1992, pp. 18-22}
-\end{table}
+According to an October 27, 2006 article in Newsweek, 60\% of Americans said that they take expired medicines. Suppose that this result is true of the current population of Americans.
 
 \begin{enumerate}
-  \item What is the proportion of an NBA team winning when leading after the third period?
-  \item What is the proportion of an MLB team winning when leading after the seventh inning?
-  \item What are the hypotheses for this scenario?
-  \item Select an analysis plan.
-   Compute the standard error.
-   Compute the test statistic.
-  \item Based on the test statistic and the critical value, what is your decision about the hypotheses?
-  \item Interpret your result in every day language?
+\item Let $x$ be a binomial random variable that denotes the number of American in a random sample of 4 who have taken expired medicines. What are the possible values that $x$ can assume?
+\item Find the probability that exactly 2 Americans in a sample of 4 have taken expired medicines.
+\item Find the probability that at least 3 Americans in a sample of 4 have taken expired medicines.
+\item Find the probability that at most 1 American in a sample of 4 have taken expired medicines.
 \end{enumerate}
 
-\end{exercise} 
-\begin{solution}  % 10b
-
-\end{solution} 
-    
-\clearpage
-
-    \begin{exercise}  % 10c         %%%%%%%%%%%%%%%%%
-
-    \begin{center}
-\begin{flushleft}\textbf{\large \hfill Workshop 10C, Submitted by: }\end{flushleft}
-
-\fbox{\parbox{14cm}{
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
- }}
-\end{center}
-
-According to \textit{Havard Business Review} (July-Aug, 1986), approximately two-thirds of the 500 largest U.S. corporations have, in varying degrees, committed some form of unethical behavior.  The lack of ethics in business has led many to question higher education's role in the ethics process.  A more recent study found that the presence of ethics in the business school curriculum is sorely lacking.  In a sample of 94 MBA programs, only 7 required a course on ethics, whereas 18 of 86 sampled undergraduate business programs required an ethics course (\textit{Journal of Education for Business}, Nov-Dec. 1990)  
-
-\begin{enumerate}
-  \item What is the proportion of MBA programs required an ethics course?
-  \item What is the proportion of undergraduate business programs required an ethics course?
-  \item What are the hypotheses for this scenario?
-  \item Select an analysis plan.
-  \item Compute the standard error.
-  \item Compute the test statistic.
-  \item Based on the test statistic and the critical value, what is your decision about the hypotheses?
-  \item Interpret your result in every day language?
-\end{enumerate}
-
-\end{exercise} 
-\begin{solution}  % 10c
+\end{exercise}
+\begin{solution}
 
 \end{solution}
 
-\clearpage
-
-    \begin{exercise}  % 11a         %%%%%%%%%%%%%%%%%
-
-    \begin{center}
-\begin{flushleft}\textbf{\large \hfill Workshop 10A, Submitted by: }\end{flushleft}
-
-\fbox{\parbox{14cm}{
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-
-\vspace{4mm}
-Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
- }}
-\end{center}
-
-Workshop 8: Drugstore Cowboy 
-
-According to an October 27, 2006 article in \textit{Newsweek}, 60\% of Americans said that they take expired medicines. Suppose that this result is true of the current population of Americans. 
-
-\begin{enumerate}
-  \item Let $x$ be a binomial random variable that denotes the number of American in a random sample of 4 who have taken expired medicines. What are the possible values that $x$ can assume?
-  \item Find the probability that exactly 2 Americans in a sample of 4 have taken expired medicines.
-  \item Find the probability that at least 3 Americans in a sample of 4 have taken expired medicines.
-  \item Find the probability that at most 1 American in a sample of 4 have taken expired medicines.
-  
-\end{enumerate}
-
-\end{exercise} 
-\begin{solution}  % 11a
-
-\end{solution}
 
 \clearpage
 
-    \begin{exercise}  % 11b         %%%%%%%%%%%%%%%%%
+     \begin{exercise}  % 10b         %%%%%%%%%%%%%%%%%
 
     \begin{center}
 \begin{flushleft}\textbf{\large \hfill Workshop 10B, Submitted by: }\end{flushleft}
@@ -1526,13 +1403,14 @@ http://www.harrisinteractive.com/harris_poll/pubs/Harris_Poll_2009_04_16.pdf
 \end{enumerate}
 
 \end{exercise} 
-\begin{solution}  % 11b
+\begin{solution}  % 10b
 
 \end{solution}
 
+    
 \clearpage
 
-    \begin{exercise}  % 8c        %%%%%%%%%%%%%%%%%
+   \begin{exercise}  % 10c        %%%%%%%%%%%%%%%%%
 
     \begin{center}
 \begin{flushleft}\textbf{\large \hfill Workshop 10C, Submitted by: }\end{flushleft}
@@ -1555,17 +1433,16 @@ Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phan
 The Bureau of Labor Statistics reports that in May 2016 that 10.5\% of people who work in the Kalamazoo metropolitan area are employed in production occupations (i.e., making things). Suppose that a random sample of 5 Kalamazoo workers is taken. Let $X$ be a random variable which denotes the number of workers in the sample who are employed in production occupations.
 
 \begin{enumerate}
-  \item What are the possible values which X can take? 
-  \item Find the probability that exactly 2 of the 5 workers in the sample will be employed in production occupations.
-  \item Find the probability that at least 3 of the 5 workers in the sample will be employed in production occupations.
-  \item Find the probability that at most 1 of the 5 workers in the sample will be employed in production occupations.
+\item What are the possible values which X can take?
+\item Find the probability that exactly 2 of the 5 workers in the sample will be employed in production occupations.
+\item Find the probability that at least 3 of the 5 workers in the sample will be employed in production occupations.
+\item Find the probability that at most 1 of the 5 workers in the sample will be employed in production occupations.
 \end{enumerate}
 
 \end{exercise} 
 \begin{solution}  % 10c
 
 \end{solution}
-
 
 \clearpage
 
@@ -1673,18 +1550,17 @@ Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phan
 The Bureau of Labor Statistics reports that in May 2016 that 10.5\% of people who work in the Kalamazoo metropolitan area are employed in production occupations (i.e., making things).
 
 \begin{enumerate}
-  \item For a random sample of 200 Kalamazoo workers, what is the expected number who will work in production occupations? What is the standard deviation of this? 
-  \item Using the normal approximation, find the probability that in a random sample of 200 Kalamazoo workers, more than 25 will work in production occupations. 
-  \item Using the normal approximation, find the probability that in a random sample of 200 Kalamazoo workers, fewer than 15 will work in production occupations. 
-  \item Using the normal approximation, find the probability that in a random sample of 200 Kalamazoo workers, between 15 and 25 (inclusive) will work in production occupations.
+\item For a random sample of 200 Kalamazoo workers, what is the expected number who will work in production occupations? What is the standard deviation of this?
+\item Using the normal approximation, find the probability that in a random sample of 200 Kalamazoo workers, more than 25 will work in production occupations.
+\item Using the normal approximation, find the probability that in a random sample of 200 Kalamazoo workers, fewer than 15 will work in production occupations.
+\item Using the normal approximation, find the probability that in a random sample of 200 Kalamazoo workers, between 15 and 25 (inclusive) will work in production occupations.
 \end{enumerate}
 
-\end{exercise} 
-\begin{solution}  % 11c
+\end{exercise}
+\begin{solution}
+
 
 \end{solution}
-
-
 
 
 
@@ -5136,5 +5012,137 @@ The Bureau of Labor Statistics reports that in May 2016 that 10.5\% of people wh
 % 
 % The correlation coefficient $r$ between a player's salary and his position makes no sense.
 %     \end{solution}
+% 
+%     \begin{exercise}  % 10a         %%%%%%%%%%%%%%%%%
+% 
+%     \begin{center}
+% \begin{flushleft}\textbf{\large \hfill Workshop 10A, Submitted by: }\end{flushleft}
+% 
+% \fbox{\parbox{14cm}{
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+%  }}
+% \end{center}
+% 
+% % Sincich, T, ``Business Statistics by Example,'' Prentice Hall, 1996, p 555
+% 
+% As a professional courtesy, physicians have traditionally provided health care free of charge or at a reduced rate to other physicians and their families.  In 1966, 94\% of a sample of 1000 physicians offered this professional courtesy.  The \textit{New England Journal of Medicine} (Nov. 25, 1993) conducted a national survey to see if this practice continues.  It surveyed 2224 physicians who are members of the American Medical Association (AMA) and found that 1957 currently offer free or reduced-rate health care to fellow physicians.  Is there sufficient evidence to conclude that the true proportion of physicians who offer professional courtesy has changed since 1966?  Use a significance level of ($\alpha = 0.05$).
+% 
+% 
+% \begin{enumerate}
+%   \item In 1966, what is the proportion of physicians who offer free or reduced rate health care as a professional courtesy to other physicians and their families?
+%   \item In 1993, what is the proportion of physicians who offer free or reduced rate health care as a professional courtesy to other physicians and their families?
+%   \item What are the hypotheses for this scenario?
+%   \item Select an analysis plan.
+%   \item Compute the standard error.
+%   \item Compute the test statistic.
+%   \item Based on the test statistic and the critical value, what is your decision about the hypotheses?
+%   \item Interpret your result in every day language?
+% \end{enumerate}
+% 
+% \end{exercise} 
+% \begin{solution}  % 10a
+% 
+% \end{solution} 
+% 
+%     \begin{exercise}  % 10b         %%%%%%%%%%%%%%%%%
+% 
+%     \begin{center}
+% \begin{flushleft}\textbf{\large \hfill Workshop 10B, Submitted by: }\end{flushleft}
+% 
+% \fbox{\parbox{14cm}{
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+%  }}
+% \end{center}
+% 
+% Sports fans often argue that the outcomes of professional basketball games are not decided until the fourth (and last) quarter.  In contrast, the conventional ``wisdom'' in Major League Baseball (MLB) suggests that most nine-inning games are ``over'' by the seventh inning.   Can the outcome of a baseball game really be predicted based on the team leading after seven innings?   So are we correct in assuming the team leading after three-quarters of an NBA game will win the game?  To answer these and other questions, University of Missouri researchers collected and analyzed data for 200 NBA games and 100 MLB games played during the 1900 regular season (Chance, Vol. 5, 1992). The following table reports the number and percentage of games in which the team leading after three quarters or seven innings won.  [Note: Tied games after three quarters were removed from the data set.]  Use a teat of hypothesis to compare the win percentage of NBA teams leading after three quarters to the win percentage of MLB teams leading after seven innings.  Let's use a significance level ($\alpha = 0.05$). 
+% 
+% 
+% % Requires the booktabs if the memoir class is not being used
+% \begin{table}[htbp]
+%    \centering
+%    %\topcaption{Table captions are better up top} % requires the topcapt package
+%    \begin{tabular}{@{} ccccc @{}} % Column formatting, @{} suppresses leading/trailing space
+%       % \toprule
+%       % \multicolumn{2}{c}{Item} \\
+%       % \cmidrule(r){1-2} % Partial rule. (r) trims the line a little bit on the right; (l) & (lr) also possible
+%       Sport & Games & Leader Wins  & Leader Loses & \% Reversal \\ \hline
+%       NBA & 189 & 150 & 39 & 20.6 \\
+%       MLB & 92  & 86  & 6  & 6.5  \\ \hline
+% \end{tabular}
+% \caption{Source: Cooper, H, etal, \textit{Predicting outcoming}, ``Chance'', Vol 5, Nos 3-4, 1992, pp. 18-22}
+% \end{table}
+% 
+% \begin{enumerate}
+%   \item What is the proportion of an NBA team winning when leading after the third period?
+%   \item What is the proportion of an MLB team winning when leading after the seventh inning?
+%   \item What are the hypotheses for this scenario?
+%   \item Select an analysis plan.
+%    Compute the standard error.
+%    Compute the test statistic.
+%   \item Based on the test statistic and the critical value, what is your decision about the hypotheses?
+%   \item Interpret your result in every day language?
+% \end{enumerate}
+% 
+% \end{exercise} 
+% \begin{solution}  % 10b
+% 
+% \end{solution} 
+% 
+%     \begin{exercise}  % 10c         %%%%%%%%%%%%%%%%%
+% 
+%     \begin{center}
+% \begin{flushleft}\textbf{\large \hfill Workshop 10C, Submitted by: }\end{flushleft}
+% 
+% \fbox{\parbox{14cm}{
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+% 
+% \vspace{4mm}
+% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+%  }}
+% \end{center}
+% 
+% According to \textit{Havard Business Review} (July-Aug, 1986), approximately two-thirds of the 500 largest U.S. corporations have, in varying degrees, committed some form of unethical behavior.  The lack of ethics in business has led many to question higher education's role in the ethics process.  A more recent study found that the presence of ethics in the business school curriculum is sorely lacking.  In a sample of 94 MBA programs, only 7 required a course on ethics, whereas 18 of 86 sampled undergraduate business programs required an ethics course (\textit{Journal of Education for Business}, Nov-Dec. 1990)  
+% 
+% \begin{enumerate}
+%   \item What is the proportion of MBA programs required an ethics course?
+%   \item What is the proportion of undergraduate business programs required an ethics course?
+%   \item What are the hypotheses for this scenario?
+%   \item Select an analysis plan.
+%   \item Compute the standard error.
+%   \item Compute the test statistic.
+%   \item Based on the test statistic and the critical value, what is your decision about the hypotheses?
+%   \item Interpret your result in every day language?
+% \end{enumerate}
+% 
+% \end{exercise} 
+% \begin{solution}  % 10c
+% 
+% \end{solution}
 
 

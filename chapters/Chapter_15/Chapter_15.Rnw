@@ -1,4 +1,4 @@
-%!Rnw root = ../../Master.Rnw
+%!Rnw root = ../../Main.Rnw
 
 \chapter{Correlation}
 \label{chap:ch15}
@@ -40,7 +40,7 @@ Levi's & 27.0 & 40.8 \\ \hline
 \end{tabular}
 \end{table}
 
-Figure 13.1 shows a scatterplot of Impressions Score (Y) versus Ad Spending (X). Note that the points seem to fall around a line sloped upwards loosely.  We say that there is a positive linear association or a linear relationship between spending and the number of impressions made.  
+Figure 15.1 shows a scatterplot of Impressions Score (Y) versus Ad Spending (X). Note that the points seem to fall around a line sloped upwards loosely.  We say that there is a positive linear association or a linear relationship between spending and the number of impressions made.  
 
 If the points fall around a straight line sloped downwards, we say that there is a negative association.
 
@@ -48,7 +48,7 @@ If the points fall around a straight line sloped downwards, we say that there is
 \caption{Plot of Impressions vs. Ad Budget}
 \centering
 
-<<label=LBL13a, results="asis", echo=FALSE, out.width="10cm", out.height="6cm">>=
+<<label=LBL15a, results="asis", echo=FALSE, out.width="10cm", out.height="6cm">>=
 budget1 <- c(50.1,74.1,19.3,22.9,82.4,40.1,185.9,26.9,20.4,166.2,27.0,
              45.6,154.9,5.0,49.7,26.9,5.7,7.6,9.2,32.4,6.1)
 impress1 <- c(32.1,99.6,11.7,21.9,60.8,78.6,92.4,50.7,21.4,40.1,40.8,
@@ -62,11 +62,12 @@ p
 
 Researchers often express the direction and the strength of association in a single number called the (Pearson) \textit{correlation coefficient}.  Typically denoted by $r$, the correlation coefficient $r$ is a number between $-1$ and $+1$, inclusive.  A value of $r = 0$ means that no linear association exists; the points either look like a random scatter or fall around a horizontal line.  A value of $r = +1$ indicates a perfectly linear relationship; all the points fall on a straight line sloped upwards.  If $r = -1$, all the points fall on a straight line sloped downwards. The correlation between TV Ad Budget and Impressions in the data above is $+0.65$.
 
-Figure 13.2 shows various scatterplots with different correlations.  Although $0.5$ is halfway between $0$ and $1$, note that the plot corresponding to $r = 0.5$ barely shows a pattern of association.  In practice, plots can show correlations up to $0.3$ purely by accident (e.g., the correlation between GPA and, say, shoe size).  When correlation reaches $+1$ or $-1$, all points fall on a straight line.
+Figure 15.2 shows various scatterplots with different correlations.  Although $0.5$ is halfway between $0$ and $1$, note that the plot corresponding to $r = 0.5$ barely shows a pattern of association.  In practice, plots can show correlations up to $0.3$ purely by accident (e.g., the correlation between GPA and, say, shoe size).  When correlation reaches $+1$ or $-1$, all points fall on a straight line.
 
-\begin{figure}[ht]
+% \newpage
 
-<<label=LBL13b1, results="asis", echo=FALSE>>=
+
+<<label=LBL15b1, results="asis", echo=FALSE>>=
   wt1  <- seq(from=2000, to=4000, by=100)
   mpg1 <- 60 - .01 * wt1 + rnorm(n=21) * 9
   cr1  <- sprintf("%.4f", cor(wt1, mpg1)) 
@@ -84,20 +85,38 @@ Figure 13.2 shows various scatterplots with different correlations.  Although $0
   cr4 <- sprintf("%.4f", cor(sqft1, asls1))
 @
 
-\caption{Correlation plots (from top to bottom, r = \Sexpr{cr1}, \Sexpr{cr2}, \Sexpr{cr3}, \Sexpr{cr4})}
-<<label=LBL13b, results="asis", echo=FALSE, out.width="5cm">>=
+\begin{minipage}[ht]{7.1cm}
+% \begin{figure}[ht]
+
+Correlation plots (from top to bottom, r = \Sexpr{cr1}, \Sexpr{cr2} )
+
+% \caption{Correlation plots (from top to bottom, r = \Sexpr{cr1}, \Sexpr{cr2} )}
+
+<<label=LBL15b, results="asis", echo=FALSE, out.width="4cm", out.height="4cm">>=
   plot(wt1, mpg1, xlab="Car weight", ylab="MPG")
 @
-<<label=LBL13c, results="asis", echo=FALSE, out.width="5cm">>=
+<<label=LBL15c, results="asis", echo=FALSE, out.width="4cm", out.height="4cm">>=
   plot(rs1, pe1, xlab="R/S", ylab="P/E")
 @
-<<label=LBL13d, results="asis", echo=FALSE, out.width="5cm">>=
+
+% \end{figure} 
+\end{minipage} \hfill
+\begin{minipage}[ht]{7.1cm}
+
+% \begin{figure}[ht]
+
+Correlation plots (from top to bottom, r = \Sexpr{cr3}, \Sexpr{cr4})
+
+% \caption{Correlation plots (from top to bottom, r = \Sexpr{cr3}, \Sexpr{cr4})}
+
+<<label=LBL15d, results="asis", echo=FALSE, out.width="4cm", out.height="4cm">>=
   plot(temp1, use1, xlab="Ave-Temp", ylab="Power Usage (KW)")
 @  
-<<label=LBL13e, results="asis", echo=FALSE, out.width="5cm">>=
+<<label=LBL15e, results="asis", echo=FALSE, out.width="4cm", out.height="4cm">>=
   plot(sqft1, asls1, xlab="Area (sq-ft)", ylab="Annual Sales ($)")
 @  
-\end{figure}
+% \end{figure}
+\end{minipage}
 
 \section{Computing the Pearson Correlation Coefficient}
 
@@ -160,9 +179,9 @@ r = \frac{ \sum Z_x Z_y }{n - 1}
 
 Consider the Ad Spending example at the start of this chapter.  Many of the (X, Y) points are simultaneously above average since companies that have higher than average Advertising Spending also have higher than average Impressions.  
 
-Both $X - \bar{X}$  and $Y - \bar{Y}$ are positive for these companies; therefore, $Z_x$  and $Z_y$  are both positive, and the product ($Z_x$)($Z_y$)  is positive for these companies.  Most of the remaining companies have lower than average Spending and lower than average Impressions.  Both $Z_x$  and $Z_y$  are negative for these companies, but the product ($Z_x$)($Z_y$) is still positive!  Hence the numerator in (13.1) tends to be a large positive number for the Ad Spending data.
+Both $X - \bar{X}$  and $Y - \bar{Y}$ are positive for these companies; therefore, $Z_x$  and $Z_y$  are both positive, and the product ($Z_x$)($Z_y$)  is positive for these companies.  Most of the remaining companies have lower than average Spending and lower than average Impressions.  Both $Z_x$  and $Z_y$  are negative for these companies, but the product ($Z_x$)($Z_y$) is still positive!  Hence the numerator in (15.1) tends to be a large positive number for the Ad Spending data.
 
-If the points were sloped downwards, then high X-values tend to go with low Y-values, and many points have a negative product ($Z_x$)($Z_y$).  This procedure shows how the correlation formula (13.1) works.  
+If the points were sloped downwards, then high X-values tend to go with low Y-values, and many points have a negative product ($Z_x$)($Z_y$).  This procedure shows how the correlation formula (15.1) works.  
 
 \fbox{\parbox{14cm}{
 If $X$ and $Y$ tend to be simultaneously above average or simultaneously below average, then the correlation coefficient will be \textbf{positive}.  
@@ -197,7 +216,6 @@ If the data is paired above-average X values with below-average Y values, then t
 \section{}
 
 \begin{exercises}
-
 \begin{exercise}  % 1
 
 Consider the following \\ data.
@@ -223,7 +241,7 @@ Consider the following \\ data.
 	\end{enumerate}
 \end{exercise}
 \begin{solution}  % 1
-<<label=lbl13-1, results='asis', echo=FALSE>>=
+<<label=lbl15-1, results='asis', echo=FALSE>>=
   X1 <- c(-2, 2, 5, -1, 6)
   Y1 <- c(0 , 3, 10, 1, 15)
   r.xy <- sprintf('%.4f', cor(X1, Y1))

@@ -1,4 +1,4 @@
-%!Rnw root = ../../Master.Rnw
+%!Rnw root = ../../Main.Rnw
 
 \chapter{Categorical Variables: Association or Independence}
 \label{chap:ch14}
@@ -42,7 +42,7 @@ Yes -- 3rd yr & 41 & 7 & 28 & 44 \\ \hline
 \end{tabular}
 \end{table}
 
-To analyze whether attrition and GPA are independent, we will analyze whether attrition distribution remains the same regardless of GPA level.  Let us start by looking at the 1st column (worst HS grades) and 4th column (best HS grades).  Do the distributions look the same?   The answer seems to be `no' - a bigger proportion of the 1st column never returned for their second year.  In other words, the value `25' in the very first cell is too large, implying that 'poor grades seems to be associated with first-year attrition.'  If grades and attrition were independent, Table 12.1 should have looked more like Table 12.2.
+To analyze whether attrition and GPA are independent, we will analyze whether attrition distribution remains the same regardless of GPA level.  Let us start by looking at the 1st column (worst HS grades) and 4th column (best HS grades).  Do the distributions look the same?   The answer seems to be `no' - a bigger proportion of the 1st column never returned for their second year.  In other words, the value `25' in the very first cell is too large, implying that 'poor grades seems to be associated with first-year attrition.'  If grades and attrition were independent, Table 14.1 should have looked more like Table 14.2.
 
 \begin{table}[ht]
 \centering
@@ -82,13 +82,13 @@ $80 \times .635 = 50.80$ & $17 \times .635 = 10.80$ & $56 \times .635 = 22.86$ &
 \end{tabular}
 \end{table}
 
-Rounding off gives us the expected frequencies in Table 12.2.
+Rounding off gives us the expected frequencies in Table 14.2.
 
 \subsection{Testing for statistical association}
 
-Statisticians will conclude `independence' if Tables 12.1 and 12.2 are close and conclude `association' if they are far from each other.    We measure closeness and fairness by subtraction and squaring, as follows:
+Statisticians will conclude `independence' if Tables 14.1 and 14.2 are close and conclude `association' if they are far from each other.    We measure closeness and fairness by subtraction and squaring, as follows:
 
-<<label=LBL12a, results="asis", echo=FALSE>>=
+<<label=LBL14a, results="asis", echo=FALSE>>=
   DT1 <- c(25,14,41,3,7,7,4,4,28,6,6,44)
   MX1 <- matrix(DT1, nrow=3, ncol=4, byrow=FALSE)
   ## x2tst <- chisq.test(MX1, correct=FALSE)
@@ -98,7 +98,7 @@ Statisticians will conclude `independence' if Tables 12.1 and 12.2 are close and
 \chi^2 = \frac{(25-16.08)^2}{16.08} + \frac{(3-3.42)^2}{3.42} + \cdots + \frac{(44-35.56)^2}{35.56} = 23.42  
 \end{equation*}
 
-Note that if Tables 12.1 and 12.2 are the same, then the $\chi^2$ statistic (pronounced `chi-square') in (12.1) will be zero (0).  If the two tables are far apart, the $\chi^2$ statistic will be large.  Statisticians use the following rule. 
+Note that if Tables 14.1 and 14.2 are the same, then the $\chi^2$ statistic (pronounced `chi-square') in (12.1) will be zero (0).  If the two tables are far apart, the $\chi^2$ statistic will be large.  Statisticians use the following rule. 
 
 \begin{center}
 \fbox{\parbox{8cm}{
@@ -155,16 +155,17 @@ Since $\chi^2 = 23.42$ from (12.1), then $\chi^2 > 12.59$.   We conclude that th
 \section{}
  
 \begin{exercises}
-
 \begin{exercise} % 1
 
 In a study of drug usage by students at a large university, data was obtained regarding hard liquor experience of smokers and nonsmokers.
 
+{\small{
 \begin{tabular}{@{} lll @{}} \hline
 Hard-Liquor Use & Nonsmokers & Smokers \\ \hline
 Once or more & 15 & 23 \\
 Never        & 56 & 18 \\ \hline
 \end{tabular}
+}}
 
 Is liquor use associated with smoking?  Conduct a chi-square test to assess significance of association.
 

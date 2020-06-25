@@ -4,6 +4,9 @@
 %\usepackage[lmargin=3cm, rmargin=2cm, showframe]{geometry}    % See geometry.pdf to learn the layout options. There are lots.
 % \usepackage[lmargin=3cm, rmargin=2cm]{geometry}
 \usepackage[lmargin=4cm, rmargin=2cm]{geometry}
+
+\usepackage{kpfonts}
+
 \usepackage{pict2e}
 \usepackage[english]{babel}
 \definecolor{lred}{rgb}{1,0.5,0}
@@ -26,12 +29,21 @@
 \usepackage[authoryear]{natbib}
 \usepackage{makeidx}
 
+\usepackage[titles]{tocloft}
+\cftsetpnumwidth{2em}
+
 \DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
 
 \title{{\Huge{Discovery with Data}}}
 \subtitle{{\Large{Statistical Literacy and Critical Thinking \\ STAT 1600 -- Course Pack}}}
 \author{Statistics Computational Lab (SCL)}
-\date{2019 - 2020 Edition}  % Activate to display a given date or no date
+\date{2020 - 2021 Edition}  % Activate to display a given date or no date
+
+% \renewcommand{\@pnumwidth}{3em}
+% 
+% 
+% \setpnumwidth{3em}
+
 
 %\title{STAT 1600 \\ Statistics and Data Analysis }
 %\author{Department of Statistics \\ Western Michigan University}
@@ -40,7 +52,8 @@
 \makeindex
 
 \begin{document}
-%% \SweaveOpts{concordance=TRUE}
+
+
 
 <<label=setup, echo=FALSE, warning=FALSE, message=FALSE>>=
 #
@@ -87,12 +100,9 @@ Reproductions or translation of any part of this work beyond that permitted by S
 
 A general introduction to statistics with an emphasis on data analysis and graphical presentation. Extensive use will be made of the computer to prepare results. Topics may include: data collection, sampling and experimentation, measurement issues, descriptive statistics, statistical graphics, normal distribution, cross-classified data, correlation and association, formal statistical inferences, and resampling methods.
 
-
-
 \overfullrule=1cm
 
 \tableofcontents
-
 
 <<Ch1, child="chapters/Chapter_1/Chapter_1.Rnw",eval=TRUE>>=
 @
@@ -131,8 +141,8 @@ A general introduction to statistics with an emphasis on data analysis and graph
 <<Ch12, child="chapters/Chapter_12/Chapter_12.Rnw",eval=TRUE>>=
 @
 
-% <<Ch13, child="chapters/Chapter_13/Chapter_13.Rnw",eval=TRUE>>=
-% @
+<<Ch13, child="chapters/Chapter_13/Chapter_13.Rnw",eval=TRUE>>=
+ @
 
 <<Ch14, child="chapters/Chapter_14/Chapter_14.Rnw",eval=TRUE>>=
 @
@@ -148,10 +158,6 @@ A general introduction to statistics with an emphasis on data analysis and graph
 
 <<Ch18, child="chapters/Workshops/Workshop2.Rnw",eval=TRUE>>=
 @
-
-%<<Ch19, child="chapters/Appendix/Appendix.Rnw",eval=TRUE>>=
-%@
-
 
 % \printbibliography
 \bibliographystyle{plainnat}

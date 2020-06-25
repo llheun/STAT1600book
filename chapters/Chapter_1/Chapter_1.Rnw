@@ -1,4 +1,4 @@
-%!Rnw root = ../../Master.Rnw
+%!Rnw root = ../../Main.Rnw
 
 
 \chapter{Knowledge and Data}
@@ -194,7 +194,7 @@ Another type of error that may be made is a \textbf{Type II error}.  Here the re
 
 \section{Key Words}
 
-\fbox{\parbox{14cm}{
+\fbox{\parbox{13cm}{
 \begin{minipage}[ht]{6cm}
 
 \begin{itemize}
@@ -220,15 +220,14 @@ Another type of error that may be made is a \textbf{Type II error}.  Here the re
 \section{}    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%.
 
 \begin{exercises}
-
   \begin{exercise}  % 1
 
-  What might be wrong about these headlines?
+  What might be wrong \\ about these headlines?
 
   \begin{enumerate}
-  \item A study proclaims: ``Slightly overweight people live longer than thin people.''
-  \item A study states, ``People who consider  themselves depressed eat more chocolate  than people who consider  \\ themselves  otherwise.''
-  \item A U.S. Census reported ``More American women are living without a husband than with one.''  Additionally, women rated  themselves happier when \\ compared to the previous year's census.  Can we then infer that living single is leading to greater happiness in women?  What flaw is present here?
+  \item A study proclaims: ``Slightly over- \\ weight people live longer than thin \\ people.''
+  \item A study states, ``People who consider themselves depressed eat more chocolate  than people who consider them- \\ selves  otherwise.''
+  \item A U.S. Census reported ``More American women are living without a husband than with one.''  Additionally, \\ women rated  themselves happier when \\ compared to the previous year's census.  Can we then infer that living single is leading to greater happiness in women?  What flaw is present here?
   \end{enumerate}
 
 	  % \framebox[5cm][l]{ Answer: }
@@ -242,13 +241,13 @@ Another type of error that may be made is a \textbf{Type II error}.  Here the re
 
    \begin{exercise}  % 2
 
-A handful of people were recently polled on their preference of soda at a local shopping mall in the U.S. and the study indicated more people preferred Mountain \\ Dew over Cola.  It indicates Mountain Dew is exceeding Cola as the beverage of choice in mainstream America.  What is wrong with this assertion?
+A handful of people were recently polled on their preference of soda at a local shopping mall in the U.S. and the study indicated more people preferred \\ Mountain Dew over Cola.  It indicates  Mountain Dew is exceeding Cola as the beverage of choice in mainstream America.  What is wrong with this assertion?
 
   % \framebox[5cm][l]{ Answer: }
 
   \end{exercise}
   % \begin{solution}  % 2
-  % 
+  %
   % This sample was not random, and it was taken at a local shopping mall somewhere in the U.S.
   % \end{solution}
 
@@ -271,12 +270,36 @@ All the members (sample \\ size, n=30) of a high school tennis team were given a
 	 % \framebox[5cm][l]{ Answer: }
 	\end{exercise}
 	 % \begin{solution}  % 4
-	 % 
-	 %   
+	 %
+	 %
 	 % \end{solution}
-	 
-	 
-%%%% ADD MORE EXERCISES	 
+
+\begin{exercise}   % 5
+
+Is this advertising claim \\ misleading? 
+``More than 8 in 10 Dentists recommend Colgate.''
+
+\end{exercise}
+\begin{solution}    % 5
+
+The claim, which was based on surveys of dentists and hygienists carried out by the manufacturer, was found to be misrepresentative as it allowed the participants to select one or more toothpaste brands. The ASA stated that the claim ``… would be understood by readers to mean that 80 percent of dentists recommend Colgate over and above other brands, and the remaining 20 percent would recommend different brands.''
+
+\end{solution}
+
+\begin{exercise}   % 6
+
+You heard a company rumor that the boss was going to crack down on employees who send e-mail from work.  You, recently, read a report that showed most people spend an average of two hours per day checking and sending personal e-mails from work.  You say to yourself `No way do I spend that much time.'  Should this employee be concerned?    
+
+\end{exercise}
+\begin{solution}    % 6
+
+\end{solution}
+
+
+
+%%%% ADD MORE EXERCISES
+
+
 
 \end{exercises}
 

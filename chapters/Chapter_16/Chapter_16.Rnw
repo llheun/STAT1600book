@@ -1,4 +1,4 @@
-%!Rnw root = ../../Master.Rnw
+%!Rnw root = ../../Main.Rnw
 
 \chapter{Linear Regression}
 \label{chap:ch16}
@@ -47,7 +47,7 @@ Car & Miles & Price (\$) \\ \hline
 %\caption{
 Scatterplot of Price (\$) vs. Miles
 
-<<label=LBL14a, results="asis", echo=FALSE, out.width="7cm">>=
+<<label=LBL16a, results="asis", echo=FALSE, out.width="7cm", out.height="7cm">>=
 ml1 <- c(9300,10565,15000,15000,17764,57000,65940,73676,77006,93739,146088,153260)
 prc1<- c(7100,15500,4400,4400,5900,4600,8800,2000,2750,2550,960,1025)
   plot(ml1, prc1, xlab="Miles", ylab="Price ($)")
@@ -61,18 +61,20 @@ Based on the data, how much do we expect to get for a Saturn car that has been d
 
 Simple linear regression is a data analysis technique that tries to find a \textit{linear} pattern in the data.  We then use this line for prediction.
 
-Notice that the points seem to fall around a \textit{straight line} sloping downwards.  Can we draw this line?  We will discuss one way to do this, called the \textit{least squares} (LS) method.  For now, suppose that the LS line has already been computed (we will do this later).  The LS line is overlayed on the scatterplot looks like Figure 14.1.
+Notice that the points seem to fall around a \textit{straight line} sloping downwards.  Can we draw this line?  We will discuss one way to do this, called the \textit{least squares} (LS) method.  For now, suppose that the LS line has already been computed (we will do this later).  The LS line is overlayed on the scatterplot looks like Figure 16.1.
 
 \begin{figure}[ht]
 \centering
 \caption{Least Squares (LS) Regression Line is overlayed on Scatterplot}
-<<label=LBL14b, results="asis", echo=FALSE>>=
+
+<<label=LBL16b, results="asis", echo=FALSE, out.width="7cm", out.height="7cm" >>=
   tmp1 <- lm(prc1 ~ ml1)
   plot(ml1, prc1, xlab="Miles", ylab="Price ($)")
   abline(tmp1)
   aa0 <- sprintf("%.0f", tmp1$coefficients[1])
   aa1 <- sprintf("%.5f", tmp1$coefficients[2])
-@  
+@ 
+
 \end{figure}
 
 The formula for this line, in the form $Y= a + bX$,  is 
@@ -140,7 +142,7 @@ $r$ & \multicolumn{2}{c}{-0.641} \\ \hline
 \end{tabular}
 \end{table}
 
-Using the formulas for slope and intercept in equation (14.1 and 14.2)
+Using the formulas for slope and intercept in equation (16.1 and 16.2)
 
 \begin{eqnarray*}
 b &=& r \frac{s_y}{s_x} = -0.641 \frac{4079}{50989} = -0.05127 \\
@@ -165,7 +167,7 @@ Why is this called the least squares line?  Example best shows the answer.
 
 \begin{table}[ht]
 
-<<label=LBL14c, results="asis", echo=FALSE>>=
+<<label=LBL16c, results="asis", echo=FALSE>>=
   rs1 <- numeric(12)
   yh1 <- numeric(12)
   yh1 <- sprintf("%.2f", tmp1$fitted.values)
@@ -218,7 +220,7 @@ $SSE =  107,805,718$.
 
 \begin{center}
 \fbox{\parbox{8cm}{
-The least square line given by (14.1) will have a smaller SSE than any other straight line.
+The least square line given by (16.1) will have a smaller SSE than any other straight line.
 }}
 \end{center}
 
@@ -295,7 +297,6 @@ Since this interval excludes 0, we conclude a significant relationship between c
 \section{}
 
 \begin{exercises}
-
 \begin{exercise}  % 1      %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Consider the following \\ data:
@@ -406,7 +407,7 @@ One \\ student drank nine beers. You see from the scatter plot that his BAC was 
 blood alcohol content (BAC)? Sociology researchers, at Ohio State University, wanted to know if there is a relationship between the amount of beer consumed and BAC. The researchers assigned the number of cans of beer to each student. After each student had consumed the assigned number of beers,  thirty minutes later, an officer of the law measured the students BAC. \cite{OSU2016}
 A scatterplot of the data appears below.  The scatterplot shows
 
-<<label=LBL14f, echo=FALSE, fig.pos="ht", fig.align="center", fig.width=3.5, fig.height=3.5, fig.cap="No. Beers vs. BAC", out.width="7cm" >>=
+<<label=LBL16f, echo=FALSE, fig.pos="ht", fig.align="center", fig.width=3.5, fig.height=3.5, fig.cap="No. Beers vs. BAC", out.width="7cm" >>=
 
      dt12_4 <- read.csv("data/beers.csv",header=TRUE)
      plot( dt12_4$BAC ~ dt12_4$NB, xlab="Number of Beers(NB)", ylab="Blood alcohol content(BAC)")
@@ -467,7 +468,7 @@ A scatterplot of the data appears below.  A plausible value of the correlation b
 
     STEP 1: In the next six tasks, we will use the data from GSS2014 in this exercise.  We have been asked to examine the relationship between a person's height and a person's income.  Here we have {\textit{income}} which is an  interval-ratio type of variable \\ while {\textit{height}} is also an interval-ratio type of variable.  These types of variables require that we use a Simple Linear Regression (SLR) \\ analysis.  So step 1 in the process of analysis is to choose the an independent and dependent variables.  Note: In the GSS2014 dataset, {\textit{height}} is known as HEIGHT and {\textit{income}} is known as rincom06.
 
-<<label=LBL14h, results="asis", echo=FALSE, fig.pos="ht", fig.align="center", fig.width=3.5, fig.height=3.5, fig.cap="Respondent's Height vs. Income", out.width="7cm" >>=
+<<label=LBL16h, results="asis", echo=FALSE, fig.pos="ht", fig.align="center", fig.width=3.5, fig.height=3.5, fig.cap="Respondent's Height vs. Income", out.width="7cm" >>=
 
 dt12_5 <- read.csv("data/GSS2014.csv", header=TRUE)
 x12_1 <- cbind( dt12_5$HEIGHT, dt12_5$rincom06 )            ## select only the respondent's height and income
@@ -490,7 +491,7 @@ abline(m12)
 
 {\tiny{
   \begin{verbatim}
-  <<label=LBL14j, results="asis", echo=FALSE>>=
+  <<label=LBL16j, results="asis", echo=FALSE>>=
   print(summary(m12))
 @
   \end{verbatim}
@@ -597,7 +598,7 @@ abline(m12)
     STEP 1:  In the next six tasks, we will use a sample of 100 subjects from the GSS2014 data in this exercise.  We have been asked to examine the relationship between a person's income, age, and ``not \\ married'' and a person's happiness.  Here we have variables which are  interval-ratio type of variable.  These types of variables require that we use a Simple Linear Regression (SLR) analysis.  So step 1 in the process of analysis is choosing independent and dependent variables.  Note: In the GSS2014 dataset, {\textit{happy}} is known as GENERAL HAPPINESS, {\textit{income06}} is known as TOTAL FAMILY INCOME, {\textit{age}} is known as AGE OF RESPONDENT, and {\textit{absingle}} is known as NOT MARRIED.
 
 {\small{
-<<label=LBL14i, results="asis", echo=FALSE, fig.pos="ht", fig.align="center", fig.width=3.5, fig.height=3.5, fig.cap="Respondent's Height vs. Income", out.width="7cm" >>=
+<<label=LBL16i, results="asis", echo=FALSE, fig.pos="ht", fig.align="center", fig.width=3.5, fig.height=3.5, fig.cap="Respondent's Height vs. Income", out.width="7cm" >>=
 
 ## dt12_5 <- read.csv("data/GSS2014.csv", header=TRUE)
 x12_9 <- cbind( dt12_5$happy, dt12_5$age, dt12_5$income06, dt12_5$absingle )            ## select only the respondent's height and income
@@ -623,7 +624,7 @@ NotMarried <- x12_11[,4]
 
 {\tiny{
   \begin{verbatim}
-  <<label=LBL14k, results="asis", echo=FALSE>>=
+  <<label=LBL16k, results="asis", echo=FALSE>>=
   print(summary(m13))
 @
   \end{verbatim}
@@ -741,7 +742,7 @@ What are the dependent and independent \\ variables?
     STEP 1:  In the next six tasks, we will use all of the data from GSS2014 in this exercise.  We have been asked to examine the relationship between a person's income, age, and ``not married'' and a person's happiness.  Here we have variables which are  interval-ratio type of variable.  These types of variables require that we use a Simple Linear Regression (SLR) analysis.  So step 1 in the process of analysis is choosing independent and dependent variables.  Note: In the GSS2014 dataset, {\textit{happy}} is known as GENERAL HAPPINESS, {\textit{income06}} is known as TOTAL FAMILY INCOME, {\textit{age}} is \\ known as AGE OF RESPONDENT, and {\textit{absingle}} is known as NOT MARRIED.
 
 {\small{
-<<label=LBL14e, results="asis", echo=FALSE, fig.pos="ht", fig.align="center", fig.width=3.5, fig.height=3.5, fig.cap="Respondent's Height vs. Income", out.width="7cm" >>=
+<<label=LBL16e, results="asis", echo=FALSE, fig.pos="ht", fig.align="center", fig.width=3.5, fig.height=3.5, fig.cap="Respondent's Height vs. Income", out.width="7cm" >>=
 
 ## dt12_5 <- read.csv("data/GSS2014.csv", header=TRUE)
 ## x12_9 <- cbind( dt12_5$happy, dt12_5$age, dt12_5$income, dt12_5$absingle )            ## select only the respondent's height and income
@@ -766,7 +767,7 @@ NotMarried <- x12_10[,4]
 
 {\tiny{
   \begin{verbatim}
-  <<label=LBL14l, results="asis", echo=FALSE>>=
+  <<label=LBL16l, results="asis", echo=FALSE>>=
   print(summary(m14))
 @
   \end{verbatim}

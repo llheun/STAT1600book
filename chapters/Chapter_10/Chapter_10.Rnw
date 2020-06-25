@@ -1,4 +1,4 @@
-%!Rnw root = ../../Master.Rnw
+%!Rnw root = ../../Main.Rnw
 
 \chapter{More Comparing of Two Proportions} 
 
@@ -315,7 +315,7 @@ Table: Student graduated from an Accredited Program by Working as Social Worker.
 
 There is another way to look at this \\ data.
 
-<<label=LBLd, results="asis", echo=FALSE>>=
+<<label=LBL10d, results="asis", echo=FALSE>>=
   barplot(mtx1, legend.text=c('No', 'Yes'), xlab='Employed', ylab='Certified')
   @
 
@@ -339,10 +339,10 @@ There is another way to look at this \\ data.
 
 Note: The adjacent bell-shaped \\ curve notes the rejection regions (RR) with a significant level 5 percent.  In this case, the test statistic is \Sexpr{z21}.  So it falls in the RR, and we will reject our null \\ hypotheses.
 
-\end{minipage} \hfil
+\end{minipage} \hfill
 \begin{minipage}[ht]{6cm}
     
-<<label=LBLf, results="asis", include=TRUE, echo=FALSE, out.width="5.9cm">>=
+<<label=LBL10f, results="asis", include=TRUE, echo=FALSE, out.width="5cm", out.height="5cm">>=
   xv <- seq(-4,4,0.01)
 	yv <- dnorm(xv, mean=0, sd=1)
 	plot(xv, yv, type="l", ylab="probability", xlab=" -1.96 < x < 1.96")
@@ -356,6 +356,7 @@ Note: The adjacent bell-shaped \\ curve notes the rejection regions (RR) with a 
 	arrows(x0=-3, y0=.25, x1=-2.75, y1=.065)
 	text(-3, .27, "RR")
 @
+
 \end{minipage}
 
 % \newpage
@@ -394,17 +395,27 @@ The following table summarizes the above definitions.
  \end{table}
  
 % \pagebreak 
-\section{Key Words}
-\begin{itemize}
 
+
+\section{Key Words}
+
+\fbox{\parbox{13cm}{
+\begin{minipage}[ht]{6cm}
+
+\begin{itemize}
 \item Dependent
 \item Hypotheses Testing
 \item Hypothesis
-\item Independent
-\item Two sample proportions
+\end{itemize}
+\end{minipage} \hfill
+\begin{minipage}[ht]{6cm}
 
-\end{itemize} 
-
+\begin{itemize}
+  \item Independent
+  \item Two sample proportions
+\end{itemize}
+\end{minipage}
+}}
 
  \newpage
 
@@ -447,7 +458,7 @@ The following table summarizes the above definitions.
   \begin{enumerate}
 	 \item Significance test:
 
-<<label=LBL10d, results="asis", echo=FALSE>>=
+<<label=LBL10h, results="asis", echo=FALSE>>=
   tmpq <- qnorm(0.975)
   N31   <- 13
   T31   <- 26
@@ -939,6 +950,19 @@ There is another way to look at this data.
 \end{itemize}
 
   \end{solution}
+  
+\begin{exercise} % 6
+
+In March 2003, the Pew Research Group surveyed 1503 adult Americans and asked, ``Do you believe the U.S.A. made the right decision to use military force in Iraq?''  Of the 1508 adult Americans surveyed, 1086 stated the U.S.A. made the right decision.  In August 2010, the Pew Research Group asked the same question of 1508 adult Americans and found that 608 believed the U.S.A. made the right decision.
+
+\begin{itemize}
+ \item Does the evidence suggest the proportion of American adults believed the \\ U.S. made the right decidion to invade Iraq in 2003 is different from American adults believed the  U.S. made the right decidion to invade Iraq in 2010 at a significance level of 0.05?.  
+\end{itemize}
+
+\end{exercise}
+\begin{solution}  % 6
+
+\end{solution}
 \end{exercises}
 
 \onecolumn

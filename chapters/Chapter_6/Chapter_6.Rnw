@@ -1,4 +1,4 @@
-%!Rnw root = ../../Master.Rnw
+%!Rnw root = ../../Main.Rnw
 
 \chapter{The Normal Distribution}
 \label{chap:ch6}
@@ -28,7 +28,8 @@ Knowing the average and SD of a process $(36 \pm 8)$ gives us some understanding
 
 \begin{figure}[ht]
 \caption{Probability of Demand Exceeding 40}
-<<label=LBL4a, results="asis", echo=FALSE, out.width="14cm", out.height="8cm" >>=
+
+<<label=LBL6a, results="asis", echo=FALSE, out.width="14cm", out.height="7cm" >>=
 dataset<-rnorm(n=1000000, mean=36, sd=8)
 dataset <- data.frame(X=dataset)
 
@@ -46,13 +47,13 @@ density1 <- density1 + geom_area(data = subset(d, x > 40.5), aes(x=x, y=y), fill
                                                                    
 ggarrange(hist1, density1, ncol = 2, nrow = 1)
  
-
- #dt1 <- rnorm(n=1000, mean=36, sd=8)
- #hist(dt1, freq = FALSE, main="Probability of Demand > 40", xlab="X")
- #xv <- seq(2, 68, by=0.1)
- #yv <- dnorm(xv, mean=36, sd=8)
- #lines(xv, yv)
- #polygon(c(xv[xv>40], 40), c(dnorm(c(xv[xv>40], 1e-4), mean=36,sd=8)),col="skyblue")
+# annotate(geom = "text",
+#  dt1 <- rnorm(n=1000, mean=36, sd=8),
+#  hist(dt1, freq = FALSE, main="Probability of Demand > 40", xlab="X"),
+#  xv <- seq(2, 68, by=0.1),
+#  yv <- dnorm(xv, mean=36, sd=8),
+#  lines(xv, yv),
+#  polygon(c(xv[xv>40], 40), c(dnorm(c(xv[xv>40], 1e-4), mean=36,sd=8)),col="skyblue" )
 @
 \end{figure}
 
@@ -80,8 +81,8 @@ The standard normal curve (or Z-curve) looks like Figure 6.2, and has the follow
 \begin{figure}[ht]
 \caption{Normal Z-curve}
 
-<<label=LBL4b, results="asis", echo=FALSE, out.width="10cm", out.height="10cm" >>=
-  xv <- seq(-4, 4, by=.01)
+<<label=LBL6b, results="asis", echo=FALSE, out.width="9cm", out.height="9cm" >>=
+  xv <- seq(from=-4, to=4, by=0.01)
   yv <- dnorm(xv, mean=0, sd=1)
   x_coor  <- seq(from=-4, to=4, by=1)
   z_labs  <- x_coor
@@ -130,7 +131,7 @@ Are we ready to find the area under the normal curve in Figure 6.1?  Not yet.  T
 
 \begin{minipage}[ht]{7cm}
 
-<<label=LBL4c1, results="asis", echo=FALSE, out.width="7cm", out.height="7cm">>=
+<<label=LBL6c1, results="asis", echo=FALSE, out.width="7cm", out.height="7cm">>=
   xr <- seq(-3, 3, by=0.01)
   yr <- dnorm(xr, mean=0, sd=1)
   x_coor  <- seq(from=-3, to=3, by=1)
@@ -161,7 +162,7 @@ Are we ready to find the area under the normal curve in Figure 6.1?  Not yet.  T
 @
 \end{minipage}
 \begin{minipage}[ht]{7cm}
-<<label=LBL4c2, results="asis", echo=FALSE, out.width="7cm", out.height="7cm">>=
+<<label=LBL6c2, results="asis", echo=FALSE, out.width="7cm", out.height="7cm">>=
   xs <- seq(-3, 3, by=0.01)
   ys <- dnorm(xs, mean=0, sd=1)
   df1<-data.frame(xr,yr)
@@ -196,8 +197,8 @@ What is the probability of demand exceeding 40?  This is the area under the curv
 
 %\begin{minipage}[ht]{7cm}
 
-%<<label=LBL4d1, results="asis", echo=FALSE, out.width="7cm", out.height="7cm">>=
-<<label=LBL4d, results="asis", echo=FALSE, out.width="7cm", out.height="7cm" >>=
+
+<<label=LBL6d, results="asis", echo=FALSE, out.width="7cm", out.height="7cm" >>=
   xr <- seq(-3, 3, by=0.01)
   yr <- dnorm(xr, mean=0, sd=1)
   x_coor  <- seq(from=-3, to=3, by=1)
@@ -226,7 +227,7 @@ What is the probability of demand exceeding 40?  This is the area under the curv
 @
 %\end{minipage}
 %\begin{minipage}[ht]{7cm}
-%<<label=LBL4d2, results="asis", echo=FALSE, out.width="7cm", out.height="7cm">>=
+%<<label=LBL6d2, results="asis", echo=FALSE, out.width="7cm", out.height="7cm">>=
 %  xu <- seq(-4, 4, by=0.01)
 %  yu <- dnorm(xu, mean=0, sd=1)
 %  plot(xu, yu, type="l", xlab="Z")
@@ -253,11 +254,16 @@ Looking at Figure 6.5, we see that we need to shade the upper 10\% of the area u
 X & = & 46.24 
 \end{eqnarray*}
 
+\newpage
+
 The manager should have at least 47 smartwatches in the store.
 
 \begin{figure}[ht]
+
 \caption{The 90th Percentile: $P[X \ge a] = 0.10$ }
-<<label=LBL4e, results="asis", echo=FALSE, out.width="8cm" >>=
+
+
+<<label=LBL6e, results="asis", echo=FALSE, out.width="8cm", out.height="7cm" >>=
   xr <- seq(-3, 3, by=0.01)
   yr <- dnorm(xr, mean=0, sd=1)
   x_coor  <- c(-3, -2, -1, 0, 1.28, 2, 3)
@@ -274,22 +280,26 @@ The manager should have at least 47 smartwatches in the store.
      annotate(geom = "text", x=x_coor, y=-0.28*yrng, label=z_labs, size=4) + theme_bw() +
      annotate(geom = "text", x=x_coor, y=-0.07*yrng, label="|", size=3) +
      annotate(geom = "text", x=x_coor, y=-0.23*yrng, label="|", size=3) +
-     annotate("text",x=2.5,y=0.15, label="10%", color="black", size=5) + 
+     annotate("text",x=2.5,y=0.15, label="10%", color="black", size=4) + 
+     # annotate(geom = "text", x=0, y=+1.2*yrng, label="Figure 6.5 : The 90th Percentile", size=5) +
      annotate("segment",x=2.4,xend=2, y=0.12,yend=0.03,color="black", size=1, arrow=arrow()) +
      theme(panel.border=(element_blank()))
+  
   p
-  
-  
-  #dt2 <- rnorm(n=1000, mean=36, sd=8)
-  #hist(dt2, freq = FALSE, main="Probability of Demand > 46", xlab="X" )
-  #xu <- seq(2, 68, by=0.1)
-  #yu <- dnorm(x=xu, mean=36, sd=8)
-  #lines(xu, yu)
-  #polygon(c(xu[xu > 46], 46), c(dnorm(c(xu[xu > 46], 1e-4), mean=36,sd=8)),col="skyblue")
-  #text(54, .04, "10%")
-  #arrows(54, .037, 48, .014)
+
 @
+%   \caption{The 90th Percentile:  }
+
 \end{figure}
+
+  % #dt2 <- rnorm(n=1000, mean=36, sd=8)
+  % #hist(dt2, freq = FALSE, main="Probability of Demand > 46", xlab="X" )
+  % #xu <- seq(2, 68, by=0.1)
+  % #yu <- dnorm(x=xu, mean=36, sd=8)
+  % #lines(xu, yu)
+  % #polygon(c(xu[xu > 46], 46), c(dnorm(c(xu[xu > 46], 1e-4), mean=36,sd=8)),col="skyblue")
+  % #text(54, .04, "10%")
+  % #arrows(54, .037, 48, .014)
 
 \section{Calculating symmetric tail areas}
 
@@ -369,7 +379,6 @@ If the data histogram is approximately bell-shaped, expect around \\
 \section{}
 
 \begin{exercises}
-
   \begin{exercise} % 1
 
 Researchers conducted a \\ study to determine if any link existed between cellular phone usage and the development of brain cancer (don't worry, no connection was found).  Data from this study indicate that the daily cell phone usage for all users is approximately normally distributed with mean 2.4 hours and standard deviation of 1.1 hours.
@@ -384,7 +393,7 @@ cell phone users concerning monthly usage.  How much time can you spend on your 
    % \framebox[5cm][l]{ Answer: }
 	\end{exercise}
 	\begin{solution}  % 1
-<<label=LBL4-1, results='asis', echo=FALSE>>=
+<<label=LBL46-1, results='asis', echo=FALSE>>=
   MN1 <- 2.4
   SD1 <- 1.1
   LBND1 <- pnorm(q=1, mean=2.4, sd=1.1)
@@ -404,7 +413,7 @@ cell phone users in terms of monthly usage.  How much time can you spend on your
 
   \begin{exercise} % 2
 
-On the average, a watch battery is known to last for two years (24- \\ months), with a standard deviation of 9 \\ months. Assume a normally distributed population. 
+On the average, a watch battery is known to last for two years (24- \\ months), with a standard deviation of 9 \\ months. Assume a normally distributed population.
 
  \begin{enumerate}
 	\item What percentage of watch batteries last \\ more than six months?
@@ -414,8 +423,8 @@ On the average, a watch battery is known to last for two years (24- \\ months), 
 
 	\end{exercise}
 % 	\begin{solution}  % 2
-% 
-% <<label=LBL4-2, results='asis', echo=FALSE>>=
+%
+% <<label=LBL6-2, results='asis', echo=FALSE>>=
 %   MN1 <- 24
 %   SD1 <- 9
 %   z1  <- (6 - 24) / 9
@@ -425,7 +434,7 @@ On the average, a watch battery is known to last for two years (24- \\ months), 
 %   PROB2 <- 1 - pnorm( q=42, mean=MN1, sd=SD1)
 %   PROB3 <- .5 + PROB2
 % @
-% 
+%
 % \begin{enumerate}
 % 	\item The percentage of watch batteries last more than 6 months is $P[ X > 6] = \Sexpr{PROB1}$.
 % 	\item What is the life span of a watch battery which lasts longer than 60\% of all batteries?  $P[X > a] = .60$. Now solve for a = \Sexpr{x1}.
@@ -433,7 +442,7 @@ On the average, a watch battery is known to last for two years (24- \\ months), 
 % than 3 1/2 years (42 months)?
 % $P[X < 24] + P[X > 42] = .5 + \Sexpr{PROB2} = \Sexpr{PROB3}$
 %  \end{enumerate}
-% 
+%
 % 	\end{solution}
 
   \begin{exercise} % 3
@@ -443,7 +452,7 @@ Suppose 95\% of data coming from a normally distributed population falls between
   \end{exercise}
   \begin{solution}   % 3
 
-<<label=LBL4-3, result="asis", echo=FALSE>>=
+<<label=LBL6-3, result="asis", echo=FALSE>>=
   sd2 <- (35 - 4)/4
 @
 
@@ -464,7 +473,7 @@ Let's assume a normally distributed random variable with a mean of 10 and standa
 
 	\end{exercise}
 % 	\begin{solution}  % 4
-% <<label=LBL4-4, results="asis", echo=FALSE>>=
+% <<label=LBL6-4, results="asis", echo=FALSE>>=
 %   mn4 <- 10
 %   sd4 <- 2
 %   q1 <- (6 - 10)/2
@@ -476,7 +485,7 @@ Let's assume a normally distributed random variable with a mean of 10 and standa
 %   x41 <- mn4 - z1 * sd4
 %   x42 <- mn4 + z1 * sd4
 % @
-% 
+%
 % \begin{enumerate}
 % \item The probability the value is greater than 6 is $P[X > 6] = \Sexpr{prob4a}$
 % \item The probability the value is less than 12 is $P[X < 12] = \Sexpr{prob4b}$
@@ -485,7 +494,7 @@ Let's assume a normally distributed random variable with a mean of 10 and standa
 % \item 33\% is below b, i.e., $P[X < b] = .33; b = \Sexpr{x42}$
 % \end{enumerate}
 % 	\end{solution}
-
+ 
   \begin{exercise}	% 5
 
 The stock price for \\ Coca-Cola (KO) is normally distributed with a mean of 42.14 and standard deviation of 1.43.
@@ -498,7 +507,7 @@ The stock price for \\ Coca-Cola (KO) is normally distributed with a mean of 42.
 
   \end{exercise}
 \begin{solution}  % 5
-<<label=LBL4-5, results="asis", echo=FALSE>>=
+<<label=LBL6-5, results="asis", echo=FALSE>>=
   mn5 <- 42.14
   sd5 <- 1.43
   prob1 <- pnorm(q=46.01, mean=mn5, sd=sd5)
@@ -554,8 +563,8 @@ Values in the z-table give the area under the curve to the left of the z-values 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% new exercises
 
-  \begin{exercise} % 1 
-  
+  \begin{exercise} % 1
+
     Test scores for 120 students were found to have a mean of 32.  Suppose the upper bound of the middle 99.7\% is  41.  What is the standard deviation of this data?
 	  \begin{enumerate}
 	  \item 2
@@ -572,7 +581,7 @@ Values in the z-table give the area under the curve to the left of the z-values 
 	    SD = \frac{(41 - 32)}{3} = 3
 	  \end{equation}
 	\end{solution}
-	
+
   \begin{exercise} % 2
 
     Given a distribution of male weights  has a mean of 153 lbs and standard deviation of 11 pounds, how many standard deviations away from the average weight is 173 lbs?
@@ -661,11 +670,11 @@ represents the $25^{th}$ percentile for weights of men (in \\ pounds)?
   \end{solution}
 
 % 	\begin{exercise}  % 6
-% 	
-% 	
+%
+%
 % 	 The next five activities refer to the following scenario.  Table 5.1 shows the 2013 total expenditure on health as a percentage of GDP in 34  countries.  The health expenditure per capita is the sum of private and public health costs divided by GDP. Health fees include emergency aid, family-planning services, health functions, and nutrition activities, but exclude services of sanitation and potable water.  \cite{Health2013}
-% 
-% 
+%
+%
 % % 	  % Requires the booktabs if the memoir class is not being used
 % % \begin{table}[htbp]
 % %    \centering
@@ -674,7 +683,7 @@ represents the $25^{th}$ percentile for weights of men (in \\ pounds)?
 % %    \caption{2013 Expenditure on Health as a Percentage of GDP.}
 % %    \begin{tabular}{@{} lr | lr | lr @{}} \hline % Column formatting, @{} suppresses leading/trailing space
 % %     Country & Percent & Country & Percent & Country & Percent \\ \hline
-% %     Argentina & 7.3 & Greece & 9.8 & Saudi Arabia & 3.2 \\ 
+% %     Argentina & 7.3 & Greece & 9.8 & Saudi Arabia & 3.2 \\
 % %     Australia & 9.4 & India & 4.0  & South Africa & 8.9 \\
 % %     Austria   & 11.0 & Indonesia & 3.1 & Spain & 8.9 \\
 % %     Belgium & 11.2 & Israel & 7.2 & Sweden & 9.7 \\
@@ -690,25 +699,25 @@ represents the $25^{th}$ percentile for weights of men (in \\ pounds)?
 % % }}
 % %    \label{tab:t5_6_1}
 % % \end{table}
-% 
+%
 %   Suppose that the mean and standard deviations are 8.30 and 3.224, respectively, are population parameters.  What countries are in the top 15 percent?  Hint: find the value of the $85^{th}$ percentile and compare it to the Percentage of GDP.
-% 
+%
 % 	\end{exercise}
 % 	\vspace{1.5cm}
 % 	\begin{solution}
-% 	
+%
 % <<results="asis", echo=FALSE>>=
-%   
+%
 %   tmp51 <- qnorm(.85, mean=8.3, sd=3.224)
-% 
+%
 % @
-% 	 
+%
 % 	  The value of the $85^{th}$ percentile is \Sexpr{tmp51}.
-% 	  
+%
 % 	  There are three countries: USA(17.1), Netherland (12.9), and France (11.7).
-% 	   
-% 	\end{solution}  
-% 	
+%
+% 	\end{solution}
+%
 %		\begin{exercise}  % 7
 
 
@@ -733,7 +742,7 @@ represents the $25^{th}$ percentile for weights of men (in \\ pounds)?
 		\begin{exercise}  % 7
 
 
-	  The mean and standard \\ deviation of 2013 Expenditures on Health as a share of GDP are 8.30 and 3.224, respectively.  \\ What percentage of countries had values below 7.3?   Hint: find the probability of the mean being less than 7.3. 
+	  The mean and standard \\ deviation of 2013 Expenditures on Health as a share of GDP are 8.30 and 3.224, respectively.  \\ What percentage of countries had values below 7.3?   Hint: find the probability of the mean being less than 7.3.
 
 	  \end{exercise}
 	  \vspace{2cm}

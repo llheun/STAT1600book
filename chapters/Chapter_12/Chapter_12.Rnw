@@ -1,4 +1,4 @@
-%!Rnw root = ../../Master.Rnw
+%!Rnw root = ../../Main.Rnw
 
 \chapter{Comparing Two Means}
 \label{chap:ch12}
@@ -20,8 +20,8 @@ Suppose we sample two means $\bar{x}_1$ and $\bar{x}_2$  from two populations wi
 
 \begin{figure}[ht]
 \centering
-\includegraphics[width=4cm]{chapters/Chapter_11/ext_figure/x1.png} % requires the graphicx package
-\includegraphics[width=4.3cm]{chapters/Chapter_11/ext_figure/x2.png} % requires the graphicx package
+\includegraphics[width=4cm]{chapters/Chapter_12/ext_figure/x1.png} % requires the graphicx package
+\includegraphics[width=4.3cm]{chapters/Chapter_12/ext_figure/x2.png} % requires the graphicx package
 \end{figure}
 
 As you can see, the sample circles including $\bar{x}_1$ and $\bar{x}_2$ are smaller than the entire population circles including $\mu_1$ and $\mu_2$. In other words, we do not have all the information we need to be sure about the exact values of  $\mu_1$ and $\mu_2$. However, as we have learned, statistics allows for sample means to estimate population means as depicted by the arrows. What's new in this chapter is that here we learn statistics can do more than allow us to estimate values for $\mu_1$ and $\mu_2$ separately. We can also use statistics to investigate how the population means differ from one another in tandem. We do this by performing \textit{hypothesis tests} on and using confidence intervals centered around the difference between the sample means $\bar{x}_1$ and $\bar{x}_2$. Let's now turn to some formulaic examples of such tests and intervals.
@@ -34,7 +34,7 @@ Note that we took differences $2.98 - $2.90 to compare average GPA.  The two ave
 SE_{(\bar{x}_1 - \bar{x}_2)} = \sqrt{SE_{\bar{x}_1}^2 + SE_{\bar{x}_2}^2 }
 \end{equation}
 
-whenever the two means are independent.  Equation (11.1) is similar to the equation from chapter 9, the $SE_{\hat{p}_1 - \hat{p}_2} = \sqrt{(SE_{\hat{p}_1^2} + SE_{\hat{p}_2^2 })}$, for proportions. 
+whenever the two means are independent.  Equation (12.1) is similar to the equation from chapter 9, the $SE_{\hat{p}_1 - \hat{p}_2} = \sqrt{(SE_{\hat{p}_1^2} + SE_{\hat{p}_2^2 })}$, for proportions. 
 
 Now, applying the equation from chapter 10, $SE_{\bar{X}}$ which is calculated as $\frac{s}{\sqrt{n}}$ twice, we get
 
@@ -52,7 +52,7 @@ Continuing with the example, let $\bar{X}_1  = 2.98$ and $\bar{X}_2  = 2.90$.  T
 SE_{(\bar{x}_1 - \bar{x}_2)} = \sqrt{\frac{s_1^2}{n_1}  + \frac{s_2^2}{n_2} } = \sqrt{\frac{0.45^2}{100}  + \frac{0.40^2}{100} } = 0.06
 \end{equation*}
 
-Therefore, we can state the conclusion of the study as follows: ``The average GPA of WMU students today is .08 higher than 10 years ago, give or take .06 or so.'' We also could have used equation (11.1) instead of (11.2) in calculating the standard error:
+Therefore, we can state the conclusion of the study as follows: ``The average GPA of WMU students today is .08 higher than 10 years ago, give or take .06 or so.'' We also could have used equation (12.1) instead of (12.2) in calculating the standard error:
 
 \begin{eqnarray*}
 SE_{\bar{X}_1} &=& \frac{s_1}{\sqrt{n_1}} = \frac{0.45}{\sqrt{100}} = 0.045 \\
@@ -68,7 +68,7 @@ The following two sections discuss the formulas and concepts necessary for calcu
 
 \begin{figure}[ht]
 \centering
-\includegraphics[width=9cm]{chapters/Chapter_11/ext_figure/2sample.png} % requires the graphicx package
+\includegraphics[width=9cm]{chapters/Chapter_12/ext_figure/2sample.png} % requires the graphicx package
 \end{figure}
 
 The interval between lower and upper bounds (LB, UB) includes some possible values of $\mu_1 - \mu_2$  (depicted by the many arrows). We need an interval around the central estimate $\bar{x}_1 - \bar{x}_2$ because of variation between samples and populations (which was depicted using concentric circles at the start of this chapter). This interval can be thought of as the ``wiggle room'' needed to estimate $\mu_1 - \mu_2$ using only $\bar{x}_1 - \bar{x}_2$.
@@ -108,7 +108,7 @@ The difference of two means is a random variable with expected value and spread.
 (\bar{X}_1 - \bar{X}_2) \pm 1.96 SE_{(\bar{X}_1 - \bar{X}_2)}
 \end{equation*}
 
-should contain the true difference $(\mu_1 - \mu_2)$ with 95\% confidence.  Substituting (11.2), we get the following formula.
+should contain the true difference $(\mu_1 - \mu_2)$ with 95\% confidence.  Substituting (12.2), we get the following formula.
 
 \fbox{\parbox{14cm}{
 95\% confidence interval for $(\mu_1 - \mu_2)$:
@@ -185,7 +185,7 @@ SE's from the expected value using the normal curve, random variables fall as fa
 
 \section{Paired data (before-and-after)}
 
-In this section, we will discuss a common problem in data analysis: comparing before and after measurements.  Consider the possible weight loss data in Table 11.2.
+In this section, we will discuss a common problem in data analysis: comparing before and after measurements.  Consider the possible weight loss data in Table 12.2.
 
 \begin{table}[ht]
 \centering
@@ -318,7 +318,6 @@ Since we uniquely match each pair of observations (e.g., 599 and 597) to each ot
 \section{}
 
 \begin{exercises}
-
 \begin{exercise} % 1
 
 Do credit cards with no annual fee charge higher interest rates (APR) than cards that have annual fees?  Among 29 cards surveyed, 17 had no annual fees while 12 charged an annual fee.  Among the cards with no annual fee, the average APR was 19\% (SD=8\%).  Among cards with an annual fee, the average APR was 17\% (SD=3\%).
@@ -426,7 +425,7 @@ Suppose a shoe company wants to test material for the soles of shoes.  For each 
 \end{exercise}
 \begin{solution}  % # 7
 
-<<label=LBL11a, results="asis", echo=FALSE>>=
+<<label=LBL12a, results="asis", echo=FALSE>>=
   n11 <- 16
   xbar11 <- 0.4
   sd11 <- 1.6
@@ -444,6 +443,53 @@ Suppose a shoe company wants to test material for the soles of shoes.  For each 
 \end{enumerate}
 
 \end{solution}
+
+\begin{exercise}   % 8
+
+<<label=LBL12b, results="asis", echo=FALSE>>=
+  RMon  <- c(28,38,43,35,42,48,31,46,55,26,56,25,50,40,47)
+  RMoff <- c(24,34,47,29,37,26,37,38,23,52,42,31,17,40,41)
+  tbl1 <- matrix(nrow=3,ncol=2)
+  rownames(tbl1)<- c('Mean', 'SD', 'n')
+  colnames(tbl1)<- c('RMon', 'RMoff')
+  tmp11 <- mean(RMon)
+  tbl1[1,1] <- sprintf("%.2f",tmp11)
+  tmp21 <- sd(RMon)
+  tbl1[2,1] <- sprintf("%.3f", tmp21)
+  tmp31 <- length(RMon)
+  tbl1[3,1] <- sprintf("%.0f", tmp31)
+  tmp12 <- mean(RMoff)
+  tbl1[1,2] <- sprintf("%.2f", tmp12)
+  tmp22 <- sd(RMoff)
+  tbl1[2,2] <- sprintf("%.3f", tmp22)
+  tmp32 <- length(RMoff)
+  tbl1[3,2] <- sprintf("%.0f", tmp32)
+  
+  diff1 <- tmp11 - tmp12
+  SE1   <- sqrt( (tmp21^2/tmp31) + (tmp22^2/tmp32 ))
+  z1    <- diff1/ SE1
+  pval1 <- 1 - pnorm(z1)
+  xtable(tbl1, caption="Ramp Metering")
+                 
+@  
+
+Ramp metering is an engineering experiment that studies how automobiles enter an expressway to stop for a short time before they join the flow of traffic.  The theory is that ramp metering  directs the number of vehicles on the expressway and the \\ number of vehicles accessing the expressway, resulting in a freer flow, which results in a faster travel times.  To prove the hypothesis whether ramp metering affects travel time, traffic engineers in Kalamazoo, Michigan, set up an experiment on a section of expressway where ramp meters were installed.  The response variable was the speed of vehicles.  A random sample of 15 vehicles on the expressway for a Tuesday at 5 p.m. with the ramp meters on and a second random sample of 15 vehicles on a different Tuesday at 5 p.m. with the ramp meters off resulted in the following speed summaries(in miles per hour).
+
+\begin{enumerate}
+  \item Determine the mean difference between ramp meters on and ramp meters off.
+          
+  \item Calculate a standard error for our estimate in (1).
+  \item Calculate a 95\% confidence interval for the mean ramp meter on-off difference.
+  \item Does the data support the claim that ramp metering improves traffic flow?
+\end{enumerate}
+
+
+\end{exercise}
+\begin{solution}  % 8
+
+
+\end{solution}
+
 
 \end{exercises}
 

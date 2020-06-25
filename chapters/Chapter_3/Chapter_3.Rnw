@@ -1,4 +1,4 @@
-%!Rnw root = ../../Master.Rnw
+%!Rnw root = ../../Main.Rnw
 
 % \chapter{Location and Spread}
 \chapter{Descriptive Statistics}
@@ -16,7 +16,7 @@ After completing this part, students should be able to:
 \item Select appropriate measure of central tendency based on the
 level of measurement and characteristics of the data (distribution).
 \item Explain the concept of measures of spread and the information they convey.
-\item Compute and explain sample standard deviation, \textit{SD}.
+\item Compute and explain sample standard deviation, (\textit{SD}).
 \end{itemize}
 }}
 
@@ -82,46 +82,6 @@ $$\bar{X} = \frac{635+525+650+750+555+500+670+675}{10} = \$620$$
 
 What if 10\% of the data is not an integer?  For example, if $n = 23$, then 10\% of n is 2.3.  Since we cannot remove 2.3 observations, we will remove three observations from each end (to ensure at least 10\% protection) and take the average of the middle 17 observations.
 
-% \subsection{The Median of Pairwise Averages}
-% 
-% The median of pairwise averages is another compromise between the mean and median.  As the name implies, we replace the observations by pairwise averages, then take the median of those.  Here again are the ten ordered observations:
-% 
-% $$ 500, 500, 525, 555, 635, 650, 670, 675, 750, 800 $$
-% 
-% The first observation (\$500) is paired with all ten observations (including itself).  The second observation (also \$500) has already been paired with the first observation, so it paired with only nine observations (including itself).  The third observation (\$525) has already been paired with the first two observations, so it is paired with only eight observations (including itself).  Proceeding in this pattern, we get the following pairwise averages:
-% 
-% \begin{table}[ht]
-% \centering
-% {\scriptsize{
-% \begin{tabular}{@{}cccccccccc @{}} 
-% $\frac{500+500}{2}$ & $\frac{500+500}{2}$ & $\frac{500+525}{2}$ & $\frac{500+555}{2}$ & $\frac{500+635}{2}$ & $\frac{500+650}{2}$ & $\frac{500+670}{2}$ & $\frac{500+675}{2}$ & $\frac{500+750}{2}$ & $\frac{500+800}{2}$ \\
-%      & $\frac{500+500}{2}$ & $\frac{500+525}{2}$ & $\frac{500+555}{2}$ & $\frac{500+635}{2}$ & $\frac{500+650}{2}$ & $\frac{500+670}{2}$ & $\frac{500+675}{2}$ & $\frac{500+750}{2}$ & $\frac{500+800}{2}$ \\
-%      & & $\frac{525+525}{2}$ & $\frac{525+555}{2}$ & $\frac{525+635}{2}$ & $\frac{525+650}{2}$ & $\frac{525+670}{2}$ & $\frac{525+675}{2}$ & $\frac{525+750}{2}$ & $\frac{525+800}{2}$ \\
-%      & & & $\frac{555+555}{2}$ & $\frac{555+635}{2}$ & $\frac{555+650}{2}$ & $\frac{555+670}{2}$ & $\frac{555+675}{2}$ & $\frac{555+750}{2}$ & $\frac{555+800}{2}$ \\
-%      & & & & $\frac{635+635}{2}$ & $\frac{635+650}{2}$ & $\frac{635+670}{2}$ & $\frac{635+675}{2}$ & $\frac{635+750}{2}$ & $\frac{635+800}{2}$ \\
-%      & & & & & $\frac{650+650}{2}$ & $\frac{650+670}{2}$ & $\frac{650+675}{2}$ & $\frac{650+750}{2}$ & $\frac{650+800}{2}$ \\
-%      & & & & & & $\frac{670+670}{2}$ & $\frac{670+675}{2}$ & $\frac{670+750}{2}$ & $\frac{670+800}{2}$ \\
-%      & & & & & & & $\frac{675+675}{2}$ & $\frac{675+750}{2}$ & $\frac{675+800}{2}$ \\
-%      & & & & & & & & $\frac{750+750}{2}$ & $\frac{750+800}{2}$ \\ 
-%      & & & & & & & & & $\frac{800+800}{2}$ \\
-% \end{tabular}
-% }}
-% \end{table}
-% 
-%    <label=LBL3aa, results="asis", echo=FALSE>>=
-%   dt3  <- c(500, 500, 525, 555, 635, 650, 670, 675, 750, 800)
-%   ndt3 <- numeric(55)
-%   k <- 0
-%   for(i in 1:10){
-%     for(j in i:10){
-%       k <- k + 1
-%       ndt3[k] <- (dt3[i] + dt3[j])/2
-%     }
-%   }
-%   md3 <- median(ndt3)
-% @
-% 
-% There will be 55 pairwise averages in all.  Notice that the sample size, $n$, went from ten observations to 55 observations after we do this.  We now need to figure the median and remember, the MED is the $0.50(n + 1)st$ ordered observation.  So, we need to use 55 now as our $n$.  It gives us a value of 28.  We need order the pairwise averages we have calculated above, and the median will be the 28th observation.  The median of these averages is thus \Sexpr{md3} dollars.
 
 \section{Estimate of Spread (or Uncertainty or Variation)}
 
@@ -129,7 +89,8 @@ Recall the data on the monthly rent of two bedroom apartments in the Kalamazoo a
 
 $$ 500, 500, 525, 555, 635, 650, 670, 675, 750, 800 $$
 
-If a future student asked us ``What should a two-bedroom apartment cost us in rent?'' how should we reply? Knowing that the data averages \$626, we might say something like ``Around \$626, give or take $\dots$(?).''   This second number, the give or take, is important because it says how much uncertainty there is in our guess.  In other words, the student's rent will probably miss \$626, but by how much?  For a second example, if we were going to San Francisco for a couple of days in August, and we want to know what clothes to bring, it is not enough to know that the average temperature is 68 degrees.  If it was 68 degrees, give or take 15 degrees, then we will need a sweater.  If it is 68 degrees, give or take 30 degrees, we might need a winter coat.
+If a future student asked us ``What should a two-bedroom apartment cost us in rent?'' how should we reply? Knowing that the data averages \$626, we might say something like ``Around \$626, give or take $\dots$(?).''   This second number, the give or take, is important because it says how much uncertainty there is in our guess.  In other words, the student's rent will probably miss \$626, but by how much?   We will get to the answer in a minute.   
+For a second example, if we were going to San Francisco for a couple of days in August, and we want to know what clothes to bring, it is not enough to know that the average temperature is 68 degrees.  If it was 68 degrees, give or take 15 degrees, then we will need a sweater.  If it is 68 degrees, give or take 30 degrees, we might need a winter coat.
 
 Variation presents itself everywhere.  Consider weight loss.  The 77 subjects in the Atkins group lost an average of 10.5 pounds `give or take' 15 pounds.  Compare this to an average of 3.5 pounds for the Zone diet `give or take' 14 pounds. How about in bowling?  In his first seven games in a tournament in Indiana, Walter Ray Williams Jr. averaged 228, `give or take' 34.   Notice how the `give or take' number seems to complete the description.
 
@@ -598,7 +559,6 @@ In this example, men are twice as likely to get the disease but have six times t
 \section{}
 
 \begin{exercises}
-
   \begin{exercise} % 1
 
 The carbon monoxide measures (in mgs) are given on 25 brands of \\ cigarettes.
@@ -614,7 +574,7 @@ Calculate the
 \item median
 \item 10\% trimmed-mean
 \item standard deviation
-\item mean and standard deviation (in grams)
+\item mean and standard deviation (in \\ grams)
 \end{enumerate}
 
 	\end{exercise}
@@ -640,7 +600,7 @@ Calculate the
   \item median = \Sexpr{md1}
   \item trimmed mean = \Sexpr{tr1}
   \item SD = \Sexpr{sd1}
-  \item mean = \Sexpr{mn2} and standard deviation \Sexpr{sd2} (in grams)
+  \item mean = \Sexpr{mn2} and standard deviation \Sexpr{sd2} in  grams
 	\end{solution}
 
 %   \begin{exercise} % 2
@@ -658,7 +618,7 @@ Calculate the
 
   \begin{exercise} % 2
 
-  Daily high temperature for a given day are provided for the past 10 years
+  Daily high temperature for a given day are provided for the past 10 \\ years:
 
 \begin{tabular}{@{} ccccc @{}} \hline
 2007 & 2008 & 2009 & 2010 & 2011 \\
@@ -699,7 +659,7 @@ Find the following statistics for \\ temperature:
 
    \begin{exercise} % 3
 
-Joshua has been working on \\ programming  and updating a Website for his \\ company for the past 12 months. The following numbers represent the number of hours Joshua  has worked on this Website for each of the past 12 months:
+Joshua has been working \\ on  programming  and updating a Website for his  company for the past 12 months. The following numbers represent the number of hours Joshua  has worked on this Website for each of the past 12 months:
 
 24, 25, 31, 40, 48, 40, 36, 50, 38, 35 ,42, 112
 
@@ -707,7 +667,7 @@ Joshua has been working on \\ programming  and updating a Website for his \\ com
 \item Calculate the mean
 \item Calculate the median
 \item Decide if its symmetric, skewed to the right or to the left
-\item Decide which measure of center provides the most relevant information about the distribution? Why?
+\item Decide which measure of center \\ provides the most relevant information about the distribution? Why?
 \end{enumerate}
 
 \end{exercise}
@@ -763,7 +723,7 @@ In a study of warp breakage during the process of weaving fabric (\textit{Techno
 \item Calculate the median
 \item Calculate the standard deviation
 \item Decide if its distribution (symmetric, \\ skewed to the right or to the left)
-\item Decide which measure of center provides the most relevant information about the distribution? Why?
+\item Decide which measure of center \\ provides the most relevant information about the distribution? Why?
 \end{enumerate}
 
 \end{exercise}
@@ -783,7 +743,7 @@ In a study of warp breakage during the process of weaving fabric (\textit{Techno
 
   \begin{exercise} % 5
 
-  The weekly budgets for groceries of six students are as follows: \\
+  The weekly budgets for \\ groceries of six students are as follows: \\
 \$30, \$35, \$40, \$28, \$35, \$25. \\ Compute for the mean and median and \\ choose the correct answer from the choices below:
 	\begin{enumerate}
 	\item mean = 188, median = 30
@@ -805,7 +765,7 @@ In a study of warp breakage during the process of weaving fabric (\textit{Techno
 
   \begin{exercise} % 6
 
-  John got 16 and 22 on his two Stat 1600 quizzes.  What score must he have on his next quiz to have the mean of exactly 20 for his three quizzes?
+  John got 16 and 22 on his two Stat 1600 quizzes.  What score must he have on his next quiz to have the mean of \\ exactly 20 for his three quizzes?
 	\begin{enumerate}
 	\item 20
 	\item 22
@@ -825,7 +785,7 @@ In a study of warp breakage during the process of weaving fabric (\textit{Techno
 
   \begin{exercise} % 7
 
-    The following table lists the average number of cars per 1000 population for eight nations. Compute the mean and median for these data.
+    The following table lists \\ the average number of cars per 1000 \\ population for eight nations. Compute the mean and median for these data.
 
 % Requires the booktabs if the memoir class is not being used
 % \begin{table}[htbp]
@@ -888,18 +848,18 @@ xsumm1 <- summary(xdt1)
 
   \begin{exercise} % 8
 
-You are a researcher for a mid-sized city. You collected six types of variables from a random sample of students from a large university.  These variables include:
+You are a researcher for a mid-sized city. You collected six types of \\ variables from a random sample of students from a large university.  These variables include:
 
   \begin{enumerate}
   \item their region of birth of country
-  \item the extent they support marijuana legalization (7=strong, 4=neutral, 1=weak)
+  \item the extent they support marijuana \\ legalization (7=strong, 4=neutral, \\ 1=weak)
   \item the weekly amount of money spent on cafeteria food
   \item number of movies they watched per \\ week
   \item quality of cafeteria food at their university (10=excellent, 0=bad)
   \item religious affiliation.
   \end{enumerate}
 
-Select the  appropriate measures of central tendency for each variable.
+Select the  appropriate measures of central \\ tendency for each variable.
 
  
 % \end{minipage}
@@ -953,18 +913,19 @@ Select the  appropriate measures of central tendency for each variable.
 % \newpage
   \begin{exercise} % 10
 
-As a leader of a Kalamazoo social services agency that employs 20 staff members, you are concerned that your staff has an increased case load of clients compared to 10 years ago.  The case load of each worker is reported in the following table (Table 3.4) for years 2005 and 2015.
+As a leader of a Kalamazoo social services agency that employs 20 staff members, you are concerned that your staff has an increased case load of clients \\ compared to 10 years ago.  The case load of each worker is reported in the following table (Table 3.4) for years 2005 and 2015.
 
 % Requires the booktabs if the memoir class is not being used
 \begin{table}[htbp]
    \centering
+   \caption{Case Loads Comparison}
    %\topcaption{Table captions are better up top} % requires the topcapt package
    {\tiny{
    \begin{tabular}{@{} ccccccccccc  @{}} \hline % Column formatting, @{} suppresses leading/trailing space
    2005 & 50&64&55&64&60&53&56&50&51&45 \\ & 46&46&50&56&63&65&53&54&58&69 \\ \hline
    2015 & 57&47&46&59&59&50&57&52&41&66 \\ & 65&52&57&75&65&76&43&56&52&67 \\ \hline
    \end{tabular}
-    \caption{Case Loads Comparison}
+    
    \label{tab:t3_4a}
    }}
 \end{table}
@@ -1001,6 +962,7 @@ The median for 2015 is \Sexpr{med3b}.
    \centering
    %\topcaption{Table captions are better up top} % requires the topcapt package
    {\small{
+   \caption{Freshmen Racial Prejudice Index}
    \begin{tabular}{@{} ccccc  @{}} \hline % Column formatting, @{} suppresses leading/trailing space
    45 & 30 & 35 & 30 & 42 \\
    50 & 43 & 40 & 32 & 48 \\
@@ -1008,12 +970,12 @@ The median for 2015 is \Sexpr{med3b}.
    40 & 26 & 39 & 38 & 44 \\
    32 & 37 & 41 & 27 & 22 \\ \hline
    \end{tabular}
-    \caption{Freshmen Racial Prejudice Index}
+    
    \label{tab:t3_12}
    }}
 \end{table}
 
-  Calculate the mean and median scores of these data.
+  Calculate the mean and median scores of \\ these data from Table 3.5.
 
 	\vspace{2mm}
     \framebox[5cm][l]{ Answer: }
@@ -1036,13 +998,14 @@ The median for 2015 is \Sexpr{med3b}.
 
 	  \begin{exercise} % 12
 
-The same 25 students completed the same survey during their senior \\ year.  Compute the mean and median for this second set of scores, and compare them to the scores from four years earlier.   What happened?
+The same 25 students \\ completed the same survey during their senior  year.  Compute the mean and median for this second set of scores, and compare them to the scores from four years earlier.   What happened?
 
 % Requires the booktabs if the memoir class is not being used
 \begin{table}[htbp]
    \centering
    %\topcaption{Table captions are better up top} % requires the topcapt package
    {\small{
+   \caption{Senior Racial Prejudice Index}
    \begin{tabular}{@{} ccccc  @{}} \hline % Column formatting, @{} suppresses leading/trailing space
    50 & 27 & 31 & 35 & 41 \\
    11 & 45 & 50 & 37 & 43 \\
@@ -1051,11 +1014,11 @@ The same 25 students completed the same survey during their senior \\ year.  Com
    15 & 30 & 40 & 26 & 21 \\ \hline
    \end{tabular}
    }}
-    \caption{Senior Racial Prejudice Index}
+    
    \label{tab:t3_6a}
 \end{table}
 
-  Calculate the mean and median scores of these data.
+  Calculate the mean and median scores of \\ these data.
 
 	\vspace{2mm}
     \framebox[5cm][l]{ Answer: }
@@ -1077,7 +1040,7 @@ The same 25 students completed the same survey during their senior \\ year.  Com
 
 	\begin{exercise} % 13
 
-A local social service \\ agency has started a sex education course for teen girls.  The girls took a 20-question exam for general information about sex, anatomy and physiology upon entry and again after completing the course.  Table 3.7 has the listing of scores of a random sample of 15 girls.
+A local social service \\ agency has started a sex education course for teen girls.  The girls took a 20-question exam for general information about sex, anatomy and physiology upon entry and again after completing the course.  Table 3.7 has the listing of scores of a random sample of 15 \\ girls.
 
 Calculate the mean and median of the pre and post test scores and comment on the results.
 
@@ -1087,8 +1050,8 @@ Calculate the mean and median of the pre and post test scores and comment on the
  \centering
  \caption{Pre and Post Test Results}
 
- {\footnotesize{
- \begin{tabular}{rrrrr}
+ {\small{
+ \begin{tabular}{@{} rrrrr @{}}
    \hline
    case & posttest & pretest & difference \\
    \hline
@@ -1145,6 +1108,42 @@ Calculate the mean and median of the pre and post test scores and comment on the
 The pretest median is \Sexpr{med3b}
 
 	\end{solution}
+	
+	\begin{exercise}   % 14
+
+	The acidity or alkalinity of a solution is measured using pH.  A pH less than 7 is acidic; a pH greater than 7 is alkaline.  The following data represent the pH in samples of bottled water and tap water.
+
+\begin{table}[ht]
+ \centering
+ 
+	{\small{             % \footnotesize{
+	\caption{Source: Emily. McCarney, \\ Joliet College}
+ \begin{tabular}{@{} rrcrr @{}}
+     % \multicolumn{4}{c}{TAP    |    BOTTLED}  \hline
+  % \multicolumn{2}{Tap} & | & \multicolumn{2}{Bottled} \hline    
+   Tap &  & | & Bottled  & \\ \hline  
+   7.64 & 7.45 & | & 5.15 & 5.28 \\
+   7.45 & 7.10 & | & 5.09 & 5.26 \\
+   7.47 & 7.56 & | & 5.26 & 5.13 \\
+   7.50 & 7.47 & | & 5.20 & 5.26 \\
+   7.68 & 7.52 & | & 5.02 & 5.21 \\
+   7.69 & 7.47 & | & 5.23 & 5.24 \\
+    \hline
+ \end{tabular}
+ }}
+   \label{tab:t3_15}
+ \end{table}
+
+\begin{enumerate}
+ \item Calculate the mean  of the tap water.
+ \item Determine the median of the tap water.
+ \item Comment on the results.
+\end{enumerate} 
+  \end{exercise}
+%   \begin{solution}  % 14
+%   
+%   
+%   \end{solution}
 
 \end{exercises}
 
