@@ -10,7 +10,7 @@ After completing this part, students should be able to:
 \fbox{\parbox{14cm}{
 \begin{itemize}
 \item Compare two population averages when the samples are independent using confidence intervals.
-\item Compare two population averages when the data are dependent (paired) using confidence intervals.
+\item Compare two population averages when the data are dependent (paired) \\ using confidence intervals.
 \end{itemize}
 }}
 
@@ -26,9 +26,9 @@ Suppose we sample two means $\bar{x}_1$ and $\bar{x}_2$  from two populations wi
 
 As you can see, the sample circles including $\bar{x}_1$ and $\bar{x}_2$ are smaller than the entire population circles including $\mu_1$ and $\mu_2$. In other words, we do not have all the information we need to be sure about the exact values of  $\mu_1$ and $\mu_2$. However, as we have learned, statistics allows for sample means to estimate population means as depicted by the arrows. What's new in this chapter is that here we learn statistics can do more than allow us to estimate values for $\mu_1$ and $\mu_2$ separately. We can also use statistics to investigate how the population means differ from one another in tandem. We do this by performing \textit{hypothesis tests} on and using confidence intervals centered around the difference between the sample means $\bar{x}_1$ and $\bar{x}_2$. Let's now turn to some formulaic examples of such tests and intervals.
 
-Is there ``grade inflation'' in WMU?  How does the average GPA of WMU students today compare with, say ten years ago?  Suppose a random sample of 100 student records from 10 years ago yields an average sample GPA of 2.90 with a standard deviation of 0.40.  A random sample of 100 current students today yields a sample average of 2.98 with a standard deviation of 0.45.  The difference between the two-sample means is 2.98- 2.90 = .08.  Is this proof that GPA's are higher today than ten years ago?  Well $\dots$ first, we need to account for the fact that 2.98 and 2.90 are not the correct averages but that we compute the average from random samples.  Therefore, 0.08 is not the exact difference, but merely an estimate of the actual difference. By how much will it miss?
+Is there ``grade inflation'' in WMU?  How does the average GPA of WMU students today compare with, say ten years ago?  Suppose a random sample of 100 student records from 10 years ago yields an average sample GPA of 2.90 with a standard deviation of 0.40.  A random sample of 100 current students today yields a sample average of 2.98 with a standard deviation of 0.45.  The difference between the two-sample means is $2.98 - 2.90 = 0.08$.  Is this proof that GPA's are higher today than ten years ago?  Well $\dots$ first, we need to account for the fact that 2.98 and 2.90 are not the correct averages but that we compute the average from random samples.  Therefore, 0.08 is not the exact difference, but merely an estimate of the actual difference. By how much will it miss?
 
-Note that we took differences $2.98 - $2.90 to compare average GPA.  The two averages 2.98 and 2.90 are independent, in the sense that we base them on separate and independent groups of students.  The SE of the difference is
+Note that we took differences $2.98 - 2.90$ to compare average GPA.  The two averages 2.98 and 2.90 are independent, in the sense that we base them on separate and independent groups of students.  The SE of the difference is
 
 \begin{equation}
 SE_{(\bar{x}_1 - \bar{x}_2)} = \sqrt{SE_{\bar{x}_1}^2 + SE_{\bar{x}_2}^2 }
@@ -221,7 +221,7 @@ $n_2 = 7$
 \end{minipage}
 \end{center}
 
-What is the estimate of mean weight change after 12 months?  $\bar{x}_1 - \bar{x}_2 = 9.6$ pounds, right?  What is the standard error of this estimate? Using equation (11.2) 
+What is the estimate of mean weight change after 12 months?  $\bar{x}_1 - \bar{x}_2 = 9.6$ pounds, right?  What is the standard error of this estimate? Using equation (12.2) 
 
 \begin{equation*}
 SE_{(\bar{x}_1 - \bar{x}_2)} = \sqrt{\frac{s_1^2}{n_1}  + \frac{s_2^2}{n_2} } = \sqrt{\frac{(18.1)^2}{7}  + \frac{(16.4)^2}{7} } = 9.2 \texttt{ pounds}
@@ -229,10 +229,10 @@ SE_{(\bar{x}_1 - \bar{x}_2)} = \sqrt{\frac{s_1^2}{n_1}  + \frac{s_2^2}{n_2} } = 
 
 right?  \textbf{wrong!}
 
-We should not use equations (11.1) or (11.2) because the two means are \textbf{not} independent, i.e., they are not calculated on independent samples. The use of the plural `samples' is in itself wrong because we do not have two samples, we only have one! We need to watch out for this.  How many samples are there?  Before-and-after data generally consist of only one sample of subjects, each measured twice.
+We should not use equations (12.1) or (12.2) because the two means are \textbf{not} independent, i.e., they are not calculated on independent samples. The use of the plural `samples' is in itself wrong because we do not have two samples, we only have one! We need to watch out for this.  How many samples are there?  Before-and-after data generally consist of only one sample of subjects, each measured twice.
 
 So how do we calculate an estimate and standard error of average weight loss?  
-By calculating the amount of change from Before to After.  The computed value amounts to taking differences, as shown in Table 11.3.
+By calculating the amount of change from Before to After.  The computed value amounts to taking differences, as shown in Table 12.3.
 
 \begin{table}[ht]
 \centering
@@ -251,7 +251,7 @@ SD:  &  & & 11.1 \\ \hline
 \end{tabular}
 \end{table}
 
-Compare Table 11.3 to Table 11.2.  We have reduced the summary statistics to a single sample, appropriately.  The relevant statistics are now:
+Compare Table 12.3 to Table 12.2.  We have reduced the summary statistics to a single sample, appropriately.  The relevant statistics are now:
 
 $$ \bar{X} = 9.6,  s = 11.1,  n= 7 $$
 
@@ -326,7 +326,7 @@ Do credit cards with no annual fee charge higher interest rates (APR) than cards
   \item Estimate the difference in APR.
   \item Calculate a standard error for your estimate in (1).
   \item Calculate a 95\% confidence interval for the difference in APR between the two groups.
-  \item Are interest rates significantly higher for cards with no annual fees?
+  \item Are interest rates significantly higher \\ for cards with no annual fees?
   \item What is the P-value for comparing the two averages? Is the difference significant?
 \end{enumerate}
 \end{exercise}
@@ -337,10 +337,10 @@ Do credit cards with no annual fee charge higher interest rates (APR) than cards
 
 \begin{exercise}  % 2
 
-100 students graduating \\ with Bachelor degrees in engineering make an average of \$70,000 with a standard deviation of \$5,000 when entering the workforce. 68 students graduating with Bachelor degrees in statistics make an average of \$65,000 with a standard deviation of \$3,000 when entering the workforce. Assuming the two samples of students are independent, answer the following questions:
+100 students graduating \\ with Bachelor degrees in engineering make an average of \$70,000 with a standard deviation of \$5,000 when entering the workforce. 68 students graduating with Bachelor \\ degrees in statistics make an average of \\ \$65,000 with a standard deviation of \$3,000 when entering the workforce. Assuming the two samples of students are independent, answer the following questions:
 
 \begin{enumerate}
-  \item What is the difference between the sample averages (engineers – statisticians)?
+  \item What is the difference between the \\ sample averages (engineers – \\ statisticians)?
   \item What is the standard error of the estimate for the true difference in average entrance salaries between all engineering and statistics BA graduates?
   \item What is a 95\% confidence interval for the difference in sample averages?
   \item Do these statistics suggest that average entrance salaries for stats vs. engineering students are significantly different?
@@ -353,7 +353,7 @@ Do credit cards with no annual fee charge higher interest rates (APR) than cards
 
 \begin{exercise}  % 3
 
-A Junior at Southwest \\ Michigan college is debating whether to pursue an MBA after her Bachelor degree in management.  She interviews some people she \\ knows in the workforce and was able to obtain their salaries. The annual salaries (in dollars) are summarized in the following table:
+A Junior at Southwest \\ Michigan college is debating whether to pursue an MBA after her Bachelor degree in \\ management.  She interviews some people \\ she  knows in the workforce and was able to obtain their salaries. The annual salaries (in dollars) are summarized in the following table:
 
 \begin{tabular}{@{} lccc @{}} \hline
 Degree & Aver & SD & Sample Size \\ \hline
@@ -362,7 +362,7 @@ Master   & \$59,496 & \$675 & 7 \\ \hline
 \end{tabular}
 
 \begin{enumerate}
-  \item Estimate the difference in average salary between the two groups.
+  \item Estimate the difference in average \\ salary between the two groups.
   \item Calculate a standard error for our estimate in (1).
   \item Calculate a 95\% confidence interval for the average difference in salary.
   \item Are MBA salaries significantly higher?
@@ -375,7 +375,7 @@ Master   & \$59,496 & \$675 & 7 \\ \hline
 
 \begin{exercise}  % 4
 
-A group of charity workers employed by a large foundation track the donations made to the foundation every month. They note that the average donations for August were somewhat higher than the average donations for September, and they want to know if this fact should worry them moving forward. Performing the correct statistical test could determine whether the average difference in donations between August and \\ September was significant. However, they \\ must first decide whether their August and  September donations are independent or not. If we were advising the charity workers, what would we tell them?
+A group of charity workers employed by a large foundation track the donations made to the foundation every \\ month. They note that the average donations for August were somewhat higher than the average donations for September, and they want to know if this fact should worry them moving forward. Performing the correct statistical test could determine whether the average difference in donations between \\ August and  September was significant. However, they  must first decide whether their August and  September donations are independent or not. If we were advising the charity workers, what would we tell them?
 \end{exercise}
 \begin{solution}  % 4
 
@@ -384,17 +384,19 @@ A group of charity workers employed by a large foundation track the donations ma
 
 \begin{exercise}  % 5
 
-A new gasoline additive is supposed to make gas burn more cleanly and increase gas mileage in the process.  Consumer Protection Anonymous conducted a mileage test to confirm this.  They took seven of their cars, filled it with regular gas, and drove it on I-94 until it was empty.  They repeated the process using the same cars, but using the gas additive.  The recorded gas mileage follows:
+A new gasoline additive is supposed to make gas burn more cleanly and increase gas mileage in the process.  \\ Consumer Protection Anonymous conducted a mileage test to confirm this.  They took \\ seven of their cars, filled it with regular gas, and drove it on I-94 until it was empty.  They repeated the process using the same cars, but using the gas additive.  The recorded gas \\ mileage follows:
 
+{\small{
 \begin{tabular}{@{} llllllll @{}} \hline
 Additive & 1 & 2 & 3 & 4 & 5 & 6 & 7 \\ \hline
 Without & 22 & 15 & 18 & 28 & 12 & 25 & 18 \\
 With    & 26 & 19 & 17 & 34 & 17 & 25 & 22 \\ \hline
 \end{tabular}
+}}
 
 \begin{enumerate}
-  \item Calculate the mean difference in mileage between the two fuel types.         \item Calculate a standard error for our estimate in (1).
-  \item Calculate a 95\% confidence interval for the mean mileage difference.
+  \item Calculate the mean difference in \\ mileage between the two fuel types.         \item Calculate a standard error for our estimate in (1).
+  \item Calculate a 95\% confidence interval for the mean \\ mileage difference.
   \item Does the data support the claim of \\ higher gas mileage?
 \end{enumerate}
 
@@ -405,7 +407,7 @@ With    & 26 & 19 & 17 & 34 & 17 & 25 & 22 \\ \hline
 
 \begin{exercise}  % 6
 
-The group of charity workers from the above question decides on a statistical test based on the sage wisdom we previously offered. They perform a test for significance of the average difference, and it yields a p-value of 0.50. As their stats advisor, how would we interpret this p-value concerning \\ whether the average difference in donations for August versus September was \\ significant?
+The group of charity \\ workers from the above question decides on a statistical test based on the sage wisdom we previously offered. They perform a test for significance of the average difference, and it yields a p-value of 0.50. As their stats advisor, how would we interpret this p-value concerning  whether the average difference in donations for August versus September was \\ significant?
 \end{exercise}
 \begin{solution}  % 6
 
@@ -473,11 +475,10 @@ Suppose a shoe company wants to test material for the soles of shoes.  For each 
                  
 @  
 
-Ramp metering is an engineering experiment that studies how automobiles enter an expressway to stop for a short time before they join the flow of traffic.  The theory is that ramp metering  directs the number of vehicles on the expressway and the \\ number of vehicles accessing the expressway, resulting in a freer flow, which results in a faster travel times.  To prove the hypothesis whether ramp metering affects travel time, traffic engineers in Kalamazoo, Michigan, set up an experiment on a section of expressway where ramp meters were installed.  The response variable was the speed of vehicles.  A random sample of 15 vehicles on the expressway for a Tuesday at 5 p.m. with the ramp meters on and a second random sample of 15 vehicles on a different Tuesday at 5 p.m. with the ramp meters off resulted in the following speed summaries(in miles per hour).
+Ramp metering is an engineering experiment that studies how automobiles enter an expressway to stop for a \\ short time before they join the flow of traffic.  The theory is that ramp metering  directs the number of vehicles on the expressway and the  number of vehicles accessing the expressway, resulting in a freer flow, which results in a faster travel times.  To prove the hypothesis whether ramp metering affects travel time, traffic engineers in Kalamazoo, Michigan, set up an experiment on a section of expressway where ramp meters were installed.  The response variable was the speed of vehicles.  A random sample of 15 vehicles on the expressway for a Tuesday at 5 p.m. with the ramp meters on and a second random sample of 15 vehicles on a different Tuesday at 5 p.m. with the ramp meters off resulted in the following speed summaries(in miles per hour).
 
 \begin{enumerate}
-  \item Determine the mean difference between ramp meters on and ramp meters off.
-          
+  \item Determine the mean difference \\ between ramp meters on and ramp meters off.
   \item Calculate a standard error for our estimate in (1).
   \item Calculate a 95\% confidence interval for the mean ramp meter on-off difference.
   \item Does the data support the claim that ramp metering improves traffic flow?

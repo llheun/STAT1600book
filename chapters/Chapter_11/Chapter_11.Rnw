@@ -180,9 +180,6 @@ where $s$ is the standard deviation based on historical data or a pilot sample. 
 \end{minipage}
 }}
 
-
-
-
 \twocolumn
 
 \section{}
@@ -193,9 +190,9 @@ where $s$ is the standard deviation based on historical data or a pilot sample. 
 The national average on a science test for tenth graders has a mean of 210 and a standard deviation of 28.
 
 \begin{enumerate}
-  \item What percentage scored over 220?  (You may assume that the histogram of scores looks approximately like the normal \\ curve.)
+  \item What percentage scored over 220?  (You may assume that the histogram of \\ scores looks approximately like the \\ normal  curve.)
   \item One tenth grader is randomly selected.  What is the chance that he/she scored over 220?
-  \item A random sample of 40 tenth graders are selected.  What is the chance that this group will average over 220? (Should this be smaller, larger, or approximately equal to (2)?)
+  \item A random sample of 40 tenth graders are selected.  What is the chance that this group will average over 220? \\ (Should this be smaller, larger, or approximately equal to (2)?)
   \item A larger sample of 100 tenth graders is selected.  What is the probability that this group will average over 220?  \\ (Should this be smaller, larger, or approximately equal to (3)?
 \end{enumerate}
 
@@ -270,7 +267,7 @@ A sample of 16 observations is taken from a distribution with mean of 10 and sta
 
 \begin{exercise}  % 3
 
-Safe Skies Airline took a random sample of 25 flights to estimate the average time that arriving passengers wait for luggage at the carousel.  The sample average was found to be 16.2 minutes with a standard deviation of 4 minutes.  The population \\ average waiting time is estimated as \underline{\phantom{xxxxxxxx}} minutes give or take \underline{\phantom{xxxxxxxx}} minutes or \\ so.
+Safe Skies Airline took a random sample of 25 flights to estimate the average time that arriving passengers wait \\ for luggage at the carousel.  The sample average was found to be 16.2 minutes with a standard deviation of 4 minutes.  The population \\ average waiting time is estimated as \\ \underline{\phantom{xxxxxxxx}} minutes give or take  \underline{\phantom{xxxxxxxx}} minutes or  so.
 
 \end{exercise}
 \begin{solution}  % 3
@@ -294,11 +291,11 @@ The normal human body temperature is on average $98.6^o F$ with a standard devia
 
 \begin{exercise}  % 5
 
-A manufacturing \\ company's profits depend on the cost of materials.  One material of interest is carbon fiber, which is used to make golf shafts and fishing rods.  The cost per pound (in dollars) was recorded for ten randomly selected days from the first six months of 2002. The data follow:
+A manufacturing \\ company's profits depend on the cost of materials.  One material of interest is carbon \\ fiber, which is used to make golf shafts and fishing rods.  The cost per pound (in dollars) was recorded for ten randomly selected days from the first six months of 2002. The data follow:
             $$7.6, 7.8, 8.8, 7.3, 6.6, 7.5, 6.7, 8.6, 7.4, 7.7$$
             
 \begin{enumerate}            
-  \item Calculate an estimate for the average cost per pound during the first six \\ months of 2002.
+  \item Calculate an estimate for the average \\ cost per pound during the first six \\ months of 2002.
   \item Calculate a standard error for our estimate in (1).
 \end{enumerate}  
 
@@ -334,12 +331,12 @@ The average annual rainfall in Mawsynram, India (the wettest place on Earth) is 
   pval1 <- sprintf("%.4f", pnorm(Z1))
 @  
 
-In a study published in the \textit{American Journal of Psychiatry} (157.737-744, May 2000), researchers wanted to measure the effect of alcohol on the development of the hippocampal region in adolescents.  The hippocampus is the portion of the brain responsible for long-term memory storage.  The researchers randomly selected 12 adolescents \\ with alcohol use disorders.  They wanted to determine whether the hippocampal volumes in the alcoholic adolescents were less than the normal volume of 9.02 cubic-centimeters \\ ($cm^2$).  An analysis of the sample data revealed that the hippocampal volume is approximately normal  with $\bar{x} = 8.10$ and $s = 0.7$.  
+In a study published in \\ the \textit{American Journal of Psychiatry} (157.737-744, May 2000), researchers wanted to measure the effect of alcohol on the development of the hippocampal region in adolescents.  \\ The hippocampus is the portion of the brain responsible for long-term memory storage.  \\ The researchers randomly selected 12 adolescents  with alcohol use disorders.  They \\ wanted to determine whether the hippocampal volumes in the alcoholic adolescents were less than the normal volume of 9.02 cubic-centimeters  ($cm^2$).  An analysis of the sample data revealed that the hippocampal volume is approximately normal  with $\bar{x} = 8.10$ and $s = 0.7$.  
 
 \begin{enumerate}
   \item What happens to the distribution of \\ sample means as the sample size \\ increases?
   \item What is the mean of this distribution? 
-  \item What is the standard error of this distribution?
+  \item What is the standard error of this \\ distribution?
 \end{enumerate}
 
 \end{exercise}  

@@ -290,7 +290,7 @@ $P[ X \ge 32 ] = \Sexpr{prob81}
 
 \begin{exercise} % 2
 
-Let's say that we take a \\ sample of 100 observation has 20 successes.
+Let's say that we take a \\ sample of 100 observation has 20 \\ successes.
 
 \begin{enumerate}
 \item What is the estimate of the population proportion?
@@ -319,7 +319,7 @@ Let's say that we take a \\ sample of 100 observation has 20 successes.
 
 \begin{exercise} % 3
 
-A sample of 100 individuals \\ showed that 20\% experienced gastrointestinal \\ problems  after consuming 10 grams of sorbitol, a common artificial sweetener.  Attach a standard error to this estimate.
+A sample of 100 individuals  showed that 20\% experienced gastrointestinal  problems  after consuming 10 grams of sorbitol, a common artificial sweetener. \\ Attach a standard error to this estimate.
 \end{exercise}
 \begin{solution} % 3
 <<label=LBL8-3, results="asis", echo=FALSE>>=
@@ -335,7 +335,7 @@ The standard error of this estimate is \Sexpr{SE83b}
 
 \begin{exercise} % 4
 
-When a flight experiences fewer no-shows than expected, some passengers are `bumped' from their flights (are denied boarding).  These incidents can reflect poorly on customer satisfaction.  Suppose \\ United Airlines (for example) would like to estimate the actual proportion of involuntarily bumped passengers across all domestic flights in the industry.  In a pilot study of 500 domestic passengers, 33 were involuntarily  \\ bumped.
+When a flight experiences fewer no-shows than expected, some passengers are `bumped' from their flights (are denied boarding).  These incidents can reflect poorly on customer satisfaction.  Suppose \\ United Airlines (for example) would like to estimate the actual proportion of involuntarily bumped passengers across all domestic \\ flights in the industry.  In a pilot study of 500 domestic passengers, 33 were involuntarily  \\ bumped.
 
 \begin{enumerate}
 \item	What is the estimate of the population proportion?
@@ -363,7 +363,7 @@ When a flight experiences fewer no-shows than expected, some passengers are `bum
 
 \begin{exercise} % 5
 
-An appliance manufacturer offers maintenance contracts on its major appliances.  A manager wants to know what fraction of buyers of the company's convection ovens are also buying the maintenance contract with the oven.  From a random sample of 120 sales slips, 31 of the oven buyers opted for the contract.
+An appliance \\ manufacturer offers maintenance contracts \\ on its major appliances.  A manager wants to know what fraction of buyers of the company's convection ovens are also buying the maintenance contract with the oven.  From a random sample of 120 sales slips, 31 of the oven buyers opted for the contract.
 
 \begin{enumerate}
 \item	The proportion of customers who buy the contract along with their oven is estimated as \underline{\phantom{xxxxxxxxxx}}.
@@ -389,7 +389,7 @@ An appliance manufacturer offers maintenance contracts on its major appliances. 
 
 \begin{exercise} % 6
 
-Wiley Publications has determined that out of a sample of 5,511 of its publications for 2012, 1,754 of them are pirated in some form.
+Wiley Publications has \\ determined that out of a sample of 5,511 of its publications for 2012, 1,754 of them are pirated in some form.
 
 \begin{enumerate}
 \item	What is the estimate of the population proportion?
@@ -417,7 +417,7 @@ Wiley Publications has determined that out of a sample of 5,511 of its publicati
 
 \begin{exercise} % 7
 
-Researchers who were \\ concerned if doctors were consistently adjusting dosages for the weight of elderly patients studied 2000 prescriptions.  They found that for 600 of the  prescriptions, the doctors failed to change the \\ dosages.
+Researchers who were \\ concerned if doctors were consistently \\ adjusting dosages for the weight of elderly patients studied 2000 prescriptions.  \\ They found that for 600 of the  prescriptions, the doctors failed to change the  dosages.
 
 \begin{enumerate}
 \item	Doctors fail to adjust dosage for an estimated \underline{\phantom{xxxxxxxx}}  percent of prescriptions.
@@ -460,6 +460,34 @@ Suppose researchers are interested in the potential sample size of an experiment
 @
 
 The standard error of this estimate is \Sexpr{n8}
+
+\end{solution}
+
+\begin{exercise}   % 9
+
+<<label=LBL8-9, results="asis", echo=FALSE>>=
+  p9a <- 82/100
+  se9a <- sqrt( p9a * ( 1-p9a)/ 100)
+  lbnd9a <- p9a - 1.96 *se9a 
+  ubnd9a <- p9a + 1.96 * se9a
+@
+
+The CDC is recommending that everybody wash their hands multiple \\ times per day during the COVID-19 \\ pandemic.  The students from STAT 1600 \\ decided to conduct a survey of students on the WMU campus.  They decided on a sample size of 100 students.  They found that 82 \\ washed their hands multiple times per day.
+
+\begin{enumerate}
+\item What is the point estimate for the proportion?
+\item What is the standard error?
+\item What is the 95\% confidence interval for the proportion of students who say they wash their hands multiple times per \\ day?
+\end{enumerate}
+
+\end{exercise}
+\begin{solution}   % 9
+
+\begin{enumerate}
+\item $\hat{p} = \Sexpr{p9a}$ 
+\item $SE = \Sexpr{se9a}$ 
+\item (\Sexpr{lbnd9a}, \Sexpr{ubnd9a})
+\end{enumerate}
 
 \end{solution}
 

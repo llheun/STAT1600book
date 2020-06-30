@@ -568,8 +568,7 @@ Nonsmokers & 15 & 56 & 71 \\ \hline
 % \item Estimate the odds ratio of drug use \\ between smokers and nonsmokers.
 % \item Calculate a standard error for the natural log of our estimate in 7.
 % \item Calculate a 95\% confidence interval for the odds ratio of drug use between \\ smokers and nonsmokers.
-\item Interpret the above confidence intervals above in context.
-% in parts 3, 6, and 9. % Which are
+\item Interpret the above confidence \\ intervals above in context.
 Is it significant? Why or why not?
 \end{enumerate}
 
@@ -608,7 +607,7 @@ Is it significant? Why or why not?
 
   \begin{exercise} % 2
 
-Time magazine reported the result of a telephone poll of 800 adult Americans. The reporter asked Americans the following question: ``Should the federal tax on cigarettes be raised to pay for health care reform?''
+Time magazine reported \\ the result of a telephone poll of 800 adult Americans. The reporter asked Americans the following question: ``Should the federal tax on cigarettes be raised to pay for health care reform?''
 
 \begin{table}[ht]
 \centering
@@ -627,7 +626,7 @@ Nonsmoker & 351 & 254 \\ \hline
     \item Calculate a 95\% confidence interval for the difference in the percentage of \\ Americans who supported the federal \\ tax on cigarettes between smokers and non-smokers.
 %     \item Estimate the risk ratio of Americans \\ who supported the federal tax on \\ cigarettes between smokers and non- \\ smokers.
     % \item Estimate the odds ratio of Americans who supported the federal tax on \\ cigarettes between smokers and non- \\ smokers.
-    \item Interpret the above confidence intervals above in context.  Is it significant? Why or why not?
+    \item Interpret the above confidence \\ intervals above in context.  Is it significant? Why or why not?
 	  \end{enumerate}
 
 	\end{exercise}
@@ -645,13 +644,13 @@ Nonsmoker & 351 & 254 \\ \hline
 
   \begin{exercise} % 3
 
-The age at which a woman gives birth to her first child may be an \\ essential factor in the risk of later \\ developing breast cancer.  An international study conducted by WHO selected women \\ with at least one birth and recorded if they had breast cancer or not and whether they had their first child before their $30^{th}$ birthday or after. In a sample of 3220 women who had their first child after their $30^{th}$ birthday, 683 developed breast cancer.  Whereas, in a sample of 10245 women who had their first child before their $30^{th}$ birthday, 1483 developed breast cancer.
+The age at which a woman gives birth to her first child may be an  \\ essential factor in the risk of later  developing breast cancer.  An international study conducted by WHO selected women  with at least one birth and recorded if they had breast \\ cancer or not and whether they had their first child before their $30^{th}$ birthday or after. In a sample of 3220 women who had their first child after their $30^{th}$ birthday, 683 developed breast cancer.  Whereas, in a sample of 10245 women who had their first child before their $30^{th}$ birthday, 1483 developed breast \\ cancer.
 
 	  \begin{enumerate}
-	  \item Estimate the difference in the percentage of developing breast cancer between \\ women who had their first child after their $30^{th}$ birthday and before their $30^{th}$ birthday.
+	  \item Estimate the difference in the \\ percentage of developing breast cancer  between  women who had their \\ first  child after their $30^{th}$ birthday and before their  $30^{th}$ birthday.
     \item Calculate a standard error for our \\ estimate in (1).
-    \item Calculate a 95\% confidence interval for the difference in the percentage developing breast cancer between women who had their first child after their $30^{th}$ \\ birthday and before their $30^{th}$ birthday.
-    \item Interpret the above confidence intervals above in context.  Is it significant? Why or why not?
+    \item Calculate a 95\% confidence interval for the difference in the percentage \\ developing breast cancer  between   \\ women who had their first  child after their $30^{th}$  birthday and before their \\ $30^{th}$ birthday.
+    \item Interpret the above confidence \\ intervals above in context.  Is it significant? Why or why not?
     % \item Estimate the risk ratio of developing \\ breast cancer between women who had their first child after their $30^{th}$ \\ birthday and before their $30^{th}$ birthday.
    %  \item Estimate the odds ratio of developing \\ breast cancer between women who had their first child after their $30^{th}$ \\ birthday and before their $30^{th}$ \\ birthday.
 	  \end{enumerate}
@@ -669,13 +668,13 @@ The age at which a woman gives birth to her first child may be an \\ essential f
 
   \begin{exercise} % 4
 
-In a sample of 200 surgeons, 15\% thought the government should control health care.  Whereas, in a sample of 200 gen- \\ eral practitioners, 21\% thought the same.
+In a sample of 200 \\ surgeons, 15\% thought the government \\ should control health care.  Whereas, in a \\ sample of 200 general practitioners, 21\% \\ thought the same.
 
 \begin{enumerate}
 \item Estimate the difference in the percentage of those who think the government should control health care between surgeons and general practitioners.
 \item Calculate a standard error for our estimate in (1).
-\item Calculate a 95\% confidence interval for the difference in the percentage of those who think the government should control health care between surgeons and general practitioners.
-\item Interpret the above confidence intervals above in context.  Is it significant? Why or why not?
+\item Calculate a 95\% confidence interval for the difference in the percentage of \\ those  who think the government \\ should control health care between surgeons and general practitioners.
+\item Interpret the above confidence \\ intervals above in context.  Is it significant? Why or why not?
 % \item Estimate the risk ratio of those who \\ think the government should control  \\ health care between surgeons and general practitioners.
 % \item Estimate the odds ratio of those who think the government should control \\  health care between surgeons and general practitioners.
 \end{enumerate}
@@ -722,13 +721,13 @@ A Pew Research Center poll asked randomly selected subjects if they \\ agreed wi
     }}
 
 \begin{enumerate}
-\item Determine the difference in the percentage of those who thought that it is \\ wrong for married people to have an affair.
+\item Determine the difference in the \\ percentage of those who thought that it is  wrong for married people to have an affair.
 
 \item Calculate a standard error for our estimate in (1).
 
-\item Determine a 95\% confidence interval for the difference in the percentage of those who thought that it is wrong for married people to have an affair.
+\item Determine a 95\% confidence interval \\ for the difference in the percentage of those who thought that it is wrong for married people to have an affair.
 
-\item Interpret the above confidence intervals in context.  Is it significant? Why or why not?
+\item Interpret the above confidence \\ intervals in context.  Is it significant? Why or why not?
 
 % \item Estimate the risk ratio of those who \\ thought that it is wrong for married people to have an affair.
 
@@ -790,13 +789,13 @@ Untrained & 49 & 66 & 115 \\ \hline
 
 
 \begin{enumerate}
-\item Determine the difference in the percentage of those who completed the investigative procedures Curriculum (IPC)
+\item Determine the difference in the \\ percentage of those who completed the investigative procedures Curriculum \\ (IPC)
 
 \item Calculate a standard error for our estimate in (1).
 
-\item Determine a 95\% confidence interval for the difference in the percentage of those who completed the investigative procedures Curriculum (IPC)
+\item Determine a 95\% confidence interval \\ for the difference in the percentage of those who completed the investigative procedures Curriculum (IPC)
 
-\item Interpret the above confidence intervals above in context.  Is it significant? Why or why not?
+\item Interpret the above confidence \\ intervals above in context.  Is it significant? Why or why not?
 
 % \item Estimate the risk ratio of those who \\ completed the investigative procedures Curriculum (IPC)
 
@@ -834,16 +833,16 @@ Untrained & 49 & 66 & 115 \\ \hline
 
 \begin{exercise} % 7
   
-In October 1947, the Gallup organization surveyed 1100 adult Americans, and asked ``Are you a total abstainer from alcoholic beverages?''  Of the 1100 adults surveyed, 407 indicated that they were total abstainers.  In 2010, they asked the same question of 1100 adult Americans, and 333 indicated that they were total abstainers.  
+In October 1947, the \\ Gallup organization surveyed 1100 adult \\ Americans, and asked ``Are you a total abstainer from alcoholic beverages?''  Of the \\ 1100 adults surveyed, 407 indicated that \\ they were total abstainers.  In 2010, they  \\ asked the same question of 1100 adult Americans, and 333 indicated that they were total abstainers.  
   
 \begin{enumerate}
-\item Determine the difference in the percentage of those who were total abstainers in 1947 and 2010.
+\item Determine the difference in the \\ percentage of those who were total abstainers in 1947 and 2010.
 
 \item Calculate a standard error for our estimate in (1).
 
-\item Determine a 95\% confidence interval for the difference in the percentage of those who were total abstainers in 1947 and 2010
+\item Determine a 95\% confidence interval \\ for the difference in the percentage of those who were total abstainers in 1947 and 2010
 
-\item Interpret the above confidence intervals above in context.  Is it significant? Why or why not?
+\item Interpret the above confidence \\ intervals above in context.  Is it significant? Why or why not?
 
 \end{enumerate}
 

@@ -73,7 +73,7 @@ $P[X = 0]$ & $P[X = 1]$ & $P[X = 2]$ & $P[X = 3]$ & $P[X = 4]$ & $P[X = 5]$ \\ \
 You can compute these probabilities yourself by successively substituting \\ $j = 0, 1, 2, 3, 4, \texttt{ and } 5$ in the formula
 
 \begin{equation*}
- P[ X = j] = \frac{5!}{j! (5 - j)!} .2^j .8^{5 - j}, \texttt{ where j = 0,1,2,3,4,5 }
+ P[ X = j] = \frac{5!}{j! (5 - j)!} 0.2^j 0.8^{5 - j}, \texttt{ where j = 0,1,2,3,4,5 }
  \end{equation*}
 
 Remember that $0! = 1$ and $(0.2)^0 = 1$.  This formula is called the \textbf{binomial probability distribution function (pdf)} for $n = 5$ and p$ = 0.2$.  To compute the probabilities for Examples 2 and 3, you will need the binomial pdf for general $n$ and $p$:
@@ -283,7 +283,7 @@ We remind the reader that the normal curve approximations are still approximatio
 \begin{exercises}
   \begin{exercise} % 1
 
-A binomial random variable \\ with a probability of success of 0.5 and ten \\ observations. Assume each observation is \\ independent.
+A binomial random \\ variable with a probability of success of 0.5 and ten observations. Assume each observation is  independent.
 
 	  \begin{enumerate}
 	  \item What is the mean and standard deviation?
@@ -324,7 +324,7 @@ A statistics exam contains ten questions with five multiple choice options per q
 \end{enumerate}
 	\end{exercise}
 % 	\begin{solution}  % 2
-% <<label=LBL7-2, results="asis", echo=FALSE>>=
+% <label=LBL7-2, results="asis", echo=FALSE>>=
 %   N1 <- 10
 %   P1 <- .2
 %
@@ -342,13 +342,14 @@ A statistics exam contains ten questions with five multiple choice options per q
 
   \begin{exercise} % 3
 
-Apple's smartphone market \\ share is  0.146. If Apple conducts a nationwide survey of 651 smartphone users,
+Apple's smartphone \\ market  share is  0.146. If Apple conducts a nationwide survey of 651 smartphone \\ users,
 
 \begin{enumerate}
 \item What is the probability that at least 100 of the people are Apple users?
 \item What is the probability that at most 100 of the people are Apple users?
 \item What is the probability that between 80 and 120?
 \end{enumerate}
+
 	\end{exercise}
 	\begin{solution}  % 3
 <<label=LBL7-3, results='asis', echo=FALSE>>=
@@ -372,7 +373,7 @@ When rolling a die ten \\ times,
 
 \begin{enumerate}
 \item What is the probability of rolling a six no more than three times?
-\item What is the probability that no less than 3 times?
+\item What is the probability of rolling a six no less  than three times?
 \end{enumerate}
 	\end{exercise}
 % 	\begin{solution}  % 4
@@ -419,7 +420,7 @@ The career batting average of Ty Cobb is 0.3664. If Ty Cobb had eight at-bats du
 
 	\begin{exercise}  % 6
 
-Fill in the blanks. The probability of picking the Powerball number is \\ 0.0254. If 50 tickets are purchased, around \underline{\phantom{xxxxxxxx}} of  tickets will be winners,  give or take  \underline{\phantom{xxxxxxxx}}.    Assume each pick is independent.
+Fill in the blanks. The \\ probability of picking the Powerball number is  0.0254. If 50 tickets are purchased, around \underline{\phantom{xxxxxxxx}} of  tickets will be winners,  give or take  \underline{\phantom{xxxxxxxx}}.    Assume each pick is independent.
 	\end{exercise}
 % 	\begin{solution}  % 6
 % <label=LBL7-6, results="asis", echo=FALSE>>=
@@ -434,7 +435,7 @@ Fill in the blanks. The probability of picking the Powerball number is \\ 0.0254
 
 		\begin{exercise}  % 7
 
-Fill in the blanks. The probability of a defective light bulb is 0.04. If purchase order of 200 bulbs is submitted, the number of defective light bulbs in the shipment is around \underline{\phantom{xxxxxxxx}}, give or take \\ \underline{\phantom{xxxxxxxx}}. Assume each light bulb is independent.
+Fill in the blanks. The \\ probability of a defective light bulb is 0.04. If purchase order of 200 bulbs is submitted, the number of defective light bulbs in the shipment is around \underline{\phantom{xxxxxxxx}}, give or take \\ \underline{\phantom{xxxxxxxx}}. Assume each light bulb is independent.
 	  \end{exercise}
 	  \begin{solution}  % 7
 <<label=LBL7-7, results="asis", echo=FALSE>>=
@@ -449,7 +450,7 @@ The expected value is \Sexpr{MN1} and SD is \Sexpr{SD1}
 
   \begin{exercise}   % 8
 
-An industry official claims that 60 percent of all satellite dish owners subscribe to at least two premium movie channels.  In an attempt to clarify this claim, the official will poll a random sample of dish owners.  Suppose the official's claim is true, and that she selected a random sample of 50 dish owners.  Assuming independence,
+An industry official claims that 60 percent of all satellite dish owners subscribe to at least two premium movie \\ channels.  In an attempt to clarify this claim, the official will poll a random sample of dish owners.  Suppose the official's claim is true, and that she selected a random sample of 50 dish owners.  Assuming independence,
 
 \begin{enumerate}
 \item what is the probability that 33 or more dish owners in the sample subscribe to at least two premium movie channels?
@@ -475,7 +476,31 @@ An industry official claims that 60 percent of all satellite dish owners subscri
 \end{enumerate}
 
 \end{solution}
- 
+
+\begin{exercise}   % 9
+
+<<label=LBL7i, results="asis", echo=FALSE>>=
+  p9a <- sprintf("%.4f", pbinom(q=7, size=10, prob=0.9))
+  p9b <- sprintf("%.4f", 1-pbinom(q=7, size=10, prob=0.9))
+@  
+
+According to the American Lung Assocation (ALA) 90\% of adult smokers started their habit before they were 21 years old.    Suppose researchers randomly \\ selected 10 smokers 21 years or older and \\ recorded their answer about when they \\ started to smoke tobacco.
+
+\begin{enumerate}
+\item What is the  probability that fewer than 8 of them started smoking before 21 \\ years of age?
+\item What is the  probability that at least 8 of them started smoking before 21 years of age?
+\end{enumerate}
+
+\end{exercise}
+\begin{solution}   % 9
+
+\begin{enumerate}
+\item $P[ X < 8 ] = \Sexpr{p9a}$ 
+\item $P[ X \ge 8 ] = \Sexpr{p9b}$ 
+\end{enumerate}
+
+\end{solution}
+
 \end{exercises}
  
 \onecolumn

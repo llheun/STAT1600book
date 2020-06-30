@@ -11,13 +11,14 @@ After completing this part, we should be able to:
 \vspace{1mm}
 
 % \colorbox{yellow}
-{\parbox{14cm}{
+
+\fbox{\parbox{14cm}{
 
 \begin{itemize}
 \item Set-up the hypotheses testing for proportions
 \item Elucidate Type I and Type II errors
 \item Articulate the conclusions to a broader audience. 
-% \item
+
 \end{itemize}
  }}
 
@@ -92,6 +93,7 @@ In a survey of drug use among students at WMU, data compared usage of alcohol an
 % Requires the booktabs if the memoir class is not being used
 \begin{table}[htbp]
    \centering
+   \caption{Smoking by using Hard Liquor}
    %\topcaption{Table captions are better up top} % requires the topcapt package
    \begin{tabular}{@{} lcc @{}} \hline % Column formatting, @{} suppresses leading/trailing space
      % \toprule
@@ -102,7 +104,7 @@ In a survey of drug use among students at WMU, data compared usage of alcohol an
      Never        & 18 & 23 \\  \hline
      Total        & 74 & 38 \\ \hline
    \end{tabular}
-   \caption{Smoking by using Hard Liquor}
+   
    \label{tab:c10_1}
 \end{table}
 
@@ -251,6 +253,7 @@ We have classified a random sample of 100 social work majors regarding whether t
 % Requires the booktabs if the memoir class is not being used
 \begin{table}[htbp]
    \centering
+   \caption{Employment Status}
    %\topcaption{Table captions are better up top} % requires the topcapt package
    \begin{tabular}{@{} lcc @{}} \hline % Column formatting, @{} suppresses leading/trailing space
      % \toprule
@@ -261,7 +264,7 @@ We have classified a random sample of 100 social work majors regarding whether t
      Yes          & 25 & 30 \\ \hline
      Total        & 60 & 40 \\ \hline
    \end{tabular}
-   \caption{Employment Status}
+   
    \label{tab:c10_2}
 \end{table}
 
@@ -364,7 +367,7 @@ Note: The adjacent bell-shaped \\ curve notes the rejection regions (RR) with a 
 \item Step 5.  Producing a Decision and Interpreting the Results of the Test.
 	\begin{itemize}
 	\samepage
-	\item Since the absolute value of the test statistic (\Sexpr{z21}) is greater than CV (\Sexpr{tmpq}), \\ therefore, \textbf{reject} the null hypothesis ($H_0: P_wSW = P_{nSW}$).
+	\item Since the absolute value of the test statistic ($|\Sexpr{z21}|$) is greater than CV \\ (\Sexpr{tmpq}),  therefore, \textbf{reject} the null hypothesis ($H_0: P_wSW = P_{nSW}$).
 	\samepage
 	\item The interpretation is that there is evidence that the proportion of 
 social workers working in their field graduated from an accredited program.
@@ -384,14 +387,14 @@ The following table summarizes the above definitions.
 
 \begin{table}[ht]
 \centering
-
+\caption{Possible Hypotheses Test Outcomes}
 \begin{tabular}{@{} p{3cm} p{3cm} p{3cm}  @{}}
  &   \multicolumn{2}{c}{The Truth} \\
  Decision & $H_0$ is True & $H_0$ is False \\ \hline
  Fail to reject $H_0$ & Correct decision & $P[type II] = \beta$ \\
  Reject $H_0$         & $P[type I] = \alpha$ & Correct decision \\ \hline
  \end{tabular}
- \caption{Possible Hypotheses Test Outcomes}
+ 
  \end{table}
  
 % \pagebreak 
@@ -417,15 +420,15 @@ The following table summarizes the above definitions.
 \end{minipage}
 }}
 
- \newpage
-
-% \section*{Exercises}
+ % \newpage
 \twocolumn
+
+\section{}
 
 \begin{exercises}
   \begin{exercise}  % 1
 
- A local city has outsourced some of its planning function.  The contractor has built a database that describes the neighborhoods in the city and has developed a model so that we rate each area for their ``quality of life'' such as noise, open spaces, walkable areas, etc.  She has surveyed a random sample of these districts about their level of satisfaction with their neighborhoods.   Do the results of the study agree with the contractor's objective ratings of quality with the respondents' self-reports of appreciation?
+ A local city has \\ outsourced some of its planning function.  \\ The contractor has built a database that describes the neighborhoods in the city and has developed a model so that we rate each area for their ``quality of life'' such as noise, open spaces, walkable areas, etc.  She has surveyed a random sample of these districts about \\ their level of satisfaction with their neighborhoods.   Do the results of the study agree with the contractor's objective ratings of quality with the respondents' self-reports of appreciation?
 
     % Requires the booktabs if the memoir class is not being used
     \begin{table}[htbp]
@@ -537,7 +540,7 @@ There is another way to look at this data.
 \begin{exercise}   % 2
 
 % \textbf{Drug Z} 
-The drug Drug Z is a vaccine meant to prevent a certain type of cancer.  It is typically administered to middle-aged subjects starting around 45 years of age.  In a randomized, double-blind clinical trial of Drug Z,  the subjects were randomly divided into two groups.  Subjects in group 1 received Drug Z, while subjects in group 2 received a control vaccine.  After the first dose, 170 of 701 subjects in the experimental group (group 1) experienced fever as a side effect.  After the first dose, 76 of 622 of the subjects in the control group (group 2) experienced fever as a side effect.
+The drug Drug Z is a vaccine meant to prevent a certain type of cancer.  It is typically administered to middle-aged subjects starting around 45 years of age.  In a randomized, double-blind clinical trial of Drug Z,  the subjects were randomly divided into two groups.  Subjects in group 1 received Drug Z, while subjects in group 2 received a control vaccine.  After the first \\ dose, 170 of 701 subjects in the experimental group (group 1) experienced fever as a side effect.  After the first dose, 76 of 622 of the subjects in the control group (group 2) experienced fever as a side effect.
 
 \begin{itemize}
 \item Does the evidence suggest that the proportion of subjects in group 1  experienced fever as a side effect that is different from the subjects in group 2 at $\alpha = 0.05$ level of significance?
@@ -644,7 +647,7 @@ There is another way to look at this data.
 % 
 \begin{exercise}   % 3
 
-\textbf{Tattoos} The Harris Poll conducted a survey in which they asked ``How many tatoos do you curently have on your body?''  Of 1205 males surveyed, 181 \\ responded that they had at least one tattoo.  Of the 1097 females surveyed, 143 responded that they had at least one tatoo.
+\textbf{Tattoos} The Harris Poll \\ conducted a survey in which they asked \\ ``How many tatoos do you curently have on your body?''  Of 1205 males surveyed, 181 \\ responded that they had at least one tattoo.  Of the 1097 females surveyed, 143 \\ responded that they had at least one tatoo.
 
 \begin{itemize}
 
@@ -851,7 +854,7 @@ There is another way to look at this data.
 %
 \begin{exercise}   % 5
 
-The polling company, Sullivan, asked respondents, ``Would you be willing to pay higher taxes if the tax revenue went toward deficit reduction?'' Of 100 males surveyed, 32  were willing to pay more taxes if the tax revenue went toward deficit reduction.  The company asked the same question of 100 females, 22 indicated that they would be willing to pay more taxes if the tax revenue went toward deficit reduction.
+The polling company, \\ Sullivan, asked respondents, ``Would you be willing to pay higher taxes if the tax revenue went toward deficit reduction?'' Of 100 \\ males surveyed, 32  were willing to pay more taxes if the tax revenue went toward deficit reduction.  The company asked the same \\ question of 100 females, 22 indicated that \\ they would be willing to pay more taxes if the tax revenue went toward deficit reduction.
 
 \begin{itemize}
 \item Is there significant evidence to suggest the proportions of males and females \\ who are willing to pay higher taxes to reduce the deficit differs at the $\alpha = 0.05$ level of significance?

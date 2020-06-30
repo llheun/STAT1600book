@@ -28,7 +28,7 @@ Influence of direction of impact and seatbelt use'' by Dischinger, P., Cushing, 
 
 The conclusion (3) is interesting.  It begs the follow-up question: ``Why do women have higher rates of leg fractures?''  Is it because they drive faster, or apply brakes more slowly, or have weaker bones?  It turns out that these are false questions -- they presume that gender is the variable that causes higher leg fractures.  
 
-Researchers proposed an explanation in a follow-up study with the same lead author: ``Lower extremity fractures in motor vehicle collisions: The role of driver gender and height'' by Dischinger, P.C., Kerns, T.J., Kufera, J.A. Accident Analysis \& Prevention Volume 27, Issue 4, August 1995.
+Researchers proposed an explanation in a follow-up study with the same lead author: `Lower extremity fractures in motor vehicle collisions: The role of driver gender and height' by Dischinger, P.C., Kerns, T.J., Kufera, J.A. Accident Analysis \& Prevention Volume 27, Issue 4, August 1995.
 
 \begin{quotation}
 Abstract: In a previous study it was noted that there was a higher incidence of lower-extremity fractures among women drivers. Analyses were based on a linkage between trauma registry and police crash report data. The present study addresses the issue of whether the differences noted are attributed to driver gender or are merely a reflection of differences in driver's height. An inverse association was noted between driver height and the incidence of lower-extremity fractures. Those shorter than average (5'7'') for this population had a 64\% increase in a lower-extremity fracture, which can be mainly attributed to ankle/tarsal injuries. Thus, the incidence of these injuries appears to be a function of driver height, with an increase among shorter drivers, most of whom are women.
@@ -131,7 +131,7 @@ instead of the (admittedly more sensational) relationship implied by the headlin
 \begin{exercises}
   \begin{exercise} % 1
 
-A study says, ``Slightly overweight people live longer than thin people.''
+A study says, ``Slightly \\ overweight people live longer than thin people.''
 
 \begin{enumerate}
   \item The headline implies cause-and-effect, \\ not just association, i.e. ``if you are thin, you should try to gain weight.''  When comparing lifespan of slightly over- \\ weight and thin people, can you think of possible confounders?
@@ -166,7 +166,7 @@ A study that appeared in the American Journal of Cardiology (March 15, 2003) fou
 A study says, ``People who \\ consider themselves depressed eat more \\ chocolate than people who consider them- \\ selves otherwise.''
 
 \begin{enumerate}
-\item The headline implies cause-and-effect, \\ not just association, i.e., ``if you are depressed, you will tend to eat more chocolate.''   When comparing chocolate consumption of depressed versus not- \\ depressed, can you think of possible confounders?
+\item The headline implies cause-and-effect, \\ not just association, i.e., ``if you are depressed, you will tend to eat more \\ chocolate.''   When comparing chocolate consumption of depressed versus not-depressed, can you think of possible  \\ confounders?
   \item Using one confounder from your \\ answer(s) in (1), draw a pathway graph depicting the possible relationship between confounder, possible cause, and \\ outcome.
 \end{enumerate}
   \end{exercise}
@@ -181,9 +181,7 @@ A study says, ``People who \\ consider themselves depressed eat more \\ chocolat
 
   \begin{exercise} % 4
 
-The next four questions refer to the following scenario.  In a recent \\ statewide election, 55 percent of the voters rejected a proposal to institute a state lottery.  In a random sample of 150 urban precincts, 60 percent of the electorate rejected the proposal.  Can you think of possible cofounders?
-
-
+The next four questions \\ refer to the following scenario.  In a recent \\ statewide election, 55 percent of the voters rejected a proposal to institute a state lottery.  In a random sample of 150 urban precincts, 60 percent of the electorate rejected the \\ proposal.  Can you think of possible  \\ confounders? 
   \end{exercise}
 %   \begin{solution} % 4
 %

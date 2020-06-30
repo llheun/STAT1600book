@@ -716,7 +716,7 @@ Joshua has been working \\ on  programming  and updating a Website for his  comp
 
 In a study of warp breakage during the process of weaving fabric (\textit{Technometrics}, 1982: 63).  Ten specimens of yarn were tested.  The number of cycles of strain to breakage was determined for each yarn specimen, resulting in the following data:
 
-\Sexpr{SMP5a} 
+\Sexpr{SMP5a} \\
 
 \begin{enumerate}
 \item Calculate the mean

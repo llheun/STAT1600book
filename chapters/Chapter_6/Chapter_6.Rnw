@@ -99,8 +99,8 @@ The standard normal curve (or Z-curve) looks like Figure 6.2, and has the follow
 @
 \end{figure}
 
-In general, area under the curve for \textit{positive Z values} can be found using the Z-table on \ref{TBL61} on page 74 at the end of this chapter.  
-% Table 6.1 on page 73.
+In general, area under the curve for \textit{positive Z values} can be found using the Z-table on \ref{TBL61} on page 82 at the end of this chapter.  
+
 
 \begin{minipage}[ht]{3cm}
 
@@ -381,7 +381,7 @@ If the data histogram is approximately bell-shaped, expect around \\
 \begin{exercises}
   \begin{exercise} % 1
 
-Researchers conducted a \\ study to determine if any link existed between cellular phone usage and the development of brain cancer (don't worry, no connection was found).  Data from this study indicate that the daily cell phone usage for all users is approximately normally distributed with mean 2.4 hours and standard deviation of 1.1 hours.
+Researchers conducted a \\ study to determine if any link existed \\ between cellular phone usage and the development of brain cancer (don't worry, no connection was found).  Data from this study indicate that the daily cell phone usage for all users is approximately normally distributed with mean 2.4 hours and standard deviation of 1.1  hours.
 
 	\begin{enumerate}
 	\item What proportion of cell phone users are on their phones between 1 hour
@@ -413,7 +413,7 @@ cell phone users in terms of monthly usage.  How much time can you spend on your
 
   \begin{exercise} % 2
 
-On the average, a watch battery is known to last for two years (24- \\ months), with a standard deviation of 9 \\ months. Assume a normally distributed population.
+On the average, a watch \\ battery is known to last for two years (24-months), with a standard deviation of 9 \\ months. Assume a normally distributed population.
 
  \begin{enumerate}
 	\item What percentage of watch batteries last \\ more than six months?
@@ -461,7 +461,7 @@ Suppose 95\% of data coming from a normally distributed population falls between
 
 	\begin{exercise}  % 4
 
-Let's assume a normally distributed random variable with a mean of 10 and standard deviation of 2.
+Let's assume a normally \\ distributed random variable with a mean of 10 and standard deviation of 2.
 
 \begin{enumerate}
 \item What is the probability the value is \\ greater than 6?
@@ -526,10 +526,11 @@ The stock price for \\ Coca-Cola (KO) is normally distributed with a mean of 42.
 
 \begin{exercise}  % 6
 
-The average adult female \\ height is 63.8 inches with a standard deviation of 2.40. Assume the distribution is approximately normal.
+The average adult female \\ height is 63.8 inches with a standard deviation of 2.40. Assume the distribution is 
+approximately normal.
 
 \begin{enumerate}
-\item What proportion of adult female heights is below 72?
+\item What proportion of adult female \\ heights is below 72?
 \item 25\% of adult females are greater than what height?
 \end{enumerate}
 
@@ -563,48 +564,55 @@ Values in the z-table give the area under the curve to the left of the z-values 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% new exercises
 
-  \begin{exercise} % 1
+  \begin{exercise} % 8
 
-    Test scores for 120 students were found to have a mean of 32.  Suppose the upper bound of the middle 99.7\% is  41.  What is the standard deviation of this data?
+    Test scores for 120 students were found to have a mean of 32.  Suppose the upper bound of the middle 99.7\% is  41.  What is the standard deviation of this \\ data?
+    
 	  \begin{enumerate}
 	  \item 2
 	  \item 2.5
 	  \item 3
 	  \item 4
 	  \end{enumerate}
-	  \vspace{2mm}
+	  
     \framebox[5cm][l]{ Answer: }
+    
 	\end{exercise}
-	\vspace{2mm}
-	\begin{solution}
+	\begin{solution}   % 8
+	
 	  \begin{equation}
 	    SD = \frac{(41 - 32)}{3} = 3
 	  \end{equation}
+	  
 	\end{solution}
 
-  \begin{exercise} % 2
+  \begin{exercise} % 9
 
-    Given a distribution of male weights  has a mean of 153 lbs and standard deviation of 11 pounds, how many standard deviations away from the average weight is 173 lbs?
+    Given a distribution of \\ male weights  has a mean of 153 lbs and standard deviation of 11 pounds, how many standard deviations away from the average \\ weight is 173 lbs?
+
 	  \begin{enumerate}
 	  \item $-1.82$
 	  \item 1.82
 	  \item 1.82 lbs.
 	  \item You cannot calculate the z-score with the information provided.
 	  \end{enumerate}
-	  \vspace{2mm}
+
     \framebox[5cm][l]{ Answer: }
+    
 	\end{exercise}
-	\vspace{2mm}
-	\begin{solution}
-	  \begin{equation}
+	\begin{solution}   % 9
+	
+	  \begin{equation*}
 	    z = \frac{173 - 153}{11} = 1.82
-	  \end{equation}
+	  \end{equation*}
+	  
 	\end{solution}
 
-  \begin{exercise} % 3
+  \begin{exercise} % 10
 
-    Given the distribution of male weights has a mean of 155 and standard deviation of 12, what percent
+    Given the distribution of \\ male weights has a mean of 155 and standard deviation of 12, what percent
 of men weight less than 143 pounds?
+
 	  \begin{enumerate}
 	  \item 0.1587
 	  \item 0.3413
@@ -614,8 +622,7 @@ of men weight less than 143 pounds?
 	  \vspace{2mm}
     \framebox[5cm][l]{ Answer: }
 	\end{exercise}
-	\vspace{2mm}
-	\begin{solution}
+	\begin{solution}   % 10
 
 	    $z = \frac{143 - 155}{12} = -1$ \\
 	    $P[z < -1] = 15.87$
@@ -624,7 +631,7 @@ of men weight less than 143 pounds?
 
 % \newpage
 
-  \begin{exercise} % 4
+  \begin{exercise} % 11
 
     Given the distribution of male poundage with a mean of 155 and standard deviation of 12, what value
 represents the $90^{th}$ percentile for weights of men (in \\ pounds)?
@@ -634,11 +641,11 @@ represents the $90^{th}$ percentile for weights of men (in \\ pounds)?
 	  \item 179.00
 	  \item 189.13
 	  \end{enumerate}
-	  \vspace{5mm}
+	  \vspace{2mm}
     \framebox[5cm][l]{ Answer: }
+    
 	\end{exercise}
-	\vspace{2mm}
-	\begin{solution}
+	\begin{solution}  % 11
 
 	    $x = \mu + Z \sigma$ \\
 	    $x = 155 + 1.28 \times (12) $ \\
@@ -646,8 +653,7 @@ represents the $90^{th}$ percentile for weights of men (in \\ pounds)?
 
   \end{solution}
 
-  \begin{exercise} % 5
-
+  \begin{exercise} % 12
 
     Given the distribution of male poundage with a mean of 155 and standard deviation of 12, what value
 represents the $25^{th}$ percentile for weights of men (in \\ pounds)?
@@ -657,17 +663,18 @@ represents the $25^{th}$ percentile for weights of men (in \\ pounds)?
 	  \item 146.91
 	  \item 131.00
 	  \end{enumerate}
-	  \vspace{5mm}
+	  \vspace{2mm}
     \framebox[5cm][l]{ Answer: }
+    
 	\end{exercise}
-	\vspace{2mm}
-	\begin{solution}
+	\begin{solution}  % 12
 
 	    $x = \mu + Z \sigma$ \\
 	    $x = 155 - 0.6745 \times (12) $ \\
 	    $x = 146.91$
 
   \end{solution}
+  
 
 % 	\begin{exercise}  % 6
 %
@@ -739,16 +746,15 @@ represents the $25^{th}$ percentile for weights of men (in \\ pounds)?
 
 %	\end{solution}
 
-		\begin{exercise}  % 7
-
+		\begin{exercise}  % 13
 
 	  The mean and standard \\ deviation of 2013 Expenditures on Health as a share of GDP are 8.30 and 3.224, respectively.  \\ What percentage of countries had values below 7.3?   Hint: find the probability of the mean being less than 7.3.
 
 	  \end{exercise}
 	  \vspace{2cm}
-	  \begin{solution}
+	  \begin{solution}   %13
 
-	  <<results="asis", echo=FALSE>>=
+	<<results="asis", echo=FALSE>>=
 
   tmp53 <- pnorm(7.3, mean=8.3, sd=3.224)
 
@@ -758,14 +764,13 @@ represents the $25^{th}$ percentile for weights of men (in \\ pounds)?
 
 	\end{solution}
 
-			\begin{exercise}  % 9
-
+			\begin{exercise}  % 14
 
 	  The mean and standard \\ deviation of 2013 Expenditures on Health as a share of GDP are 8.30 and 3.224, respectively.  \\ What percentage of countries had values \\ above 9.3?   Hint: find the probability of the mean being greater than 9.3.
 
 	  \end{exercise}
 	  \vspace{2cm}
-	  \begin{solution}
+	  \begin{solution}    %14 
 
 	  <<results="asis", echo=FALSE>>=
 
@@ -777,14 +782,12 @@ represents the $25^{th}$ percentile for weights of men (in \\ pounds)?
 
 	\end{solution}
 
-  			\begin{exercise}  % 10
-
+  		\begin{exercise}  % 15
 
 	  The mean and standard \\ deviation of 2013 Expenditures on Health as a share of GDP are 8.30 and 3.224, respectively.  \\ What percentage of countries had values between 7.3 and 9.3?   Hint: find the probability of the mean being between 7.3 and  9.3.
 
 	  \end{exercise}
-	  \vspace{1.5cm}
-	  \begin{solution}
+	  \begin{solution}    % 15
 
 	  <<results="asis", echo=FALSE>>=
 
@@ -795,6 +798,37 @@ represents the $25^{th}$ percentile for weights of men (in \\ pounds)?
     The probability of having a mean between 7.3 and  9.3 ($P[ 7.3 < \bar{x} < 9.3 ]$) is \Sexpr{tmp55}.
 
 	\end{solution}
+	
+\begin{exercise}   % 16
+
+<<label=LBL8i, results="asis", echo=FALSE>>=
+  p9a <- sprintf("%.4f", pnorm(q=110, mean=138.5, sd=29))
+  p9b <- sprintf("%.4f", 1 - pnorm(q=150, mean=138.5, sd=29))
+  p9c <- sprintf("%.4f", pnorm(q=180, mean=138.5, sd=29) - pnorm(q=120, mean=138.5, sd=29))
+  p9d <- sprintf("%.4f", 1 - pnorm(q=180, mean=138.5, sd=29))
+@  
+
+Fast-food restaurants \\ spend a lot of time researching the time spent servicing their customers who use the drive-through window.  If they can process their orders faster, they have an opportunity to increase their profit.  \textit{QSR Magazine} studied the drive-through time for fast-food restaurants and found the Wendy's had the best time, \\ with a mean  time time of 138.5 seconds and standard deviation of 29 seconds.  Let's assume that the drive-through time are \\ normally distributed. 
+
+\begin{enumerate}
+\item What is the  probability that a random sample of cars go through the drive- \\ through in less than 110 seconds?
+\item What is the  probability that a random sample of cars go through the drive- \\ through in more than 150 seconds?
+\item What is the  probability that a random sample of cars go through the drive- \\ through between 2 and 3 minutes?
+\item Would it be unusual for a car to spend more than 3 minutes in the Wendy's \\ drive-through?  Why?
+\end{enumerate}
+
+\end{exercise}
+\begin{solution}  % 16
+
+\begin{enumerate}
+\item $P[ X < 110 ] = \Sexpr{p9a} $
+\item $P[ X > 150 ] = \Sexpr{p9b} $
+\item $P[ 120 < X < 180 ] = \Sexpr{p9c} $
+\item $P[ X > 180 ] = \Sexpr{p9d} $ Yes.
+\end{enumerate}
+
+\end{solution}
+	
 
 \end{exercises}
 

@@ -337,7 +337,7 @@ Percent of alcohol
 
 \begin{exercise} % 2
 
-The wine quality dataset used in this chapter includes a variable on quality. The average quality score of red wine is 5.636, while that of white wine is 5.8779. The respective standard deviations are 0.8076 and 0.8856. The respective sample sizes are 1599 and 4898.
+The wine quality dataset used in this chapter includes a variable on quality. The average quality score of red wine is 5.636, while that of white wine is 5.8779. The respective standard deviations are \\ 0.8076 and 0.8856. The respective sample sizes are 1599 and 4898.
 
 \begin{itemize}
   \item Set up a hypothesis test. What are the two hypotheses?
@@ -397,8 +397,49 @@ True or False? If we obtain a $p$-value that is much larger than 0.05, then we f
 % 
 % \end{solution}
 
+\begin{exercise}  % 7
 
+<<label=LBL13e, results="asis", echo=FALSE>>=
+  nE <- 100
+  nS <- 68
+  mnE <- 70000
+  mnS <- 65000 
+  sdE <- 5000
+  sdS <- 3000
+  
+  mnDiff <- mnE - mnS
+  SDdiff <- sqrt( sdE^2/ nE + sdS^2/nS)
+  
+  z2     <- mnDiff / SDdiff
+  
+  pval   <- 2 * pnorm(z2)
+    
+@    
 
+100 students graduating \\ with Bachelor degrees in engineering make an average of \$70,000 with a standard deviation of \$5,000 when entering the workforce. 68 students graduating with Bachelor \\ degrees in statistics make an average of \\  \$65,000 with a standard deviation of \$3,000 when entering the workforce. Assuming the two samples of students are independent, answer the following questions:
+
+\begin{itemize}
+  \item Set up a hypothesis test. What are the two hypotheses?
+  \item What is the difference between means?
+  \item What is the standard error of the difference?
+  \item What is the test statistic $Z_0$?
+  \item What is the $p$-value?
+  \item What should you conclude?
+\end{itemize}
+
+\end{exercise}
+\begin{solution}  % 7
+
+\begin{itemize}
+  \item $H_0: \mu_e = \mu_s$ vs. $H_a: \mu_e \ne \mu_s$
+  \item  means difference = \Sexpr{mnDiff}
+  \item  standard error  = \Sexpr{SDdiff}
+  \item  test statistic = \Sexpr{z2}
+  \item  $p$-value = \Sexpr{pval2}
+  \item  I conclude to reject the null hypothesis since the p-value is greater than 0.05.
+\end{itemize}
+
+\end{solution}
 
 
 % \begin{exercise} % 1
@@ -418,21 +459,6 @@ True or False? If we obtain a $p$-value that is much larger than 0.05, then we f
 % 
 % \end{solution}
 %
-% \begin{exercise}  % 2
-% 
-% 100 students graduating \\ with Bachelor degrees in engineering make an average of \$70,000 with a standard deviation of \$5,000 when entering the workforce. 68 students graduating with Bachelor degrees in statistics make an average of \$65,000 with a standard deviation of \$3,000 when entering the workforce. Assuming the two samples of students are independent, answer the following questions:
-% 
-% \begin{enumerate}
-%   \item What is the difference between the sample averages (engineers – statisticians)?
-%   \item What is the standard error of the estimate for the true difference in average entrance salaries between all engineering and statistics BA graduates?
-%   \item What is a 95\% confidence interval for the difference in sample averages?
-%   \item Do these statistics suggest that average entrance salaries for stats vs. engineering students are significantly different?
-% \end{enumerate}
-% 
-% \end{exercise}
-% \begin{solution}  % 2
-% 
-% \end{solution}
 % 
 % \begin{exercise}  % 3
 % 

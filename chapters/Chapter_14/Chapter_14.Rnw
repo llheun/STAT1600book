@@ -98,7 +98,7 @@ Statisticians will conclude `independence' if Tables 14.1 and 14.2 are close and
 \chi^2 = \frac{(25-16.08)^2}{16.08} + \frac{(3-3.42)^2}{3.42} + \cdots + \frac{(44-35.56)^2}{35.56} = 23.42  
 \end{equation*}
 
-Note that if Tables 14.1 and 14.2 are the same, then the $\chi^2$ statistic (pronounced `chi-square') in (12.1) will be zero (0).  If the two tables are far apart, the $\chi^2$ statistic will be large.  Statisticians use the following rule. 
+Note that if Tables 14.1 and 14.2 are the same, then the $\chi^2$ statistic (pronounced `chi-square') in (14.1) will be zero (0).  If the two tables are far apart, the $\chi^2$ statistic will be large.  Statisticians use the following rule. 
 
 \begin{center}
 \fbox{\parbox{8cm}{
@@ -130,7 +130,7 @@ df = (3 - 1) \times (4 - 1) = 6
 \end{equation*}
 
 so, the line between statistical association and independence is drawn at b=12.59.  
-Since $\chi^2 = 23.42$ from (12.1), then $\chi^2 > 12.59$.   We conclude that there is significant association between high school GPA and college attrition rate.
+Since $\chi^2 = 23.42$ from (14.1), then $\chi^2 > 12.59$.   We conclude that there is significant association between high school GPA and college attrition rate.
 
 \section{Key Words}
 
@@ -176,7 +176,7 @@ Is liquor use associated with smoking?  Conduct a chi-square test to assess sign
 
 \begin{exercise} % 2
 
-2.	During the filming of an original comedy special, Netflix monitored whether audience members who received free tickets laughed during the show (LDS). The results follow:
+	During the filming of an original comedy special, Netflix \\ monitored whether audience members who received free tickets laughed during the show (LDS). The results follow:
 
 \begin{table}[ht]
 \centering
@@ -191,8 +191,8 @@ Total & 45 & 44 & 89 \\ \hline
 \end{table}
 
 \begin{enumerate}
-  \item Calculate the expected count for audience members who did not receive a free ticket and did not laugh during the \\ show.
-  \item Calculate the expected count for audience members who did not receive a free ticket and did laugh during the show.
+  \item Calculate the expected count for audience members who did not receive a \\ free ticket and did not laugh during the \\ show.
+  \item Calculate the expected count for audience members who did not receive a \\ free ticket and did laugh during the \\ show.
   \item Calculate the expected count for audience members who did receive a free \\ ticket and did laugh during the show.
   \item Calculate the expected count for audience members who did receive a free \\ ticket and did not laugh during the \\ show.
   \item Calculate the chi-square test statistic.
@@ -235,7 +235,7 @@ Suppose Netflix held another special, collected data, and had a statistician cal
 
 \begin{exercise} % 5
 
-Computer-controlled cameras are being used to ticket automobile \\ drivers for speeding and running red lights.  These devices are operated by private firms and have an incentive to pull in as many \\ drivers as they can.  Although approximately 70\% of the motorists stoically accept and pay these tickets, others resent this procedure and fight the ticket.  A frequency table with \\ marginal totals is given below. 
+Computer-controlled \\ cameras are being used to ticket automobile \\ drivers for speeding and running red lights.  These devices are operated by private firms and have an incentive to pull in as many \\ drivers as they can.  Although approximately 70\% of the motorists stoically accept and pay these tickets, others resent this procedure \\ and fight the ticket.  A frequency table with \\ marginal totals is given below. 
 
 \begin{table}[ht]
 \centering
@@ -250,9 +250,9 @@ Total & 60 & 140 & 200 \\ \hline
 \end{table}
 
 \begin{enumerate}
-  \item Compute the table of expected frequencies.
+  \item Compute the table of expected \\ frequencies.
   \item Suppose we know that 1/3 of those who were ticketed for running a red light \\ fought the ticket.  Is this enough information to conduct a test of association or independence between the two variables?
-  \item Using the information in (b), compute the chi-square statistic for testing independence or association between the two variables.
+  \item Using the information in (b), compute the chi-square statistic for testing independence or association between the \\ two variables.
   \item What is the correct degrees of freedom to use?
   \item What is the conclusion of your test?
 \end{enumerate}
@@ -261,6 +261,37 @@ Total & 60 & 140 & 200 \\ \hline
 \begin{solution} % 5
 
 \end{solution}
+
+\begin{exercise} % 6
+
+A recent national poll \\ asked female and male Americans whether \\ they are pro life or pro choice when it comes to abortion issues.  The results of the survey are as follows: 
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{@{} lcc @{}} \hline
+& \multicolumn{2}{c}{Results} \\
+Gender & Anti-choice & Pro-choice  \\ \hline
+Women  & 239 & 249   \\
+Men   & 196 & 199   \\ \hline
+\end{tabular}
+% \caption{LDS -- Laughed During Show}
+\end{table}
+
+\begin{enumerate}
+ 
+  \item Suppose we know that 1/3 of those who were ticketed for running a red light \\ fought the ticket.  Is this enough information to conduct a test of association or independence between the two variables?
+  \item Using the information in (b), compute the chi-square statistic for testing independence or association between the \\ two variables.
+  \item What is the correct degrees of freedom to use?
+  \item What is the conclusion of your test?
+\end{enumerate}
+
+\end{exercise}
+\begin{solution} % 6
+
+\end{solution}
+
+
+
 \end{exercises}
 
 \onecolumn
