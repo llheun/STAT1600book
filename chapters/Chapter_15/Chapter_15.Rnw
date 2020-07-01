@@ -85,6 +85,10 @@ Figure 15.2 shows various scatterplots with different correlations.  Although $0
   cr4 <- sprintf("%.4f", cor(sqft1, asls1))
 @
 
+\begin{figure}
+
+\caption{Correlation Plots }
+
 \begin{minipage}[ht]{7.1cm}
 % \begin{figure}[ht]
 
@@ -117,6 +121,8 @@ Correlation plots (from top to bottom, r = \Sexpr{cr3}, \Sexpr{cr4})
 @  
 % \end{figure}
 \end{minipage}
+
+\end{figure}
 
 \section{Computing the Pearson Correlation Coefficient}
 
@@ -233,8 +239,8 @@ Consider the following \\ data.
 		\end{center}
 	\end{table}
 	\begin{enumerate}
-		\item Compute the correlation between X and Y.
-		\item Compute the correlation between Y and X.
+		\item Compute the correlation between X  \\ and Y.
+		\item Compute the correlation between Y  \\ and X.
 		\item Add 5 to Y, so the new values are 5, 8, 15, 6, 20. Now compute the correlation between X and Y. Is the correlation smaller, larger, or the same as before?
 		\item Multiply Y by 5, so the new values are 0, 15, 50, 5, 75. Now compute the correlation between X and Y. Is the correlation smaller, larger, or the same as before?
 		\item Multiply Y by -1, so that the new values are 0, -3, -10, -1, -15. Now compute the correlation between X and Y. Is the correlation smaller, larger, or the same as before?
@@ -270,7 +276,7 @@ Consider the following \\ data.
 
 \begin{exercise} % 2
 
-Suppose we have two variables, X and Y. If an increase in X results in the same increase in Y, then what is the correlation coefficient $r$?
+Suppose we have two \\ variables, X and Y. If an increase in X results in the same increase in Y, then what is the correlation coefficient $r$?
 \end{exercise}
 \begin{solution} % 2
 
@@ -280,7 +286,7 @@ $r = 1$ because the points (x, y) all fall perfectly along a line tilted upward.
 
 \begin{exercise} % 3
 
-Suppose we have two variables, X and Y. If a decrease in X results in the same increase in Y, then what is the correlation coefficient $r$?
+Suppose we have two \\ variables, X and Y. If a decrease in X results in the same increase in Y, then what is the correlation coefficient $r$?
 \end{exercise}
 \begin{solution} % 3
 
@@ -297,7 +303,7 @@ Suppose that we plot two variables, X, and Y in a scatterplot, and we observe th
 
 \begin{exercise} % 5
 
-Suppose we have two variables, X and Y. The points (x, y) are plotted in a scatterplot, and it is observed that the points appear to be clustered around a line of best fit that is tilted downward from left to right. What is the possible range of the correlation coefficient r?
+Suppose we have two \\ variables, X and Y. The points (x, y) are plotted in a scatterplot, and it is observed that the points appear to be clustered around a line of best fit that is tilted downward from left to right. What is the possible range of the correlation coefficient r?
 
 \end{exercise}
 \begin{solution} % 5
@@ -308,7 +314,7 @@ $ -1 < r < 0$. We know $r$ is negative because the line of best fit is tilted do
 
 \begin{exercise} % 6
 
-Suppose we have two variables, X, and Y. The products of all their respective Z scores are calculated, and none of them are negative. What can we conclude about the correlation coefficient $r$?
+Suppose we have two \\ variables, X, and Y. The products of all their respective Z scores are calculated, and none of them are negative. What can we conclude about the correlation coefficient $r$?
 \end{exercise}
 \begin{solution} % 6
 
@@ -316,12 +322,55 @@ Suppose we have two variables, X, and Y. The products of all their respective Z 
 
 \begin{exercise} % 7
 
-Suppose we have two variables, X and Y. The products of all their respective Z scores are calculated, and all the products are negative. What can we conclude about the correlation coefficient $r$?
+Suppose we have two \\ variables, X and Y. The products of all their respective Z scores are calculated, and all the products are negative. What can we conclude about the correlation coefficient $r$?
 \end{exercise}
 \begin{solution} % 7
 
-Since $ r = \frac{ \sum Z_x Z_y}{(n - 1)}$, and we know that all the products of Z scores are negative, we know that r must be -1≤r<0. Since $ r = \frac{ \sum Z_x Z_y}{(n - 1)}$, and we know that all the products of Z scores are negative, we know that $r$ must be $-1 \le r < 0$.
+Since $ r = \frac{ \sum Z_x Z_y}{(n - 1)}$, and we know that all the products of Z scores are negative, we know that $r$ must be $-1 \le r < 0$. Since $ r = \frac{ \sum Z_x Z_y}{(n - 1)}$, and we know that all the products of Z scores are negative, we know that $r$ must be $-1 \le r < 0$.
 \end{solution}
+
+\begin{exercise}  % 8    STATISTICS informed decisions using Data, Sullivan,  \textit{Pearson}, 4th Edtion, pg. 202
+
+Research performed at \\ NASA and led by Emily R. Morey-Holton \\ measured the lengths of the right humerus and right tibia in 11 rats that were sent to space on Spacelab Life Sciences 2.  The following data were reported. 
+
+	\begin{table}[ht] 
+		
+		\begin{center}
+		\caption{Leg Length: NASA}
+		\begin{tabular}{@{} c c @{}} 
+		\multicolumn{2}{c}{Right} \\
+
+		Humerus(mm) & Tibia(mm) \\ \hline
+		24.80 & 36.05 \\
+		24.59 & 35.57 \\
+		24.59 & 35.57 \\
+		24.29 & 34.58 \\
+		23.81 & 34.20 \\
+		24.87 & 34.73 \\
+		25.90 & 37.38 \\
+		26.11 & 37.96 \\
+		26.63 & 37.46 \\
+		26.31 & 37.75 \\
+		26.84 & 38.50 \\ \hline
+		\end{tabular}
+		\end{center}
+	\end{table}
+	
+\begin{enumerate}
+\item Draw a scatter diagram treating the \\ length of the right humerus as the explanatory variable and the length of the right tibia as the response variable.
+
+\item Compute the linear correlation coefficient between the length of the right \\ humerus and the length of the right \\ tibia. 
+
+\item Does a linear relation exist between the length of the right humerus and the \\ length of the right tibia?
+\end{enumerate}
+
+\end{exercise}
+\begin{solution}
+
+
+\end{solution}
+
+
 \end{exercises}
 
 \onecolumn

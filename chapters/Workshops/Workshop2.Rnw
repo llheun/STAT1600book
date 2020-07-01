@@ -836,7 +836,7 @@ Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phan
  }}
 \end{center}
 
-Suppose researchers decided to take a random sample of 36 from each type of wine.  The wine quality dataset used in this chapter includes $alcohol content$. The average $alcohol content$ of red wine is \Sexpr{mnred2}, while that of white wine is \Sexpr{mnwhite2}. The respective standard deviations are \Sexpr{sdred2} and \Sexpr{sdwhite2}. The respective sample sizes are \Sexpr{nred2} and \Sexpr{nwhite2}.
+Suppose researchers decided to take a random sample of 36 from each type of wine.  The wine quality dataset used in this chapter includes $alcohol content$. The average \\ $alcohol content$ of red wine is \Sexpr{mnred2}, while that of white wine is \Sexpr{mnwhite2}. The respective standard deviations are \Sexpr{sdred2} and \Sexpr{sdwhite2}. The respective sample sizes are \Sexpr{nred2} and \Sexpr{nwhite2}.
 
 \begin{itemize}
   \item Set up a hypothesis test. What are the two hypotheses?

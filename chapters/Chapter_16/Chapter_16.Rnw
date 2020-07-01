@@ -224,7 +224,7 @@ The least square line given by (16.1) will have a smaller SSE than any other str
 }}
 \end{center}
 
-This means that if you use any other intercept and slope combination besides $(a,b) = (8136,.05127)$, the new set of predicted values and residuals will give an SSE that is larger than, or at best equal to 107,805,718. 
+This means that if you use any other intercept and slope combination besides $(a,b) = \\ (8136,.05127)$, the new set of predicted values and residuals will give an SSE that is larger than, or at best equal to 107,805,718. 
 
 \section{A 95\% Confidence Interval for Slope}
 
@@ -311,12 +311,11 @@ X & Y \\ \hline
 \end{tabular}
 
 \begin{enumerate}
-  \item Calculate the regression line for predicting Y from X.
+  \item Calculate the regression line for \\ predicting Y from X.
   \item Draw the scatterplot with an overlaid regression line.
   \item Add 5 to Y, so the new values are 5, 8, 15, 6, 20.  Calculate the new regression line.                                         
   \item Multiply Y by 5, so the new values are 0, 15, 50, 5, 75.  Calculate the new regression line.                                         
 \end{enumerate}
-
 
 \end{exercise}
 \begin{solution} % 1
@@ -324,8 +323,8 @@ X & Y \\ \hline
 \begin{enumerate}
   \item Calculate the regression line for predicting Y from X.
   \item Draw the scatterplot with an overlaid regression line.
-  \item Add 5 to Y, so the new values are 5, 8, 15, 6, 20.  Calculate the new regression line.                                         
-  \item Multiply Y by 5, so the new values are 0, 15, 50, 5, 75.  Calculate the new regression line.                                         
+  \item Add 5 to Y, so the new values are 5, 8, 15, 6, 20.  Calculate the new regression line.                          
+  \item Multiply Y by 5, so the new values are 0, 15, 50, 5, 75.  Calculate the new regression line.                  
 \end{enumerate}
 
 \end{solution}
@@ -338,10 +337,10 @@ Several children are \\ observed, and their ages (in years) and vocabularies (th
   \item Which variable should be explanatory, and which response?
   \item A regression equation is calculated as Y = 836X + 451. What is the slope of this regression equation?
   \item A regression equation is calculated as Y = 836X + 451. What is the intercept of this regression equation?
-  \item	If a 12-year-old child knows 8,000 words, then what is the residual for this child based on the above regression equation?
-  \item	If a child has a negative residual, then do they fall above or below the predicted number of words known for average children their age (above or below the regression line)?
+  \item	If a 12-year-old child knows 8,000 \\ words, then what is the residual for this child based on the above regression \\ equation?
+  \item	If a child has a negative residual, then do they fall above or below the \\ predicted number of words known for average children their age (above or below the regression line)?
   \item	If a 14-year-old child knows 14,000 \\ words, then what is the residual for this child based on the above regression \\ equation?
-  \item	If a child has a positive residual, then do they fall above or below the predicted number of words known for average children their age (above or below the regression line)?
+  \item	If a child has a positive residual, then do they fall above or below the \\ predicted number of words known for average children their age (above or below the regression line)?
 \end{enumerate}
 
 \end{exercise}
@@ -351,64 +350,71 @@ Several children are \\ observed, and their ages (in years) and vocabularies (th
 
 \begin{exercise} % 3            %%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Moviegoers are monitored for their level of anxiety while watching a new horror movie billed to be the “scariest movie of all time.” The intensity of a scene in the movie and anxiety are both measured on numerical scales of 0 to 100. A producer for the movie finds that the correlation coefficient between intensity and anxiety is 0.63, the standard deviation of intensity is 30, and the standard deviation of anxiety is 35.
+Moviegoers are \\ monitored for their level of anxiety while \\ watching a new horror movie billed to be the “scariest movie of all time.” The intensity of a scene in the movie and anxiety are both measured on numerical scales of 0 to 100. A producer for the movie finds that the correlation coefficient between intensity and anxiety is 0.63, the standard deviation of intensity is 30, and the standard deviation of anxiety is 35.
 
 \begin{enumerate}
-  \item What is the slope of the regression equation that predicts anxiety based on intensity?
-  \item	How do you properly interpret the slope calculated in part a?
+  \item What is the slope of the regression \\ equation that predicts anxiety based on intensity?
+  \item	How do you properly interpret the \\ slope calculated in part 1?
   \item	If the intercept is 15, then what is the regression equation?
   \item	What is the predicted value of anxiety for a scene measured at 90 intensity \\ units?
-  \item	If a moviegoer experiences anxiety measured at 82 units during a scene measured at 90 intensity units, then what is the residual for that moviegoer?
-  \item	How do you properly interpret the residual in part 5?
+  \item	If a moviegoer experiences anxiety \\ measured at 82 units during a scene \\ measured at 90 intensity units, then     \\what is the residual for that moviegoer?
+  \item	How do you properly interpret the \\ esidual in part 5?
 \end{enumerate}
 
 \end{exercise}
 \begin{solution}
 
+   \begin{enumerate}
+  \item $slope = \frac{ r \times s_1}{s_2} = \frac{0.63 \times 35}{30}$
+  \item	Interpretation: as the intensity increases the anxiety increase by 0.735 units. 
+  \item	the regression equation $ = 15 + 0.735 \times intensity$ 
+  \item	 $anxiety = 15 + 0.735 \times 90 $
+  \item	$ residual = obs - expected = 82 - 81.15 = 0.85$ 
+  \item	How do you properly interpret the \\ residual in part 5?
+\end{enumerate}
+
 \end{solution}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% new questions
 
- \begin{exercise} % 1       %%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+ \begin{exercise} % 4       %%%%%%%%%%%%%%%%%%%%%%%%%%%
 
     How well does the number of beers a student drinks predict his or her
-blood alcohol content (BAC)? Sociology researchers, at Ohio State University, wanted to know if there is a relationship between the amount of beer consumed and BAC. The researchers assigned the number of cans of beer to each student. After each student had consumed the assigned number of beers,  thirty minutes later, an officer of the law measured the students BAC. \cite{OSU2016}
-% A scatterplot of the data appears below.
-One \\ student drank nine beers. You see from the scatter plot that his BAC was about
+blood alcohol content (BAC)? Sociology researchers, at Ohio State University, wanted to know if there is a relationship between the amount of beer consumed and BAC. The researchers assigned the number of cans of \\ beer to each student. After each student had consumed the assigned number of beers,  \\ thirty minutes later, an officer of the law \\ measured the students BAC. \\ \cite{OSU2016}  One  student drank nine beers. You see from the scatter plot that his BAC was about
+\%.  A scatterplot of the data appears below.
 
 \begin{figure}[htbp] %  figure placement: here, top, bottom, or page
    \centering
-   \includegraphics[width=7cm]{chapters/Chapter_14/ext_figure/zRegF.png}
-   \caption{Number of Beers vs. BAC}
+   % \caption{Number of Beers vs. BAC}
+   \includegraphics[width=70mm]{chapters/Chapter_14/ext_figure/zRegF.png}
+   
    \label{fig:f12_11}
 \end{figure}
 
-
     \begin{enumerate}
-    \item 0.014
-    \item 0.14
-    \item 1.4
-    \item 14
-    \item 140
+    \item 0.017
+    \item 0.17
+    \item 1.7
+    \item 17
+    \item 170
     \end{enumerate}
-    \vspace{5mm}
+    
     \framebox[5cm][l]{ Answer: }
 
   \end{exercise}
-  \vspace{2mm}
-  \begin{solution}
+  \begin{solution}    % 4
+  
      $ BAC = -0.012 + 0.017 (9) = 0.14 $
+     
   \end{solution}
 
-  \begin{exercise} % 2            %%%%%%%%%%%%%%%%%%%%
+  \begin{exercise} % 5            %%%%%%%%%%%%%%%%%%%%
 
     How well does the number of beers a student drinks predict his or her
-blood alcohol content (BAC)? Sociology researchers, at Ohio State University, wanted to know if there is a relationship between the amount of beer consumed and BAC. The researchers assigned the number of cans of beer to each student. After each student had consumed the assigned number of beers,  thirty minutes later, an officer of the law measured the students BAC. \cite{OSU2016}
-A scatterplot of the data appears below.  The scatterplot shows
+blood alcohol content (BAC)? Sociology researchers, at Ohio State University, wanted to know if there is a relationship between the amount of beer consumed and BAC. The researchers assigned the number of cans of \\ beer to each student. After each student had consumed the assigned number of beers,  \\ thirty minutes later, an officer of the law \\ measured the students BAC. \\ \cite{OSU2016}  A scatterplot of the data appears below.  The scatterplot shows
 
-<<label=LBL16f, echo=FALSE, fig.pos="ht", fig.align="center", fig.width=3.5, fig.height=3.5, fig.cap="No. Beers vs. BAC", out.width="7cm" >>=
-
+<<label=LBL16f, echo=FALSE, fig.pos="ht", fig.align="center", fig.width=3.5, fig.height=3.5,  out.width="7cm" >>=
+      ### fig.cap="No. Beers vs. BAC",
      dt12_4 <- read.csv("data/beers.csv",header=TRUE)
      plot( dt12_4$BAC ~ dt12_4$NB, xlab="Number of Beers(NB)", ylab="Blood alcohol content(BAC)")
      lm_4 <- lm( dt12_4$BAC ~ dt12_4$NB )
@@ -425,24 +431,25 @@ A scatterplot of the data appears below.  The scatterplot shows
       \item a moderately high positive straight-line relationship between some beers and \\ BAC.
       \end{enumerate}
       \vspace{5mm}
-    \framebox[5cm][l]{ Answer: }
+      \framebox[5cm][l]{ Answer: }
 
   \end{exercise}
-  \vspace{2mm}
-  \begin{solution}
+  \begin{solution}    % 5
+  
     A moderately strong positive straight-line relationship between number of beers and BAC.
+  
   \end{solution}
 
-  \begin{exercise} % 3         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \begin{exercise} % 6         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
     How well does the number of beers a student drinks predict his or her
-blood alcohol content (BAC)? Sociology researchers, at Ohio State University, wanted to know if there is a relationship between the amount of beer consumed and BAC. The researchers assigned the number of cans of beer to each student. After each student had consumed the assigned number of beers,  thirty minutes later, an officer of the law measured the students BAC. \cite{OSU2016}
+blood alcohol content (BAC)? Sociology researchers, at Ohio State University, wanted to know if there is a relationship between the amount of beer consumed and BAC. The researchers assigned the number of cans of \\ beer to each student. After each student had consumed the assigned number of beers, \\ thirty minutes later, an officer of the law \\ measured the students BAC.  \\ \cite{OSU2016}
 A scatterplot of the data appears below.  A plausible value of the correlation between number of beers and blood alcohol content, based on the scatterplot, is
 
 \begin{figure}[htbp] %  figure placement: here, top, bottom, or page
    \centering
-   \includegraphics[width=7cm]{chapters/Chapter_14/ext_figure/zCorF.png}
-   \caption{Number of Beers vs. BAC}
+   % \caption{Number of Beers vs. BAC}
+   \includegraphics[width=60mm]{chapters/Chapter_14/ext_figure/zCorF.png}
    \label{fig:f12_14}
 \end{figure}
 
@@ -453,20 +460,22 @@ A scatterplot of the data appears below.  A plausible value of the correlation b
       \item $r = 0.765$.
       \item $r = 0.875$.
       \end{enumerate}
-      \vspace{5mm}
+
+      % \vspace{5mm}
+
     \framebox[5cm][l]{ Answer: }
 
     \end{exercise}
-    \vspace{2mm}
-    \begin{solution}
-       The correllation coefficient is $r = 0.875 = \sqrt{0.765}$ where  $r^2$ is the coefficient of determination.
+    \begin{solution}  % 6
+    
+      % The correllation coefficient is $r = 0.875 = \sqrt{0.765}$ where  $r^2$ is the coefficient of determination.
+       
     \end{solution}
 
 
-  \begin{exercise} % 4
+  \begin{exercise} % 7        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
-    STEP 1: In the next six tasks, we will use the data from GSS2014 in this exercise.  We have been asked to examine the relationship between a person's height and a person's income.  Here we have {\textit{income}} which is an  interval-ratio type of variable \\ while {\textit{height}} is also an interval-ratio type of variable.  These types of variables require that we use a Simple Linear Regression (SLR) \\ analysis.  So step 1 in the process of analysis is to choose the an independent and dependent variables.  Note: In the GSS2014 dataset, {\textit{height}} is known as HEIGHT and {\textit{income}} is known as rincom06.
+    STEP 1: In the next six tasks, we will use the data from GSS2014 in this exercise.  We have been asked to examine the relationship between a person's height \\ and a person's income.  Here we have {\textit{income}} which is an  interval-ratio type of variable  \\ while {\textit{height}} is also an interval-ratio type of variable.  These types of variables require \\ that we use a Simple Linear Regression (SLR) \\ analysis.  So step 1 in the process of analysis is to choose the an independent and dependent variables.  Note: In the GSS2014 dataset, {\textit{height}} is  known as HEIGHT and {\textit{income}} is \\ known as rincom06.
 
 <<label=LBL16h, results="asis", echo=FALSE, fig.pos="ht", fig.align="center", fig.width=3.5, fig.height=3.5, fig.cap="Respondent's Height vs. Income", out.width="7cm" >>=
 
@@ -501,12 +510,13 @@ abline(m12)
     \framebox[5cm][l]{ Answer: }
 
     \end{exercise}
-    \vspace{2mm}
-    \begin{solution}
+    \begin{solution}    % 7
+
        The independent variable is HEIGHT and the dependent variable is rincom06.
+
     \end{solution}
 
-  \begin{exercise} % 5
+  \begin{exercise} % 8
 
     STEP 2: Using the information from exercise four, we must state the hypotheses about its relationship between {\textit{income}} and {\textit{height}}.  Based on our experience, how should we state our hypotheses?
 
@@ -514,14 +524,13 @@ abline(m12)
     \framebox[5cm][l]{ Answer: }
 
     \end{exercise}
-    \vspace{2mm}
-    \begin{solution}
+    \begin{solution}    % 8
 
        $H_0: \beta = 0" vs. $H_1: \beta \ne 0$
 
     \end{solution}
 
-  \begin{exercise} % 6
+  \begin{exercise} % 9
 
     STEP 3: Using the information from exercise four, determine the coefficient of determination.  Recall that this value is also referred to as r-squared.
 
@@ -529,15 +538,13 @@ abline(m12)
     \framebox[5cm][l]{ Answer: }
 
     \end{exercise}
-    \vspace{2mm}
-    \begin{solution}
+    \begin{solution}    % 9
 
        The correlation coefficient between the respondent's height and income is \Sexpr{rSq}
 
     \end{solution}
 
-  \begin{exercise} % 7
-
+  \begin{exercise} % 10
 
     STEP 4: Using the information from exercise four, record the independent, dependent variables, and the correlation coefficient.
 
@@ -554,12 +561,11 @@ abline(m12)
     \end{table}
 }}
 
-  \vspace{5mm}
-  \framebox[7cm][l]{ Answer: }
+  % \vspace{5mm}
+  % \framebox[7cm][l]{ Answer: }
 
     \end{exercise}
-    \vspace{2mm}
-    \begin{solution}
+    \begin{solution}    % 10
 
        \begin{table}[ht]
     \centering
@@ -572,28 +578,24 @@ abline(m12)
     \end{tabular}
     \end{table}
 
-
     \end{solution}
 
-      \begin{exercise} % 8
+      \begin{exercise} % 11
 
 
-    STEP 5: Using the information from exercise four, describe the results of the independent variable.  Identify variables that we tested, their strength and direction of the relationship.  We should distinguish the relationship in general terms and refer the statistical value in parentheses.  Also not whether the hypotheses were supported.
+    STEP 5: Using the information from exercise four, describe the results of the independent variable.  Identify variables that we tested, their strength and direction of the relationship.  We should distinguish the relationship in general terms \\ and refer the statistical value in parentheses.  Also not whether the hypotheses were supported.
 
     \vspace{10mm}
     \framebox[5cm][l]{ Answer: }
 
     \end{exercise}
-    \vspace{2mm}
-    \begin{solution}
+    \begin{solution}      % 11
 
     For a sample of 40 subjects, we tested the relationship between height and income.  We found a weak positive relationship using the correlation coefficient (\Sexpr{cor12}).  We then looked at the slope:  as {\textit{height}} increases by one inch, {\textit{income}} increases by \Sexpr{m12$coefficients[2]} with a p-value of
 
-
     \end{solution}
 
-  \begin{exercise} % 9
-
+  \begin{exercise} % 12
 
     STEP 1:  In the next six tasks, we will use a sample of 100 subjects from the GSS2014 data in this exercise.  We have been asked to examine the relationship between a person's income, age, and ``not \\ married'' and a person's happiness.  Here we have variables which are  interval-ratio type of variable.  These types of variables require that we use a Simple Linear Regression (SLR) analysis.  So step 1 in the process of analysis is choosing independent and dependent variables.  Note: In the GSS2014 dataset, {\textit{happy}} is known as GENERAL HAPPINESS, {\textit{income06}} is known as TOTAL FAMILY INCOME, {\textit{age}} is known as AGE OF RESPONDENT, and {\textit{absingle}} is known as NOT MARRIED.
 
@@ -637,20 +639,22 @@ What are the dependent and independent \\ variables?
 
     \end{exercise}
     \vspace{2mm}
-    \begin{solution}
+    \begin{solution}      % 12
+
        The independent variable is income,   age, and absingle and the dependent variable is happiness.
+
     \end{solution}
 
-  \begin{exercise} % 10
+  \begin{exercise} % 13
 
-    STEP 2: Using the information from exercise nine, we must state the hypotheses about its relationship between {\textit{Happiness}}, {\textit{income}}, and {\textit{age}}.  Based on our experience, how should we state our hypotheses?
+    STEP 2: Using the information from exercise nine, we must state the hypotheses about its relationship between \\ {\textit{Happiness}}, {\textit{income}}, and {\textit{age}}.  Based on our experience, how should we state our hypotheses?
 
     \vspace{5mm}
     \framebox[7cm][l]{ Answer: }
 
     \end{exercise}
     \vspace{2mm}
-    \begin{solution}
+    \begin{solution}      %  13
 
        $H_0: \beta_1 = \beta_2 = \beta_3 = 0$ \\
        $H_1:$ at least one slope is not equal zero. \\
@@ -658,8 +662,8 @@ What are the dependent and independent \\ variables?
 
     \end{solution}
 
-  \begin{exercise} % 11
 
+  \begin{exercise} % 14
 
     STEP 3: Using the information from exercise 12, determine the coefficient of determination.
 
@@ -667,15 +671,13 @@ What are the dependent and independent \\ variables?
     \framebox[5cm][l]{ Answer: }
 
     \end{exercise}
-    \vspace{2mm}
-    \begin{solution}
+    \begin{solution}      % 14
 
        Read the results from the computer generated output.
 
     \end{solution}
 
-  \begin{exercise} % 12
-
+  \begin{exercise} % 15
 
     STEP 4: Using the information from exercise 12, record the independent, dependent variables, and the correlation coefficients.
 
@@ -711,35 +713,29 @@ What are the dependent and independent \\ variables?
   %  \framebox[5cm][l]{ Answer: }
 
     \end{exercise}
-    \vspace{2mm}
-    \begin{solution}
+    \begin{solution}    % 15
 
       The results are in the table.
 
     \end{solution}
 
-  \begin{exercise} % 13
+  \begin{exercise} % 16
 
-    STEP 5:
-
-    Using the information from exercise 12, record the independent, dependent variables, and the correlation coefficients.
+    STEP 5:  Using the information from exercise 12,  record the independent, dependent  variables, and the correlation coefficients.
 
     \vspace{5mm}
     \framebox[5cm][l]{ Answer: }
 
     \end{exercise}
-    \vspace{2mm}
-    \begin{solution}
+    \begin{solution}    % 16
 
   The results are in the table.
 
     \end{solution}
 
+  \begin{exercise} % 17
 
-  \begin{exercise} % 14
-
-
-    STEP 1:  In the next six tasks, we will use all of the data from GSS2014 in this exercise.  We have been asked to examine the relationship between a person's income, age, and ``not married'' and a person's happiness.  Here we have variables which are  interval-ratio type of variable.  These types of variables require that we use a Simple Linear Regression (SLR) analysis.  So step 1 in the process of analysis is choosing independent and dependent variables.  Note: In the GSS2014 dataset, {\textit{happy}} is known as GENERAL HAPPINESS, {\textit{income06}} is known as TOTAL FAMILY INCOME, {\textit{age}} is \\ known as AGE OF RESPONDENT, and {\textit{absingle}} is known as NOT MARRIED.
+    STEP 1:  In the next six tasks, we will use all of the data from \\ GSS2014 in this exercise.  We have been \\ asked to examine the relationship between a person's income, age, and ``not married'' and a person's happiness.  Here we have variables which are  interval-ratio type of variable.  \\ These types of variables require that we use a Simple Linear Regression (SLR) analysis.  So step 1 in the process of analysis is choosing independent and dependent variables.  Note: In the GSS2014 dataset, {\textit{happy}} is known as GENERAL HAPPINESS, {\textit{income06}} is known as TOTAL FAMILY INCOME, {\textit{age}} is \\ known as AGE OF RESPONDENT, and \\ {\textit{absingle}} is known as NOT MARRIED.
 
 {\small{
 <<label=LBL16e, results="asis", echo=FALSE, fig.pos="ht", fig.align="center", fig.width=3.5, fig.height=3.5, fig.cap="Respondent's Height vs. Income", out.width="7cm" >>=
@@ -779,21 +775,22 @@ What are the dependent and independent \\ variables?
     \framebox[7cm][l]{ Answer: }
 
     \end{exercise}
-    \vspace{2mm}
-    \begin{solution}
+    \begin{solution}      % 17
+       
        The independent variable is income,   age, and absingle and the dependent variable is happiness.
+       
     \end{solution}
 
-  \begin{exercise} % 15
+  \begin{exercise} % 18
 
-    STEP 2: Using the information from exercise 12, we must state the hypotheses about its relationship between {\textit{Happiness}}, {\textit{income}}, and {\textit{age}}.  Based on our experience, how should we state our hypotheses?
+    STEP 2: Using the information from exercise 17, we must state the hypotheses about its relationship between \\ {\textit{Happiness}}, {\textit{income}}, and {\textit{age}}.  Based on our experience, how should we state our hypotheses?
 
     \vspace{5mm}
     \framebox[7cm][l]{ Answer: }
 
     \end{exercise}
     \vspace{2mm}
-    \begin{solution}
+    \begin{solution}      % 18
 
        $H_0: \beta_1 = \beta_2 = \beta_3 = 0$ \\
        $H_1:$ at least one slope is not equal zero. \\
@@ -801,7 +798,7 @@ What are the dependent and independent \\ variables?
 
     \end{solution}
 
-  \begin{exercise} % 16
+  \begin{exercise} % 19
 
     STEP 3: Using the information from exercise nine, determine the coefficient of determination.
 
@@ -809,17 +806,16 @@ What are the dependent and independent \\ variables?
     \framebox[7cm][l]{ Answer: }
 
     \end{exercise}
-    \vspace{2mm}
-    \begin{solution}
+    \begin{solution}    % 19
 
        Read the results from the computer generated output.
 
     \end{solution}
 
-  \begin{exercise} % 17
+  \begin{exercise} % 20
 
 
-    STEP 4: Using the information from exercise 12, record the independent, dependent variables, and the correlation coefficients.
+    STEP 4: Using the information from exercise 17, record the independent, dependent variables, and the correlation coefficients.
 
      \begin{table}[ht]
      \centering
@@ -854,26 +850,24 @@ What are the dependent and independent \\ variables?
 
     \end{exercise}
     \vspace{2mm}
-    \begin{solution}
+    \begin{solution}    % 20
 
       The results are in the table.
 
     \end{solution}
 
-  \begin{exercise} % 18
-
+  \begin{exercise} % 21
 
     STEP 5:
 
-    Using the information from exercise 12, record the independent, dependent variables, and the correlation coefficients.
+    Using the information from exercise 17, \\  record the independent, dependent \\ variables, and the correlation coefficients.
 
 
   %  \vspace{5mm}
   %  \framebox[7cm][l]{ Answer: }
 
     \end{exercise}
-    \vspace{2mm}
-    \begin{solution}
+    \begin{solution}    % 21
 
   The results are in the table.
 
