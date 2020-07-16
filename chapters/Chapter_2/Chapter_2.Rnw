@@ -92,12 +92,12 @@ Nominal and ordinal variables together are often called \textbf{categorical} var
 
 \begin{figure}[htbp]
    \centering
-   
+
    \caption{Mind map of a Random Variable}
-   
+
    \includegraphics[width=12cm, height=6cm]{chapters/Chapter_2/ext_figure/zRV1.png} % requires the graphicx package
    %{chapters/Chapter_2/ext_figure/varType.png} % requires the graphicx package
-   
+
 \end{figure}
 
 
@@ -220,21 +220,29 @@ To compute Relative Frequency, divide Frequency by the total and multiply by 100
 RF(Mortgage) = \frac{\text{Mortgage Frequency}}{\text{Total Frequency}} = \frac{44}{76} \times 100 = 57.9
 \end{equation*}
 
-\subsection{Bar Chart}
-
-A \textit{bar chart} is a plot of the relative frequency table.  We use bar charts for categorical data. The order by which the categories are presented in the bar chart is arbitrary. Sometimes they are presented in order of decreasing frequency for aesthetic purposes and is called a Pareto chart.  Some computing packages present the categories alphabetically unless otherwise specified.
-
-<<label=LBL2b, results="asis", echo=FALSE, out.height="6cm">>=
-  barplot(v2, main="Bar Plot for Type of Payment", xlab="Type of Monthly Payment", ylab="Relative Frequency", col="green", ylim=c(0,60))
-@
-
 \subsection{Pie Chart}
 
 A pie chart gives the same information as a bar chart, except in a circular shape.  We also use pie charts for categorical data. Some people prefer the look of pie charts over bar charts.  However, studies have shown that people have difficulty comparing the relative size of wedges.  When using this type of chart, we should only consider it when the number of variables is less than six, and we will use bar charts when we have more than six.  Look at the pie chart below.  Is Rent less than half or more than half of Mortgage?
 
-<<label=LBL2c, results="asis", echo=FALSE, out.width="8cm">>=
+<<label=LBL2c, results="asis", echo=FALSE, out.width="10cm", out.height="10cm">>=
+
   pie(v2, main="Pie Chart for Type of Payment")
+
 @
+
+
+\newpage
+
+\subsection{Bar Chart}
+
+A \textit{bar chart} is a plot of the relative frequency table.  We use bar charts for categorical data. The order by which the categories are presented in the bar chart is arbitrary. Sometimes they are presented in order of decreasing frequency for aesthetic purposes and is called a Pareto chart.  Some computing packages present the categories alphabetically unless otherwise specified.
+
+<<label=LBL2b, results="asis", echo=FALSE, out.width="8.0cm", out.height = "7cm" >>=
+
+  barplot(v2, main = "Bar Plot for Type of Payment", xlab="Type of Monthly Payment", ylab="Relative Frequency", col="green", ylim=c(0,60))
+
+@
+
 
 \section{Summarizing numerical data}
 
@@ -268,7 +276,7 @@ Can this be a typographical error that we need to correct?  When we Look closely
 
 Graphs are helpful in summarizing information in the data, especially for large datasets.  Below, we summarize two-year average percentage of persons living in poverty (2008-2009) in the U.S.A. in a graph called a stem-and-leaf plot.  The numbers on the left are stems, while the numbers on the right are called leaves.
 
-\newpage
+%  \newpage
 
 \begin{minipage}[ht]{7cm}
 
@@ -285,7 +293,7 @@ Graphs are helpful in summarizing information in the data, especially for large 
 {\small{
 \begin{verbatim}
 <<label=LBL2ee, results="asis", echo=FALSE>>=
-  stem(x=DT2, scale=2, width=22)
+  stem(x=DT2, scale=2, width=21)
 @
 \end{verbatim}
 }}
@@ -294,18 +302,18 @@ Graphs are helpful in summarizing information in the data, especially for large 
 There is one leaf for each observation, so there are 51 leaves in all, one for each state.  Our smallest observation is 7.4.  We write it on the stem `7' as a leaf of `4.'  We can infer that the stems represent tens and units digits while the leaves represent tenths digits.  We write the value 20.6 on the stem `20' as a `20' and the leaf as a `6', and so forth.  \citep{sullivan2013}
 
 % Suppose we want to compare mortgage and rent.  Do mortgage payments tend to be greater or less than rent?  We can present stem-and-leaf for mortgage and rent side by side.
-% 
+%
 % %  \newpage
-% 
+%
 % Stem and Leaf Display of Monthly Payment (stem width \$100)
-% 
+%
 % \begin{center}
-% 
+%
 % {\footnotesize{
 % \begin{minipage}[ht]{3cm}
-% 
+%
 % Mortgage
-% 
+%
 % \begin{tabular}{@{} r|l @{}} \hline
 % 1 & 9 \\
 % 2 & 0039 \\
@@ -326,9 +334,9 @@ There is one leaf for each observation, so there are 51 leaves in all, one for e
 % \end{tabular}
 % \end{minipage}
 % \begin{minipage}[ht]{4cm}
-% 
+%
 % Rent
-% 
+%
 % \begin{tabular}{@{} r|l @{}} \hline
 % 1 & 4 \\
 % 2 & 258 \\
@@ -350,7 +358,7 @@ There is one leaf for each observation, so there are 51 leaves in all, one for e
 % \end{minipage}
 % }}
 % \end{center}
-% 
+%
 % In general, rent is smaller than mortgages and less variable.  While mortgages seem centered around \$700, rent is centered around \$500.  Furthermore, mortgages have a longer right tail, with a significant percentage over \$1000.  Plus, remember that we have removed a \$1800 - \$5200 mortgages from these plots.
 
 \subsection{Relative Frequency Table and Histogram}
@@ -377,6 +385,8 @@ There are three things to keep in mind when constructing a frequency table. Firs
 
 The last item requires us to choose a \textbf{boundary convention}.  For instance, the intervals in the frequency table above could have been written as follows:
 
+\vspace{3mm}
+
 \begin{minipage}[ht]{6cm}
 
 \begin{tabular}{@{} l @{}} \hline
@@ -399,6 +409,8 @@ $ [600-800)$ \\
 \end{tabular}
 \end{minipage}
 
+\vspace{3mm}
+
 This way, it is easier to tell that \$200 belongs to the second interval, not the first.  However, the table looks more complicated, harder to read.  To keep the intervals simple but avoid boundary disputes, include a footnote to the table that describes the boundary convention, i.e. ``Intervals contain the left endpoint but not the right.''  Then, we know that \$200 belongs to the second interval, not the first.  Alternatively, we may use square braces and parenthesis.
 
 It also means that the class intervals contain the left endpoint but not the right.  Which method do we prefer?
@@ -407,7 +419,7 @@ The relative frequency table is a compact numerical way to present how the data 
 
 The histogram and stem-and-leaf plots look alike, except that the stem-and-leaf plot has columns that go sideways instead of upwards.  Stem-and-leafs are better if we want the data values themselves available from the plot.  However, the histogram can handle large sample sizes easily and is more flexible in choosing class widths.  For example, we may choose class widths of \$500, as follows: $[0,500), [500,1000), [1000,1500), \dots, [5000,5500)$, which stem plots cannot do.
 
-\newpage
+% \newpage
 
 \begin{figure}[ht]
 
@@ -442,7 +454,7 @@ For moderately large samples, a \textit{dotplot} diagram is a quick way to see r
 
 \end{figure}
 
-\newpage 
+\newpage
 
 \subsection{Box-and-Whisker Plot}
 
@@ -474,6 +486,8 @@ There are $n = 63$ observations.  One-quarter of the data is 63/4=15.75, or appr
 
 More precisely, the software draws vertical lines at (140, 400, 700, 970, 2400).  Hence, the lowest 16 monthly payments lie within (\$140, \$400).  The next set of 16 observations lies within (\$400, \$700).  The third set lies within (\$700, \$970).  Finally, the last 16 observations lie within (\$970, \$2400).  The five values (140, 400, 700, 970, 2400) that divide the data into quarters and form the fences and whiskers of the boxplot are collectively called the five-number-summary of the data.  They are often denoted as MIN, $Q_1$, MED, $Q_3$, and MAX respectively.
 
+\newpage
+
 {\small{
 \begin{enumerate}
 \item	\textbf{MIN} is called the \textbf{minimum} and is the smallest of the ordered observations.
@@ -490,11 +504,13 @@ Boxplots are particularly useful for comparing two distributions side-by-side.  
 
 \caption{Box Plot }
 
-<<label=LBL2j, results="asis", echo=FALSE, out.width="9cm", out.height="9cm" >>=
+<<label=LBL2j, results="asis", echo=FALSE, out.width="8cm", out.height="8cm" >>=
   boxplot(Monthly.Payment ~ Type.of.Payment, horizontal=TRUE, xlab="Dollars", main="Boxplot of Monthly Payments", ylab="Type", col="green", range=0)
 @
 
 \end{figure}
+
+\newpage 
 
 Different statistical computing packages have different ways of computing the quartiles, but the differences are minimal.  In this class, we compute the quartiles as follows.  First, arrange the observations from smallest (1st ordered observation) to largest ($n^{th}$ ordered observation).  Then
 
@@ -528,7 +544,7 @@ The shape of the data is often described by its symmetry or non-symmetry (also c
 
 \vspace{3mm}
 
-\begin{minipage}[ht]{5cm}
+\begin{minipage}[ht]{4.5cm}
 
 Symmetric Data
 
@@ -549,7 +565,7 @@ Symmetric Data
 11 & 1 \\ \hline
 \end{tabular}
 \end{minipage}
-\begin{minipage}[ht]{5cm}
+\begin{minipage}[ht]{4.5cm}
 
 Right-Skewed Data
 
@@ -570,7 +586,7 @@ Right-Skewed Data
 11 & 2 \\ \hline
 \end{tabular}
 \end{minipage}
-\begin{minipage}[ht]{5cm}
+\begin{minipage}[ht]{4.5cm}
 
 Left-Skewed Data
 
@@ -600,15 +616,15 @@ The term `skew' refers to the direction of the most extended tail when you flip 
 %  SDat4 <- c(401,501,601,702,801,802,901,902,903,904,905,1001,1002,1003,1004,1005,1006,1007,1008,1101,1102)
 %  hist(SDat4, xlab="values", col="green", main="Left Skewed")
 % @
-% 
+%
 % For some further examples of histograms depicting both symmetry and skewness, see below.
 
-\vspace{2cm}
+\newpage
 
 \begin{figure}[ht]
 
-<<label=LBL2o, resutls="asis", echo=FALSE, out.width="5cm", out.height="5cm" >>=
-   
+<<label=LBL2o, resutls="asis", echo=FALSE, out.width="4.5cm", out.height="4.5cm" >>=
+
   hist( rbeta(10000,5,5),  col="skyblue", main="Symmetric", xlab="" )    ## symmetric
 
   hist( rbeta(10000, 2, 5),  col="skyblue", main="Right Skewed", xlab="" )     ## right skewed
@@ -618,11 +634,11 @@ The term `skew' refers to the direction of the most extended tail when you flip 
 
 \end{figure}
 
-\newpage 
+%% \newpage
 
 \section{Key Words}
 
-\fbox{\parbox{13cm}{
+\fbox{\parbox{14cm}{
 
 \begin{minipage}[ht]{6cm}
 
@@ -639,7 +655,7 @@ The term `skew' refers to the direction of the most extended tail when you flip 
     \item stem-and-leaf
     \end{itemize}
   \end{itemize}
-  
+
   \end{minipage}
   \begin{minipage}[ht]{6cm}
   \begin{itemize}
@@ -667,7 +683,7 @@ The term `skew' refers to the direction of the most extended tail when you flip 
 \item We cannot use the mean for ordinal variables.
 \end{itemize}
 
-\newpage
+%%  \newpage
 
 \twocolumn
 
@@ -718,8 +734,8 @@ Identify the following \\ types of  data as numerical or categorical.  If numeri
 
   \begin{exercise} % 2
 
-The 6-year graduation rate for a random sample of 30 colleges and universities
-in the U.S. is displayed in the stem-and-leaf plot below.  Note that the stem unit is 10\%, and the leaf unit is 1\%.  For example, the maximum value is 92\%.
+The 6-year graduation \\ rate for a random sample of 30 colleges and universities
+in the U.S. is displayed in the \\ stem-and-leaf plot below.  Note that the stem unit is 10\%, and the leaf unit is 1\%.  For example, the maximum value is 92\%.
 
 \begin{table}[ht]
 \centering
@@ -745,12 +761,15 @@ in the U.S. is displayed in the stem-and-leaf plot below.  Note that the stem un
 
 	\end{exercise}
 %	\begin{solution}  % 2
+
+
 %  \end{solution}
 
   \begin{exercise} % 3
 
-A manager of a car rental company took a random sample of 100 business days over the last fiscal year and \\ recorded the number of cars rented per day.  The frequency distribution of the data is \\ given below.
+A manager of a car \\ rental company took a random sample of 100 business days over the last fiscal year and \\ recorded the number of cars rented per day.  The frequency distribution of the data is \\ given below.
 
+{\small{
 \begin{tabular}{@{} lcc @{}} \hline
 Interval  &  Frequency &	Relative Frequency \\
 $(20, 25]$ 	&      4 \\
@@ -760,7 +779,7 @@ $(35, 40]$ 	&    31 \\
 $(40, 45]$ 	&    15 \\
 $(45, 50]$ 	&    10 \\
 $(50, 55]$ 	&      6 \\ \hline
-\end{tabular}
+\end{tabular}  }}
 
 \begin{enumerate}
 \item Fill in the relative frequencies above.
@@ -797,7 +816,7 @@ $(50, 55]$ 	&     6 & \Sexpr{rf4dat[7]} \\ \hline
 
 \begin{exercise}  % 4
 
-The following plots represent five different samples of data. For each, describe the shape.
+The following plots represent five different samples of data. For \\ each, describe the shape.
 
 \begin{figure}[ht]
   \caption{Describe Shapes}
@@ -869,7 +888,7 @@ The following plots represent five different samples of data. For each, describe
 
   \begin{exercise}  % 5
 
-  A survey contained a question regarding marital status.  The respondent checked either single, married, \\ divorced, separated or widowed.  What is the level of measurement of marital status?
+  A survey contained a \\ question regarding marital status.   The \\ respondent checked either single, married,  \\ divorced, separated or widowed.  What is the level of measurement of marital status?
 	  \begin{enumerate}
 	  \item Ordinal
 	  \item Interval-Ratio
@@ -909,7 +928,7 @@ The following plots represent five different samples of data. For each, describe
 
   \begin{exercise}  % 7
 
-  What type of variable is the number of robberies reported in June 2014 in Kalamazoo County?
+  What type of variable \\ is the number of robberies reported in June 2014 in Kalamazoo County?
 	  \begin{enumerate}
   	\samepage
   	\item Attribute
@@ -925,7 +944,9 @@ The following plots represent five different samples of data. For each, describe
   \end{exercise}
   \vspace{2mm}
 	\begin{solution}
+	
 	  The number of reported robberies in June 2014 is Kalamazoo County is a continuous variable.
+	  
 	\end{solution}
 
 	\begin{exercise}  % 8
@@ -935,6 +956,7 @@ The following plots represent five different samples of data. For each, describe
   % \end{minipage} \hfill
   % \begin{minipage}[[htbp]{6.5cm}
 
+{\small{
   \begin{table}[htbp]
    \centering
   \begin{tabular}{@{} rl @{}} \hline % Column formatting, @{} suppresses leading/trailing space
@@ -945,10 +967,13 @@ The following plots represent five different samples of data. For each, describe
     \underline{ \phantom{xxx} } & More than 15 occasions \\ \hline
    \end{tabular}
    \end{table}
+}}
 
   % \end{minipage}
     \vspace{4mm}
+
     \framebox[5cm][l]{ Answer: }
+
   \end{exercise}
   \vspace{2mm}
   \begin{solution}   % 8
@@ -1000,7 +1025,7 @@ The following plots represent five different samples of data. For each, describe
 
 \begin{exercise}  % 11
 
-	  A recent issue of the \emph{New England Journal of Medicine} reported a study of all 122,754 infants born over an 8.5 year period at Parkland Hospital in Dallas, Texas, leaving out multiple births and babies with birth defects.  The researchers  wanted to \\ know if there is a specific birth weight below which infant death and illness increases sharply.
+	  A recent issue of the \\ \emph{New England Journal of Medicine} reported a study of all 122,754 infants born over an 8.5 year period at Parkland Hospital in Dallas, Texas, leaving out multiple births and babies with birth defects.  The researchers  wanted to \\ know if there is a specific birth weight below which infant death and illness increases sharply.
 
     The independent variable in the study is
     \begin{enumerate}
@@ -1025,7 +1050,7 @@ The following plots represent five different samples of data. For each, describe
 
 \begin{exercise}  % 12
 
-  For the following research project, classify all variables in terms of levels of measurement and reveal whether \\ they're continuous and discrete.  As \\ researchers, we should select the correct statistical method: {\emph{single variable descriptive \\ statistic}} or {\emph{a multi-variable descriptive  statistic}} or  {\emph{inferential statistics.}}  Recall that it is common for some projects to require more than one type of method.
+  For the following \\ research project, classify all variables in \\ terms of levels of measurement and reveal whether  they're continuous and discrete.  As \\ researchers, we should select the correct statistical method: {\emph{single variable descriptive}}  \\ {\emph{statistic}} or {\emph{a multi-variable descriptive  statistic}} or  {\emph{inferential statistics.}}  Recall that it is common for some projects to require more than one type of method.
 
 	  Ten years ago, a state re-instituted the execution for first-degree murder.  Researchers asked, did this change of policy reduce capital crime?  A team of researchers gathered data on the number of homicides in the state for two-year periods before and after the policy change.
 

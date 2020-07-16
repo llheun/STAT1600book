@@ -3,420 +3,373 @@
 \contentsline {section}{\numberline {1.1}Objectives}{9}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Introduction}{9}{section.1.2}%
 \contentsline {subsection}{\numberline {1.2.1}Why Data?}{9}{subsection.1.2.1}%
-\contentsline {subsubsection}{\nonumberline Information vs. Data}{9}{section*.2}%
-\contentsline {subsubsection}{\nonumberline Designing studies}{10}{section*.3}%
-\contentsline {subsubsection}{\nonumberline Conducting research}{10}{section*.4}%
-\contentsline {subsubsection}{\nonumberline Developing critical thinking skills}{10}{section*.5}%
+\contentsline {subsubsection}{Information vs. Data}{9}{section*.2}%
+\contentsline {subsubsection}{Designing studies}{9}{section*.3}%
+\contentsline {subsubsection}{Conducting research}{10}{section*.4}%
+\contentsline {subsubsection}{Developing critical thinking skills}{10}{section*.5}%
 \contentsline {section}{\numberline {1.3}Knowledge and Data}{10}{section.1.3}%
-\contentsline {subsection}{\numberline {1.3.1}Building Knowledge Step-by-step}{11}{subsection.1.3.1}%
-\contentsline {subsubsection}{\nonumberline 1. Conceptualize the problem}{11}{section*.6}%
-\contentsline {subsubsection}{\nonumberline 2. Operationalize the problem}{11}{section*.7}%
-\contentsline {subsubsection}{\nonumberline 3. Design the study}{11}{section*.8}%
-\contentsline {subsubsection}{\nonumberline 4. Collect the data}{12}{section*.9}%
-\contentsline {subsubsection}{\nonumberline 5. Analyze the data}{12}{section*.10}%
-\contentsline {subsubsection}{\nonumberline 6. Conclusions}{12}{section*.11}%
-\contentsline {subsubsection}{\nonumberline 7. Disseminate results}{13}{section*.12}%
-\contentsline {subsubsection}{\nonumberline The Science Wheel Summarizes the above Steps}{13}{section*.13}%
-\contentsline {subsection}{\numberline {1.3.2}Example}{13}{subsection.1.3.2}%
-\contentsline {subsubsection}{\nonumberline 1. Conceptualize the problem}{14}{section*.14}%
-\contentsline {subsubsection}{\nonumberline 2. Operationalize the problem}{14}{section*.15}%
-\contentsline {subsubsection}{\nonumberline 3. Design the study}{14}{section*.16}%
-\contentsline {subsubsection}{\nonumberline 4. Collect the data}{14}{section*.17}%
-\contentsline {subsubsection}{\nonumberline 5. Analyze the data}{14}{section*.18}%
-\contentsline {subsubsection}{\nonumberline 6. Conclusions}{15}{section*.19}%
-\contentsline {subsubsection}{\nonumberline 7. Disseminate results}{15}{section*.20}%
-\contentsline {subsection}{\numberline {1.3.3}A final product}{15}{subsection.1.3.3}%
-\contentsline {subsubsection}{\nonumberline Context}{15}{section*.21}%
-\contentsline {subsubsection}{\nonumberline Objective}{15}{section*.22}%
-\contentsline {subsubsection}{\nonumberline Main Outcome Measures}{16}{section*.23}%
-\contentsline {subsubsection}{\nonumberline Results}{16}{section*.24}%
-\contentsline {subsubsection}{\nonumberline Conclusions}{16}{section*.25}%
-\contentsline {section}{\numberline {1.4}Common Fallacies}{17}{section.1.4}%
-\contentsline {subsection}{\numberline {1.4.1}Some fallacies in interpreting evidence}{17}{subsection.1.4.1}%
-\contentsline {section}{\numberline {1.5}Key Words}{18}{section.1.5}%
-\contentsline {paragraph}{\nonumberline Exercises}{19}{section*.26}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~1.6-1:}{19}{section*.27}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~1.6-2:}{19}{section*.28}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~1.6-3:}{19}{section*.29}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~1.6-4:}{19}{section*.30}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~1.6-5:}{19}{section*.31}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~1.6-6:}{19}{section*.32}%
-\contentsline {chapter}{\numberline {2}Data Presentation}{21}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Objectives}{21}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Statistics and Data}{21}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Classification of variables}{22}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Levels of Measurement}{22}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Numerical versus categorical variables}{23}{subsection.2.3.2}%
-\contentsline {subsection}{\numberline {2.3.3}Dependent versus independent variables}{24}{subsection.2.3.3}%
-\contentsline {section}{\numberline {2.4}Summarizing Categorical Data}{26}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Relative Frequency Table}{27}{subsection.2.4.1}%
-\contentsline {subsection}{\numberline {2.4.2}Bar Chart}{27}{subsection.2.4.2}%
-\contentsline {subsection}{\numberline {2.4.3}Pie Chart}{28}{subsection.2.4.3}%
-\contentsline {section}{\numberline {2.5}Summarizing numerical data}{28}{section.2.5}%
-\contentsline {subsection}{\numberline {2.5.1}Stem-and-Leaf Plot}{29}{subsection.2.5.1}%
-\contentsline {subsection}{\numberline {2.5.2}Relative Frequency Table and Histogram}{30}{subsection.2.5.2}%
-\contentsline {subsection}{\numberline {2.5.3}Dot Plot}{32}{subsection.2.5.3}%
-\contentsline {subsection}{\numberline {2.5.4}Box-and-Whisker Plot}{33}{subsection.2.5.4}%
-\contentsline {subsection}{\numberline {2.5.5}Symmetry and Skewness}{35}{subsection.2.5.5}%
-\contentsline {section}{\numberline {2.6}Key Words}{37}{section.2.6}%
-\contentsline {section}{\numberline {2.7}Summary}{37}{section.2.7}%
-\contentsline {paragraph}{\nonumberline Exercises}{38}{section*.33}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~2.8-1:}{38}{section*.34}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~2.8-2:}{38}{section*.35}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~2.8-3:}{38}{section*.36}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~2.8-4:}{39}{section*.37}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~2.8-5:}{39}{section*.38}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~2.8-6:}{39}{section*.39}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~2.8-7:}{39}{section*.40}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~2.8-8:}{40}{section*.41}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~2.8-9:}{40}{section*.42}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~2.8-10:}{40}{section*.43}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~2.8-11:}{40}{section*.44}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~2.8-12:}{40}{section*.45}%
-\contentsline {chapter}{\numberline {3}Descriptive Statistics}{43}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Objectives}{43}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Estimates of Center}{43}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}The Sample Mean}{44}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}The Sample Median}{44}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}The Trimmed Mean}{45}{subsection.3.2.3}%
-\contentsline {section}{\numberline {3.3}Estimate of Spread (or Uncertainty or Variation)}{46}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}The Sample Standard Deviation}{46}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Effect of Multiplication and Addition by a Constant}{48}{subsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.3.3}Risk ratio and odds ratio}{49}{subsection.3.3.3}%
-\contentsline {subsection}{\numberline {3.3.4}Risk ratio}{49}{subsection.3.3.4}%
-\contentsline {subsubsection}{\nonumberline Background}{50}{section*.46}%
-\contentsline {subsubsection}{\nonumberline Methods}{50}{section*.47}%
-\contentsline {subsubsection}{\nonumberline Results}{50}{section*.48}%
-\contentsline {subsubsection}{\nonumberline Conclusion}{50}{section*.49}%
-\contentsline {subsection}{\numberline {3.3.5}Odds ratio}{51}{subsection.3.3.5}%
-\contentsline {section}{\numberline {3.4}Key Words}{53}{section.3.4}%
-\contentsline {paragraph}{\nonumberline Exercises}{54}{section*.50}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~3.5-1:}{54}{section*.51}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~3.5-2:}{54}{section*.52}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~3.5-3:}{54}{section*.53}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~3.5-4:}{54}{section*.54}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~3.5-5:}{55}{section*.55}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~3.5-6:}{55}{section*.56}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~3.5-7:}{55}{section*.57}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~3.5-8:}{55}{section*.58}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~3.5-9:}{56}{table.3.3}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~3.5-10:}{56}{section*.60}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~3.5-11:}{56}{section*.61}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~3.5-12:}{56}{section*.62}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~3.5-13:}{56}{section*.63}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~3.5-14:}{57}{section*.64}%
-\contentsline {chapter}{\numberline {4}Threats to Valid Comparisons}{59}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Objectives}{59}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Hidden Confounder}{59}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Apples and Oranges}{61}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}In the news}{61}{subsection.4.2.2}%
-\contentsline {section}{\numberline {4.3}Key Words}{62}{section.4.3}%
-\contentsline {paragraph}{\nonumberline Exercises}{63}{section*.65}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~4.4-1:}{63}{section*.66}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~4.4-2:}{63}{section*.67}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~4.4-3:}{63}{section*.68}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~4.4-4:}{63}{section*.69}%
-\contentsline {chapter}{\numberline {5}Study Designs}{65}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Objective}{65}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Randomized trials}{65}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Double-blind randomized controlled trials (RCT)}{67}{subsection.5.2.1}%
-\contentsline {section}{\numberline {5.3}Observational studies}{69}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}Case-control studies}{70}{subsection.5.3.1}%
-\contentsline {subsection}{\numberline {5.3.2}Case-crossover studies}{71}{subsection.5.3.2}%
-\contentsline {section}{\numberline {5.4}Key Words}{72}{section.5.4}%
-\contentsline {paragraph}{\nonumberline Exercises}{74}{section*.70}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~5.5-1:}{74}{section*.71}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~5.5-2:}{74}{section*.72}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~5.5-3:}{74}{section*.73}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~5.5-4:}{74}{section*.74}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~5.5-5:}{74}{section*.75}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~5.5-6:}{74}{section*.76}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~5.5-7:}{74}{section*.77}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~5.5-8:}{74}{section*.78}%
-\contentsline {chapter}{\numberline {6}The Normal Distribution}{75}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Objective}{75}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Using the normal curve}{75}{section.6.2}%
-\contentsline {subsubsection}{\nonumberline Problem 6.2.1}{75}{section*.79}%
-\contentsline {subsubsection}{\nonumberline Problem 6.2.2}{76}{section*.80}%
-\contentsline {subsubsection}{\nonumberline The Standard Normal or Z Curve}{77}{section*.81}%
-\contentsline {section}{\numberline {6.3}Calculating percentiles}{79}{section.6.3}%
-\contentsline {section}{\numberline {6.4}Calculating symmetric tail areas}{80}{section.6.4}%
-\contentsline {section}{\numberline {6.5}The Empirical Rule}{81}{section.6.5}%
-\contentsline {section}{\numberline {6.6}Key Words}{81}{section.6.6}%
-\contentsline {paragraph}{\nonumberline Exercises}{83}{section*.82}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~6.7-1:}{83}{section*.83}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~6.7-2:}{83}{section*.84}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~6.7-3:}{83}{section*.85}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~6.7-4:}{83}{section*.86}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~6.7-5:}{83}{section*.87}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~6.7-6:}{84}{section*.88}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~6.7-7:}{84}{section*.89}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~6.7-8:}{84}{section*.90}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~6.7-9:}{84}{section*.91}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~6.7-10:}{84}{section*.92}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~6.7-11:}{84}{section*.93}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~6.7-12:}{85}{section*.94}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~6.7-13:}{85}{section*.95}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~6.7-14:}{85}{section*.96}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~6.7-15:}{85}{section*.97}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~6.7-16:}{85}{section*.98}%
-\contentsline {chapter}{\numberline {7}The Binomial Distribution}{87}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Objectives}{87}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Binomial Probabilities}{87}{section.7.2}%
-\contentsline {subsubsection}{\nonumberline Example 1}{88}{section*.99}%
-\contentsline {subsubsection}{\nonumberline Example 2}{88}{section*.100}%
-\contentsline {subsubsection}{\nonumberline Example 3}{88}{section*.101}%
-\contentsline {section}{\numberline {7.3}Computing Binomial Probabilities}{88}{section.7.3}%
-\contentsline {subsubsection}{\nonumberline Example 3}{89}{section*.102}%
-\contentsline {section}{\numberline {7.4}Expected Value and SD of a Binomial Random Variable}{90}{section.7.4}%
-\contentsline {section}{\numberline {7.5}Computing Binomial Probabilities Using the Normal Curve}{90}{section.7.5}%
-\contentsline {section}{\numberline {7.6}Some Approximations Are Better Than Others}{92}{section.7.6}%
-\contentsline {section}{\numberline {7.7}Key Words}{93}{section.7.7}%
-\contentsline {paragraph}{\nonumberline Exercises}{95}{section*.103}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~7.8-1:}{95}{section*.104}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~7.8-2:}{95}{section*.105}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~7.8-3:}{95}{section*.106}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~7.8-4:}{95}{section*.107}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~7.8-5:}{95}{section*.108}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~7.8-6:}{95}{section*.109}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~7.8-7:}{96}{section*.110}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~7.8-8:}{96}{section*.111}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~7.8-9:}{96}{section*.112}%
-\contentsline {chapter}{\numberline {8}Sampling Distribution of the Proportion}{97}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Objective}{97}{section.8.1}%
-\contentsline {section}{\numberline {8.2}The Sample Proportion}{97}{section.8.2}%
-\contentsline {subsection}{\numberline {8.2.1}The Sampling Distribution of p-hat is Approximately Normal}{99}{subsection.8.2.1}%
-\contentsline {section}{\numberline {8.3}Estimating the Population Proportion p}{100}{section.8.3}%
-\contentsline {section}{\numberline {8.4}Estimating Population Proportion Using Intervals}{101}{section.8.4}%
-\contentsline {section}{\numberline {8.5}Sample Size for Estimating the Population Proportion}{102}{section.8.5}%
-\contentsline {subsubsection}{\nonumberline Example:}{102}{section*.113}%
-\contentsline {section}{\numberline {8.6}Key Words}{103}{section.8.6}%
-\contentsline {paragraph}{\nonumberline Exercises}{104}{section*.114}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~8.7-1:}{104}{section*.115}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~8.7-2:}{104}{section*.116}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~8.7-3:}{104}{section*.117}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~8.7-4:}{104}{section*.118}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~8.7-5:}{104}{section*.119}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~8.7-6:}{105}{section*.120}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~8.7-7:}{105}{section*.121}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~8.7-8:}{105}{section*.122}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~8.7-9:}{105}{section*.123}%
-\contentsline {chapter}{\numberline {9}Comparing Two Proportions}{107}{chapter.9}%
-\contentsline {section}{\numberline {9.1}Objectives}{107}{section.9.1}%
-\contentsline {section}{\numberline {9.2}Estimating the difference between independent proportions}{107}{section.9.2}%
-\contentsline {subsection}{\numberline {9.2.1}Using a confidence interval}{109}{subsection.9.2.1}%
-\contentsline {section}{\numberline {9.3}Statistical significance}{109}{section.9.3}%
-\contentsline {subsection}{\numberline {9.3.1}The P-value}{110}{subsection.9.3.1}%
-\contentsline {section}{\numberline {9.4}Key Words}{111}{section.9.4}%
-\contentsline {paragraph}{\nonumberline Exercises}{112}{section*.124}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~9.5-1:}{112}{section*.125}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~9.5-2:}{112}{section*.126}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~9.5-3:}{112}{section*.127}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~9.5-4:}{113}{section*.128}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~9.5-5:}{113}{section*.129}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~9.5-6:}{113}{section*.130}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~9.5-7:}{114}{section*.131}%
-\contentsline {chapter}{\numberline {10}More Comparing of Two Proportions}{115}{chapter.10}%
-\contentsline {section}{\numberline {10.1}Objective}{115}{section.10.1}%
-\contentsline {section}{\numberline {10.2}Example 1}{115}{section.10.2}%
-\contentsline {subsection}{\numberline {10.2.1}Is your colleague Cheating?}{115}{subsection.10.2.1}%
-\contentsline {subsection}{\numberline {10.2.2}Define Hypotheses Testing}{116}{subsection.10.2.2}%
-\contentsline {section}{\numberline {10.3}Testing Hypotheses}{117}{section.10.3}%
-\contentsline {subsection}{\numberline {10.3.1}Example 1}{117}{subsection.10.3.1}%
-\contentsline {subsection}{\numberline {10.3.2}Example 2}{120}{subsection.10.3.2}%
-\contentsline {section}{\numberline {10.4}Types of Errors}{122}{section.10.4}%
-\contentsline {section}{\numberline {10.5}Key Words}{122}{section.10.5}%
-\contentsline {paragraph}{\nonumberline Exercises}{123}{section*.132}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~10.6-1:}{123}{section*.133}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~10.6-2:}{123}{section*.134}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~10.6-3:}{123}{section*.135}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~10.6-4:}{124}{section*.136}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~10.6-5:}{124}{section*.137}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~10.6-6:}{124}{section*.138}%
-\contentsline {chapter}{\numberline {11}Sampling Distribution of the Mean}{125}{chapter.11}%
-\contentsline {section}{\numberline {11.1}Objectives}{125}{section.11.1}%
-\contentsline {section}{\numberline {11.2}Behavioral Properties of the Sample Average}{125}{section.11.2}%
-\contentsline {subsubsection}{\nonumberline Example 1}{127}{section*.139}%
-\contentsline {section}{\numberline {11.3}Estimating the Population Mean}{127}{section.11.3}%
-\contentsline {subsubsection}{\nonumberline Example 2}{128}{section*.140}%
-\contentsline {section}{\numberline {11.4}Estimating the Population Mean Using Intervals}{128}{section.11.4}%
-\contentsline {section}{\numberline {11.5}Sample Size for Estimating the Population Mean}{129}{section.11.5}%
-\contentsline {section}{\numberline {11.6}Key Words}{129}{section.11.6}%
-\contentsline {paragraph}{\nonumberline Exercises}{130}{section*.141}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~11.7-1:}{130}{section*.142}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~11.7-2:}{130}{section*.143}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~11.7-3:}{130}{section*.144}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~11.7-4:}{130}{section*.145}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~11.7-5:}{130}{section*.146}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~11.7-6:}{131}{section*.147}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~11.7-7:}{131}{section*.148}%
-\contentsline {chapter}{\numberline {12}Comparing Two Means}{133}{chapter.12}%
-\contentsline {section}{\numberline {12.1}Objectives}{133}{section.12.1}%
-\contentsline {section}{\numberline {12.2}Estimating the Difference between Independent Means}{133}{section.12.2}%
-\contentsline {subsection}{\numberline {12.2.1}Using a confidence interval}{135}{subsection.12.2.1}%
-\contentsline {subsubsection}{\nonumberline Confidence Interval - Concepts:}{135}{section*.149}%
-\contentsline {subsubsection}{\nonumberline Confidence Interval - Calculations and Examples:}{136}{section*.150}%
-\contentsline {subsection}{\numberline {12.2.2}Statistical Significance}{137}{subsection.12.2.2}%
-\contentsline {subsection}{\numberline {12.2.3}The P-value}{138}{subsection.12.2.3}%
-\contentsline {section}{\numberline {12.3}Paired data (before-and-after)}{138}{section.12.3}%
-\contentsline {subsection}{\numberline {12.3.1}Paired Data}{140}{subsection.12.3.1}%
-\contentsline {section}{\numberline {12.4}Key Words}{141}{section.12.4}%
-\contentsline {paragraph}{\nonumberline Exercises}{142}{section*.151}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~12.5-1:}{142}{section*.152}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~12.5-2:}{142}{section*.153}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~12.5-3:}{142}{section*.154}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~12.5-4:}{143}{section*.155}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~12.5-5:}{143}{section*.156}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~12.5-6:}{143}{section*.157}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~12.5-7:}{143}{section*.158}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~12.5-8:}{143}{table.12.4}%
-\contentsline {chapter}{\numberline {13}More Comparing Two Means}{145}{chapter.13}%
-\contentsline {section}{\numberline {13.1}Objectives}{145}{section.13.1}%
-\contentsline {section}{\numberline {13.2}Overview and Example 1}{145}{section.13.2}%
-\contentsline {subsection}{\numberline {13.2.1}Grade Inflation Revisited}{145}{subsection.13.2.1}%
-\contentsline {subsection}{\numberline {13.2.2}Define Hypotheses Testing}{146}{subsection.13.2.2}%
-\contentsline {subsubsection}{\nonumberline Definition:}{146}{section*.160}%
-\contentsline {subsubsection}{\nonumberline Definition:}{147}{section*.161}%
-\contentsline {section}{\numberline {13.3}Calculation and Analysis for Example 1}{147}{section.13.3}%
-\contentsline {section}{\numberline {13.4}Example 2}{149}{section.13.4}%
-\contentsline {subsection}{\numberline {13.4.1}The Question}{149}{subsection.13.4.1}%
-\contentsline {subsubsection}{\nonumberline The Question:}{150}{section*.162}%
-\contentsline {subsection}{\numberline {13.4.2}Working Through Example 2}{150}{subsection.13.4.2}%
-\contentsline {subsection}{\numberline {13.4.3}Large Samples, Free Data, and Free Software}{152}{subsection.13.4.3}%
-\contentsline {section}{\numberline {13.5}Key Words}{153}{section.13.5}%
-\contentsline {paragraph}{\nonumberline Exercises}{154}{section*.163}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~13.6-1:}{154}{section*.164}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~13.6-2:}{154}{section*.165}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~13.6-3:}{154}{section*.166}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~13.6-4:}{154}{section*.167}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~13.6-5:}{154}{section*.168}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~13.6-6:}{154}{section*.169}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~13.6-7:}{154}{section*.170}%
-\contentsline {chapter}{\numberline {14}Categorical Variables: Association or Independence}{157}{chapter.14}%
-\contentsline {section}{\numberline {14.1}Objectives}{157}{section.14.1}%
-\contentsline {section}{\numberline {14.2}Association versus independence in an r x c table}{157}{section.14.2}%
-\contentsline {subsection}{\numberline {14.2.1}Testing for statistical association}{159}{subsection.14.2.1}%
-\contentsline {section}{\numberline {14.3}Key Words}{160}{section.14.3}%
-\contentsline {paragraph}{\nonumberline Exercises}{161}{section*.171}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~14.4-1:}{161}{section*.172}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~14.4-2:}{161}{section*.173}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~14.4-3:}{161}{section*.174}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~14.4-4:}{161}{section*.175}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~14.4-5:}{161}{section*.176}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~14.4-6:}{162}{section*.177}%
-\contentsline {chapter}{\numberline {15}Correlation}{163}{chapter.15}%
-\contentsline {section}{\numberline {15.1}Objectives}{163}{section.15.1}%
-\contentsline {section}{\numberline {15.2}Computing the Pearson Correlation Coefficient}{164}{section.15.2}%
-\contentsline {section}{\numberline {15.3}Key Words}{167}{section.15.3}%
-\contentsline {paragraph}{\nonumberline Exercises}{168}{section*.178}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~15.4-1:}{168}{section*.179}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~15.4-2:}{168}{section*.180}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~15.4-3:}{168}{section*.181}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~15.4-4:}{168}{section*.182}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~15.4-5:}{168}{section*.183}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~15.4-6:}{168}{section*.184}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~15.4-7:}{168}{section*.185}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~15.4-8:}{169}{section*.186}%
-\contentsline {chapter}{\numberline {16}Linear Regression}{171}{chapter.16}%
-\contentsline {section}{\numberline {16.1}Objectives}{171}{section.16.1}%
-\contentsline {section}{\numberline {16.2}Simple Linear Regression}{171}{section.16.2}%
-\contentsline {subsubsection}{\nonumberline Problem:}{172}{section*.187}%
-\contentsline {section}{\numberline {16.3}Calculating the Least Squares Regression Line}{173}{section.16.3}%
-\contentsline {section}{\numberline {16.4}More on Simple Regression}{175}{section.16.4}%
-\contentsline {section}{\numberline {16.5}A 95\% Confidence Interval for Slope}{176}{section.16.5}%
-\contentsline {section}{\numberline {16.6}Key Words}{177}{section.16.6}%
-\contentsline {paragraph}{\nonumberline Exercises}{178}{section*.188}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~16.7-1:}{178}{section*.189}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~16.7-2:}{178}{section*.190}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~16.7-3:}{178}{section*.191}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~16.7-4:}{179}{section*.192}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~16.7-5:}{179}{section*.193}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~16.7-6:}{180}{section*.194}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~16.7-7:}{180}{section*.195}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~16.7-8:}{181}{section*.196}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~16.7-9:}{181}{section*.197}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~16.7-10:}{181}{section*.198}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~16.7-11:}{181}{section*.199}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~16.7-12:}{181}{section*.200}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~16.7-13:}{182}{section*.201}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~16.7-14:}{182}{section*.202}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~16.7-15:}{182}{section*.203}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~16.7-16:}{182}{section*.204}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~16.7-17:}{182}{section*.205}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~16.7-18:}{183}{section*.206}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~16.7-19:}{183}{section*.207}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~16.7-20:}{183}{section*.208}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~16.7-21:}{183}{section*.209}%
-\contentsline {chapter}{\numberline {17}Workshops}{185}{chapter.17}%
-\contentsline {paragraph}{\nonumberline Exercises}{186}{section*.210}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~17.-1:}{186}{section*.211}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~17.-2:}{187}{section*.212}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~17.-3:}{188}{section*.213}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~17.-4:}{189}{section*.214}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~17.-5:}{190}{section*.215}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~17.-6:}{191}{section*.216}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~17.-7:}{192}{section*.217}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~17.-8:}{194}{section*.218}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~17.-9:}{195}{section*.219}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~17.-10:}{196}{section*.220}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~17.-11:}{197}{section*.221}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~17.-12:}{198}{section*.222}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~17.-13:}{199}{section*.223}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~17.-14:}{200}{section*.224}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~17.-15:}{201}{section*.225}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~17.-16:}{202}{section*.226}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~17.-17:}{203}{section*.227}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~17.-18:}{204}{section*.228}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~17.-19:}{205}{section*.229}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~17.-20:}{206}{section*.230}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~17.-21:}{207}{section*.231}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~17.-22:}{208}{section*.232}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~17.-23:}{209}{section*.233}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~17.-24:}{210}{section*.234}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~17.-25:}{211}{section*.235}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~17.-26:}{212}{section*.236}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~17.-27:}{213}{section*.237}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~17.-28:}{214}{section*.238}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~17.-29:}{215}{section*.239}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~17.-30:}{216}{section*.240}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~17.-31:}{217}{section*.241}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~17.-32:}{218}{section*.242}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~17.-33:}{219}{section*.243}%
-\contentsline {chapter}{\numberline {18}Workshops}{221}{chapter.18}%
-\contentsline {paragraph}{\nonumberline Exercises}{222}{section*.244}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~18.-1:}{222}{section*.245}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~18.-2:}{223}{section*.246}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~18.-3:}{224}{section*.247}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~18.-4:}{225}{section*.248}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~18.-5:}{226}{section*.249}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~18.-6:}{227}{section*.250}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~18.-7:}{228}{section*.251}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~18.-8:}{229}{section*.252}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~18.-9:}{230}{section*.253}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~18.-10:}{231}{section*.254}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~18.-11:}{232}{section*.255}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~18.-12:}{234}{section*.256}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~18.-13:}{235}{section*.257}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~18.-14:}{236}{section*.258}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~18.-15:}{237}{section*.259}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~18.-16:}{238}{section*.260}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~18.-17:}{239}{section*.261}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~18.-18:}{240}{section*.262}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~18.-19:}{241}{section*.263}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~18.-20:}{242}{section*.264}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~18.-21:}{243}{section*.265}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~18.-22:}{244}{section*.266}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~18.-23:}{245}{section*.267}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~18.-24:}{246}{section*.268}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~18.-25:}{247}{section*.269}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~18.-26:}{248}{section*.270}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~18.-27:}{249}{section*.271}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~18.-28:}{250}{section*.272}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~18.-29:}{251}{section*.273}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~18.-30:}{253}{section*.274}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~18.-31:}{254}{section*.275}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~18.-32:}{255}{section*.276}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~18.-33:}{256}{section*.277}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~18.-34:}{257}{section*.278}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~18.-35:}{258}{section*.279}%
-\contentsline {subparagraph}{\nonumberline Exercise{}~18.-36:}{259}{section*.280}%
+\contentsline {subsection}{\numberline {1.3.1}Building Knowledge Step-by-step}{10}{subsection.1.3.1}%
+\contentsline {subsubsection}{1. Conceptualize the problem}{10}{section*.6}%
+\contentsline {subsubsection}{2. Operationalize the problem}{11}{section*.7}%
+\contentsline {subsubsection}{3. Design the study}{11}{section*.8}%
+\contentsline {subsubsection}{4. Collect the data}{11}{section*.9}%
+\contentsline {subsubsection}{5. Analyze the data}{11}{section*.10}%
+\contentsline {subsubsection}{6. Conclusions}{12}{section*.11}%
+\contentsline {subsubsection}{7. Disseminate results}{12}{section*.12}%
+\contentsline {subsubsection}{The Science Wheel Summarizes the above Steps}{12}{section*.13}%
+\contentsline {subsection}{\numberline {1.3.2}Example}{12}{subsection.1.3.2}%
+\contentsline {subsubsection}{1. Conceptualize the problem}{13}{section*.14}%
+\contentsline {subsubsection}{2. Operationalize the problem}{13}{section*.15}%
+\contentsline {subsubsection}{3. Design the study}{13}{section*.16}%
+\contentsline {subsubsection}{4. Collect the data}{13}{section*.17}%
+\contentsline {subsubsection}{5. Analyze the data}{14}{section*.18}%
+\contentsline {subsubsection}{6. Conclusions}{14}{section*.19}%
+\contentsline {subsubsection}{7. Disseminate results}{14}{section*.20}%
+\contentsline {subsection}{\numberline {1.3.3}A final product}{14}{subsection.1.3.3}%
+\contentsline {subsubsection}{Context}{14}{section*.21}%
+\contentsline {subsubsection}{Objective}{14}{section*.22}%
+\contentsline {subsubsection}{Main Outcome Measures}{15}{section*.23}%
+\contentsline {subsubsection}{Results}{15}{section*.24}%
+\contentsline {subsubsection}{Conclusions}{15}{section*.25}%
+\contentsline {section}{\numberline {1.4}Common Fallacies}{16}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}Some fallacies in interpreting evidence}{16}{subsection.1.4.1}%
+\contentsline {section}{\numberline {1.5}Key Words}{17}{section.1.5}%
+\contentsline {section}{\numberline {1.6}}{18}{section.1.6}%
+\contentsline {paragraph}{Exercises}{18}{section*.26}%
+\contentsline {subparagraph}{Exercise{}~1.6-1:}{18}{section*.27}%
+\contentsline {subparagraph}{Exercise{}~1.6-2:}{18}{section*.28}%
+\contentsline {subparagraph}{Exercise{}~1.6-3:}{18}{section*.29}%
+\contentsline {subparagraph}{Exercise{}~1.6-4:}{18}{section*.30}%
+\contentsline {subparagraph}{Exercise{}~1.6-5:}{18}{section*.31}%
+\contentsline {subparagraph}{Exercise{}~1.6-6:}{18}{section*.32}%
+\contentsline {chapter}{\numberline {2}Data Presentation}{19}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Objectives}{19}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Statistics and Data}{19}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Classification of variables}{20}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Levels of Measurement}{20}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Numerical versus categorical variables}{21}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Dependent versus independent variables}{22}{subsection.2.3.3}%
+\contentsline {section}{\numberline {2.4}Summarizing Categorical Data}{23}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Relative Frequency Table}{24}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Pie Chart}{25}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.3}Bar Chart}{26}{subsection.2.4.3}%
+\contentsline {section}{\numberline {2.5}Summarizing numerical data}{26}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Stem-and-Leaf Plot}{27}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.5.2}Relative Frequency Table and Histogram}{27}{subsection.2.5.2}%
+\contentsline {subsection}{\numberline {2.5.3}Dot Plot}{29}{subsection.2.5.3}%
+\contentsline {subsection}{\numberline {2.5.4}Box-and-Whisker Plot}{30}{subsection.2.5.4}%
+\contentsline {subsection}{\numberline {2.5.5}Symmetry and Skewness}{33}{subsection.2.5.5}%
+\contentsline {section}{\numberline {2.6}Key Words}{34}{section.2.6}%
+\contentsline {section}{\numberline {2.7}Summary}{34}{section.2.7}%
+\contentsline {section}{\numberline {2.8}}{35}{section.2.8}%
+\contentsline {paragraph}{Exercises}{35}{section*.33}%
+\contentsline {subparagraph}{Exercise{}~2.8-1:}{35}{section*.34}%
+\contentsline {subparagraph}{Exercise{}~2.8-2:}{35}{section*.35}%
+\contentsline {subparagraph}{Exercise{}~2.8-3:}{35}{section*.36}%
+\contentsline {subparagraph}{Exercise{}~2.8-4:}{36}{section*.37}%
+\contentsline {subparagraph}{Exercise{}~2.8-5:}{36}{section*.38}%
+\contentsline {subparagraph}{Exercise{}~2.8-6:}{36}{section*.39}%
+\contentsline {subparagraph}{Exercise{}~2.8-7:}{36}{section*.40}%
+\contentsline {subparagraph}{Exercise{}~2.8-8:}{37}{section*.41}%
+\contentsline {subparagraph}{Exercise{}~2.8-9:}{37}{section*.42}%
+\contentsline {subparagraph}{Exercise{}~2.8-10:}{37}{section*.43}%
+\contentsline {subparagraph}{Exercise{}~2.8-11:}{37}{section*.44}%
+\contentsline {subparagraph}{Exercise{}~2.8-12:}{37}{section*.45}%
+\contentsline {chapter}{\numberline {3}Descriptive Statistics}{39}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Objectives}{39}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Estimates of Center}{39}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}The Sample Mean}{40}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}The Sample Median}{40}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}The Trimmed Mean}{41}{subsection.3.2.3}%
+\contentsline {section}{\numberline {3.3}Estimate of Spread (or Uncertainty or Variation)}{41}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}The Sample Standard Deviation}{42}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Effect of Multiplication and Addition by a Constant}{43}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Risk ratio and odds ratio}{45}{subsection.3.3.3}%
+\contentsline {subsection}{\numberline {3.3.4}Risk ratio}{45}{subsection.3.3.4}%
+\contentsline {subsubsection}{Background}{45}{section*.46}%
+\contentsline {subsubsection}{Methods}{46}{section*.47}%
+\contentsline {subsubsection}{Results}{46}{section*.48}%
+\contentsline {subsubsection}{Conclusion}{46}{section*.49}%
+\contentsline {subsection}{\numberline {3.3.5}Odds ratio}{47}{subsection.3.3.5}%
+\contentsline {section}{\numberline {3.4}Key Words}{48}{section.3.4}%
+\contentsline {section}{\numberline {3.5}}{49}{section.3.5}%
+\contentsline {paragraph}{Exercises}{49}{section*.50}%
+\contentsline {subparagraph}{Exercise{}~3.5-1:}{49}{section*.51}%
+\contentsline {subparagraph}{Exercise{}~3.5-2:}{49}{section*.52}%
+\contentsline {subparagraph}{Exercise{}~3.5-3:}{49}{section*.53}%
+\contentsline {subparagraph}{Exercise{}~3.5-4:}{49}{section*.54}%
+\contentsline {subparagraph}{Exercise{}~3.5-5:}{50}{section*.55}%
+\contentsline {subparagraph}{Exercise{}~3.5-6:}{50}{section*.56}%
+\contentsline {subparagraph}{Exercise{}~3.5-7:}{50}{section*.57}%
+\contentsline {subparagraph}{Exercise{}~3.5-8:}{50}{section*.58}%
+\contentsline {subparagraph}{Exercise{}~3.5-9:}{51}{table.3.3}%
+\contentsline {subparagraph}{Exercise{}~3.5-10:}{51}{section*.60}%
+\contentsline {subparagraph}{Exercise{}~3.5-11:}{51}{section*.61}%
+\contentsline {subparagraph}{Exercise{}~3.5-12:}{51}{section*.62}%
+\contentsline {subparagraph}{Exercise{}~3.5-13:}{51}{section*.63}%
+\contentsline {subparagraph}{Exercise{}~3.5-14:}{51}{section*.64}%
+\contentsline {chapter}{\numberline {4}Threats to Valid Comparisons}{53}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Objectives}{53}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Hidden Confounder}{53}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Apples and Oranges}{54}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}In the news}{55}{subsection.4.2.2}%
+\contentsline {section}{\numberline {4.3}Key Words}{56}{section.4.3}%
+\contentsline {section}{\numberline {4.4}}{57}{section.4.4}%
+\contentsline {paragraph}{Exercises}{57}{section*.65}%
+\contentsline {subparagraph}{Exercise{}~4.4-1:}{57}{section*.66}%
+\contentsline {subparagraph}{Exercise{}~4.4-2:}{57}{section*.67}%
+\contentsline {subparagraph}{Exercise{}~4.4-3:}{57}{section*.68}%
+\contentsline {subparagraph}{Exercise{}~4.4-4:}{57}{section*.69}%
+\contentsline {chapter}{\numberline {5}Study Designs}{59}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Objective}{59}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Randomized trials}{59}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Double blind randomized controlled trials (RCT)}{60}{subsection.5.2.1}%
+\contentsline {section}{\numberline {5.3}Observational studies}{62}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Case-control studies}{64}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Case-crossover studies}{65}{subsection.5.3.2}%
+\contentsline {section}{\numberline {5.4}Key Words}{65}{section.5.4}%
+\contentsline {section}{\numberline {5.5}}{67}{section.5.5}%
+\contentsline {paragraph}{Exercises}{67}{section*.70}%
+\contentsline {subparagraph}{Exercise{}~5.5-1:}{67}{section*.71}%
+\contentsline {subparagraph}{Exercise{}~5.5-2:}{67}{section*.72}%
+\contentsline {subparagraph}{Exercise{}~5.5-3:}{67}{section*.73}%
+\contentsline {subparagraph}{Exercise{}~5.5-4:}{67}{section*.74}%
+\contentsline {subparagraph}{Exercise{}~5.5-5:}{67}{section*.75}%
+\contentsline {subparagraph}{Exercise{}~5.5-6:}{67}{section*.76}%
+\contentsline {subparagraph}{Exercise{}~5.5-7:}{67}{section*.77}%
+\contentsline {subparagraph}{Exercise{}~5.5-8:}{67}{section*.78}%
+\contentsline {chapter}{\numberline {6}The Normal Distribution}{69}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Objective}{69}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Using the normal curve}{69}{section.6.2}%
+\contentsline {subsubsection}{Problem 6.2.1}{69}{section*.79}%
+\contentsline {subsubsection}{Problem 6.2.2}{69}{section*.80}%
+\contentsline {subsubsection}{The Standard Normal or Z Curve}{70}{section*.81}%
+\contentsline {section}{\numberline {6.3}Calculating percentiles}{72}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Calculating symmetric tail areas}{73}{section.6.4}%
+\contentsline {section}{\numberline {6.5}The Empirical Rule}{74}{section.6.5}%
+\contentsline {section}{\numberline {6.6}Key Words}{74}{section.6.6}%
+\contentsline {section}{\numberline {6.7}}{76}{section.6.7}%
+\contentsline {paragraph}{Exercises}{76}{section*.82}%
+\contentsline {subparagraph}{Exercise{}~6.7-1:}{76}{section*.83}%
+\contentsline {subparagraph}{Exercise{}~6.7-2:}{76}{section*.84}%
+\contentsline {subparagraph}{Exercise{}~6.7-3:}{76}{section*.85}%
+\contentsline {subparagraph}{Exercise{}~6.7-4:}{76}{section*.86}%
+\contentsline {subparagraph}{Exercise{}~6.7-5:}{76}{section*.87}%
+\contentsline {subparagraph}{Exercise{}~6.7-6:}{76}{section*.88}%
+\contentsline {subparagraph}{Exercise{}~6.7-7:}{77}{section*.89}%
+\contentsline {subparagraph}{Exercise{}~6.7-8:}{77}{section*.90}%
+\contentsline {subparagraph}{Exercise{}~6.7-9:}{77}{section*.91}%
+\contentsline {subparagraph}{Exercise{}~6.7-10:}{77}{section*.92}%
+\contentsline {subparagraph}{Exercise{}~6.7-11:}{77}{section*.93}%
+\contentsline {subparagraph}{Exercise{}~6.7-12:}{77}{section*.94}%
+\contentsline {subparagraph}{Exercise{}~6.7-13:}{78}{section*.95}%
+\contentsline {subparagraph}{Exercise{}~6.7-14:}{78}{section*.96}%
+\contentsline {subparagraph}{Exercise{}~6.7-15:}{78}{section*.97}%
+\contentsline {subparagraph}{Exercise{}~6.7-16:}{78}{section*.98}%
+\contentsline {chapter}{\numberline {7}The Binomial Distribution}{79}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Objectives}{79}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Binomial Probabilities}{79}{section.7.2}%
+\contentsline {subsubsection}{Example 1}{80}{section*.99}%
+\contentsline {subsubsection}{Example 2}{80}{section*.100}%
+\contentsline {subsubsection}{Example 3}{80}{section*.101}%
+\contentsline {section}{\numberline {7.3}Computing Binomial Probabilities}{80}{section.7.3}%
+\contentsline {subsubsection}{Example 3}{81}{section*.102}%
+\contentsline {section}{\numberline {7.4}Expected Value and SD of a Binomial Random Variable}{81}{section.7.4}%
+\contentsline {section}{\numberline {7.5}Computing Binomial Probabilities Using the Normal Curve}{82}{section.7.5}%
+\contentsline {section}{\numberline {7.6}Some Approximations Are Better Than Others}{83}{section.7.6}%
+\contentsline {section}{\numberline {7.7}Key Words}{84}{section.7.7}%
+\contentsline {section}{\numberline {7.8}}{86}{section.7.8}%
+\contentsline {paragraph}{Exercises}{86}{section*.103}%
+\contentsline {subparagraph}{Exercise{}~7.8-1:}{86}{section*.104}%
+\contentsline {subparagraph}{Exercise{}~7.8-2:}{86}{section*.105}%
+\contentsline {subparagraph}{Exercise{}~7.8-3:}{86}{section*.106}%
+\contentsline {subparagraph}{Exercise{}~7.8-4:}{86}{section*.107}%
+\contentsline {subparagraph}{Exercise{}~7.8-5:}{86}{section*.108}%
+\contentsline {subparagraph}{Exercise{}~7.8-6:}{86}{section*.109}%
+\contentsline {subparagraph}{Exercise{}~7.8-7:}{86}{section*.110}%
+\contentsline {subparagraph}{Exercise{}~7.8-8:}{87}{section*.111}%
+\contentsline {subparagraph}{Exercise{}~7.8-9:}{87}{section*.112}%
+\contentsline {chapter}{\numberline {8}Sampling Distribution of the Proportion}{89}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Objective}{89}{section.8.1}%
+\contentsline {section}{\numberline {8.2}The Sample Proportion}{89}{section.8.2}%
+\contentsline {subsection}{\numberline {8.2.1}Sampling Distribution of p-hat is Approximately Normal}{91}{subsection.8.2.1}%
+\contentsline {section}{\numberline {8.3}Estimating the Population Proportion p}{92}{section.8.3}%
+\contentsline {section}{\numberline {8.4}Estimating Population Proportion Using Intervals}{93}{section.8.4}%
+\contentsline {section}{\numberline {8.5}Sample Size for Estimating the Population Proportion}{94}{section.8.5}%
+\contentsline {subsubsection}{Example:}{95}{section*.113}%
+\contentsline {section}{\numberline {8.6}Key Words}{95}{section.8.6}%
+\contentsline {section}{\numberline {8.7}}{96}{section.8.7}%
+\contentsline {paragraph}{Exercises}{96}{section*.114}%
+\contentsline {subparagraph}{Exercise{}~8.7-1:}{96}{section*.115}%
+\contentsline {subparagraph}{Exercise{}~8.7-2:}{96}{section*.116}%
+\contentsline {subparagraph}{Exercise{}~8.7-3:}{96}{section*.117}%
+\contentsline {subparagraph}{Exercise{}~8.7-4:}{96}{section*.118}%
+\contentsline {subparagraph}{Exercise{}~8.7-5:}{96}{section*.119}%
+\contentsline {subparagraph}{Exercise{}~8.7-6:}{96}{section*.120}%
+\contentsline {subparagraph}{Exercise{}~8.7-7:}{97}{section*.121}%
+\contentsline {subparagraph}{Exercise{}~8.7-8:}{97}{section*.122}%
+\contentsline {subparagraph}{Exercise{}~8.7-9:}{97}{section*.123}%
+\contentsline {chapter}{\numberline {9}Comparing Two Proportions }{99}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Objectives}{99}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Estimating the difference between independent proportions}{99}{section.9.2}%
+\contentsline {subsection}{\numberline {9.2.1}Using a confidence interval}{100}{subsection.9.2.1}%
+\contentsline {section}{\numberline {9.3}Statistical significance}{101}{section.9.3}%
+\contentsline {subsection}{\numberline {9.3.1}The P-value}{102}{subsection.9.3.1}%
+\contentsline {section}{\numberline {9.4}Key Words}{103}{section.9.4}%
+\contentsline {section}{\numberline {9.5}}{104}{section.9.5}%
+\contentsline {paragraph}{Exercises}{104}{section*.124}%
+\contentsline {subparagraph}{Exercise{}~9.5-1:}{104}{section*.125}%
+\contentsline {subparagraph}{Exercise{}~9.5-2:}{104}{section*.126}%
+\contentsline {subparagraph}{Exercise{}~9.5-3:}{104}{section*.127}%
+\contentsline {subparagraph}{Exercise{}~9.5-4:}{105}{section*.128}%
+\contentsline {subparagraph}{Exercise{}~9.5-5:}{105}{section*.129}%
+\contentsline {subparagraph}{Exercise{}~9.5-6:}{105}{section*.130}%
+\contentsline {subparagraph}{Exercise{}~9.5-7:}{106}{section*.131}%
+\contentsline {chapter}{\numberline {10}More Comparing of Two Proportions}{107}{chapter.10}%
+\contentsline {section}{\numberline {10.1}Objective}{107}{section.10.1}%
+\contentsline {section}{\numberline {10.2}Example 1}{107}{section.10.2}%
+\contentsline {subsection}{\numberline {10.2.1}Is your colleague Cheating?}{107}{subsection.10.2.1}%
+\contentsline {subsection}{\numberline {10.2.2}Define Hypotheses Testing}{108}{subsection.10.2.2}%
+\contentsline {subsubsection}{Definition:}{109}{section*.132}%
+\contentsline {subsubsection}{Definition:}{109}{section*.133}%
+\contentsline {section}{\numberline {10.3}Testing Hypotheses }{109}{section.10.3}%
+\contentsline {subsection}{\numberline {10.3.1}Example 1}{109}{subsection.10.3.1}%
+\contentsline {subsection}{\numberline {10.3.2}Example 2}{112}{subsection.10.3.2}%
+\contentsline {section}{\numberline {10.4}Types of Errors}{114}{section.10.4}%
+\contentsline {section}{\numberline {10.5}Key Words}{114}{section.10.5}%
+\contentsline {section}{\numberline {10.6}}{115}{section.10.6}%
+\contentsline {paragraph}{Exercises}{115}{section*.134}%
+\contentsline {subparagraph}{Exercise{}~10.6-1:}{115}{section*.135}%
+\contentsline {subparagraph}{Exercise{}~10.6-2:}{115}{section*.136}%
+\contentsline {subparagraph}{Exercise{}~10.6-3:}{115}{section*.137}%
+\contentsline {subparagraph}{Exercise{}~10.6-4:}{116}{section*.138}%
+\contentsline {subparagraph}{Exercise{}~10.6-5:}{116}{section*.139}%
+\contentsline {subparagraph}{Exercise{}~10.6-6:}{116}{section*.140}%
+\contentsline {chapter}{\numberline {11}Sampling Distribution of the Mean}{117}{chapter.11}%
+\contentsline {section}{\numberline {11.1}Objectives}{117}{section.11.1}%
+\contentsline {section}{\numberline {11.2}Behavioral Properties of the Sample Average}{117}{section.11.2}%
+\contentsline {subsubsection}{Example 1}{119}{section*.141}%
+\contentsline {section}{\numberline {11.3}Estimating the Population Mean}{119}{section.11.3}%
+\contentsline {subsubsection}{Example 2}{120}{section*.142}%
+\contentsline {section}{\numberline {11.4}Estimating the Population Mean Using Intervals}{120}{section.11.4}%
+\contentsline {section}{\numberline {11.5}Sample Size for Estimating the Population Mean}{120}{section.11.5}%
+\contentsline {section}{\numberline {11.6}Key Words}{121}{section.11.6}%
+\contentsline {section}{\numberline {11.7}}{122}{section.11.7}%
+\contentsline {paragraph}{Exercises}{122}{section*.143}%
+\contentsline {subparagraph}{Exercise{}~11.7-1:}{122}{section*.144}%
+\contentsline {subparagraph}{Exercise{}~11.7-2:}{122}{section*.145}%
+\contentsline {subparagraph}{Exercise{}~11.7-3:}{122}{section*.146}%
+\contentsline {subparagraph}{Exercise{}~11.7-4:}{122}{section*.147}%
+\contentsline {subparagraph}{Exercise{}~11.7-5:}{122}{section*.148}%
+\contentsline {subparagraph}{Exercise{}~11.7-6:}{123}{section*.149}%
+\contentsline {subparagraph}{Exercise{}~11.7-7:}{123}{section*.150}%
+\contentsline {chapter}{\numberline {12}Comparing Two Means}{125}{chapter.12}%
+\contentsline {section}{\numberline {12.1}Objectives}{125}{section.12.1}%
+\contentsline {section}{\numberline {12.2}Estimating the Difference between Independent Means}{125}{section.12.2}%
+\contentsline {subsection}{\numberline {12.2.1}Using a confidence interval}{127}{subsection.12.2.1}%
+\contentsline {subsubsection}{Confidence Interval - Concepts:}{127}{section*.151}%
+\contentsline {subsubsection}{Confidence Interval - Calculations and Examples:}{128}{section*.152}%
+\contentsline {subsection}{\numberline {12.2.2}Statistical Significance}{129}{subsection.12.2.2}%
+\contentsline {subsection}{\numberline {12.2.3}The P-value}{129}{subsection.12.2.3}%
+\contentsline {section}{\numberline {12.3}Paired data (before-and-after)}{130}{section.12.3}%
+\contentsline {subsection}{\numberline {12.3.1}Paired Data}{131}{subsection.12.3.1}%
+\contentsline {section}{\numberline {12.4}Key Words}{132}{section.12.4}%
+\contentsline {section}{\numberline {12.5}}{133}{section.12.5}%
+\contentsline {paragraph}{Exercises}{133}{section*.153}%
+\contentsline {subparagraph}{Exercise{}~12.5-1:}{133}{section*.154}%
+\contentsline {subparagraph}{Exercise{}~12.5-2:}{133}{section*.155}%
+\contentsline {subparagraph}{Exercise{}~12.5-3:}{133}{section*.156}%
+\contentsline {subparagraph}{Exercise{}~12.5-4:}{134}{section*.157}%
+\contentsline {subparagraph}{Exercise{}~12.5-5:}{134}{section*.158}%
+\contentsline {subparagraph}{Exercise{}~12.5-6:}{134}{section*.159}%
+\contentsline {subparagraph}{Exercise{}~12.5-7:}{134}{section*.160}%
+\contentsline {subparagraph}{Exercise{}~12.5-8:}{134}{table.12.4}%
+\contentsline {chapter}{\numberline {13}More Comparing Two Means}{137}{chapter.13}%
+\contentsline {section}{\numberline {13.1}Objectives}{137}{section.13.1}%
+\contentsline {section}{\numberline {13.2}Overview and Example 1}{137}{section.13.2}%
+\contentsline {subsection}{\numberline {13.2.1}Grade Inflation Revisited}{137}{subsection.13.2.1}%
+\contentsline {subsection}{\numberline {13.2.2}Define Hypotheses Testing}{138}{subsection.13.2.2}%
+\contentsline {subsubsection}{Definition:}{138}{section*.162}%
+\contentsline {subsubsection}{Definition:}{138}{section*.163}%
+\contentsline {section}{\numberline {13.3}Calculation and Analysis for Example 1}{139}{section.13.3}%
+\contentsline {section}{\numberline {13.4}Example 2}{141}{section.13.4}%
+\contentsline {subsection}{\numberline {13.4.1}The Question}{141}{subsection.13.4.1}%
+\contentsline {subsubsection}{The Question:}{141}{section*.164}%
+\contentsline {subsection}{\numberline {13.4.2}Working Through Example 2}{141}{subsection.13.4.2}%
+\contentsline {subsection}{\numberline {13.4.3}Large Samples, Free Data, and Free Software }{143}{subsection.13.4.3}%
+\contentsline {section}{\numberline {13.5}Key Words}{144}{section.13.5}%
+\contentsline {section}{\numberline {13.6}}{145}{section.13.6}%
+\contentsline {paragraph}{Exercises}{145}{section*.165}%
+\contentsline {subparagraph}{Exercise{}~13.6-1:}{145}{section*.166}%
+\contentsline {subparagraph}{Exercise{}~13.6-2:}{145}{section*.167}%
+\contentsline {subparagraph}{Exercise{}~13.6-3:}{145}{section*.168}%
+\contentsline {subparagraph}{Exercise{}~13.6-4:}{145}{section*.169}%
+\contentsline {subparagraph}{Exercise{}~13.6-5:}{145}{section*.170}%
+\contentsline {subparagraph}{Exercise{}~13.6-6:}{145}{section*.171}%
+\contentsline {subparagraph}{Exercise{}~13.6-7:}{145}{section*.172}%
+\contentsline {chapter}{\numberline {14}Categorical Variables: Association or Independence}{147}{chapter.14}%
+\contentsline {section}{\numberline {14.1}Objectives}{147}{section.14.1}%
+\contentsline {section}{\numberline {14.2}Association versus independence in an r x c table}{147}{section.14.2}%
+\contentsline {subsection}{\numberline {14.2.1}Testing for statistical association}{149}{subsection.14.2.1}%
+\contentsline {section}{\numberline {14.3}Key Words}{150}{section.14.3}%
+\contentsline {section}{\numberline {14.4}}{151}{section.14.4}%
+\contentsline {paragraph}{Exercises}{151}{section*.173}%
+\contentsline {subparagraph}{Exercise{}~14.4-1:}{151}{section*.174}%
+\contentsline {subparagraph}{Exercise{}~14.4-2:}{151}{section*.175}%
+\contentsline {subparagraph}{Exercise{}~14.4-3:}{151}{section*.176}%
+\contentsline {subparagraph}{Exercise{}~14.4-4:}{151}{section*.177}%
+\contentsline {subparagraph}{Exercise{}~14.4-5:}{151}{section*.178}%
+\contentsline {subparagraph}{Exercise{}~14.4-6:}{152}{section*.179}%
+\contentsline {chapter}{\numberline {15}Correlation}{153}{chapter.15}%
+\contentsline {section}{\numberline {15.1}Objectives}{153}{section.15.1}%
+\contentsline {section}{\numberline {15.2}Computing the Pearson Correlation Coefficient}{154}{section.15.2}%
+\contentsline {section}{\numberline {15.3}Key Words}{157}{section.15.3}%
+\contentsline {section}{\numberline {15.4}}{158}{section.15.4}%
+\contentsline {paragraph}{Exercises}{158}{section*.180}%
+\contentsline {subparagraph}{Exercise{}~15.4-1:}{158}{section*.181}%
+\contentsline {subparagraph}{Exercise{}~15.4-2:}{158}{section*.182}%
+\contentsline {subparagraph}{Exercise{}~15.4-3:}{158}{section*.183}%
+\contentsline {subparagraph}{Exercise{}~15.4-4:}{158}{section*.184}%
+\contentsline {subparagraph}{Exercise{}~15.4-5:}{158}{section*.185}%
+\contentsline {subparagraph}{Exercise{}~15.4-6:}{158}{section*.186}%
+\contentsline {subparagraph}{Exercise{}~15.4-7:}{158}{section*.187}%
+\contentsline {subparagraph}{Exercise{}~15.4-8:}{158}{section*.188}%
+\contentsline {chapter}{\numberline {16}Linear Regression}{161}{chapter.16}%
+\contentsline {section}{\numberline {16.1}Objectives}{161}{section.16.1}%
+\contentsline {section}{\numberline {16.2}Simple Linear Regression}{161}{section.16.2}%
+\contentsline {subsubsection}{Problem:}{162}{section*.189}%
+\contentsline {section}{\numberline {16.3}Calculating the Least Squares Regression Line}{163}{section.16.3}%
+\contentsline {section}{\numberline {16.4}More on Simple Regression}{164}{section.16.4}%
+\contentsline {section}{\numberline {16.5}A 95\% Confidence Interval for Slope}{165}{section.16.5}%
+\contentsline {section}{\numberline {16.6}Key Words}{167}{section.16.6}%
+\contentsline {section}{\numberline {16.7}}{168}{section.16.7}%
+\contentsline {paragraph}{Exercises}{168}{section*.190}%
+\contentsline {subparagraph}{Exercise{}~16.7-1:}{168}{section*.191}%
+\contentsline {subparagraph}{Exercise{}~16.7-2:}{168}{section*.192}%
+\contentsline {subparagraph}{Exercise{}~16.7-3:}{168}{section*.193}%
+\contentsline {subparagraph}{Exercise{}~16.7-4:}{169}{section*.194}%
+\contentsline {subparagraph}{Exercise{}~16.7-5:}{169}{section*.195}%
+\contentsline {subparagraph}{Exercise{}~16.7-6:}{170}{section*.196}%
+\contentsline {subparagraph}{Exercise{}~16.7-7:}{170}{section*.197}%
+\contentsline {subparagraph}{Exercise{}~16.7-8:}{171}{section*.198}%
+\contentsline {subparagraph}{Exercise{}~16.7-9:}{171}{section*.199}%
+\contentsline {subparagraph}{Exercise{}~16.7-10:}{171}{section*.200}%
+\contentsline {subparagraph}{Exercise{}~16.7-11:}{171}{section*.201}%
+\contentsline {subparagraph}{Exercise{}~16.7-12:}{171}{section*.202}%
+\contentsline {subparagraph}{Exercise{}~16.7-13:}{172}{section*.203}%
+\contentsline {subparagraph}{Exercise{}~16.7-14:}{172}{section*.204}%
+\contentsline {subparagraph}{Exercise{}~16.7-15:}{172}{section*.205}%
+\contentsline {subparagraph}{Exercise{}~16.7-16:}{172}{section*.206}%
+\contentsline {subparagraph}{Exercise{}~16.7-17:}{172}{section*.207}%
+\contentsline {subparagraph}{Exercise{}~16.7-18:}{172}{section*.208}%
+\contentsline {subparagraph}{Exercise{}~16.7-19:}{173}{section*.209}%
+\contentsline {subparagraph}{Exercise{}~16.7-20:}{173}{section*.210}%
+\contentsline {subparagraph}{Exercise{}~16.7-21:}{173}{section*.211}%
+\contentsline {chapter}{\numberline {17}Workshops}{175}{chapter.17}%
+\contentsline {paragraph}{Exercises}{176}{section*.212}%
+\contentsline {subparagraph}{Exercise{}~17.-1:}{176}{section*.213}%
+\contentsline {subparagraph}{Exercise{}~17.-2:}{177}{section*.214}%
+\contentsline {subparagraph}{Exercise{}~17.-3:}{178}{section*.215}%
+\contentsline {subparagraph}{Exercise{}~17.-4:}{179}{section*.216}%
+\contentsline {subparagraph}{Exercise{}~17.-5:}{180}{section*.217}%
+\contentsline {subparagraph}{Exercise{}~17.-6:}{181}{section*.218}%

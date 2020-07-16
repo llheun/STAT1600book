@@ -21,11 +21,15 @@ The following table contains data on winning bid price for 12 Saturn cars on eBa
 
 Here is a scatterplot of the data.  Since Price depends on Miles (not the other way around), we let Price be the $Y$-variable, or the \textit{response variable}.    Miles is the $X$-variable, or the \textit{explanatory variable}.
 
-\begin{minipage}[ht]{7cm}
-%\begin{table}[ht]
-\centering 
-\begin{tabular}{@{} c rr @{}} \hline 
-Car & Miles & Price (\$) \\ \hline
+\newpage
+
+\begin{minipage}[ht]{5cm}
+
+% \begin{table}[ht]
+\centering
+{\small{
+\begin{tabular}{@{} c rr @{}} \hline
+Car & Miles & Price  \\ \hline
 1 & 9300 & 7100 \\
 2 & 10565 & 15500 \\
 3 & 15000 & 4400 \\
@@ -39,20 +43,28 @@ Car & Miles & Price (\$) \\ \hline
 11 & 146088 & 960 \\
 12 & 153260 & 1025 \\ \hline
 \end{tabular}
+}}
 %\end{table}
-\end{minipage}
-\begin{minipage}[ht]{7cm}
-% \begin{figure}[ht]
-\centering
-%\caption{
-Scatterplot of Price (\$) vs. Miles
 
-<<label=LBL16a, results="asis", echo=FALSE, out.width="7cm", out.height="7cm">>=
-ml1 <- c(9300,10565,15000,15000,17764,57000,65940,73676,77006,93739,146088,153260)
-prc1<- c(7100,15500,4400,4400,5900,4600,8800,2000,2750,2550,960,1025)
-  plot(ml1, prc1, xlab="Miles", ylab="Price ($)")
+\end{minipage} \hfill
+\begin{minipage}[ht]{9cm}
+
+%\begin{figure}[ht]
+ \centering
+%\caption{
+% Scatterplot of Price  vs. Miles
+
+<<label=LBL16a, results="asis", echo=FALSE, out.width="8cm", out.height="8cm">>=
+
+  ml1 <- c(9300,10565,15000,15000,17764,57000,65940,73676,77006,93739,146088,153260)
+  prc1<- c(7100,15500,4400,4400,5900,4600,8800,2000,2750,2550,960,1025)
+
+  tmp2 <- plot(ml1, prc1, xlab="Miles", ylab="Price", main="Scatterplot of Price  vs. Miles")
+  tmp2
+
 @
 % \end{figure}
+
 \end{minipage}
 
 \subsubsection{Problem:}
@@ -67,7 +79,7 @@ Notice that the points seem to fall around a \textit{straight line} sloping down
 \centering
 \caption{Least Squares (LS) Regression Line is overlayed on Scatterplot}
 
-<<label=LBL16b, results="asis", echo=FALSE, out.width="7cm", out.height="7cm" >>=
+<<label=LBL16b, results="asis", echo=FALSE, out.width="8cm", out.height="8cm" >>=
   tmp1 <- lm(prc1 ~ ml1)
   plot(ml1, prc1, xlab="Miles", ylab="Price ($)")
   abline(tmp1)
@@ -379,8 +391,8 @@ Moviegoers are \\ monitored for their level of anxiety while \\ watching a new h
 
  \begin{exercise} % 4       %%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-    How well does the number of beers a student drinks predict his or her
-blood alcohol content (BAC)? Sociology researchers, at Ohio State University, wanted to know if there is a relationship between the amount of beer consumed and BAC. The researchers assigned the number of cans of \\ beer to each student. After each student had consumed the assigned number of beers,  \\ thirty minutes later, an officer of the law \\ measured the students BAC. \\ \cite{OSU2016}  One  student drank nine beers. You see from the scatter plot that his BAC was about
+    How well does the \\ number of beers a student drinks predict his or her
+blood alcohol content (BAC)? Sociology researchers, at Ohio State University, \\ wanted to know if there is a relationship between the amount of beer consumed and \\ BAC. The researchers assigned the number of cans of \\ beer to each student. After each student had consumed the assigned number of beers,  \\ thirty minutes later, an officer of the law \\ measured the students BAC. \\ \cite{OSU2016}  One  student drank nine beers. You see from the scatter plot that his BAC was about
 \%.  A scatterplot of the data appears below.
 
 \begin{figure}[htbp] %  figure placement: here, top, bottom, or page
@@ -410,8 +422,8 @@ blood alcohol content (BAC)? Sociology researchers, at Ohio State University, wa
 
   \begin{exercise} % 5            %%%%%%%%%%%%%%%%%%%%
 
-    How well does the number of beers a student drinks predict his or her
-blood alcohol content (BAC)? Sociology researchers, at Ohio State University, wanted to know if there is a relationship between the amount of beer consumed and BAC. The researchers assigned the number of cans of \\ beer to each student. After each student had consumed the assigned number of beers,  \\ thirty minutes later, an officer of the law \\ measured the students BAC. \\ \cite{OSU2016}  A scatterplot of the data appears below.  The scatterplot shows
+    How well does the \\ number of beers a student drinks predict his or her
+blood alcohol content (BAC)? Sociology researchers, at Ohio State University, \\ wanted to know if there is a relationship between the amount of beer consumed and \\ BAC. The researchers assigned the number of cans of \\ beer to each student. After each student had consumed the assigned number of beers,  \\ thirty minutes later, an officer of the law \\ measured the students BAC. \\ \cite{OSU2016}  A scatterplot of the data appears below.  The scatterplot shows
 
 <<label=LBL16f, echo=FALSE, fig.pos="ht", fig.align="center", fig.width=3.5, fig.height=3.5,  out.width="7cm" >>=
       ### fig.cap="No. Beers vs. BAC",
@@ -442,8 +454,8 @@ blood alcohol content (BAC)? Sociology researchers, at Ohio State University, wa
 
   \begin{exercise} % 6         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-    How well does the number of beers a student drinks predict his or her
-blood alcohol content (BAC)? Sociology researchers, at Ohio State University, wanted to know if there is a relationship between the amount of beer consumed and BAC. The researchers assigned the number of cans of \\ beer to each student. After each student had consumed the assigned number of beers, \\ thirty minutes later, an officer of the law \\ measured the students BAC.  \\ \cite{OSU2016}
+    How well does the \\ number of beers a student drinks predict his or her
+blood alcohol content (BAC)? Sociology researchers, at Ohio State University, \\ wanted to know if there is a relationship between the amount of beer consumed and \\ BAC. The researchers assigned the number of cans of \\ beer to each student. After each student had consumed the assigned number of beers, \\ thirty minutes later, an officer of the law \\ measured the students BAC.  \\ \cite{OSU2016}
 A scatterplot of the data appears below.  A plausible value of the correlation between number of beers and blood alcohol content, based on the scatterplot, is
 
 \begin{figure}[htbp] %  figure placement: here, top, bottom, or page
@@ -518,7 +530,7 @@ abline(m12)
 
   \begin{exercise} % 8
 
-    STEP 2: Using the information from exercise four, we must state the hypotheses about its relationship between {\textit{income}} and {\textit{height}}.  Based on our experience, how should we state our hypotheses?
+    STEP 2: Using the information from exercise four, we must state the hypotheses about its relationship \\ between {\textit{income}} and {\textit{height}}.  Based on our experience, how should we state our hypotheses?
 
     \vspace{5mm}
     \framebox[5cm][l]{ Answer: }
@@ -647,7 +659,7 @@ What are the dependent and independent \\ variables?
 
   \begin{exercise} % 13
 
-    STEP 2: Using the information from exercise nine, we must state the hypotheses about its relationship between \\ {\textit{Happiness}}, {\textit{income}}, and {\textit{age}}.  Based on our experience, how should we state our hypotheses?
+    STEP 2: Using the information from exercise nine, we must state the hypotheses about its relationship \\ between  {\textit{Happiness}}, {\textit{income}}, and {\textit{age}}.  Based on our experience, how should we state our hypotheses?
 
     \vspace{5mm}
     \framebox[7cm][l]{ Answer: }
@@ -665,7 +677,7 @@ What are the dependent and independent \\ variables?
 
   \begin{exercise} % 14
 
-    STEP 3: Using the information from exercise 12, determine the coefficient of determination.
+    STEP 3: Using the information from exercise 12, determine the \\ coefficient of determination.
 
     \vspace{5mm}
     \framebox[5cm][l]{ Answer: }

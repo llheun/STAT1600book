@@ -1,4 +1,4 @@
-\documentclass[11pt, chapterprefix=true]{scrbook}
+\documentclass[11pt]{book}            %% [11pt, chapterprefix=true]{scrbook}
 \usepackage{color}
 \usepackage[colorlinks=true,linkcolor=blue,citecolor=blue]{hyperref}
 %\usepackage[lmargin=3cm, rmargin=2cm, showframe]{geometry}    % See geometry.pdf to learn the layout options. There are lots.
@@ -34,8 +34,8 @@
 
 \DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
 
-\title{{\Huge{Discovery with Data}}}
-\subtitle{{\Large{Statistical Literacy and Critical Thinking \\ STAT 1600 -- Course Pack}}}
+\title{Discovery with Data \\ Statistical Literacy and Critical Thinking \\ STAT 1600 -- Course Pack}
+%% \subtitle{{\Large{Statistical Literacy and Critical Thinking \\ STAT 1600 -- Course Pack}}}
 \author{Statistics Computational Lab (SCL)}
 \date{2020 - 2021 Edition}  % Activate to display a given date or no date
 
@@ -48,7 +48,7 @@
 %\title{STAT 1600 \\ Statistics and Data Analysis }
 %\author{Department of Statistics \\ Western Michigan University}
 %\date{}% Activate to display a given date or no date
-\KOMAoptions{parskip=half}
+%% \KOMAoptions{parskip=half}
 \makeindex
 
 \begin{document}
@@ -88,7 +88,7 @@ opts_chunk$set(
 \begin{center} \textbf{Acknowledgements:}
 \end{center}
 
-Eunice Ampah, Srikanthmadhavan Aravamuthan, Joseph Billian, Magdalena Niewiadomska-Bugaj, PhD, Rudie Desravines, Mr. Loren L. Heun, Ian Kapenga, Carrie McKean, Carson Miller, Cody Weiss, Ronalyn Vitancol and Norman Vitancol assisted with  this material.
+Eunice Ampah, Srikanthmadhavan Aravamuthan, Joseph Billian, Magdalena \\ Niewiadomska-Bugaj, PhD, Rudie Desravines, Mr. Loren L. Heun, Ian Kapenga, Carrie \\ McKean, Carson Miller, Cody Weiss, Ronalyn Vitancol and Norman Vitancol assisted \\ with  this material.
 
 \vspace{11cm}
 
@@ -156,7 +156,7 @@ A general introduction to statistics with an emphasis on data analysis and graph
 <<Ch17, child="chapters/Workshops/Workshop1.Rnw",eval=TRUE>>=
 @
 
-<<Ch18, child="chapters/Workshops/Workshop2.Rnw",eval=TRUE>>=
+<<Ch18, child="chapters/Workshops/Workshop2.Rnw",eval=FALSE>>=
 @
 
 % \printbibliography

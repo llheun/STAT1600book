@@ -146,7 +146,7 @@ A study says, ``Slightly \\ overweight people live longer than thin people.''
 
   \begin{exercise} % 2
 
-A study that appeared in the American Journal of Cardiology (March 15, 2003) found out that generally, ``heart attack survivors who owned a dog had better heart function post-heart attack than those who did not own a dog.''
+A study that appeared \\ in the American Journal of Cardiology \\ (March 15, 2003) found out that generally, ``heart attack survivors who owned a dog had better heart function post-heart attack than those who did not own a dog.''
 
 \begin{enumerate}
   \item Does a dog help a heart heal faster?  \\ Can you think of possible confounders?
@@ -163,7 +163,7 @@ A study that appeared in the American Journal of Cardiology (March 15, 2003) fou
 
   \begin{exercise} % 3
 
-A study says, ``People who \\ consider themselves depressed eat more \\ chocolate than people who consider them- \\ selves otherwise.''
+A study says, ``People \\ who  consider themselves depressed eat more \\ chocolate than people who consider them- \\ selves otherwise.''
 
 \begin{enumerate}
 \item The headline implies cause-and-effect, \\ not just association, i.e., ``if you are depressed, you will tend to eat more \\ chocolate.''   When comparing chocolate consumption of depressed versus not-depressed, can you think of possible  \\ confounders?
@@ -183,117 +183,7 @@ A study says, ``People who \\ consider themselves depressed eat more \\ chocolat
 
 The next four questions \\ refer to the following scenario.  In a recent \\ statewide election, 55 percent of the voters rejected a proposal to institute a state lottery.  In a random sample of 150 urban precincts, 60 percent of the electorate rejected the \\ proposal.  Can you think of possible  \\ confounders? 
   \end{exercise}
-%   \begin{solution} % 4
-%
-%     $H_0: P_u = 0.55$ vs. $H_A: P_u \neq 0.55$
-%   \end{solution}
-%
-%   \begin{exercise} % 6
-%
-%     % In a recent statewide election, 55 percent of the voters rejected a proposal to institute a state lottery.  In a random sample of 150 urban precincts, 60 percent of the voters rejected the proposal.  Is the difference significant?
-%
-%     Calculate the test statistic.
-%
-% 	  \begin{enumerate}
-% 	  \item $ +1.23$
-% 	  \item $ -1.23$
-% 	  \item $ +0.218$
-% 	  \item $ -1.96$
-% 	  \item $ +1.96$
-% 	  \end{enumerate}
-%
-%     \framebox[5cm][l]{ Answer: }
-%   \end{exercise}
-%   % \begin{solution}  % 6
-%   %
-%   %     $SE = \sqrt{\frac{(.55(1-.55))}{150}} = 0.0406$ \\
-%   %     $z = \frac{(.6 - .55)}{0.0406}$  \\
-%   %      $z = 1.23$
-%   % \end{solution}
-%
-%   \begin{exercise} % 7
-%
-%     % In a recent statewide election, 55 percent of the voters rejected a proposal to institute a state lottery.  In a random sample of 150 urban precincts, 60 percent of the voters rejected the proposal.  Is the difference significant?
-%
-%     What is the sampling distribution and critical value at the 95 percent confidence level?
-%
-% 	  \begin{enumerate}
-% 	  \item Standard Normal distr., $CV_z = 1.96$
-% 	  \item Standard Normal distr., $CV_z = 1.645$
-% 	  \item T-distribution, $CV_t = 1.697$
-% 	  \item T-distribution, $CV_t = 2.042$
-% 	  \end{enumerate}
-%
-%     \framebox[5cm][l]{ Answer: }
-%   \end{exercise}
-%   \begin{solution}  % 7
-% <<label=lbl8-7, results='asis', echo=FALSE>>=
-%   cv1 <- sprintf('%.3f', (qnorm(p=.975)))
-% @
-%
-%     Standard Normal distribution, $CV(z) = \Sexpr{cv1}$
-%   \end{solution}
-%
-%   \begin{exercise} % 8
-%
-%     % In a recent statewide election, 55 percent of the voters rejected a proposal to institute a state lottery.  In a random sample of 150 urban precincts, 60 percent of the voters rejected the proposal.  Is the difference significant?
-%
-%     What is your conclusion?
-%
-% 	  \begin{enumerate}
-% 	  \item There is a significant difference.
-% 	  \item There is not a significant difference.
-% 	  \item The proportion of voters who rejected the proposal is less than 60.
-% 	  \item The proportion of voters who rejected the proposal is greater than 60.
-% 	  \end{enumerate}
-%
-%     \framebox[5cm][l]{ Answer: }
-%   \end{exercise}
-%   % \begin{solution}  % 8
-%   %   Conclude there is no difference, since the population, 55, percent is within the confidence interval.  The 95 percent CI is (0.5516, 0.6784).
-%   % \end{solution}
-%
-%   \begin{exercise} % 9
-%
-% The  Study Habits and \\ Attitudes Survey (SSHA) \citep[Page 1]{SSHA2016} is a cognitive test that evaluates the study habits, attitudes and motivation of students, toward \\ school.  The range of scores is from 0 to 200.  The average score for U.S. college students is 115 with a standard deviation 30.  A teacher who suspects that older students have better attitudes toward higher education gives the SSHA survey to 25 students who are older than 29 years of age and obtains a sample mean,  $\bar{x} = 127.8$. She examined the following hypotheses: $H_0: \mu = 115$ and $H_A: \mu > 115$.  Based on this scenario, she tests the hypotheses.  She rejects $H_0$.  What type of error was committed here (if any)?
-%
-%  	  \begin{enumerate}
-% 	  \item The researcher should take more samples.
-% 	  \item She should change the significance level of the test.
-% 	  \item She committed a Type I error.
-% 	  \item She committed a Type II error.
-% 	  \item She committed no mistake.
-% 	  \end{enumerate}
-%
-%     \framebox[5cm][l]{ Answer: }
-%   \end{exercise}
-%   \begin{solution} % 9
-%
-%    No Error was committed.
-%   \end{solution}
-%
-%     \begin{exercise} % 10
-%
-% The students at Kalamazoo Central High School cut an average of 2.5 classes per month.  A random sample of 60 seniors averages 2.6 cuts per month, with the standard deviations of 0.75.  Are seniors significantly greater from the student body?  Use an $\alpha$ level of 0.05.  (\emph{HINT:} This wording implies a one-tailed test of significance.)  To answer this question, use the five-step procedure.
-%
-%     \framebox[5cm][l]{ Answer: }
-%   \end{exercise}
-%   % \begin{solution}  % 10
-%   %
-%   %   $H_0: \mu = 2.5$ vs. $H_1: \mu > 2.5$ \\
-%   %   $SE = \frac{0.75}{\sqrt{60}} = 0.0968$ \\
-%   %   $T = \frac{(2.6 - 2.5)}{0.0968}  = 1.0328 $ \\
-%   %   $T_{0.05,59} = 1.6711$ \\
-%   %   Since the $T < T_{0.05,59}$; fail to reject $H_0$. \\
-%   %   Seniors are not significant greater than the student body. \\
-%   %
-%   % \end{solution}
-%
-% \begin{exercise}  % dummy
-%
-%   what is x + y, when x = 5 and y = 5
-%
-% \end{exercise}
+
 
 \end{exercises}
 \onecolumn

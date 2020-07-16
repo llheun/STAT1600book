@@ -45,10 +45,12 @@ Figure 15.1 shows a scatterplot of Impressions Score (Y) versus Ad Spending (X).
 If the points fall around a straight line sloped downwards, we say that there is a negative association.
 
 \begin{figure}[ht]
-\caption{Plot of Impressions vs. Ad Budget}
-\centering
 
-<<label=LBL15a, results="asis", echo=FALSE, out.width="10cm", out.height="6cm">>=
+\centering
+\caption{Plot of Impressions vs. Ad Budget}
+
+
+<<label=LBL15a, results="asis", echo=FALSE, out.width="9cm", out.height="9cm">>=
 budget1 <- c(50.1,74.1,19.3,22.9,82.4,40.1,185.9,26.9,20.4,166.2,27.0,
              45.6,154.9,5.0,49.7,26.9,5.7,7.6,9.2,32.4,6.1)
 impress1 <- c(32.1,99.6,11.7,21.9,60.8,78.6,92.4,50.7,21.4,40.1,40.8,
@@ -58,16 +60,17 @@ p <- ggplot(df2, aes(x=budget1, y=impress1)) + geom_point(size=2, shape=23) + th
       labs(x="Ad Spending", y="Impressions")
 p
 @
+
 \end{figure}
 
 Researchers often express the direction and the strength of association in a single number called the (Pearson) \textit{correlation coefficient}.  Typically denoted by $r$, the correlation coefficient $r$ is a number between $-1$ and $+1$, inclusive.  A value of $r = 0$ means that no linear association exists; the points either look like a random scatter or fall around a horizontal line.  A value of $r = +1$ indicates a perfectly linear relationship; all the points fall on a straight line sloped upwards.  If $r = -1$, all the points fall on a straight line sloped downwards. The correlation between TV Ad Budget and Impressions in the data above is $+0.65$.
 
-Figure 15.2 shows various scatterplots with different correlations.  Although $0.5$ is halfway between $0$ and $1$, note that the plot corresponding to $r = 0.5$ barely shows a pattern of association.  In practice, plots can show correlations up to $0.3$ purely by accident (e.g., the correlation between GPA and, say, shoe size).  When correlation reaches $+1$ or $-1$, all points fall on a straight line.
+Figure 15.2 shows various scatterplots with different correlations.  Although $0.5$ is \\ halfway between $0$ and $1$, note that the plot corresponding to $r = 0.5$ barely shows a pattern of association.  In practice, plots can show correlations up to $0.3$ purely by accident (e.g., the correlation between GPA and, say, shoe size).  When correlation reaches $+1$ or $-1$, all points fall on a straight line.
 
 % \newpage
 
 
-<<label=LBL15b1, results="asis", echo=FALSE>>=
+<<label=LBL15b1, results="asis", echo=FALSE, out.width = "7cm", out.height="7cm">>=
   wt1  <- seq(from=2000, to=4000, by=100)
   mpg1 <- 60 - .01 * wt1 + rnorm(n=21) * 9
   cr1  <- sprintf("%.4f", cor(wt1, mpg1)) 
@@ -96,10 +99,10 @@ Correlation plots (from top to bottom, r = \Sexpr{cr1}, \Sexpr{cr2} )
 
 % \caption{Correlation plots (from top to bottom, r = \Sexpr{cr1}, \Sexpr{cr2} )}
 
-<<label=LBL15b, results="asis", echo=FALSE, out.width="4cm", out.height="4cm">>=
+<<label=LBL15b, results="asis", echo=FALSE, out.width="39mm", out.height="39mm">>=
   plot(wt1, mpg1, xlab="Car weight", ylab="MPG")
 @
-<<label=LBL15c, results="asis", echo=FALSE, out.width="4cm", out.height="4cm">>=
+<<label=LBL15c, results="asis", echo=FALSE, out.width="39mm", out.height="39mm">>=
   plot(rs1, pe1, xlab="R/S", ylab="P/E")
 @
 
@@ -294,7 +297,7 @@ Suppose we have two \\ variables, X and Y. If a decrease in X results in the sam
 
 \begin{exercise} % 4
 
-Suppose that we plot two variables, X, and Y in a scatterplot, and we observe that the points appear to be clustered around a line of best fit that is tilted upward from left to right.  What is the possible range of the correlation coefficient $r$?
+Suppose that we plot \\ two variables, X, and Y in a scatterplot, and we observe that the points appear to be clustered around a line of best fit that is tilted upward from left to right.  What is the possible range of the correlation coefficient $r$?
 \end{exercise}
 \begin{solution} % 4
 

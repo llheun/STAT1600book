@@ -241,7 +241,7 @@ Another type of error that may be made is a \textbf{Type II error}.  Here the re
 
    \begin{exercise}  % 2
 
-A handful of people were recently polled on their preference of soda at a local shopping mall in the U.S. and the study indicated more people preferred \\ Mountain Dew over Cola.  It indicates  Mountain Dew is exceeding Cola as the beverage of choice in mainstream America.  What is wrong with this assertion?
+A handful of people \\ were recently polled on their preference of soda at a local shopping mall in the U.S. and the study indicated more people preferred \\ Mountain Dew over Cola.  It indicates  Mountain Dew is exceeding Cola as the beverage of choice in mainstream America.  What is wrong with this assertion?
 
   % \framebox[5cm][l]{ Answer: }
 
@@ -253,7 +253,7 @@ A handful of people were recently polled on their preference of soda at a local 
 
 \begin{exercise}  % 3
 
-A new anti-wrinkle cream was given to several people who frequently purchase make-up products from a specific \\ company.  In a follow-up with these individuals, all of them assert the new product was highly effective.  What fallacy is present here?  Should the company mass produce this new product? If not, what else needs to be studied here?
+A new anti-wrinkle \\ cream was given to several people who frequently purchase make-up products from a specific  company.  In a follow-up with these individuals, all of them assert the new product was highly effective.  What fallacy is \\ present here?  Should the company mass produce this new product? If not, what else \\ needs to be studied here?
 
 % \framebox[5cm][l]{ Answer: }
 \end{exercise}
@@ -288,7 +288,7 @@ The claim, which was based on surveys of dentists and hygienists carried out by 
 
 \begin{exercise}   % 6
 
-You heard a company rumor that the boss was going to crack down on employees who send e-mail from work.  You, recently, read a report that showed most people spend an average of two hours per day checking and sending personal e-mails from work.  You say to yourself `No way do I spend that much time.'  Should this employee be concerned?    
+You heard a company \\ rumor that the boss was going to crack down on employees who send e-mail from work.  You, recently, read a report that showed most people spend an average of two hours per day checking and sending personal e-mails from work.  You say to yourself `No way do I spend that much time.'  Should this employee be concerned?    
 
 \end{exercise}
 \begin{solution}    % 6

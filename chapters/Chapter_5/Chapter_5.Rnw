@@ -12,8 +12,8 @@ After completing this part, students should be able to:
  \begin{enumerate}
  \item Grasp the basics of good experimental design
  \item Understand the importance of randomized trials (RT).
- \item Comprehend the meaning of double-blind, randomized controlled trials (RCT).
- \item Recognize the difference between observational studies and randomized controlled trials.
+ \item Comprehend the meaning of double blind, randomized controlled \\ trials (RCT).
+ \item Recognize the difference between observational studies and randomized \\ controlled trials.
  \item Perceive the need for case-controlled studies.
  \item Grasp the need for case-crossover studies. 
  	\end{enumerate}
@@ -76,7 +76,7 @@ Metabolic syndrome, No. (\%) & 22(29) & 20(25) & 29(37) & 27(36) \\ \hline
   \label{tbl51}
 \end{table}
 
-\subsection{Double-blind randomized controlled trials (RCT)}
+\subsection{Double blind randomized controlled trials (RCT)}
 
 Scientific studies should be randomized as described above whenever possible. But it might surprise you to learn that randomization is just one way to address hidden confounders and bias in clinical trials. The present section will cover \textit{controls and blinding}, two critical elements in study design that address confounders and bias.
 
@@ -154,14 +154,14 @@ Overall, 170 subjects (24 percent) had used a cellular telephone during the 10-m
 \section{Key Words}
 
 \fbox{\parbox{14cm}{
-\begin{minipage}[ht]{6cm}
+\begin{minipage}[ht]{66mm}
 \begin{itemize}
 \item randomized trial
-\item double-blind randomized trial
+\item double blind randomized trial
 \item observational studies
 \end{itemize}
 \end{minipage} \hfill
-\begin{minipage}[ht]{6cm}
+\begin{minipage}[ht]{66mm}
 \begin{itemize}
 \item case-control studies
 \item case-crossover studies
@@ -197,9 +197,9 @@ Suppose a doctor is interested in investigating the causes of a \\ sporadic diso
 
 	\end{exercise}
 	\begin{solution}  % 2
-	
+
 Randomized controlled experiments are necessary to establish the cause of such a disease firmly. For instance, we might see if potassium deficiency causes the disease, we may give our treatment group a potassium supplement every day. However, if the illness is rare, then it is impractical for us to use a randomized controlled experiment.  It would also be unethical to be influencing or causing disease in people potentially.  Additionally, we would have no guarantee that any subjects would even develop the disease if it is sporadic. Thus, observational studies may be the most appropriate choice unless scientific advances in, say, genetics are far enough along to make a more practical kind of randomized controlled experiment.
-	
+
 	\end{solution}
 
   \begin{exercise} % 3
@@ -208,17 +208,17 @@ What is a double-blind \\ study?  Give an example where double- \\ blinding is n
 
     \end{exercise}
 %     \begin{solution}  % 3
-% 
+%
 % % The test statistics is $|-1.66|$ and significance level is 1.8125.  Since the test statistic is less than the significance level, fail to reject $H_0$.
 %     \end{solution}
 
   \begin{exercise} % 4
 
-Some recent research has \\ shown that patients who know they have \\ taken nothing more than an inert sugar pill still experience the placebo effect. Briefly describe a study design that might replicate \\ these results. What type of study would you choose? Should we consider different \\ groups? 
+Some recent research \\ has  shown that patients who know they have \\ taken nothing more than an inert sugar pill still experience the placebo effect. Briefly describe a study design that might replicate \\ these results. What type of study would you choose? Should we consider different \\ groups?
   \end{exercise}
   \begin{solution}  % 4
-  
-A randomized controlled experiment is the ``gold standard of scientific knowledge'' so that it would be the best way to study this situation. We would study four groups of patients: group one would get a standard treatment for an illness, group two would get a placebo without being told it's a placebo, group 3 would get a placebo and told it's a placebo, and group 4 would get no treatment at all. This method would, interestingly, give controls both from the standard and no-treatment groups. The groups for primary comparisons would be the two groups that get the placebos and are either informed or not.  
+
+A randomized controlled experiment is the ``gold standard of scientific knowledge'' so that it would be the best way to study this situation. We would study four groups of patients: group one would get a standard treatment for an illness, group two would get a placebo without being told it's a placebo, group 3 would get a placebo and told it's a placebo, and group 4 would get no treatment at all. This method would, interestingly, give controls both from the standard and no-treatment groups. The groups for primary comparisons would be the two groups that get the placebos and are either informed or not.
 
   \end{solution}
 
@@ -231,7 +231,7 @@ What is the advantage of \\ case-control studies over randomized \\ controlled t
 % <label=lbl8-5, results='asis', echo=FALSE>>=
 %   cv1 <- sprintf('%.2f', (qnorm(p=0.975)))
 % @
-% 
+%
 %     Standard Normal (z) distribution, $Z = \pm \Sexpr{cv1}$.
 %   \end{solution}
 
@@ -252,7 +252,7 @@ What is the advantage of \\ randomized controlled trials over \\ case-control st
 
   \end{exercise}
   % \begin{solution}  % 7
-  % 
+  %
   %    $H_0: P_1 = P_2$ vs. $H_A: P_1 > P_2$
   % \end{solution}
 
@@ -262,10 +262,10 @@ Suppose the Kalamazoo \\ School District is proposing a 1 mil property tax to pr
 
   \end{exercise}
   % \begin{solution}  % 7
-  % 
+  %
   %    $H_0: P_1 = P_2$ vs. $H_A: P_1 > P_2$
   % \end{solution}
-  
+
   
 
 \end{exercises}

@@ -23,7 +23,7 @@ Similarly, if Best Buy's Geek Squad replacement plan sells 60 extended warrantie
 Now, let $X$ denote the number of successes out of a sample of $n$ observations. If each response is a success with probability p independently of the other observations, then $X$ is a binomial random variable with parameters $n$ and $p$.  Furthermore, the proportion of successes in the sample is also a random variable and is computed as
 
 \begin{equation*}
-  \hat{p} = \frac{X}{n} = \frac{\textit{Number of successes}}{\textit{Number observations in the sample}}
+  \hat{p} = \frac{X}{n} = \frac{\textit{ Number of successes}}{\textit{ Number observations in the sample}}
 \end{equation*}
 
 Since X is expected to be around $np$ give or take $\sqrt{npq}$, then $X/n$ is expected to be around $np/n$ give or take $\sqrt{npq}/n$, or $p$ give or take $\sqrt{pq/n}$.  Make sure that you agree with the last statement before moving on.  It may help to think of this analogy: Suppose annual rainfall in Kalamazoo is expected to be around 24 inches give or take 6 inches.  How do we change the measurement from inches to feet?  We divide both numbers by 12! In feet, annual rainfall in Kalamazoo is expected to be around $24/12$ give or take $6/12$, or 2 feet give or take 0.5 feet.  Now read the first sentence of this paragraph one more time.
@@ -42,60 +42,70 @@ $\hat{p}$ & $p$ & $\sqrt{\frac{pq}{n}}$  \\ \hline
 \end{table}
 
 
-\begin{minipage}[ht]{3cm}
+\begin{minipage}[ht]{29mm}
 
-\vspace{-31mm}
+\vspace{-21mm}
 
 \textbf{Excercise 1}
 \end{minipage}
-\begin{minipage}[ht]{11cm}
+\begin{minipage}[ht]{109mm}
 
-\parbox{11cm}{
+{\parbox{108mm}{
 If the local Best Buy store sold 1200 smartwatches last year,
 
 \begin{enumerate}
 \item the proportion of sets sold with extended protection plans should be around 0.20, give or take \underline{\phantom{xxxxxxxx}}.
 \item the percentage of watches sold with extended protection plans should be around 20\%, give or take \underline{\phantom{xxxxxxxx}}.
 \end{enumerate}
-}
+}}
+
 \end{minipage}
 
 Data analysis sometimes involves percentages instead of proportions.  Proportions and percentages are two ways of saying the same thing (e.g., we refer to $1/5$ as either 0.20 or 20\%).  How do we convert a proportion to a percentage?  We multiply by 100\%.  To avoid repetition, we present all statistical formulas in proportions.  As Exercise 1 shows, we will convert all the answers to percentages in the end.
 
-\begin{minipage}[ht]{3cm}
+\newpage
 
-\vspace{-45mm}
+\begin{minipage}[ht]{29mm}
+
+\vspace{-20mm}
 
 \textbf{Excercise 2}
-\end{minipage}
-\begin{minipage}[ht]{11cm}
 
-\parbox{11cm}{
+\end{minipage} \hfill
+\begin{minipage}[ht]{109mm}
+
+% {\parbox{108mm}{
 Historically, 5\% of customers return their video game rentals from Gamers Retro Rental late.
 
 \begin{enumerate}
 \item Gamers Retro Rental rented out 100 video games yesterday.  The percentage that will be returned late should be around 5\%, give or take \underline{\phantom{xxxxxxx}}.
 \item Gamers Retro Rental rented out 700 video games last week.  The percentage that will be returned late should be around 5\%, give or take \underline{\phantom{xxxxxxx}}.
 \end{enumerate}
-}
+% }}
+
 \end{minipage}
 
 Exercise 2 is an example of the law of large numbers.  A more straightforward illustration involves a coin toss.  If you toss a coin repeatedly, which tends to get closer to 50\% heads: 100 tosses or 700 tosses?  The correct answer is 700.  As the number of tosses increases, the closer we expect to get to 50\%.  The reason for this, as the Exercise shows, is the smaller give or take value.  The sample size, $n$, lies in the denominator of the SD of $\hat{p}$.  Therefore, the larger the sample size, the smaller the SD, which happens to be the give-or-take value.
+
+\vspace{3mm}
 
 \fbox{\parbox{14cm}{
 \textbf{The Law of Large Numbers for Sample Percentages:} \\
 The sample percentage tends to get closer to the true percentage as the size increases.
 }}
 
-\subsection{The Sampling Distribution of p-hat is Approximately Normal}
+\subsection{Sampling Distribution of p-hat is Approximately Normal}
 
 Since $\hat{p} = \frac{X}{n}$, the sampling distribution of $\hat{p}$ looks the same as that of X except for different numbers on the horizontal axis.  For $n = 30$ and $p = 0.4$, the probability histogram of $X$ and $\hat{p}$ is shown in Figure 8.1.
+
+\newpage
 
 \begin{figure}[ht]
 
 \caption{Probability of Histogram and p-hat}
 
-<<label=LBL8a, results="asis", echo=FALSE, out.width="8cm", out.height="7cm">>=
+<<label=LBL8a, results="asis", echo=FALSE, out.width = "6cm", out.height = "6cm">>=
+
 dataset<-rbinom(n=100000, size=30, prob=0.4)
 dataset <- data.frame(X=dataset)
 x_coor  <- seq(3,21,1)
@@ -117,6 +127,7 @@ hist1<-ggplot(dataset,aes(x=X)) +
 
 hist1
 @
+
 \end{figure}
 
 Therefore, like the binomial, the sampling distribution of $\hat{p}$ may be approximated by a normal curve with the correct mean and SD.
@@ -141,10 +152,10 @@ Therefore, like the binomial, the sampling distribution of $\hat{p}$ may be appr
 \end{minipage}
 \begin{minipage}[ht]{11cm}
 
-\parbox{11cm}{
+{\parbox{11cm}{
 The question is equivalent to `What is the probability that$\hat{p}$ exceed 0.60?'  Using the mean and SD given in the formula above with $n = 50$ and $p = 0.50$, the sample proportion is expected to be around 0.50 give or take $\sqrt{\frac{0.5 (0.5)}{50}}$ or 0.50 give or take 0.07.  With a mean of 0.50 and a SD 0.07, the area to the right of 0.60 (under the normal curve with mean 0.50 and SD 0.07) is 0.0766.  Thus, the proportion of heads will exceed 0.60 fewer than 8 percent of the time.
+}}
 
-}
 \end{minipage}
 
 \begin{minipage}[ht]{3cm}
@@ -169,20 +180,21 @@ However, since we don't know $p$, we cannot calculate this SE.  In a situation l
 \fbox{\parbox{14cm}{The population $p$ is \textbf{estimated using the sample proportion $\hat{p}$}.  This estimate tends to miss by an amount called the \textbf{standard error (SE)} of $\hat{p}$.
 }}
 
+\vspace{3mm}
+
 \begin{equation*}
 SE_{\hat{p}} = \sqrt{\frac{\hat{p}\hat{q}}{n}}
 \end{equation*}
 
-\begin{minipage}[ht]{3cm}
+\begin{minipage}[ht]{29mm}
 
-\vspace{-40mm}
+\vspace{-20mm}
 
 \textbf{Exercise 4}
 \end{minipage}
-\begin{minipage}[ht]{11cm}
+\begin{minipage}[ht]{109mm}
 
-\parbox{11cm}{
-
+{\parbox{108mm}{
 Fill in the following blanks.
 
 \begin{enumerate}
@@ -190,7 +202,8 @@ Fill in the following blanks.
 \item If 54 out of 360 students plan to go to graduate school, the proportion of all students who plan to go to graduate school is estimated as \underline{\phantom{xxxxxxx}}.  The standard error of this estimate is \underline{\phantom{xxxxxxx}}.
 \end{enumerate}
 
-}
+}}
+
 \end{minipage}
 
 Exercise 4 shows the effect of increasing the sample size on the SE of the sample proportion.  Multiplying the sample size by a factor of 9 (from 40 to 360) makes the SE decrease by a factor of 3.  In the formula for the SE of $\hat{p}$,  the sample size appears (i) in the denominator, and (ii) inside a square root.  Therefore, multiplying the sample size by a specific factor divides the SE of $\hat{p}$ by the square root of that factor.
@@ -212,15 +225,16 @@ Variables tend to miss their expected value but should be within \textit{one} SD
 
 The term $1.96 \sqrt{\frac{\hat{p} \hat{q}}{n}}$ is the 95\% margin of error, $ME$.
 
-\begin{minipage}[ht]{3cm}
+\begin{minipage}[ht]{29mm}
 
-\vspace{-50mm}
+\vspace{-20mm}
 
 \textbf{Exercise 5}
-\end{minipage}
-\begin{minipage}[ht]{11cm}
 
-\parbox{11cm}{
+\end{minipage}
+\begin{minipage}[ht]{109mm}
+
+{\parbox{108mm}{
 Try the following problems.
 
 \begin{enumerate}
@@ -228,41 +242,52 @@ Try the following problems.
 \item Calculate a 95\% confidence interval estimate for the true proportion p of WMU students who plan to go to graduate school.
 \item If 54 out of 360 students plan to go to graduate school, calculate a 95\% confidence interval estimate for the true proportion p of WMU students who plan to go to graduate school.
 \end{enumerate}
-}
+}}
+
 \end{minipage}
 
 \section{Sample Size for Estimating the Population Proportion}
- 
+
 If 9 out of 25 randomly selected WMU students live in Southwest Michigan, the 95\% confidence interval for the true proportion is $\hat{p} \pm 1.96 \sqrt{\frac{\hat{p} \hat{q}}{n}} = 0.36 \pm 0.19$.  This result says that the true proportion can be as low as 0.17 or as high as 0.55.  If we wanted to reduce the margin of error from 0.19 to some value $ME$, then we set the formula for margin of error equal to $ME$, i.e. $ME = 1.96 \sqrt{\frac{\hat{p} \hat{q}}{n}}$.  Solving for $n$ gives the result we need.
 
 \fbox{\parbox{14cm}{
 To be 95\% confident that the sample proportion is within a distance of $ME$ of the true proportion $p$, choose a sample size equal to
+}}
+
+\vspace{3mm}
 
 \begin{equation*}
  n = (1.96)^2 \frac{ \hat{p} \hat{q}}{ME^2}
 \end{equation*}
 
+\vspace{3mm}
+
 where $\hat{p}$ is an estimate based on historical data or a pilot study.  The quantity $ME$ is called the 95\% margin of error for $p$.
 
-}}
 
-\subsubsection{Example:} Suppose we want to reduce the margin of error for estimating the population proportion from 0.19 to 0.10.  Using the estimate $\hat{p} = 0.36$  based on the initial sample, the sample size we need is: $n = (1.96)^2 \frac{(0.36)(0.64)}{0.10^2} = 89.$  To verify that this is the correct sample size, the 95\% confidence interval would be computed (if the sample proportion remained at 0.36) as $0.36 \pm (1.96) \sqrt{ \frac{0.36(0.64)}{89}} = 0.36 \pm 0.10$.
+\subsubsection{Example:}
+
+Suppose we want to reduce the margin of error for estimating the population proportion from 0.19 to 0.10.  Using the estimate $\hat{p} = 0.36$  based on the initial sample, the sample size we need is: $n = (1.96)^2 \frac{(0.36)(0.64)}{0.10^2} = 89.$  To verify that this is the correct sample size, the 95\% confidence interval would be computed (if the sample proportion remained at 0.36) as $0.36 \pm (1.96) \sqrt{ \frac{0.36(0.64)}{89}} = 0.36 \pm 0.10$.
 
 \section{Key Words}
 
 \fbox{\parbox{14cm}{
 \begin{minipage}[ht]{6cm}
+
 \begin{itemize}
 \item sample proportion
 \item sampling distribution
 \item standard error
 \end{itemize}
+
 \end{minipage} \hfill
 \begin{minipage}[ht]{6cm}
+
 \begin{itemize}
 \item 95\% confidence interval
 \item margin of error
 \end{itemize}
+
 \end{minipage}
 }}
 
@@ -273,11 +298,8 @@ where $\hat{p}$ is an estimate based on historical data or a pilot study.  The q
 \section{}
 
 \begin{exercises}
-\begin{exercise} % 1
-
-Suppose that 20\% of students in a large university are graduate students.  If a random sample of 125 students are randomly selected, what is the probability that 25\% or more of the sample are graduate students?
-\end{exercise}
-\begin{solution} % 1
+  \begin{exercise}   % 1
+  
 <<label=LBL8-1, results="asis", echo=FALSE>>=
   N1 <- 125
   Q1 <- 0.25 * 125
@@ -285,10 +307,41 @@ Suppose that 20\% of students in a large university are graduate students.  If a
   prob81 <- 1 - pbinom(q=Q1, size=N1, prob=P1)
 @
 
-$P[ X \ge 32 ] = \Sexpr{prob81}
-\end{solution}
+   Suppose that 20\%  of \\ students in a large university are graduate students.  If a random sample of 125 students are randomly selected, what is the probability that 25\% or more of the sample are graduate students?
 
-\begin{exercise} % 2
+  
+  \end{exercise}
+  \begin{solution}
+  
+    $P[ X \ge 32 ] = \Sexpr{prob81}$
+  \end{solution}
+
+  \begin{exercise} % 2
+
+<<label=LBL8-3, results="asis", echo=FALSE>>=
+  N1 <- 100
+  prob83a <- .2
+  SE83b   <- sqrt(prob83a * (1 - prob83a) / N1)
+  me83c   <- 1.96 * SE83b
+@
+
+A sample of 100 \\ individuals  showed that 20\% experienced \\ gastrointestinal  problems  after consuming \\ 10 grams of sorbitol, a common artificial \\ sweetener.  Attach a standard error to this estimate.
+  \end{exercise}
+%  \begin{solution} % 2
+%
+% The standard error of this estimate is \Sexpr{SE83b}
+%
+%  \end{solution}
+
+  \begin{exercise} % 3
+
+<<label=LBL8-2, results="asis", echo=FALSE>>=
+  N1 <- 100
+  X1 <- 20
+  prob62a <- X1 /N1
+  SE62b   <- sqrt(prob62a * (1 - prob62a) / N1)
+  me62c   <- 1.96 * SE62b
+@
 
 Let's say that we take a \\ sample of 100 observation has 20 \\ successes.
 
@@ -299,43 +352,21 @@ Let's say that we take a \\ sample of 100 observation has 20 \\ successes.
 \item What is the 95\% confidence interval?
 \end{enumerate}
 
-\end{exercise}
-% \begin{solution} % 2
-% <label=LBL8-2, results="asis", echo=FALSE>>=
-%   N1 <- 100
-%   X1 <- 20
-%   prob62a <- X1 /N1
-%   SE62b   <- sqrt(prob62a * (1 - prob62a) / N1)
-%   me62c   <- 1.96 * SE62b
-% @
-%
-% \begin{enumerate}
-% \item The estimate of the population proportion is \Sexpr{prob62a}
-% \item The standard error of this estimate is \Sexpr{SE62b}
-% \item The 95\% margin of error is \Sexpr{me62c}
-% \item The 95\% confidence interval is $\Sexpr{prob62a} \pm \Sexpr{me62c}$
-% \end{enumerate}
-% \end{solution}
+  \end{exercise}
+  \begin{solution} % 3
 
-\begin{exercise} % 3
+\begin{enumerate}
+\item The estimate of the population proportion is \Sexpr{prob62a}
+\item The standard error of this estimate is \Sexpr{SE62b}
+\item The 95\% margin of error is \Sexpr{me62c}
+\item The 95\% confidence interval is $\Sexpr{prob62a} \pm \Sexpr{me62c}$
+\end{enumerate}
 
-A sample of 100 individuals  showed that 20\% experienced gastrointestinal  problems  after consuming 10 grams of sorbitol, a common artificial sweetener. \\ Attach a standard error to this estimate.
-\end{exercise}
-\begin{solution} % 3
-<<label=LBL8-3, results="asis", echo=FALSE>>=
-  N1 <- 100
-  prob83a <- .2
-  SE83b   <- sqrt(prob83a * (1 - prob83a) / N1)
-  me83c   <- 1.96 * SE83b
-@
+  \end{solution}
 
-The standard error of this estimate is \Sexpr{SE83b}
+  \begin{exercise} % 4
 
-\end{solution}
-
-\begin{exercise} % 4
-
-When a flight experiences fewer no-shows than expected, some passengers are `bumped' from their flights (are denied boarding).  These incidents can reflect poorly on customer satisfaction.  Suppose \\ United Airlines (for example) would like to estimate the actual proportion of involuntarily bumped passengers across all domestic \\ flights in the industry.  In a pilot study of 500 domestic passengers, 33 were involuntarily  \\ bumped.
+When a flight \\ experiences fewer no-shows than expected, some passengers are `bumped' from their \\ flights (are denied boarding).  These \\ incidents can reflect poorly on customer satisfaction.  Suppose  United Airlines (for example) would like to estimate the actual proportion of involuntarily bumped passengers across all domestic \\ flights in the industry.  In a pilot study of 500 domestic passengers, 33 were involuntarily  \\ bumped.
 
 \begin{enumerate}
 \item	What is the estimate of the population proportion?
@@ -343,7 +374,7 @@ When a flight experiences fewer no-shows than expected, some passengers are `bum
 \item	What is the 95\% margin of error?
 \item	What is the 95\% confidence interval?
 \end{enumerate}
-\end{exercise}
+  \end{exercise}
 % \begin{solution} % 4
 % <label=LBL8-4, results="asis", echo=FALSE>>=
 %   N1 <- 500
@@ -361,17 +392,8 @@ When a flight experiences fewer no-shows than expected, some passengers are `bum
 % \end{enumerate}
 % \end{solution}
 
-\begin{exercise} % 5
+  \begin{exercise} % 5
 
-An appliance \\ manufacturer offers maintenance contracts \\ on its major appliances.  A manager wants to know what fraction of buyers of the company's convection ovens are also buying the maintenance contract with the oven.  From a random sample of 120 sales slips, 31 of the oven buyers opted for the contract.
-
-\begin{enumerate}
-\item	The proportion of customers who buy the contract along with their oven is estimated as \underline{\phantom{xxxxxxxxxx}}.
-\item	Calculate a standard error for the estimate in (1).
-\item	Calculate a 95\% confidence interval estimate for the true proportion of customers who buy the contract along with their oven.
-\end{enumerate}
-\end{exercise}
-\begin{solution} % 5
 <<label=LBL8-5, results="asis", echo=FALSE>>=
   N1 <- 120
   X1 <- 31
@@ -380,14 +402,32 @@ An appliance \\ manufacturer offers maintenance contracts \\ on its major applia
   me65c   <- 1.96 * SE65b
 @
 
+An appliance \\ manufacturer offers maintenance contracts \\ on its major appliances.  A manager wants to know what fraction of buyers of the company's convection ovens are also buying the maintenance contract with the oven.  From a random sample of 120 sales slips, 31 of the oven buyers opted for the contract.
+
+\begin{enumerate}
+\item	The proportion of customers who buy the contract along with their oven is estimated as \underline{\phantom{xxxxxxxxxx}}.
+\item	Calculate a standard error for the estimate in (1).
+\item	Calculate a 95\% confidence interval estimate for the true proportion of customers who buy the contract along with their oven.
+\end{enumerate}
+  \end{exercise}
+  \begin{solution} % 5
+
 \begin{enumerate}
 \item	The estimate of the population proportion is \\ $\hat{p} = \Sexpr{prob65a}$
 \item	The standard error of this estimate is \\ $SE_{\hat{p}} = \Sexpr{SE65b}$
 \item	The 95\% confidence interval is \\ $\Sexpr{prob65a} \pm \Sexpr{me65c}$
 \end{enumerate}
-\end{solution}
+  \end{solution}
 
-\begin{exercise} % 6
+  \begin{exercise} % 6
+
+<<label=LBL8-6, results="asis", echo=FALSE>>=
+  N1 <- 5511
+  X1 <- 1754
+  prob66a <- X1 /N1
+  SE66b   <- sqrt(prob66a * (1 - prob66a) / N1)
+  me66c   <- 1.96 * SE66b
+@
 
 Wiley Publications has \\ determined that out of a sample of 5,511 of its publications for 2012, 1,754 of them are pirated in some form.
 
@@ -397,15 +437,9 @@ Wiley Publications has \\ determined that out of a sample of 5,511 of its public
 \item	What is the 95\% margin of error?
 \item	What is the 95\% confidence interval?
 \end{enumerate}
-\end{exercise}
+  \end{exercise}
 % \begin{solution} % 6
-% <label=LBL8-6, results="asis", echo=FALSE>>=
-%   N1 <- 5511
-%   X1 <- 1754
-%   prob66a <- X1 /N1
-%   SE66b   <- sqrt(prob66a * (1 - prob66a) / N1)
-%   me66c   <- 1.96 * SE66b
-% @
+
 %
 % \begin{enumerate}
 % \item	The estimate of the population proportion is \\ $\hat{p} = \Sexpr{prob66a}$
@@ -415,7 +449,15 @@ Wiley Publications has \\ determined that out of a sample of 5,511 of its public
 % \end{enumerate}
 % \end{solution}
 
-\begin{exercise} % 7
+  \begin{exercise} % 7
+
+<<label=LBL8-7, results="asis", echo=FALSE>>=
+  N1 <- 2000
+  X1 <- 600
+  prob67a <- X1 /N1
+  SE67b   <- sqrt(prob67a * (1 - prob67a) / N1)
+  me67c   <- 1.96 * SE67b
+@
 
 Researchers who were \\ concerned if doctors were consistently \\ adjusting dosages for the weight of elderly patients studied 2000 prescriptions.  \\ They found that for 600 of the  prescriptions, the doctors failed to change the  dosages.
 
@@ -426,15 +468,8 @@ Researchers who were \\ concerned if doctors were consistently \\ adjusting dosa
 \item	Calculate a 95\% interval estimate for the true proportion
 \item	Calculate a 95\% confidence interval for the true percentage of prescriptions  \\ where doctors fail to adjust dosages.
 \end{enumerate}
-\end{exercise}
-\begin{solution} % 7
-<<label=LBL8-7, results="asis", echo=FALSE>>=
-  N1 <- 2000
-  X1 <- 600
-  prob67a <- X1 /N1
-  SE67b   <- sqrt(prob67a * (1 - prob67a) / N1)
-  me67c   <- 1.96 * SE67b
-@
+  \end{exercise}
+  \begin{solution} % 7
 
 \begin{enumerate}
 \item	The estimate of the population proportion is \\ $\hat{p} = \Sexpr{prob67a}$
@@ -443,14 +478,10 @@ Researchers who were \\ concerned if doctors were consistently \\ adjusting dosa
 \item	The 95\% confidence interval is \\ $\Sexpr{prob67a} \pm \Sexpr{me67c}$
 \item	The 95\% confidence interval is \\ $\Sexpr{prob67a} \pm \Sexpr{me67c}$
 \end{enumerate}
-\end{solution}
+  \end{solution}
 
-\begin{exercise} % 8
+  \begin{exercise} % 8
 
-Suppose researchers are interested in the potential sample size of an experiment to investigate gastrointestial problems after consuming 10 grams of sorbitol.  What is the sample size that researchers need if they suspect that 20\% of people who experience gastrointestial problems after consuming 10 grams of sorbitol?  They want 95\% confidence and and margin of error of 8\%.
-
-\end{exercise}
-\begin{solution} % 8
 <<label=LBL8-8, results="asis", echo=FALSE>>=
   cv8a <- 1.96       ## P[ a < z < b ] = .95
   M8a  <- 0.08
@@ -459,20 +490,25 @@ Suppose researchers are interested in the potential sample size of an experiment
   n8   <- ceiling( p8a * q8a * (cv8a/M8a)^2 )
 @
 
+Suppose researchers are interested in the potential sample size of an experiment to investigate gastrointestial \\ problems after consuming 10 grams of sorbitol.  What is the sample size that \\ researchers need if they suspect that 20\% of people who experience gastrointestial problems after consuming 10 grams of sorbitol?  They want 95\% confidence and and margin of error of 8\%.
+
+  \end{exercise}
+  \begin{solution} % 8
+
 The standard error of this estimate is \Sexpr{n8}
 
-\end{solution}
+  \end{solution}
 
-\begin{exercise}   % 9
+  \begin{exercise}   % 9
 
 <<label=LBL8-9, results="asis", echo=FALSE>>=
   p9a <- 82/100
   se9a <- sqrt( p9a * ( 1-p9a)/ 100)
-  lbnd9a <- p9a - 1.96 *se9a 
+  lbnd9a <- p9a - 1.96 *se9a
   ubnd9a <- p9a + 1.96 * se9a
 @
 
-The CDC is recommending that everybody wash their hands multiple \\ times per day during the COVID-19 \\ pandemic.  The students from STAT 1600 \\ decided to conduct a survey of students on the WMU campus.  They decided on a sample size of 100 students.  They found that 82 \\ washed their hands multiple times per day.
+The CDC is \\ recommending that everybody wash their \\ hands multiple  times per day during the \\ COVID-19  pandemic.  The students from \\ STAT 1600  decided to conduct a survey of students on the WMU campus.  They decided on a sample size of 100 students.  They found that 82  washed their hands multiple times per day.
 
 \begin{enumerate}
 \item What is the point estimate for the proportion?
@@ -480,17 +516,18 @@ The CDC is recommending that everybody wash their hands multiple \\ times per da
 \item What is the 95\% confidence interval for the proportion of students who say they wash their hands multiple times per \\ day?
 \end{enumerate}
 
-\end{exercise}
-\begin{solution}   % 9
+  \end{exercise}
+  \begin{solution}   % 9
 
 \begin{enumerate}
-\item $\hat{p} = \Sexpr{p9a}$ 
-\item $SE = \Sexpr{se9a}$ 
+\item $\hat{p} = \Sexpr{p9a}$
+\item $SE = \Sexpr{se9a}$
 \item (\Sexpr{lbnd9a}, \Sexpr{ubnd9a})
 \end{enumerate}
 
-\end{solution}
+  \end{solution}
 
 \end{exercises}
+
 
 \onecolumn

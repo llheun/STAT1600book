@@ -187,7 +187,7 @@ where $s$ is the standard deviation based on historical data or a pilot sample. 
 \begin{exercises}
 \begin{exercise}  % 1
 
-The national average on a science test for tenth graders has a mean of 210 and a standard deviation of 28.
+The national average \\ on a science test for tenth graders has a mean of 210 and a standard deviation of 28.
 
 \begin{enumerate}
   \item What percentage scored over 220?  (You may assume that the histogram of \\ scores looks approximately like the \\ normal  curve.)
@@ -203,7 +203,7 @@ The national average on a science test for tenth graders has a mean of 210 and a
 
 \begin{exercise}  % 2
 
-A sample of 16 observations is taken from a distribution with mean of 10 and standard deviation 2.
+A sample of 16 observations is taken from a distribution with \\ mean of 10 and standard deviation 2.
 
 \begin{enumerate}
   \item Suppose the sample mean is 10.5. What is the standard error of this estimate?
@@ -276,7 +276,7 @@ Safe Skies Airline took a random sample of 25 flights to estimate the average ti
 
 \begin{exercise}  % 4
 
-The normal human body temperature is on average $98.6^o F$ with a standard deviation of $1.0^o F$. Researchers take a random sample of 35. 
+The normal human \\ body temperature is on average $98.6^o F$ with a standard deviation of $1.0^o F$. Researchers take a random sample of 35. 
 
 \begin{enumerate}
 %\item What is the distribution of the sample mean?
@@ -306,12 +306,12 @@ A manufacturing \\ company's profits depend on the cost of materials.  One mater
 
 \begin{exercise}  % 6
 
-The average annual rainfall in Mawsynram, India (the wettest place on Earth) is 467.35 inches with a standard deviation of 5.12 inches. A random sample of 100 is taken.
+The average annual \\ rainfall in Mawsynram, India (the  wettest \\ place on Earth) is 467.35 inches with a standard deviation of 5.12 inches. A random \\ sample of 100 is taken.
 
 \begin{enumerate}
   \item What happens to the distribution of \\ sample means as the sample size \\ increases?
   \item What is the mean of this distribution? 
-  \item What is the standard error of this distribution?
+  \item What is the standard error of this \\ distribution?
 \end{enumerate}
 
 \end{exercise}

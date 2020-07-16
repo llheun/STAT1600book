@@ -10,11 +10,11 @@ After completing this part, students should be able to:
 
 \fbox{\parbox{14cm}{
 \begin{itemize}
-\item Explain the concept of measures of central tendency and interpret the information they provide.
-\item Calculate, describe and compare the commonly used measures of central tendency: mean, \textit{$\bar{X}$} and median, \textit{MED}.
+\item Explain the concept of measures of central tendency and interpret the \\ information they provide.
+\item Calculate, describe and compare the commonly used measures of central \\ tendency: mean, \textit{$\bar{X}$} and median, \textit{MED}.
 \item Understand other measures of central tendency.
 \item Select appropriate measure of central tendency based on the
-level of measurement and characteristics of the data (distribution).
+level of \\ measurement and characteristics of the data (distribution).
 \item Explain the concept of measures of spread and the information they convey.
 \item Compute and explain sample standard deviation, (\textit{SD}).
 \end{itemize}
@@ -561,7 +561,7 @@ In this example, men are twice as likely to get the disease but have six times t
 \begin{exercises}
   \begin{exercise} % 1
 
-The carbon monoxide measures (in mgs) are given on 25 brands of \\ cigarettes.
+The carbon monoxide \\ measures (in mgs) are given on 25 brands of  cigarettes.
 
 13.6    16.6    23.5    10.2     5.4     15.0     9.0    12.3    16.3   15.4
 13.0    14.4    10.0    10.2     9.5      1.5    18.5    12.6    17.5    4.9
@@ -656,10 +656,10 @@ Find the following statistics for \\ temperature:
 \item Removing the smallest value changes the mean to \Sexpr{mn34}.  The new value is closer to median because 13 is an outlier.
 \end{enumerate}
   \end{solution}
-
+ 
    \begin{exercise} % 3
 
-Joshua has been working \\ on  programming  and updating a Website for his  company for the past 12 months. The following numbers represent the number of hours Joshua  has worked on this Website for each of the past 12 months:
+Joshua has been \\ working  on  programming  and updating a \\ Website for his  company for the past 12 \\ months. The following numbers represent the number of hours Joshua  has worked on this Website for each of the past 12 months:
 
 24, 25, 31, 40, 48, 40, 36, 50, 38, 35 ,42, 112
 
@@ -687,9 +687,10 @@ Joshua has been working \\ on  programming  and updating a Website for his  comp
 
 \end{solution}
 
-% \newpage
+
 
 \begin{exercise} % 4
+
 <<label=LBL3-4, results="asis", echo=FALSE>>=
   shape5 <- numeric(3)
   shape5[1] <- "Left skewed"
@@ -705,7 +706,8 @@ Joshua has been working \\ on  programming  and updating a Website for his  comp
             292,262,20,90,135,279,290,244,194,350,
             131,88,61,229,597,81,398,20,277,193,
             169,264,121,166,246,186,71,284,143,188)
-  SMP5a <- sample(x=DT5a, size=10, replace=TRUE)
+
+  SMP5a <- sample(x=DT5a, size=9, replace=TRUE)
   mn5   <- mean(SMP5a)
   md5   <- median(SMP5a)
   sd5   <- sd(SMP5a)
@@ -714,9 +716,14 @@ Joshua has been working \\ on  programming  and updating a Website for his  comp
   shp5a  <- shape5[shp5]
 @
 
-In a study of warp breakage during the process of weaving fabric (\textit{Technometrics}, 1982: 63).  Ten specimens of yarn were tested.  The number of cycles of strain to breakage was determined for each yarn specimen, resulting in the following data:
+In a study of warp \\ breakage during the process of weaving \\ fabric (\textit{Technometrics}, 1982: 63).  Nine \\ specimens of yarn were tested.  The \\ number of cycles of strain to breakage was \\ determined for each yarn specimen, \\ resulting in the following  data:
 
-\Sexpr{SMP5a} \\
+\vspace{3mm}
+
+{\small{
+\Sexpr{SMP5a} 
+}}
+
 
 \begin{enumerate}
 \item Calculate the mean
@@ -739,8 +746,8 @@ In a study of warp breakage during the process of weaving fabric (\textit{Techno
 
 \end{solution}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% new exercises
-
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% new exercises
+% 
   \begin{exercise} % 5
 
   The weekly budgets for \\ groceries of six students are as follows: \\
@@ -861,7 +868,7 @@ You are a researcher for a mid-sized city. You collected six types of \\ variabl
 
 Select the  appropriate measures of central \\ tendency for each variable.
 
- 
+
 % \end{minipage}
 
 % \vspace{1cm}
@@ -905,9 +912,9 @@ Select the  appropriate measures of central \\ tendency for each variable.
    % \framebox[5cm][l]{ Answer: }
   \end{exercise}
    \begin{solution}  % 9
-  
+
      {\bf{Birth}} Mode=``North'';   {\bf{Expense}} Mean=48.5; {\bf{Movies}} Mean=5.8; {\bf{Food}} Median=6;  {\bf{Religion}} Mode=``Protestant''
-   
+
    \end{solution}
 
 % \newpage
@@ -925,7 +932,7 @@ As a leader of a Kalamazoo social services agency that employs 20 staff members,
    2005 & 50&64&55&64&60&53&56&50&51&45 \\ & 46&46&50&56&63&65&53&54&58&69 \\ \hline
    2015 & 57&47&46&59&59&50&57&52&41&66 \\ & 65&52&57&75&65&76&43&56&52&67 \\ \hline
    \end{tabular}
-    
+
    \label{tab:t3_4a}
    }}
 \end{table}
@@ -970,7 +977,7 @@ The median for 2015 is \Sexpr{med3b}.
    40 & 26 & 39 & 38 & 44 \\
    32 & 37 & 41 & 27 & 22 \\ \hline
    \end{tabular}
-    
+
    \label{tab:t3_12}
    }}
 \end{table}
@@ -1014,7 +1021,7 @@ The same 25 students \\ completed the same survey during their senior  year.  Co
    15 & 30 & 40 & 26 & 21 \\ \hline
    \end{tabular}
    }}
-    
+
    \label{tab:t3_6a}
 \end{table}
 
@@ -1108,20 +1115,20 @@ Calculate the mean and median of the pre and post test scores and comment on the
 The pretest median is \Sexpr{med3b}
 
 	\end{solution}
-	
+
 	\begin{exercise}   % 14
 
 	The acidity or alkalinity of a solution is measured using pH.  A pH less than 7 is acidic; a pH greater than 7 is alkaline.  The following data represent the pH in samples of bottled water and tap water.
 
 \begin{table}[ht]
  \centering
- 
+
 	{\small{             % \footnotesize{
 	\caption{Source: Emily. McCarney, \\ Joliet College}
  \begin{tabular}{@{} rrcrr @{}}
      % \multicolumn{4}{c}{TAP    |    BOTTLED}  \hline
-  % \multicolumn{2}{Tap} & | & \multicolumn{2}{Bottled} \hline    
-   Tap &  & | & Bottled  & \\ \hline  
+  % \multicolumn{2}{Tap} & | & \multicolumn{2}{Bottled} \hline
+   Tap &  & | & Bottled  & \\ \hline
    7.64 & 7.45 & | & 5.15 & 5.28 \\
    7.45 & 7.10 & | & 5.09 & 5.26 \\
    7.47 & 7.56 & | & 5.26 & 5.13 \\
@@ -1138,11 +1145,11 @@ The pretest median is \Sexpr{med3b}
  \item Calculate the mean  of the tap water.
  \item Determine the median of the tap water.
  \item Comment on the results.
-\end{enumerate} 
+\end{enumerate}
   \end{exercise}
 %   \begin{solution}  % 14
-%   
-%   
+%
+%
 %   \end{solution}
 
 \end{exercises}

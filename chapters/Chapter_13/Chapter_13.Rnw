@@ -308,7 +308,7 @@ The wine dataset used above is freely available online and fun to play with. One
     
 @  
 
-The wine quality dataset used in this chapter includes a variable on alcohol content. The average alcohol content of red wine is 10.423, while that of white wine is 10.5143. The respective standard deviations are 1.0657 and 1.2306. The respective sample sizes are 1599 and 4898.
+The wine quality \\ dataset used in this chapter includes a variable on alcohol content. The average alcohol content of red wine is 10.423, while that of white wine is 10.5143. The respective standard deviations are 1.0657 and 1.2306. The respective sample sizes are 1599 and 4898.
 
 \begin{itemize}
   \item Set up a hypothesis test. What are the two hypotheses?
@@ -337,7 +337,7 @@ Percent of alcohol
 
 \begin{exercise} % 2
 
-The wine quality dataset used in this chapter includes a variable on quality. The average quality score of red wine is 5.636, while that of white wine is 5.8779. The respective standard deviations are \\ 0.8076 and 0.8856. The respective sample sizes are 1599 and 4898.
+The wine quality \\ dataset used in this chapter includes a variable on quality. The average quality score of red wine is 5.636, while that of white wine is 5.8779. The respective standard deviations are \\ 0.8076 and 0.8856. The respective sample sizes are 1599 and 4898.
 
 \begin{itemize}
   \item Set up a hypothesis test. What are the two hypotheses?

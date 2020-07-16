@@ -30,13 +30,17 @@ Changing notation from the percentage to proportions and taking the difference o
 
 Whenever the two proportions are independent.  Applying equation SE of $\hat{p} = \sqrt{ \frac{ \hat{p} \hat{q} }{n}}$ twice, we have $SE_{\hat{p}_1} = \sqrt{ \frac{ \hat{p}_1 \hat{q}_1 }{n_1}}$ and $SE_{\hat{p}_2} = \sqrt{ \frac{ \hat{p}_2 \hat{q}_2 }{n_2}}$.  Substituting into the formula above, $SE_{(\hat{p}_1 - \hat{p}_2)} = \sqrt{ SE_{\hat{p}_1}^2 + SE_{\hat{p}_2}^2}$, we get:
 
-\fbox{\parbox{13cm}{
+\vspace{3mm}
+
+\fbox{\parbox{14cm}{
 \textbf{Standard Error of the Difference between two independent Proportions}
 
 \begin{equation*}
   SE_{( \hat{p}_1 - \hat{p}_2)} = \sqrt{ \frac{ \hat{p}_1 \hat{q}_1}{n_1} + \frac{ \hat{p}_2 \hat{q}_2}{n_2}}
 \end{equation*}
 }}
+
+\vspace{3mm}
 
 Continuing with the retention rate example, we let $\hat{p}_1 = 0.74$, $\hat{p}_2 = 0.66$, $n_1 = 200$, $n_2 = 200$ so that
 
@@ -138,7 +142,7 @@ with a standard error:
 
 \end{minipage}
 
-\vspace{5mm}
+\vspace{3mm}
 
 The 95\% confidence interval for $p_1 - p_2$ is
 
@@ -148,37 +152,36 @@ The 95\% confidence interval for $p_1 - p_2$ is
 
 Thus, even allowing for 1.96 SE's of chance variability, the actual difference between proportions is at least 0.16 (and could be as large as 0.26).  This difference means that the interval does not contain or it excluded 0 from the range of possible values.  When this happens, statisticians say that the differences are \textit{statistically significant}.
 
-\fbox{\parbox{13cm}{
-If the confidence interval for $\hat{p}_1 - \hat{p}_2$ excludes \textbf{zero}, then the difference is \textbf{statistically significant.}
-
+\fbox{\parbox{14cm}{
+If the confidence interval for $\hat{p}_1 - \hat{p}_2$ excludes \textbf{zero}, then the difference is \\ \textbf{statistically significant.}
 }}
 
 \subsection{The P-value}
 
 For convenience, let us continue the example of the previous section.
 
-\begin{minipage}[ht]{3cm}
+\begin{minipage}[ht]{29mm}
 
 \vspace{-4mm}
 
 \textbf{Question}
 \end{minipage}
-\begin{minipage}[ht]{12cm}
+\begin{minipage}[ht]{109mm}
 
-\parbox{12cm}{
+\parbox{108mm}{
 If chance alone was at work, how likely will we get a difference of 0.21 between two proportions?
 }
 \end{minipage}
 
-\begin{minipage}[ht]{3cm}
+\begin{minipage}[ht]{29mm}
 
 \vspace{-3mm}
 
 \textbf{Answer}
 \end{minipage}
-\begin{minipage}[ht]{12cm}
+\begin{minipage}[ht]{109mm}
 
-\parbox{12cm}{
+\parbox{108mm}{
 Very small, less than 0.0001 (or 1 in 10,000).
 }
 \end{minipage}
@@ -188,7 +191,7 @@ The `likelihood of getting 0.21 by chance' is called a P-value. The fact that it
 The actual probability calculation is beyond the scope of this class.  Let's say that random variables very rarely go past 4 SE's from their expected values (less than 1 in 10,000 times).  Since the SE for the difference is 0.026, the observed difference $\hat{p}_1 - \hat{p}_2 = 0.21$  is not just 1, nor 2, but 8 SE's from 0.  This difference cannot be chance alone.   Something else is at work.
 
 \begin{center}
-\fbox{\parbox{12cm}{
+\fbox{\parbox{14cm}{
 \textbf{The Rule for $p$-value:} \\
 If the $p$-value $\le 0.05$, the difference is \textit{statistically significant.} \\
 If the $p$-value $\le 0.01$, the difference is called \textit{highly significant.}
@@ -518,7 +521,7 @@ is lower than that of regular cooks.  Furthermore, the difference is highly sign
 
 \section{Key Words}
 
-\fbox{\parbox{13cm}{
+\fbox{\parbox{14cm}{
 \begin{minipage}[ht]{6cm}
 
 \begin{itemize}
@@ -644,7 +647,7 @@ Nonsmoker & 351 & 254 \\ \hline
 
   \begin{exercise} % 3
 
-The age at which a woman gives birth to her first child may be an  \\ essential factor in the risk of later  developing breast cancer.  An international study conducted by WHO selected women  with at least one birth and recorded if they had breast \\ cancer or not and whether they had their first child before their $30^{th}$ birthday or after. In a sample of 3220 women who had their first child after their $30^{th}$ birthday, 683 developed breast cancer.  Whereas, in a sample of 10245 women who had their first child before their $30^{th}$ birthday, 1483 developed breast \\ cancer.
+The age at which a \\ woman gives birth to her first child may be an   essential factor in the risk of later  developing \\ breast cancer.  An international study conducted by WHO selected women  with at least one birth and recorded if they had breast \\ cancer or not and whether they had their first child before their $30^{th}$ birthday or after. In a sample of 3220 women who had their first child after their $30^{th}$ birthday, 683 developed breast cancer.  Whereas, in a sample of 10245 women who had their first child before their $30^{th}$ birthday, 1483 developed breast  cancer.
 
 	  \begin{enumerate}
 	  \item Estimate the difference in the \\ percentage of developing breast cancer  between  women who had their \\ first  child after their $30^{th}$ birthday and before their  $30^{th}$ birthday.
@@ -764,7 +767,7 @@ A Pew Research Center poll asked randomly selected subjects if they \\ agreed wi
 
   \begin{exercise} % 6
 
-      Suppose half of the public safety officers in Kalamazoo, Michigan, completed the Investigative Procedures Curriculum (IPC).  The other half did not attend the IPC.  Did the course increase their effectiveness in clearing crimes by arrest?  The following table reports the results of the survey:
+      Suppose half of the public safety officers in Kalamazoo, Michigan, \\ completed the Investigative Procedures Curriculum (IPC).  The other half did not attend the IPC.  Did the course increase their effectiveness in clearing crimes by arrest?  The following table reports the results of the survey:
 
 \vspace{2mm}
 

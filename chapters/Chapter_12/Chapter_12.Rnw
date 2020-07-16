@@ -375,7 +375,7 @@ Master   & \$59,496 & \$675 & 7 \\ \hline
 
 \begin{exercise}  % 4
 
-A group of charity workers employed by a large foundation track the donations made to the foundation every \\ month. They note that the average donations for August were somewhat higher than the average donations for September, and they want to know if this fact should worry them moving forward. Performing the correct statistical test could determine whether the average difference in donations between \\ August and  September was significant. However, they  must first decide whether their August and  September donations are independent or not. If we were advising the charity workers, what would we tell them?
+A group of charity \\ workers employed by a large foundation \\ track the donations made to the foundation every  month. They note that the average donations for August were somewhat higher \\ than the average donations for September, \\ and they want to know if this fact should \\ worry them moving forward. Performing the correct statistical test could determine \\ whether the average difference in donations between  August and  September was significant. However, they  must first decide \\ whether their August and  September donations are independent or not. If we were advising the charity workers, what would we tell them?
 \end{exercise}
 \begin{solution}  % 4
 
@@ -384,9 +384,9 @@ A group of charity workers employed by a large foundation track the donations ma
 
 \begin{exercise}  % 5
 
-A new gasoline additive is supposed to make gas burn more cleanly and increase gas mileage in the process.  \\ Consumer Protection Anonymous conducted a mileage test to confirm this.  They took \\ seven of their cars, filled it with regular gas, and drove it on I-94 until it was empty.  They repeated the process using the same cars, but using the gas additive.  The recorded gas \\ mileage follows:
+A new gasoline \\ additive is supposed to make gas burn more cleanly and increase gas mileage in the process.  \\ Consumer Protection Anonymous conducted a mileage test to confirm this.  They took \\ seven of their cars, filled it with regular gas, and drove it on I-94 until it was empty.  They repeated the process using the same cars, but using the gas additive.  The recorded gas \\ mileage follows:
 
-{\small{
+{\footnotesize{
 \begin{tabular}{@{} llllllll @{}} \hline
 Additive & 1 & 2 & 3 & 4 & 5 & 6 & 7 \\ \hline
 Without & 22 & 15 & 18 & 28 & 12 & 25 & 18 \\
@@ -415,7 +415,7 @@ The group of charity \\ workers from the above question decides on a statistical
 
 \begin{exercise}  % 7
 
-Suppose a shoe company wants to test material for the soles of shoes.  For each pair of shoes the new material is placed on one shoe and the old material is placed on the other shoe.  After a given period of time a random sample of 16 pairs of shoes is selected.  The wear is measured on a 10 point scale (higher is better) with the following results.  The average of the differences is $\bar{X}_n - \bar{X}_o = 0.4$ and it standard deviation is $s_{diff} = 1.6$.
+Suppose a shoe \\ company wants to test material for the soles of shoes.  For each pair of shoes the new material is placed on one shoe and the old material is placed on the other shoe.  After a given period of time a random sample of 16 pairs of shoes is selected.  The wear is measured on a 10 point scale (higher is better) with the following results.  The average of the differences is $\bar{X}_n - \bar{X}_o = 0.4$ and it standard deviation is $s_{diff} = 1.6$.
 
 \begin{enumerate}
   \item Determine the mean difference in the sole-wear between the two material \\ types.        
@@ -475,7 +475,7 @@ Suppose a shoe company wants to test material for the soles of shoes.  For each 
                  
 @  
 
-Ramp metering is an engineering experiment that studies how automobiles enter an expressway to stop for a \\ short time before they join the flow of traffic.  The theory is that ramp metering  directs the number of vehicles on the expressway and the  number of vehicles accessing the expressway, resulting in a freer flow, which results in a faster travel times.  To prove the hypothesis whether ramp metering affects travel time, traffic engineers in Kalamazoo, Michigan, set up an experiment on a section of expressway where ramp meters were installed.  The response variable was the speed of vehicles.  A random sample of 15 vehicles on the expressway for a Tuesday at 5 p.m. with the ramp meters on and a second random sample of 15 vehicles on a different Tuesday at 5 p.m. with the ramp meters off resulted in the following speed summaries(in miles per hour).
+Ramp metering is an \\ engineering experiment that studies how automobiles enter an expressway to stop for a \\ short time before they join the flow of traffic.  The theory is that ramp metering  directs the number of vehicles on the expressway and the  number of vehicles accessing the expressway, resulting in a freer flow, which results in a faster travel times.  To prove the hypothesis whether ramp metering affects travel time, traffic engineers in Kalamazoo, Michigan, set up an experiment on a section of expressway where ramp meters were installed.  The response variable was the speed of vehicles.  A random sample of 15 vehicles on the expressway for a Tuesday at 5 p.m. with the ramp meters on and a second random sample of 15 vehicles on a different Tuesday at 5 p.m. with the ramp meters off resulted in the following speed summaries(in miles per hour).
 
 \begin{enumerate}
   \item Determine the mean difference \\ between ramp meters on and ramp meters off.

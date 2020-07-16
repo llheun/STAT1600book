@@ -29,24 +29,24 @@ Knowing the average and SD of a process $(36 \pm 8)$ gives us some understanding
 \begin{figure}[ht]
 \caption{Probability of Demand Exceeding 40}
 
-<<label=LBL6a, results="asis", echo=FALSE, out.width="14cm", out.height="7cm" >>=
+<<label=LBL6a, results="asis", echo=FALSE, out.width="7cm", out.height="4cm" >>=
 dataset<-rnorm(n=1000000, mean=36, sd=8)
 dataset <- data.frame(X=dataset)
 
 hist1<-ggplot(dataset,aes(x=X)) +
         geom_histogram(binwidth=3,fill="white",color="black") +
-        geom_histogram(data=subset(dataset,X>40.5),binwidth=3, 
-                 color="black", fill="skyblue")+ labs(y=NULL) + theme_bw() + 
+        geom_histogram(data=subset(dataset,X>40.5),binwidth=3,
+                 color="black", fill="skyblue")+ labs(y=NULL) + theme_bw() +
         scale_y_continuous(breaks=NULL) + theme(panel.border=(element_blank()))
 
-density1<-ggplot(dataset,aes(x=X)) + geom_density(fill="white",color="black")+theme_bw() + 
+density1<-ggplot(dataset,aes(x=X)) + geom_density(fill="white",color="black")+theme_bw() +
         labs(y=NULL) + scale_y_continuous(breaks=NULL) + theme(panel.border=(element_blank()))
 
 d <- ggplot_build(density1)$data[[1]]
 density1 <- density1 + geom_area(data = subset(d, x > 40.5), aes(x=x, y=y), fill="skyblue")
-                                                                   
+
 ggarrange(hist1, density1, ncol = 2, nrow = 1)
- 
+
 # annotate(geom = "text",
 #  dt1 <- rnorm(n=1000, mean=36, sd=8),
 #  hist(dt1, freq = FALSE, main="Probability of Demand > 40", xlab="X"),
@@ -81,7 +81,7 @@ The standard normal curve (or Z-curve) looks like Figure 6.2, and has the follow
 \begin{figure}[ht]
 \caption{Normal Z-curve}
 
-<<label=LBL6b, results="asis", echo=FALSE, out.width="9cm", out.height="9cm" >>=
+<<label=LBL6b, results="asis", echo=FALSE, out.width="8cm", out.height="7cm" >>=
   xv <- seq(from=-4, to=4, by=0.01)
   yv <- dnorm(xv, mean=0, sd=1)
   x_coor  <- seq(from=-4, to=4, by=1)
@@ -101,14 +101,13 @@ The standard normal curve (or Z-curve) looks like Figure 6.2, and has the follow
 
 In general, area under the curve for \textit{positive Z values} can be found using the Z-table on \ref{TBL61} on page 82 at the end of this chapter.  
 
-
 \begin{minipage}[ht]{3cm}
 
 \textbf{For practice}
 \end{minipage}
 \begin{minipage}[ht]{6cm}
 
-\parbox{6cm}{
+\parbox{58mm}{
   Using the Z-table, find $\dots$
 
   \begin{enumerate}
@@ -381,7 +380,7 @@ If the data histogram is approximately bell-shaped, expect around \\
 \begin{exercises}
   \begin{exercise} % 1
 
-Researchers conducted a \\ study to determine if any link existed \\ between cellular phone usage and the development of brain cancer (don't worry, no connection was found).  Data from this study indicate that the daily cell phone usage for all users is approximately normally distributed with mean 2.4 hours and standard deviation of 1.1  hours.
+Researchers conducted \\ a  study to determine if any link existed  between cellular phone usage and the development of brain cancer (don't worry, no connection was found).  Data from this study indicate that the daily cell phone usage for all users is approximately normally distributed with mean 2.4 hours and standard deviation of 1.1  hours.
 
 	\begin{enumerate}
 	\item What proportion of cell phone users are on their phones between 1 hour
@@ -413,6 +412,17 @@ cell phone users in terms of monthly usage.  How much time can you spend on your
 
   \begin{exercise} % 2
 
+<<label=LBL6-2, results='asis', echo=FALSE>>=
+  MN1 <- 24
+  SD1 <- 9
+  z1  <- (6 - 24) / 9
+  PROB1 <- 1 - pnorm( q=z1 , mean= MN1, sd=SD1)
+  pctl1 <- qnorm(p=.4, mean=0, sd=1)
+  x1 <- ( 24 + pctl1 * SD1 )
+  PROB2 <- 1 - pnorm( q=42, mean=MN1, sd=SD1)
+  PROB3 <- .5 + PROB2
+@
+
 On the average, a watch \\ battery is known to last for two years (24-months), with a standard deviation of 9 \\ months. Assume a normally distributed population.
 
  \begin{enumerate}
@@ -422,18 +432,8 @@ On the average, a watch \\ battery is known to last for two years (24-months), w
  \end{enumerate}
 
 	\end{exercise}
-% 	\begin{solution}  % 2
-%
-% <<label=LBL6-2, results='asis', echo=FALSE>>=
-%   MN1 <- 24
-%   SD1 <- 9
-%   z1  <- (6 - 24) / 9
-%   PROB1 <- 1 - pnorm( q=z1 , mean= MN1, sd=SD1)
-%   pctl1 <- qnorm(p=.4, mean=0, sd=1)
-%   x1 <- ( 24 + pctl1 * SD1 )
-%   PROB2 <- 1 - pnorm( q=42, mean=MN1, sd=SD1)
-%   PROB3 <- .5 + PROB2
-% @
+	\begin{solution}  % 2
+
 %
 % \begin{enumerate}
 % 	\item The percentage of watch batteries last more than 6 months is $P[ X > 6] = \Sexpr{PROB1}$.
@@ -442,12 +442,12 @@ On the average, a watch \\ battery is known to last for two years (24-months), w
 % than 3 1/2 years (42 months)?
 % $P[X < 24] + P[X > 42] = .5 + \Sexpr{PROB2} = \Sexpr{PROB3}$
 %  \end{enumerate}
-%
-% 	\end{solution}
+
+ 	\end{solution}
 
   \begin{exercise} % 3
 
-Suppose 95\% of data coming from a normally distributed population falls between 4 and 35.  Based on the empirical rule, what is the standard deviation of this sample of data?  Show your work.
+Suppose 95\% of data \\ coming from a normally distributed population falls between 4 and 35.  Based on the empirical rule, what is the standard deviation of this sample of data?  Show your work.
 
   \end{exercise}
   \begin{solution}   % 3
@@ -460,6 +460,19 @@ Suppose 95\% of data coming from a normally distributed population falls between
   \end{solution}
 
 	\begin{exercise}  % 4
+	
+<<label=LBL6-4, results="asis", echo=FALSE>>=
+  mn4 <- 10
+  sd4 <- 2
+  q1 <- (6 - 10)/2
+  prob4a <- 1 - pnorm(q=q1, mean=mn4, sd=sd4)
+  q2 <- (12 - 10)/2
+  prob4b <- pnorm(q2, mean=mn4, sd=sd4)
+  prob4c <- prob4a - prob4b
+  z1 <- qnorm(p=.33, mean=0, sd=1)
+  x41 <- mn4 - z1 * sd4
+  x42 <- mn4 + z1 * sd4
+@
 
 Let's assume a normally \\ distributed random variable with a mean of 10 and standard deviation of 2.
 
@@ -473,18 +486,6 @@ Let's assume a normally \\ distributed random variable with a mean of 10 and sta
 
 	\end{exercise}
 % 	\begin{solution}  % 4
-% <<label=LBL6-4, results="asis", echo=FALSE>>=
-%   mn4 <- 10
-%   sd4 <- 2
-%   q1 <- (6 - 10)/2
-%   prob4a <- 1 - pnorm(q=q1, mean=mn4, sd=sd4)
-%   q2 <- (12 - 10)/2
-%   prob4b <- pnorm(q2, mean=mn4, sd=sd4)
-%   prob4c <- prob4a - prob4b
-%   z1 <- qnorm(p=.33, mean=0, sd=1)
-%   x41 <- mn4 - z1 * sd4
-%   x42 <- mn4 + z1 * sd4
-% @
 %
 % \begin{enumerate}
 % \item The probability the value is greater than 6 is $P[X > 6] = \Sexpr{prob4a}$
@@ -493,6 +494,7 @@ Let's assume a normally \\ distributed random variable with a mean of 10 and sta
 % \item 33\% is above a, i.e., $P[X > a] = .33; a = \Sexpr{x41}$
 % \item 33\% is below b, i.e., $P[X < b] = .33; b = \Sexpr{x42}$
 % \end{enumerate}
+%
 % 	\end{solution}
  
   \begin{exercise}	% 5
@@ -526,7 +528,7 @@ The stock price for \\ Coca-Cola (KO) is normally distributed with a mean of 42.
 
 \begin{exercise}  % 6
 
-The average adult female \\ height is 63.8 inches with a standard deviation of 2.40. Assume the distribution is 
+The average adult \\ female  height is 63.8 inches with a standard deviation of 2.40. Assume the distribution is 
 approximately normal.
 
 \begin{enumerate}
@@ -542,7 +544,7 @@ approximately normal.
 
 \begin{exercise} % 7
 
-Values in the z-table give the area under the curve to the left of the z-values on the margins.  The upper margin gives the hundredth digit of z.  For example:
+Values in the z-table \\ give the area under the curve to the left of the z-values on the margins.  The upper margin gives the hundredth digit of z.  For example:
 
 \begin{enumerate}
 \item The area to the left of 0.0 is?
@@ -748,7 +750,7 @@ represents the $25^{th}$ percentile for weights of men (in \\ pounds)?
 
 		\begin{exercise}  % 13
 
-	  The mean and standard \\ deviation of 2013 Expenditures on Health as a share of GDP are 8.30 and 3.224, respectively.  \\ What percentage of countries had values below 7.3?   Hint: find the probability of the mean being less than 7.3.
+	  The mean and \\ standard  deviation of 2013 Expenditures on Health as a share of GDP are 8.30 and 3.224, respectively.  \\ What percentage of countries had values below 7.3?   Hint: find the probability of the mean being less than 7.3.
 
 	  \end{exercise}
 	  \vspace{2cm}
@@ -766,7 +768,7 @@ represents the $25^{th}$ percentile for weights of men (in \\ pounds)?
 
 			\begin{exercise}  % 14
 
-	  The mean and standard \\ deviation of 2013 Expenditures on Health as a share of GDP are 8.30 and 3.224, respectively.  \\ What percentage of countries had values \\ above 9.3?   Hint: find the probability of the mean being greater than 9.3.
+	  The mean and \\ standard  deviation of 2013 Expenditures on Health as a share of GDP are 8.30 and 3.224, respectively.  \\ What percentage of countries had values \\ above 9.3?   Hint: find the probability of the mean being greater than 9.3.
 
 	  \end{exercise}
 	  \vspace{2cm}
@@ -784,7 +786,7 @@ represents the $25^{th}$ percentile for weights of men (in \\ pounds)?
 
   		\begin{exercise}  % 15
 
-	  The mean and standard \\ deviation of 2013 Expenditures on Health as a share of GDP are 8.30 and 3.224, respectively.  \\ What percentage of countries had values between 7.3 and 9.3?   Hint: find the probability of the mean being between 7.3 and  9.3.
+	  The mean and \\ standard  deviation of 2013 Expenditures on Health as a share of GDP are 8.30 and 3.224, respectively.  \\ What percentage of countries had values between 7.3 and 9.3?   Hint: find the probability of the mean being between 7.3 and  9.3.
 
 	  \end{exercise}
 	  \begin{solution}    % 15

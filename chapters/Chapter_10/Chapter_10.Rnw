@@ -30,7 +30,11 @@ Situation: During a lunch break, a colleague wants to play a game where you each
 
 Method: Deciding whether your colleague cheated, we need to determine the chance of getting six tails in a row. Let's assume that we are playing with a fair coin so that $P[tail] = P[Head] = 0.5$ so that each flip is independent.  Next, we should ask, ``is it unusual to have six tails in a row with a fair coin?''
 
+
 Solution: We need to find the probability of achieving six tails in a row, assuming independence and fairness.
+
+\newpage
+
 
 \begin{eqnarray*}
 P[\texttt{six tails in a row}] &=& P[\texttt{ T and T and T and T and T and T} ] \\
@@ -39,6 +43,7 @@ P[\texttt{six tails in a row}] &=& P[\texttt{ T and T and T and T and T and T} ]
 &=& (0.5)^6 \\
 &=& 0.0156
 \end{eqnarray*}
+
 
 If we flipped a \textit{fair} coin six times, 100 different times, we expect between 1 and 2 of the 100 experiments to result in all tails where each experiment consists of six flips of the coin.  So what we observed it is possible but highly unlikely.  Therefore, we can make one of two conclusions:
 
@@ -49,7 +54,7 @@ If we flipped a \textit{fair} coin six times, 100 different times, we expect bet
 
 Is your colleague cheating, or did we see an unusual event?
 
-Here, we use \textit{hypothesis testing}.  We assume reality (in this case, the $P[tail] = 0.5$).  We gather data (sample) to determine whether the data contradicts our assumption.
+Here, we use \textit{hypothesis testing}.  We assume reality (in this case, the $P[tail] = 0.5$).  \\ We gather data (sample) to determine whether the data contradicts our assumption.
 
 \subsection{Define Hypotheses Testing}
 
@@ -59,7 +64,7 @@ Here is how we use hypotheses testings.
 
 \begin{enumerate}
 \item Make a statement about the nature of the population(s).
-\item Formulate an Analysis Plan. 
+\item Formulate an Analysis Plan.
 
   \begin{itemize}
   \item Sampling Distribution is approximately normal
@@ -73,22 +78,24 @@ Here is how we use hypotheses testings.
 \item Communicate our results to the audience.
 \end{enumerate}
 
-Definition: The Null Hypothesis ($H_0$) is a statement about the status quo.  For example,  the proportion of (boys and girls) births are equal.
+\subsubsection{Definition:} The Null Hypothesis ($H_0$) is a statement about the status quo.  For example,  the proportion of (boys and girls) births are equal.
 
-Definition: The Alternate Hypothesis ($H_a$) is a statement that we are trying to contradict the $H_0$.
+\subsubsection{Definition:} The Alternate Hypothesis ($H_a$) is a statement that we are trying to contradict the $H_0$.
 
 \begin{eqnarray*}
   H_0: P_1 &=& P_2 \\
-  H_a: P_1 &\ne& P_2 
-\end{eqnarray*}  
+  H_a: P_1 &\ne& P_2
+\end{eqnarray*}
 
-\section{Testing Hypotheses } Two Proportions from Independent Samples.
+\section{Testing Hypotheses }
+
+Two Proportions from Independent Samples.
 
 When the difference, between the observed proportions of sample A and sample B, is similar; we can expect no significance, i.e., ($\hat{p}_a - \hat{p}_b) \sim 0$.  On the other hand, when the proportion is dissimilar, we should expect a significant difference.  We will examine this process shortly.
 
 \subsection{Example 1}
 
-In a survey of drug use among students at WMU, data compared usage of alcohol and smoking. Table 1.1 presents the results of the study:
+In a survey of drug use among students at WMU, data compared usage of alcohol and \\ smoking. Table 10.1 presents the results of the study:
 
 % Requires the booktabs if the memoir class is not being used
 \begin{table}[htbp]
@@ -97,21 +104,21 @@ In a survey of drug use among students at WMU, data compared usage of alcohol an
    %\topcaption{Table captions are better up top} % requires the topcapt package
    \begin{tabular}{@{} lcc @{}} \hline % Column formatting, @{} suppresses leading/trailing space
      % \toprule
-     &  \multicolumn{2}{c}{Smoker} \\ \hline 
+     &  \multicolumn{2}{c}{Smoker} \\ \hline
      % \cmidrule(r){1-2} % Partial rule. (r) trims the line a little bit on the right; (l) & (lr) also possible
      Hard-Liquor Use & Yes & No \\ \hline
      Once or more & 56 & 15 \\
      Never        & 18 & 23 \\  \hline
      Total        & 74 & 38 \\ \hline
    \end{tabular}
-   
+
    \label{tab:c10_1}
 \end{table}
 
-In this study, the researchers are testing the proportion between non-smokers and smoker.  They believe that the ratio of non-smokers between and smokers are different when drinking hard liquor.  So they set-up an experiment to test the hypotheses at $\alpha = 0.05$.  We should be thinking about the two-tailed test.
+In this study, the researchers are testing the proportion between non-smokers and \\ smoker.  They believe that the ratio of non-smokers between and smokers are different when drinking hard liquor.  So they set-up an experiment to test the hypotheses at $\alpha = 0.05$.  We should be thinking about the two-tailed test.
 
 \begin{itemize}
-\item If the difference between the proportions of smokers and non-smokers when consuming hard liquor, then we might assume that the proportion of smokers also consume hard liquor.    
+\item If the difference between the proportions of smokers and non-smokers when consuming hard liquor, then we might assume that the proportion of smokers also consume hard liquor.
 \item Smoking is an independent variable.
 \end{itemize}
 
@@ -124,31 +131,31 @@ Now we can consider the above model to solve the situation.
   \item $H_0: P_1 = P_2$,   where $P_1$ is the proportion who smoke.
   \item $H_a: P_1 \ne P_2$, where $P_2$ is the proportion who do not smoke.
   \end{itemize}
-  
-\item Formulate an Analysis Plan. 
+
+\item Formulate an Analysis Plan.
 
   \begin{enumerate}
   \item Sampling Distribution is approximately normal
   \item Choose a level of significance equal to 0.05.
   \item Decide the number of observations. ($T_1 = 74$ smokers and $T_2 = 38$ non-smokers)
   \item Compute the standard error of the difference between the two proportions:
-  
+
   \begin{eqnarray*}
     SE_{\hat{p}_1-\hat{p}_2} &=& \sqrt{SE_{\hat{p}_1}^2 + SE_{\hat{p}_2}^2} \\
              &=& \sqrt{ \frac{\frac{N_1}{T_1} *(1 - \frac{N_1}{T_1})}{T_1} + \frac{\frac{N_2}{T_2} *(1 - \frac{N_2}{T_2})}{T_2} }
   \end{eqnarray*}
-    
+
   \item Calculate the test statitic:
-  
+
     \begin{equation*}
     z_0 = \frac{\frac{N_1}{T_1} - \frac{N_2}{T_2}}{SE_{\hat{p}_1-\hat{p}_2}}
     \end{equation*}
 
-  \end{enumerate}  
+  \end{enumerate}
 
 
 \item Make a statement about the nature of the population(s).
-\item Formulate an Analysis Plan. 
+\item Formulate an Analysis Plan.
 
   \begin{itemize}
   \item Sampling Distribution is approximately normal
@@ -172,11 +179,11 @@ Now let's consider the five-step model introduced above.
 
 \begin{itemize}
 \item Step 1. Read the problem carefully.
-\item Step 2. Stating the Hypotheses 
+\item Step 2. Stating the Hypotheses
 
 \begin{eqnarray*}
 H_0: P_s & = & P_{ns} \\
-H_a: P_s & \ne & P_{ns} 
+H_a: P_s & \ne & P_{ns}
 \end{eqnarray*}
 
 \item Step 3.  Deciding the Sampling Distribution and Set up the Critical Region.
@@ -190,16 +197,16 @@ H_a: P_s & \ne & P_{ns}
   T2   <- 38
   p2   <- N2/ T2
   # tmpp3<- (56 + 15)/(74 + 38)
-  p3   <- sqrt( p1*(1-p1)) 
+  p3   <- sqrt( p1*(1-p1))
   # tmpSEp3 <- sqrt(p3*(1-p3)) * sqrt(1/74 + 1/38)
   SE1  <- sqrt( p1 * (1 -p1)/T1 + p2 * (1 -p2)/T2)
   z1   <- (p1 - p2) / SE1
-@  
+@
 
 \begin{tabular}{@{} rcl @{}}
 Sampling Distribution & = & Approximately Normal \\
 Alpha ($\alpha$)  & = & 0.05 \\
-Critic Value (CV) & = & \Sexpr{tmpq} 
+Critic Value (CV) & = & \Sexpr{tmpq}
 \end{tabular}
 
 \item Step 4.  Computing the Standard Error.
@@ -209,9 +216,9 @@ Critic Value (CV) & = & \Sexpr{tmpq}
              &=& \sqrt{ \frac{\frac{56}{74} *(1 - \frac{56}{74})}{74} + \frac{\frac{15}{38} *(1 - \frac{15}{38})}{38} } \\ \vspace{3mm}
              &=& \Sexpr{SE1}
   \end{eqnarray*}
-    
+
   \item Calculate the test statitic:
-  
+
     \begin{eqnarray*}
     z_0 &=& \frac{\frac{56}{74} - \frac{15}{38}}{\Sexpr{SE1}} \\ \vspace{3mm}
         &=& \Sexpr{z1}
@@ -224,7 +231,7 @@ Critic Value (CV) & = & \Sexpr{tmpq}
 	\samepage
 	\item The interpretation is that there is evidence that the proportion of smokers is different from the proporton of non-smoker when drinking hard liquor.
 	\end{itemize}
-	 
+
 \end{itemize}
 
 \subsection{Example 2}    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -235,20 +242,20 @@ We have classified a random sample of 100 social work majors regarding whether t
   tmpq <- qnorm(0.975)
   N21   <- 25
   T21   <- 60
-  p21   <- N21 / T21 
+  p21   <- N21 / T21
   N22   <- 30
   T22   <- 40
-  p22   <- N22 / T22 
+  p22   <- N22 / T22
   ## p23   <- (25 + 30)/(60 + 40)
   ## SEp23 <- sqrt(p23*(1-p23)) * sqrt(1/60 + 1/40)
   SE21  <- sqrt( p21 * (1 -p21)/T21 + p22 * (1 -p22)/T22)
-  z21   <-  (p21 - p22) / SE21 
+  z21   <-  (p21 - p22) / SE21
   mtx1  <- matrix(c(35,25,10,30), nrow=2)
   colnames(mtx1) <- c('No', 'Yes')
   rownames(mtx1) <- c('No', 'Yes')
   ## tmp_plot1 <- barplot(mtx1, legend.text=c('No', 'Yes'), xlab='Employed', ylab='Certified')
-  
-@  
+
+@
 
 % Requires the booktabs if the memoir class is not being used
 \begin{table}[htbp]
@@ -264,7 +271,7 @@ We have classified a random sample of 100 social work majors regarding whether t
      Yes          & 25 & 30 \\ \hline
      Total        & 60 & 40 \\ \hline
    \end{tabular}
-   
+
    \label{tab:c10_2}
 \end{table}
 
@@ -280,7 +287,7 @@ Now let's consider the five-step model presented above.
 \begin{center}
 \begin{tabular}{@{} ll @{}}
 $H_0:$ & $P_{wSW} = P_{nSW}$ \texttt{  graduated from an accedited program} \\
-$H_a:$ & $P_{wSW} \ne P_{nSW}$  
+$H_a:$ & $P_{wSW} \ne P_{nSW}$
 \end{tabular}
 \end{center}
 
@@ -289,7 +296,7 @@ $H_a:$ & $P_{wSW} \ne P_{nSW}$
 \begin{tabular}{@{} rcl @{}}
 Sampling Distribution & = & normal distribution \\
 Alpha ($\alpha$)      & = & 0.05 \\
-Critic Value          & = & $\pm$\Sexpr{tmpq} 
+Critic Value          & = & $\pm$\Sexpr{tmpq}
 \end{tabular}
 
 \newpage
@@ -303,7 +310,7 @@ Table: Student graduated from an Accredited Program by Working as Social Worker.
 
    %\topcaption{Table captions are better up top} % requires the topcapt package
       % \begin{tabular}{@{} p{2.5cm} p{1cm} p{1cm} @{}} \hline % Column formatting, @{} suppresses leading/trailing space
-      \begin{tabular}{@{} l c c @{}}  
+      \begin{tabular}{@{} l c c @{}}
      % \toprule
      &  \multicolumn{2}{c}{ Working as a S.W. } \\ \hline
      % \cmidrule(r){1-2} % Partial rule. (r) trims the line a little bit on the right; (l) & (lr) also possible
@@ -312,7 +319,7 @@ Table: Student graduated from an Accredited Program by Working as Social Worker.
      Yes          & 25 & 30 \\ \hline
      Total        & 60 & 40 \\ \hline
    \end{tabular}
-   
+
 \end{minipage} \hfill
 \begin{minipage}[h]{6cm}
 
@@ -329,29 +336,29 @@ There is another way to look at this \\ data.
              &=& \sqrt{ \frac{\frac{25}{60} *(1 - \frac{25}{60})}{60} + \frac{\frac{30}{40} * (1 - \frac{30}{40})}{40} } \\ \vspace{3mm}
              &=& \Sexpr{SE21}
   \end{eqnarray*}
-    
+
 
   \item Calculate the test statitic:
-  
+
     \begin{eqnarray*}
     z_0 &=& \frac{\frac{25}{60} - \frac{30}{40}}{\Sexpr{SE21}} \\ \vspace{3mm}
         &=& \Sexpr{z21}
     \end{eqnarray*}
-    
+
 \begin{minipage}[ht]{6cm}
 
 Note: The adjacent bell-shaped \\ curve notes the rejection regions (RR) with a significant level 5 percent.  In this case, the test statistic is \Sexpr{z21}.  So it falls in the RR, and we will reject our null \\ hypotheses.
 
 \end{minipage} \hfill
 \begin{minipage}[ht]{6cm}
-    
+
 <<label=LBL10f, results="asis", include=TRUE, echo=FALSE, out.width="5cm", out.height="5cm">>=
   xv <- seq(-4,4,0.01)
 	yv <- dnorm(xv, mean=0, sd=1)
 	plot(xv, yv, type="l", ylab="probability", xlab=" -1.96 < x < 1.96")
 	tmpx1 <- c(xv[ xv > 1.96], 1.96)
 	tmpy1 <- c(dnorm(xv[xv > 1.96], mean=0, sd=1), 1e-3)
-	
+
 	polygon(tmpx1, tmpy1, col="yellow")
 	tmpx2 <- c(xv[ xv < (-1.96)], -1.96)
 	tmpy2 <- c( dnorm(xv[ xv < (-1.96)], mean=0, sd=1), 1.e-3)
@@ -360,19 +367,20 @@ Note: The adjacent bell-shaped \\ curve notes the rejection regions (RR) with a 
 	text(-3, .27, "RR")
 @
 
+
 \end{minipage}
 
-% \newpage
+\newpage
 
 \item Step 5.  Producing a Decision and Interpreting the Results of the Test.
 	\begin{itemize}
 	\samepage
 	\item Since the absolute value of the test statistic ($|\Sexpr{z21}|$) is greater than CV \\ (\Sexpr{tmpq}),  therefore, \textbf{reject} the null hypothesis ($H_0: P_wSW = P_{nSW}$).
 	\samepage
-	\item The interpretation is that there is evidence that the proportion of 
+	\item The interpretation is that there is evidence that the proportion of
 social workers working in their field graduated from an accredited program.
 	\end{itemize}
-	 
+
 \end{itemize}
 
 \section{Types of Errors}
@@ -381,7 +389,7 @@ A \textbf{type I error} is rejecting a \textbf{true null hypothesis}.  This erro
 
 A \textbf{type II error} is failing to reject a \textbf{false null hypothesis}.  This error is a false negative.  We commit a type II error when we fail to reject a relationship when it is false.  An example of a Type II error is a blood test designed to detect clots in patients who have a clot and does not detect it.
 
-When comparing two proportions, concluding the proportions were different when in reality they were not different would be a type I error; concluding the proportions were not different when in reality they were different would be a type II error. 
+When comparing two proportions, concluding the proportions were different when in reality they were not different would be a type I error; concluding the proportions were not different when in reality they were different would be a type II error.
 
 The following table summarizes the above definitions.
 
@@ -394,15 +402,15 @@ The following table summarizes the above definitions.
  Fail to reject $H_0$ & Correct decision & $P[type II] = \beta$ \\
  Reject $H_0$         & $P[type I] = \alpha$ & Correct decision \\ \hline
  \end{tabular}
- 
+
  \end{table}
- 
-% \pagebreak 
+
+% \pagebreak
 
 
 \section{Key Words}
 
-\fbox{\parbox{13cm}{
+\fbox{\parbox{14cm}{
 \begin{minipage}[ht]{6cm}
 
 \begin{itemize}
@@ -540,7 +548,7 @@ There is another way to look at this data.
 \begin{exercise}   % 2
 
 % \textbf{Drug Z} 
-The drug Drug Z is a vaccine meant to prevent a certain type of cancer.  It is typically administered to middle-aged subjects starting around 45 years of age.  In a randomized, double-blind clinical trial of Drug Z,  the subjects were randomly divided into two groups.  Subjects in group 1 received Drug Z, while subjects in group 2 received a control vaccine.  After the first \\ dose, 170 of 701 subjects in the experimental group (group 1) experienced fever as a side effect.  After the first dose, 76 of 622 of the subjects in the control group (group 2) experienced fever as a side effect.
+The drug Drug Z is a vaccine meant to prevent a certain type of cancer.  It is typically administered to \\ middle-aged subjects starting around 45 \\ years of age.  In a randomized, double-blind clinical trial of Drug Z,  the subjects were randomly divided into two groups.  Subjects in group 1 received Drug Z, while subjects in group 2 received a control vaccine.  After the first  dose, 170 of 701 subjects in the experimental group (group 1) experienced fever as a side effect.  After the first dose, 76 of 622 of the subjects in the control group (group 2) experienced fever as a side effect.
 
 \begin{itemize}
 \item Does the evidence suggest that the proportion of subjects in group 1  experienced fever as a side effect that is different from the subjects in group 2 at $\alpha = 0.05$ level of significance?
@@ -647,7 +655,7 @@ There is another way to look at this data.
 % 
 \begin{exercise}   % 3
 
-\textbf{Tattoos} The Harris Poll \\ conducted a survey in which they asked \\ ``How many tatoos do you curently have on your body?''  Of 1205 males surveyed, 181 \\ responded that they had at least one tattoo.  Of the 1097 females surveyed, 143 \\ responded that they had at least one tatoo.
+\textbf{Tattoos} The Harris Poll \\ conducted a survey in which they asked \\ ``How many tatoos do you curently have on your body?''  Of 1205 males surveyed, 181  responded that they had at least one tattoo.  Of the 1097 females surveyed, 143 \\ responded that they had at least one tatoo.
 
 \begin{itemize}
 
@@ -956,10 +964,10 @@ There is another way to look at this data.
   
 \begin{exercise} % 6
 
-In March 2003, the Pew Research Group surveyed 1503 adult Americans and asked, ``Do you believe the U.S.A. made the right decision to use military force in Iraq?''  Of the 1508 adult Americans surveyed, 1086 stated the U.S.A. made the right decision.  In August 2010, the Pew Research Group asked the same question of 1508 adult Americans and found that 608 believed the U.S.A. made the right decision.
+In March 2003, the \\ Pew Research Group surveyed 1503 adult \\ Americans and asked, ``Do you believe the U.S.A. made the right decision to use military force in Iraq?''  Of the 1508 adult Americans surveyed, 1086 stated the U.S.A. made the right decision.  In August 2010, the Pew Research Group asked the same question of 1508 adult Americans and found that 608 believed the U.S.A. made the right decision.
 
 \begin{itemize}
- \item Does the evidence suggest the proportion of American adults believed the \\ U.S. made the right decidion to invade Iraq in 2003 is different from American adults believed the  U.S. made the right decidion to invade Iraq in 2010 at a significance level of 0.05?.  
+ \item Does the evidence suggest the proportion of  American adults believed the \\ U.S. made the right decidion to invade Iraq in 2003 is different from American adults believed the  U.S. made the right decidion to invade Iraq in 2010 at a significance level of 0.05?.  
 \end{itemize}
 
 \end{exercise}

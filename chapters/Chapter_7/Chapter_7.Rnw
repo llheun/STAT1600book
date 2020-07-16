@@ -89,11 +89,11 @@ Remember that $0! = 1$ and $(0.2)^0 = 1$.  This formula is called the \textbf{bi
  P[ X = 3] = \frac{10!}{3! (10 - 3)!} .2^3 .8^{10 - 3} = 0.201
  \end{equation*}
 
-\begin{minipage}[ht]{3cm}
+\begin{minipage}[ht]{29mm}
 
 \textbf{For practice}
 \end{minipage}
-\begin{minipage}[ht]{12cm}
+\begin{minipage}[ht]{119mm}
 
 Five percent of customers who rent video games from Gamers Retro Rental who return the rental late.  What is the probability that customers will return their rental late if 30 customers borrow a video game during the last hour?
 
@@ -125,11 +125,11 @@ Returning to the example, since $n = 300$ and $p = 0.20$, we have $E(X) = 300(0.
 
 The SD for random variables is interpreted similarly to the SD for a sample.  If the store sells 300 smartwatches sets every quarter, they won't sell precisely 60 Geek Squad protection plans every time; sometimes they will sell more, sometimes they will sell less.   By how much more, and how much less?  The answer is, ``By 7, on average.''   Similarly, a baseball player with 0.200 batting average won't necessarily get 60 hits in 300 at-bats.  We expect him to get 60 hits, give or take seven hits.
 
-\begin{minipage}[ht]{3cm}
+\begin{minipage}[ht]{29mm}
 
 \textbf{For practice}
 \end{minipage}
-\begin{minipage}[ht]{12cm}
+\begin{minipage}[ht]{119mm}
 
 Suppose that 5\% of video games rented at Gamers Retro Rental incur a late rental fee. If 700 videos were rented last week, the number that will incur a late rental fee should be around \underline{\phantom{xxxxxxxxxx}} give or take \underline{\phantom{xxxxxxxxxx}}.
 
@@ -315,7 +315,16 @@ A binomial random \\ variable with a probability of success of 0.5 and ten obser
 
   \begin{exercise} % 2
 
-A statistics exam contains ten questions with five multiple choice options per question. By guessing on all questions,
+<<label=LBL7-2, results="asis", echo=FALSE>>=
+  N1 <- 10
+  P1 <- .2
+
+  prob1 <- 1 - pbinom(q=(2-1), size=N1, p=P1)
+  prob2 <- pbinom(q=2, size=N1, p=P1)
+  prob3 <- pbinom(q=3, size=N1, p=P1) - pbinom(q=(1-1), size=N1, p=P1)
+@
+
+A statistics exam \\ contains ten questions with five multiple \\ choice options per question. By guessing on all questions,
 
 \begin{enumerate}
 \item What is the probability that at least two questions correct?
@@ -324,14 +333,7 @@ A statistics exam contains ten questions with five multiple choice options per q
 \end{enumerate}
 	\end{exercise}
 % 	\begin{solution}  % 2
-% <label=LBL7-2, results="asis", echo=FALSE>>=
-%   N1 <- 10
-%   P1 <- .2
 %
-%   prob1 <- 1 - pbinom(q=(2-1), size=N1, p=P1)
-%   prob2 <- pbinom(q=2, size=N1, p=P1)
-%   prob3 <- pbinom(q=3, size=N1, p=P1) - pbinom(q=(1-1), size=N1, p=P1)
-% @
 %
 % \begin{enumerate}
 % \item The probability that at least 2 questions are correct is $P[X \ge 2] = \Sexpr{prob1}$.
@@ -450,7 +452,7 @@ The expected value is \Sexpr{MN1} and SD is \Sexpr{SD1}
 
   \begin{exercise}   % 8
 
-An industry official claims that 60 percent of all satellite dish owners subscribe to at least two premium movie \\ channels.  In an attempt to clarify this claim, the official will poll a random sample of dish owners.  Suppose the official's claim is true, and that she selected a random sample of 50 dish owners.  Assuming independence,
+An industry official \\ claims that 60 percent of all satellite dish \\ owners subscribe to at least two premium \\ movie  channels.  In an attempt to clarify this claim, the official will poll a random sample of dish owners.  Suppose the official's claim is true, and that she selected a random sample of 50 dish owners.  Assuming independence,
 
 \begin{enumerate}
 \item what is the probability that 33 or more dish owners in the sample subscribe to at least two premium movie channels?
@@ -484,7 +486,7 @@ An industry official claims that 60 percent of all satellite dish owners subscri
   p9b <- sprintf("%.4f", 1-pbinom(q=7, size=10, prob=0.9))
 @  
 
-According to the American Lung Assocation (ALA) 90\% of adult smokers started their habit before they were 21 years old.    Suppose researchers randomly \\ selected 10 smokers 21 years or older and \\ recorded their answer about when they \\ started to smoke tobacco.
+According to the American Lung Assocation (ALA) 90\% of adult \\ smokers started their habit before they were 21 years old.    Suppose researchers randomly \\ selected 10 smokers 21 years or older and \\ recorded their answer about when they \\ started to smoke tobacco.
 
 \begin{enumerate}
 \item What is the  probability that fewer than 8 of them started smoking before 21 \\ years of age?

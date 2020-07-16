@@ -167,7 +167,7 @@ Never        & 56 & 18 \\ \hline
 \end{tabular}
 }}
 
-Is liquor use associated with smoking?  Conduct a chi-square test to assess significance of association.
+Is liquor use associated with smoking?  \\ Conduct a chi-square test to assess significance of association.
 
 \end{exercise}
 \begin{solution} % 1
@@ -206,7 +206,7 @@ Total & 45 & 44 & 89 \\ \hline
 
 \begin{exercise} % 3
 
-A study investigating the association between size of cars and country found the following frequency counts:
+A study \\ investigating the association between size of cars and country found the following \\ frequency counts:
 
 \begin{table}[ht]
 \centering 
@@ -227,7 +227,7 @@ Is there evidence of a significant relationship between size of car and country,
 
 \begin{exercise} % 4
 
-Suppose Netflix held another special, collected data, and had a statistician calculate and interpret the chi square test statistic. However, this time, the statistician found insignificant differences between observed and expected counts for all those who did and did not laugh with and without free tickets. What is the appropriate conclusion in this case?
+Suppose Netflix held \\ another special, collected data, and had a \\ statistician calculate and interpret the chi \\ square test statistic. However, this time, the statistician found insignificant differences \\ between observed and expected counts for all those who did and did not laugh with and without free tickets. What is the appropriate conclusion in this case?
 \end{exercise}
 \begin{solution} % 4
 
