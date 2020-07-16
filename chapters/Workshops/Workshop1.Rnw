@@ -425,1153 +425,1156 @@ Number of absences & Frequency & Relative frequency \\
     \end{solution}
 
 \clearpage
-% 
-%     \begin{exercise}  % 3A         %%%%%%%%%%%%%%%%%%
-% 
-%     \begin{center}
-% \begin{flushleft}\textbf{\large \hfill Workshop 3A, Submitted by: }\end{flushleft}
-% 
-% \fbox{\parbox{14cm}{
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-%  }}
-% \end{center}
-% 
-% % {\small{
-% The number of ice cream cones sold during a single day in the middle of August was tracked for surrounding stores.  Consider the following stem and leaf and answer the  questions below. The stem represents `10's' and the leaves represent `1's'.  For instance, the first number represented is 14 (14 ice cream cones were sold at one store). 
-% 
-% \vspace{-4mm} 
-% 
+
+    \begin{exercise}  % 3A         %%%%%%%%%%%%%%%%%%
+
+    \begin{center}
+\begin{flushleft}\textbf{\large \hfill Workshop 3A, Submitted by: }\end{flushleft}
+
+\fbox{\parbox{14cm}{
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+ }}
+\end{center}
+
 % {\small{
-% \begin{verbatim}
-% <<label=LBL17a, results="asis", echo=FALSE>>=
-%   DT1 <- c(14,16,22,23,25,28,30,34,34,36,37,37,39,41,43,45,49,54,56)
-%   stem(DT1, scale=1)
-% @
-% \end{verbatim}
-% }}
-% 
-% \vspace{-4mm}
-% 
-% \begin{minipage}[ht]{7cm}
-% 
-% {\small{Give the five-number summary of the data:}}
-% 
-% \vspace{-2mm}
-% 
-% {\small{
-% \begin{enumerate}
-%   \item Make sure to show your work!
-%   \begin{enumerate}
-%     \item What is the MIN?
-%     \item	What is Q1?
-%     \item	What is the MED?
-%     \item What is Q3?
-%     \item What is the MAX?
-%   \end{enumerate} 
-%   
-%   \item Draw a boxplot for the data.
-%   \item Describe the shape of the \\ distribution (symmetric, right skewed, or left skewed).
-%   \item Ice Cream sales for a single day in January were tracked among several shops.  Would we use a histogram or bar chart to represent this data?  Why?  Draw the correct chart (histogram or bar chart).
-% \end{enumerate}
-% }}
-% 
-% \end{minipage} \hfill
-% \begin{minipage}[bht]{7cm}
-% 
-% {\small{
-% \begin{tabular}{@{} lc @{}} \hline
-% Cold Stone Creamery	& 18 \\
-% Culver's &	16 \\
-% Ritter's &	9 \\
-% Treat Street &	3 \\
-% Y'OPA &	20 \\
-% Yo Go Delites &	24 \\ \hline
-% \end{tabular}
-% }}
-% \end{minipage}
-% \end{exercise} 
-% \begin{solution} % 3A
-% 
-% \begin{enumerate}
-%   \item	Fill in the frequency and relative frequency above.
-%   \item	Complete a stem and leaf plot with the stem representing the 10's place and using 0-2.
-%   \item	Draw a histogram for the absences using the intervals in the relative frequency table above.
-%   \item	What percentage of students had number of absences less than 20?
-% \end{enumerate}
-% 
-%     \end{solution}
-%     
-% \clearpage
-% 
-%     \begin{exercise}  % 3B         %%%%%%%%%%%%%%%%%
-% 
-%     \begin{center}
-% \begin{flushleft}\textbf{\large \hfill Workshop 3B, Submitted by: }\end{flushleft}
-% 
-% \fbox{\parbox{14cm}{
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-%  }}
-% \end{center}
-% 
-% The age at inauguration for each U.S. President is provided below:
-% 
-% 52, 69, 64, 46, 54, 47, 70, 61, 57, 57, 58, 57, 61, 54, 68, 51, 49, 64, 57, 50, 48, 65, 52, 56, 46, 54, 56, 55, 51, 54, 51, 60, 62, 43, 55, 56, 61, 49, 51, 47, 55, 55, 54, 42, 51
-% 
-% https://www.loc.gov/rr/program/bib/inaugurations/
-% 
-% 
-% \begin{enumerate}
-%   \item Give the five-number summary of the data:
-%   {\small{
-%     \begin{enumerate}
-%     \item What is the MIN?
-%     \item What is Q1?
-%     \item What is the MED?
-%     \item What is Q3?
-%     \item What is the MAX?
-%     \end{enumerate}
-%   }}
-%     \item Draw a boxplot for the data.
-%     \item Finish the relative frequency table below. 
-% 
-% {\small{
-% \begin{tabular}{@{} lcc @{}} \hline
-% Age & Frequency & Relative frequency \\ \hline
-% 40 - 44 & & \\                        
-% 45 - 49 & & \\                       
-% 50 - 54 & & \\                      
-% 55 - 59 & & \\                      
-% 60 - 64 & & \\                    
-% 65 - 69 & & \\  
-% 70 - 74 & & \\
-% \end{tabular}
-% }}
-%     
-%     \item	Construct a histogram based on the given intervals for age at inauguration.  Describe the shape of the distribution (symmetric, right skewed, or left skewed).
-%     \item Do some extra research: Who was the youngest president at inauguration? Who was the oldest president at inauguration?
-% \end{enumerate}
-%     \end{exercise}
-%     \begin{solution} % 3A
-% 
-% \begin{enumerate}
-%   \item	Fill in the frequency and relative frequency above.
-%   \item	Complete a stem and leaf plot with the stem representing the 10's place and using 0-2.
-%   \item	Draw a histogram for the absences using the intervals in the relative frequency table above.
-%   \item	What percentage of students had number of absences less than 20?
-% \end{enumerate}
-% 
-%     \end{solution} 
-%     
-% \clearpage
-% 
-%     \begin{exercise}  % 3C         %%%%%%%%%%%%%%%%%
-% 
-%     \begin{center}
-% \begin{flushleft}\textbf{\large \hfill Workshop 3C, Submitted by: }\end{flushleft}
-% 
-% \fbox{\parbox{14cm}{
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-%  }}
-% \end{center}
-% 
-% The independence years of some Caribbean and African countries are shown below:
-%                 
-% 1804, 1847, 1910, 1922, 1941, 1951, 1956, 1956, 1956, 1956, 1956, 1957, 1958, 1958,\\ 1960, 1960,  1960, 1960, 1960,1960, 1960, 1960, 1960, 1961, 1961, 1962, 1962, 1966, \\ 1966, 1973, 1974, 1975, 1977, 1978, 1979, 1979, 1980, 1981, 1981, 1983, 1990, 1993
-% 
-% $n = 42$
-% 
-% \begin{enumerate}
-%   \item Give the five-number summary of the data:
-%   {\small{
-%   \begin{enumerate}
-%   \item What is the MIN?
-%   \item What is Q1?
-%   \item What is the MED?
-%   \item What is Q3?
-%   \item What is the MAX?
-% \end{enumerate}
-% }}
-% \item Draw a boxplot for the data.
-% \item Finish the relative frequency table below.
-% 
-% {\small{
-% \begin{tabular}{@{} lcc @{}} \hline
-% Age & Frequency & Relative frequency \\ \hline 
-% 1800 – 1839 & & \\
-% 1840 – 1879 & & \\		
-% 1880 – 1919	& & \\						
-% 1920 – 1959	& & \\				
-% 1960 – 1999	& & \\
-% \end{tabular}
-% }}
-% \item	Construct a histogram based on the given intervals for independence year. Describe the shape of the distribution (symmetric, right skewed, or left skewed).
-% \item Do some extra (but fun) research: Which country has the minimum (first) independence year on this list?
-% \end{enumerate}
-% \end{exercise} 
-% \begin{solution}  % 3C
-% 
-% \end{solution}
-% 
-% \clearpage
-% 
-%     \begin{exercise}  % 4A         %%%%%%%%%%%%%%%%%
-% 
-%     \begin{center}
-% \begin{flushleft}\textbf{\large \hfill Workshop 4A, Submitted by: }\end{flushleft}
-% 
-% \fbox{\parbox{14cm}{
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-%  }}
-% \end{center}
-% 
-% A local bank has been monitoring daily average wait-times for its customers for four weeks. The manager believed that she could improve the wait-times by having one(1) permanent clerk and three(3) floating clerks, instead of the current three (3) permanent clerks. The floating clerks would do other tasks except when the lines became excessive. Last week the manager implemented the new system. 
-% 
-% Old Policy:   5, 7, 10, 11, 18, 4, 4, 4, 14, 21, 0, 7, 8, 9, 18, 6, 6, 12, 22, 25 \\ 
-% New Policy: 4, 3, 9, 13, 17
-% 
-% Were waiting times longer using the ``Old Policy'' or the ``New Policy?''  To answer this question, calculate the following for both the old and new policies.
-% 
-% \begin{enumerate}
-%   \item Draw comparison dotplots for the samples above.
-%   \item For each sample, calculate the mean AND median.  Locate (place) these on your dotplots, clearly distinguishing between the two.
-%   % \item What is the mode for the old policy?
-%   \item Calculate the 10\% trimmed mean for the old policy.  How does this change from the regular mean?
-% \end{enumerate}
-% \end{exercise} 
-% \begin{solution}  % 4a
-% 
-% \end{solution}
-% 
-% \clearpage
-% 
-%     \begin{exercise}  % 4B         %%%%%%%%%%%%%%%%%
-% 
-%     \begin{center}
-% \begin{flushleft}\textbf{\large \hfill Workshop 4B, Submitted by: }\end{flushleft}
-% 
-% \fbox{\parbox{14cm}{
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-%  }}
-% \end{center}
-% 
-% Annual chocolate sales in billions of dollars from 6 countries are provided below.
-% 
-% \$2.5, \$1.9, \$4.2, \$1.2, \$3.3, \$19.1
-% 
-% For the data above calculate:
-% 
-% \begin{enumerate}
-%   \item Mean
-%   \item Median 
-%   \item 10 percent trimmed mean   % Median of Pairwise Averages
-% \end{enumerate}
-% \end{exercise} 
-% \begin{solution}  % 4b
-% 
-% \end{solution}
-% 
-% \clearpage
-% 
-%     \begin{exercise}  % 4C         %%%%%%%%%%%%%%%%%
-% 
-%     \begin{center}
-% \begin{flushleft}\textbf{\large \hfill Workshop 4C, Submitted by: }\end{flushleft}
-% 
-% \fbox{\parbox{14cm}{
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-%  }}
-% \end{center}
-% 
-% Weekly costs of lattes for 5 WMU graduate students are provided below.
-% 
-% \$3.47, \$12, \$7.52, \$10.5, \$4.5
-% 
-% \begin{enumerate}
-%   \item Mean
-%   \item Median 
-%   \item 20 percent trimmed mean   % Median of Pairwise Averages
-% \end{enumerate}
-% \end{exercise} 
-% \begin{solution}  % 4c
-% 
-% \end{solution}
-% 
-% \clearpage
-% 
-%     \begin{exercise}  % 5A         %%%%%%%%%%%%%%%%%
-% 
-%     \begin{center}
-% \begin{flushleft}\textbf{\large \hfill Workshop 5A, Submitted by: }\end{flushleft}
-% 
-% \fbox{\parbox{14cm}{
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-%  }}
-% \end{center}
-% 
-% The average MCAT scores for Michigan medical schools are provided below.
-% 
-% 504, 507, 507, 516, 508, 514
-% 
-% \begin{enumerate}
-%   \item Calculate the overall mean
-%   \item Calculate the SD
-%   \item How does Michigan's mean and SD compare to the national average of matriculants (those enrolled in medical schools) 508.7 and SD of 6.9?  Which has greater variability?
-% \end{enumerate}
-% 
-% http://www.mcattestscores.com/usmedicalschoolsmcatscoresGPA.html
-% 
-% https://www.aamc.org/download/321494/data/factstablea16.pdf
-% 
-% \end{exercise} 
-% \begin{solution}  % 5a
-% 
-% \end{solution}
-% 
-% \clearpage
-% 
-%     \begin{exercise}  % 5B         %%%%%%%%%%%%%%%%%
-% 
-%     \begin{center}
-% \begin{flushleft}\textbf{\large \hfill Workshop 5B, Submitted by: }\end{flushleft}
-% 
-% \fbox{\parbox{14cm}{
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-%  }}
-% \end{center}
-% 
-% Hourly wage of personnel within a small company are as follows:
-% 
-% \begin{tabular}{@{} ll @{}} \hline
-% Staff	&	Salary (dollars) \\ \hline
-% Owner		& 30 \\
-% Manager	& 21 \\
-% Worker	& 12 \\
-% Worker	& 11 \\
-% Worker	& 9 \\ \hline
-% \end{tabular}
-% 
-% \begin{enumerate}
-%   \item Calculate the average hourly wage of the staff.
-%   \item Calculate the SD
-%   \item A similar company has a mean hourly wage of \$17 per hour with a SD of 9.75.  Which has greater variability?  How does that relate to the spread of the data?
-% \end{enumerate}
-% 
-% \end{exercise} 
-% \begin{solution}  % 5b
-% 
-% \end{solution}
-% 
-% \clearpage
-% 
-%     \begin{exercise}  % 5c         %%%%%%%%%%%%%%%%%
-% 
-%     \begin{center}
-% \begin{flushleft}\textbf{\large \hfill Workshop 5C, Submitted by: }\end{flushleft}
-% 
-% \fbox{\parbox{14cm}{
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-%  }}
-% \end{center}
-% 
-% The data below are the weights of six (6) randomly selected kids in a daycare measured in pounds 
-% 
-%  13.6, 16.6, 23.5, 10.2, 5.4, 15.0
-% 
-% \begin{enumerate}
-%   \item What is the average weight of the six kids in pounds?
-%   \item Suppose the weights of the six kids are measured in kilograms instead. Calculate the average weight of the kids in kilograms (Hint: 1 pound = 0.453592 kilograms).
-%   \item What is the standard deviation of the weight of the kids in pounds?
-% \end{enumerate}
-% 
-% 
-% \end{exercise} 
-% \begin{solution}  % 5c
-% 
-% \end{solution}
-% 
-% 
-% \clearpage
-% 
-%     \begin{exercise}  % 6a         %%%%%%%%%%%%%%%%%
-% 
-%     \begin{center}
-% \begin{flushleft}\textbf{\large \hfill Workshop 6A, Submitted by: }\end{flushleft}
-% 
-% \fbox{\parbox{14cm}{
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-%  }}
-% \end{center}
-% 
-% The following is an excerpt from a New York Times article by Nicholas Bakalar (Feb. 10, 2009).
-% 
-% \begin{quotation}
-% Lengthy television viewing in adolescence may raise the risk for depression in young adulthood, according to a new report.
-% 
-% The study, in the February issue of The Archives of General Psychiatry, published by the American Medical Association, found a rising risk of depressive symptoms with increasing hours spent watching television.
-% 
-% Researchers used data from a larger analysis of 4,142 adolescents who were not depressed at the start of the study. After seven years of follow-up, more than 7 percent had symptoms of depression.
-% 
-% But while about 6 percent of those who watched less than three hours a day were depressed, more than 17 percent of those who watched more than nine hours a day had depressive symptoms.
-% \end{quotation}
-% 
-% \begin{enumerate}
-%   \item The word `raise' in the title implies cause-and-effect, not just association.  When comparing lengthy viewers with those who watch less, what possible    confounders can you think of?
-%   \item Using one confounder from your answer(s) in (1), draw a pathway graph depicting the possible relationship between confounder, possible cause and outcome.
-% \end{enumerate}
-% \end{exercise}
-% \begin{solution}  % 6a
-% 
-% \end{solution}
-% 
-% \clearpage
-% 
-%     \begin{exercise}  % 6b         %%%%%%%%%%%%%%%%%
-% 
-%     \begin{center}
-% \begin{flushleft}\textbf{\large \hfill Workshop 6B, Submitted by: }\end{flushleft}
-% 
-% \fbox{\parbox{14cm}{
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-%  }}
-% \end{center}
-% 
-% The following is an excerpt from a Reuters article by Amy Norton (July 2011).
-% 
-% \begin{quotation}
-% 
-% Are kids safer with grandparents driving?
-% 
-% When children are involved in a car accident, they are less likely to be injured if grandma or grandpa are driving rather than mom or dad, a new study suggests.
-% 
-% The study, published in the journal Pediatrics, looked at five years' worth of data on U.S. car crashes involving children younger than 16.
-% 
-% It found that when grandparents were at the wheel, 0.7 percent of children were injured in the crash. That compared with 1 percent when parents were driving.
-% 
-% When the researchers considered other factors -- such as the circumstances and severity of the crash -- kids riding with grandparents were half as likely to be injured, versus those riding with their parents.
-% 
-% \end{quotation}
-% 
-% \begin{enumerate}
-%   \item The title implies cause-and-effect, not just association.  When comparing injury rates between parents driving and grandparents driving, what possible    confounders can you think of?
-%   \item Using one confounder from your answer(s) in (1), draw a pathway graph depicting the possible relationship between confounder, possible cause and outcome.
-% \end{enumerate}
-% \end{exercise}
-% \begin{solution}  % 6b
-% 
-% \end{solution}
-% 
-% \clearpage
-% 
-%     \begin{exercise}  % 6c         %%%%%%%%%%%%%%%%%
-% 
-%     \begin{center}
-% \begin{flushleft}\textbf{\large \hfill Workshop 6C, Submitted by: }\end{flushleft}
-% 
-% \fbox{\parbox{14cm}{
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-%  }}
-% \end{center}
-% 
-% Frequency of playing violent video games has at times been linked with and seen as a possible cause for those committing violent acts.  Much debate still looms over whether playing violent video games can lead to a desensitization of violence and a lack of compassion for others.
-% 
-% One article that explores these ideas is titled, The Impact of Degree of Exposure to Violent Video Games, Family Background, and Other Factors on Youth Violence, by the authors Whitney Decamp and Christopher Ferguson.  The authors respond to the concern that violence in video games might contribute to youth violence.  There is still no consensus on whether violent video games may be contributing to violence in youth.  The authors sought to study this issue in an ethnically diverse sample of youth in eighth ($n = 5133$) and eleventh grade ($n = 3886$).  Questionnaire surveys were given to the youth to assess a link.  Independent or predictor variables included the playing of violent video games, and an inclination towards violent video games.  Dependent variables included questions pertaining to hitting with the intention to hurt another and taking part in a fight.
-% 
-% Mixed results were reported.  The authors summarized that violent video game play was not significant in 5 of the models used.  There was, however, a positive correlation between games and violent behavior for the models without controls.   When the authors controlled for the propensity and context, however, this suggested the association to be more spurious (not being what it claims to be).  What other factors may be impacting this outcome?
-% 
-% \begin{enumerate}
-%   \item What possible confounders can you think of for a study of this nature?
-%   \item Using one confounder from your answer(s) in (1), draw a pathway graph depicting the possible relationships between confounder, possible cause and outcome.
-% \end{enumerate}
-% \end{exercise}
-% \begin{solution}  % 6c
-% 
-% \end{solution}
-% 
-% 
-% \clearpage
-% 
-%     \begin{exercise}  % 7a         %%%%%%%%%%%%%%%%%
-% 
-%     \begin{center}
-% \begin{flushleft}\textbf{\large \hfill Workshop 7A, Submitted by: }\end{flushleft}
-% 
-% \fbox{\parbox{14cm}{
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-%  }}
-% \end{center}
-% 
-% Jet design researchers have come up with two new designs for the wings of a rocket plane. They think both designs are an improvement over the old design but want to know which of their new designs performs better at high altitudes. Specifically, they want to know which new design results in more maneuverability at or above 100,000 feet above sea level. They decide to design a randomized trial to study this.
-% 
-% 
-% \begin{enumerate}
-%   \item The researchers include a control group in their design plan. Describe a possible control group. Why did they add it to the study?
-%   \item Several pilots and planes are lined up for this study. How could the researchers randomize their experiment to avoid confounders?
-%   \item One way to measure maneuverability is by surveying pilots about how they thought the jets handled. Could a design that asks pilots this question be blinded? If so, how?
-%   \item Could the design from (2) be double-blinded? If so, how?
-%   \item What makes single and double blinding important?
-% \end{enumerate}
-% \end{exercise}
-% \begin{solution}  % 7a
-% 
-% \end{solution}
-% 
-% \clearpage
-% 
-%     \begin{exercise}  % 7b         %%%%%%%%%%%%%%%%%
-% 
-%     \begin{center}
-% \begin{flushleft}\textbf{\large \hfill Workshop 7B, Submitted by: }\end{flushleft}
-% 
-% \fbox{\parbox{14cm}{
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-%  }}
-% \end{center}
-% 
-% Some students at WMU were curious about whether partying influences GPA. To find out, they surveyed 100 of their WMU peers, asking each peer only two questions: 1) How many hours a week do you party? 2) What is your GPA? The students then compiled their data and performed an appropriate statistical analysis. They concluded that partying does influence GPA, i.e., the more you party, the lower your GPA.
-% 
-% \begin{enumerate}
-%   \item What kind of study design is this?
-%   \item What are advantages of this study design?
-%   \item What are disadvantages of this study design?
-%   \item Did the students overlook anything that might have biased or confounded their results?
-%   \item Suppose the students wanted to correct for something they overlooked. How could they improve their study design?
-% \end{enumerate}
-% 
-% \end{exercise}
-% \begin{solution}  % 7b
-% 
-% \end{solution}
-% 
-% \clearpage
-% 
-%     \begin{exercise}  % 7c         %%%%%%%%%%%%%%%%%
-% 
-%     \begin{center}
-% \begin{flushleft}\textbf{\large \hfill Workshop 7C, Submitted by: }\end{flushleft}
-% 
-% \fbox{\parbox{14cm}{
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-%  }}
-% \end{center}
-% 
-% Yogurt is known to contain `friendly bacteria' known generally as probiotics which can benefit the gastrointestinal system.  Many strains of bacteria can be found in yogurt, with some of the most common being, \textit{Lactobacillus bulgaricus}, \textit{Streptococcus thermophilus}, and \textit{Lactobacillus acidophilus}.  Further research has been done suggesting probiotics boost the immune system and may even help in weight management and reduction of disease such as cancer.  A group of researchers decided to investigate this using a questionnaire assessing yogurt consumption (yes/no) and asking questions pertaining to the health of the individuals.
-% 
-% \begin{enumerate}
-%   \item First of all, what kind of study design is this?
-%   \item What are advantages of this type of study design?
-%   \item What are disadvantages of this study design?
-%   \item	The researchers then separated the results of the surveys for those who said `yes' they consume yogurt to those who said `no' they do not consume yogurt.  They compared the two groups using these as a treatment and control group.  What is wrong with this assumption?
-%   \item	Suppose the researchers found that those consuming yogurt had better health and concluded that \textit{Lactobacillus bulgaricus} caused a reduction of weight, improved GI and Immune systems.  What are two major problems in this?
-%   \item	What may be a bias or lead to confounding in this study?
-%   \item	How could the researchers improve their study design in order to make a conclusion about the effectiveness of \textit{Lactobacillus bulgaricus} and immune system function?
-% \end{enumerate}
-% 
-% \end{exercise}
-% \begin{solution}  % 7c
-% 
-% \end{solution}
-% 
-% \clearpage
-% 
-%     \begin{exercise}  % 8a         %%%%%%%%%%%%%%%%%
-% 
-%     \begin{center}
-% \begin{flushleft}\textbf{\large \hfill Workshop 8A, Submitted by: }\end{flushleft}
-% 
-% \fbox{\parbox{14cm}{
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-%  }}
-% \end{center}
-% 
-% Debt Poet's Society
-% 
-% According to a Sallie Mae survey and credit bureau data, in 2008, college students carried an average of \$3,173 debt on their credit cards (USA TODAY, April 13, 2009). Suppose that current credit card debts for all college students have a normal distribution with a mean of \$3,173 and a standard deviation of \$800. 
-% 
-% \begin{enumerate}
-%   \item Find the probability that credit card debt for a randomly selected college student below \$2,109.
-%   \item Find the probability that credit card debt for a randomly selected college student is above \$3,605.
-%   \item Find the probability that credit card debt for a randomly selected college student is between \$2,109 and \$3,605.
-% \end{enumerate}
-% 
-% \end{exercise} 
-% \begin{solution}  % 8a
-% 
-% \end{solution}
-% 
-% \clearpage
-% 
-%     \begin{exercise}  % 8b         %%%%%%%%%%%%%%%%%
-% 
-%     \begin{center}
-% \begin{flushleft}\textbf{\large \hfill Workshop 8B, Submitted by: }\end{flushleft}
-% 
-% \fbox{\parbox{14cm}{
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-%  }}
-% \end{center}
-% 
-% The Social Network
-% 
-% According to an article published on the Web site www.PCMag.com, Facebook users spend an average of 190 minutes per month checking and updating their Facebook pages (Source: http://www.pcmag.com/article2/0,2817,2342757,00.asp). Suppose that the current distribution of time spent per month checking and updating a member's Facebook page is normally distributed with a mean of 190 minutes and a standard deviation of 53.4 minutes. For a randomly selected Facebook member, determine the probability that the amount of time that he or she spends per month checking and updating his or her Facebook page is…
-% 
-% \begin{enumerate}
-%   \item More than 180 minutes
-%   \item Less than 120 minutes
-%   \item Between 120 and 180 minutes
-% \end{enumerate}
-% 
-% \end{exercise} 
-% \begin{solution}  % 8b
-% 
-% \end{solution}
-% 
-% \clearpage
-% 
-%     \begin{exercise}  % 8c         %%%%%%%%%%%%%%%%%
-% 
-%     \begin{center}
-% \begin{flushleft}\textbf{\large \hfill Workshop 8C, Submitted by: }\end{flushleft}
-% 
-% \fbox{\parbox{14cm}{
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-%  }}
-% \end{center}
-% 
-% The amount paid out by Ajax Insurance Company in a year is normally distributed with mean 3 billion dollars and standard deviation 0.5 billion dollars. The company’s executives consider it a bad year if they must pay out more than 4.25 billion dollars. 
-% 
-% \begin{enumerate}
-%   \item Determine the probability of a bad year.
-%   \item What is the probability that the company will have a good year?
-%   \item What is the probability that the company paid out between 2 billion dollars and 3.5 billion dollars?
-% \end{enumerate}
-% 
-% \end{exercise} 
-% \begin{solution}  % 8c
-% 
-% \end{solution}
-% 
-% \clearpage
-% 
-%     \begin{exercise}  % 9a         %%%%%%%%%%%%%%%%%
-% 
-%     \begin{center}
-% \begin{flushleft}\textbf{\large \hfill Workshop 9A, Submitted by: }\end{flushleft}
-% 
-% \fbox{\parbox{14cm}{
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-%  }}
-% \end{center}
-% 
-% Debt Poet’s Society
-% 
-% According to a Sallie Mae survey and credit bureau data, in 2008, college students carried an average of \$3,173 debt on their credit cards (USA TODAY, April 13, 2009). Suppose that current credit card debts for all college students have a normal distribution with a mean of \$3,173 and a standard deviation of \$800. 
-% 
-% \begin{enumerate}
-%   \item 10\% of the credit card debt for college students is above what value?
-%   \item 10\% of the credit card debt for college students is below what value?
-%   \item The middle 80\% of the credit card debt for college students is between what two values?
-%   \item How likely would it be for a college students to have credit card debt of \$4,500 or more?
-% \end{enumerate}
-% 
-% \end{exercise} 
-% \begin{solution}  % 9a
-% 
-% \end{solution} 
-% 
-% \clearpage
-% 
-%     \begin{exercise}  % 9b         %%%%%%%%%%%%%%%%%
-% 
-%     \begin{center}
-% \begin{flushleft}\textbf{\large \hfill Workshop 9B, Submitted by: }\end{flushleft}
-% 
-% \fbox{\parbox{14cm}{
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-%  }}
-% \end{center}
-% 
-% Tommy Wait, a minor-league baseball pitcher, is notorious for taking an excessive \\ amount of time between pitches. In fact, his times between pitches are normally distributed with a mean of 36 seconds and a standard deviation of 2.5 seconds.
-% 
-% \begin{enumerate}
-%   \item 10\% of the time between pitches is above what value?
-%   \item 10\% of the time between pitches is below what value?
-%   \item The middle 80\% of the time between pitches is between what two values?
-%   \item How likely would it be for the time between pitches of 40 seconds or more? \end{enumerate}
-% 
-% \end{exercise} 
-% \begin{solution}  % 9b
-% 
-% \end{solution} 
-%     
-% \clearpage
-% 
-%     \begin{exercise}  % 9c         %%%%%%%%%%%%%%%%%
-% 
-%     \begin{center}
-% \begin{flushleft}\textbf{\large \hfill Workshop 9C, Submitted by: }\end{flushleft}
-% 
-% \fbox{\parbox{14cm}{
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-%  }}
-% \end{center}
-% 
-% The amount paid out by Ajax Insurance Company in a year is normally distributed with mean 3 billion dollars and standard deviation 0.5 billion dollars. The company’s executives consider it a bad year if they must pay out more than 4.25 billion dollars. 
-% 
-% \begin{enumerate}
-%   \item 18\% of the amount paid out by Ajax Insurance Company is below what amount?
-%   \item There is a 5\% chance that the company will have to pay more than an amount $x$ (in billions of dollars). What is the value of $x$?
-%   \item The middle 60\% of the amount paid out by the company is between what two values (in billions of dollars)? 
-% \end{enumerate}
-% 
-% \end{exercise} 
-% \begin{solution}  % 9c
-% 
-% \end{solution}
-% 
-% \clearpage
-% 
-%     \begin{exercise}  % 10a         %%%%%%%%%%%%%%%%%
-% 
-%     \begin{center}
-% \begin{flushleft}\textbf{\large \hfill Workshop 10A, Submitted by: }\end{flushleft}
-% 
-% \fbox{\parbox{14cm}{
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-%  }}
-% \end{center}
-% 
-% Drugstore Cowboy
-% 
-% According to an October 27, 2006 article in Newsweek, 60\% of Americans said that they take expired medicines. Suppose that this result is true of the current population of Americans.
-% 
-% \begin{enumerate}
-% \item Let $x$ be a binomial random variable that denotes the number of American in a random sample of 4 who have taken expired medicines. What are the possible values that $x$ can assume?
-% \item Find the probability that exactly 2 Americans in a sample of 4 have taken expired medicines.
-% \item Find the probability that at least 3 Americans in a sample of 4 have taken expired medicines.
-% \item Find the probability that at most 1 American in a sample of 4 have taken expired medicines.
-% \end{enumerate}
-% 
-% \end{exercise}
-% \begin{solution}
-% 
-% \end{solution}
-% 
-% 
-% \clearpage
-% 
-%      \begin{exercise}  % 10b         %%%%%%%%%%%%%%%%%
-% 
-%     \begin{center}
-% \begin{flushleft}\textbf{\large \hfill Workshop 10B, Submitted by: }\end{flushleft}
-% 
-% \fbox{\parbox{14cm}{
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-%  }}
-% \end{center}
-% 
-% The Social Network
-% 
-% According to a Harris Interactive poll, 50\% of American college graduates have Facebook accounts. Suppose that this result is true for the current population of American college graduates.
-% 
-% \begin{verbatim}
-% http://www.harrisinteractive.com/harris_poll/pubs/Harris_Poll_2009_04_16.pdf
-% \end{verbatim}
-% 
-% \begin{enumerate}
-%   \item Let $x$ be a binomial random variable that denotes the number of American college graduates in a random sample of 5 who have Facebook accounts. What are the possible values that $x$ can assume?
-%   \item Find the probability that exactly 3 American college graduates in a sample of 5 have Facebook accounts.
-%   \item Find the probability that at least 3. American college graduates in a sample of 5 have Facebook accounts.
-%   \item Find the probability that at most 1 American college graduate in a sample of 5 have Facebook accounts.
-% \end{enumerate}
-% 
-% \end{exercise} 
-% \begin{solution}  % 10b
-% 
-% \end{solution}
-% 
-%     
-% \clearpage
-% 
-%    \begin{exercise}  % 10c        %%%%%%%%%%%%%%%%%
-% 
-%     \begin{center}
-% \begin{flushleft}\textbf{\large \hfill Workshop 10C, Submitted by: }\end{flushleft}
-% 
-% \fbox{\parbox{14cm}{
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-%  }}
-% \end{center}
-% 
-% The Bureau of Labor Statistics reports that in May 2016 that 10.5\% of people who work in the Kalamazoo metropolitan area are employed in production occupations (i.e., making things). Suppose that a random sample of 5 Kalamazoo workers is taken. Let $X$ be a random variable which denotes the number of workers in the sample who are employed in production occupations.
-% 
-% \begin{enumerate}
-% \item What are the possible values which X can take?
-% \item Find the probability that exactly 2 of the 5 workers in the sample will be employed in production occupations.
-% \item Find the probability that at least 3 of the 5 workers in the sample will be employed in production occupations.
-% \item Find the probability that at most 1 of the 5 workers in the sample will be employed in production occupations.
-% \end{enumerate}
-% 
-% \end{exercise} 
-% \begin{solution}  % 10c
-% 
-% \end{solution}
-% 
-% \clearpage
-% 
-%     \begin{exercise}  % 11a        %%%%%%%%%%%%%%%%%
-% 
-%     \begin{center}
-% \begin{flushleft}\textbf{\large \hfill Workshop 11A, Submitted by: }\end{flushleft}
-% 
-% \fbox{\parbox{14cm}{
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-%  }}
-% \end{center}
-% 
-% Credit where Credit is Due 
-% 
-% According to a May 27, 2009 Minneapolis Star-Tribune article, 78\% of U.S. households have at least one credit card. 
-% 
-% Source: http://www.startribune.com/politics/45797562.html
-% 
-% \begin{enumerate}
-%   \item For a random sample of 500 U.S. households, what is the expected value and standard deviation of the number of U.S. households with at least one credit card. 
-%   \item Using the normal approximation, find the probability that in a random sample of 500 U.S. households, more than 375 households have at least one credit card. 
-%   \item Using the normal approximation, find the probability that in a random sample of 500 U.S. households, less than 385 households have at least one credit card. 
-%   \item Using the normal approximation, find the probability that in a random sample of 500 U.S. households, 376 to 384 households have at least one credit card. 
-% \end{enumerate}
-% 
-% \end{exercise} 
-% \begin{solution}  % 11a
-% 
-% \end{solution}
-% 
-% \clearpage
-% 
-%     \begin{exercise}  % 11b        %%%%%%%%%%%%%%%%%
-% 
-%     \begin{center}
-% \begin{flushleft}\textbf{\large \hfill Workshop 11B, Submitted by: }\end{flushleft}
-% 
-% \fbox{\parbox{14cm}{
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-%  }}
-% \end{center}
-% 
-% Tongue Twister 
-% 
-% A 2007 article states that 4.8\% of U.S. households are ``linguistically isolated,'' which means that all members of the household aged 14 years and older have difficulty speaking English.  Assume that this percentage is true for the current population of U.S. households. 
-% 
-% 
-%  (Source: http://www.antara.co.id/en/arc/2007/9/12/ \newline five-percent-of-us-families-dont-speak-english-report/)
-% 
-% 
-% \begin{enumerate}
-%   \item For a random sample of 750 U.S. households, what is the expected value and standard deviation of the number of U.S. households classified as ``linguistically isolated.''
-%   \item Using the normal approximation, find the probability that in a random sample of 750 U.S. households, more than 45 would be classified as ``linguistically isolated.'' 
-%   \item Using the normal approximation, find the probability that in a random sample of 750 U.S. households, less than 45 would be classified as ``linguistically isolated.'' 
-%   \item Using the normal approximation, find the probability that in a random sample of 750 U.S. households, exactly 45 would be classified as ``linguistically isolated.''
-% \end{enumerate}  
-% \end{exercise} 
-% \begin{solution}  % 11b
-% 
-% \end{solution}
-% 
-% \clearpage
-% 
-%     \begin{exercise}  % 11c        %%%%%%%%%%%%%%%%%
-% 
-%     \begin{center}
-% \begin{flushleft}\textbf{\large \hfill Workshop 11C, Submitted by: }\end{flushleft}
-% 
-% \fbox{\parbox{14cm}{
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-% 
-% \vspace{4mm}
-% Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
-%  }}
-% \end{center}
-% 
-% The Bureau of Labor Statistics reports that in May 2016 that 10.5\% of people who work in the Kalamazoo metropolitan area are employed in production occupations (i.e., making things).
-% 
-% \begin{enumerate}
-% \item For a random sample of 200 Kalamazoo workers, what is the expected number who will work in production occupations? What is the standard deviation of this?
-% \item Using the normal approximation, find the probability that in a random sample of 200 Kalamazoo workers, more than 25 will work in production occupations.
-% \item Using the normal approximation, find the probability that in a random sample of 200 Kalamazoo workers, fewer than 15 will work in production occupations.
-% \item Using the normal approximation, find the probability that in a random sample of 200 Kalamazoo workers, between 15 and 25 (inclusive) will work in production occupations.
-% \end{enumerate}
-% 
-% \end{exercise}
-% \begin{solution}
-% 
-% 
-% \end{solution}
+The number of ice cream cones sold during a single day in the middle of August was tracked for surrounding stores.  Consider the following stem and leaf and answer the  questions below. The stem represents `10's' and the leaves represent `1's'.  For instance, the first number represented is 14 (14 ice cream cones were sold at one store).
+
+\vspace{-4mm}
+
+{\small{
+\begin{verbatim}
+<<label=LBL17a, results="asis", echo=FALSE>>=
+  DT1 <- c(14,16,22,23,25,28,30,34,34,36,37,37,39,41,43,45,49,54,56)
+  stem(DT1, scale=1)
+@
+\end{verbatim}
+}}
+
+\vspace{-4mm}
+
+\begin{minipage}[ht]{7cm}
+
+{\small{Give the five-number summary of the data:}}
+
+\vspace{-2mm}
+
+{\small{
+\begin{enumerate}
+  \item Make sure to show your work!
+  \begin{enumerate}
+    \item What is the MIN?
+    \item	What is Q1?
+    \item	What is the MED?
+    \item What is Q3?
+    \item What is the MAX?
+  \end{enumerate}
+
+  \item Draw a boxplot for the data.
+  \item Describe the shape of the \\ distribution (symmetric, right skewed, or left skewed).
+  \item Ice Cream sales for a single day in January were tracked among several shops.  Would we use a histogram or bar chart to represent this data?  Why?  Draw the correct chart (histogram or bar chart).
+\end{enumerate}
+}}
+
+\end{minipage} \hfill
+\begin{minipage}[bht]{7cm}
+
+{\small{
+\begin{tabular}{@{} lc @{}} \hline
+Cold Stone Creamery	& 18 \\
+Culver's &	16 \\
+Ritter's &	9 \\
+Treat Street &	3 \\
+Y'OPA &	20 \\
+Yo Go Delites &	24 \\ \hline
+\end{tabular}
+}}
+\end{minipage}
+
+\end{exercise}
+\begin{solution} % 3A
+
+\begin{enumerate}
+  \item	Fill in the frequency and relative frequency above.
+  \item	Complete a stem and leaf plot with the stem representing the 10's place and using 0-2.
+  \item	Draw a histogram for the absences using the intervals in the relative frequency table above.
+  \item	What percentage of students had number of absences less than 20?
+\end{enumerate}
+
+    \end{solution}
+
+\clearpage
+
+    \begin{exercise}  % 3B         %%%%%%%%%%%%%%%%%
+
+    \begin{center}
+\begin{flushleft}\textbf{\large \hfill Workshop 3B, Submitted by: }\end{flushleft}
+
+\fbox{\parbox{14cm}{
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+ }}
+\end{center}
+
+The age at inauguration for each U.S. President is provided below:
+
+52, 69, 64, 46, 54, 47, 70, 61, 57, 57, 58, 57, 61, 54, 68, 51, 49, 64, 57, 50, 48, 65, 52, 56, 46, 54, 56, 55, 51, 54, 51, 60, 62, 43, 55, 56, 61, 49, 51, 47, 55, 55, 54, 42, 51
+
+https://www.loc.gov/rr/program/bib/inaugurations/
+
+
+\begin{enumerate}
+  \item Give the five-number summary of the data:
+  {\small{
+    \begin{enumerate}
+    \item What is the MIN?
+    \item What is Q1?
+    \item What is the MED?
+    \item What is Q3?
+    \item What is the MAX?
+    \end{enumerate}
+  }}
+    \item Draw a boxplot for the data.
+    \item Finish the relative frequency table below.
+
+{\small{
+\begin{tabular}{@{} lcc @{}} \hline
+Age & Frequency & Relative frequency \\ \hline
+40 - 44 & & \\
+45 - 49 & & \\
+50 - 54 & & \\
+55 - 59 & & \\
+60 - 64 & & \\
+65 - 69 & & \\
+70 - 74 & & \\
+\end{tabular}
+}}
+
+    \item	Construct a histogram based on the given intervals for age at inauguration.  Describe the shape of the distribution (symmetric, right skewed, or left skewed).
+    \item Do some extra research: Who was the youngest president at inauguration? Who was the oldest president at inauguration?
+\end{enumerate}
+
+    \end{exercise}
+    \begin{solution} % 3B
+
+\begin{enumerate}
+  \item	Fill in the frequency and relative frequency above.
+  \item	Complete a stem and leaf plot with the stem representing the 10's place and using 0-2.
+  \item	Draw a histogram for the absences using the intervals in the relative frequency table above.
+  \item	What percentage of students had number of absences less than 20?
+\end{enumerate}
+
+    \end{solution}
+
+\clearpage
+
+    \begin{exercise}  % 3C         %%%%%%%%%%%%%%%%%
+
+    \begin{center}
+\begin{flushleft}\textbf{\large \hfill Workshop 3C, Submitted by: }\end{flushleft}
+
+\fbox{\parbox{14cm}{
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+ }}
+\end{center}
+
+The independence years of some Caribbean and African countries are shown below:
+
+1804, 1847, 1910, 1922, 1941, 1951, 1956, 1956, 1956, 1956, 1956, 1957, 1958, 1958,\\ 1960, 1960,  1960, 1960, 1960,1960, 1960, 1960, 1960, 1961, 1961, 1962, 1962, 1966, \\ 1966, 1973, 1974, 1975, 1977, 1978, 1979, 1979, 1980, 1981, 1981, 1983, 1990, 1993
+
+$n = 42$
+
+\begin{enumerate}
+  \item Give the five-number summary of the data:
+  {\small{
+  \begin{enumerate}
+  \item What is the MIN?
+  \item What is Q1?
+  \item What is the MED?
+  \item What is Q3?
+  \item What is the MAX?
+\end{enumerate}
+}}
+\item Draw a boxplot for the data.
+\item Finish the relative frequency table below.
+
+{\small{
+\begin{tabular}{@{} lcc @{}} \hline
+Age & Frequency & Relative frequency \\ \hline
+1800 – 1839 & & \\
+1840 – 1879 & & \\
+1880 – 1919	& & \\
+1920 – 1959	& & \\
+1960 – 1999	& & \\
+\end{tabular}
+}}
+\item	Construct a histogram based on the given intervals for independence year. Describe the shape of the distribution (symmetric, right skewed, or left skewed).
+\item Do some extra (but fun) research: Which country has the minimum (first) independence year on this list?
+\end{enumerate}
+\end{exercise}
+\begin{solution}  % 3C
+
+\end{solution}
+
+\clearpage
+
+    \begin{exercise}  % 4A         %%%%%%%%%%%%%%%%%
+
+    \begin{center}
+\begin{flushleft}\textbf{\large \hfill Workshop 4A, Submitted by: }\end{flushleft}
+
+\fbox{\parbox{14cm}{
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+ }}
+\end{center}
+
+A local bank has been monitoring daily average wait-times for its customers for four weeks. The manager believed that she could improve the wait-times by having one(1) permanent clerk and three(3) floating clerks, instead of the current three (3) permanent clerks. The floating clerks would do other tasks except when the lines became excessive. Last week the manager implemented the new system.
+
+Old Policy:   5, 7, 10, 11, 18, 4, 4, 4, 14, 21, 0, 7, 8, 9, 18, 6, 6, 12, 22, 25 \\
+New Policy: 4, 3, 9, 13, 17
+
+Were waiting times longer using the ``Old Policy'' or the ``New Policy?''  To answer this question, calculate the following for both the old and new policies.
+
+\begin{enumerate}
+  \item Draw comparison dotplots for the samples above.
+  \item For each sample, calculate the mean AND median.  Locate (place) these on your dotplots, clearly distinguishing between the two.
+  % \item What is the mode for the old policy?
+  \item Calculate the 10\% trimmed mean for the old policy.  How does this change from the regular mean?
+\end{enumerate}
+
+\end{exercise}
+\begin{solution}  % 4a
+
+\end{solution}
+
+\clearpage
+
+    \begin{exercise}  % 4B         %%%%%%%%%%%%%%%%%
+
+    \begin{center}
+\begin{flushleft}\textbf{\large \hfill Workshop 4B, Submitted by: }\end{flushleft}
+
+\fbox{\parbox{14cm}{
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+ }}
+\end{center}
+
+Annual chocolate sales in billions of dollars from 6 countries are provided below.
+
+\$2.5, \$1.9, \$4.2, \$1.2, \$3.3, \$19.1
+
+For the data above calculate:
+
+\begin{enumerate}
+  \item Mean
+  \item Median
+  \item 10 percent trimmed mean   % Median of Pairwise Averages
+\end{enumerate}
+\end{exercise}
+\begin{solution}  % 4b
+
+\end{solution}
+
+\clearpage
+
+    \begin{exercise}  % 4C         %%%%%%%%%%%%%%%%%
+
+    \begin{center}
+\begin{flushleft}\textbf{\large \hfill Workshop 4C, Submitted by: }\end{flushleft}
+
+\fbox{\parbox{14cm}{
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+ }}
+\end{center}
+
+Weekly costs of lattes for 5 WMU graduate students are provided below.
+
+\$3.47, \$12, \$7.52, \$10.5, \$4.5
+
+\begin{enumerate}
+  \item Mean
+  \item Median
+  \item 20 percent trimmed mean   % Median of Pairwise Averages
+\end{enumerate}
+\end{exercise}
+\begin{solution}  % 4c
+
+\end{solution}
+
+\clearpage
+
+    \begin{exercise}  % 5A         %%%%%%%%%%%%%%%%%
+
+    \begin{center}
+\begin{flushleft}\textbf{\large \hfill Workshop 5A, Submitted by: }\end{flushleft}
+
+\fbox{\parbox{14cm}{
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+ }}
+\end{center}
+
+The average MCAT scores for Michigan medical schools are provided below.
+
+504, 507, 507, 516, 508, 514
+
+\begin{enumerate}
+  \item Calculate the overall mean
+  \item Calculate the SD
+  \item How does Michigan's mean and SD compare to the national average of matriculants (those enrolled in medical schools) 508.7 and SD of 6.9?  Which has greater variability?
+\end{enumerate}
+
+http://www.mcattestscores.com/usmedicalschoolsmcatscoresGPA.html
+
+https://www.aamc.org/download/321494/data/factstablea16.pdf
+
+\end{exercise}
+\begin{solution}  % 5a
+
+\end{solution}
+
+\clearpage
+
+    \begin{exercise}  % 5B         %%%%%%%%%%%%%%%%%
+
+    \begin{center}
+\begin{flushleft}\textbf{\large \hfill Workshop 5B, Submitted by: }\end{flushleft}
+
+\fbox{\parbox{14cm}{
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+ }}
+\end{center}
+
+Hourly wage of personnel within a small company are as follows:
+
+\begin{tabular}{@{} ll @{}} \hline
+Staff	&	Salary (dollars) \\ \hline
+Owner		& 30 \\
+Manager	& 21 \\
+Worker	& 12 \\
+Worker	& 11 \\
+Worker	& 9 \\ \hline
+\end{tabular}
+
+\begin{enumerate}
+  \item Calculate the average hourly wage of the staff.
+  \item Calculate the SD
+  \item A similar company has a mean hourly wage of \$17 per hour with a SD of 9.75.  Which has greater variability?  How does that relate to the spread of the data?
+\end{enumerate}
+
+\end{exercise}
+\begin{solution}  % 5b
+
+\end{solution}
+
+\clearpage
+
+    \begin{exercise}  % 5c         %%%%%%%%%%%%%%%%%
+
+    \begin{center}
+\begin{flushleft}\textbf{\large \hfill Workshop 5C, Submitted by: }\end{flushleft}
+
+\fbox{\parbox{14cm}{
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+ }}
+\end{center}
+
+The data below are the weights of six (6) randomly selected kids in a daycare measured in pounds
+
+ 13.6, 16.6, 23.5, 10.2, 5.4, 15.0
+
+\begin{enumerate}
+  \item What is the average weight of the six kids in pounds?
+  \item Suppose the weights of the six kids are measured in kilograms instead. Calculate the average weight of the kids in kilograms (Hint: 1 pound = 0.453592 kilograms).
+  \item What is the standard deviation of the weight of the kids in pounds?
+\end{enumerate}
+
+
+\end{exercise}
+\begin{solution}  % 5c
+
+\end{solution}
+
+
+\clearpage
+
+    \begin{exercise}  % 6a         %%%%%%%%%%%%%%%%%
+
+    \begin{center}
+\begin{flushleft}\textbf{\large \hfill Workshop 6A, Submitted by: }\end{flushleft}
+
+\fbox{\parbox{14cm}{
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+ }}
+\end{center}
+
+The following is an excerpt from a New York Times article by Nicholas Bakalar (Feb. 10, 2009).
+
+\begin{quotation}
+Lengthy television viewing in adolescence may raise the risk for depression in young adulthood, according to a new report.
+
+The study, in the February issue of The Archives of General Psychiatry, published by the American Medical Association, found a rising risk of depressive symptoms with increasing hours spent watching television.
+
+Researchers used data from a larger analysis of 4,142 adolescents who were not depressed at the start of the study. After seven years of follow-up, more than 7 percent had symptoms of depression.
+
+But while about 6 percent of those who watched less than three hours a day were depressed, more than 17 percent of those who watched more than nine hours a day had depressive symptoms.
+\end{quotation}
+
+\begin{enumerate}
+  \item The word `raise' in the title implies cause-and-effect, not just association.  When comparing lengthy viewers with those who watch less, what possible    confounders can you think of?
+  \item Using one confounder from your answer(s) in (1), draw a pathway graph depicting the possible relationship between confounder, possible cause and outcome.
+\end{enumerate}
+\end{exercise}
+\begin{solution}  % 6a
+
+\end{solution}
+
+\clearpage
+
+    \begin{exercise}  % 6b         %%%%%%%%%%%%%%%%%
+
+    \begin{center}
+\begin{flushleft}\textbf{\large \hfill Workshop 6B, Submitted by: }\end{flushleft}
+
+\fbox{\parbox{14cm}{
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+ }}
+\end{center}
+
+The following is an excerpt from a Reuters article by Amy Norton (July 2011).
+
+\begin{quotation}
+
+Are kids safer with grandparents driving?
+
+When children are involved in a car accident, they are less likely to be injured if grandma or grandpa are driving rather than mom or dad, a new study suggests.
+
+The study, published in the journal Pediatrics, looked at five years' worth of data on U.S. car crashes involving children younger than 16.
+
+It found that when grandparents were at the wheel, 0.7 percent of children were injured in the crash. That compared with 1 percent when parents were driving.
+
+When the researchers considered other factors -- such as the circumstances and severity of the crash -- kids riding with grandparents were half as likely to be injured, versus those riding with their parents.
+
+\end{quotation}
+
+\begin{enumerate}
+  \item The title implies cause-and-effect, not just association.  When comparing injury rates between parents driving and grandparents driving, what possible    confounders can you think of?
+  \item Using one confounder from your answer(s) in (1), draw a pathway graph depicting the possible relationship between confounder, possible cause and outcome.
+\end{enumerate}
+\end{exercise}
+\begin{solution}  % 6b
+
+\end{solution}
+
+\clearpage
+
+    \begin{exercise}  % 6c         %%%%%%%%%%%%%%%%%
+
+    \begin{center}
+\begin{flushleft}\textbf{\large \hfill Workshop 6C, Submitted by: }\end{flushleft}
+
+\fbox{\parbox{14cm}{
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+ }}
+\end{center}
+
+Frequency of playing violent video games has at times been linked with and seen as a possible cause for those committing violent acts.  Much debate still looms over whether playing violent video games can lead to a desensitization of violence and a lack of compassion for others.
+
+One article that explores these ideas is titled, The Impact of Degree of Exposure to Violent Video Games, Family Background, and Other Factors on Youth Violence, by the authors Whitney Decamp and Christopher Ferguson.  The authors respond to the concern that violence in video games might contribute to youth violence.  There is still no consensus on whether violent video games may be contributing to violence in youth.  The authors sought to study this issue in an ethnically diverse sample of youth in eighth ($n = 5133$) and eleventh grade ($n = 3886$).  Questionnaire surveys were given to the youth to assess a link.  Independent or predictor variables included the playing of violent video games, and an inclination towards violent video games.  Dependent variables included questions pertaining to hitting with the intention to hurt another and taking part in a fight.
+
+Mixed results were reported.  The authors summarized that violent video game play was not significant in 5 of the models used.  There was, however, a positive correlation between games and violent behavior for the models without controls.   When the authors controlled for the propensity and context, however, this suggested the association to be more spurious (not being what it claims to be).  What other factors may be impacting this outcome?
+
+\begin{enumerate}
+  \item What possible confounders can you think of for a study of this nature?
+  \item Using one confounder from your answer(s) in (1), draw a pathway graph depicting the possible relationships between confounder, possible cause and outcome.
+\end{enumerate}
+\end{exercise}
+\begin{solution}  % 6c
+
+\end{solution}
+
+
+\clearpage
+
+    \begin{exercise}  % 7a         %%%%%%%%%%%%%%%%%
+
+    \begin{center}
+\begin{flushleft}\textbf{\large \hfill Workshop 7A, Submitted by: }\end{flushleft}
+
+\fbox{\parbox{14cm}{
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+ }}
+\end{center}
+
+Jet design researchers have come up with two new designs for the wings of a rocket plane. They think both designs are an improvement over the old design but want to know which of their new designs performs better at high altitudes. Specifically, they want to know which new design results in more maneuverability at or above 100,000 feet above sea level. They decide to design a randomized trial to study this.
+
+
+\begin{enumerate}
+  \item The researchers include a control group in their design plan. Describe a possible control group. Why did they add it to the study?
+  \item Several pilots and planes are lined up for this study. How could the researchers randomize their experiment to avoid confounders?
+  \item One way to measure maneuverability is by surveying pilots about how they thought the jets handled. Could a design that asks pilots this question be blinded? If so, how?
+  \item Could the design from (2) be double-blinded? If so, how?
+  \item What makes single and double blinding important?
+\end{enumerate}
+\end{exercise}
+\begin{solution}  % 7a
+
+\end{solution}
+
+\clearpage
+
+    \begin{exercise}  % 7b         %%%%%%%%%%%%%%%%%
+
+    \begin{center}
+\begin{flushleft}\textbf{\large \hfill Workshop 7B, Submitted by: }\end{flushleft}
+
+\fbox{\parbox{14cm}{
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+ }}
+\end{center}
+
+Some students at WMU were curious about whether partying influences GPA. To find out, they surveyed 100 of their WMU peers, asking each peer only two questions: 1) How many hours a week do you party? 2) What is your GPA? The students then compiled their data and performed an appropriate statistical analysis. They concluded that partying does influence GPA, i.e., the more you party, the lower your GPA.
+
+\begin{enumerate}
+  \item What kind of study design is this?
+  \item What are advantages of this study design?
+  \item What are disadvantages of this study design?
+  \item Did the students overlook anything that might have biased or confounded their results?
+  \item Suppose the students wanted to correct for something they overlooked. How could they improve their study design?
+\end{enumerate}
+
+\end{exercise}
+\begin{solution}  % 7b
+
+\end{solution}
+
+\clearpage
+
+    \begin{exercise}  % 7c         %%%%%%%%%%%%%%%%%
+
+    \begin{center}
+\begin{flushleft}\textbf{\large \hfill Workshop 7C, Submitted by: }\end{flushleft}
+
+\fbox{\parbox{14cm}{
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+ }}
+\end{center}
+
+Yogurt is known to contain `friendly bacteria' known generally as probiotics which can benefit the gastrointestinal system.  Many strains of bacteria can be found in yogurt, with some of the most common being, \textit{Lactobacillus bulgaricus}, \textit{Streptococcus thermophilus}, and \textit{Lactobacillus acidophilus}.  Further research has been done suggesting probiotics boost the immune system and may even help in weight management and reduction of disease such as cancer.  A group of researchers decided to investigate this using a questionnaire assessing yogurt consumption (yes/no) and asking questions pertaining to the health of the individuals.
+
+\begin{enumerate}
+  \item First of all, what kind of study design is this?
+  \item What are advantages of this type of study design?
+  \item What are disadvantages of this study design?
+  \item	The researchers then separated the results of the surveys for those who said `yes' they consume yogurt to those who said `no' they do not consume yogurt.  They compared the two groups using these as a treatment and control group.  What is wrong with this assumption?
+  \item	Suppose the researchers found that those consuming yogurt had better health and concluded that \textit{Lactobacillus bulgaricus} caused a reduction of weight, improved GI and Immune systems.  What are two major problems in this?
+  \item	What may be a bias or lead to confounding in this study?
+  \item	How could the researchers improve their study design in order to make a conclusion about the effectiveness of \textit{Lactobacillus bulgaricus} and immune system function?
+\end{enumerate}
+
+\end{exercise}
+\begin{solution}  % 7c
+
+\end{solution}
+
+\clearpage
+
+    \begin{exercise}  % 8a         %%%%%%%%%%%%%%%%%
+
+    \begin{center}
+\begin{flushleft}\textbf{\large \hfill Workshop 8A, Submitted by: }\end{flushleft}
+
+\fbox{\parbox{14cm}{
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+ }}
+\end{center}
+
+Debt Poet's Society
+
+According to a Sallie Mae survey and credit bureau data, in 2008, college students carried an average of \$3,173 debt on their credit cards (USA TODAY, April 13, 2009). Suppose that current credit card debts for all college students have a normal distribution with a mean of \$3,173 and a standard deviation of \$800.
+
+\begin{enumerate}
+  \item Find the probability that credit card debt for a randomly selected college student below \$2,109.
+  \item Find the probability that credit card debt for a randomly selected college student is above \$3,605.
+  \item Find the probability that credit card debt for a randomly selected college student is between \$2,109 and \$3,605.
+\end{enumerate}
+
+\end{exercise}
+\begin{solution}  % 8a
+
+\end{solution}
+
+\clearpage
+
+    \begin{exercise}  % 8b         %%%%%%%%%%%%%%%%%
+
+    \begin{center}
+\begin{flushleft}\textbf{\large \hfill Workshop 8B, Submitted by: }\end{flushleft}
+
+\fbox{\parbox{14cm}{
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+ }}
+\end{center}
+
+The Social Network
+
+According to an article published on the Web site www.PCMag.com, Facebook users spend an average of 190 minutes per month checking and updating their Facebook pages (Source: http://www.pcmag.com/article2/0,2817,2342757,00.asp). Suppose that the current distribution of time spent per month checking and updating a member's Facebook page is normally distributed with a mean of 190 minutes and a standard deviation of 53.4 minutes. For a randomly selected Facebook member, determine the probability that the amount of time that he or she spends per month checking and updating his or her Facebook page is…
+
+\begin{enumerate}
+  \item More than 180 minutes
+  \item Less than 120 minutes
+  \item Between 120 and 180 minutes
+\end{enumerate}
+
+\end{exercise}
+\begin{solution}  % 8b
+
+\end{solution}
+
+\clearpage
+
+    \begin{exercise}  % 8c         %%%%%%%%%%%%%%%%%
+
+    \begin{center}
+\begin{flushleft}\textbf{\large \hfill Workshop 8C, Submitted by: }\end{flushleft}
+
+\fbox{\parbox{14cm}{
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+ }}
+\end{center}
+
+The amount paid out by Ajax Insurance Company in a year is normally distributed with mean 3 billion dollars and standard deviation 0.5 billion dollars. The company’s executives consider it a bad year if they must pay out more than 4.25 billion dollars.
+
+\begin{enumerate}
+  \item Determine the probability of a bad year.
+  \item What is the probability that the company will have a good year?
+  \item What is the probability that the company paid out between 2 billion dollars and 3.5 billion dollars?
+\end{enumerate}
+
+\end{exercise}
+\begin{solution}  % 8c
+
+\end{solution}
+
+\clearpage
+
+    \begin{exercise}  % 9a         %%%%%%%%%%%%%%%%%
+
+    \begin{center}
+\begin{flushleft}\textbf{\large \hfill Workshop 9A, Submitted by: }\end{flushleft}
+
+\fbox{\parbox{14cm}{
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+ }}
+\end{center}
+
+Debt Poet’s Society
+
+According to a Sallie Mae survey and credit bureau data, in 2008, college students carried an average of \$3,173 debt on their credit cards (USA TODAY, April 13, 2009). Suppose that current credit card debts for all college students have a normal distribution with a mean of \$3,173 and a standard deviation of \$800.
+
+\begin{enumerate}
+  \item 10\% of the credit card debt for college students is above what value?
+  \item 10\% of the credit card debt for college students is below what value?
+  \item The middle 80\% of the credit card debt for college students is between what two values?
+  \item How likely would it be for a college students to have credit card debt of \$4,500 or more?
+\end{enumerate}
+
+\end{exercise}
+\begin{solution}  % 9a
+
+\end{solution}
+
+\clearpage
+
+    \begin{exercise}  % 9b         %%%%%%%%%%%%%%%%%
+
+    \begin{center}
+\begin{flushleft}\textbf{\large \hfill Workshop 9B, Submitted by: }\end{flushleft}
+
+\fbox{\parbox{14cm}{
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+ }}
+\end{center}
+
+Tommy Wait, a minor-league baseball pitcher, is notorious for taking an excessive \\ amount of time between pitches. In fact, his times between pitches are normally distributed with a mean of 36 seconds and a standard deviation of 2.5 seconds.
+
+\begin{enumerate}
+  \item 10\% of the time between pitches is above what value?
+  \item 10\% of the time between pitches is below what value?
+  \item The middle 80\% of the time between pitches is between what two values?
+  \item How likely would it be for the time between pitches of 40 seconds or more? \end{enumerate}
+
+\end{exercise}
+\begin{solution}  % 9b
+
+\end{solution}
+
+\clearpage
+
+    \begin{exercise}  % 9c         %%%%%%%%%%%%%%%%%
+
+    \begin{center}
+\begin{flushleft}\textbf{\large \hfill Workshop 9C, Submitted by: }\end{flushleft}
+
+\fbox{\parbox{14cm}{
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+ }}
+\end{center}
+
+The amount paid out by Ajax Insurance Company in a year is normally distributed with mean 3 billion dollars and standard deviation 0.5 billion dollars. The company’s executives consider it a bad year if they must pay out more than 4.25 billion dollars.
+
+\begin{enumerate}
+  \item 18\% of the amount paid out by Ajax Insurance Company is below what amount?
+  \item There is a 5\% chance that the company will have to pay more than an amount $x$ (in billions of dollars). What is the value of $x$?
+  \item The middle 60\% of the amount paid out by the company is between what two values (in billions of dollars)?
+\end{enumerate}
+
+\end{exercise}
+\begin{solution}  % 9c
+
+\end{solution}
+
+\clearpage
+
+    \begin{exercise}  % 10a         %%%%%%%%%%%%%%%%%
+
+    \begin{center}
+\begin{flushleft}\textbf{\large \hfill Workshop 10A, Submitted by: }\end{flushleft}
+
+\fbox{\parbox{14cm}{
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+ }}
+\end{center}
+
+Drugstore Cowboy
+
+According to an October 27, 2006 article in Newsweek, 60\% of Americans said that they take expired medicines. Suppose that this result is true of the current population of Americans.
+
+\begin{enumerate}
+\item Let $x$ be a binomial random variable that denotes the number of American in a random sample of 4 who have taken expired medicines. What are the possible values that $x$ can assume?
+\item Find the probability that exactly 2 Americans in a sample of 4 have taken expired medicines.
+\item Find the probability that at least 3 Americans in a sample of 4 have taken expired medicines.
+\item Find the probability that at most 1 American in a sample of 4 have taken expired medicines.
+\end{enumerate}
+
+\end{exercise}
+\begin{solution}
+
+\end{solution}
+
+
+\clearpage
+
+     \begin{exercise}  % 10b         %%%%%%%%%%%%%%%%%
+
+    \begin{center}
+\begin{flushleft}\textbf{\large \hfill Workshop 10B, Submitted by: }\end{flushleft}
+
+\fbox{\parbox{14cm}{
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+ }}
+\end{center}
+
+The Social Network
+
+According to a Harris Interactive poll, 50\% of American college graduates have Facebook accounts. Suppose that this result is true for the current population of American college graduates.
+
+\begin{verbatim}
+http://www.harrisinteractive.com/harris_poll/pubs/Harris_Poll_2009_04_16.pdf
+\end{verbatim}
+
+\begin{enumerate}
+  \item Let $x$ be a binomial random variable that denotes the number of American college graduates in a random sample of 5 who have Facebook accounts. What are the possible values that $x$ can assume?
+  \item Find the probability that exactly 3 American college graduates in a sample of 5 have Facebook accounts.
+  \item Find the probability that at least 3. American college graduates in a sample of 5 have Facebook accounts.
+  \item Find the probability that at most 1 American college graduate in a sample of 5 have Facebook accounts.
+\end{enumerate}
+
+\end{exercise}
+\begin{solution}  % 10b
+
+\end{solution}
+
+
+\clearpage
+
+   \begin{exercise}  % 10c        %%%%%%%%%%%%%%%%%
+
+    \begin{center}
+\begin{flushleft}\textbf{\large \hfill Workshop 10C, Submitted by: }\end{flushleft}
+
+\fbox{\parbox{14cm}{
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+ }}
+\end{center}
+
+The Bureau of Labor Statistics reports that in May 2016 that 10.5\% of people who work in the Kalamazoo metropolitan area are employed in production occupations (i.e., making things). Suppose that a random sample of 5 Kalamazoo workers is taken. Let $X$ be a random variable which denotes the number of workers in the sample who are employed in production occupations.
+
+\begin{enumerate}
+\item What are the possible values which X can take?
+\item Find the probability that exactly 2 of the 5 workers in the sample will be employed in production occupations.
+\item Find the probability that at least 3 of the 5 workers in the sample will be employed in production occupations.
+\item Find the probability that at most 1 of the 5 workers in the sample will be employed in production occupations.
+\end{enumerate}
+
+\end{exercise}
+\begin{solution}  % 10c
+
+\end{solution}
+
+\clearpage
+
+    \begin{exercise}  % 11a        %%%%%%%%%%%%%%%%%
+
+    \begin{center}
+\begin{flushleft}\textbf{\large \hfill Workshop 11A, Submitted by: }\end{flushleft}
+
+\fbox{\parbox{14cm}{
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+ }}
+\end{center}
+
+Credit where Credit is Due
+
+According to a May 27, 2009 Minneapolis Star-Tribune article, 78\% of U.S. households have at least one credit card.
+
+Source: http://www.startribune.com/politics/45797562.html
+
+\begin{enumerate}
+  \item For a random sample of 500 U.S. households, what is the expected value and standard deviation of the number of U.S. households with at least one credit card.
+  \item Using the normal approximation, find the probability that in a random sample of 500 U.S. households, more than 375 households have at least one credit card.
+  \item Using the normal approximation, find the probability that in a random sample of 500 U.S. households, less than 385 households have at least one credit card.
+  \item Using the normal approximation, find the probability that in a random sample of 500 U.S. households, 376 to 384 households have at least one credit card.
+\end{enumerate}
+
+\end{exercise}
+\begin{solution}  % 11a
+
+\end{solution}
+
+\clearpage
+
+    \begin{exercise}  % 11b        %%%%%%%%%%%%%%%%%
+
+    \begin{center}
+\begin{flushleft}\textbf{\large \hfill Workshop 11B, Submitted by: }\end{flushleft}
+
+\fbox{\parbox{14cm}{
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+ }}
+\end{center}
+
+Tongue Twister
+
+A 2007 article states that 4.8\% of U.S. households are ``linguistically isolated,'' which means that all members of the household aged 14 years and older have difficulty speaking English.  Assume that this percentage is true for the current population of U.S. households.
+
+
+ (Source: http://www.antara.co.id/en/arc/2007/9/12/ \newline five-percent-of-us-families-dont-speak-english-report/)
+
+
+\begin{enumerate}
+  \item For a random sample of 750 U.S. households, what is the expected value and standard deviation of the number of U.S. households classified as ``linguistically isolated.''
+  \item Using the normal approximation, find the probability that in a random sample of 750 U.S. households, more than 45 would be classified as ``linguistically isolated.''
+  \item Using the normal approximation, find the probability that in a random sample of 750 U.S. households, less than 45 would be classified as ``linguistically isolated.''
+  \item Using the normal approximation, find the probability that in a random sample of 750 U.S. households, exactly 45 would be classified as ``linguistically isolated.''
+\end{enumerate}
+\end{exercise}
+\begin{solution}  % 11b
+
+\end{solution}
+
+\clearpage
+
+    \begin{exercise}  % 11c        %%%%%%%%%%%%%%%%%
+
+    \begin{center}
+\begin{flushleft}\textbf{\large \hfill Workshop 11C, Submitted by: }\end{flushleft}
+
+\fbox{\parbox{14cm}{
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+
+\vspace{4mm}
+Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
+ }}
+\end{center}
+
+The Bureau of Labor Statistics reports that in May 2016 that 10.5\% of people who work in the Kalamazoo metropolitan area are employed in production occupations (i.e., making things).
+
+\begin{enumerate}
+\item For a random sample of 200 Kalamazoo workers, what is the expected number who will work in production occupations? What is the standard deviation of this?
+\item Using the normal approximation, find the probability that in a random sample of 200 Kalamazoo workers, more than 25 will work in production occupations.
+\item Using the normal approximation, find the probability that in a random sample of 200 Kalamazoo workers, fewer than 15 will work in production occupations.
+\item Using the normal approximation, find the probability that in a random sample of 200 Kalamazoo workers, between 15 and 25 (inclusive) will work in production occupations.
+\end{enumerate}
+
+\end{exercise}
+\begin{solution}      % 11C
+
+
+\end{solution}
 
 
 

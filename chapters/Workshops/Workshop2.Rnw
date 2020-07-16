@@ -114,7 +114,7 @@ J. S. Carlton et al. conducted a survey of 698 biological scientists from Big 10
 \clearpage
 
     \begin{exercise}  % 13a         %%%%%%%%%%%%%%%%%
-    
+
     \begin{center}
 \begin{flushleft}\textbf{\large \hfill Workshop 13A, Submitted by: }\end{flushleft}
 
@@ -143,13 +143,13 @@ According to a survey conducted by Pew Research Center in June 2009, 110 of peop
 \item Compare the two standard errors. Which is bigger, by how much?
 \end{enumerate}
 
-\end{exercise} 
+\end{exercise}
 \begin{solution}  % 13a
 
 % \begin{itemize}
 %   \item hypotheses: $H_0: \mu_r = \mu_w$ vs. $H_0: \mu_r \ne \mu_w$
 %   \item difference: \Sexpr{mnDiff}
-%   \item SE: \Sexpr{SDdiff} 
+%   \item SE: \Sexpr{SDdiff}
 %   \item $Z_0 = \Sexpr{z2}$?
 %   \item $p$-value = \Sexpr{pval2}
 %   \item What should you conclude? Reject $H_0$.
@@ -194,7 +194,7 @@ According to a Harris Interactive survey of 600 adults conducted in April 2009, 
 \end{enumerate}
 
 
-\end{exercise} 
+\end{exercise}
 \begin{solution}  % 13b
 
 % \begin{itemize}
@@ -229,7 +229,7 @@ Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phan
 \vspace{4mm}
 Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
  }}
-\end{center}   % 13c 
+\end{center}   % 13c
 
 J. S. Carlton et al. conducted a survey of 698 biological scientists from Big 10 universities, asking respondents “When compared with pre-1800’s levels, do you think that mean global temperatures have generally risen, fallen, or remained relatively constant?” 652 respondents said global temperatures had risen.
 
@@ -241,7 +241,7 @@ J. S. Carlton et al. conducted a survey of 698 biological scientists from Big 10
 \item Compare the two standard errors. Which is bigger, by how much?
 \end{enumerate}
 
-\end{exercise} 
+\end{exercise}
 \begin{solution}  % 13c
 
 % \begin{itemize}
@@ -280,25 +280,25 @@ Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phan
 
 Live and Let Dye
 
-In an experimental study, 44 rats were exposed to a high dose of red dye, 44 rats were exposed to a low dose of red dye, and it was then observed how many in each group developed cancer. 
+In an experimental study, 44 rats were exposed to a high dose of red dye, 44 rats were exposed to a low dose of red dye, and it was then observed how many in each group developed cancer.
 
-\begin{center} 				
-\begin{tabular}{@{} lccc @{}} \hline				
-   & \multicolumn{2}{c}{Cancer} \\ 
+\begin{center}
+\begin{tabular}{@{} lccc @{}} \hline
+   & \multicolumn{2}{c}{Cancer} \\
 Dose Level of Red Dye &	Yes	 & No &	Total \\ \hline
-High &	14	& 30 &	44 \\ 
+High &	14	& 30 &	44 \\
 Low &	4 &	40 &	44  \\ \hline
 Total &	18 &	70 & 88 \\ \hline
 \end{tabular}
 \end{center}
-				
+
 \begin{enumerate}
   \item Estimate the difference in percentage of developing cancer between high dose level of red dye and low dose level of red dye.
   \item Calculate a standard error for your estimate in (1).
   \item Calculate a 95\% confidence interval for the difference in percentage of developing cancer between high dose level of red dye and low dose level of red dye.
 \end{enumerate}
 
-\end{exercise} 
+\end{exercise}
 \begin{solution}  % 14a
 
 \end{solution}
@@ -328,25 +328,25 @@ Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phan
 Gone Fishin'
 
 Consider the following data from the Chicago Western Electric Study (Shekelle et al., 1981). In the following table 466 men were classified based on death from coronary heart disease (CHD) and fish consumption.
-	
-\begin{center}				
+
+\begin{center}
 \begin{tabular}{@{} lccc @{}} \hline
-& \multicolumn{2}{c}{Death from CHD} \\ 	 		 
+& \multicolumn{2}{c}{Death from CHD} \\
 Daily Fish Consumption &	Yes &	No &	Total \\ \hline
 High &	34 &	227 &	261 \\
 Low	& 42 &	163 &	205 \\ \hline
 Total &	76 &	390 &	466 \\ \hline
 \end{tabular}
-\end{center} 
-			
+\end{center}
+
 \begin{enumerate}
   \item Estimate the difference in percentage of death from CHD between high daily fish consumption and low daily fish consumption.
   \item Calculate a standard error for your estimate in (1).
   \item Calculate a 95\% confidence interval for the difference in percentage of death from CHD between high daily fish consumption and low daily fish consumption.
 \end{enumerate}
-			
-			
-\end{exercise} 
+
+
+\end{exercise}
 \begin{solution}  % 14b
 
 \end{solution}
@@ -375,25 +375,25 @@ Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phan
 
 Making the Cut
 
-The following table shows how many prospective students of a sample of 200 students were admitted to WMU last year, and if the student's GPA was below 2.8 or not.  Out of the sample, 60 applicants were rejected and 140 were accepted. 
-			
-\begin{center}				
-\begin{tabular}{@{} lccc @{}} \hline				
- 	& \multicolumn{2}{c}{Rejected from WMU} \\   		 
+The following table shows how many prospective students of a sample of 200 students were admitted to WMU last year, and if the student's GPA was below 2.8 or not.  Out of the sample, 60 applicants were rejected and 140 were accepted.
+
+\begin{center}
+\begin{tabular}{@{} lccc @{}} \hline
+ 	& \multicolumn{2}{c}{Rejected from WMU} \\
 GPA Below 2.8 &	Yes &	No & Total \\ \hline
 Yes	& 45 &	20 &	65 \\
 No &	15 &	120 &	135 \\ \hline
 Total &	60 &	140 &	200 \\ \hline
 \end{tabular}
-\end{center} 
+\end{center}
 
 \begin{enumerate}
   \item Estimate the difference in proportion of being rejected from WMU between having below a 2.8 GPA and not having below a 2.8 GPA.
-  \item Calculate a standard error for your estimate in (1).  
+  \item Calculate a standard error for your estimate in (1).
   \item Calculate a 95\% confidence interval for the difference in proportion of being rejected from WMU between having below a 2.8 GPA and not having below a 2.8 GPA.
 \end{enumerate}
 
-\end{exercise} 
+\end{exercise}
 \begin{solution}  % 14c
 
 \end{solution}
@@ -423,7 +423,7 @@ Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phan
 
 As a professional courtesy, physicians have traditionally provided health care free of charge or at a reduced rate to other physicians and their families. In 1966, 94\% of a sample of 1000 physicians offered this professional courtesy. The \textit{New England Journal of Medicine} (Nov. 25, 1993) conducted a national survey to see if this practice continues. It surveyed 2224 physicians who are members of the American Medical Association (AMA) and found that 1957 currently offer free or reduced-rate health care to fellow physicians. Is there sufficient evidence to conclude that the true proportion of physicians who offer professional courtesy has changed since 1966? Use a significance level of ($\alpha = 0.05$ ).
 
-\begin{enumerate} 
+\begin{enumerate}
 \item  In 1966, what is t he proportion of physicians who offer free or r educed rate health care as a professional courtesy to other physicians and their families?
 \item  In 1993, what is the proportion of physicians who offer free or reduced rate health care as a professional courtesy to other physicians and their families?
 \item  What are the hypotheses for this scenario?
@@ -431,7 +431,7 @@ As a professional courtesy, physicians have traditionally provided health care f
 \item  Compute the test statistic.
 \item  Based on the test statistic and the critical value, what is your decision about the hy- potheses?
 \item  Interpret your result in every day language.
-\end{enumerate} 
+\end{enumerate}
 
 \end{exercise}
 \begin{solution}  % 15a
@@ -462,14 +462,14 @@ Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phan
 
 Sports fans often argue that the outcomes of professional basketball games are not decided until the fourth (and last) quarter. In contrast, the conventional ``wisdom'' in Major League Baseball (MLB) suggests that most nine-inning games are “over” by the seventh inning. Can the outcome of a baseball game really be predicted based on the team leading after seven innings? So are we correct in assuming the team leading after three-quarters of an NBA game will win the game? To answer these and other questions, University of Missouri researchers collected and analyzed data for 200 NBA games and 100 MLB games played during the 1900 regular season (Chance, Vol. 5, 1992). The following table reports the number and percentage of games in which the team leading after three quarters or seven innings won. [Note: Tied games after three quarters were removed from the data set.] Use a teat of hypothesis to compare the win percentage of NBA teams leading after three quarters to the win percentage of MLB teams leading after seven innings. Let’s use a significance level ($\alpha = 0.05$).
 
-\begin{center}				
-\begin{tabular}{@{} lcccc @{}} \hline				
-%  	& \multicolumn{2}{c}{Rejected from WMU} \\  
+\begin{center}
+\begin{tabular}{@{} lcccc @{}} \hline
+%  	& \multicolumn{2}{c}{Rejected from WMU} \\
 Sport & Games & Leader Wins & Leader Loses & \% Reversal \\ \hline
 NBA & 189 & 150 & 39 & 20.6 \\
 MLB & 92  & 86  & 6 & 6.5   \\ \hline
 \end{tabular}
-\end{center} 
+\end{center}
 \vspace{-1mm}
 Source: Cooper, H, etal, \textit{Predicting outcoming}, ``Chance'', Vol 5, Nos 3-4, 1992, pp. 18-22
 
@@ -481,7 +481,7 @@ Source: Cooper, H, etal, \textit{Predicting outcoming}, ``Chance'', Vol 5, Nos 3
 \item  Compute the test statistic.
 \item  Based on the test statistic and the critical value, what is your decision about the hypotheses?
 \item  Interpret your result in every day language.
-\end{enumerate} 
+\end{enumerate}
 
 \end{exercise}
 \begin{solution}  % 15b
@@ -552,7 +552,7 @@ Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phan
 
 Historically throughout the United States, families of four spend about \$239 a week on groceries and food with a standard deviation of 50. Assume a random sample of 250 households is taken in the United States.
 
-\begin{enumerate} 
+\begin{enumerate}
 \item What is the expected value of the sample mean?
 \item What is the Standard error of this estimate?
 \item What is the probability that the mean weekly household spending is more than \$242?
@@ -588,14 +588,14 @@ Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phan
  }}
 \end{center}
 
-\begin{minipage}[ht]{7cm}
+\begin{minipage}[ht]{6.9cm}
 
 Too Fast, Not Enough Furious
 
-The chart shows the average cost of \\ annual auto insurance premiums in 2008 for drivers with no accidents, one \\ accident, two accidents, and so on. \\ According to this chart, the average \\ annual auto insurance premium for drivers with no accidents was \$1,387 in 2008.
+The chart shows the average cost of  annual auto insurance premiums in 2008 for drivers with no accidents, one  accident, two accidents, and so on.  According to this chart, the average  annual auto insurance premium for drivers with no accidents was \$1,387 in 2008.
 
-\end{minipage} \hfill 
-\begin{minipage}[ht]{7cm}
+\end{minipage} \hfill
+\begin{minipage}[ht]{6.9cm}
 
 \includegraphics[width=5cm]{chapters/Workshops/ext_figure/UsaToday.png} % requires the graphicx package
 
@@ -711,12 +711,12 @@ Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phan
  }}
 \end{center}
 
-\begin{minipage}[ht]{7cm}
+\begin{minipage}[ht]{6.9cm}
 
 The adjacent chart shows the average cost of annual auto insurance premiums in 2008 for drivers with no accidents, one ac- cident, two accidents, and so on. Accord- ing to this chart, the 2008 average annual auto insurance premium for drivers with no accidents was \$1,387, and the premium for drivers with one accident is \$1,689. Assume that this dataset is partly based on a random sample of 60 drivers with no accidents, and a random sample of 56 drivers with one accident. Assume also that the standard deviations of the samples with no accidents and one accident are \$150 and \$178, respectively. Finally, assume the samples are independent.
 
 \end{minipage} \hfill
-\begin{minipage}[ht]{7cm}
+\begin{minipage}[ht]{6.9cm}
 
 %\begin{figure}[ht]
 \centering
@@ -762,14 +762,14 @@ Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phan
 
 The summary statistics for Verbal SAT are provided below:
 
-\begin{center}				
-\begin{tabular}{@{} lccc @{}} \hline				
-%  	& \multicolumn{2}{c}{Rejected from WMU} \\ 
+\begin{center}
+\begin{tabular}{@{} lccc @{}} \hline
+%  	& \multicolumn{2}{c}{Rejected from WMU} \\
 Graduate & N & Mean & SD \\ \hline
-No & 13 & 466.9 & 89.94 \\ 
+No & 13 & 466.9 & 89.94 \\
 Yes & 28 & 480.0 & 67.33 \\ \hline
 \end{tabular}
-\end{center} 
+\end{center}
 
 \begin{enumerate}
 \item Estimate the difference in average Verbal SAT scores between the two groups.
@@ -782,13 +782,10 @@ Yes & 28 & 480.0 & 67.33 \\ \hline
 
 \end{solution}
 
-
-
-
 \clearpage
 
     \begin{exercise}  % 18a         %%%%%%%%%%%%%%%%%
-    
+
 <<label=LBL18a, results="asis", echo=FALSE>>=
   red1   <- read.csv("data/winequalityRed.csv", sep = ";")
   white1 <- read.csv("data/winequalityWhite.csv", sep = ";")
@@ -796,26 +793,26 @@ Yes & 28 & 480.0 & 67.33 \\ \hline
   white1['color'] <- 'white'
   redAC    <- sample(red1$alcohol, size = 36)
   whiteAC  <- sample(white1$alcohol, size = 36)
-  
+
   nwhite2  <- length(whiteAC)
-  mnwhite2 <- mean(whiteAC) 
+  mnwhite2 <- mean(whiteAC)
   sdwhite2 <- sd(whiteAC)
-  
+
   nred2  <- length(redAC)
-  mnred2 <- mean(redAC) 
+  mnred2 <- mean(redAC)
   sdred2 <- sd(redAC)
-  
+
   mnDiff <- mnred2 - mnwhite2
   SDdiff <- sqrt( sdred2^2/nred2 + sdwhite2^2/nwhite2)
   z2     <- mnDiff / SDdiff
   pval2  <- 2 * (1 - pnorm(z2))
-  
+
   mnred2 <- sprintf("%.3f", mnred2)
   sdred2 <- sprintf("%.4f", sdred2)
-  
+
   mnwhite2 <- sprintf("%.3f", mnwhite2)
   sdwhite2 <- sprintf("%.4f", sdwhite2)
-  
+
 @
 
     \begin{center}
@@ -847,13 +844,13 @@ Suppose researchers decided to take a random sample of 36 from each type of wine
   \item What should you conclude?
 \end{itemize}
 
-\end{exercise} 
+\end{exercise}
 \begin{solution}  % 18a
 
 % \begin{itemize}
 %   \item hypotheses: $H_0: \mu_r = \mu_w$ vs. $H_0: \mu_r \ne \mu_w$
 %   \item difference: \Sexpr{mnDiff}
-%   \item SE: \Sexpr{SDdiff} 
+%   \item SE: \Sexpr{SDdiff}
 %   \item $Z_0 = \Sexpr{z2}$?
 %   \item $p$-value = \Sexpr{pval2}
 %   \item What should you conclude? Reject $H_0$.
@@ -872,24 +869,24 @@ Suppose researchers decided to take a random sample of 36 from each type of wine
   # white1['color'] <- 'white'
   redQU    <- sample(red1$quality, size = 64)
   whiteQU  <- sample(white1$quality, size = 64)
-  
+
   nwhite2  <- length(whiteQU)
-  mnwhite2 <- mean(whiteQU) 
+  mnwhite2 <- mean(whiteQU)
   sdwhite2 <- sd(whiteQU)
   nred2  <- length(redQU)
-  mnred2 <- mean(redQU) 
+  mnred2 <- mean(redQU)
   sdred2 <- sd(redQU)
   mnDiff <- mnred2 - mnwhite2
   SDdiff <- sqrt( sdred2^2/nred2 + sdwhite2^2/nwhite2)
   z2     <- mnDiff / SDdiff
   pval2  <- 2 * (1 - pnorm(z2))
-  
+
   mnred2 <- sprintf("%.1f", mnred2)
   sdred2 <- sprintf("%.2f", sdred2)
-  
+
   mnwhite2 <- sprintf("%.1f", mnwhite2)
   sdwhite2 <- sprintf("%.2f", sdwhite2)
-  
+
 @
 
     \begin{center}
@@ -921,7 +918,7 @@ Suppose researchers decided to take a random sample of 64 from each type of wine
   \item What should you conclude?
 \end{itemize}
 
-\end{exercise} 
+\end{exercise}
 \begin{solution}  % 18b
 
 % \begin{itemize}
@@ -946,26 +943,26 @@ Suppose researchers decided to take a random sample of 64 from each type of wine
   # white1['color'] <- 'white'
   redPH    <- sample(red1$pH, size = 100)
   whitePH  <- sample(white1$pH, size = 100)
-  
+
   nwhite2  <- length(whitePH)
-  mnwhite2 <- mean(whitePH) 
+  mnwhite2 <- mean(whitePH)
   sdwhite2 <- sd(whitePH)
-  
+
   nred2  <- length(redPH)
-  mnred2 <- mean(redPH) 
+  mnred2 <- mean(redPH)
   sdred2 <- sd(redPH)
-  
+
   mnDiff <- mnred2 - mnwhite2
   SDdiff <- sqrt( sdred2^2/nred2 + sdwhite2^2/nwhite2)
   z2     <- mnDiff / SDdiff
   pval2  <- 2 * (1 - pnorm(z2))
-  
+
   mnred2 <- sprintf("%.3f", mnred2)
   sdred2 <- sprintf("%.4f", sdred2)
-  
+
   mnwhite2 <- sprintf("%.3f", mnwhite2)
   sdwhite2 <- sprintf("%.4f", sdwhite2)
-  
+
 @
 
     \begin{center}
@@ -984,7 +981,7 @@ Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phan
 \vspace{4mm}
 Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}}
  }}
-\end{center}   % 18c 
+\end{center}   % 18c
 
 Suppose researchers decided to take a random sample of 100 from each type of wine.  The wine quality dataset used in this chapter includes $pH$. The average $pH$ of red wine is \Sexpr{mnred2}, while that of white wine is \Sexpr{mnwhite2}. The respective standard deviations are \Sexpr{sdred2} and \Sexpr{sdwhite2}. The respective sample sizes are \Sexpr{nred2} and \Sexpr{nwhite2}.
 
@@ -997,7 +994,7 @@ Suppose researchers decided to take a random sample of 100 from each type of win
   \item What should you conclude?
 \end{itemize}
 
-\end{exercise} 
+\end{exercise}
 \begin{solution}  % 18c
 
 % \begin{itemize}
@@ -1038,7 +1035,7 @@ A special vitamin concoction which claims to increase muscle strength is tested 
 
 \begin{center}
 \begin{tabular}{@{} lcc @{}} \hline
-%  	& \multicolumn{2}{c}{Rejected from WMU} \\ 
+%  	& \multicolumn{2}{c}{Rejected from WMU} \\
 Athlete & Before & After \\ \hline
 1 & 220 & 206 \\
 2 & 181 & 179 \\
@@ -1046,9 +1043,9 @@ Athlete & Before & After \\ \hline
 4 & 231 & 235 \\
 5 & 201 & 203 \\ \hline
 \end{tabular}
-\end{center} 
+\end{center}
 
-\begin{enumerate} 
+\begin{enumerate}
 \item Estimate the mean difference in weight lifted before and after the vitamin regimen.
 \item Calculate a standard error for your estimate in (1).
 \item Calculate a 95\% confidence interval for the difference. Does your interval exclude 0? Is your difference statistically significant?
@@ -1092,10 +1089,10 @@ Chicago&	0.52&	0.52 \\
 Philadelphia&	0.45&	0.45 \\
 Detroit&	0.46&	0.43 \\ \hline
 \end{tabular}
-\end{center} 
+\end{center}
 
 \begin{enumerate}
-  \item Estimate the mean difference in participation of women between 1968 and 1972.  
+  \item Estimate the mean difference in participation of women between 1968 and 1972.
   \item	Calculate a standard error for your estimate in (1).
   \item	Calculate a 95\% confidence interval for the difference.  Does your interval exclude 0?  Is your difference statistically significant?
 \end{enumerate}
@@ -1175,12 +1172,12 @@ Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phan
  }}
 \end{center}
 
-In an experimental study, 44 rats were exposed to high dose of red dye and 44 rats were exposed to low dose of red dye and then it was observed how many in each group developed cancer. 
-			
+In an experimental study, 44 rats were exposed to high dose of red dye and 44 rats were exposed to low dose of red dye and then it was observed how many in each group developed cancer.
+
 \begin{table}[ht]
-\centering				
-\begin{tabular}{@{} l rrr @{}} \hline				
-  \multicolumn{4}{c}{Dose Level of Red Dye} \\	
+\centering
+\begin{tabular}{@{} l rrr @{}} \hline
+  \multicolumn{4}{c}{Dose Level of Red Dye} \\
 Cancer&	High&	Low&	Total \\ \hline
 Yes &	14 &	4 &	18 \\
 No &	30 &	40 &	70 \\ \hline
@@ -1191,20 +1188,20 @@ Total &	44 &	44 &	88 \\ \hline
 \begin{enumerate}
   \item Fill in the table of expected counts:
 
-\begin{center}  
-\begin{tabular}{@{} l rrr @{}} \hline				
-  \multicolumn{4}{c}{Dose Level of Red Dye} \\	
+\begin{center}
+\begin{tabular}{@{} l rrr @{}} \hline
+  \multicolumn{4}{c}{Dose Level of Red Dye} \\
 Cancer&	High&	Low&	Total \\ \hline
 Yes&	&	&	18 \\
 No&	&	&	70 \\ \hline
 Total&	44&	44&	88 \\ \hline
 \end{tabular}
-\end{center} 
+\end{center}
 
   \item	Calculate the chi-square test statistic.
   \item	What is the correct degrees of freedom?
   \item	Based on the degrees of freedom, what is the critical value?
-  \item	What can we conclude from this test? Is the dose level of red dye related to cancer occurrence? 
+  \item	What can we conclude from this test? Is the dose level of red dye related to cancer occurrence?
 \end{enumerate}
 
 \end{exercise}
@@ -1236,11 +1233,11 @@ Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phan
 \end{center}
 
 Consider the following data from the Chicago Western Electric Study (Shekelle et al., 1981). In the following table 466 men were classified based on death from coronary heart disease (CHD) and fish consumption.
-			
+
 \begin{table}[ht]
 \centering
-\begin{tabular}{@{} l rrr @{}} % \hline				
-  \multicolumn{4}{c}{35 gm of Daily Fish Consumption} \\		
+\begin{tabular}{@{} l rrr @{}} % \hline
+  \multicolumn{4}{c}{35 gm of Daily Fish Consumption} \\
 Death from CHD &	No &	Yes &	Total \\ \hline
 Yes &	42 &	34 &	76 \\
 No &	163 &	227 &	390 \\ \hline
@@ -1253,8 +1250,8 @@ Total &	205 &	261 &	466 \\ \hline
 
 \begin{center}
 
-\begin{tabular}{@{} lrrr @{}} % \hline				
-  \multicolumn{4}{c}{35 gm of Daily Fish Consumption} \\		
+\begin{tabular}{@{} lrrr @{}} % \hline
+  \multicolumn{4}{c}{35 gm of Daily Fish Consumption} \\
 Death from CHD &	No &	Yes &	Total \\ \hline
 Yes &	&	&	76 \\
 No &	&	&	390 \\ \hline
@@ -1331,7 +1328,6 @@ Total&	18&	17&	19&	54 \\ \hline
 
 \end{solution}
 
-
 \clearpage
 
     \begin{exercise}  % 21a         %%%%%%%%%%%%%%%%%
@@ -1377,9 +1373,9 @@ An intern at a courthouse is curious about whether there is any association betw
 \begin{tabular}{@{} ccc @{}} \hline
  &	$Z_{Age}$ &	$Z_{Sentence}$ \\ \hline
 1&	-1.075&	-1.385 \\
-2& & \\		
-3& & \\		
-4& & \\		
+2& & \\
+3& & \\
+4& & \\
 5& & \\ \hline
 \end{tabular}
 \end{center}  }}
@@ -1563,7 +1559,7 @@ $s$ & 4.613988 & 21.35962 \\ \hline
 \end{center}
 
 \begin{enumerate}
-  \item Calculate the regression line for predicting final grade based on number of absences.  Note that the correlation coefficient is $-0.9353114$. 
+  \item Calculate the regression line for predicting final grade based on number of absences.  Note that the correlation coefficient is $-0.9353114$.
 	\item Draw the scatterplot with an overlaid regression line.
 	\item Using your regression line for predicting final grade from number of absences, what is the estimated final grade of a student who has been absent 6 times?
 	\item Calculate the residual for the $10^{th}$ student above.
@@ -1721,7 +1717,7 @@ $s$ & 4.613988 & 21.35962 \\ \hline
 \end{center}
 
 \begin{enumerate}
-  \item Calculate the regression line for predicting final grade based on number of absences.  Note that the correlation coefficient is $-0.9353114$. 
+  \item Calculate the regression line for predicting final grade based on number of absences.  Note that the correlation coefficient is $-0.9353114$.
   \item Calculate a 95\% confidence interval for the slope of the line.  Is the slope statistically significant?  Why or why not?
 \end{enumerate}
 
@@ -1774,7 +1770,7 @@ $s$ & 17.75981 & 12.8619 \\ \hline
   \item Calculate the regression line for predicting systolic blood pressure based on age. Note that the correlation coefficient is $0.907144$.
 
   \item Calculate a 95\% confidence interval for the slope of the line.  Is the slope statistically significant?  Why or why not?
-  
+
 \end{enumerate}
 
 \end{exercise}
@@ -1827,6 +1823,16 @@ Intervals &	Frequency (Hz) \\ \hline
 \begin{solution}  % 23c
 
 \end{solution}
+
+
+
+
+
+
+
+
+
+
 
 
 

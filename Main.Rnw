@@ -156,7 +156,7 @@ A general introduction to statistics with an emphasis on data analysis and graph
 <<Ch17, child="chapters/Workshops/Workshop1.Rnw",eval=TRUE>>=
 @
 
-<<Ch18, child="chapters/Workshops/Workshop2.Rnw",eval=FALSE>>=
+<<Ch18, child="chapters/Workshops/Workshop2.Rnw",eval=TRUE>>=
 @
 
 % \printbibliography
