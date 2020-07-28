@@ -1152,6 +1152,28 @@ The pretest median is \Sexpr{med3b}
 %
 %   \end{solution}
 
+\begin{exercise}  % 15
+
+The median age for \\ Black Americans (BA) is 30.9; for White \\ Americans (WA) is 42.3.
+
+\begin{enumerate}
+\item Based on this statement, give two reasons why this age disparity.
+\item Does median age of BA say that BA die younger than WA? Why or why not?
+\item Is it possible for BA and WA to die the same age, but have different median \\ ages?
+\end{enumerate}
+
+\end{exercise}
+\begin{solution}  % 15
+
+\begin{enumerate}
+\item   1) less education, 2) less wealth, 3) poorer health, 4) racism 
+\item Does median age of BA say that BA die younger than WA? Why or why not?  
+\item Is it possible for BA and WA to die the same age, but have different median \\ ages?
+\end{enumerate}
+\end{solution}
+
+
+
 \end{exercises}
 
 \onecolumn

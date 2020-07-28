@@ -850,7 +850,7 @@ In October 1947, the \\ Gallup organization surveyed 1100 adult \\ Americans, an
 \end{enumerate}
 
 \end{exercise}
-\begin{solution}
+\begin{solution}    % 7
 
 \begin{enumerate}
 \item Difference 6.7\% 
@@ -861,6 +861,24 @@ In October 1947, the \\ Gallup organization surveyed 1100 adult \\ Americans, an
 \item Significant change has occurred, because zero is NOT within the interval.
 
 \end{enumerate}
+
+\end{solution}
+
+\begin{exercise}   % 8
+
+New April 2020 \\ Guidelines Boost Perceived Efficacy of Face Masks.  (news.Gallup.com, Politics, May 13, 2020) Americans Understanding of COVID-19 Preventive Measures.  Suppose the results of the survey is a binomial random variable with a probability of success (wearing a cloth mask) of 0.32 and 100 observations.  Assume each observation is independent. 
+
+
+
+\begin{enumerate}
+\item What is the mean and standard deviation?
+\item What is the probability that there are more than 40 adults wearing face \\ masks?
+\item What is the probability that there are fewer than 28 adults wearing face \\ masks?
+\item What is the probability that there are between 28 and 40 adults wearing face masks?
+\end{enumerate}
+
+\end{exercise}
+\begin{solution}    % 8
 
 \end{solution}
 

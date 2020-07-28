@@ -1068,6 +1068,35 @@ The following plots represent five different samples of data. For \\ each, descr
 %
 %   \end{solution}
 %
+\begin{exercise}   % 13
+
+The enrolled \\ student population  at Western  Michigan  \\ University (spring 2020) is displayed in the  following table:
+
+{\footnotesize{
+  \begin{table}[htbp]
+   \centering
+  \begin{tabular}{@{} lc @{}} \hline % Column formatting, @{} suppresses leading/trailing space
+    Ethnicity & Percent \\ \hline
+    American Indian  & 0.433  \\
+    Asian & 2.16 \\
+    Black  & 11.2 \\
+    Hispanic or Latino & 5.61 \\
+    Native Hawaiian & 0.0831 \\
+    Two or More Races & 3.44 \\
+    White & 68.7 \\ \hline
+   \end{tabular}
+   \end{table}
+}}
+
+Draw a histogram by hand of the percentages with the correct labels.
+
+\end{exercise}
+
+
+
+
+
+
 % 	\begin{exercise}  % 13
 %
 % 	  For the following research project, classify all variables regarding levels of measurement and reveal whether they're continuous and discrete.  We should also \\ select which statistical method should be \\ used: {\emph{single variable descriptive statistic}} or \\ {\emph{a multi-variable descriptive statistic}} or \\ {\emph{inferential statistics}}.  Recall that it is \\ common for some projects to require more than one type of method.
@@ -1111,6 +1140,9 @@ The following plots represent five different samples of data. For \\ each, descr
 %
 %     All of the choices is the correct answer.
 %   \end{solution}
+
+
+
 
 \end{exercises}
 
