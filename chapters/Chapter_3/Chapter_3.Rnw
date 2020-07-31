@@ -1154,12 +1154,28 @@ The pretest median is \Sexpr{med3b}
 
 \begin{exercise}  % 15
 
-The median age for \\ Black Americans (BA) is 30.9; for White \\ Americans (WA) is 42.3.
+\begin{table}[ht]
+ \centering
+            % \footnotesize{
+	\caption{Source: Google}
+ \begin{tabular}{@{} lc @{}}
+     % \multicolumn{4}{c}{TAP    |    BOTTLED}  \hline
+  % \multicolumn{2}{Tap} & | & \multicolumn{2}{Bottled} \hline
+  Ethnic 	& Mean household \\ 
+  category & income (K \$) \\ \hline
+  Asian (AA) & 114 \\
+  Black (BA) & 59 \\
+  Hispanic or Latino (HA) & 68 \\
+  White (WA) & 90 \\
+    \hline
+ \end{tabular}
+   \label{tab:t3_16}
+ \end{table}
 
 \begin{enumerate}
-\item Based on this statement, give two reasons why this age disparity.
-\item Does median age of BA say that BA die younger than WA? Why or why not?
-\item Is it possible for BA and WA to die the same age, but have different median \\ ages?
+\item Based on this table, give two reasons why this income disparity.
+\item Does the mean salary of BA say that BA earn less than WA? Why or why not?
+\item Is it possible for BA and WA to earn the same salary, but have different mean \\ salaries?
 \end{enumerate}
 
 \end{exercise}
