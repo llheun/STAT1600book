@@ -310,7 +310,7 @@
 \contentsline {subparagraph}{Exercise{}~13.6-4:}{145}{section*.173}%
 \contentsline {subparagraph}{Exercise{}~13.6-5:}{145}{section*.174}%
 \contentsline {subparagraph}{Exercise{}~13.6-6:}{145}{section*.175}%
-\contentsline {subparagraph}{Exercise{}~13.6-7:}{145}{section*.176}%
+\contentsline {subparagraph}{Exercise{}~13.6-7:}{146}{section*.176}%
 \contentsline {chapter}{\numberline {14}Categorical Variables: Association or Independence}{147}{chapter.14}%
 \contentsline {section}{\numberline {14.1}Objectives}{147}{section.14.1}%
 \contentsline {section}{\numberline {14.2}Association versus independence in an r x c table}{147}{section.14.2}%

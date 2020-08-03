@@ -639,7 +639,7 @@ $\vdots$ & & & $\vdots$ & &  $\vdots$ \\
 A \textit{relative frequency table} gives the count for each category and the relative frequency or percentage of time in which each category occurs.  Here is a relative frequency table for Monthly Payment type.
 
 % latex table generated in R 4.0.2 by xtable 1.8-4 package
-% Fri Jul 31 12:47:10 2020
+% Mon Aug  3 12:21:09 2020
 \begin{table}[ht]
 \centering
 \begin{tabular}{rrr}
@@ -826,7 +826,7 @@ Earlier in this chapter, we presented a relative frequency table for categorical
 
 {\small{
 % latex table generated in R 4.0.2 by xtable 1.8-4 package
-% Fri Jul 31 12:47:10 2020
+% Mon Aug  3 12:21:09 2020
 \begin{table}[ht]
 \centering
 \begin{tabular}{rrr}
@@ -1735,7 +1735,7 @@ The table below shows the computations for the monthly rent data. Notice in the 
 %\vspace{2cm}
 
 % latex table generated in R 4.0.2 by xtable 1.8-4 package
-% Fri Jul 31 12:47:12 2020
+% Mon Aug  3 12:21:11 2020
 \begin{table}[ht]
 \centering
 \begin{tabular}{rrrr}
@@ -1802,7 +1802,7 @@ If we are not convinced, consider the data itself on the following table.
 
 
 % latex table generated in R 4.0.2 by xtable 1.8-4 package
-% Fri Jul 31 12:47:12 2020
+% Mon Aug  3 12:21:11 2020
 \begin{table}[ht]
 \centering
 \begin{tabular}{rrrr}
@@ -1833,7 +1833,7 @@ $$ SD = \sqrt{ \frac{ SS}{n - 1}} = \sqrt{ \frac{ \ensuremath{2.441\times 10^{4}
 \fbox{\parbox{14cm}{ In general, when we add or subtract a \textbf{constant} to the data, the same thing happens to the average, but the \textbf{SD remains unchanged.}}}
 
 % latex table generated in R 4.0.2 by xtable 1.8-4 package
-% Fri Jul 31 12:47:12 2020
+% Mon Aug  3 12:21:11 2020
 \begin{table}[ht]
 \centering
 \begin{tabular}{rrrr}
@@ -2314,7 +2314,7 @@ In a study of warp \\ breakage during the process of weaving \\ fabric (\textit{
 \vspace{3mm}
 
 {\small{
-262, 350, 198, 166, 38, 185, 55, 396, 55 
+169, 93, 315, 137, 194, 146, 40, 146, 90 
 }}
 
 
@@ -2330,9 +2330,9 @@ In a study of warp \\ breakage during the process of weaving \\ fabric (\textit{
 \begin{solution}   % 4
 
 \begin{enumerate}
-\item $\bar{x} = 189.4444444$
-\item $\tilde{x} = 185$
-\item $sd = 129.1492461 $
+\item $\bar{x} = 147.7777778$
+\item $\tilde{x} = 146$
+\item $sd = 77.9643793 $
 \item The distribution is Right skewed
 \item The median provided the most relevant information because to the extreme outlier.
 \end{enumerate}
@@ -3481,7 +3481,7 @@ If the data histogram is approximately bell-shaped, expect around \\
 
 
 % latex table generated in R 4.0.2 by xtable 1.8-4 package
-% Fri Jul 31 12:47:26 2020
+% Mon Aug  3 12:21:24 2020
 \begin{table}[ht]
 \centering
 \begin{tabular}{rllllllllll}
@@ -7412,7 +7412,7 @@ Suppose a shoe \\ company wants to test material for the soles of shoes.  For ea
 \begin{exercise}   % 8
 
 % latex table generated in R 4.0.2 by xtable 1.8-4 package
-% Fri Jul 31 12:47:41 2020
+% Mon Aug  3 12:21:37 2020
 \begin{table}[ht]
 \centering
 \begin{tabular}{rll}
@@ -7752,10 +7752,10 @@ The wine dataset used above is freely available online and fun to play with. One
 
 
 
-The wine quality \\ dataset used in this chapter includes a variable on alcohol content. The average alcohol content of red wine is 10.423, while that of white wine is 10.5143. The respective standard deviations are 1.0657 and 1.2306. The respective sample sizes are 1599 and 4898.
+The wine quality \\ dataset used in this chapter includes a variable on \textbf{alcohol content}. The average alcohol content of red wine is 10.423, while that of white wine is 10.5143. The respective standard deviations are 1.0657 and 1.2306. The respective sample sizes are 1599 and 4898.
 
 \begin{itemize}
-  \item Set up a hypothesis test. What are the two hypotheses?
+  \item Set up a hypothesis test. What are the two hypotheses for \textbf{alcohol content}?
   \item What is the difference between means?
   \item What is the standard error of the difference?
   \item What is the test statistic $Z_0$?
@@ -7781,10 +7781,29 @@ Percent of alcohol
 
 \begin{exercise} % 2
 
-The wine quality \\ dataset used in this chapter includes a variable on quality. The average quality score of red wine is 5.636, while that of white wine is 5.8779. The respective standard deviations are \\ 0.8076 and 0.8856. The respective sample sizes are 1599 and 4898.
+
+
+In Major League Baseball (MLB), the American League (AL) allows a designated hitter (DH) to bat for the \\ pitcher.  In the National League (NL), the \\  pitcher must bat.  We assume that the AL teams will score more runs.  When the AL and NL play each other in interleague play, the AL pitchers must bat when the AL team visits the NL park.  Therefore,  we might expect that AL teams would have fewer runs when they visit NL parks.  Researchers want to test this hypothesis.  So they took a random sample of run scored by AL team without their DL.  The following table shows the descriptive statistics.
+
+% Requires the booktabs if the memoir class is not being used
+\begin{table}[htbp]
+   \centering
+   %\topcaption{Table captions are better up top} % requires the topcapt package
+   \begin{tabular}{@{} lcc @{}}  \hline% Column formatting, @{} suppresses leading/trailing space
+      % \toprule
+       & \multicolumn{2}{c}{Desc. Stats.}  \\ \hline
+      % \cmidrule(r){1-2} % Partial rule. (r) trims the line a little bit on the right; (l) & (lr) also possible
+      Stat & AL & NL \\
+      Mean & 6.0 & 4.3 \\
+      sd   & 3.55 & 2.60  \\
+      n    & 30 & 30 \\ \hline
+   \end{tabular}
+   % \caption{Remember, \emph{never} use vertical lines in tables.}
+   \label{tab:tbl13a}
+\end{table}
 
 \begin{itemize}
-  \item Set up a hypothesis test. What are the two hypotheses?
+  \item Set up a hypothesis test. What are the two hypotheses for AL vs. NL?
   \item What is the difference between means?
   \item What is the standard error of the difference?
   \item What is the test statistic $Z_0$?
@@ -8435,7 +8454,7 @@ Figure 15.2 shows various scatterplots with different correlations.  Although $0
 \begin{minipage}[ht]{7.1cm}
 % \begin{figure}[ht]
 
-Correlation plots (from top to bottom, r = -0.7140, 0.6869 )
+Correlation plots (from top to bottom, r = -0.7195, 0.6613 )
 
 % \caption{Correlation plots (from top to bottom, r = cr1, cr2 )}
 
@@ -8462,7 +8481,7 @@ Correlation plots (from top to bottom, r = -0.7140, 0.6869 )
 
 % \begin{figure}[ht]
 
-Correlation plots (from top to bottom, r = -0.9743, 0.9945)
+Correlation plots (from top to bottom, r = -0.9590, 0.9943)
 
 % \caption{Correlation plots (from top to bottom, r = cr3, cr4)}
 
@@ -9232,19 +9251,19 @@ Call:
 lm(formula = Income ~ Height)
 
 Residuals:
-    Min      1Q  Median      3Q     Max 
--16.322  -2.706   1.044   3.865   9.492 
+     Min       1Q   Median       3Q      Max 
+-13.5723  -2.7499   0.9967   3.5674   9.8621 
 
 Coefficients:
-            Estimate Std. Error t value Pr(>|t|)  
-(Intercept)  -7.6415     9.9800  -0.766   0.4457  
-Height        0.3467     0.1502   2.308   0.0231 *
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept) -23.2055     9.1909  -2.525   0.0132 *  
+Height        0.5724     0.1378   4.154    7e-05 ***
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 
-Residual standard error: 5.499 on 98 degrees of freedom
-Multiple R-squared:  0.05156,	Adjusted R-squared:  0.04189 
-F-statistic: 5.328 on 1 and 98 DF,  p-value: 0.02309
+Residual standard error: 5.153 on 98 degrees of freedom
+Multiple R-squared:  0.1497,	Adjusted R-squared:  0.141 
+F-statistic: 17.25 on 1 and 98 DF,  p-value: 6.997e-05
 
 
   \end{verbatim}
@@ -9284,7 +9303,7 @@ F-statistic: 5.328 on 1 and 98 DF,  p-value: 0.02309
     \end{exercise}
     \begin{solution}    % 9
 
-       The correlation coefficient between the respondent's height and income is 0.0515649
+       The correlation coefficient between the respondent's height and income is 0.1496931
 
     \end{solution}
 
@@ -9317,7 +9336,7 @@ F-statistic: 5.328 on 1 and 98 DF,  p-value: 0.02309
         &  \multicolumn{1}{c}{Independent} \\ \hline
 
     Dep. Var. & 1. height      \\ \hline
-    1. income  &   0.2270792      \\ \hline
+    1. income  &   0.386902      \\ \hline
 
     \end{tabular}
     \end{table}
@@ -9335,7 +9354,7 @@ F-statistic: 5.328 on 1 and 98 DF,  p-value: 0.02309
     \end{exercise}
     \begin{solution}      % 11
 
-    For a sample of 40 subjects, we tested the relationship between height and income.  We found a weak positive relationship using the correlation coefficient (0.2270792).  We then looked at the slope:  as {\textit{height}} increases by one inch, {\textit{income}} increases by 0.346722 with a p-value of
+    For a sample of 40 subjects, we tested the relationship between height and income.  We found a weak positive relationship using the correlation coefficient (0.386902).  We then looked at the slope:  as {\textit{height}} increases by one inch, {\textit{income}} increases by 0.57239 with a p-value of
 
     \end{solution}
 
@@ -9345,17 +9364,17 @@ F-statistic: 5.328 on 1 and 98 DF,  p-value: 0.02309
 
 {\small{
 % latex table generated in R 4.0.2 by xtable 1.8-4 package
-% Fri Jul 31 12:47:45 2020
+% Mon Aug  3 12:21:40 2020
 \begin{table}[ht]
 \centering
 \begin{tabular}{rrrrr}
   \hline
  & 1 & 2 & 3 & 4 \\ 
   \hline
-1 & 1.00 & -0.08 & -0.25 & 0.03 \\ 
-  2 & -0.08 & 1.00 & -0.07 & -0.16 \\ 
-  3 & -0.25 & -0.07 & 1.00 & -0.27 \\ 
-  4 & 0.03 & -0.16 & -0.27 & 1.00 \\ 
+1 & 1.00 & 0.03 & -0.21 & -0.10 \\ 
+  2 & 0.03 & 1.00 & -0.04 & -0.06 \\ 
+  3 & -0.21 & -0.04 & 1.00 & -0.12 \\ 
+  4 & -0.10 & -0.06 & -0.12 & 1.00 \\ 
    \hline
 \end{tabular}
 \end{table}
@@ -9370,20 +9389,20 @@ lm(formula = Happiness ~ Age + Income + NotMarried)
 
 Residuals:
     Min      1Q  Median      3Q     Max 
--1.1546 -0.5515  0.1941  0.4034  1.5019 
+-1.0681 -0.6439  0.1275  0.3060  1.4156 
 
 Coefficients:
-             Estimate Std. Error t value Pr(>|t|)    
-(Intercept)  2.551920   0.419007   6.090 2.32e-08 ***
-Age         -0.004007   0.003817  -1.050  0.29644    
-Income      -0.029958   0.011223  -2.669  0.00893 ** 
-NotMarried  -0.075195   0.131933  -0.570  0.57004    
+              Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  2.4906671  0.3646315   6.831  7.7e-10 ***
+Age          0.0003422  0.0033103   0.103   0.9179    
+Income      -0.0268059  0.0120640  -2.222   0.0286 *  
+NotMarried  -0.1668175  0.1298484  -1.285   0.2020    
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 
-Residual standard error: 0.6161 on 96 degrees of freedom
-Multiple R-squared:  0.07479,	Adjusted R-squared:  0.04587 
-F-statistic: 2.587 on 3 and 96 DF,  p-value: 0.05754
+Residual standard error: 0.6351 on 96 degrees of freedom
+Multiple R-squared:  0.05924,	Adjusted R-squared:  0.02984 
+F-statistic: 2.015 on 3 and 96 DF,  p-value: 0.1169
 
 
   \end{verbatim}
@@ -9496,7 +9515,7 @@ What are the dependent and independent \\ variables?
 
 {\small{
 % latex table generated in R 4.0.2 by xtable 1.8-4 package
-% Fri Jul 31 12:47:45 2020
+% Mon Aug  3 12:21:41 2020
 \begin{table}[ht]
 \centering
 \begin{tabular}{rrrrr}
@@ -15634,7 +15653,7 @@ Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phan
  }}
 \end{center}
 
-Suppose researchers decided to take a random sample of 36 from each type of wine.  The wine quality dataset used in this chapter includes $alcohol content$. The average \\ $alcohol content$ of red wine is 10.276, while that of white wine is 10.581. The respective standard deviations are 1.1031 and 1.1692. The respective sample sizes are 36 and 36.
+Suppose researchers decided to take a random sample of 36 from each type of wine.  The wine quality dataset used in this chapter includes $alcohol content$. The average \\ $alcohol content$ of red wine is 10.261, while that of white wine is 10.761. The respective standard deviations are 0.8240 and 1.2668. The respective sample sizes are 36 and 36.
 
 \begin{itemize}
   \item Set up a hypothesis test. What are the two hypotheses?
@@ -15683,7 +15702,7 @@ Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phan
  }}
 \end{center}
 
-Suppose researchers decided to take a random sample of 64 from each type of wine.  The wine quality dataset used in this chapter includes $quality$. The average $quality$ Score of red wine is 5.6, while that of white wine is 5.9. The respective standard deviations are 0.91 and 0.88. The respective sample sizes are 64 and 64.
+Suppose researchers decided to take a random sample of 64 from each type of wine.  The wine quality dataset used in this chapter includes $quality$. The average $quality$ Score of red wine is 5.5, while that of white wine is 5.9. The respective standard deviations are 0.78 and 0.81. The respective sample sizes are 64 and 64.
 
 \begin{itemize}
   \item Set up a hypothesis test. What are the two hypotheses?
@@ -15732,7 +15751,7 @@ Name: \underline{\phantom{xxxxxxxxxxxxxxxxxxxxxxxx}} Signature: \underline{\phan
  }}
 \end{center}   % 18c
 
-Suppose researchers decided to take a random sample of 100 from each type of wine.  The wine quality dataset used in this chapter includes $pH$. The average $pH$ of red wine is 3.312, while that of white wine is 3.183. The respective standard deviations are 0.1402 and 0.1622. The respective sample sizes are 100 and 100.
+Suppose researchers decided to take a random sample of 100 from each type of wine.  The wine quality dataset used in this chapter includes $pH$. The average $pH$ of red wine is 3.295, while that of white wine is 3.200. The respective standard deviations are 0.1437 and 0.1495. The respective sample sizes are 100 and 100.
 
 \begin{itemize}
   \item Set up a hypothesis test. What are the two hypotheses?
