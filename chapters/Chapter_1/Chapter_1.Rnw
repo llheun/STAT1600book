@@ -265,7 +265,7 @@ No randomization; the product was given to several people; a skin specialist sho
 
 \begin{exercise}  % 4
 
-All the members (sample \\ size, n=30) of a high school tennis team were given a new racket and were asked to report back on how the racket affected their performance during practices for the week.  All the members of the tennis team then completed a survey, and everyone minus one individual reported that the new racket impacted their performance in a positive manner.  Since we have a large enough sample size can we now conclude the new racket causes tennis players to perform better?  Why or why not?  Is there a fallacy here?
+All the members \\ (sample  size, n=30) of a high school tennis team were given a new racket and were asked to report back on how the racket affected \\ their performance during practices for the \\ week.  All the members of the tennis team then completed a survey, and everyone minus one individual reported that the new \\ racket impacted their performance in a positive manner.  Since we have a large enough sample size can we now conclude the new racket causes tennis players to perform better?  Why or why not?  Is there a fallacy here?
 
 	 % \framebox[5cm][l]{ Answer: }
 	\end{exercise}

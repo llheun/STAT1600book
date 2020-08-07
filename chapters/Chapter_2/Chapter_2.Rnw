@@ -248,7 +248,7 @@ A \textit{bar chart} is a plot of the relative frequency table.  We use bar char
 
 Remember that the	\textit{mean} and \textit{median} cannot be used for nominal variables.
 
-Consider the variable Monthly Payment in the ACS housing data on page 26.  How do the numbers appear?  How large are they? How variable is the data?  Are there any extreme values? These questions are attempts at getting to know the data.  In this section, we discuss tools for getting to know numerical data better.  We have n = 64 observations available since 12 households (out of 76) do not have monthly payments.  Here is a list of the monthly payments:
+Consider the variable Monthly Payment in the ACS housing data on page 24.  How do the numbers appear?  How large are they? How variable is the data?  Are there any extreme values? These questions are attempts at getting to know the data.  In this section, we discuss tools for getting to know numerical data better.  We have n = 64 observations available since 12 households (out of 76) do not have monthly payments.  Here is a list of the monthly payments:
 
 {\small{
 \Sexpr{MP1}
@@ -735,7 +735,7 @@ Identify the following \\ types of  data as numerical or categorical.  If numeri
   \begin{exercise} % 2
 
 The 6-year graduation \\ rate for a random sample of 30 colleges and universities
-in the U.S. is displayed in the \\ stem-and-leaf plot below.  Note that the stem unit is 10\%, and the leaf unit is 1\%.  For example, the maximum value is 92\%.
+in the U.S. is displayed in the \\ stem-and-leaf plot above.  Note that the stem unit is 10\%, and the leaf unit is 1\%.  For example, the maximum value is 92\%.
 
 \begin{table}[ht]
 \centering
@@ -1025,7 +1025,7 @@ The following plots represent five different samples of data. For \\ each, descr
 
 \begin{exercise}  % 11
 
-	  A recent issue of the \\ \emph{New England Journal of Medicine} reported a study of all 122,754 infants born over an 8.5 year period at Parkland Hospital in Dallas, Texas, leaving out multiple births and babies with birth defects.  The researchers  wanted to \\ know if there is a specific birth weight below which infant death and illness increases sharply.
+	  A recent issue of the \\ \emph{New England Journal of Medicine} reported a study of all 122,754 infants born over an 8.5 year period at Parkland Hospital in Dallas, Texas, leaving out multiple births and babies with birth defects.  The researchers  wanted to  know if there is a specific birth weight below which infant death and illness increases sharply.
 
     The independent variable in the study is
     \begin{enumerate}
@@ -1053,9 +1053,16 @@ The following plots represent five different samples of data. For \\ each, descr
   For the following \\ research project, classify all variables in \\ terms of levels of measurement and reveal whether  they're continuous and discrete.  As \\ researchers, we should select the correct statistical method: {\emph{single variable descriptive}}  \\ {\emph{statistic}} or {\emph{a multi-variable descriptive  statistic}} or  {\emph{inferential statistics.}}  Recall that it is common for some projects to require more than one type of method.
 
 	  Ten years ago, a state re-instituted the execution for first-degree murder.  Researchers asked, did this change of policy reduce capital crime?  A team of researchers gathered data on the number of homicides in the state for two-year periods before and after the policy change.
+	  
+\begin{enumerate}
+\item What is the variable of interest?
+\item What is the level of measurement?
+\item What is the type?
+\item What is the application?
+\end{enumerate}
 
     \vspace{3mm}
-    \framebox[5cm][l]{ Answer: }
+   %  \framebox[5cm][l]{ Answer: }
 
   \end{exercise}
   \vspace{2mm}
