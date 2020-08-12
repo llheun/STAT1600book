@@ -612,7 +612,7 @@ Values in the z-table \\ give the area under the curve to the left of the z-valu
 
   \begin{exercise} % 10
 
-    Given the distribution of \\ male weights has a mean of 155 and standard deviation of 12, what percent
+    Given the distribution of  male weights has a mean of 155 and standard deviation of 12, what percent
 of men weight less than 143 pounds?
 
 	  \begin{enumerate}
@@ -715,7 +715,7 @@ represents the $25^{th}$ percentile for weights of men (in \\ pounds)?
 % 	\vspace{1.5cm}
 % 	\begin{solution}
 %
-% <<results="asis", echo=FALSE>>=
+% <results="asis", echo=FALSE>>=
 %
 %   tmp51 <- qnorm(.85, mean=8.3, sd=3.224)
 %
@@ -736,7 +736,7 @@ represents the $25^{th}$ percentile for weights of men (in \\ pounds)?
 %	  \vspace{2cm}
 %	  \begin{solution}
 
-%	  <<results="asis", echo=FALSE>>=
+%	  <results="asis", echo=FALSE>>=
 
 %  tmp52 <- qnorm(.15, mean=8.3, sd=3.224)
 

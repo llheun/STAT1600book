@@ -344,7 +344,7 @@ A statistics exam \\ contains ten questions with five multiple \\ choice options
 
   \begin{exercise} % 3
 
-Apple's smartphone \\ market  share is  0.146. If Apple conducts a nationwide survey of 651 smartphone \\ users,
+Apple's smartphone \\ market  share is  0.390 (Q3 2018). If Apple conducts a nationwide survey of 651 smartphone \\ users,
 
 \begin{enumerate}
 \item What is the probability that at least 100 of the people are Apple users?

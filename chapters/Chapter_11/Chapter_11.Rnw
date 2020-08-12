@@ -19,7 +19,7 @@ After completing this part, students should be able to:
 
 \section{Behavioral Properties of the Sample Average}
 
-What percentage of adult men are between 5'6'' and 6' tall?  Population surveys have shown that men's heights are approximately normally distributed with mean 5'9'' and SD 3''.  Thus, the percentage of men between 5'6'' and 6' is estimated as 68\%, the percentage within 1 SD of the mean.  See Figure 10.1 below.
+What percentage of adult men are between 5'6'' and 6' tall?  Population surveys have shown that men's heights are approximately normally distributed with mean 5'9'' and SD 3''.  Thus, the percentage of men between 5'6'' and 6' is estimated as 68\%, the percentage within 1 SD of the mean.  See Figure 11.1 below.
 
 \begin{figure}[ht]
 \caption{The Percentage of Men's Heights between 66 and 72 inches}
@@ -125,7 +125,7 @@ Variables tend to miss their expected value, but should be within 1 SD 68\% of t
 | \bar{X} - \mu | \le 1.96 (SE) 
 \end{equation*}
 
-95\% of the time, where SE is given by the equation in section 10.3.  As a consequence,
+95\% of the time, where SE is given by the equation in section 11.3.  As a consequence,
 
 \begin{equation*}
 \texttt{Population mean, } \mu \texttt{ is inside the interval } \bar{X} \pm 1.96 (SE) 
@@ -267,7 +267,7 @@ A sample of 16 observations is taken from a distribution with \\ mean of 10 and 
 
 \begin{exercise}  % 3
 
-Safe Skies Airline took a random sample of 25 flights to estimate the average time that arriving passengers wait \\ for luggage at the carousel.  The sample average was found to be 16.2 minutes with a standard deviation of 4 minutes.  The population \\ average waiting time is estimated as \\ \underline{\phantom{xxxxxxxx}} minutes give or take  \underline{\phantom{xxxxxxxx}} minutes or  so.
+Safe Skies Airline took a random sample of 25 flights to estimate the average time that arriving passengers wait \\ for luggage at the carousel.  The sample average was found to be 16.2 minutes with a standard deviation of 4 minutes.  The population  average waiting time is estimated as \\ \underline{\phantom{xxxxxxxx}} minutes give or take  \underline{\phantom{xxxxxxxx}} minutes or  so.
 
 \end{exercise}
 \begin{solution}  % 3

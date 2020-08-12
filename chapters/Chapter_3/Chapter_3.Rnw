@@ -659,7 +659,13 @@ Find the following statistics for \\ temperature:
  
    \begin{exercise} % 3
 
-Joshua has been \\ working  on  programming  and updating a \\ Website for his  company for the past 12 \\ months. The following numbers represent the number of hours Joshua  has worked on this Website for each of the past 12 months:
+<<label=LBL3-3, results="asis", echo=FALSE>>=
+  dt3 <- c(24, 25, 31, 40, 48, 40, 36, 50, 38, 35 ,42, 112)
+  mn1 <- mean(dt3)
+  md1 <- median(dt3)
+@
+
+Joshua has been \\ working  on  programming  and updating a \\ Website for his  company for the past 12 \\ months. The following numbers represent the number of hours Joshua  has worked on this Website for each month of the last year:
 
 24, 25, 31, 40, 48, 40, 36, 50, 38, 35 ,42, 112
 
@@ -672,18 +678,13 @@ Joshua has been \\ working  on  programming  and updating a \\ Website for his  
 
 \end{exercise}
 \begin{solution}  % 3
-<<label=LBL3-3, results="asis", echo=FALSE>>=
-  dt3 <- c(24, 25, 31, 40, 48, 40, 36, 50, 38, 35 ,42, 112)
-  mn1 <- mean(dt3)
-  md1 <- median(dt3)
-@
 
-% \begin{enumerate}
-% \item the mean is \Sexpr{mn1}
-% \item the median is \Sexpr{md1}
-% \item Decide if its symmetric, skewed to the right or to the left: the data is right skewed
-% \item Decide which measure of center provides the most relevant information about the distribution? Why?  The median is the most relevant information because the data is right skewed.
-% \end{enumerate}
+\begin{enumerate}
+\item the mean is \Sexpr{mn1}
+\item the median is \Sexpr{md1}
+\item Decide if its symmetric, skewed to the right or to the left: the data is right skewed
+\item Decide which measure of center provides the most relevant information about the distribution? Why?  The median is the most relevant information because the data is right skewed.
+\end{enumerate}
 
 \end{solution}
 
@@ -734,17 +735,17 @@ In a study of warp \\ breakage during the process of weaving \\ fabric (\textit{
 \end{enumerate}
 
 \end{exercise}
-\begin{solution}   % 4
-
-\begin{enumerate}
-\item $\bar{x} = \Sexpr{mn5}$
-\item $\tilde{x} = \Sexpr{md5}$
-\item $sd = \Sexpr{sd5} $
-\item The distribution is \Sexpr{shp5a}
-\item The median provided the most relevant information because to the extreme outlier.
-\end{enumerate}
-
-\end{solution}
+% \begin{solution}   % 4
+% 
+% \begin{enumerate}
+% \item $\bar{x} = \Sexpr{mn5}$
+% \item $\tilde{x} = \Sexpr{md5}$
+% \item $sd = \Sexpr{sd5} $
+% \item The distribution is \Sexpr{shp5a}
+% \item The median provided the most relevant information because to the extreme outlier.
+% \end{enumerate}
+% 
+% \end{solution}
 
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% new exercises
 % 
@@ -756,7 +757,7 @@ In a study of warp \\ breakage during the process of weaving \\ fabric (\textit{
 	\item mean = 188, median = 30
 	\item mean = 32.167, median = 35
 	\item mean= 32.167, median = 32.5
-	\item mean= 188, median = 30
+	\item mean= 193, median = 30.17
 	\end{enumerate}
 
 	\vspace{5mm}
@@ -784,11 +785,11 @@ In a study of warp \\ breakage during the process of weaving \\ fabric (\textit{
     \framebox[5cm][l]{ Answer: }
 	\end{exercise}
 	\vspace{2mm}
-	\begin{solution}   % 6
-
-	The third value must be 22 so that the average is 20 for all three quizzes.
-
-	\end{solution}
+	% \begin{solution}   % 6
+	% 
+	% The third value must be 22 so that the average is 20 for all three quizzes.
+	% 
+	% \end{solution}
 
   \begin{exercise} % 7
 
@@ -866,7 +867,7 @@ You are a researcher for a mid-sized city. You collected six types of \\ variabl
   \item religious affiliation.
   \end{enumerate}
 
-Select the  appropriate measures of central \\ tendency for each variable.
+Select the  appropriate measures of central  tendency for each variable.
 
 
 % \end{minipage}
@@ -875,11 +876,11 @@ Select the  appropriate measures of central \\ tendency for each variable.
 %     \framebox[5cm][l]{ Answer: }
 
   \end{exercise}
-  \begin{solution}   % 8
-
-  {\bf{(1. )}} Mode  {\bf{(2. )}} Median  {\bf{(3. )}} Mean  {\bf{(4. )}} Mean  {\bf{(5. )}} Median  {\bf{(6. )}} Mode
-
-  \end{solution}
+  % \begin{solution}   % 8
+  % 
+  % {\bf{(1. )}} Mode  {\bf{(2. )}} Median  {\bf{(3. )}} Mean  {\bf{(4. )}} Mean  {\bf{(5. )}} Median  {\bf{(6. )}} Mode
+  % 
+  % \end{solution}
 
 %' \pagebreak
   \begin{exercise} % 9
@@ -937,14 +938,23 @@ As a leader of a Kalamazoo social services agency that employs 20 staff members,
    }}
 \end{table}
 
-  Has the average case load increased, \\ decreased, or stayed the same?
+  Has the average case load increased, \\ decreased, or stayed the same? Explain why.
 
    \vspace{2mm}
      \framebox[5cm][l]{ Answer: }
   \end{exercise}
   \vspace{2mm}
-  \begin{solution} %10
+%   \begin{solution} %10
+% 
+% The mean for 2005 is \Sexpr{mn3a}.
+% The median for 2005 is \Sexpr{med3a}.
+% The mean for 2015 is \Sexpr{mn3b}.
+% The median for 2015 is \Sexpr{med3b}.
+% 
+%   \end{solution}
 
+  \begin{exercise} % 11
+  
 <<results="asis", echo=FALSE>>=
         cl2005 <- c(50,	64,	55,	64,	60,	53,	56,	50,	51,	45,	46,	46,	50,	56,	63,	65,	53,	54,	58,	69)
         cl2015 <- c(57,	47,	46,	59,	59,	50,	57,	52,	41,	66,	65,	52,	57,	75,	65,	76,	43,	56,	52,	67)
@@ -953,14 +963,6 @@ As a leader of a Kalamazoo social services agency that employs 20 staff members,
         mn3b <- mean(cl2015)
         med3b <- median(cl2015)
 @
-The mean for 2005 is \Sexpr{mn3a}.
-The median for 2005 is \Sexpr{med3a}.
-The mean for 2015 is \Sexpr{mn3b}.
-The median for 2015 is \Sexpr{med3b}.
-
-  \end{solution}
-
-  \begin{exercise} % 11
 
   The admissions \\ department at WMU gave 25 randomly selected freshmen a national prejudice survey.  The racial prejudice index scores  will be used in three years to see if higher education affects prejudice.
 
@@ -977,7 +979,6 @@ The median for 2015 is \Sexpr{med3b}.
    40 & 26 & 39 & 38 & 44 \\
    32 & 37 & 41 & 27 & 22 \\ \hline
    \end{tabular}
-
    \label{tab:t3_12}
    }}
 \end{table}
@@ -1118,7 +1119,7 @@ The pretest median is \Sexpr{med3b}
 
 	\begin{exercise}   % 14
 
-	The acidity or alkalinity of a solution is measured using pH.  A pH less than 7 is acidic; a pH greater than 7 is alkaline.  The following data represent the pH in samples of bottled water and tap water.
+	The acidity or alkalinity of a solution is measured using pH.  A pH less than 7 is acidic; a pH greater than 7 is alkaline.  The following data (table 3.8) \\ represent the pH in samples of bottled water and tap water.
 
 \begin{table}[ht]
  \centering
@@ -1173,7 +1174,7 @@ The pretest median is \Sexpr{med3b}
  \end{table}
 
 \begin{enumerate}
-\item Based on this table, give two reasons why this income disparity.
+\item Based on  table 3.9, give two reasons \\ why this income disparity.
 \item Does the mean salary of BA say that BA earn less than WA? Why or why not?
 \item Is it possible for BA and WA to earn the same salary, but have different mean \\ salaries?
 \end{enumerate}

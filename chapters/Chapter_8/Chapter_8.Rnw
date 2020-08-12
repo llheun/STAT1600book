@@ -366,7 +366,7 @@ Let's say that we take a \\ sample of 100 observation has 20 \\ successes.
 
   \begin{exercise} % 4
 
-When a flight \\ experiences fewer no-shows than expected, some passengers are `bumped' from their \\ flights (are denied boarding).  These \\ incidents can reflect poorly on customer satisfaction.  Suppose  United Airlines (for example) would like to estimate the actual proportion of involuntarily bumped passengers across all domestic \\ flights in the industry.  In a pilot study of 500 domestic passengers, 33 were involuntarily  \\ bumped.
+When a flight \\ experiences fewer no-shows than expected, some passengers are `bumped' from their \\ flights (are denied boarding).  These \\ incidents can reflect poorly on customer \\ satisfaction.  Suppose  United Airlines (for \\ example) would like to estimate the actual proportion of involuntarily bumped passengers across all domestic  flights in the industry.  In a pilot study of 500 domestic passengers, 33 were involuntarily   bumped.
 
 \begin{enumerate}
 \item	What is the estimate of the population proportion?

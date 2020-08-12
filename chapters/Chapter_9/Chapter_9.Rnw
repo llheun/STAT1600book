@@ -647,7 +647,7 @@ Nonsmoker & 351 & 254 \\ \hline
 
   \begin{exercise} % 3
 
-The age at which a \\ woman gives birth to her first child may be an   essential factor in the risk of later  developing \\ breast cancer.  An international study conducted by WHO selected women  with at least one birth and recorded if they had breast \\ cancer or not and whether they had their first child before their $30^{th}$ birthday or after. In a sample of 3220 women who had their first child after their $30^{th}$ birthday, 683 developed breast cancer.  Whereas, in a sample of 10245 women who had their first child before their $30^{th}$ birthday, 1483 developed breast  cancer.
+The age at which a \\ woman gives birth to her first child may be an   essential factor in the risk of later \\ developing  breast cancer.  An international study conducted by WHO selected women  with at least one birth and recorded if they had breast  cancer or not and whether they had their first child before their $30^{th}$ birthday or after. In a sample of 3220 women who had their first child after their $30^{th}$ birthday, 683 developed breast cancer.  Whereas, in a sample of 10245 women who had their first child before their $30^{th}$ birthday, 1483 developed breast  cancer.
 
 	  \begin{enumerate}
 	  \item Estimate the difference in the \\ percentage of developing breast cancer  between  women who had their \\ first  child after their $30^{th}$ birthday and before their  $30^{th}$ birthday.

@@ -237,7 +237,7 @@ What is the advantage of \\ case-control studies over randomized \\ controlled t
 
   \begin{exercise} % 6
 
-A football organization is \\ concerned about the number of injuries to its athletes during games. The organization designs an observational study to help decide on rule changes that will reduce the risk of injury to players. They collect data and observe that a very high proportion of injuries incurred during the first moments of the \\ game during kickoff. The organization thus entertains the idea of changing the rules governing kickoff. Are there any hidden confounders that the organization should \\ address before making changes to  kickoff \\ rules? What are they, and how might they be treated?
+A football organization is  concerned about the number of injuries to its athletes during games. The organization designs an observational study to help decide on rule changes that will reduce the risk of injury to players. They collect data and observe that a very high proportion of injuries incurred during the first moments of the \\ game during kickoff. The organization thus entertains the idea of changing the rules governing kickoff. Are there any hidden confounders that the organization should \\ address before making changes to  kickoff \\ rules? What are they, and how might they be treated?
 
 	\end{exercise}
 	\begin{solution}  % 6

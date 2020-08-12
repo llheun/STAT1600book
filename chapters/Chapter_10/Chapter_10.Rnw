@@ -28,7 +28,7 @@ After completing this part, we should be able to:
 
 Situation: During a lunch break, a colleague wants to play a game where you each flip a coin six times.  If the result of the flip heads, you win, if the result of the flip is tails your colleague wins.  Suppose the outcome of six plays of the game is T, T, T, T, T, T.  Did your colleague cheat?
 
-Method: Deciding whether your colleague cheated, we need to determine the chance of getting six tails in a row. Let's assume that we are playing with a fair coin so that $P[tail] = P[Head] = 0.5$ so that each flip is independent.  Next, we should ask, ``is it unusual to have six tails in a row with a fair coin?''
+Method: Deciding whether your colleague cheated, we need to determine the chance of getting six tails in a row. Let's assume that we are playing with a fair coin so that $P[Tail] = P[Head] = 0.5$ so that each flip is independent.  Next, we should ask, ``is it unusual to have six tails in a row with a fair coin?''
 
 
 Solution: We need to find the probability of achieving six tails in a row, assuming independence and fairness.
