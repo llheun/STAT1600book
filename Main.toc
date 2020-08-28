@@ -48,14 +48,14 @@
 \contentsline {section}{\numberline {2.3}Classification of variables}{20}{section.2.3}%
 \contentsline {subsection}{\numberline {2.3.1}Levels of Measurement}{20}{subsection.2.3.1}%
 \contentsline {subsection}{\numberline {2.3.2}Numerical versus categorical variables}{21}{subsection.2.3.2}%
-\contentsline {subsection}{\numberline {2.3.3}Dependent versus independent variables}{22}{subsection.2.3.3}%
-\contentsline {section}{\numberline {2.4}Summarizing Categorical Data}{23}{section.2.4}%
+\contentsline {subsection}{\numberline {2.3.3}Dependent versus independent variables}{21}{subsection.2.3.3}%
+\contentsline {section}{\numberline {2.4}Summarizing Categorical Data}{24}{section.2.4}%
 \contentsline {subsection}{\numberline {2.4.1}Relative Frequency Table}{24}{subsection.2.4.1}%
 \contentsline {subsection}{\numberline {2.4.2}Pie Chart}{25}{subsection.2.4.2}%
 \contentsline {subsection}{\numberline {2.4.3}Bar Chart}{26}{subsection.2.4.3}%
 \contentsline {section}{\numberline {2.5}Summarizing numerical data}{26}{section.2.5}%
 \contentsline {subsection}{\numberline {2.5.1}Stem-and-Leaf Plot}{27}{subsection.2.5.1}%
-\contentsline {subsection}{\numberline {2.5.2}Relative Frequency Table and Histogram}{27}{subsection.2.5.2}%
+\contentsline {subsection}{\numberline {2.5.2}Relative Frequency Table and Histogram}{28}{subsection.2.5.2}%
 \contentsline {subsection}{\numberline {2.5.3}Dot Plot}{29}{subsection.2.5.3}%
 \contentsline {subsection}{\numberline {2.5.4}Box-and-Whisker Plot}{30}{subsection.2.5.4}%
 \contentsline {subsection}{\numberline {2.5.5}Symmetry and Skewness}{33}{subsection.2.5.5}%
