@@ -1,4 +1,4 @@
-\begin{thebibliography}{11}
+\begin{thebibliography}{10}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -45,11 +45,6 @@ D.~A. Redelmeier.
   collisions.
 \newblock \emph{The New England Journal of Medicine}, 336:\penalty0 453--458,
   February 1997.
-
-\bibitem[Sullivan(2013)]{sullivan2013}
-Micheal Sullivan, III.
-\newblock \emph{Statistics Informed Decisions Using Data}.
-\newblock Pearson, 4th edition, 2013.
 
 \bibitem[Thompson(2007)]{thompson2007}
 William~W. Thompson.

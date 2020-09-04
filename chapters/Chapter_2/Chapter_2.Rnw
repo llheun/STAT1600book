@@ -63,7 +63,7 @@ Nominal variables (NV) are \textbf{categorical variables} that have two or more 
 \end{itemize}
 }}
 
-\item \textbf{Ordinal Variables}  
+\item \textbf{Ordinal Variables}
 
 Ordinal variables are \textbf{categorical variables} with a rank ordering.  A student's level of standing (freshman, sophomore, junior, or senior) is ordinal.  They are also names of categories, but unlike gender, they are rank-ordered.   However, we cannot subtract them, and distances do not make sense.  Other examples of ordinal variables include Likert scale items in which we rank items.  Completing surveys or even end of semester evaluations, we can rank on a scale of 1-5 (often from strongly disagree to agree strongly).
 
@@ -102,7 +102,7 @@ Nominal and ordinal variables together are often called \textbf{categorical} var
 \end{figure}
 
 
-\subsection{Dependent versus independent variables}     
+\subsection{Dependent versus independent variables}
 
 Another classification for variables is dependent and independent. This distinction is relevant in studies that investigate cause and effect.  The independent variable is the probable cause.  We also refer to this as the predictor or explanatory variable.  The dependent variable is the outcome variable that is affected by the independent variable.
 
@@ -137,7 +137,7 @@ William W. Thompson enrolled 1047 children between the ages of seven and ten yea
 \item \textbf{Conclusion}
 
 Our study does not support a causal association between early exposure to mercury from thimerosal-containing vaccines and immune globulins and deficits in neuropsychological functioning at the age of 7 to 10 years.
-\end{enumerate}       
+\end{enumerate}
 
 Researchers use the following 42 variables to measure brain function:
 
@@ -146,7 +146,7 @@ Researchers use the following 42 variables to measure brain function:
 \item tests on verbal memory (no delay, short delay, long delay),
 \item tests on motor coordination (grooved pegboard, and finger tapping),
 \item tests on behavior regulation (hyperactivity, and inattentiveness),
-\item presences of tics (motor and phonics), and 
+\item presences of tics (motor and phonics), and
 \item tests on intelligence (verbal (IQ), and full-scale (IQ)).
 \end{itemize}
 
@@ -251,7 +251,7 @@ A pie chart gives the same information as a bar chart, except in a circular shap
 
 \subsection{Bar Chart}
 
-A \textit{bar chart} is a plot of the relative frequency table.  We use bar charts for categorical data. The order of the categories is arbitrary.  Sometimes we show the order of decreasing frequency for aesthetic purposes (a Pareto figure).  Some statistical packages reveal the nominal variable alphabetically unless otherwise specified. 
+A \textit{bar chart} is a plot of the relative frequency table.  We use bar charts for categorical data. The order of the categories is arbitrary.  Sometimes we show the order of decreasing frequency for aesthetic purposes (a Pareto figure).  Some statistical packages reveal the nominal variable alphabetically unless otherwise specified.
 
 <<label=LBL2b, results="asis", echo=FALSE, out.width="8.0cm", out.height = "7cm" >>=
 
@@ -288,13 +288,14 @@ Can this be a typographical error that we need to correct?  When we look closely
 
 
 <<label=LBL2d, results="asis", echo=FALSE>>=
+  
   DT2 <- c(15.4,9.9,19.6,17.1,15.0,11.7,8.2,10.9,17.2,13.9,16.9,11.2,13.0,12.8,15.2,10.1,13.2,17.0,16.2,11.7,9.1,11.1,13.5,10.5,20.6,14.4,13.2,10.2,11.9,7.4,9.3,19.3,15.0,15.4,11.4,13.5,13.3,12.0,11.0,12.9,13.9,13.6,15.8,16.6,8.6,9.2,10.5,11.0,15.2,10.3,9.7)
 
 @
 
 Graphs help summarize information in the data, especially for large datasets.  Below, we illustrate a two-year average percentage of persons living in poverty (2008-2009) in the U.S.A. in a graph called a stem-and-leaf plot.  The numbers on the left are stems, while the numbers on the right are called leaves.
 
-%  \newpage
+
 
 \begin{minipage}[ht]{7cm}
 
@@ -305,27 +306,24 @@ Graphs help summarize information in the data, especially for large datasets.  B
 
 \Sexpr{DT2s}
 }}
-\end{minipage} % \hfill
+\end{minipage} 
 \begin{minipage}[ht]{7cm}
 
-{\small{
 \begin{verbatim}
 <<label=LBL2ee, results="asis", echo=FALSE>>=
+
   stem(x=DT2, scale=2, width=21)
+
 @
 \end{verbatim}
-}}
+
 \end{minipage}
 
-There is one leaf for each observation, so there are 51 leaves in all, one for each state.  Our smallest observation is 7.4.  We write it on the stem \textbf{7} like a leaf of \textbf{4}.  We can infer that the stems represent tens and units digits while the leaves represent tenths digits.  We write the value 20.6 on the stem \textbf{20} as a \textbf{20} and the leaf as a \textbf{6}, and so forth.  \citep{sullivan2013}
-
-
-\subsection{Relative Frequency Table and Histogram}   
-
-Earlier in this chapter, we presented a relative frequency table for categorical data.  Now we want to show you that we can also use frequency tables for numerical data.  These tables show monthly payment below.  Statisticians chose the class width to achieve a moderate number of class intervals.
 
 {\small{
+
 <<label=LBL2f, results="asis", echo=FALSE>>=
+
   tmp0 <- sort(Monthly.Payment)
   ## tmp0[13:76]
   tmp1 <- as.integer(tmp0[13:76] / 200)
@@ -337,16 +335,20 @@ Earlier in this chapter, we presented a relative frequency table for categorical
   rownames(tmp5) <- c("0-200", "200-400", "400-600", "600-800", "800-1000", "1000-1200","1200-1400", "1400-1600", "1600-1800","2400-2600", "5200-5400")
 
   xtable(tmp5, caption="RF Table of Monthly Payment for ACS Housing Data", digits=0)
+
 @
+
 }}
 
-There are three things to keep in mind when constructing a frequency table. First, decide how many classes (i.e., intervals) we want.  This also determines the \textit{class width}.  Try to have 5 to 15 intervals, depending on how many observations we have. Second, decide where the first interval starts.  Third, decide how to avoid boundary disputes.  
+There are three things to keep in mind when constructing a frequency table. First, decide how many classes (i.e., intervals) we want.  This also determines the \textit{class width}.  Try to have 5 to 15 intervals, depending on how many observations we have. Second, decide where the first interval starts.  Third, decide how to avoid boundary disputes.
 
 The last item requires us to choose a \textbf{boundary convention}.  For instance, we could write the intervals for the frequency table above as follows:
 
 \vspace{3mm}
 
 \begin{minipage}[ht]{6cm}
+
+\begin{center}
 
 \begin{tabular}{@{} l @{}} \hline
 0-199 \\
@@ -356,8 +358,12 @@ The last item requires us to choose a \textbf{boundary convention}.  For instanc
 etc. \\ \hline
 \end{tabular}
 
+\end{center}
+
 \end{minipage}
 \begin{minipage}[ht]{6cm}
+
+\begin{center}
 
 \begin{tabular}{@{} l @{}} \hline
 $ [0-200)$ \\
@@ -366,6 +372,9 @@ $ [400-600)$ \\
 $ [600-800)$ \\
  etc. \\ \hline
 \end{tabular}
+
+\end{center}
+
 \end{minipage}
 
 \vspace{3mm}
@@ -376,16 +385,18 @@ It also means that the class intervals contain the left endpoint but not the rig
 
 We show the distribution of numbers using the relative frequency table in a compact numerical way.  If we plot the frequencies as columns, the resulting plot is called a \textit{histogram}.
 
-The histogram and stem-and-leaf plots look alike, except that the stem-and-leaf plot has columns that go sideways instead of upwards.  Stem-and-leafs are better if we want the data values themselves available from the plot.  However, the histogram can handle large sample sizes easily and is more flexible in choosing class widths.  For example, we may choose class widths of \$500, as follows: $[0,500), [500,1000), [1000,1500), \dots, [5000,5500)$, which stem plots cannot do.   
+The histogram and stem-and-leaf plots look alike, except that the stem-and-leaf plot has columns that go sideways instead of upwards.  Stem-and-leafs are better if we want the data values themselves available from the plot.  However, the histogram can handle large sample sizes easily and is more flexible in choosing class widths.  For example, we may choose class widths of \$500, as follows: $[0,500), [500,1000), [1000,1500), \dots, [5000,5500)$, which stem plots cannot do.
 
-% \newpage
+  \newpage
 
 \begin{figure}[ht]
 
 \caption{Monthly Payments }
 
-<<label=LBL2g, results="asis", echo=FALSE, out.height="7cm", out.width="7cm">>=
+<<label=LBL2g, results="asis", echo=FALSE, out.height="6cm", out.width="6cm">>=
+
    hist(Monthly.Payment, xlab="Monthly Payments", main="Histogram of Monthly Payments", col="green")
+
 @
 
 \end{figure}
@@ -401,6 +412,7 @@ We find that the distance, after exercise spread (maximum minus minimum), is lon
 \caption{Dot Plot }
 
 <<label=LBL2h, results="asis", echo=FALSE, out.height="5cm", out.width="10cm">>=
+
    B1 <- c(68,60,76,68,64,80,72,76,92,68,56,72,68,60, 72,56,88,76,80,68,80,84,64,80,72,69,68,76)
    A1  <- B1 + rnorm(n=28, mean=10, sd=5)
    Pulse <- c(B1, A1)
@@ -411,6 +423,7 @@ We find that the distance, after exercise spread (maximum minus minimum), is lon
    ggplot(data=dfrm, aes(x = Time_, y =  Pulse, fill = Time_)) +
      geom_dotplot(binwidth=bwidth, binaxis = "y", stackdir = "center") +
      coord_flip()
+
 @
 
 \end{figure}
@@ -433,21 +446,23 @@ A box-and-whisker or boxplot shows useful information about the data includes th
      % 1500 1800 2400
      %  }}
 
-There are $n = 63$ observations.  One-quarter of the data is $\frac{63}{4}=15.75$, or approximately 16 observations.  The boxplot below gives the range of each quarter of the data: the range of the first quarter (i.e., the lowest 16 monthly payments) is the left whisker.  The range of the 2nd quarter is the left part of the box, the 3rd quarter the right part of the box, and the range of the last quarter is the right whisker.   
+There are $n = 63$ observations.  One-quarter of the data is $\frac{63}{4}=15.75$, or approximately 16 observations.  The boxplot below gives the range of each quarter of the data: the range of the first quarter (i.e., the lowest 16 monthly payments) is the left whisker.  The range of the 2nd quarter is the left part of the box, the 3rd quarter the right part of the box, and the range of the last quarter is the right whisker.
 
 \begin{figure}[ht]
 
 \caption{Box Plot }
 
 <<label=LBL2i, results="asis", echo=FALSE, out.width='7cm', out.height="7cm" >>=
+
   boxplot(MP3, horizontal=TRUE, xlab="Dollars", main="Boxplot of Monthly Payments", col="green", range=0)
+
 @
 
 \end{figure}
 
 More precisely, the software draws vertical lines at (140, 400, 700, 970, 2400).  Hence, the lowest 16 monthly payments lie within (\$140, \$400).  The next set of 16 observations lies within (\$400, \$700).  The third set lies within (\$700, \$970).  Finally, the last 16 values lie within (\$970, \$2400).  The five values (140, 400, 700, 970, 2400) that divide the data into quarters and form the fences and whiskers of the boxplot are collectively called the five-number-summary of the data.  They are often denoted as MIN, $Q_1$, MED, $Q_3$, and MAX, respectively.
 
-\newpage
+% \newpage
 
 {\small{
 \begin{enumerate}
@@ -466,12 +481,14 @@ Boxplots are particularly useful for comparing two distributions side-by-side.  
 \caption{Box Plot }
 
 <<label=LBL2j, results="asis", echo=FALSE, out.width="8cm", out.height="8cm" >>=
+
   boxplot(Monthly.Payment ~ Type.of.Payment, horizontal=TRUE, xlab="Dollars", main="Boxplot of Monthly Payments", ylab="Type", col="green", range=0)
+
 @
 
 \end{figure}
 
-\newpage 
+\newpage
 
 Different statistical computing packages have different ways of computing the quartiles, but the differences are minimal.  In this class, we can calculate the quartiles as follows.  First, arrange the observations from the smallest to the largest ($n^{th}$ ordered observation).  Then
 
@@ -484,7 +501,9 @@ $Q_3$ is the $.75(n+1)^{th}$ ordered observation.
 If .25(n+1) is not an integer, take the average of the two adjacent ordered observations, similarly for MED and $Q_3$.  Here again, are the ($n = 63$) ordered observations of monthly payments.
 
 {\small{
+
 \Sexpr{MP3}
+
 }}
 % {\small{
 % 140  190  200  200  220  230  250  280  290  340  340  350  370  380  380
@@ -499,7 +518,7 @@ Since .25(63+1)=16, then $Q_1$ is the $16^{th}$ ordered observation.  Hence $Q_1
 
 If $n = 64$, then .25(64+1) = 16.25, so that $Q_1$ would be the average of the $16^{th}$ and $17^{th}$ ordered observations.  Therefore, if we return the \$5200 outlier we removed, then the five-number-summary would be (140, 410, 700, 980, 5200).
 
-\subsection{Symmetry and Skewness}   
+\subsection{Symmetry and Skewness}
 
 The shape of the data is often described by its symmetry or non-symmetry (also called skewness).  Here are stem-and-leaf plots for \textit{symmetric}, \textit{right skewed}, and \textit{left-skewed} data.
 
@@ -580,7 +599,7 @@ The term `skew' refers to the direction of the most extended tail when you flip 
 %
 % For some further examples of histograms depicting both symmetry and skewness, see below.
 
-\newpage
+% \newpage
 
 \begin{figure}[ht]
 
@@ -597,7 +616,7 @@ The term `skew' refers to the direction of the most extended tail when you flip 
 
 %% \newpage
 
-\section{Key Words}  
+\section{Key Words}
 
 \fbox{\parbox{14cm}{
 

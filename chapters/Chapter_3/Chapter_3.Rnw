@@ -11,12 +11,12 @@ After completing this part, students should be able to:
 \fbox{\parbox{14cm}{
 \begin{itemize}
 \item Explain the concept of measures of central tendency and interpret the \\ information they provide.
-\item Calculate, describe and compare the commonly used measures of central \\ tendency: mean, \textit{$\bar{X}$} and median, \textit{MED}.
+\item Calculate, describe, and compare the commonly used measures of central \\ tendency: mean, \textit{$\bar{X}$} and median, \textit{MED}.
 \item Understand other measures of central tendency.
 \item Select appropriate measure of central tendency based on the
 level of \\ measurement and characteristics of the data (distribution).
 \item Explain the concept of measures of spread and the information they convey.
-\item Compute and explain sample standard deviation, (\textit{SD}).
+\item Compute and explain sample standard deviation (\textit{SD}).
 \end{itemize}
 }}
 
@@ -24,17 +24,20 @@ level of \\ measurement and characteristics of the data (distribution).
 
 Suppose that a random sample of two-bedroom apartments in the Kalamazoo area yields the following data on monthly rent:
 
+\vspace{3mm}
+
 \$635, \$525, \$500, \$800, \$650, \$750, \$555, \$500, \$670, \$675
 
-How much would we say is the average rent for two-bedroom apartments in Kalamazoo?  In this chapter, we will discuss the sample average and several alternatives to the average when estimating `average value' in a population.
+\vspace{3mm}
+How much would we say is the average rent for two-bedroom apartments in Kalamazoo?  In this chapter, we will discuss the sample average and several alternatives to the mean when estimating `average value' in a population.
 
 \subsection{The Sample Mean}
 
-The sample mean is the statistical term for `average of the sample.'  For the example above, the sample mean (denoted $\bar{X}$) is:
+The sample mean is the statistical term for \textit{average of the sample}.  For the example above, the sample mean (denoted $\bar{X}$) is:
 
 $$ \bar{X} = \frac{635+525+500+800+650+750+555+500+670+675}{10} = \$626 $$
 
-so that the average rent in Kalamazoo may be estimated as \$626.  Note that this is an \textit{estimate} based on a \textit{sample}.  Therefore, it is subject to \textit{sampling error}.   Sampling error means that due to the luck of the draw, the sample average likely missed the true population average.  More precisely, the two-word term `sampling error' refers to $| \bar{X} - \mu |$,  the distance by which the \textit{sample} average $\bar{X}$  misses the population average  $\mu$.
+Now we may estimate the average rent in Kalamazoo (\$626).  Note that this is an \textit{estimate} based on a \textit{sample}.  Therefore, it is subject to \textit{sampling error}.   Sampling error means that due to the luck of the draw, the sample average likely missed the true population average.  More precisely, the two-word term `sampling error' refers to $| \bar{X} - \mu |$,  the distance by which the \textit{sample} average $\bar{X}$  misses the population average  $\mu$.
 
 The advantages of the sample mean:
 
@@ -47,21 +50,22 @@ The advantages of the sample mean:
 The disadvantage of the mean:
 
 \begin{itemize}
-\item It is always affected by outliers, which are relatively small and/or relatively large data values.
+\item It is always affected by outliers, which are relatively small or relatively large data values.
 \end{itemize}
 
 \subsection{The Sample Median}
 
-There are alternative ways to estimate average rent if we want to avoid the effect of outliers.  We can determine the sample median, instead of the sample mean.  We have discussed the sample median (denoted MED) earlier in Chapter 1.  It is computed as follows.
+There are alternative ways to estimate average rent if we want to avoid the effect of outliers.  We can determine the sample median, instead of the sample mean.  We have discussed the sample median (denoted MED) earlier in Chapter 1.  We compute it as follows.
 
 \begin{enumerate}
-\item Let $n$ represent the total number of observations.
+\item Let $n$ represents the total number of observations.
 \item Order the $n$ observations from smallest to largest.
-\item Then calculate $0.50(n + 1)$ to locate the middle value of the dataset.
-\item If $0.50(n + 1)$ is an integer, then MED is the $0.50(n + 1)th$ ordered observation.
+\item Then calculate $0.50(n + 1)$ to locate the center value of the dataset.
+\item If $0.50(n + 1)$ is an integer, then MED is the $0.50(n + 1)^{th}$ ordered observation.
 \item If $0.50(n + 1)$ is not an integer, then MED is the average of the two adjacent ordered observations.
 \item There are $n = 10$ observations in our rental data.  We first order them from smallest to largest.
 \end{enumerate}
+
 
 $$ 500, 500, 525, 555, 635, 650, 670, 675, 750, 800 $$
 
@@ -73,7 +77,7 @@ The advantage of the median is that it is more robust than the mean, i.e., the m
 
 \subsection{The Trimmed Mean}
 
-Since the mean uses all observations in the calculation, it can be strongly affected by outlying small and large values.  What happens to the mean when the smallest value \$500 is replaced by \$400?  It will become smaller.  What happens to the median?  It remains unchanged.
+Since the mean uses all observations in the calculation, it can be strongly affected by outlying small and large values.  What happens to the average when the value \$500 is replaced by \$400?  It will become smaller.  What happens to the median?  It remains unchanged.
 
 The trimmed mean is a compromise estimator that looks a lot like a mean but is less sensitive to extreme values.  The 10\%-trimmed mean removes the lowest 10\% and highest 10\% of the data, then take the sample mean of the remaining data.  In the rental example, 10\% of the data is one observation. We remove the lowest
 observation (\$500) and the largest observation (\$800), and take the mean of the remaining eight observations:
@@ -85,31 +89,33 @@ What if 10\% of the data is not an integer?  For example, if $n = 23$, then 10\%
 
 \section{Estimate of Spread (or Uncertainty or Variation)}
 
-Recall the data on the monthly rent of two bedroom apartments in the Kalamazoo area:
+Recall the data on the monthly rent of two-bedroom apartments in the Kalamazoo area:
 
 $$ 500, 500, 525, 555, 635, 650, 670, 675, 750, 800 $$
 
-If a future student asked us ``What should a two-bedroom apartment cost us in rent?'' how should we reply? Knowing that the data averages \$626, we might say something like ``Around \$626, give or take $\dots$(?).''   This second number, the give or take, is important because it says how much uncertainty there is in our guess.  In other words, the student's rent will probably miss \$626, but by how much?   We will get to the answer in a minute.   
-For a second example, if we were going to San Francisco for a couple of days in August, and we want to know what clothes to bring, it is not enough to know that the average temperature is 68 degrees.  If it was 68 degrees, give or take 15 degrees, then we will need a sweater.  If it is 68 degrees, give or take 30 degrees, we might need a winter coat.
+If a future student asks, \textit{What should a two-bedroom apartment cost us in rent?} How should we reply? Knowing that the data averages \$626, we might say something like \textit{Around \$626, give or take $\dots$(?)}.   This second number tells us how much uncertainty there is in our guess.  In other words, the student's rent will probably miss \$626, but by how much?   We will get to the answer in a minute.   
+For a second example, if we were going to San Francisco for a couple of days in August, and we want to know what clothes to bring, it is not enough to know that the average temperature is 68 degrees.  If it was 68 degrees, \textit{give or take} 15 degrees, then we will need a sweater.  If it is 68 degrees, \textit{give or takes} 30 degrees, we might need a winter coat.
 
-Variation presents itself everywhere.  Consider weight loss.  The 77 subjects in the Atkins group lost an average of 10.5 pounds `give or take' 15 pounds.  Compare this to an average of 3.5 pounds for the Zone diet `give or take' 14 pounds. How about in bowling?  In his first seven games in a tournament in Indiana, Walter Ray Williams Jr. averaged 228, `give or take' 34.   Notice how the `give or take' number seems to complete the description.
+Variation presents itself everywhere.  Consider weight loss.  The 77 subjects in the Atkins group lost an average of 10.5 pounds \textit{give or take} 15 pounds.  Compare this to an average of 3.5 pounds for the Zone diet \textit{give or take} 14 pounds. How about bowling?  In his first seven games in a tournament in Indiana, Walter Ray Williams Jr. averaged 228, \textit{give or take} 34.   Notice how the \textit{give or take} a number seems to complete the description.
 
-In this chapter, we will discuss the sample standard deviation, which is typically used as the ‘give or take’ number to describe spread in a group of numbers.
+In this chapter, we will discuss the sample standard deviation, where it describes the spread in a group of numbers with the number \textit{give or take}.
+
+
+In this chapter, we will discuss the sample standard deviation, which is typically used as the \textit{give or take} a number to describe spread in a group of numbers.
 
 \subsection{The Sample Standard Deviation}
 
-The standard deviation (or SD) is computed using a series of steps:
+We compute the standard deviation (or SD) using a series of steps:
 \begin{enumerate}
 \item Compute the mean.
-\item Subtract mean from each observation. These are the deviations from the mean or "Deviations".
-\item Square the deviations from the mean. These are the "Squared Deviations".
-\item Take the sum of squared deviations, this is called the "Sum of Squares" or \textit{SS}.
+\item Subtract the mean from each observation. These are the deviations from the mean or \textit{Deviations}.
+\item Square the deviations from the mean. These are the \textit{Squared Deviations}.
+\item Take the sum of squared deviations called the \textit{Sum of Squares} or \textit{SS}.
 \item Compute SD using the equation: $$SD=\sqrt{\frac{SS}{n-1}}$$ where \textit{n} is the number of observations.
 \end{enumerate}
 
-The table below shows the computations for the monthly rent data. Notice in the last row that the sum of the deviations from the mean is 0. This will always be the case for the sum of deviations from the mean.
+The table below shows the computations for the monthly rent data. Notice in the last row that the sum of the deviations from the mean is 0. It will always be the case for the sum of deviations from the average.
 
-%\vspace{2cm}
 
 <<label=LBL3a, results="asis", echo=FALSE>>=
   rent31 <- c(635,525,500,800,650,750,555,500,670,675)
@@ -131,10 +137,10 @@ The table below shows the computations for the monthly rent data. Notice in the 
 
 $$ SD = \sqrt{ \frac{ SS}{n - 1}} = \sqrt{ \frac{ \Sexpr{tmp32}}{9}} \approx \Sexpr{tmp31} $$
 
-It is helpful to get a feel for the numbers in the second column.  The first value 9 says that `635 is nine above average'.  The next number -101 says that `525 is 101 below average.'  Ignoring signs, the numbers in the second column represent the `give or take' from the average.  To get the actual SD, we take the Sum of Squares and divide by $(n - 1)$, and last, of all take the square root of that answer.  It gives us a final SD of 104.158.  We say that monthly rent averages \$626, `give or take' \$104.
+It is helpful to get a feel for the numbers in the second column.  The first value 9 says that \textit{635 is nine above average}.  The next number (-101) says that \textit{525 is 101 below average}.  Ignoring signs, the numbers in the second column represent the \textit{give or take} from the average.  To get the actual SD, we take the Sum of Squares and divide by $(n - 1)$, and finally, take the square root of that answer.  It gives us a final SD of 104.158.  We say that monthly rent averages \$626, \textit{give or take} \$104.
 
-Look at the second column again.  Ignoring signs, these are the distances from the average.  Which rental is closest to the average? The answer is \$635, which missed by 9. Which rental is farthest from the average?  \$800, which missed by 174.
-What is the average `size of the miss?'  It should be somewhere between the smallest and largest, right?  It is how we interpret the SD: ``On the average, the monthly rentals miss the mean by \$104.''
+
+Look at the second column again.  Ignoring signs, these are the distances from the mean.  Which rental is closest to it? The answer is \$635, which is missed by 9. Which rental value is farthest from the average?  \$800, which failed to hit it by 174. What is the average \textit{size of the miss?}  It should be somewhere between the smallest and largest. Right.  It is how we interpret the SD: \textit{On the average, the monthly rentals miss the mean by \$104}.
 
 Taken together, the mean and SD allow comparison of both relative size and spread of two groups of numbers.  In the professional bowling tournament in Indiana that he won in November of 2008, here are Walter Ray Williams Jr.'s first seven  games and last seven games (including the final):
 
@@ -151,23 +157,25 @@ Taken together, the mean and SD allow comparison of both relative size and sprea
    % \label{tab:booktabs}
 \end{table}
 
-What do the mean and SD tell us?  He averaged higher in the end but was also more consistent with a give-or-take of only 6 points!  His earlier games had more massive swings: from a low of 163 to a high of 279, resulting in the SD of 34.
+What does the mean and SD tell us?  He averaged higher in the end but was also more consistent with a \textit{give or take} of only 6 points!  His earlier games had more massive swings: from a low of 163 to a high of 279, resulting in the SD of 34.
 
 \subsection{Effect of Multiplication and Addition by a Constant}
 
-Recall that monthly rent for apartments average \$626 with an SD of \$104.  If the student plans to get a roommate and pay only half the rent, how much does he expect to pay?  If we are thinking of dividing both numbers by two, i.e., \$313 give or take \$52, this is correct.
+Recall that monthly rent for apartments average \$626 with an SD of \$104.  If the student plans to get a roommate and pay only half the rent, how much does he expect to pay?  If we are thinking of dividing both numbers by two, i.e., \$313 \textit{give or take} \$52, this is correct.
 
 \begin{center}
 Original rent: $ 626 \pm 104 $ \hspace{2cm}	Half the rent: $ 313 \pm 52 $
 \end{center}
 
-Now suppose that the student does not plan to get a roommate, but his parents have agreed to contribute \$100 to rent each month.  How much does the student expect to pay after a subsidy of \$100?  If we are thinking of subtracting \$100 from both numbers, i.e., \$426 `give or take' \$4, there is an error in our thinking.  Here the SD remains the same, i.e.,
+Now suppose that the student does not want a roommate.  The parents agreed to contribute \$100 for the rent each month.  How much does the student expect to pay after a subsidy of \$100?  If we are thinking of subtracting \$100 from both numbers, i.e., \$426 \textit{give or take} \$4, there is an error in our thinking.  Here the SD remains the same, i.e.,
 
 \begin{center}
 Original rent: $ 626 \pm 104 $ \hspace{2cm} Subsidized rent: $ 526 \pm 104 $
 \end{center}
 
 If we are not convinced, consider the data itself on the following table.
+
+\vspace{3mm}
 
 \fbox{\parbox{14cm}{In general, when the data is \textbf{multiplied or divided by a positive constant}, the \textbf{same thing happens} to both the average and the SD}}
 
@@ -182,7 +190,7 @@ If we are not convinced, consider the data itself on the following table.
   sum31[1] <- sum(rent31)
   sum31[2] <- sum(diff31)
   sum31[3] <- sum(SS31)
-  tbl31 <- cbind(rent31, diff31, SS31)
+  tbl31 <- cbind(rent31, diff31, SS31) ## \hline
   tbl32 <- rbind(tbl31, sum31)
   colnames(tbl32) <- c( "Rent", "Deviations", "Squared Deviations")
   rownames(tbl32) <- c('1','2','3','4','5','6','7','8','9','10','Sum')
@@ -225,7 +233,7 @@ $$ SD = \sqrt{ \frac{ SS}{n - 1}} = \sqrt{ \frac{ \Sexpr{tmp32}}{9}} \approx \Se
 
  In clinical studies, statisticians frequently take ratios of proportions or probabilities (instead of differences).  There are several reasons for this idea.  Sometimes, the disease or medical event of interest is quite rare, i.e., $p_1 = 0.0008$.  If a new treatment reduces the probability of getting the disease to 0.0006, the difference in probabilities is quite small and hard to assess $((p_1 - p_2) = 0.0002)$.  In the meantime, the ratio $ \frac{p_2}{p_1} = \frac{0.0006}{0.0008} = 0.75 $ means that the risk of getting the disease under the new treatment has been reduced by 25\%.
 
-A technical reason for using ratios is that a ratio can control for other variables such as age and race.
+A technical reason for using ratios is that it can control for other variables such as age and race.
 
 \subsection{Risk ratio}
 
@@ -239,15 +247,17 @@ the safety and efficacy of an HEV recombinant protein (rHEV) vaccine in a phase
 
 \subsubsection{Methods}
 
-In Nepal, we studied 2000 healthy adults susceptible to HEV infection who were randomly assigned to receive three doses of either the rHEV vaccine or placebo at months 0, 1, and 6. Active (including hospital) surveillance was used to identify acute hepatitis and adverse events. The primary endpoint was the development of hepatitis E after three vaccine doses.
+In Nepal, we studied 2000 healthy adults susceptible to HEV infection who were randomly assigned to receive three doses of either the rHEV vaccine or placebo at months 0, 1, and 6. They used active (including hospital) surveillance to identify acute hepatitis and adverse events. The primary endpoint was the development of hepatitis E after three vaccine doses.
 
 \subsubsection{Results}
 
-A total of 1794 subjects (898 in the vaccine group and 896 in the placebo group) received three vaccine doses; researchers followed the total vaccinated cohort for a median of 804 days.  After three vaccine doses, hepatitis E developed in 69 subjects, of whom 66 were in the placebo group.  The vaccine efficacy was 95.5\% (95\% confidence interval [CI], 85.6 to 98.6).  In an intention-to-treat analysis that included all 87 subjects in whom hepatitis E developed after the first vaccine dose, nine subjects were in the vaccine group, with a vaccine efficacy of 88.5\% (95\% CI, 77.1 to 94.2).  Among subjects in a sub-group randomly selected for analysis of injection-site findings and general symptoms (reactogenicity sub-group) during the 8-day period after the administration of any dose, the proportion of subjects with adverse events was similar in the two study groups, except that injection-site pain was increased in the vaccine group ($p = 0.03$).
+A total of 1794 subjects (898 in the vaccine group and 896 in the placebo group) received three vaccine doses; researchers followed the total vaccinated cohort for a median of 804 days.  After three vaccine doses, hepatitis E developed in 69 subjects, of whom 66 were in the placebo group.  The vaccine efficacy was 95.5\% (95\% confidence interval [CI], 85.6 to 98.6).  In an intention-to-treat analysis that included all 87 subjects in whom hepatitis E developed after the first vaccine dose, nine subjects were in the vaccine group, with a vaccine efficacy of 88.5\% (95\% CI, 77.1 to 94.2).  
+There were two sub-groups: adverse events at the injection site, and the reactogenicity sub-group during the 8-days after the administration of each dose.  The proportion of subjects with adverse events was similar in the two study groups except that the vaccine group had more injection site pain than the placebo group ($p = 0.03$).
 
+%%
 \subsubsection{Conclusion}
 
-In a high-risk population, the rHEV vaccine was effective in the prevention of
+In a high-risk population, the rHEV vaccine was more effective in the prevention of
 hepatitis E.
 
 The data given in the `Results' part of the abstract may be summarized as follows.
@@ -262,7 +272,7 @@ The data given in the `Results' part of the abstract may be summarized as follow
  \end{tabular}
  \end{table}
 
-We may present data for comparing proportions in a 2 by 2 table.
+We may present data for comparing proportions in a \textit{2 by 2} table.
 
 \begin{table}[ht]
 \centering
@@ -274,7 +284,7 @@ We may present data for comparing proportions in a 2 by 2 table.
  \end{tabular}
  \end{table}
 
-The risk ratio also called the relative risk is the ratio of probabilities
+The risk ratio also called the relative risk is the ratio of probabilities:
 
 \begin{equation*}
   RR = \frac{ \frac{P(Disease)}{Exposure}}{ \frac{P(Disease)}{No Exposure} } = \frac{ \frac{a}{a + b}}{ \frac{c}{c + d} } = \frac{p_1}{p_2}
@@ -288,72 +298,7 @@ For our example, we can define and calculate the risk ratio as
 
 It means that getting the vaccine reduces our risk to only 4.5\% of the original, or has 95.5\% efficacy.
 
-% \subsection{A 95\% confidence interval for risk ratio}
-% 
-% We write the confidence interval formulas for the natural logarithm of RR.  Consider a 2 by 2 table as before.
-% 
-% \begin{table}[ht]
-% \centering
-% \begin{tabular}{@{} cccc @{}} \hline
-%  & \multicolumn{2}{c}{Disease} \\
-%  & Yes & No & Total \\ \hline
-%  Exposure & a & b & $a + b$ \\
-%  No Exposure  & c & d & $c + d$ \\ \hline
-%  \end{tabular}
-%  \end{table}
-% 
-% We will calculate the confidence interval for RR in 4 steps.
-% 
-% \begin{enumerate}
-% \item Calculate the \textbf{natural log (ln)} of the risk ratio:
-% $$ ln(RR) = ln \left( \frac{ \frac{a}{a + b}}{ \frac{c}{c + d} } \right) $$
-% 
-% \item Calculate the standard error of ln(RR) as follows:
-% 
-% \begin{equation*}
-%    SE_{ln(RR)} = \sqrt{ \frac{1}{a} + \frac{1}{c} - \frac{1}{a + b} - \frac{1}{c + d}}
-% \end{equation*}
-% 
-% \item A 95\% confidence interval for ln(RR) is given by
-% 
-% \begin{equation*}
-%   [ ln(RR) - 1.96 (SE), ln(RR) + 1.96 (SE) ]
-% \end{equation*}
-% 
-% \item Finally, a 95\% confidence interval for RR is given by
-% 
-% \begin{equation*}
-%   \Big[ e^{ln(RR) - 1.96 (SE)}, e^{ln(RR) + 1.96 (SE)} \Big]
-% \end{equation*}
-% 
-% \end{enumerate}
-% 
-% Returning to our example,
-% 
-% \begin{enumerate}
-% \item
-% \begin{equation*}
-% ln(RR) = ln(0.045) = -3.101
-% \end{equation*}
-% 
-% \item
-% \begin{equation*}
-% SE_{ln(RR)} = \sqrt{ \frac{1}{3} + \frac{1}{66} - \frac{1}{898} - \frac{1}{896}} = \sqrt{0.3462} = 0.5884
-% \end{equation*}
-% 
-% \item
-% \begin{equation*}
-%  [ -3.101 - 1.96(0.5884), -3.101 + 1.96(0.5884) ] = [ -4.254, 1.948]
-% \end{equation*}
-% 
-% \item
-% \begin{equation*}
-%   \Big[ e^{-4.254}, e^{-1.948} \Big] = [ 0.014, 0.143 ]
-% \end{equation*}
-% 
-% \end{enumerate}
-% 
-% With 95\% confidence, the risk of getting hepatitis with the vaccine is only 1.4\% to 14.3\% of placebo.  It means that the vaccine reduces our risk by as low as 85.7\% or as high as 98.6\%.  Now read the Results section of the abstract again.  They say ``The vaccine efficacy was 95.5\% (95\% confidence interval [CI], 85.6 to 98.6).''  The two sets of the numbers match, (slight discrepancy due to rounding error.)
+
 
 \subsection{Odds ratio}
 
@@ -413,7 +358,7 @@ We say that ``the odds of getting hepatitis is 24 times greater if we remain unv
 
 Odds ratios are generally easier to interpret if they are more significant than one.  We can always ensure this by choosing which group to put in the numerator, i.e., the one with more substantial odds.
 
-It is essential to understand that the odds ratio is not a ratio of likelihood or probabilities.  If the disease rates for men and women are 0.80 and 0.40, respectively, then the odds ratio is
+It is essential to understand that the odds ratio is not a ratio of the likelihood of probabilities.  If the disease rates for men and women are 0.80 and 0.40, respectively, then the odds ratio is
 
 \begin{equation*}
    \frac{ \frac{0.80}{0.20}}{ \frac{0.40}{0.60}} = 6.00
@@ -761,6 +706,7 @@ In a study of warp \\ breakage during the process of weaving \\ fabric (\textit{
 	\end{enumerate}
 
 	\vspace{5mm}
+	
     \framebox[5cm][l]{ Answer: }
 	\end{exercise}
 	\vspace{2mm}
@@ -890,7 +836,7 @@ Select the  appropriate measures of central  tendency for each variable.
    \centering
    \caption{Find appropriate measures of central tendency}
    %\topcaption{Table captions are better up top} % requires the topcapt package
-   {\tiny{
+   {\scriptsize{
    \begin{tabular}{@{} cccccc  @{}} \hline % Column formatting, @{} suppresses leading/trailing space
    Student & Birth  & Expense & Movies & Food & Religion \\ \hline
    a & West  & 43 & 4 & 6 & Cath. \\
@@ -1192,5 +1138,73 @@ The pretest median is \Sexpr{med3b}
 
 
 \end{exercises}
+
+
+% \subsection{A 95\% confidence interval for risk ratio}
+% 
+% We write the confidence interval formulas for the natural logarithm of RR.  Consider a 2 by 2 table as before.
+% 
+% \begin{table}[ht]
+% \centering
+% \begin{tabular}{@{} cccc @{}} \hline
+%  & \multicolumn{2}{c}{Disease} \\
+%  & Yes & No & Total \\ \hline
+%  Exposure & a & b & $a + b$ \\
+%  No Exposure  & c & d & $c + d$ \\ \hline
+%  \end{tabular}
+%  \end{table}
+% 
+% We will calculate the confidence interval for RR in 4 steps.
+% 
+% \begin{enumerate}
+% \item Calculate the \textbf{natural log (ln)} of the risk ratio:
+% $$ ln(RR) = ln \left( \frac{ \frac{a}{a + b}}{ \frac{c}{c + d} } \right) $$
+% 
+% \item Calculate the standard error of ln(RR) as follows:
+% 
+% \begin{equation*}
+%    SE_{ln(RR)} = \sqrt{ \frac{1}{a} + \frac{1}{c} - \frac{1}{a + b} - \frac{1}{c + d}}
+% \end{equation*}
+% 
+% \item A 95\% confidence interval for ln(RR) is given by
+% 
+% \begin{equation*}
+%   [ ln(RR) - 1.96 (SE), ln(RR) + 1.96 (SE) ]
+% \end{equation*}
+% 
+% \item Finally, a 95\% confidence interval for RR is given by
+% 
+% \begin{equation*}
+%   \Big[ e^{ln(RR) - 1.96 (SE)}, e^{ln(RR) + 1.96 (SE)} \Big]
+% \end{equation*}
+% 
+% \end{enumerate}
+% 
+% Returning to our example,
+% 
+% \begin{enumerate}
+% \item
+% \begin{equation*}
+% ln(RR) = ln(0.045) = -3.101
+% \end{equation*}
+% 
+% \item
+% \begin{equation*}
+% SE_{ln(RR)} = \sqrt{ \frac{1}{3} + \frac{1}{66} - \frac{1}{898} - \frac{1}{896}} = \sqrt{0.3462} = 0.5884
+% \end{equation*}
+% 
+% \item
+% \begin{equation*}
+%  [ -3.101 - 1.96(0.5884), -3.101 + 1.96(0.5884) ] = [ -4.254, 1.948]
+% \end{equation*}
+% 
+% \item
+% \begin{equation*}
+%   \Big[ e^{-4.254}, e^{-1.948} \Big] = [ 0.014, 0.143 ]
+% \end{equation*}
+% 
+% \end{enumerate}
+% 
+% With 95\% confidence, the risk of getting hepatitis with the vaccine is only 1.4\% to 14.3\% of placebo.  It means that the vaccine reduces our risk by as low as 85.7\% or as high as 98.6\%.  Now read the Results section of the abstract again.  They say ``The vaccine efficacy was 95.5\% (95\% confidence interval [CI], 85.6 to 98.6).''  The two sets of the numbers match, (slight discrepancy due to rounding error.)
 
 \onecolumn

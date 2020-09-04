@@ -17,21 +17,21 @@ After completing this part, students should be able to:
 
 \section{Hidden Confounder}  \index{confounds}
 
-In 1992, a research study ``Lower extremity fractures in motor vehicle collisions:
-Influence of direction of impact and seatbelt use'' by Dischinger, P., Cushing, B. and Kerns, T. was published in the 36th Proceedings of the Association for the Advancement of Automotive Medicine.  It involved data analysis of the trauma-center population in Maryland.  Some of the conclusions were:
+In 1992, Dischinger, P., Cushing, B. and Kerns, T. published a research study ``Lower extremity fractures in motor vehicle collisions:
+Influence of direction of impact and seatbelt use''  in the 36th Proceedings of the Association for the Advancement of Automotive Medicine.  It involved data analysis of the trauma-center population in Maryland.  Some of the conclusions were:
 
 \begin{enumerate}
    \item there was a higher incidence of lower extremity injury in frontal collisions,
    \item seatbelt use was not effective in preventing lower extremity fractures, and
-   \item there was a higher incidence of lower extremity fracture among women.
+   \item it showed a higher incidence of lower extremity fracture among women.
 \end{enumerate}
 
-The conclusion (3) is interesting.  It begs the follow-up question: ``Why do women have higher rates of leg fractures?''  Is it because they drive faster, or apply brakes more slowly, or have weaker bones?  It turns out that these are false questions -- they presume that gender is the variable that causes higher leg fractures.  
+The researchers made an interesting conclusion (3).  It begs the follow-up question: ``Why do women have higher rates of leg fractures?''  Is it because they drive faster, or apply brakes more slowly, or have weaker bones?  It turns out that these are false questions -- they presume that gender is the variable that causes higher leg fractures.  
 
 Researchers proposed an explanation in a follow-up study with the same lead author: `Lower extremity fractures in motor vehicle collisions: The role of driver gender and height' by Dischinger, P.C., Kerns, T.J., Kufera, J.A. Accident Analysis \& Prevention Volume 27, Issue 4, August 1995.
 
 \begin{quotation}
-Abstract: In a previous study it was noted that there was a higher incidence of lower-extremity fractures among women drivers. Analyses were based on a linkage between trauma registry and police crash report data. The present study addresses the issue of whether the differences noted are attributed to driver gender or are merely a reflection of differences in driver's height. An inverse association was noted between driver height and the incidence of lower-extremity fractures. Those shorter than average (5'7'') for this population had a 64\% increase in a lower-extremity fracture, which can be mainly attributed to ankle/tarsal injuries. Thus, the incidence of these injuries appears to be a function of driver height, with an increase among shorter drivers, most of whom are women.
+Abstract: In a previous study, the authors noted that there was a higher incidence of lower-extremity fractures among women drivers. They based their findings on analyses on a linkage between trauma registry and police crash report data. The present study addresses the issue of whether the differences noted are attributed to driver gender or are merely a reflection of differences in driver's height. The authors noted an inverse association between driver height and the incidence of lower-extremity fractures. Those shorter than average (5'7'') for this population had a 64\% increase in a lower-extremity fracture (ankle/tarsal injuries). Thus, the incidence of these injuries appears to be a function of driver height, with an increase among shorter drivers, most of whom are women.
 \end{quotation}  \citep{dischinger1995}
 
 It turns out that height was the culprit, but it initially looked like gender because height and gender have a strong link.  The following \textit{pathway graph} describes the true relationship:
@@ -48,7 +48,7 @@ $$ \texttt{Gender} \Rightarrow  \texttt{Leg Fracture} $$
 
 The symbol $\Rightarrow$ represents ``cause-and-effect'' while $\updownarrow$      represents ``association.''
 
-In this situation, leg fracture rate is the outcome, variable gender is the probable cause.  The hidden variable height is called a \textbf{confounder}, or a confounding variable.
+In this situation, a leg fracture rate is an outcome; the variable gender is the probable cause.  The hidden variable height is called a \textbf{confounder}, or a confounding variable.
 
 \fbox{\parbox{14cm}{
 \textbf{Confounding Variable:} \\
@@ -57,38 +57,37 @@ A confounder or confounding variable is a third variable that is associated with
 
 \subsection{Apples and Oranges}
 
-Now, why do unknown confounders belong in a chapter on threats to valid comparisons?  They are one of the most significant sources of (often unknowingly) invalid comparisons.  It seemed fair to compare leg fracture rates of men and women, didn't it?  What's wrong with that?  Unfortunately, concerning leg fracture rates, it was a case of comparing apples to oranges -- women as a group is shorter than men!  Of course, in the 1992 study, the investigators did not know that height would make a difference.  Women also tend to weigh less, smoke less, drink less, have longer hair, and wear higher heels.  Which of these would make a difference, i.e., be potential confounders?
+Now, why do unknown confounders belong in a chapter on threats to valid comparisons?  They are one of the most significant sources of (often unknowingly) invalid comparisons.  It seemed fair to compare leg fracture rates of men and women, did not it?  What's wrong with that?  Unfortunately, concerning leg fracture rates, it was a case of comparing apples to oranges -- women as a group is shorter than men!  Of course, in the 1992 study, the investigators did not know that height would make a difference.  Women also tend to weigh less, smokeless, drink less, have longer hair, and wear higher heels.  Which of these would make a difference, i.e., be potential confounders?
 
-Confounders are a big problem in comparison studies.  Some confounders may remain hidden, but it is critical that the researchers identify and control for potential confounders as much as possible.  Does smoking cause lung cancer?  When comparing smokers to nonsmokers, it is easy to show that smokers have higher lung cancer rates.  But as a group, they exercise less than nonsmokers.  They drink more coffee than nonsmokers.  Can the exercise or the coffee or the combination be the culprit?  Furthermore, smokers tend to be male, older, and drive in the winter with their car windows open.  There are plenty of confounding variables even in this comparison.
+Confounders are a big problem in comparison studies.  Some confounders may remain hidden, but the researchers identify and control for potential confounders as much as possible.  Does smoking cause lung cancer?  When comparing smokers to nonsmokers, it is easy to show that smokers have higher lung cancer rates.  But as a group, they exercise less than nonsmokers.  They drink more coffee than nonsmokers.  Can the exercise or the coffee or the combination be the culprit?  Furthermore, smokers tend to be male, older, and drive in the winter with their car windows open.  There are plenty of confounding variables, even in this comparison.
 
 \subsection{In the news}
 
-The STATS website (http://www.stats.org/) is dedicated to correcting ``scientific
-misinformation in the media and public policy resulting from bad science,
-politics, or a simple lack of information or knowledge.''  The following is an excerpt from an article written by Rebecca Goldin and Jing Peng in August 2010.  What is the confounding variable?  The probable cause? The outcome variable?
+The caretaker of the STATS website (http://www.stats.org/) will correct ``scientific misinformation in the media and public policy resulting from bad science, politics, or a simple lack of information or knowledge.''  The following is an excerpt from an article written by Rebecca Goldin and Jing Peng in August 2010.  What is the confounding variable?  The probable cause? The outcome variable?
 
 \begin{quotation}
 \textbf{If you take Viagra, will you get an STD?} \\
 Rebecca Goldin Ph.D. and Jing Peng, August 2, 2010 
 
-Judging from recent headlines, it seems clear:  ``Sex Diseases Tripled in Men 40 or Older Taking Viagra, Cialis, Study Says'' reports Bloomberg; ``Older Viagra Users More Likely to Get STDs'' says the Chicago Sun-Times, presumably comparing older Viagra users with older non-Viagra users.  And Health Day was even more explicit, saying ``Drugs Like Viagra Linked to Higher Rates of STDs.''  The next logic behind the claim seems persuasively apparent: if men who take Viagra are having more sex, then they have inevitably increased their risk of catching a sexually transmitted disease (STD). But is this the case?
+Judging from recent headlines, it seems clear.
+Bloomberg reported that ``STDs Tripled in Men 40 years or older after Taking Viagra, Cialis.''  Also, the Chicago Sun-Times said that ``Older Viagra Users More Likely Get STDs'' assuming that it compared older Viagra users with older non-Viagra users.  The next logic behind the claim seems persuasively apparent: if men who take Viagra are having more sex, then they have inevitably increased their risk of catching a sexually transmitted disease (STD). But is this the case?
 
-The study compared men who took erectile dysfunction (ED) drugs with those who did not.  Researchers found that ED drugs such as Viagra are linked to higher rates of STDs among older men, but not older women, especially after the introduction of Viagra in 1998.  A study published in the July 6 issue of the Annals of Internal Medicine was the first to examine the relationship between ED drugs and STDs. But its findings turn out to be far different than media accounts would have you believe.
+The study compared men who took erectile dysfunction (ED) drugs with those who did not. Researchers linked ED drugs such as Viagra to higher rates of STDs among older men, but not older women, especially after the introduction of Viagra in 1998.  A study published in the July 6 issue of the Annals of Internal Medicine was the first to examine the relationship between ED drugs and STDs. But its findings turn out to be far different than media accounts would have you believe.
 
 The main problem in the coverage is the direct suggestion that taking Viagra is associated with STDs, as opposed to being the sort of person who takes Viagra.
 
-There is a critical distinction. To see what it means, let's go backward in time and compare STD rates among people who plan to take Viagra but haven't and people who are not planning on taking Viagra. This quick comparison is what the authors of the research article did; they combed medical records for people who filled prescriptions for ED drugs and compared STD rates for these people before filling their prescription to the STD rates of people who did not subsequently fill a prescription for Viagra.  It turns out that the rate of STDs is higher among people who intend to take it.  In other words, the drug is absent, but those people who will take Viagra within a year are already at higher risk of STDs.
+There is a critical distinction. To see what it means, let's go backward in time and compare STD rates among people who plan to take Viagra but haven't and people who are not planning on taking Viagra. The authors combed the medical records of two groups of people to compare the STD rates between people before filling their prescriptions and the people who never filled their prescriptions for Viagra.  It turns out that the pace of STDs is higher among people who intend to take it.  In other words, the drug is absent, but those people who will take Viagra within a year are already at higher risk of STDs.
 
-In fact, compared to those who don't take ED drugs, those who plan to take Viagra had a slightly higher rate for STDs, an odds ratio (OR) of 2.80; 95\% confidence interval CI, 2.10 to 3.75, than those who actually take it (OR) 2.65, CI, 1.84 to 3.81, though the difference was not significant. It means that the drug had no discernable effect on STD rates for this group of men.
+Compared to those who don't take ED drugs, those who plan to take Viagra had a slightly higher rate for STDs, an odds ratio (OR) of 2.80; 95\% confidence interval CI, 2.10 to 3.75, than those who take it (OR) 2.65, CI, 1.84 to 3.81, though the difference was not significant. It means that the drug had no discernable effect on STD rates for this group of men.
 \citep{goldin2010}
 \end{quotation}
 
 
-The paper goes on with detailed analysis, but the main point has been stated.  To summarize the conclusions of the study:
+The paper goes on with the analysis, but the researcher stated the main point.  To summarize the conclusions of the study:
 
 \begin{enumerate}
 	\item Taking ED drugs do not increase the rate of STD's
-	\item The type of people who take ED drugs are different from people who do not.
+	\item The type of people who take ED drugs are different from people who do not; instead of the (admittedly more sensational) relationship implied by the headlines.
 
 	\begin{eqnarray*}
 \texttt{Person type} & \Rightarrow & \texttt{STD} \\
@@ -96,7 +95,7 @@ The paper goes on with detailed analysis, but the main point has been stated.  T
 \texttt{ED drugs} & &
 \end{eqnarray*}
 
-instead of the (admittedly more sensational) relationship implied by the headlines.
+
 
 \end{enumerate}
 
